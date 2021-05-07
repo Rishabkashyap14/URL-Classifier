@@ -1,2 +1,2 @@
 # URL-Classifier
-Classifying URLs as safe or Malicious 
+This project allows us to test whether a given URL is truly a safe URL to browse through or a malicious one
