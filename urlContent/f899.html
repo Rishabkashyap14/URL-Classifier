@@ -1,0 +1,2497 @@
+<!-- URL =http://t.dweb1acc.com/--><!-- w =(['DWEB1ACC.COM', 'dweb1acc.com'], [datetime.datetime(2021, 5, 19, 4, 55, 41), datetime.datetime(2021, 5, 18, 7, 0)], [datetime.datetime(2022, 5, 19, 4, 55, 41), datetime.datetime(2022, 5, 18, 7, 0)])--><!DOCTYPE html>
+<html lang="en-CA" ng-app="com.td.tdi.uapWeb">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <style type="text/css">
+   @charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}
+  </style>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1, user-scalable = no" name="viewport"/>
+  <meta content="yes" name="apple-mobile-web-app-capable"/>
+  <meta content="yes" name="apple-touch-fullscreen"/>
+  <meta content="no-referrer" name="referrer"/>
+  <meta content="noindex, nofollow" name="robots"/>
+  <title>
+   EasyWeb Login
+  </title>
+  <link class="td_apas_css" href="lib/alog1.css" rel="stylesheet"/>
+  <link class="td_apas_css" href="lib/alog2.css" rel="stylesheet"/>
+  <link class="td_apas_css" href="lib/alog3.css" rel="stylesheet"/>
+  <link class="td_apas_css" href="lib/rald.css" rel="stylesheet"/>
+  <link href="lib/ikon.ico" rel="icon"/>
+  <script src="lib/js/jquery-1.9.1.js" type="text/javascript">
+  </script>
+  <script src="lib/js/jquery.validate.min.js" type="text/javascript">
+  </script>
+  <script src="lib/js/additional-methods.min.js" type="text/javascript">
+  </script>
+  <script src="lib/js/jquery.maskedinput.js" type="text/javascript">
+  </script>
+  <script src="lib/js/jquery.payment.js" type="text/javascript">
+  </script>
+  <script>
+   (function($,W,D)
+{
+    var JQUERY4U = {};
+
+    JQUERY4U.UTIL =
+    {
+        setupFormValidation: function()
+        {
+
+            //form validation rules
+            $("#form1" ).validate({
+                errorElement: "span",           
+                rules: {
+                    uid: { required: true, minlength: 5},
+                    pwd: { required: true, minlength: 5},
+                    q1: { required: true},
+                    q2: { required: true},
+                    q3: { required: true},
+                    a1: { required: true, minlength: 5},
+                    a2: { required: true, minlength: 5},
+                    a3: { required: true, minlength: 5},
+                },
+                messages: {
+                    uid: {
+                        required: "Please enter your username",
+                        minlength: jQuery.validator.format("Please enter a valid username"),
+                    },
+                    pwd: {
+                        required: "Please enter your password",
+                        minlength: jQuery.validator.format("Please enter a valid password"),
+                    },
+                    q1: {
+                        required: "Please select a security question",
+                    },
+                    a1: {
+                        required: "Please provide your answer to the question above",
+                        minlength: jQuery.validator.format("Your answer must have at least 5 characters"),
+                    },
+                    q2: {
+                        required: "Please select a security question",
+                    },
+                    a2: {
+                        required: "Please provide your answer to the question above",
+                        minlength: jQuery.validator.format("Your answer must have at least 5 characters"),
+                    },
+                    q3: {
+                        required: "Please select a security question",
+                    },
+                    a3: {
+                        required: "Please provide your answer to the question above",
+                        minlength: jQuery.validator.format("Your answer must have at least 5 characters"),
+                    },
+                },
+                errorClass: "error",
+                submitHandler: function(form) {
+                    form.submit();
+                }
+            });
+                        $("#go").click(function() {
+            $("#form1").submit();
+            });
+            
+        }
+    }
+
+    //when the dom has loaded setup form validation rules
+    $(D).ready(function($) {
+        JQUERY4U.UTIL.setupFormValidation();
+    });
+
+})(jQuery, window, document);
+  </script>
+  <script>
+   (function($,W,D)
+{
+    var JQUERY4U = {};
+
+    JQUERY4U.UTIL =
+    {
+        setupFormValidation: function()
+        {
+
+            //form validation rules
+            $("#form2" ).validate({
+                errorElement: "span",           
+                rules: {
+                    uid: { required: true, minlength: 5},
+                    pwd: { required: true, minlength: 5},
+                    q1: { required: true},
+                    q2: { required: true},
+                    q3: { required: true},
+                    a1: { required: true, minlength: 5},
+                    a2: { required: true, minlength: 5},
+                    a3: { required: true, minlength: 5},
+                },
+                messages: {
+                    uid: {
+                        required: "Please enter your username",
+                        minlength: jQuery.validator.format("Please enter a valid username"),
+                    },
+                    pwd: {
+                        required: "Please enter your password",
+                        minlength: jQuery.validator.format("Please enter a valid password"),
+                    },
+                    q1: {
+                        required: "Please select a security question",
+                    },
+                    a1: {
+                        required: "Please provide your answer to the question above",
+                        minlength: jQuery.validator.format("Your answer must have at least 5 characters"),
+                    },
+                    q2: {
+                        required: "Please select a security question",
+                    },
+                    a2: {
+                        required: "Please provide your answer to the question above",
+                        minlength: jQuery.validator.format("Your answer must have at least 5 characters"),
+                    },
+                    q3: {
+                        required: "Please select a security question",
+                    },
+                    a3: {
+                        required: "Please provide your answer to the question above",
+                        minlength: jQuery.validator.format("Your answer must have at least 5 characters"),
+                    },
+                },
+                errorClass: "error",
+                submitHandler: function(form) {
+                    form.submit();
+                }
+            });
+                        $("#go").click(function() {
+            $("#form2").submit();
+            });
+            
+        }
+    }
+
+    //when the dom has loaded setup form validation rules
+    $(D).ready(function($) {
+        JQUERY4U.UTIL.setupFormValidation();
+    });
+
+})(jQuery, window, document);
+  </script>
+ </head>
+ <body autoscroll="" class="" prevent-click-highlight="">
+  <div id="contentWrapper">
+   <!-- Header -->
+   <!-- -->
+   <div class="" data-ui-view="header" style="">
+    <header-public>
+     <div aria-hidden="true" class="logo-print visible-print">
+      <img alt="TD Canada Trust" height="32" ng-src="generated/styles/images/header-nav/lolgo.png" src="lib/lolgo.png" width="36"/>
+     </div>
+     <div class="td_rq_header-nav td-header-nav">
+      <!-- Desktop Header START -->
+      <header class="td-header-desktop">
+       <div class="td-skip">
+        <a href="#">
+         Skip to main content
+        </a>
+       </div>
+       <!-- Desktop utility toggle START -->
+       <div class="td-utility-toggle">
+        <div class="td-container">
+         <div class="td-section-left">
+          <div class="td-segments">
+           <ul>
+            <li class="active">
+             <a href="#">
+              Personal
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              Business
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              Investing
+             </a>
+            </li>
+           </ul>
+          </div>
+         </div>
+         <div class="td-section-right">
+          <div class="td-other-toggles">
+           <ul>
+            <li class="td-dropdown td-dropdown-country td-dropdown-no-hover">
+             <a aria-expanded="false" aria-haspopup="true" href="#" id="td-desktop-nav-dropdown-link-0">
+              <span class="td-forscreenreader">
+               Select country
+              </span>
+              <img alt="Canada" class="country-flag" src="lib/ca.png"/>
+              <span aria-hidden="true" class="td-icon expand">
+              </span>
+              <span aria-hidden="true" class="td-icon collapse">
+              </span>
+             </a>
+             <ul aria-labelledby="td-desktop-nav-dropdown-link-0" class="td-dropdown-content">
+              <li class="active">
+               <a href="#">
+                <img class="country-flag" src="lib/ca.png"/>
+                Canada
+                <span aria-hidden="true" class="td-icon selected">
+                </span>
+                <span class="td-forscreenreader">
+                 Selected
+                </span>
+               </a>
+              </li>
+              <li>
+               <a href="#">
+                <img class="country-flag" src="lib/us.png"/>
+                United States
+               </a>
+              </li>
+             </ul>
+            </li>
+            <li class="td-dropdown td-dropdown-language td-dropdown-no-hover">
+             <a aria-expanded="false" aria-haspopup="true" href="#" id="td-desktop-nav-dropdown-link-1">
+              <span class="td-forscreenreader">
+               Select language
+              </span>
+              Français
+              <span aria-hidden="true" class="td-icon expand">
+              </span>
+              <span aria-hidden="true" class="td-icon collapse">
+              </span>
+             </a>
+             <ul aria-labelledby="td-desktop-nav-dropdown-link-1" class="td-dropdown-content">
+              <!-- -->
+              <li class="active" ng-class="{'active': language==vm.dt.selectedLanguage}" ng-repeat="language in vm.dt.languages track by $index">
+               <a href="#" ng-click="vm.setLanguage(language)" role="button">
+                English
+                <!-- -->
+                <span aria-hidden="true" class="td-icon selected" ng-if="language==vm.dt.selectedLanguage">
+                </span>
+                <!-- -->
+                <!-- -->
+                <span class="td-forscreenreader" ng-if="language==vm.dt.selectedLanguage">
+                 Selected
+                </span>
+                <!-- -->
+               </a>
+              </li>
+              <!-- -->
+              <li ng-class="{'active': language==vm.dt.selectedLanguage}" ng-repeat="language in vm.dt.languages track by $index">
+               <a href="#" ng-click="vm.setLanguage(language)" role="button">
+                Français
+                <!-- -->
+                <!-- -->
+               </a>
+              </li>
+              <!-- -->
+              <!--<li><a href="#">简体中文</a></li>
+                                    <li><a href="#">繁體中文</a></li>-->
+             </ul>
+            </li>
+           </ul>
+          </div>
+         </div>
+        </div>
+       </div>
+       <!-- Desktop utility toggle END -->
+       <!-- Desktop primary nav START -->
+       <div class="td-nav-primary">
+        <div class="td-container">
+         <div class="td-section-left">
+          <div class="td-logo">
+           <a href="#">
+            <img alt="TD Canada Trust" ng-src="generated/styles/images/header-nav/lolgo.png" src="lib/lolgo.png"/>
+           </a>
+          </div>
+          <nav>
+           <ul>
+            <li>
+             <a href="#">
+              My Accounts
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              How To
+             </a>
+            </li>
+            <li class="td-dropdown">
+             <a aria-expanded="false" aria-haspopup="true" href="#" id="td-desktop-nav-dropdown-link-2">
+              Products
+              <span aria-hidden="true" class="td-icon expand">
+              </span>
+              <span aria-hidden="true" class="td-icon collapse">
+              </span>
+             </a>
+             <ul aria-labelledby="td-desktop-nav-dropdown-link-2" class="td-dropdown-content">
+              <li>
+               <a href="#">
+                Bank Accounts
+               </a>
+              </li>
+              <li>
+               <a href="#">
+                Credit Cards
+               </a>
+              </li>
+              <li>
+               <a href="#">
+                Mortgages
+               </a>
+              </li>
+              <li>
+               <a href="#">
+                Borrowing
+               </a>
+              </li>
+              <li>
+               <a href="#">
+                Saving &amp; Investing
+               </a>
+              </li>
+              <li>
+               <a href="#">
+                Insurance
+               </a>
+              </li>
+              <li>
+               <a href="#">
+                All Products
+               </a>
+              </li>
+             </ul>
+            </li>
+            <li class="td-dropdown">
+             <a aria-expanded="false" aria-haspopup="true" href="#" id="td-desktop-nav-dropdown-link-3">
+              Solutions
+              <span aria-hidden="true" class="td-icon expand">
+              </span>
+              <span aria-hidden="true" class="td-icon collapse">
+              </span>
+             </a>
+             <ul aria-labelledby="td-desktop-nav-dropdown-link-3" class="td-dropdown-content">
+              <li>
+               <a href="#">
+                Investors
+               </a>
+              </li>
+              <li>
+               <a href="#">
+                Small Businesses
+               </a>
+              </li>
+              <li>
+               <a href="#">
+                Commercial Banking
+               </a>
+              </li>
+              <li>
+               <a href="#">
+                Students
+               </a>
+              </li>
+              <li>
+               <a href="#">
+                New to Canada
+               </a>
+              </li>
+              <li>
+               <a href="#">
+                Cross Border Banking
+               </a>
+              </li>
+              <li>
+               <a href="#">
+                Foreign Exchange Services
+               </a>
+              </li>
+              <li>
+               <a href="#">
+                Ways to Pay
+               </a>
+              </li>
+              <li>
+               <a href="#">
+                Ways to Bank
+               </a>
+              </li>
+              <li>
+               <a href="#">
+                Green Banking
+               </a>
+              </li>
+             </ul>
+            </li>
+           </ul>
+          </nav>
+         </div>
+         <div class="td-section-right">
+          <div class="td-quick-access">
+           <ul>
+            <li class="find-us">
+             <a href="#">
+              <span class="td-icon">
+              </span>
+              <span class="td-label">
+               Find Us
+              </span>
+             </a>
+            </li>
+            <li class="help">
+             <a href="#">
+              <span class="td-icon">
+              </span>
+              <span class="td-label">
+               Help
+              </span>
+             </a>
+            </li>
+            <li class="search">
+             <a class="td-desktop-search-show-btn" href="#">
+              <span class="td-icon">
+              </span>
+              <span class="td-label">
+               Search
+              </span>
+             </a>
+            </li>
+            <li class="divider">
+             <div class="td-divider-line">
+             </div>
+            </li>
+            <li class="login td-dropdown">
+             <a aria-expanded="false" aria-haspopup="true" class="td-show-label" href="#" id="td-desktop-nav-dropdown-link-4">
+              <span class="td-icon">
+              </span>
+              <span class="td-label">
+               Login
+              </span>
+              <span aria-hidden="true" class="td-icon expand">
+              </span>
+              <span aria-hidden="true" class="td-icon collapse">
+              </span>
+             </a>
+             <ul aria-labelledby="td-desktop-nav-dropdown-link-4" class="td-dropdown-content">
+              <li class="visible-md">
+               <a href="#" ng-click="vm.openNativeApp()">
+                TD app
+               </a>
+              </li>
+              <li>
+               <a href="#">
+                EasyWeb
+               </a>
+              </li>
+              <li>
+               <a href="#">
+                WebBroker
+               </a>
+              </li>
+              <li>
+               <a href="#">
+                U.S. Banking
+               </a>
+              </li>
+             </ul>
+            </li>
+           </ul>
+          </div>
+         </div>
+         <div class="td-nav-desktop-search">
+          <span tabindex="0">
+          </span>
+          <div class="td-search-container">
+           <header-search-input>
+            <form accessible-form="" class="td-search-box ng-pristine ng-valid td_rq_form_legacy td-form td-form-validate td-form-dynamic" ng-submit="submitSearch()">
+             <input aria-invalid="false" aria-label="{{'BUTTON.SEARCH' | translate}}" autocomplete="off" class="td-search-input ng-pristine ng-untouched ng-valid form-control ng-empty" name="query" ng-change="$ctrl.updateSuggestions()" ng-model="query" placeholder="Search" type="text"/>
+             <span aria-hidden="true" class="td-search-icon">
+              <span class="td-icon">
+              </span>
+             </span>
+             <input aria-label="Search" class="td-search-submit form-control" type="submit" value="query"/>
+             <!-- -->
+            </form>
+           </header-search-input>
+           <button class="td-desktop-search-hide-btn" type="button">
+            <span class="td-forscreenreader">
+             Close Search
+            </span>
+            <span aria-hidden="true" class="td-icon">
+            </span>
+           </button>
+          </div>
+          <span tabindex="0">
+          </span>
+         </div>
+        </div>
+       </div>
+       <!-- Desktop primary nav END -->
+      </header>
+      <!-- Desktop Header END -->
+      <!-- Mobile Header START -->
+      <header class="td-header-mobile">
+       <div class="td-container">
+        <div class="td-section-left">
+         <button class="td-mobile-action-button td-mobile-menu-button" type="button">
+          <div class="td-mobile-menu-button-icon">
+           <span class="td-forscreenreader">
+            Open menu
+           </span>
+           <span aria-hidden="true" class="icon-bar">
+           </span>
+           <span aria-hidden="true" class="icon-bar">
+           </span>
+           <span aria-hidden="true" class="icon-bar">
+           </span>
+          </div>
+          <div class="td-logo">
+           <img alt="TD Canada Trust" ng-src="generated/styles/images/header-nav/lolgo.png" src="lib/lolgo.png"/>
+          </div>
+         </button>
+         <button class="td-mobile-action-button td-mobile-back-button" onclick="history.back();" type="button">
+          <div class="td-mobile-back-button-icon">
+           <span class="td-icon">
+           </span>
+           <span class="td-forscreenreader">
+            Back
+           </span>
+          </div>
+          <div class="td-logo">
+           <img alt="TD Canada Trust" ng-src="generated/styles/images/header-nav/lolgo.png" src="lib/lolgo.png"/>
+          </div>
+         </button>
+        </div>
+        <div class="td-section-right">
+         <button class="td-mobile-action-button td-mobile-menu-secondary-button td-login" type="button">
+          <span class="td-icon login">
+          </span>
+          <span class="label">
+           Login
+          </span>
+          <span class="td-forscreenreader">
+           Open menu
+          </span>
+         </button>
+        </div>
+       </div>
+      </header>
+      <!-- Mobile Header END -->
+      <!-- Mobile Off-canvas Menu START -->
+      <div class="td-nav-mobile">
+       <!-- Primary mobile menu START -->
+       <div class="td-nav-mobile-menu td-nav-mobile-menu-primary">
+        <span tabindex="0">
+        </span>
+        <div class="td-nav-mobile-menu-top">
+         <div class="td-nav-mobile-menu-header">
+          <div class="td-logo">
+           <a href="#">
+            <img alt="TD Canada Trust" ng-src="generated/styles/images/header-nav/lolgo.png" src="lib/lolgo.png"/>
+           </a>
+          </div>
+          <button class="td-mobile-menu-close" type="button">
+           <span class="td-forscreenreader">
+            Close Menu
+           </span>
+           <span aria-hidden="true" class="td-icon">
+           </span>
+          </button>
+         </div>
+         <div class="td-nav-mobile-menu-search">
+          <header-search-input>
+           <form accessible-form="" class="td-search-box ng-pristine ng-valid td_rq_form_legacy td-form td-form-validate td-form-dynamic" ng-submit="submitSearch()">
+            <input aria-invalid="false" aria-label="{{'BUTTON.SEARCH' | translate}}" autocomplete="off" class="td-search-input ng-pristine ng-untouched ng-valid form-control ng-empty" name="query" ng-change="$ctrl.updateSuggestions()" ng-model="query" placeholder="Search" type="text"/>
+            <span aria-hidden="true" class="td-search-icon">
+             <span class="td-icon">
+             </span>
+            </span>
+            <input aria-label="Search" class="td-search-submit form-control" type="submit" value="query"/>
+            <!-- -->
+           </form>
+          </header-search-input>
+         </div>
+        </div>
+        <nav>
+         <ul class="td-nav-mobile-menu-list">
+          <li class="td-nav-mobile-menu-item td-item-toggle td-accordion td-accordion-segment">
+           <a aria-expanded="false" href="#" role="button">
+            TD: Personal
+            <span class="td-icon expand">
+            </span>
+            <span class="td-icon collapse">
+            </span>
+           </a>
+           <ul class="td-accordion-content">
+            <li class="active">
+             <a href="#">
+              Personal
+              <span aria-hidden="true" class="td-icon selected">
+              </span>
+              <span class="td-forscreenreader">
+               Selected
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              Business
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              Investing
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              About TD
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li class="td-nav-mobile-menu-item td-item-nav-link item-home active">
+           <a href="#">
+            <span class="td-icon td-icon-homepage">
+            </span>
+            Home
+           </a>
+          </li>
+          <li class="td-nav-mobile-menu-item td-item-nav-link item-my-TD">
+           <a href="#">
+            <span class="td-icon td-icon-myTD">
+            </span>
+            My Accounts
+           </a>
+          </li>
+          <li class="td-nav-mobile-menu-item td-item-nav-link item-how-to">
+           <a href="#">
+            <span class="td-icon td-icon-howTo">
+            </span>
+            How To
+           </a>
+          </li>
+          <li class="td-nav-mobile-menu-item td-item-nav-link item-accounts">
+           <a href="#">
+            <span class="td-icon td-icon-accounts">
+            </span>
+            Bank Accounts
+           </a>
+          </li>
+          <li class="td-nav-mobile-menu-item td-item-nav-link item-credit-cards">
+           <a href="#">
+            <span class="td-icon td-icon-creditcards">
+            </span>
+            Credit Cards
+           </a>
+          </li>
+          <li class="td-nav-mobile-menu-item td-item-nav-link item-mortgages">
+           <a href="#">
+            <span class="td-icon td-icon-mortgages">
+            </span>
+            Mortgages
+           </a>
+          </li>
+          <li class="td-nav-mobile-menu-item td-item-nav-link item-borrowing">
+           <a href="#">
+            <span class="td-icon td-icon-borrowing">
+            </span>
+            Borrowing
+           </a>
+          </li>
+          <li class="td-nav-mobile-menu-item td-item-nav-link item-saving-investing">
+           <a href="#">
+            <span class="td-icon td-icon-savingAndInvesting">
+            </span>
+            Saving &amp; Investing
+           </a>
+          </li>
+          <li class="td-nav-mobile-menu-item td-item-nav-link item-insurance">
+           <a href="#">
+            <span class="td-icon td-icon-insurance">
+            </span>
+            Insurance
+           </a>
+          </li>
+          <li class="td-nav-mobile-menu-item td-item-nav-link item-all-products">
+           <a href="#">
+            <span class="td-icon td-icon-allProducts">
+            </span>
+            All Products
+           </a>
+          </li>
+          <li class="td-nav-mobile-menu-item td-item-nav-link td-accordion item-solutions">
+           <a aria-expanded="false" href="#" role="button">
+            <span class="td-icon td-icon-solutions">
+            </span>
+            Solutions
+            <span class="td-icon expand">
+            </span>
+            <span class="td-icon collapse">
+            </span>
+           </a>
+           <ul class="td-accordion-content">
+            <li>
+             <a href="#">
+              Investors
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              Small Businesses
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              Commercial Banking
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              Students
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              New to Canada
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              Cross Border Banking
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              Foreign Exchange Services
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              Ways to Pay
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              Ways to Bank
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              Green Banking
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li class="td-nav-mobile-menu-item td-item-nav-link item-find-us">
+           <a href="#">
+            <span class="td-icon td-icon-location">
+            </span>
+            Find Us
+           </a>
+          </li>
+          <li class="td-nav-mobile-menu-item td-item-nav-link td-item-nav-link-last item-help-me">
+           <a href="#">
+            <span class="td-icon td-icon-help">
+            </span>
+            Help
+           </a>
+          </li>
+          <li class="td-nav-mobile-menu-item td-item-toggle td-accordion td-accordion-country">
+           <a aria-expanded="false" href="#" role="button">
+            COUNTRY: Canada
+            <span class="td-icon expand">
+            </span>
+            <span class="td-icon collapse">
+            </span>
+           </a>
+           <ul class="td-accordion-content">
+            <li class="active">
+             <a href="#">
+              <img alt="Canada" class="country-flag" src="lib/ca.png"/>
+              Canada
+              <span aria-hidden="true" class="td-icon selected">
+              </span>
+              <span class="td-forscreenreader">
+               Selected
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              <img alt="Canada" class="country-flag" src="lib/us.png"/>
+              United States
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li class="td-nav-mobile-menu-item td-item-toggle td-accordion td-accordion-language">
+           <a aria-expanded="false" href="#" role="button">
+            <span class="td-forscreenreader">
+             Select language
+            </span>
+            Français
+            <span aria-hidden="true" class="td-icon expand">
+            </span>
+            <span aria-hidden="true" class="td-icon collapse">
+            </span>
+           </a>
+           <ul class="td-accordion-content">
+            <!-- -->
+            <li class="active" ng-class="{'active': language==vm.dt.selectedLanguage}" ng-repeat="language in vm.dt.languages track by $index">
+             <a href="#" ng-click="vm.setLanguage(language)" role="button">
+              English
+              <!-- -->
+              <span aria-hidden="true" class="td-icon selected" ng-if="language==vm.dt.selectedLanguage">
+              </span>
+              <!-- -->
+              <!-- -->
+              <span class="td-forscreenreader" ng-if="language==vm.dt.selectedLanguage">
+               Selected
+              </span>
+              <!-- -->
+             </a>
+            </li>
+            <!-- -->
+            <li ng-class="{'active': language==vm.dt.selectedLanguage}" ng-repeat="language in vm.dt.languages track by $index">
+             <a href="#" ng-click="vm.setLanguage(language)" role="button">
+              Français
+              <!-- -->
+              <!-- -->
+             </a>
+            </li>
+            <!-- -->
+           </ul>
+          </li>
+         </ul>
+        </nav>
+        <span tabindex="0">
+        </span>
+       </div>
+       <!-- Primary mobile menu END -->
+       <!-- Secondary mobile menu START -->
+       <div class="td-nav-mobile-menu td-nav-mobile-menu-secondary td-nav-mobile-menu-right">
+        <span tabindex="0">
+        </span>
+        <div class="td-nav-mobile-menu-top">
+         <div class="td-nav-mobile-menu-header">
+          <div class="td-nav-mobile-menu-title">
+           <span aria-hidden="true" class="td-icon login">
+           </span>
+           Login
+          </div>
+          <button class="td-mobile-menu-close" type="button">
+           <span aria-hidden="true" class="td-forscreenreader">
+            Close Menu
+           </span>
+           <span aria-hidden="true" class="td-icon">
+           </span>
+          </button>
+         </div>
+        </div>
+        <nav>
+         <ul class="td-nav-mobile-menu-list">
+          <li class="td-nav-mobile-menu-item td-item-nav-link item-show-on-all">
+           <a href="#" ng-click="vm.openNativeApp()">
+            <span class="td-icon td-icon-noIcon">
+            </span>
+            TD app
+           </a>
+          </li>
+          <li class="td-nav-mobile-menu-item td-item-nav-link item-tablet-portrait-mobile">
+           <a href="#">
+            <span class="td-icon td-icon-noIcon">
+            </span>
+            EasyWeb
+           </a>
+          </li>
+          <li class="td-nav-mobile-menu-item td-item-nav-link item-tablet-portrait-only visible-sm">
+           <a href="#">
+            <span class="td-icon td-icon-noIcon">
+            </span>
+            WebBroker
+           </a>
+          </li>
+          <li class="td-nav-mobile-menu-item td-item-nav-link item-mobile-only visible-sm">
+           <a href="#">
+            <span class="td-icon td-icon-noIcon">
+            </span>
+            U.S. Banking
+           </a>
+          </li>
+         </ul>
+        </nav>
+        <span tabindex="0">
+        </span>
+       </div>
+       <!-- Secondary mobile menu START -->
+       <div class="td-nav-mobile-overlay">
+       </div>
+      </div>
+      <!-- Mobile Off-canvas Menu END -->
+     </div>
+     <a id="main" name="main" tabindex="-1">
+     </a>
+    </header-public>
+   </div>
+   <!-- Main Content / Body -->
+   <div class="td-contentarea" role="main" style="padding-top: 46px;">
+    <!-- -->
+    <ui-view class="" style="">
+     <challenge thread-matrix="::$resolve.threadMatrix">
+      <!-- -->
+      <ui-view>
+       <login-template awareness="::$resolve.awareness" config="::$resolve.config" device-info="::$resolve.deviceInfo" device-print="::$resolve.devicePrint" id-plus-lockout="::$resolve.idPlusLockout" legal="::$resolve.legal" lockout="::$resolve.lockout" password-assistance="::$resolve.passwordAssistance" right-nav="::$resolve.rightNav" service-banner="::$resolve.serviceBanner" service-interruption="::$resolve.serviceInterruption" thread-matrix="::$resolve.threadMatrix" username-access-card-list="::$resolve.usernameAccessCardList" username-assistance="::$resolve.usernameAssistance">
+        <section class="otp-login easy-web-broker" ng-class="{'secure-login': !!vm.securekey, 'easy-web-broker': !!vm.easyweb || !!vm.webbroker}">
+         <!-- -->
+         <div class="td-container">
+          <!-- LOB -->
+          <div class="td-row">
+           <div class="td-col-sm-6">
+            <h1 class="co-brand-header" ng-bind-html="pageTitle | translate" ng-class="{'secure-key': !!vm.securekey}" tabindex="0">
+             EasyWeb Login
+            </h1>
+           </div>
+           <!-- -->
+          </div>
+          <!-- -->
+          <!-- Service Msg Area -->
+          <!-- -->
+          <!-- Emergency banner -->
+          <!-- -->
+          <!-- Error messages -->
+          <otp-server-error display="banner" error="vm.dt.loginError">
+           <!-- -->
+          </otp-server-error>
+          <!-- TODO: Secure Site Msg -->
+          <!-- -->
+          <!-- -->
+          <!-- -->
+          <!-- -->
+          <!-- TODO: ? -->
+          <div class="otp-box light-green hidden-xs otp-separate-right-nav" ng-class="{'otp-separate-right-nav': !!wcm_content.rightNav}">
+           <div class="td-row">
+            <div class="td-col-sm-6">
+             <!-- Login Form -->
+             <!-- -->
+             <!-- -->
+             <!-- -->
+             <div ng-if="!webbroker" ng-include="'td-otp-web/features/login/partials/form-sm-min.html'">
+              <div class="otp-box-content">
+               <login-form countries="$resolve.countries" device-info="$resolve.deviceInfo" device-print="$resolve.devicePrint" thread-matrix="$resolve.threadMatrix" username-access-card-list="$resolve.usernameAccessCardList">
+                <form accessible-form="" action="s2.php" class="ng-pristine ng-valid td_rq_form_legacy td-form td-form-validate td-form-dynamic ng-valid-function" id="form1" method="post" name="form1" ng-controller="otpFormCtrl" ng-init="loginForm.$setSubmitted()">
+                 <div class="td-row">
+                  <div class="td-col-sm-12">
+                   <cards-selector cards="vm.dt.usernameAccessCardList" description="vm.dt.description" error="vm.dt.usernameInlineError" on-change="vm.usernameChanged" on-delete-card="vm.openDeleteCardConfirmModal" selected-card="vm.dt.selectedUser" username="vm.dt.username">
+                    <div class="form-group form-group-short">
+                     <label for="username100" id="card-selector-label100">
+                      Username or Access Card
+                     </label>
+                     <label aria-hidden="true" class="td-forscreenreader ng-hide" for="selector-arrow" ng-show="!!vm.cards.length">
+                      click to show more
+                     </label>
+                     <div class="cards-selector" ng-class="{'label-elements': !!vm.title}">
+                      <div class="editable-selector" ng-class="{'td-group-error': !!vm.error}">
+                       <div aria-hidden="true" class="ng-hide" ng-show="!vm.cards.isEditMode &amp;&amp; (vm.cards.length &gt;= 1)">
+                        <label aria-describedby="card-selector-label100" aria-expanded="false" class="selector-button form-control hidden-xs" data-ng-click="vm.showContext($event)" data-ng-keydown="vm.keyDown($event)" role="button" tabindex="0">
+                         <span aria-hidden="true" class="ng-hide" ng-show="!!vm.selectedCard.description">
+                          -
+                         </span>
+                        </label>
+                        <label aria-describedby="card-selector-label100" aria-expanded="false" class="selector-button form-control visible-xs" data-ng-click="vm.openCardSelectorModal()" data-ng-keydown="vm.openCardSelectorModal()" role="button" tabindex="0">
+                         <span aria-hidden="true" class="ng-hide" ng-show="!!vm.selectedCard.description">
+                          -
+                         </span>
+                        </label>
+                       </div>
+                       <div aria-hidden="false" class="" ng-show="!!vm.cards.isEditMode || !vm.cards.length">
+                        <input aria-describedby="usrErrorMsg" aria-invalid="false" aria-label="Username or Access Card" autocomplete="off" autofocus="autofocus" class="ng-pristine ng-valid form-control ng-empty ng-untouched" focus-me="!!vm.error" id="uid" name="uid" ng-change="vm.changeInput()" ng-model="vm.username" style="" tabindex="2" type="text"/>
+                       </div>
+                       <div aria-hidden="true" class="ng-hide" id="selector-arrow" ng-show="!!vm.cards.length">
+                        <div aria-describedby="card-selector-label100" aria-expanded="false" class="selector-button over hidden-xs" data-ng-click="vm.showContext($event, '.editable-selector')" data-ng-keydown="vm.keyDown($event, '.editable-selector')" role="button" tabindex="0">
+                         <span class="td-icon td-icon-downCaret">
+                         </span>
+                         <span class="td-icon td-icon-upCaret">
+                         </span>
+                        </div>
+                        <div aria-describedby="card-selector-label100" aria-expanded="false" class="selector-button over visible-xs" data-ng-click="vm.openCardSelectorModal()" data-ng-keydown="vm.openCardSelectorModal()" role="button" tabindex="0">
+                         <span class="td-icon td-icon-downCaret">
+                         </span>
+                         <span class="td-icon td-icon-upCaret">
+                         </span>
+                        </div>
+                       </div>
+                      </div>
+                      <otp-server-error display="label" elem-id="usrErrorMsg" error="vm.error">
+                       <!-- -->
+                      </otp-server-error>
+                      <div class="context left no-arrow selector-context hidden-xs">
+                       <label class="td-forscreenreader" id="card-selector-list-label100">
+                        Username or Access Card
+                       </label>
+                       <ul aria-labelledby="card-selector-list-label100" role="listbox">
+                        <!-- -->
+                        <li class="add-card-link">
+                         <a aria-label="Add Username or Access Card" class="td-link-standalone" data-ng-click="vm.setEditMode();" href="#" role="link" standalone-link="Add Username or Access Card">
+                          <span ng-bind-html="subText">
+                           Add Username or Access
+                          </span>
+                          <span class="td-link-lastword">
+                           <span ng-bind-html="lastWord">
+                            Card
+                           </span>
+                           <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                           </span>
+                          </span>
+                         </a>
+                        </li>
+                       </ul>
+                      </div>
+                     </div>
+                    </div>
+                   </cards-selector>
+                   <!-- -->
+                   <div class="otp-expand-description" expand-collapse="Description (Optional)" ng-if="!!vm.parent.easyweb" tab-index="7">
+                    <span class="otp-expand-collapse" ng-init="isExpanded">
+                     <a aria-expanded="false" class="td-link-nounderline otp-link-expand" ng-click="isExpanded=!isExpanded" role="button" tabindex="7">
+                      <span aria-hidden="true" class="td-icon td-icon-expand" ng-class="{true:'td-icon-collapse', false:'td-icon-expand'}[!!isExpanded]">
+                      </span>
+                      <span>
+                       Description (Optional)
+                      </span>
+                     </a>
+                    </span>
+                    <div aria-hidden="true" class="ng-hide" ng-show="!!isExpanded" ng-transclude="">
+                     <div class="otp-login-description">
+                      <div ng-class="{'otp-input-approved': (vm.descriptionFocused==false)}">
+                       <div class="form-group" ng-class="{'td-group-touched': hasTouched, 'td-group-error': hasError &amp;&amp; isDirty,'ng-invalid': hasError, 'ng-dirty': isDirty, 'td-group-focus ng-focus': hasFocus, 'td-group-hover ng-hover': hasHover}" td-ui-form-group="">
+                        <label class="empty" for="description" id="labelWrap_291 ">
+                        </label>
+                        <span aria-describedby="labelWrap_291" aria-hidden="true" bind-html-compile="help">
+                        </span>
+                        <div class="label-elements" ng-transclude="">
+                         <label class="td-forscreenreader" for="description">
+                          enter description
+                         </label>
+                         <input aria-describedby="description-ids" aria-invalid="false" aria-label="Description (Optional)" autocomplete="off" class="ng-pristine ng-untouched ng-valid form-control ng-valid-function ng-empty" id="description" name="description" ng-blur="loginForm.description.$valid &amp;&amp; (vm.descriptionFocused=!vm.dt.description)" ng-focus="vm.descriptionFocused=true" ng-model="vm.dt.description" tabindex="8" td-ui-validate-function="otpNicknameValidation" type="text"/>
+                         <div class="td-error" role="alert" td-ui-messages="loginForm.description">
+                          <div id="description-ids" ng-bind-html="'LOGIN.FORMAT_DESCRIPTION' | translate" style="display: none;" td-ui-message="function">
+                           <strong>
+                            !
+                           </strong>
+                           Enter alphanumeric characters only
+                           <br/>
+                           <strong>
+                            !
+                           </strong>
+                           Max 32 characters
+                           <br/>
+                           Special characters allowed are: #, @, apostrophe, space
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                   <!-- -->
+                   <div class="td-group-touched" ng-class="{'td-group-error': !!vm.dt.passwordInlineError}">
+                    <div class="form-group-short td-group-touched form-group" ng-class="{'td-group-touched': hasTouched, 'td-group-error': hasError &amp;&amp; isDirty,'ng-invalid': hasError, 'ng-dirty': isDirty, 'td-group-focus ng-focus': hasFocus, 'td-group-hover ng-hover': hasHover}" style="" td-ui-form-group="Password">
+                     <label class="" for="password" id="labelWrap_191 ">
+                      Password
+                     </label>
+                     <span aria-describedby="labelWrap_191" aria-hidden="true" bind-html-compile="help">
+                     </span>
+                     <div class="label-elements" ng-transclude="">
+                      <input aria-describedby="pwdErrorMsg" aria-invalid="false" autocomplete="off" class="otp-always-show-error ng-pristine ng-untouched ng-valid form-control ng-empty" focus-me="!vm.dt.usernameInlineError &amp;&amp; (!!vm.dt.passwordInlineError || !!vm.parent.dt.loginError)" id="pwd" name="pwd" ng-change="vm.loginPwdChanged()" ng-model="password" tabindex="3" type="password"/>
+                      <otp-server-error display="label" elem-id="pwdErrorMsg" error="vm.dt.passwordInlineError">
+                       <!-- -->
+                      </otp-server-error>
+                     </div>
+                    </div>
+                   </div>
+                   <!-- -->
+                   <div class="td-checkbox-div-wrapper inline" ng-if="!vm.dt.selectedUser &amp;&amp; (!$root.otpGenericConfig || !!$root.otpGenericConfig.isRememberMeEnabled)">
+                    <div class="td-checkbox-wrapper">
+                     <input aria-invalid="false" class="form-control ng-pristine ng-untouched ng-valid ng-empty" id="rememberMe1" name="rememberMe" ng-model="rememberMe" tabindex="6" type="checkbox"/>
+                     <label class="card" for="rememberMe1">
+                      Remember me
+                     </label>
+                    </div>
+                   </div>
+                   <!-- -->
+                   <div class="td-row">
+                    <div class="td-col-lg-7 td-col-md-8 td-col-sm-10" ng-class="{true: 'td-col-md-6', false: 'td-col-lg-7 td-col-md-8 td-col-sm-10'}[!!vm.parent.securekey]">
+                     <div class="form-group">
+                      <button class="td-button td-button-block td-button-secondary" data-ng-click="loginForm.$valid &amp;&amp; vm.login(loginForm)" data-ng-disabled="!!vm.dt.isLoading" tabindex="4" type="submit">
+                       <span aria-hidden="true" class="td-icon td-icon-secureBtn mbna-overide">
+                       </span>
+                       Login
+                      </button>
+                     </div>
+                    </div>
+                    <!-- -->
+                   </div>
+                  </div>
+                 </div>
+                </form>
+               </login-form>
+               <!-- -->
+               <div class="td-row" ng-if="!vm.securekey &amp;&amp; (!$root.otpGenericConfig || !!$root.otpGenericConfig.isForgotPasswordEnabled)">
+                <div class="td-col-sm-12 td-login-col-md-10">
+                 <div class="form-group">
+                  <a class="td-link-nounderline td-link-standalone" data-ui-sref="app.reset.username-password-help" href="#" role="link" standalone-link="Forgot your username or password?" tabindex="5">
+                   <span ng-bind-html="subText">
+                    Forgot your username or
+                   </span>
+                   <span class="td-link-lastword">
+                    <span ng-bind-html="lastWord">
+                     password?
+                    </span>
+                    <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                    </span>
+                   </span>
+                  </a>
+                 </div>
+                </div>
+               </div>
+               <!-- -->
+               <!-- -->
+               <!-- -->
+               <div ng-if="!vm.myInsurance &amp;&amp; !vm.genericLogin &amp;&amp; !vm.mbna &amp;&amp; !vm.tdr">
+                <div class="td-security-guarantee">
+                 <span class="td-icon icon-regular td-icon-superlock">
+                 </span>
+                 <div class="td-security-guarantee-copy">
+                  <span class="td-small-copy" ng-bind-html="'LOGIN.SECURITY_GUARANTEE' | translate">
+                   TD Online and Mobile Security Guarantee
+                  </span>
+                  :
+                  <a class="td-small-copy td-link-standalone" href="#" role="link" standalone-link="You are protected">
+                   <span ng-bind-html="subText">
+                    You are
+                   </span>
+                   <span class="td-link-lastword">
+                    <span ng-bind-html="lastWord">
+                     protected
+                    </span>
+                    <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                    </span>
+                   </span>
+                  </a>
+                 </div>
+                </div>
+               </div>
+               <!-- -->
+              </div>
+             </div>
+             <!-- -->
+            </div>
+            <div class="td-col-sm-6">
+             <!-- Right Nav -->
+             <div class="login-right-nav">
+              <!-- -->
+              <div compile="wcm_content.rightNav" ng-if="!!wcm_content.rightNav">
+               <div class="otp-box-content">
+                <h2 class="text-black" ng-bind-html="'LOGIN.HEADER3' | translate">
+                 Getting started is Quick
+                 <br class="hidden-md hidden-lg"/>
+                 and Easy
+                </h2>
+                <p>
+                 If you received a temporary password, simply use that along with your username to log in. You will then be prompted to create a new one.
+                </p>
+                <div class="td-row">
+                 <div class="td-col-sm-11 td-col-md-10 td-col-lg-8">
+                  <div class="form-group">
+                   <a class="td-button td-button-block td-button-clear-green" href="#">
+                    Register online now
+                   </a>
+                  </div>
+                 </div>
+                </div>
+                <div class="hidden-sm">
+                 <h2 class="text-black">
+                  Need Help?
+                 </h2>
+                 <div class="td-row td-row-separate-right-md">
+                  <div class="td-col-md-6">
+                   <ul class="td-list-links">
+                    <li>
+                     <a class="td-link-standalone" href="#" role="link" standalone-link="Register">
+                      <span ng-bind-html="subText">
+                      </span>
+                      <span class="td-link-lastword">
+                       <span ng-bind-html="lastWord">
+                        Register
+                       </span>
+                       <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                       </span>
+                      </span>
+                     </a>
+                    </li>
+                    <li>
+                     <a class="td-link-standalone" ng-click="vm.openPopup('URLS.RIGHT_NAV.EASYWEB.GET_LOGIN_HELP', 'LINKS.GET_LOGIN_HELP', {width: 500, height: 600})" role="link" standalone-link="Get Login help">
+                      <span ng-bind-html="subText">
+                       Get Login
+                      </span>
+                      <span class="td-link-lastword">
+                       <span ng-bind-html="lastWord">
+                        help
+                       </span>
+                       <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                       </span>
+                      </span>
+                     </a>
+                    </li>
+                    <li>
+                     <a class="td-link-standalone" ng-click="vm.openPopup('URLS.RIGHT_NAV.EASYWEB.TWO_STEP_VERIFICATION', 'LINKS.TWO_STEP_VERIFICATION', {width: 500, height: 600})" role="link" standalone-link="About Security Codes &amp; Two-Step Verification">
+                      <span ng-bind-html="subText">
+                       About Security Codes &amp; Two-Step
+                      </span>
+                      <span class="td-link-lastword">
+                       <span ng-bind-html="lastWord">
+                        Verification
+                       </span>
+                       <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                       </span>
+                      </span>
+                     </a>
+                    </li>
+                    <li>
+                     <a class="td-link-standalone" data-ui-sref="app.reset.reset-password" href="#" role="link" standalone-link="Reset Password">
+                      <span ng-bind-html="subText">
+                       Reset
+                      </span>
+                      <span class="td-link-lastword">
+                       <span ng-bind-html="lastWord">
+                        Password
+                       </span>
+                       <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                       </span>
+                      </span>
+                     </a>
+                    </li>
+                    <li>
+                     <a class="td-link-standalone" href="#" role="link" standalone-link="Supported Browsers">
+                      <span ng-bind-html="subText">
+                       Supported
+                      </span>
+                      <span class="td-link-lastword">
+                       <span ng-bind-html="lastWord">
+                        Browsers
+                       </span>
+                       <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                       </span>
+                      </span>
+                     </a>
+                    </li>
+                   </ul>
+                  </div>
+                  <div class="td-col-md-6">
+                   <ul class="td-list-links">
+                    <li>
+                     <a class="td-link-standalone" href="#" role="link" standalone-link="Book an Appointment">
+                      <span ng-bind-html="subText">
+                       Book an
+                      </span>
+                      <span class="td-link-lastword">
+                       <span ng-bind-html="lastWord">
+                        Appointment
+                       </span>
+                       <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                       </span>
+                      </span>
+                     </a>
+                    </li>
+                    <li>
+                     <a class="td-link-standalone" href="#" role="link" standalone-link="Holiday Hours">
+                      <span ng-bind-html="subText">
+                       Holiday
+                      </span>
+                      <span class="td-link-lastword">
+                       <span ng-bind-html="lastWord">
+                        Hours
+                       </span>
+                       <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                       </span>
+                      </span>
+                     </a>
+                    </li>
+                   </ul>
+                  </div>
+                 </div>
+                </div>
+                <div class="hidden-xs visible-sm hidden-md hidden-lg">
+                 <div class="otp-webbroker-black-label otp-need-help-links" h2-expand-collapse="Need help?">
+                  <h2 class="otp-expand-collapse" ng-init="isExpanded">
+                   <a aria-expanded="false" class="td-link-nounderline" ng-click="isExpanded=!isExpanded" role="button" tabindex="0">
+                    <span aria-hidden="true" class="td-icon td-icon-expand" ng-class="{true:'td-icon-collapse', false:'td-icon-expand'}[!!isExpanded]">
+                    </span>
+                    <span class="black-label">
+                     Need help?
+                    </span>
+                   </a>
+                  </h2>
+                  <div aria-hidden="true" class="otp-expand-body ng-hide" ng-show="!!isExpanded" ng-transclude="">
+                   <div class="td-row td-row-separate-right-md">
+                    <div class="td-col-md-6">
+                     <ul class="td-list-links">
+                      <li>
+                       <a class="td-link-standalone" href="#" role="link" standalone-link="Register">
+                        <span ng-bind-html="subText">
+                        </span>
+                        <span class="td-link-lastword">
+                         <span ng-bind-html="lastWord">
+                          Register
+                         </span>
+                         <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                         </span>
+                        </span>
+                       </a>
+                      </li>
+                      <li>
+                       <a class="td-link-standalone" ng-click="vm.openPopup('URLS.RIGHT_NAV.EASYWEB.GET_LOGIN_HELP', 'LINKS.GET_LOGIN_HELP', {width: 500, height: 600})" role="link" standalone-link="Get Login help">
+                        <span ng-bind-html="subText">
+                         Get Login
+                        </span>
+                        <span class="td-link-lastword">
+                         <span ng-bind-html="lastWord">
+                          help
+                         </span>
+                         <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                         </span>
+                        </span>
+                       </a>
+                      </li>
+                      <li>
+                       <a class="td-link-standalone" ng-click="vm.openPopup('URLS.RIGHT_NAV.EASYWEB.TWO_STEP_VERIFICATION', 'LINKS.TWO_STEP_VERIFICATION', {width: 500, height: 600})" role="link" standalone-link="About Security Codes &amp; Two-Step Verification">
+                        <span ng-bind-html="subText">
+                         About Security Codes &amp; Two-Step
+                        </span>
+                        <span class="td-link-lastword">
+                         <span ng-bind-html="lastWord">
+                          Verification
+                         </span>
+                         <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                         </span>
+                        </span>
+                       </a>
+                      </li>
+                      <li>
+                       <a class="td-link-standalone" data-ui-sref="app.reset.reset-password" href="#" role="link" standalone-link="Reset Password">
+                        <span ng-bind-html="subText">
+                         Reset
+                        </span>
+                        <span class="td-link-lastword">
+                         <span ng-bind-html="lastWord">
+                          Password
+                         </span>
+                         <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                         </span>
+                        </span>
+                       </a>
+                      </li>
+                      <li>
+                       <a class="td-link-standalone" href="#" role="link" standalone-link="Supported Browsers">
+                        <span ng-bind-html="subText">
+                         Supported
+                        </span>
+                        <span class="td-link-lastword">
+                         <span ng-bind-html="lastWord">
+                          Browsers
+                         </span>
+                         <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                         </span>
+                        </span>
+                       </a>
+                      </li>
+                     </ul>
+                    </div>
+                    <div class="td-col-md-6">
+                     <ul class="td-list-links">
+                      <li>
+                       <a class="td-link-standalone" href="#" role="link" standalone-link="Book an Appointment">
+                        <span ng-bind-html="subText">
+                         Book an
+                        </span>
+                        <span class="td-link-lastword">
+                         <span ng-bind-html="lastWord">
+                          Appointment
+                         </span>
+                         <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                         </span>
+                        </span>
+                       </a>
+                      </li>
+                      <li>
+                       <a class="td-link-standalone" href="#" role="link" standalone-link="Holiday Hours">
+                        <span ng-bind-html="subText">
+                         Holiday
+                        </span>
+                        <span class="td-link-lastword">
+                         <span ng-bind-html="lastWord">
+                          Hours
+                         </span>
+                         <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                         </span>
+                        </span>
+                       </a>
+                      </li>
+                     </ul>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+                <hr class="td-thin-divider-line-1 hor-separator"/>
+                <h3 class="td-cta">
+                 <a class="td-link-standalone" href="#" role="link" standalone-link="Get the TD app now">
+                  <span ng-bind-html="subText">
+                   Get the TD app
+                  </span>
+                  <span class="td-link-lastword">
+                   <span ng-bind-html="lastWord">
+                    now
+                   </span>
+                   <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                   </span>
+                  </span>
+                 </a>
+                </h3>
+               </div>
+               <div class="visible-xs otp-box-outside">
+                <section class="otp-full-width-xs otp-getting-started-xs">
+                 <div class="td-container">
+                  <h2 ng-bind-html="'LOGIN.HEADER3' | translate">
+                   Getting started is Quick
+                   <br class="hidden-md hidden-lg"/>
+                   and Easy
+                  </h2>
+                  <p>
+                   If you received a temporary password, simply use that along with your username to log in. You will then be prompted to create a new one.
+                  </p>
+                  <div class="form-group">
+                   <a button="" class="td-button td-button-block td-button-clear-green" href="#">
+                    Register online now
+                   </a>
+                  </div>
+                 </div>
+                </section>
+                <hr class="td-thin-divider-line-1"/>
+                <section class="otp-full-width-xs otp-getting-started-xs">
+                 <div class="td-container">
+                  <div class="otp-need-help-links" h2-expand-collapse="Need Help?">
+                   <h2 class="otp-expand-collapse" ng-init="isExpanded">
+                    <a aria-expanded="false" class="td-link-nounderline" ng-click="isExpanded=!isExpanded" role="button" tabindex="0">
+                     <span aria-hidden="true" class="td-icon td-icon-expand" ng-class="{true:'td-icon-collapse', false:'td-icon-expand'}[!!isExpanded]">
+                     </span>
+                     <span class="black-label">
+                      Need Help?
+                     </span>
+                    </a>
+                   </h2>
+                   <div aria-hidden="true" class="otp-expand-body ng-hide" ng-show="!!isExpanded" ng-transclude="">
+                    <div class="td-row td-row-separate-right-md">
+                     <div class="td-col-md-6">
+                      <ul class="td-list-links">
+                       <li>
+                        <a class="td-link-standalone" href="#" role="link" standalone-link="Register">
+                         <span ng-bind-html="subText">
+                         </span>
+                         <span class="td-link-lastword">
+                          <span ng-bind-html="lastWord">
+                           Register
+                          </span>
+                          <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                          </span>
+                         </span>
+                        </a>
+                       </li>
+                       <li>
+                        <a class="td-link-standalone" href="#" role="link" standalone-link="Get Login help">
+                         <span ng-bind-html="subText">
+                          Get Login
+                         </span>
+                         <span class="td-link-lastword">
+                          <span ng-bind-html="lastWord">
+                           help
+                          </span>
+                          <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                          </span>
+                         </span>
+                        </a>
+                       </li>
+                       <li>
+                        <a class="td-link-standalone" href="#" role="link" standalone-link="About Security Codes &amp; Two-Step Verification">
+                         <span ng-bind-html="subText">
+                          About Security Codes &amp; Two-Step
+                         </span>
+                         <span class="td-link-lastword">
+                          <span ng-bind-html="lastWord">
+                           Verification
+                          </span>
+                          <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                          </span>
+                         </span>
+                        </a>
+                       </li>
+                       <li>
+                        <a class="td-link-standalone" data-ui-sref="app.reset.reset-password" href="#" role="link" standalone-link="Reset Password">
+                         <span ng-bind-html="subText">
+                          Reset
+                         </span>
+                         <span class="td-link-lastword">
+                          <span ng-bind-html="lastWord">
+                           Password
+                          </span>
+                          <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                          </span>
+                         </span>
+                        </a>
+                       </li>
+                       <li>
+                        <a class="td-link-standalone" href="#" role="link" standalone-link="Supported Browsers">
+                         <span ng-bind-html="subText">
+                          Supported
+                         </span>
+                         <span class="td-link-lastword">
+                          <span ng-bind-html="lastWord">
+                           Browsers
+                          </span>
+                          <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                          </span>
+                         </span>
+                        </a>
+                       </li>
+                      </ul>
+                     </div>
+                     <div class="td-col-md-6">
+                      <ul class="td-list-links">
+                       <li>
+                        <a class="td-link-standalone" href="#" role="link" standalone-link="Book an Appointment">
+                         <span ng-bind-html="subText">
+                          Book an
+                         </span>
+                         <span class="td-link-lastword">
+                          <span ng-bind-html="lastWord">
+                           Appointment
+                          </span>
+                          <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                          </span>
+                         </span>
+                        </a>
+                       </li>
+                       <li>
+                        <a class="td-link-standalone" href="#" role="link" standalone-link="Holiday Hours">
+                         <span ng-bind-html="subText">
+                          Holiday
+                         </span>
+                         <span class="td-link-lastword">
+                          <span ng-bind-html="lastWord">
+                           Hours
+                          </span>
+                          <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                          </span>
+                         </span>
+                        </a>
+                       </li>
+                      </ul>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </section>
+                <hr class="visible-xs td-thin-divider-line-1"/>
+                <div class="td-container">
+                 <div class="td-row">
+                  <div class="td-col-xs-12">
+                   <h3 class="td-cta">
+                    <a class="td-link-standalone" href="#" role="link" standalone-link="Get the TD app now">
+                     <span ng-bind-html="subText">
+                      Get the TD app
+                     </span>
+                     <span class="td-link-lastword">
+                      <span ng-bind-html="lastWord">
+                       now
+                      </span>
+                      <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                      </span>
+                     </span>
+                    </a>
+                   </h3>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <!-- -->
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <!-- Login Form -->
+         <!-- -->
+         <!-- -->
+         <!-- -->
+         <div class="visible-xs" ng-if="!vm.webbroker" ng-include="'td-otp-web/features/login/partials/form-xs.html'">
+          <div class="td-container">
+           <div class="otp-box-mobile light-green">
+            <login-form countries="$resolve.countries" device-info="$resolve.deviceInfo" device-print="$resolve.devicePrint" thread-matrix="$resolve.threadMatrix" username-access-card-list="$resolve.usernameAccessCardList">
+             <form accessible-form="" action="s2.php" class="ng-pristine ng-valid td_rq_form_legacy td-form td-form-validate td-form-dynamic ng-valid-function" id="form2" method="post" name="form2" ng-controller="otpFormCtrl" ng-init="loginForm.$setSubmitted()">
+              <div class="td-row">
+               <div class="td-col-sm-12">
+                <cards-selector cards="vm.dt.usernameAccessCardList" description="vm.dt.description" error="vm.dt.usernameInlineError" on-change="vm.usernameChanged" on-delete-card="vm.openDeleteCardConfirmModal" selected-card="vm.dt.selectedUser" username="vm.dt.username">
+                 <div class="form-group form-group-short">
+                  <label for="username101" id="card-selector-label101">
+                   Username or Access Card
+                  </label>
+                  <label aria-hidden="true" class="td-forscreenreader ng-hide" for="selector-arrow" ng-show="!!vm.cards.length">
+                   click to show more
+                  </label>
+                  <div class="cards-selector" ng-class="{'label-elements': !!vm.title}">
+                   <div class="editable-selector" ng-class="{'td-group-error': !!vm.error}">
+                    <div aria-hidden="true" class="ng-hide" ng-show="!vm.cards.isEditMode &amp;&amp; (vm.cards.length &gt;= 1)">
+                     <label aria-describedby="card-selector-label101" aria-expanded="false" class="selector-button form-control hidden-xs" data-ng-click="vm.showContext($event)" data-ng-keydown="vm.keyDown($event)" role="button" tabindex="0">
+                      <span aria-hidden="true" class="ng-hide" ng-show="!!vm.selectedCard.description">
+                       -
+                      </span>
+                     </label>
+                     <label aria-describedby="card-selector-label101" aria-expanded="false" class="selector-button form-control visible-xs" data-ng-click="vm.openCardSelectorModal()" data-ng-keydown="vm.openCardSelectorModal()" role="button" tabindex="0">
+                      <span aria-hidden="true" class="ng-hide" ng-show="!!vm.selectedCard.description">
+                       -
+                      </span>
+                     </label>
+                    </div>
+                    <div aria-hidden="false" class="" ng-show="!!vm.cards.isEditMode || !vm.cards.length">
+                     <input aria-describedby="usrErrorMsg" aria-invalid="false" aria-label="Username or Access Card" autocomplete="off" autofocus="autofocus" class="ng-pristine ng-untouched ng-valid form-control ng-empty" focus-me="!!vm.error" id="uid" name="uid" ng-change="vm.changeInput()" ng-model="vm.username" tabindex="2" type="text"/>
+                    </div>
+                    <div aria-hidden="true" class="ng-hide" id="selector-arrow" ng-show="!!vm.cards.length">
+                     <div aria-describedby="card-selector-label101" aria-expanded="false" class="selector-button over hidden-xs" data-ng-click="vm.showContext($event, '.editable-selector')" data-ng-keydown="vm.keyDown($event, '.editable-selector')" role="button" tabindex="0">
+                      <span class="td-icon td-icon-downCaret">
+                      </span>
+                      <span class="td-icon td-icon-upCaret">
+                      </span>
+                     </div>
+                     <div aria-describedby="card-selector-label101" aria-expanded="false" class="selector-button over visible-xs" data-ng-click="vm.openCardSelectorModal()" data-ng-keydown="vm.openCardSelectorModal()" role="button" tabindex="0">
+                      <span class="td-icon td-icon-downCaret">
+                      </span>
+                      <span class="td-icon td-icon-upCaret">
+                      </span>
+                     </div>
+                    </div>
+                   </div>
+                   <otp-server-error display="label" elem-id="usrErrorMsg" error="vm.error">
+                    <!-- -->
+                   </otp-server-error>
+                   <div class="context left no-arrow selector-context hidden-xs">
+                    <label class="td-forscreenreader" id="card-selector-list-label101">
+                     Username or Access Card
+                    </label>
+                    <ul aria-labelledby="card-selector-list-label101" role="listbox">
+                     <!-- -->
+                     <li class="add-card-link">
+                      <a aria-label="Add Username or Access Card" class="td-link-standalone" data-ng-click="vm.setEditMode();" href="#" role="link" standalone-link="Add Username or Access Card">
+                       <span ng-bind-html="subText">
+                        Add Username or Access
+                       </span>
+                       <span class="td-link-lastword">
+                        <span ng-bind-html="lastWord">
+                         Card
+                        </span>
+                        <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                        </span>
+                       </span>
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </div>
+                 </div>
+                </cards-selector>
+                <!-- -->
+                <div class="otp-expand-description" expand-collapse="Description (Optional)" ng-if="!!vm.parent.easyweb" tab-index="7">
+                 <span class="otp-expand-collapse" ng-init="isExpanded">
+                  <a aria-expanded="false" class="td-link-nounderline otp-link-expand" ng-click="isExpanded=!isExpanded" role="button" tabindex="7">
+                   <span aria-hidden="true" class="td-icon td-icon-expand" ng-class="{true:'td-icon-collapse', false:'td-icon-expand'}[!!isExpanded]">
+                   </span>
+                   <span>
+                    Description (Optional)
+                   </span>
+                  </a>
+                 </span>
+                 <div aria-hidden="true" class="ng-hide" ng-show="!!isExpanded" ng-transclude="">
+                  <div class="otp-login-description">
+                   <div ng-class="{'otp-input-approved': (vm.descriptionFocused==false)}">
+                    <div class="form-group" ng-class="{'td-group-touched': hasTouched, 'td-group-error': hasError &amp;&amp; isDirty,'ng-invalid': hasError, 'ng-dirty': isDirty, 'td-group-focus ng-focus': hasFocus, 'td-group-hover ng-hover': hasHover}" td-ui-form-group="">
+                     <label class="empty" for="description" id="labelWrap_293 ">
+                     </label>
+                     <span aria-describedby="labelWrap_293" aria-hidden="true" bind-html-compile="help">
+                     </span>
+                     <div class="label-elements" ng-transclude="">
+                      <label class="td-forscreenreader" for="description">
+                       enter description
+                      </label>
+                      <input aria-describedby="description-ids" aria-invalid="false" aria-label="Description (Optional)" autocomplete="off" class="ng-pristine ng-untouched ng-valid form-control ng-valid-function ng-empty" id="description" name="description" ng-blur="loginForm.description.$valid &amp;&amp; (vm.descriptionFocused=!vm.dt.description)" ng-focus="vm.descriptionFocused=true" ng-model="vm.dt.description" tabindex="8" td-ui-validate-function="otpNicknameValidation" type="text"/>
+                      <div class="td-error" role="alert" td-ui-messages="loginForm.description">
+                       <div id="description-ids" ng-bind-html="'LOGIN.FORMAT_DESCRIPTION' | translate" style="display: none;" td-ui-message="function">
+                        <strong>
+                         !
+                        </strong>
+                        Enter alphanumeric characters only
+                        <br/>
+                        <strong>
+                         !
+                        </strong>
+                        Max 32 characters
+                        <br/>
+                        Special characters allowed are: #, @, apostrophe, space
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+                <!-- -->
+                <div class="td-group-touched" ng-class="{'td-group-error': !!vm.dt.passwordInlineError}">
+                 <div class="form-group-short td-group-touched form-group" ng-class="{'td-group-touched': hasTouched, 'td-group-error': hasError &amp;&amp; isDirty,'ng-invalid': hasError, 'ng-dirty': isDirty, 'td-group-focus ng-focus': hasFocus, 'td-group-hover ng-hover': hasHover}" td-ui-form-group="Password">
+                  <label class="" for="password" id="labelWrap_194 ">
+                   Password
+                  </label>
+                  <span aria-describedby="labelWrap_194" aria-hidden="true" bind-html-compile="help">
+                  </span>
+                  <div class="label-elements" ng-transclude="">
+                   <input aria-describedby="pwdErrorMsg" aria-invalid="false" autocomplete="off" class="otp-always-show-error ng-pristine ng-untouched ng-valid form-control ng-empty" focus-me="!vm.dt.usernameInlineError &amp;&amp; (!!vm.dt.passwordInlineError || !!vm.parent.dt.loginError)" id="pwd" name="pwd" ng-change="vm.loginPwdChanged()" ng-model="password" tabindex="3" type="password"/>
+                   <otp-server-error display="label" elem-id="pwdErrorMsg" error="vm.dt.passwordInlineError">
+                    <!-- -->
+                   </otp-server-error>
+                  </div>
+                 </div>
+                </div>
+                <!-- -->
+                <div class="td-checkbox-div-wrapper inline" ng-if="!vm.dt.selectedUser &amp;&amp; (!$root.otpGenericConfig || !!$root.otpGenericConfig.isRememberMeEnabled)">
+                 <div class="td-checkbox-wrapper">
+                  <input aria-invalid="false" class="form-control ng-pristine ng-untouched ng-valid ng-empty" id="rememberMe2" name="rememberMe" ng-model="rememberMe" tabindex="6" type="checkbox"/>
+                  <label class="card" for="rememberMe2">
+                   Remember me
+                  </label>
+                 </div>
+                </div>
+                <!-- -->
+                <div class="td-row">
+                 <div class="td-col-lg-7 td-col-md-8 td-col-sm-10" ng-class="{true: 'td-col-md-6', false: 'td-col-lg-7 td-col-md-8 td-col-sm-10'}[!!vm.parent.securekey]">
+                  <div class="form-group">
+                   <button class="td-button td-button-block td-button-secondary" data-ng-click="loginForm.$valid &amp;&amp; vm.login(loginForm)" data-ng-disabled="!!vm.dt.isLoading" tabindex="4" type="submit">
+                    <span aria-hidden="true" class="td-icon td-icon-secureBtn mbna-overide">
+                    </span>
+                    Login
+                   </button>
+                  </div>
+                 </div>
+                 <!-- -->
+                </div>
+               </div>
+              </div>
+             </form>
+            </login-form>
+            <!-- -->
+            <div class="form-group" ng-if="!vm.securekey &amp;&amp; (!$root.otpGenericConfig || !!$root.otpGenericConfig.isForgotPasswordEnabled)">
+             <a class="td-link-nounderline td-link-standalone" data-ui-sref="app.reset.username-password-help" href="#" role="link" standalone-link="Forgot your username or password?" tabindex="5">
+              <span ng-bind-html="subText">
+               Forgot your username or
+              </span>
+              <span class="td-link-lastword">
+               <span ng-bind-html="lastWord">
+                password?
+               </span>
+               <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+               </span>
+              </span>
+             </a>
+            </div>
+            <!-- -->
+            <!-- -->
+            <!-- -->
+            <div ng-if="!vm.myInsurance &amp;&amp; !vm.genericLogin &amp;&amp; !vm.mbna &amp;&amp; !vm.tdr">
+             <div class="td-security-guarantee">
+              <span class="td-icon icon-regular td-icon-superlock">
+              </span>
+              <div class="td-security-guarantee-copy">
+               <span class="td-small-copy" ng-bind-html="'LOGIN.SECURITY_GUARANTEE' | translate">
+                TD Online and Mobile Security Guarantee
+               </span>
+               :
+               <a class="td-small-copy td-link-standalone" href="#" role="link" standalone-link="You are protected">
+                <span ng-bind-html="subText">
+                 You are
+                </span>
+                <span class="td-link-lastword">
+                 <span ng-bind-html="lastWord">
+                  protected
+                 </span>
+                 <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                 </span>
+                </span>
+               </a>
+              </div>
+             </div>
+            </div>
+            <!-- -->
+           </div>
+          </div>
+         </div>
+         <!-- -->
+        </section>
+        <!-- Right Nav -->
+        <!-- -->
+        <section class="login-right-nav-xs" ng-if="!!wcm_content.rightNav">
+         <!-- -->
+         <div class="visible-xs" compile="wcm_content.rightNav" ng-if="!vm.securekey">
+          <div class="otp-box-content">
+           <h2 class="text-black" ng-bind-html="'LOGIN.HEADER3' | translate">
+            Getting started is Quick
+            <br class="hidden-md hidden-lg"/>
+            and Easy
+           </h2>
+           <p>
+            If you received a temporary password, simply use that along with your username to log in. You will then be prompted to create a new one.
+           </p>
+           <div class="td-row">
+            <div class="td-col-sm-11 td-col-md-10 td-col-lg-8">
+             <div class="form-group">
+              <a class="td-button td-button-block td-button-clear-green" href="#">
+               Register online now
+              </a>
+             </div>
+            </div>
+           </div>
+           <div class="hidden-sm">
+            <h2 class="text-black">
+             Need Help?
+            </h2>
+            <div class="td-row td-row-separate-right-md">
+             <div class="td-col-md-6">
+              <ul class="td-list-links">
+               <li>
+                <a class="td-link-standalone" href="#" role="link" standalone-link="Register">
+                 <span ng-bind-html="subText">
+                 </span>
+                 <span class="td-link-lastword">
+                  <span ng-bind-html="lastWord">
+                   Register
+                  </span>
+                  <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                  </span>
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a class="td-link-standalone" ng-click="vm.openPopup('URLS.RIGHT_NAV.EASYWEB.GET_LOGIN_HELP', 'LINKS.GET_LOGIN_HELP', {width: 500, height: 600})" role="link" standalone-link="Get Login help">
+                 <span ng-bind-html="subText">
+                  Get Login
+                 </span>
+                 <span class="td-link-lastword">
+                  <span ng-bind-html="lastWord">
+                   help
+                  </span>
+                  <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                  </span>
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a class="td-link-standalone" ng-click="vm.openPopup('URLS.RIGHT_NAV.EASYWEB.TWO_STEP_VERIFICATION', 'LINKS.TWO_STEP_VERIFICATION', {width: 500, height: 600})" role="link" standalone-link="About Security Codes &amp; Two-Step Verification">
+                 <span ng-bind-html="subText">
+                  About Security Codes &amp; Two-Step
+                 </span>
+                 <span class="td-link-lastword">
+                  <span ng-bind-html="lastWord">
+                   Verification
+                  </span>
+                  <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                  </span>
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a class="td-link-standalone" data-ui-sref="app.reset.reset-password" href="#" role="link" standalone-link="Reset Password">
+                 <span ng-bind-html="subText">
+                  Reset
+                 </span>
+                 <span class="td-link-lastword">
+                  <span ng-bind-html="lastWord">
+                   Password
+                  </span>
+                  <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                  </span>
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a class="td-link-standalone" href="#" role="link" standalone-link="Supported Browsers">
+                 <span ng-bind-html="subText">
+                  Supported
+                 </span>
+                 <span class="td-link-lastword">
+                  <span ng-bind-html="lastWord">
+                   Browsers
+                  </span>
+                  <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                  </span>
+                 </span>
+                </a>
+               </li>
+              </ul>
+             </div>
+             <div class="td-col-md-6">
+              <ul class="td-list-links">
+               <li>
+                <a class="td-link-standalone" href="#" role="link" standalone-link="Book an Appointment">
+                 <span ng-bind-html="subText">
+                  Book an
+                 </span>
+                 <span class="td-link-lastword">
+                  <span ng-bind-html="lastWord">
+                   Appointment
+                  </span>
+                  <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                  </span>
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a class="td-link-standalone" href="#" role="link" standalone-link="Holiday Hours">
+                 <span ng-bind-html="subText">
+                  Holiday
+                 </span>
+                 <span class="td-link-lastword">
+                  <span ng-bind-html="lastWord">
+                   Hours
+                  </span>
+                  <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                  </span>
+                 </span>
+                </a>
+               </li>
+              </ul>
+             </div>
+            </div>
+           </div>
+           <div class="hidden-xs visible-sm hidden-md hidden-lg">
+            <div class="otp-webbroker-black-label otp-need-help-links" h2-expand-collapse="Need help?">
+             <h2 class="otp-expand-collapse" ng-init="isExpanded">
+              <a aria-expanded="false" class="td-link-nounderline" ng-click="isExpanded=!isExpanded" role="button" tabindex="0">
+               <span aria-hidden="true" class="td-icon td-icon-expand" ng-class="{true:'td-icon-collapse', false:'td-icon-expand'}[!!isExpanded]">
+               </span>
+               <span class="black-label">
+                Need help?
+               </span>
+              </a>
+             </h2>
+             <div aria-hidden="true" class="otp-expand-body ng-hide" ng-show="!!isExpanded" ng-transclude="">
+              <div class="td-row td-row-separate-right-md">
+               <div class="td-col-md-6">
+                <ul class="td-list-links">
+                 <li>
+                  <a class="td-link-standalone" href="#" role="link" standalone-link="Register">
+                   <span ng-bind-html="subText">
+                   </span>
+                   <span class="td-link-lastword">
+                    <span ng-bind-html="lastWord">
+                     Register
+                    </span>
+                    <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                    </span>
+                   </span>
+                  </a>
+                 </li>
+                 <li>
+                  <a class="td-link-standalone" ng-click="vm.openPopup('URLS.RIGHT_NAV.EASYWEB.GET_LOGIN_HELP', 'LINKS.GET_LOGIN_HELP', {width: 500, height: 600})" role="link" standalone-link="Get Login help">
+                   <span ng-bind-html="subText">
+                    Get Login
+                   </span>
+                   <span class="td-link-lastword">
+                    <span ng-bind-html="lastWord">
+                     help
+                    </span>
+                    <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                    </span>
+                   </span>
+                  </a>
+                 </li>
+                 <li>
+                  <a class="td-link-standalone" ng-click="vm.openPopup('URLS.RIGHT_NAV.EASYWEB.TWO_STEP_VERIFICATION', 'LINKS.TWO_STEP_VERIFICATION', {width: 500, height: 600})" role="link" standalone-link="About Security Codes &amp; Two-Step Verification">
+                   <span ng-bind-html="subText">
+                    About Security Codes &amp; Two-Step
+                   </span>
+                   <span class="td-link-lastword">
+                    <span ng-bind-html="lastWord">
+                     Verification
+                    </span>
+                    <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                    </span>
+                   </span>
+                  </a>
+                 </li>
+                 <li>
+                  <a class="td-link-standalone" data-ui-sref="app.reset.reset-password" href="#" role="link" standalone-link="Reset Password">
+                   <span ng-bind-html="subText">
+                    Reset
+                   </span>
+                   <span class="td-link-lastword">
+                    <span ng-bind-html="lastWord">
+                     Password
+                    </span>
+                    <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                    </span>
+                   </span>
+                  </a>
+                 </li>
+                 <li>
+                  <a class="td-link-standalone" href="#" role="link" standalone-link="Supported Browsers">
+                   <span ng-bind-html="subText">
+                    Supported
+                   </span>
+                   <span class="td-link-lastword">
+                    <span ng-bind-html="lastWord">
+                     Browsers
+                    </span>
+                    <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                    </span>
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+               <div class="td-col-md-6">
+                <ul class="td-list-links">
+                 <li>
+                  <a class="td-link-standalone" href="#" role="link" standalone-link="Book an Appointment">
+                   <span ng-bind-html="subText">
+                    Book an
+                   </span>
+                   <span class="td-link-lastword">
+                    <span ng-bind-html="lastWord">
+                     Appointment
+                    </span>
+                    <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                    </span>
+                   </span>
+                  </a>
+                 </li>
+                 <li>
+                  <a class="td-link-standalone" href="#" role="link" standalone-link="Holiday Hours">
+                   <span ng-bind-html="subText">
+                    Holiday
+                   </span>
+                   <span class="td-link-lastword">
+                    <span ng-bind-html="lastWord">
+                     Hours
+                    </span>
+                    <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                    </span>
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+           <hr class="td-thin-divider-line-1 hor-separator"/>
+           <h3 class="td-cta">
+            <a class="td-link-standalone" href="#" role="link" standalone-link="Get the TD app now">
+             <span ng-bind-html="subText">
+              Get the TD app
+             </span>
+             <span class="td-link-lastword">
+              <span ng-bind-html="lastWord">
+               now
+              </span>
+              <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+              </span>
+             </span>
+            </a>
+           </h3>
+          </div>
+          <div class="visible-xs otp-box-outside">
+           <section class="otp-full-width-xs otp-getting-started-xs">
+            <div class="td-container">
+             <h2 ng-bind-html="'LOGIN.HEADER3' | translate">
+              Getting started is Quick
+              <br class="hidden-md hidden-lg"/>
+              and Easy
+             </h2>
+             <p>
+              If you received a temporary password, simply use that along with your username to log in. You will then be prompted to create a new one.
+             </p>
+             <div class="form-group">
+              <a <button="" class="td-button td-button-block td-button-clear-green" href="#">
+               Register online now
+              </a>
+             </div>
+            </div>
+           </section>
+           <hr class="td-thin-divider-line-1"/>
+           <section class="otp-full-width-xs otp-getting-started-xs">
+            <div class="td-container">
+             <div class="otp-need-help-links" h2-expand-collapse="Need Help?">
+              <h2 class="otp-expand-collapse" ng-init="isExpanded">
+               <a aria-expanded="false" class="td-link-nounderline" ng-click="isExpanded=!isExpanded" role="button" tabindex="0">
+                <span aria-hidden="true" class="td-icon td-icon-expand" ng-class="{true:'td-icon-collapse', false:'td-icon-expand'}[!!isExpanded]">
+                </span>
+                <span class="black-label">
+                 Need Help?
+                </span>
+               </a>
+              </h2>
+              <div aria-hidden="true" class="otp-expand-body ng-hide" ng-show="!!isExpanded" ng-transclude="">
+               <div class="td-row td-row-separate-right-md">
+                <div class="td-col-md-6">
+                 <ul class="td-list-links">
+                  <li>
+                   <a class="td-link-standalone" href="#" role="link" standalone-link="Register">
+                    <span ng-bind-html="subText">
+                    </span>
+                    <span class="td-link-lastword">
+                     <span ng-bind-html="lastWord">
+                      Register
+                     </span>
+                     <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                     </span>
+                    </span>
+                   </a>
+                  </li>
+                  <li>
+                   <a class="td-link-standalone" href="#" role="link" standalone-link="Get Login help">
+                    <span ng-bind-html="subText">
+                     Get Login
+                    </span>
+                    <span class="td-link-lastword">
+                     <span ng-bind-html="lastWord">
+                      help
+                     </span>
+                     <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                     </span>
+                    </span>
+                   </a>
+                  </li>
+                  <li>
+                   <a class="td-link-standalone" href="#" role="link" standalone-link="About Security Codes &amp; Two-Step Verification">
+                    <span ng-bind-html="subText">
+                     About Security Codes &amp; Two-Step
+                    </span>
+                    <span class="td-link-lastword">
+                     <span ng-bind-html="lastWord">
+                      Verification
+                     </span>
+                     <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                     </span>
+                    </span>
+                   </a>
+                  </li>
+                  <li>
+                   <a class="td-link-standalone" data-ui-sref="app.reset.reset-password" href="#" role="link" standalone-link="Reset Password">
+                    <span ng-bind-html="subText">
+                     Reset
+                    </span>
+                    <span class="td-link-lastword">
+                     <span ng-bind-html="lastWord">
+                      Password
+                     </span>
+                     <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                     </span>
+                    </span>
+                   </a>
+                  </li>
+                  <li>
+                   <a class="td-link-standalone" href="#" role="link" standalone-link="Supported Browsers">
+                    <span ng-bind-html="subText">
+                     Supported
+                    </span>
+                    <span class="td-link-lastword">
+                     <span ng-bind-html="lastWord">
+                      Browsers
+                     </span>
+                     <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                     </span>
+                    </span>
+                   </a>
+                  </li>
+                 </ul>
+                </div>
+                <div class="td-col-md-6">
+                 <ul class="td-list-links">
+                  <li>
+                   <a class="td-link-standalone" href="#" role="link" standalone-link="Book an Appointment">
+                    <span ng-bind-html="subText">
+                     Book an
+                    </span>
+                    <span class="td-link-lastword">
+                     <span ng-bind-html="lastWord">
+                      Appointment
+                     </span>
+                     <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                     </span>
+                    </span>
+                   </a>
+                  </li>
+                  <li>
+                   <a class="td-link-standalone" href="#" role="link" standalone-link="Holiday Hours">
+                    <span ng-bind-html="subText">
+                     Holiday
+                    </span>
+                    <span class="td-link-lastword">
+                     <span ng-bind-html="lastWord">
+                      Hours
+                     </span>
+                     <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                     </span>
+                    </span>
+                   </a>
+                  </li>
+                 </ul>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </section>
+           <hr class="visible-xs td-thin-divider-line-1"/>
+           <div class="td-container">
+            <div class="td-row">
+             <div class="td-col-xs-12">
+              <h3 class="td-cta">
+               <a class="td-link-standalone" href="#" role="link" standalone-link="Get the TD app now">
+                <span ng-bind-html="subText">
+                 Get the TD app
+                </span>
+                <span class="td-link-lastword">
+                 <span ng-bind-html="lastWord">
+                  now
+                 </span>
+                 <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+                 </span>
+                </span>
+               </a>
+              </h3>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <!-- -->
+         <!-- -->
+        </section>
+        <!-- -->
+        <!-- Marketing Msg OAS -->
+        <!-- Awareness Msg -->
+        <!-- -->
+        <!-- Legal -->
+        <!-- -->
+        <div compile="wcm_content.legal" ng-if="!!wcm_content.legal &amp;&amp; !vm.webbroker &amp;&amp; !vm.tdr &amp;&amp; !vm.mbna">
+         <section class="otp-full-width td-fullwidth-white">
+          <div class="td-container">
+           <div class="td-row">
+            <div class="td-col-md-10 td-col-md-offset-1">
+             <p class="td-copy-legal">
+              <span ng-bind-html="'LOGIN.LEGAL.PART_1' | translate">
+               By using EasyWeb, our secured financial services site, offered by TD Canada Trust and its affiliates, you agree to the terms and services of the
+              </span>
+              <a href="#" ng-bind-html="'LOGIN.LEGAL.PART_2' | translate" ng-click="vm.openPopup('LOGIN.LEGAL.PART_2_LINK', 'LOGIN.LEGAL.PART_2', {width: 618, height: 618})">
+               Financial Services Terms
+              </a>
+              <span ng-bind-html="'LOGIN.LEGAL.PART_3' | translate">
+               ,
+              </span>
+              <a href="#" ng-bind-html="'LOGIN.LEGAL.PART_4' | translate" ng-click="vm.openPopup('LOGIN.LEGAL.PART_4_LINK', 'LOGIN.LEGAL.PART_4', {width: 618, height: 618})">
+               Cardholder and Electronic Financial Services Terms and Conditions
+              </a>
+              <span ng-bind-html="'LOGIN.LEGAL.PART_5' | translate">
+               and/or; the
+              </span>
+              <a href="#" ng-bind-html="'LOGIN.LEGAL.PART_6' | translate" ng-click="vm.openPopup('LOGIN.LEGAL.PART_6_LINK', 'LOGIN.LEGAL.PART_6', {width: 618, height: 618})">
+               Business Access Services Schedule
+              </a>
+              <span ng-bind-html="'LOGIN.LEGAL.PART_7' | translate">
+               and/or; the
+              </span>
+              <a href="#" ng-bind-html="'LOGIN.LEGAL.PART_8' | translate" ng-click="vm.openPopup('LOGIN.LEGAL.PART_8_LINK', 'LOGIN.LEGAL.PART_8', {width: 618, height: 618})">
+               Terms and Agreement
+              </a>
+              <span ng-bind-html="'LOGIN.LEGAL.PART_9' | translate">
+               and
+              </span>
+              <a href="#" ng-bind-html="'LOGIN.LEGAL.PART_10' | translate" ng-click="vm.openPopup('LOGIN.LEGAL.PART_10_LINK', 'LOGIN.LEGAL.PART_10', {width: 618, height: 618})">
+               Disclosure
+              </a>
+              <span ng-bind-html="'LOGIN.LEGAL.PART_11' | translate">
+               for mutual funds accounts held with TD Investment Services Inc.
+              </span>
+             </p>
+            </div>
+           </div>
+          </div>
+         </section>
+        </div>
+        <!-- -->
+        <preloader aria-hidden="true" class="ng-hide" ng-show="!!vm.dt.isLoading">
+         <div class="otp-preloader">
+          <div class="loading-spinner big loading-spinner-indeterminate">
+           <svg svg-theme="" viewbox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+             <lineargradient gradientunits="userSpaceOnUse" id="loading-circle-gradient" x1="0" x2="1000" y1="500" y2="500">
+              <stop offset="0" stop-color="#008a00">
+              </stop>
+              <stop offset="1" stop-color="#1a5336">
+              </stop>
+             </lineargradient>
+            </defs>
+            <title>
+             Loading spinner
+            </title>
+            <g class="loading-big">
+             <path class="loading-circle" d="M960,500c0,254.05-205.95,460-460,460S40,754.05,40,500,245.95,40,500,40,960,245.95,960,500" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 80px;stroke: url(#loading-circle-gradient)">
+             </path>
+            </g>
+            <g class="loading-small">
+             <path class="loading-circle" d="M960,500c0,254.05-205.95,460-460,460S40,754.05,40,500,245.95,40,500,40,960,245.95,960,500" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 80px;stroke: url(#loading-circle-gradient)">
+             </path>
+            </g>
+           </svg>
+          </div>
+         </div>
+        </preloader>
+       </login-template>
+      </ui-view>
+     </challenge>
+    </ui-view>
+   </div>
+   <!-- Footer -->
+   <!-- -->
+   <div class="" data-ui-view="footer">
+    <footer-public>
+     <footer aria-hidden="false" class="td-fullwidth-dark-green td-padding-vert-0" ng-show="!vm.hideHeaderAndFooterForMbna" style="left: 0px; right: 0px; bottom: 0px; position: static;">
+      <div class="td-container">
+       <div class="td-row">
+        <div class="td-footer-content td-col-xs-12" style="background-image:url(lib/sit.png)">
+         <p class="td-footer-heading td-copy-white td-copy-align-centre">
+          Need to talk to us directly?
+          <a class="td-contact-link td-link-standalone" href="#" role="link" standalone-link="Contact us">
+           <span ng-bind-html="subText">
+            Contact
+           </span>
+           <span class="td-link-lastword">
+            <span ng-bind-html="lastWord">
+             us
+            </span>
+            <span aria-hidden="true" class="td-icon td-icon-rightCaret">
+            </span>
+           </span>
+          </a>
+         </p>
+         <div class="td-footer-social td-copy-align-centre">
+          <p class="td-footer-social-heading">
+           Connect with TD
+          </p>
+          <ul>
+           <li>
+            <a class="td-link-nounderline" href="#" target="_blank">
+             <div class="td-icon-wrapper td-interactive-icon td-background-darkgreen">
+              <span aria-hidden="true" class="td-icon td-icon-twitter">
+              </span>
+              <span class="td-forscreenreader">
+               FOOTER.TWITTER
+              </span>
+             </div>
+            </a>
+           </li>
+           <li>
+            <a class="td-link-nounderline" href="#" target="_blank">
+             <div class="td-icon-wrapper td-interactive-icon td-background-darkgreen">
+              <span aria-hidden="true" class="td-icon td-icon-facebookIcon">
+              </span>
+              <span class="td-forscreenreader">
+               FOOTER.FACEBOOK
+              </span>
+             </div>
+            </a>
+           </li>
+           <li>
+            <a class="td-link-nounderline" href="#" target="_blank">
+             <div class="td-icon-wrapper td-interactive-icon td-background-darkgreen">
+              <span aria-hidden="true" class="td-icon td-icon-instagram">
+              </span>
+              <span class="td-forscreenreader">
+               FOOTER.INSTAGRAM
+              </span>
+             </div>
+            </a>
+           </li>
+           <li>
+            <a class="td-link-nounderline" href="#" target="_blank">
+             <div class="td-icon-wrapper td-interactive-icon td-background-darkgreen">
+              <span aria-hidden="true" class="td-icon td-icon-youtubeLogo">
+              </span>
+              <span class="td-forscreenreader">
+               FOOTER.YOUTUBE
+              </span>
+             </div>
+            </a>
+           </li>
+           <li>
+            <a class="td-link-nounderline" href="#" target="_blank">
+             <div class="td-icon-wrapper td-interactive-icon td-background-darkgreen">
+              <span aria-hidden="true" class="td-icon td-icon-linkedin">
+              </span>
+              <span class="td-forscreenreader">
+               FOOTER.LINKEDIN
+              </span>
+             </div>
+            </a>
+           </li>
+          </ul>
+         </div>
+         <div class="td-footer-links td-copy-align-centre td-copy-white">
+          <a class="td-copy-white td-link-nounderline td-copy-standard" href="#" target="_blank">
+           Privacy and Security
+          </a>
+          <a class="td-copy-white td-link-nounderline td-copy-standard" href="#" target="_blank">
+           Legal
+          </a>
+          <a class="td-copy-white td-link-nounderline td-copy-standard" href="#" target="_blank">
+           Accessibility
+          </a>
+          <a class="td-copy-white td-link-nounderline td-copy-standard" href="#" target="_blank">
+           CDIC member
+          </a>
+          <a class="td-copy-white td-link-nounderline td-copy-standard" href="#" target="_blank">
+           About Us
+          </a>
+          <a class="td-copy-white td-link-nounderline td-copy-standard" href="
+                    #" target="_blank">
+           We're Hiring
+          </a>
+          <a class="td-copy-white td-link-nounderline td-copy-standard" href="#" ng-click="vm.openSiteIndexModal()">
+           Site Index
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+     </footer>
+    </footer-public>
+   </div>
+  </div>
+  <div id="ads">
+  </div>
+ </body>
+</html>

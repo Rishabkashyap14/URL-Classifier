@@ -1,0 +1,2172 @@
+<!-- URL =http://polkastarter.app/--><!-- w =('polkastarter.app', datetime.datetime(2021, 3, 9, 9, 2, 39), datetime.datetime(2022, 3, 9, 9, 2, 39))--><!DOCTYPE html>
+<html data-theme="light">
+ <head>
+  <meta charset="utf-8"/>
+  <style>
+   body {font-family: Arial, Helvetica, sans-serif;}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.mx-auto {
+  margin-right: auto !important;
+}
+
+.d-block {
+  display: block !important;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+    .col-sm-4 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+      }
+
+.col-sm-4{
+    position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* The Modal (background) */
+.modal {
+  
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  bottom: 0;
+  background-color: #fefefe;
+  width: 100%;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+}
+
+@media (min-width: 576px) {
+  .modal-content {
+    max-width: 500px;
+    margin:auto;
+  }
+}
+
+#myModal a{
+    color: #000;
+}
+.form-group {
+  margin-bottom: 1rem;
+}
+
+/* The Close Button */
+.close {
+  color: grey;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  color: #000;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px;
+  align-items: center;
+  color: white;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {bottom: -300px; opacity: 0} 
+  to {bottom: 0; opacity: 1}
+}
+
+@keyframes  slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes  fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+  </style>
+  <script>
+   window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"NRJS-92acee66eb327b12792","applicationID":"893523953","transactionName":"cFhWQxRdXl4BQBcWV1RSSxgOXV9X","queueTime":2,"applicationTime":43,"agent":""}
+  </script>
+  <script>
+   (window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-92acee66eb327b12792",applicationID:"893523953"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?u(e,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){e&&a&&e(n,r,i);for(var c=t(i),f=v(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[h[n]];return p&&p.push([b,n,r,c]),c}}function o(e,t){y[e]=v(e).concat(t)}function m(e,t){var n=y[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return y[e]||[]}function g(e){return p[e]=p[e]||i(n)}function w(e,t){s(e,function(e,n){t=t||"feature",h[n]=t,t in d||(d[t]=[])})}var y={},h={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:w,abort:c,aborted:!1};return b}function o(e){return u(e,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=e("gos"),s=e(6),d={},p={},l=t.exports=i();t.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(y,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var w=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1198.min.js"},h=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:w,features:{},xhrWrappable:h,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var x=0},{}],"wrap-function":[function(e,t,n){function r(e,t){function n(t,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],e)}c(n+"start",[o,a,f],s,u);try{return p=t.apply(a,o)}catch(m){throw c(n+"err",[o,a,m],s,u),m}finally{c(n+"end",[o,a,p],s,u)}}return a(t)?t:(n||(n=""),nrWrapper[p]=t,o(t,nrWrapper,e),nrWrapper)}function r(e,t,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<t.length;u++)f=t[u],c=e[f],a(c)||(e[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!m||t){var c=m;m=!0;try{e.emit(n,r,o,t,a)}catch(f){i([f,n,r,o],e)}m=c}}return e||(e=s),n.inPlace=r,n.flag=p,n}function i(e,t){t||(t=s);try{t.emit("internal-error",e)}catch(n){}}function o(e,t,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(e);return r.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(o){i([o],n)}for(var a in e)l.call(e,a)&&(t[a]=e[a]);return t}function a(e){return!(e&&e instanceof Function&&e.apply&&!e[p])}function c(e,t){var n=t(e);return n[p]=e,o(e,n,s),n}function f(e,t,n){var r=e[t];e[t]=c(r,n)}function u(){for(var e=arguments.length,t=new Array(e),n=0;n<e;++n)t[n]=arguments[n];return t}var s=e("ee"),d=e(7),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;t.exports=r,t.exports.wrapFunction=c,t.exports.wrapInPlace=f,t.exports.argsToArray=u},{}]},{},["loader"]);
+  </script>
+  <title>
+   Polkastarter - Protocol built for cross-chain token pools
+  </title>
+  <meta content="Polkastarter enables projects to raise capital on a decentralised, permissionless and interoperable environment based on Polkadot." name="description"/>
+  <meta content="Polkastarter - Protocol built for cross-chain token pools" property="og:title">
+   <meta content="website" property="og:type">
+    <meta content="https://polkastarter.com/" property="og:url"/>
+    <meta content="https://polkastarter.com/assets/metaOG-bd9b24b9ab823359c9ce2b52b3b8ae882d43b85ec0ec11925d4aa46e0b9aad6b.jpg" property="og:image"/>
+    <meta content="https://polkastarter.com/assets/metaOG-bd9b24b9ab823359c9ce2b52b3b8ae882d43b85ec0ec11925d4aa46e0b9aad6b.jpg" property="og:image:secure_url"/>
+    <meta content="Polkastarter - Protocol built for cross-chain token pools" property="og:site_name"/>
+    <meta content="Polkastarter enables projects to raise capital on a decentralised, permissionless and interoperable environment based on Polkadot." property="og:description"/>
+    <meta content="Polkastarter - Protocol built for cross-chain token pools" property="twitter:title"/>
+    <meta content="Polkastarter enables projects to raise capital on a decentralised, permissionless and interoperable environment based on Polkadot." property="twitter:description"/>
+    <meta content="https://polkastarter.com/assets/metaOG-bd9b24b9ab823359c9ce2b52b3b8ae882d43b85ec0ec11925d4aa46e0b9aad6b.jpg" property="twitter:image"/>
+    <meta content="summary_large_image" name="twitter:card"/>
+    <meta content="authenticity_token" name="csrf-param">
+     <meta content="sJXpsKavr9o6Lhpgo1E7HwvsMGaOgdmYoZNZcfWlhYq8zIxEP2DIzKveSmm90UaSG9BvLWXeg4ZN2Id2O+teyg==" name="csrf-token">
+      <meta content="false" name="kovan-mode"/>
+      <link href="https://polkastarter.app/assets/packs/media/images/logo/favicon-5c923122dec9213975049aa98a6781a4.svg" rel="shortcut icon" type="image/x-icon"/>
+      <script src="https://unpkg.com/feather-icons">
+      </script>
+      <link data-turbolinks-track="reload" href="https://polkastarter.app/assets/packs/css/stylesheets.css" media="screen" rel="stylesheet"/>
+      <meta content="width=device-width, initial-scale=1" name="viewport"/>
+      <link href="../cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.css" rel="stylesheet"/>
+      <script src="../cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.js" type="text/javascript">
+      </script>
+      <link href="../cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.min.css" rel="stylesheet" type="text/css"/>
+      <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-177231415-1">
+      </script>
+      <script>
+       window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177231415-1');
+      </script>
+      <script async="" src="cdn-cgi/bm/cv/669835187/api.js">
+      </script>
+     </meta>
+    </meta>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <nav class="navigation ">
+   <div class="container">
+    <div class="navigation__grid">
+     <a class="navigation__logo" data-turbolinks="false" href="index.html">
+      <svg class="navigation__logo-text" fill="none" height="183" viewbox="0 0 1476 183" width="1476" xmlns="http://www.w3.org/2000/svg">
+       <g clip-path="url(#clip0)">
+        <path d="M316.6 164.6C304.2 176.9 287.6 183 266.8 183C246 183 229.4 176.9 216.9 164.6C204.4 152.3 198.2 136.6 198.2 117.5C198.2 98.4002 204.4 82.7002 216.9 70.5002C229.4 58.3002 246 52.2002 266.8 52.2002C287.6 52.2002 304.2 58.3002 316.6 70.5002C329 82.7002 335.2 98.4002 335.2 117.5C335.2 136.6 329 152.3 316.6 164.6ZM266.8 149.7C275.8 149.7 283 146.7 288.3 140.7C293.6 134.7 296.2 127 296.2 117.5C296.2 107.9 293.6 100.2 288.3 94.2002C283 88.2002 275.8 85.2002 266.8 85.2002C257.6 85.2002 250.4 88.2002 245.2 94.2002C240 100.2 237.4 108 237.4 117.5C237.4 127.1 240 134.8 245.2 140.8C250.4 146.8 257.6 149.7 266.8 149.7Z" fill="black">
+        </path>
+        <path d="M353 179.2V0H392.2V179.2H353Z" fill="black">
+        </path>
+        <path d="M540.8 179.2H492.9L453.7 125.7V179.2H414.5V0H453.7V107.3L493.9 55.9H540L490.9 114.3L540.8 179.2Z" fill="black">
+        </path>
+        <path d="M596.6 182.5C578.7 182.5 564.5 176.4 554.1 164.3C543.7 152.2 538.5 136.6 538.5 117.5C538.5 98.6998 543.9 83.1998 554.6 70.8998C565.3 58.5998 579.5 52.4998 597.1 52.4998C605.2 52.3998 613.2 54.2998 620.4 58.0998C626.9 61.5998 632.3 66.8998 635.8 73.4998V55.7998H674.7V179.2H635.8V161.8C632.4 167.9 627.1 172.9 620.1 176.8C612.9 180.6 604.8 182.6 596.6 182.5ZM607.9 150C617.3 150 624.5 146.9 629.7 140.8C634.9 134.7 637.4 126.9 637.4 117.5C637.4 108.3 634.8 100.6 629.7 94.4998C624.6 88.3998 617.3 85.2998 607.9 85.2998C599 85.2998 591.9 88.2998 586.5 94.2998C581.1 100.3 578.4 108 578.4 117.5C578.4 127.1 581.1 134.9 586.5 140.9C591.9 147 599 150 607.9 150Z" fill="black">
+        </path>
+        <path d="M750.2 183C732.5 183 718.3 179.2 707.7 171.5C697.1 163.8 691.8 154 691.8 142.1H730.7C730.7 146.4 732.6 149.9 736.3 152.6C740.1 155.3 744.9 156.7 750.9 156.7C755.2 156.7 758.6 155.7 761.3 153.6C763.9 151.6 765.4 148.5 765.3 145.2C765.3 139.6 762.3 136.1 756.3 134.7L726.1 127C716 124.4 708.4 120.1 703.1 113.9C697.8 107.7 695.2 100.2 695.2 91.4002C695.2 79.8002 700 70.4002 709.5 63.1002C719 55.8002 731.9 52.2002 747.9 52.2002C765.6 52.2002 779.3 55.6002 788.7 62.4002C798.1 69.2002 803 78.7002 803 90.6002H764.3C764.5 86.7002 762.8 83.0002 759.8 80.6002C756.8 78.2002 752.7 77.0002 747.4 77.0002C743.1 77.0002 739.7 77.9002 737.2 79.8002C734.7 81.5002 733.3 84.3002 733.4 87.2002C733.4 92.7002 736.9 96.3002 743.9 98.2002L773.1 106.2C782.8 108.8 790.5 113 796 118.9C801.5 124.7 804.5 132.5 804.3 140.5C804.3 153.3 799.5 163.6 789.8 171.3C780.1 179 766.9 183 750.2 183Z" fill="black">
+        </path>
+        <path d="M878.4 148.7C882.9 148.8 887.5 148.5 892 147.9V179.1C883.4 180.5 874.6 181.2 865.9 181.1C862 181.1 858 180.9 854.1 180.3C850.1 179.6 846.3 178.5 842.6 176.8C838.6 175.2 835 172.7 832.1 169.5C829.4 166.4 827 162 825.1 156.2C823 149.6 822 142.7 822.2 135.7V0.700195H861.4V55.8002H889.3V86.8002H861.4V127.8C861.4 136.2 862.9 141.7 865.7 144.6C868.5 147.4 872.8 148.8 878.4 148.7Z" fill="black">
+        </path>
+        <path d="M963.2 182.5C945.3 182.5 931.1 176.4 920.7 164.3C910.3 152.2 905.1 136.6 905.1 117.5C905.1 98.7 910.5 83.2 921.2 70.9C932 58.6 946.1 52.5 963.7 52.5C971.8 52.3 979.8 54.3 987 58.1C993.5 61.6 998.9 66.9 1002.3 73.5V55.8H1041.2V179.2H1002.3V161.8C998.9 167.9 993.6 172.9 986.6 176.8C979.4 180.6 971.4 182.6 963.2 182.5ZM974.5 150C983.9 150 991.1 146.9 996.3 140.8C1001.4 134.7 1004 126.9 1004 117.5C1004 108.3 1001.4 100.6 996.3 94.5C991.2 88.4 983.9 85.3 974.5 85.3C965.6 85.3 958.5 88.3 953.1 94.3C947.7 100.3 945 108 945 117.5C945 127.1 947.7 134.9 953.1 140.9C958.4 147 965.6 150 974.5 150Z" fill="black">
+        </path>
+        <path d="M1059 179.2V55.7998H1098.2V81.5998C1100.2 72.6998 1104.5 65.8998 1110.9 60.9998C1117 56.1998 1124.5 53.6998 1132.3 53.6998C1135.7 53.5998 1139.2 53.9998 1142.5 54.6998V90.9998C1138.6 90.4998 1134.7 90.2998 1130.7 90.1998C1109 90.1998 1098.2 103.9 1098.2 131.4V179L1059 179.2Z" fill="black">
+        </path>
+        <path d="M1216.8 148.7C1221.3 148.8 1225.9 148.5 1230.4 147.9V179.1C1221.8 180.5 1213 181.2 1204.3 181.1C1200.4 181.1 1196.4 180.9 1192.5 180.3C1188.5 179.6 1184.7 178.5 1181 176.8C1177 175.2 1173.4 172.7 1170.5 169.5C1167.8 166.4 1165.4 162 1163.5 156.2C1161.4 149.6 1160.4 142.7 1160.6 135.7V0.700195H1199.8V55.8002H1227.7V86.8002H1199.8V127.8C1199.8 136.2 1201.2 141.7 1204.1 144.6C1207 147.5 1211.2 148.8 1216.8 148.7Z" fill="black">
+        </path>
+        <path d="M1374.5 111.1C1374.5 116.8 1374.1 122.6 1373.5 128.2H1282.4C1282.7 136.2 1285.5 142.4 1290.6 146.9C1295.7 151.4 1302.6 153.6 1311.3 153.5C1323.2 153.5 1330.9 149.7 1334.3 142H1372.7C1370.8 154.1 1364.2 164 1352.9 171.6C1341.6 179.2 1327.7 183 1311.3 183C1290.3 183 1273.8 177.2 1261.6 165.6C1249.5 154 1243.4 138 1243.4 117.5C1243.4 97.3998 1249.5 81.4998 1261.6 69.7998C1273.7 58.0998 1289.8 52.2998 1310 52.2998C1329.1 52.2998 1344.6 57.7998 1356.6 68.6998C1368.5 79.4998 1374.5 93.6998 1374.5 111.1ZM1282.4 103.9H1335.9C1335.7 95.6998 1333.4 89.3998 1329 84.9998C1324.6 80.5998 1318.2 78.3998 1309.8 78.3998C1301.4 78.3998 1294.8 80.6998 1290 85.3998C1285.1 89.9998 1282.5 96.1998 1282.4 103.9Z" fill="black">
+        </path>
+        <path d="M1392.3 179.2V55.7998H1431.5V81.5998C1433.5 72.6998 1437.8 65.8998 1444.2 60.9998C1450.3 56.1998 1457.8 53.6998 1465.6 53.6998C1469 53.5998 1472.5 53.9998 1475.8 54.6998V90.9998C1471.9 90.4998 1468 90.2998 1464 90.1998C1442.3 90.1998 1431.5 103.9 1431.5 131.4V179L1392.3 179.2Z" fill="black">
+        </path>
+        <path clip-rule="evenodd" d="M173.512 18.3047C161.434 6.10157 146.055 0 127.502 0H51.3566V47.9409V73.5206C67.9637 78.7951 79.9965 94.3384 79.9965 112.692C79.9965 131.046 67.9637 146.589 51.3566 151.864V179H92.7601V129.378H127.564C146.118 129.378 161.496 123.277 173.575 111.073C185.653 98.8703 191.755 83.4296 191.755 64.689C191.755 45.9485 185.653 30.5078 173.512 18.3047ZM141.697 86.9784C136.343 92.7687 129.494 95.695 121.089 95.695H92.6978V33.8077H121.089C129.432 33.8077 136.28 36.7339 141.697 42.5242C147.052 48.3144 149.729 55.7235 149.729 64.7513C149.791 73.7791 147.052 81.1882 141.697 86.9784Z" fill="black" fill-rule="evenodd">
+        </path>
+        <path class="circle" d="M30 143C46.5685 143 60 129.569 60 113C60 96.4315 46.5685 83 30 83C13.4315 83 0 96.4315 0 113C0 129.569 13.4315 143 30 143Z" fill="#FF3465">
+        </path>
+       </g>
+       <defs>
+        <clippath id="clip0">
+         <rect fill="white" height="183" width="1476">
+         </rect>
+        </clippath>
+       </defs>
+      </svg>
+     </a>
+     <div class="navigation__burger" id="myBurger" onclick="toggleNavbar()">
+      <svg viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+       <g class="nc-icon-wrapper" fill="#ffffff" stroke="#ffffff" stroke-linecap="square" stroke-linejoin="miter" stroke-width="2">
+        <line data-color="color-2" fill="none" stroke-miterlimit="10" x1="2" x2="30" y1="16" y2="16">
+        </line>
+        <line fill="none" stroke="#ffffff" stroke-miterlimit="10" x1="2" x2="30" y1="7" y2="7">
+        </line>
+        <line fill="none" stroke="#ffffff" stroke-miterlimit="10" x1="2" x2="30" y1="25" y2="25">
+        </line>
+       </g>
+      </svg>
+     </div>
+     <div class="navigation__menu" data-controller="navbar" id="myTopnav">
+      <a class="button button--secondary" data-turbolinks="false" href="pools.html">
+       ðŸ”¥ Pools
+      </a>
+      <a class="button button--secondary d-none" href="index.html">
+       ðŸ”¥Earn
+      </a>
+      <div id="app">
+       <wallet-component>
+       </wallet-component>
+      </div>
+      <a class="button button--primary button--icon-left d-none" href="https://docs.google.com/forms/d/1kd36BOS8AyKoZkI8HAq23y59Dz-1TdWt5wGDbismugo" id="newPoolButton" target="_blank">
+       <svg fill="none" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+        <path clip-rule="evenodd" d="M7.5 8.5V15H8.5V8.5H15V7.5H8.5V1H7.5V7.5H1V8.5H7.5Z" fill="white" fill-rule="evenodd">
+        </path>
+       </svg>
+       Create Pool
+      </a>
+      <div class="navbar__settings dropdown button__dropdown">
+       <a aria-expanded="false" aria-haspopup="true" class="button button--secondary" data-toggle="dropdown" href="#" id="dropdownMenuLink" role="button">
+        <svg fill="none" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+         <path clip-rule="evenodd" d="M12 9.64998C10.7021 9.64998 9.65001 10.7021 9.65001 12C9.65001 13.2978 10.7021 14.35 12 14.35C13.2979 14.35 14.35 13.2978 14.35 12C14.35 10.7021 13.2979 9.64998 12 9.64998ZM8.35001 12C8.35001 9.98414 9.98417 8.34998 12 8.34998C14.0158 8.34998 15.65 9.98414 15.65 12C15.65 14.0158 14.0158 15.65 12 15.65C9.98417 15.65 8.35001 14.0158 8.35001 12Z" fill="black" fill-rule="evenodd">
+         </path>
+         <path clip-rule="evenodd" d="M9.42621 0.349976H14.5738L15.0169 3.89371C15.9209 4.23251 16.7617 4.7205 17.5043 5.33733L20.802 3.94605L23.3758 8.40384L20.5273 10.5607C20.6079 11.0355 20.649 11.5165 20.65 11.9986L20 12L20.65 12.0013C20.649 12.4835 20.6079 12.9644 20.5273 13.4393L23.3758 15.5961L20.802 20.0539L17.5043 18.6626C16.7617 19.2794 15.9209 19.7674 15.0169 20.1062L14.5738 23.65H9.42621L8.98311 20.1062C8.07914 19.7674 7.23833 19.2794 6.49572 18.6626L3.19799 20.0539L0.624207 15.5961L3.47213 13.4397C3.30934 12.4868 3.30934 11.5131 3.47213 10.5602L0.624207 8.40384L3.19799 3.94605L6.49572 5.33733C7.23833 4.7205 8.07914 4.23251 8.98311 3.89371L9.42621 0.349976ZM19.35 12C19.3488 11.4709 19.2909 10.9434 19.1772 10.4266L19.0877 10.0201L21.6762 8.06011L20.25 5.5899L17.2513 6.85503L16.9437 6.5731C16.1619 5.8563 15.2339 5.31756 14.2237 4.994L13.8285 4.86741L13.4262 1.64998H10.5738L10.1715 4.86741L9.77627 4.994C8.76611 5.31756 7.83811 5.8563 7.05624 6.5731L6.74872 6.85503L3.75 5.5899L2.32378 8.06011L4.913 10.0206L4.82253 10.4279C4.59254 11.4633 4.59254 12.5366 4.82253 13.572L4.913 13.9793L2.32378 15.9398L3.75 18.4101L6.74872 17.1449L7.05624 17.4269C7.83811 18.1436 8.76611 18.6824 9.77627 19.006L10.1715 19.1325L10.5738 22.35H13.4262L13.8285 19.1325L14.2237 19.006C15.2339 18.6824 16.1619 18.1436 16.9437 17.4269L17.2513 17.1449L20.25 18.4101L21.6762 15.9398L19.0877 13.9799L19.1772 13.5733C19.2909 13.0565 19.3488 12.5291 19.35 12Z" fill="black" fill-rule="evenodd">
+         </path>
+        </svg>
+       </a>
+       <div aria-labelledby="dropdownMenuLink" class="dropdown-menu dropdown-menu-right">
+        <div class="navbar__settings--item">
+         <div class="navbar__settings--title">
+          Change theme
+         </div>
+         <div class="footer__theme">
+          <div class="footer__theme-switch" data-controller="dark-mode">
+           <button class="footer__theme-switch--left" data-action="click-&gt;dark-mode#switchDarkMode" data-theme="dark">
+            <svg fill="none" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+             <path clip-rule="evenodd" d="M20 17.7534C20.2785 17.7255 20.5448 17.8746 20.6666 18.1267C20.7775 18.3623 20.7411 18.6409 20.5733 18.8401C18.6926 20.8983 16.028 22.0635 13.24 22.0467C7.67294 22.0467 3.15997 17.5338 3.15997 11.9667C3.15997 6.3997 7.67294 1.88673 13.24 1.88673C14.3763 1.88534 15.5042 2.0816 16.5733 2.46673C16.8331 2.55738 17.0106 2.79836 17.02 3.07339C17.0424 3.36006 16.8784 3.62879 16.6133 3.74006C13.499 5.14733 11.7697 8.51921 12.4439 11.8695C13.1181 15.2198 16.0171 17.6603 19.4333 17.7534H20ZM4.5133 12.0001C4.5133 16.8307 8.42931 20.7467 13.26 20.7467C15.1151 20.7569 16.9226 20.1598 18.4066 19.0467C14.8701 18.5692 11.9878 15.9728 11.1449 12.5052C10.3019 9.03757 11.6706 5.40774 14.5933 3.36006C14.1527 3.28675 13.7066 3.25106 13.26 3.25339C8.42931 3.25339 4.5133 7.16941 4.5133 12.0001Z" fill="#171A23" fill-rule="evenodd">
+             </path>
+            </svg>
+           </button>
+           <button class="footer__theme-switch--right" data-action="click-&gt;dark-mode#switchDarkMode" data-theme="light">
+            <svg fill="none" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+             <path clip-rule="evenodd" d="M12 4.20675C12.3682 4.20675 12.6667 3.90827 12.6667 3.54008V1.27342C12.6667 0.905227 12.3682 0.60675 12 0.60675C11.6318 0.60675 11.3333 0.905227 11.3333 1.27342V3.54008C11.3333 3.90827 11.6318 4.20675 12 4.20675ZM5.78597 9.27507C6.85862 6.75451 9.34761 5.13159 12.0867 5.16675C15.7902 5.19609 18.7718 8.21647 18.7534 11.9201C18.7531 14.6594 17.0982 17.1272 14.564 18.1672C12.0298 19.2072 9.11839 18.6134 7.19396 16.6639C5.26952 14.7145 4.71333 11.7956 5.78597 9.27507ZM7.01727 14.0468C7.88317 16.0699 9.88637 17.3686 12.0867 17.3334C15.0513 17.3041 17.4349 14.8847 17.42 11.9201C17.4225 9.71946 16.0941 7.73581 14.0583 6.90012C12.0225 6.06443 9.68355 6.54261 8.13911 8.11022C6.59466 9.67783 6.15136 12.0237 7.01727 14.0468ZM11.3333 20.4601C11.3333 20.0919 11.6318 19.7934 12 19.7934C12.3682 19.7934 12.6667 20.0919 12.6667 20.4601V22.7267C12.6667 23.0949 12.3682 23.3934 12 23.3934C11.6318 23.3934 11.3333 23.0949 11.3333 22.7267V20.4601ZM5.54669 6.49342C5.67066 6.6061 5.8325 6.66799 6.00003 6.66675C6.17723 6.66778 6.34755 6.59821 6.47336 6.47342C6.59957 6.34824 6.67056 6.17784 6.67056 6.00009C6.67056 5.82233 6.59957 5.65193 6.47336 5.52675L4.88669 3.94675C4.62219 3.72024 4.2279 3.73547 3.98165 3.98171C3.7354 4.22796 3.72017 4.62225 3.94669 4.88675L5.54669 6.49342ZM17.8068 17.3335C18.0378 17.2716 18.2842 17.3376 18.4534 17.5068L20.0534 19.1134C20.3118 19.3734 20.3118 19.7934 20.0534 20.0534C19.9303 20.179 19.7625 20.2509 19.5867 20.2534C19.4085 20.2527 19.2381 20.1807 19.1133 20.0534L17.5067 18.4534C17.3376 18.2843 17.2715 18.0378 17.3334 17.8068C17.3953 17.5758 17.5758 17.3954 17.8068 17.3335ZM4.20669 12.0001C4.20669 11.6319 3.90821 11.3334 3.54002 11.3334H1.27336C0.905166 11.3334 0.606689 11.6319 0.606689 12.0001C0.606689 12.3683 0.905166 12.6668 1.27336 12.6668H3.54002C3.90821 12.6668 4.20669 12.3683 4.20669 12.0001ZM20.46 11.3334H22.7267C23.0949 11.3334 23.3933 11.6319 23.3933 12.0001C23.3933 12.3683 23.0949 12.6668 22.7267 12.6668H20.46C20.0918 12.6668 19.7933 12.3683 19.7933 12.0001C19.7933 11.6319 20.0918 11.3334 20.46 11.3334ZM5.54671 17.5067L3.94671 19.1134C3.75527 19.3033 3.69705 19.5898 3.79919 19.8393C3.90134 20.0889 4.14374 20.2523 4.41337 20.2534C4.59154 20.2527 4.76199 20.1807 4.88671 20.0534L6.49337 18.4534C6.75479 18.192 6.75479 17.7682 6.49337 17.5067C6.23196 17.2453 5.80812 17.2453 5.54671 17.5067ZM18.4733 6.47342C18.3475 6.59821 18.1772 6.66777 18 6.66675C17.8228 6.66777 17.6525 6.59821 17.5267 6.47342C17.4005 6.34824 17.3295 6.17784 17.3295 6.00008C17.3295 5.82232 17.4005 5.65193 17.5267 5.52675L19.1333 3.92675C19.3934 3.66827 19.8133 3.66827 20.0733 3.92675C20.3318 4.18677 20.3318 4.60672 20.0733 4.86675L18.4733 6.47342Z" fill="white" fill-rule="evenodd">
+             </path>
+            </svg>
+           </button>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </nav>
+  <script>
+   function toggleNavbar() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "navigation__menu") {
+      x.className += " open";
+    } else {
+      x.className = "navigation__menu";
+    }
+  }
+
+//   window.addEventListener('click', function(e) {
+//     var x = document.getElementById("myTopnav");
+//     var y = document.getElementById("myBurger");
+
+//     if (x.contains(e.target) || y.contains(e.target)) {} else {
+//       x.className = "navigation__menu";
+//     }
+//   });
+  </script>
+  <div class="hero">
+   <div class="container">
+    <div class="hero__content">
+     <h1 class="hero__title">
+      Decentralize the way your ideas
+      <span>
+       raise capital.
+      </span>
+     </h1>
+     <h4 class="hero__subtitle">
+      Be the first to join Polkastarter, a Protocol built for cross-chain token pools and auctions, enabling projects to raise capital on a decentralized and interoperable environment based on Polkadot.
+     </h4>
+     <div class="hero__actions">
+      <a class="button button--primary" data-turbolinks="false" href="pools.html">
+       View all Pools
+      </a>
+      <a class="button button--secondary" href="https://t.me/polkastarterbot" target="_blank">
+       Subscribe to upcoming pools
+      </a>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="page-wrapper bg--featured pb-5">
+   <div class="container">
+    <h2 class="h2 text--bold mb-4">
+     Upcoming Pools
+    </h2>
+    <div class="grid-3">
+     <a class="featured-card" href=" http://polkastarter.app/pool/niifi " target="_blank">
+      <div class="featured-card__head">
+       <div class="featured-card__img">
+        <img src="https://polkastarter.app/assets/packs/images/logo/1621317017Pexc1Bln_400x400.jpeg" style="max-width: 54px; max-height: 54px;"/>
+       </div>
+       <div class="featured-card__label">
+        <div class="label label--primary">
+         <svg fill="none" height="8" viewbox="0 0 8 8" width="8" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="4" cy="4" fill="#212121" r="4">
+          </circle>
+         </svg>
+         <span>
+          in 
+    2 days
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="featured-card__coin">
+       <h2 class="featured-card__coin--name mb-3">
+        NiiFi
+       </h2>
+       <p class="featured-card__title">
+        Total Raise
+       </p>
+       <h2 class="featured-card__ratio">
+        $200k
+       </h2>
+      </div>
+      <div class="featured-card__footer">
+       <div>
+        <p class="featured-card__title--small">
+         Min Allocation
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.participants">
+         0
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Max Allocation
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.minAllocation">
+         TBA
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Access
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.accessType">
+         POLS
+        </h3>
+       </div>
+      </div>
+     </a>
+     <a class="featured-card" href=" http://polkastarter.app/pool/drops " target="_blank">
+      <div class="featured-card__head">
+       <div class="featured-card__img">
+        <img src="https://polkastarter.app/assets/packs/images/logo/1621317913wWPl91FW_400x400.jpeg" style="max-width: 54px; max-height: 54px;"/>
+       </div>
+       <div class="featured-card__label">
+        <div class="label label--primary">
+         <svg fill="none" height="8" viewbox="0 0 8 8" width="8" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="4" cy="4" fill="#212121" r="4">
+          </circle>
+         </svg>
+         <span>
+          in 
+    3 days
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="featured-card__coin">
+       <h2 class="featured-card__coin--name mb-3">
+        Drops
+       </h2>
+       <p class="featured-card__title">
+        Total Raise
+       </p>
+       <h2 class="featured-card__ratio">
+        $200k
+       </h2>
+      </div>
+      <div class="featured-card__footer">
+       <div>
+        <p class="featured-card__title--small">
+         Min Allocation
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.participants">
+         0
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Max Allocation
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.minAllocation">
+         TBA
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Access
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.accessType">
+         POLS
+        </h3>
+       </div>
+      </div>
+     </a>
+     <a class="featured-card" href=" http://polkastarter.app/pool/paralink " target="_blank">
+      <div class="featured-card__head">
+       <div class="featured-card__img">
+        <img src="https://polkastarter.app/assets/packs/images/logo/1621319613U-vr4pqZ_400x400.png" style="max-width: 54px; max-height: 54px;"/>
+       </div>
+       <div class="featured-card__label">
+        <div class="label label--primary">
+         <svg fill="none" height="8" viewbox="0 0 8 8" width="8" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="4" cy="4" fill="#212121" r="4">
+          </circle>
+         </svg>
+         <span>
+          in 
+    6 days
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="featured-card__coin">
+       <h2 class="featured-card__coin--name mb-3">
+        Paralink
+       </h2>
+       <p class="featured-card__title">
+        Total Raise
+       </p>
+       <h2 class="featured-card__ratio">
+        $300k
+       </h2>
+      </div>
+      <div class="featured-card__footer">
+       <div>
+        <p class="featured-card__title--small">
+         Min Allocation
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.participants">
+         0
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Max Allocation
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.minAllocation">
+         TBA
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Access
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.accessType">
+         POLS
+        </h3>
+       </div>
+      </div>
+     </a>
+     <a class="featured-card" href=" http://polkastarter.app/pool/dotmoovs " target="_blank">
+      <div class="featured-card__head">
+       <div class="featured-card__img">
+        <img src="https://polkastarter.app/assets/packs/images/logo/1621331071h2kxobZZ_400x400.jpeg" style="max-width: 54px; max-height: 54px;"/>
+       </div>
+       <div class="featured-card__label">
+        <div class="label label--primary">
+         <svg fill="none" height="8" viewbox="0 0 8 8" width="8" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="4" cy="4" fill="#212121" r="4">
+          </circle>
+         </svg>
+         <span>
+          in 
+    7 days
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="featured-card__coin">
+       <h2 class="featured-card__coin--name mb-3">
+        dotmoovs
+       </h2>
+       <p class="featured-card__title">
+        Total Raise
+       </p>
+       <h2 class="featured-card__ratio">
+        $160K
+       </h2>
+      </div>
+      <div class="featured-card__footer">
+       <div>
+        <p class="featured-card__title--small">
+         Min Allocation
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.participants">
+         0
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Max Allocation
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.minAllocation">
+         TBA
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Access
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.accessType">
+         POLS
+        </h3>
+       </div>
+      </div>
+     </a>
+     <a class="featured-card" href=" http://polkastarter.app/pool/cere-network " target="_blank">
+      <div class="featured-card__head">
+       <div class="featured-card__img">
+        <img src="https://polkastarter.app/assets/packs/images/logo/16191014864ED074D4-F34C-4115-889B-B67759C08B99.png" style="max-width: 54px; max-height: 54px;"/>
+       </div>
+       <div class="featured-card__label">
+        <div class="label label--primary">
+         <svg fill="none" height="8" viewbox="0 0 8 8" width="8" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="4" cy="4" fill="#212121" r="4">
+          </circle>
+         </svg>
+         <span>
+          in 
+    8 days
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="featured-card__coin">
+       <h2 class="featured-card__coin--name mb-3">
+        Cere Network
+       </h2>
+       <p class="featured-card__title">
+        Total Raise
+       </p>
+       <h2 class="featured-card__ratio">
+        $500k
+       </h2>
+      </div>
+      <div class="featured-card__footer">
+       <div>
+        <p class="featured-card__title--small">
+         Min Allocation
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.participants">
+         0
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Max Allocation
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.minAllocation">
+         $1000
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Access
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.accessType">
+         Private
+        </h3>
+       </div>
+      </div>
+     </a>
+     <a class="featured-card" href=" http://polkastarter.app/pool/stratos " target="_blank">
+      <div class="featured-card__head">
+       <div class="featured-card__img">
+        <img src="https://polkastarter.app/assets/packs/images/logo/1621331578jA-zebSN_400x400.png" style="max-width: 54px; max-height: 54px;"/>
+       </div>
+       <div class="featured-card__label">
+        <div class="label label--primary">
+         <svg fill="none" height="8" viewbox="0 0 8 8" width="8" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="4" cy="4" fill="#212121" r="4">
+          </circle>
+         </svg>
+         <span>
+          in 
+    10 days
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="featured-card__coin">
+       <h2 class="featured-card__coin--name mb-3">
+        Stratos
+       </h2>
+       <p class="featured-card__title">
+        Total Raise
+       </p>
+       <h2 class="featured-card__ratio">
+        TBA
+       </h2>
+      </div>
+      <div class="featured-card__footer">
+       <div>
+        <p class="featured-card__title--small">
+         Min Allocation
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.participants">
+         0
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Max Allocation
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.minAllocation">
+         TBA
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Access
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.accessType">
+         POLS
+        </h3>
+       </div>
+      </div>
+     </a>
+    </div>
+    <div class="text-right mt-5">
+     <a class="button button--secondary button--icon-right" href="https://t.me/polkastarterbot" target="_blank">
+      Get Notified
+      <svg fill="none" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+       <path clip-rule="evenodd" d="M9.35731 8.02388L5 3.66657L5.61872 3.04785L10.2854 7.71452V8.33324L5.61872 12.9999L5 12.3812L9.35731 8.02388Z" fill="#212121" fill-rule="evenodd">
+       </path>
+      </svg>
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="page-wrapper bg--featured">
+   <div class="container">
+    <h2 class="h2 text--bold mb-4">
+     Featured Pools
+    </h2>
+    <div class="grid-3">
+     <a class="featured-card" data-controller="pool-partial" data-guid="unido-pols" data-layout="pools-featured" data-pool-contract="0xb27ADD743ab337C73A01f61d2e4B37B475B4F30A" data-pool-name="Unido POLS" data-pool-position="104" data-pool-token-symbol="UDO" data-turbolinks="false" href="pools/unido-pols.html" id="unido-pols">
+      <div class="featured-card__head">
+       <div class="featured-card__img">
+        <img src="https://polkastarter.app/assets/packs/images/1350942553462484999/crn7C_hX_400x400.jpg" style="max-width: 54px; max-height: 54px;"/>
+       </div>
+       <div class="featured-card__label">
+        <div class="label" data-target="pool-partial.statusProcessing">
+         <svg height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+          <title>
+           ripples
+          </title>
+          <g class="nc-icon-wrapper" fill="#727480">
+           <g class="nc-loop_ripples-16">
+            <circle cx="8" cy="8" fill="#727480" r="8" style="opacity:0.9427374999999983;" transform="translate(1.8290500000000067 1.8290500000000067) scale(0.7713687499999992)">
+            </circle>
+           </g>
+           <script>
+            !function(){function t(t){this.element=t,this.circle=this.element.getElementsByTagName("circle")[0],this.animationId,this.start=null,this.init()}if(!window.requestAnimationFrame){var i=null;window.requestAnimationFrame=function(t,n){var e=(new Date).getTime();i||(i=e);var a=Math.max(0,16-(e-i)),r=window.setTimeout(function(){t(e+a)},a);return i=e+a,r}}t.prototype.init=function(){var t=this;this.animationId=window.requestAnimationFrame(t.triggerAnimation.bind(t))},t.prototype.reset=function(){var t=this;window.cancelAnimationFrame(t.animationId)},t.prototype.triggerAnimation=function(t){var i=this;this.start||(this.start=t);var n=t-this.start,e=Math.min(n/800,1);800>n||(this.start=this.start+800);var a=.3+5*e/7;if(.3+e>1)(a=.8+2*(e-.7)/3);var r=8*(1-(a=Math.min(a,1))),o=8*(1-a),s=10*e/7;if(.3+e>1)(s=Math.max(1-10/3*(e-.7),0));this.circle.setAttribute("transform","translate("+r+" "+o+") scale("+a+")"),this.circle.setAttribute("style","opacity:"+s+";");if(document.documentElement.contains(this.element))window.requestAnimationFrame(i.triggerAnimation.bind(i))};var n=document.getElementsByClassName("nc-loop_ripples-16"),e=[];if(n)for(var a=0;n.length>a;a++)!function(i){e.push(new t(n[i]))}(a);document.addEventListener("visibilitychange",function(){"hidden"==document.visibilityState?e.forEach(function(t){t.reset()}):e.forEach(function(t){t.init()})})}();
+           </script>
+          </g>
+         </svg>
+        </div>
+        <div class="label d-none" data-target="pool-partial.statusBadge">
+         <svg fill="none" height="8" viewbox="0 0 8 8" width="8" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="4" cy="4" fill="#212121" r="4">
+          </circle>
+         </svg>
+         <span data-target="pool-partial.statusLabel">
+          Live
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="featured-card__coin">
+       <h2 class="featured-card__coin--name" data-target="pool-partial.name">
+       </h2>
+       <p class="featured-card__coin--iso" data-target="pool-partial.pair">
+       </p>
+       <p class="featured-card__title">
+        Ratio per 1 ETH
+       </p>
+       <h2 class="featured-card__ratio" data-target="pool-partial.swapRatio">
+       </h2>
+      </div>
+      <div class="featured-card__progress">
+       <p class="featured-card__title">
+        Progress
+       </p>
+       <div class="progress">
+        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar featured-card__step-1" data-target="pool-partial.progressBar" role="progressbar" style="width: 0%">
+        </div>
+       </div>
+       <div class="featured-card__progress-footer">
+        <div class="featured-card__percent" data-target="pool-partial.progressPercentage">
+         0%
+        </div>
+        <div class="featured-card__minimum" data-target="pool-partial.minSwapLevelLabel">
+         (Min. 0%)
+        </div>
+        <div class="featured-card__amount" data-target="pool-partial.swapLevelLabel">
+        </div>
+       </div>
+      </div>
+      <div class="featured-card__footer">
+       <div>
+        <p class="featured-card__title--small">
+         Participants
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.participants">
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Maximum
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.maxAllocation">
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Access
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.accessType">
+        </h3>
+       </div>
+      </div>
+     </a>
+     <a class="featured-card" data-controller="pool-partial" data-guid="unido-public-3631604b-c570-4348-a2b0-c6378f2d7b5a" data-layout="pools-featured" data-pool-contract="0xD806B3c4A0f5f12f34D54400a781c3E32cebF079" data-pool-name="Unido Public" data-pool-position="103" data-pool-token-symbol="UDO" data-turbolinks="false" href="pools/unido-public-3631604b-c570-4348-a2b0-c6378f2d7b5a.html" id="unido-public-3631604b-c570-4348-a2b0-c6378f2d7b5a">
+      <div class="featured-card__head">
+       <div class="featured-card__img">
+        <img src="https://polkastarter.app/assets/packs/images/1350942553462484999/crn7C_hX_400x400.jpg" style="max-width: 54px; max-height: 54px;"/>
+       </div>
+       <div class="featured-card__label">
+        <div class="label" data-target="pool-partial.statusProcessing">
+         <svg height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+          <title>
+           ripples
+          </title>
+          <g class="nc-icon-wrapper" fill="#727480">
+           <g class="nc-loop_ripples-16">
+            <circle cx="8" cy="8" fill="#727480" r="8" style="opacity:0.9427374999999983;" transform="translate(1.8290500000000067 1.8290500000000067) scale(0.7713687499999992)">
+            </circle>
+           </g>
+           <script>
+            !function(){function t(t){this.element=t,this.circle=this.element.getElementsByTagName("circle")[0],this.animationId,this.start=null,this.init()}if(!window.requestAnimationFrame){var i=null;window.requestAnimationFrame=function(t,n){var e=(new Date).getTime();i||(i=e);var a=Math.max(0,16-(e-i)),r=window.setTimeout(function(){t(e+a)},a);return i=e+a,r}}t.prototype.init=function(){var t=this;this.animationId=window.requestAnimationFrame(t.triggerAnimation.bind(t))},t.prototype.reset=function(){var t=this;window.cancelAnimationFrame(t.animationId)},t.prototype.triggerAnimation=function(t){var i=this;this.start||(this.start=t);var n=t-this.start,e=Math.min(n/800,1);800>n||(this.start=this.start+800);var a=.3+5*e/7;if(.3+e>1)(a=.8+2*(e-.7)/3);var r=8*(1-(a=Math.min(a,1))),o=8*(1-a),s=10*e/7;if(.3+e>1)(s=Math.max(1-10/3*(e-.7),0));this.circle.setAttribute("transform","translate("+r+" "+o+") scale("+a+")"),this.circle.setAttribute("style","opacity:"+s+";");if(document.documentElement.contains(this.element))window.requestAnimationFrame(i.triggerAnimation.bind(i))};var n=document.getElementsByClassName("nc-loop_ripples-16"),e=[];if(n)for(var a=0;n.length>a;a++)!function(i){e.push(new t(n[i]))}(a);document.addEventListener("visibilitychange",function(){"hidden"==document.visibilityState?e.forEach(function(t){t.reset()}):e.forEach(function(t){t.init()})})}();
+           </script>
+          </g>
+         </svg>
+        </div>
+        <div class="label d-none" data-target="pool-partial.statusBadge">
+         <svg fill="none" height="8" viewbox="0 0 8 8" width="8" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="4" cy="4" fill="#212121" r="4">
+          </circle>
+         </svg>
+         <span data-target="pool-partial.statusLabel">
+          Live
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="featured-card__coin">
+       <h2 class="featured-card__coin--name" data-target="pool-partial.name">
+       </h2>
+       <p class="featured-card__coin--iso" data-target="pool-partial.pair">
+       </p>
+       <p class="featured-card__title">
+        Ratio per 1 ETH
+       </p>
+       <h2 class="featured-card__ratio" data-target="pool-partial.swapRatio">
+       </h2>
+      </div>
+      <div class="featured-card__progress">
+       <p class="featured-card__title">
+        Progress
+       </p>
+       <div class="progress">
+        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar featured-card__step-1" data-target="pool-partial.progressBar" role="progressbar" style="width: 0%">
+        </div>
+       </div>
+       <div class="featured-card__progress-footer">
+        <div class="featured-card__percent" data-target="pool-partial.progressPercentage">
+         0%
+        </div>
+        <div class="featured-card__minimum" data-target="pool-partial.minSwapLevelLabel">
+         (Min. 0%)
+        </div>
+        <div class="featured-card__amount" data-target="pool-partial.swapLevelLabel">
+        </div>
+       </div>
+      </div>
+      <div class="featured-card__footer">
+       <div>
+        <p class="featured-card__title--small">
+         Participants
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.participants">
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Maximum
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.maxAllocation">
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Access
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.accessType">
+        </h3>
+       </div>
+      </div>
+     </a>
+     <a class="featured-card" data-controller="pool-partial" data-guid="apyswap-pols" data-layout="pools-featured" data-pool-contract="0x791eD56FffE3227b95B71eA4a2F4277810F1774b" data-pool-name="APYSwap POLS" data-pool-position="102" data-pool-token-symbol="APYS" data-turbolinks="false" href="pools/apyswap-pols.html" id="apyswap-pols">
+      <div class="featured-card__head">
+       <div class="featured-card__img">
+        <img src="https://polkastarter.app/assets/packs/images/1363873605621276681/971k1DeM_400x400.png" style="max-width: 54px; max-height: 54px;"/>
+       </div>
+       <div class="featured-card__label">
+        <div class="label" data-target="pool-partial.statusProcessing">
+         <svg height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+          <title>
+           ripples
+          </title>
+          <g class="nc-icon-wrapper" fill="#727480">
+           <g class="nc-loop_ripples-16">
+            <circle cx="8" cy="8" fill="#727480" r="8" style="opacity:0.9427374999999983;" transform="translate(1.8290500000000067 1.8290500000000067) scale(0.7713687499999992)">
+            </circle>
+           </g>
+           <script>
+            !function(){function t(t){this.element=t,this.circle=this.element.getElementsByTagName("circle")[0],this.animationId,this.start=null,this.init()}if(!window.requestAnimationFrame){var i=null;window.requestAnimationFrame=function(t,n){var e=(new Date).getTime();i||(i=e);var a=Math.max(0,16-(e-i)),r=window.setTimeout(function(){t(e+a)},a);return i=e+a,r}}t.prototype.init=function(){var t=this;this.animationId=window.requestAnimationFrame(t.triggerAnimation.bind(t))},t.prototype.reset=function(){var t=this;window.cancelAnimationFrame(t.animationId)},t.prototype.triggerAnimation=function(t){var i=this;this.start||(this.start=t);var n=t-this.start,e=Math.min(n/800,1);800>n||(this.start=this.start+800);var a=.3+5*e/7;if(.3+e>1)(a=.8+2*(e-.7)/3);var r=8*(1-(a=Math.min(a,1))),o=8*(1-a),s=10*e/7;if(.3+e>1)(s=Math.max(1-10/3*(e-.7),0));this.circle.setAttribute("transform","translate("+r+" "+o+") scale("+a+")"),this.circle.setAttribute("style","opacity:"+s+";");if(document.documentElement.contains(this.element))window.requestAnimationFrame(i.triggerAnimation.bind(i))};var n=document.getElementsByClassName("nc-loop_ripples-16"),e=[];if(n)for(var a=0;n.length>a;a++)!function(i){e.push(new t(n[i]))}(a);document.addEventListener("visibilitychange",function(){"hidden"==document.visibilityState?e.forEach(function(t){t.reset()}):e.forEach(function(t){t.init()})})}();
+           </script>
+          </g>
+         </svg>
+        </div>
+        <div class="label d-none" data-target="pool-partial.statusBadge">
+         <svg fill="none" height="8" viewbox="0 0 8 8" width="8" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="4" cy="4" fill="#212121" r="4">
+          </circle>
+         </svg>
+         <span data-target="pool-partial.statusLabel">
+          Live
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="featured-card__coin">
+       <h2 class="featured-card__coin--name" data-target="pool-partial.name">
+       </h2>
+       <p class="featured-card__coin--iso" data-target="pool-partial.pair">
+       </p>
+       <p class="featured-card__title">
+        Ratio per 1 ETH
+       </p>
+       <h2 class="featured-card__ratio" data-target="pool-partial.swapRatio">
+       </h2>
+      </div>
+      <div class="featured-card__progress">
+       <p class="featured-card__title">
+        Progress
+       </p>
+       <div class="progress">
+        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar featured-card__step-1" data-target="pool-partial.progressBar" role="progressbar" style="width: 0%">
+        </div>
+       </div>
+       <div class="featured-card__progress-footer">
+        <div class="featured-card__percent" data-target="pool-partial.progressPercentage">
+         0%
+        </div>
+        <div class="featured-card__minimum" data-target="pool-partial.minSwapLevelLabel">
+         (Min. 0%)
+        </div>
+        <div class="featured-card__amount" data-target="pool-partial.swapLevelLabel">
+        </div>
+       </div>
+      </div>
+      <div class="featured-card__footer">
+       <div>
+        <p class="featured-card__title--small">
+         Participants
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.participants">
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Maximum
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.maxAllocation">
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Access
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.accessType">
+        </h3>
+       </div>
+      </div>
+     </a>
+     <a class="featured-card" data-controller="pool-partial" data-guid="apyswap-public" data-layout="pools-featured" data-pool-contract="0x304Ea733Af6a74C0D5413F252Cb10964B236aD6c" data-pool-name="APYSwap Public" data-pool-position="101" data-pool-token-symbol="APYS" data-turbolinks="false" href="pools/apyswap-public.html" id="apyswap-public">
+      <div class="featured-card__head">
+       <div class="featured-card__img">
+        <img src="https://polkastarter.app/assets/packs/images/1363873605621276681/971k1DeM_400x400.png" style="max-width: 54px; max-height: 54px;"/>
+       </div>
+       <div class="featured-card__label">
+        <div class="label" data-target="pool-partial.statusProcessing">
+         <svg height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+          <title>
+           ripples
+          </title>
+          <g class="nc-icon-wrapper" fill="#727480">
+           <g class="nc-loop_ripples-16">
+            <circle cx="8" cy="8" fill="#727480" r="8" style="opacity:0.9427374999999983;" transform="translate(1.8290500000000067 1.8290500000000067) scale(0.7713687499999992)">
+            </circle>
+           </g>
+           <script>
+            !function(){function t(t){this.element=t,this.circle=this.element.getElementsByTagName("circle")[0],this.animationId,this.start=null,this.init()}if(!window.requestAnimationFrame){var i=null;window.requestAnimationFrame=function(t,n){var e=(new Date).getTime();i||(i=e);var a=Math.max(0,16-(e-i)),r=window.setTimeout(function(){t(e+a)},a);return i=e+a,r}}t.prototype.init=function(){var t=this;this.animationId=window.requestAnimationFrame(t.triggerAnimation.bind(t))},t.prototype.reset=function(){var t=this;window.cancelAnimationFrame(t.animationId)},t.prototype.triggerAnimation=function(t){var i=this;this.start||(this.start=t);var n=t-this.start,e=Math.min(n/800,1);800>n||(this.start=this.start+800);var a=.3+5*e/7;if(.3+e>1)(a=.8+2*(e-.7)/3);var r=8*(1-(a=Math.min(a,1))),o=8*(1-a),s=10*e/7;if(.3+e>1)(s=Math.max(1-10/3*(e-.7),0));this.circle.setAttribute("transform","translate("+r+" "+o+") scale("+a+")"),this.circle.setAttribute("style","opacity:"+s+";");if(document.documentElement.contains(this.element))window.requestAnimationFrame(i.triggerAnimation.bind(i))};var n=document.getElementsByClassName("nc-loop_ripples-16"),e=[];if(n)for(var a=0;n.length>a;a++)!function(i){e.push(new t(n[i]))}(a);document.addEventListener("visibilitychange",function(){"hidden"==document.visibilityState?e.forEach(function(t){t.reset()}):e.forEach(function(t){t.init()})})}();
+           </script>
+          </g>
+         </svg>
+        </div>
+        <div class="label d-none" data-target="pool-partial.statusBadge">
+         <svg fill="none" height="8" viewbox="0 0 8 8" width="8" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="4" cy="4" fill="#212121" r="4">
+          </circle>
+         </svg>
+         <span data-target="pool-partial.statusLabel">
+          Live
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="featured-card__coin">
+       <h2 class="featured-card__coin--name" data-target="pool-partial.name">
+       </h2>
+       <p class="featured-card__coin--iso" data-target="pool-partial.pair">
+       </p>
+       <p class="featured-card__title">
+        Ratio per 1 ETH
+       </p>
+       <h2 class="featured-card__ratio" data-target="pool-partial.swapRatio">
+       </h2>
+      </div>
+      <div class="featured-card__progress">
+       <p class="featured-card__title">
+        Progress
+       </p>
+       <div class="progress">
+        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar featured-card__step-1" data-target="pool-partial.progressBar" role="progressbar" style="width: 0%">
+        </div>
+       </div>
+       <div class="featured-card__progress-footer">
+        <div class="featured-card__percent" data-target="pool-partial.progressPercentage">
+         0%
+        </div>
+        <div class="featured-card__minimum" data-target="pool-partial.minSwapLevelLabel">
+         (Min. 0%)
+        </div>
+        <div class="featured-card__amount" data-target="pool-partial.swapLevelLabel">
+        </div>
+       </div>
+      </div>
+      <div class="featured-card__footer">
+       <div>
+        <p class="featured-card__title--small">
+         Participants
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.participants">
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Maximum
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.maxAllocation">
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Access
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.accessType">
+        </h3>
+       </div>
+      </div>
+     </a>
+     <a class="featured-card" data-controller="pool-partial" data-guid="kylin-pols" data-layout="pools-featured" data-pool-contract="0xbd198652a25887aae49f7c09c7f0969f9d76c294" data-pool-name="Kylin POLS" data-pool-position="68" data-pool-token-symbol="KYL" data-turbolinks="false" href="pools/kylin-pols.html" id="kylin-pols">
+      <div class="featured-card__head">
+       <div class="featured-card__img">
+        <img src="https://polkastarter.app/assets/packs/images/1306468325476585474/_jI2PUqr_400x400.jpg" style="max-width: 54px; max-height: 54px;"/>
+       </div>
+       <div class="featured-card__label">
+        <div class="label" data-target="pool-partial.statusProcessing">
+         <svg height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+          <title>
+           ripples
+          </title>
+          <g class="nc-icon-wrapper" fill="#727480">
+           <g class="nc-loop_ripples-16">
+            <circle cx="8" cy="8" fill="#727480" r="8" style="opacity:0.9427374999999983;" transform="translate(1.8290500000000067 1.8290500000000067) scale(0.7713687499999992)">
+            </circle>
+           </g>
+           <script>
+            !function(){function t(t){this.element=t,this.circle=this.element.getElementsByTagName("circle")[0],this.animationId,this.start=null,this.init()}if(!window.requestAnimationFrame){var i=null;window.requestAnimationFrame=function(t,n){var e=(new Date).getTime();i||(i=e);var a=Math.max(0,16-(e-i)),r=window.setTimeout(function(){t(e+a)},a);return i=e+a,r}}t.prototype.init=function(){var t=this;this.animationId=window.requestAnimationFrame(t.triggerAnimation.bind(t))},t.prototype.reset=function(){var t=this;window.cancelAnimationFrame(t.animationId)},t.prototype.triggerAnimation=function(t){var i=this;this.start||(this.start=t);var n=t-this.start,e=Math.min(n/800,1);800>n||(this.start=this.start+800);var a=.3+5*e/7;if(.3+e>1)(a=.8+2*(e-.7)/3);var r=8*(1-(a=Math.min(a,1))),o=8*(1-a),s=10*e/7;if(.3+e>1)(s=Math.max(1-10/3*(e-.7),0));this.circle.setAttribute("transform","translate("+r+" "+o+") scale("+a+")"),this.circle.setAttribute("style","opacity:"+s+";");if(document.documentElement.contains(this.element))window.requestAnimationFrame(i.triggerAnimation.bind(i))};var n=document.getElementsByClassName("nc-loop_ripples-16"),e=[];if(n)for(var a=0;n.length>a;a++)!function(i){e.push(new t(n[i]))}(a);document.addEventListener("visibilitychange",function(){"hidden"==document.visibilityState?e.forEach(function(t){t.reset()}):e.forEach(function(t){t.init()})})}();
+           </script>
+          </g>
+         </svg>
+        </div>
+        <div class="label d-none" data-target="pool-partial.statusBadge">
+         <svg fill="none" height="8" viewbox="0 0 8 8" width="8" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="4" cy="4" fill="#212121" r="4">
+          </circle>
+         </svg>
+         <span data-target="pool-partial.statusLabel">
+          Live
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="featured-card__coin">
+       <h2 class="featured-card__coin--name" data-target="pool-partial.name">
+       </h2>
+       <p class="featured-card__coin--iso" data-target="pool-partial.pair">
+       </p>
+       <p class="featured-card__title">
+        Ratio per 1 ETH
+       </p>
+       <h2 class="featured-card__ratio" data-target="pool-partial.swapRatio">
+       </h2>
+      </div>
+      <div class="featured-card__progress">
+       <p class="featured-card__title">
+        Progress
+       </p>
+       <div class="progress">
+        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar featured-card__step-1" data-target="pool-partial.progressBar" role="progressbar" style="width: 0%">
+        </div>
+       </div>
+       <div class="featured-card__progress-footer">
+        <div class="featured-card__percent" data-target="pool-partial.progressPercentage">
+         0%
+        </div>
+        <div class="featured-card__minimum" data-target="pool-partial.minSwapLevelLabel">
+         (Min. 0%)
+        </div>
+        <div class="featured-card__amount" data-target="pool-partial.swapLevelLabel">
+        </div>
+       </div>
+      </div>
+      <div class="featured-card__footer">
+       <div>
+        <p class="featured-card__title--small">
+         Participants
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.participants">
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Maximum
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.maxAllocation">
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Access
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.accessType">
+        </h3>
+       </div>
+      </div>
+     </a>
+     <a class="featured-card" data-controller="pool-partial" data-guid="antimatter-pols" data-layout="pools-featured" data-pool-contract="0xCDd77550f1Dc309ec871612133DD0d4f32Cdf61c" data-pool-name="AntiMatter POLS" data-pool-position="67" data-pool-token-symbol="MATTER" data-turbolinks="false" href="pools/antimatter-pols.html" id="antimatter-pols">
+      <div class="featured-card__head">
+       <div class="featured-card__img">
+        <img src="https://polkastarter.app/assets/packs/images/1361724047051141120/Vlkfr6fU_400x400.jpg" style="max-width: 54px; max-height: 54px;"/>
+       </div>
+       <div class="featured-card__label">
+        <div class="label" data-target="pool-partial.statusProcessing">
+         <svg height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+          <title>
+           ripples
+          </title>
+          <g class="nc-icon-wrapper" fill="#727480">
+           <g class="nc-loop_ripples-16">
+            <circle cx="8" cy="8" fill="#727480" r="8" style="opacity:0.9427374999999983;" transform="translate(1.8290500000000067 1.8290500000000067) scale(0.7713687499999992)">
+            </circle>
+           </g>
+           <script>
+            !function(){function t(t){this.element=t,this.circle=this.element.getElementsByTagName("circle")[0],this.animationId,this.start=null,this.init()}if(!window.requestAnimationFrame){var i=null;window.requestAnimationFrame=function(t,n){var e=(new Date).getTime();i||(i=e);var a=Math.max(0,16-(e-i)),r=window.setTimeout(function(){t(e+a)},a);return i=e+a,r}}t.prototype.init=function(){var t=this;this.animationId=window.requestAnimationFrame(t.triggerAnimation.bind(t))},t.prototype.reset=function(){var t=this;window.cancelAnimationFrame(t.animationId)},t.prototype.triggerAnimation=function(t){var i=this;this.start||(this.start=t);var n=t-this.start,e=Math.min(n/800,1);800>n||(this.start=this.start+800);var a=.3+5*e/7;if(.3+e>1)(a=.8+2*(e-.7)/3);var r=8*(1-(a=Math.min(a,1))),o=8*(1-a),s=10*e/7;if(.3+e>1)(s=Math.max(1-10/3*(e-.7),0));this.circle.setAttribute("transform","translate("+r+" "+o+") scale("+a+")"),this.circle.setAttribute("style","opacity:"+s+";");if(document.documentElement.contains(this.element))window.requestAnimationFrame(i.triggerAnimation.bind(i))};var n=document.getElementsByClassName("nc-loop_ripples-16"),e=[];if(n)for(var a=0;n.length>a;a++)!function(i){e.push(new t(n[i]))}(a);document.addEventListener("visibilitychange",function(){"hidden"==document.visibilityState?e.forEach(function(t){t.reset()}):e.forEach(function(t){t.init()})})}();
+           </script>
+          </g>
+         </svg>
+        </div>
+        <div class="label d-none" data-target="pool-partial.statusBadge">
+         <svg fill="none" height="8" viewbox="0 0 8 8" width="8" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="4" cy="4" fill="#212121" r="4">
+          </circle>
+         </svg>
+         <span data-target="pool-partial.statusLabel">
+          Live
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="featured-card__coin">
+       <h2 class="featured-card__coin--name" data-target="pool-partial.name">
+       </h2>
+       <p class="featured-card__coin--iso" data-target="pool-partial.pair">
+       </p>
+       <p class="featured-card__title">
+        Ratio per 1 ETH
+       </p>
+       <h2 class="featured-card__ratio" data-target="pool-partial.swapRatio">
+       </h2>
+      </div>
+      <div class="featured-card__progress">
+       <p class="featured-card__title">
+        Progress
+       </p>
+       <div class="progress">
+        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar featured-card__step-1" data-target="pool-partial.progressBar" role="progressbar" style="width: 0%">
+        </div>
+       </div>
+       <div class="featured-card__progress-footer">
+        <div class="featured-card__percent" data-target="pool-partial.progressPercentage">
+         0%
+        </div>
+        <div class="featured-card__minimum" data-target="pool-partial.minSwapLevelLabel">
+         (Min. 0%)
+        </div>
+        <div class="featured-card__amount" data-target="pool-partial.swapLevelLabel">
+        </div>
+       </div>
+      </div>
+      <div class="featured-card__footer">
+       <div>
+        <p class="featured-card__title--small">
+         Participants
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.participants">
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Maximum
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.maxAllocation">
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Access
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.accessType">
+        </h3>
+       </div>
+      </div>
+     </a>
+     <a class="featured-card" data-controller="pool-partial" data-guid="public-mint-pols" data-layout="pools-featured" data-pool-contract="0xa6815D24BC1a2Ff273e49D5cedbc558CF86fD828" data-pool-name="Public Mint POLS" data-pool-position="66" data-pool-token-symbol="MINT" data-turbolinks="false" href="pools/public-mint-pols.html" id="public-mint-pols">
+      <div class="featured-card__head">
+       <div class="featured-card__img">
+        <img src="https://polkastarter.app/assets/packs/images/1271164642035982337/Q-d7DGa8_400x400.jpg" style="max-width: 54px; max-height: 54px;"/>
+       </div>
+       <div class="featured-card__label">
+        <div class="label" data-target="pool-partial.statusProcessing">
+         <svg height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+          <title>
+           ripples
+          </title>
+          <g class="nc-icon-wrapper" fill="#727480">
+           <g class="nc-loop_ripples-16">
+            <circle cx="8" cy="8" fill="#727480" r="8" style="opacity:0.9427374999999983;" transform="translate(1.8290500000000067 1.8290500000000067) scale(0.7713687499999992)">
+            </circle>
+           </g>
+           <script>
+            !function(){function t(t){this.element=t,this.circle=this.element.getElementsByTagName("circle")[0],this.animationId,this.start=null,this.init()}if(!window.requestAnimationFrame){var i=null;window.requestAnimationFrame=function(t,n){var e=(new Date).getTime();i||(i=e);var a=Math.max(0,16-(e-i)),r=window.setTimeout(function(){t(e+a)},a);return i=e+a,r}}t.prototype.init=function(){var t=this;this.animationId=window.requestAnimationFrame(t.triggerAnimation.bind(t))},t.prototype.reset=function(){var t=this;window.cancelAnimationFrame(t.animationId)},t.prototype.triggerAnimation=function(t){var i=this;this.start||(this.start=t);var n=t-this.start,e=Math.min(n/800,1);800>n||(this.start=this.start+800);var a=.3+5*e/7;if(.3+e>1)(a=.8+2*(e-.7)/3);var r=8*(1-(a=Math.min(a,1))),o=8*(1-a),s=10*e/7;if(.3+e>1)(s=Math.max(1-10/3*(e-.7),0));this.circle.setAttribute("transform","translate("+r+" "+o+") scale("+a+")"),this.circle.setAttribute("style","opacity:"+s+";");if(document.documentElement.contains(this.element))window.requestAnimationFrame(i.triggerAnimation.bind(i))};var n=document.getElementsByClassName("nc-loop_ripples-16"),e=[];if(n)for(var a=0;n.length>a;a++)!function(i){e.push(new t(n[i]))}(a);document.addEventListener("visibilitychange",function(){"hidden"==document.visibilityState?e.forEach(function(t){t.reset()}):e.forEach(function(t){t.init()})})}();
+           </script>
+          </g>
+         </svg>
+        </div>
+        <div class="label d-none" data-target="pool-partial.statusBadge">
+         <svg fill="none" height="8" viewbox="0 0 8 8" width="8" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="4" cy="4" fill="#212121" r="4">
+          </circle>
+         </svg>
+         <span data-target="pool-partial.statusLabel">
+          Live
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="featured-card__coin">
+       <h2 class="featured-card__coin--name" data-target="pool-partial.name">
+       </h2>
+       <p class="featured-card__coin--iso" data-target="pool-partial.pair">
+       </p>
+       <p class="featured-card__title">
+        Ratio per 1 ETH
+       </p>
+       <h2 class="featured-card__ratio" data-target="pool-partial.swapRatio">
+       </h2>
+      </div>
+      <div class="featured-card__progress">
+       <p class="featured-card__title">
+        Progress
+       </p>
+       <div class="progress">
+        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar featured-card__step-1" data-target="pool-partial.progressBar" role="progressbar" style="width: 0%">
+        </div>
+       </div>
+       <div class="featured-card__progress-footer">
+        <div class="featured-card__percent" data-target="pool-partial.progressPercentage">
+         0%
+        </div>
+        <div class="featured-card__minimum" data-target="pool-partial.minSwapLevelLabel">
+         (Min. 0%)
+        </div>
+        <div class="featured-card__amount" data-target="pool-partial.swapLevelLabel">
+        </div>
+       </div>
+      </div>
+      <div class="featured-card__footer">
+       <div>
+        <p class="featured-card__title--small">
+         Participants
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.participants">
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Maximum
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.maxAllocation">
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Access
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.accessType">
+        </h3>
+       </div>
+      </div>
+     </a>
+     <a class="featured-card" data-controller="pool-partial" data-guid="fractal-pols" data-layout="pools-featured" data-pool-contract="0x90FB363AEF304FEE0265A6e04061dFf664A48C72" data-pool-name="Fractal POLS" data-pool-position="63" data-pool-token-symbol="FCL" data-turbolinks="false" href="pools/fractal-pols.html" id="fractal-pols">
+      <div class="featured-card__head">
+       <div class="featured-card__img">
+        <img src="https://polkastarter.app/assets/packs/images/1356885161925820418/zZ6uYAFh_400x400.jpg" style="max-width: 54px; max-height: 54px;"/>
+       </div>
+       <div class="featured-card__label">
+        <div class="label" data-target="pool-partial.statusProcessing">
+         <svg height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+          <title>
+           ripples
+          </title>
+          <g class="nc-icon-wrapper" fill="#727480">
+           <g class="nc-loop_ripples-16">
+            <circle cx="8" cy="8" fill="#727480" r="8" style="opacity:0.9427374999999983;" transform="translate(1.8290500000000067 1.8290500000000067) scale(0.7713687499999992)">
+            </circle>
+           </g>
+           <script>
+            !function(){function t(t){this.element=t,this.circle=this.element.getElementsByTagName("circle")[0],this.animationId,this.start=null,this.init()}if(!window.requestAnimationFrame){var i=null;window.requestAnimationFrame=function(t,n){var e=(new Date).getTime();i||(i=e);var a=Math.max(0,16-(e-i)),r=window.setTimeout(function(){t(e+a)},a);return i=e+a,r}}t.prototype.init=function(){var t=this;this.animationId=window.requestAnimationFrame(t.triggerAnimation.bind(t))},t.prototype.reset=function(){var t=this;window.cancelAnimationFrame(t.animationId)},t.prototype.triggerAnimation=function(t){var i=this;this.start||(this.start=t);var n=t-this.start,e=Math.min(n/800,1);800>n||(this.start=this.start+800);var a=.3+5*e/7;if(.3+e>1)(a=.8+2*(e-.7)/3);var r=8*(1-(a=Math.min(a,1))),o=8*(1-a),s=10*e/7;if(.3+e>1)(s=Math.max(1-10/3*(e-.7),0));this.circle.setAttribute("transform","translate("+r+" "+o+") scale("+a+")"),this.circle.setAttribute("style","opacity:"+s+";");if(document.documentElement.contains(this.element))window.requestAnimationFrame(i.triggerAnimation.bind(i))};var n=document.getElementsByClassName("nc-loop_ripples-16"),e=[];if(n)for(var a=0;n.length>a;a++)!function(i){e.push(new t(n[i]))}(a);document.addEventListener("visibilitychange",function(){"hidden"==document.visibilityState?e.forEach(function(t){t.reset()}):e.forEach(function(t){t.init()})})}();
+           </script>
+          </g>
+         </svg>
+        </div>
+        <div class="label d-none" data-target="pool-partial.statusBadge">
+         <svg fill="none" height="8" viewbox="0 0 8 8" width="8" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="4" cy="4" fill="#212121" r="4">
+          </circle>
+         </svg>
+         <span data-target="pool-partial.statusLabel">
+          Live
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="featured-card__coin">
+       <h2 class="featured-card__coin--name" data-target="pool-partial.name">
+       </h2>
+       <p class="featured-card__coin--iso" data-target="pool-partial.pair">
+       </p>
+       <p class="featured-card__title">
+        Ratio per 1 ETH
+       </p>
+       <h2 class="featured-card__ratio" data-target="pool-partial.swapRatio">
+       </h2>
+      </div>
+      <div class="featured-card__progress">
+       <p class="featured-card__title">
+        Progress
+       </p>
+       <div class="progress">
+        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar featured-card__step-1" data-target="pool-partial.progressBar" role="progressbar" style="width: 0%">
+        </div>
+       </div>
+       <div class="featured-card__progress-footer">
+        <div class="featured-card__percent" data-target="pool-partial.progressPercentage">
+         0%
+        </div>
+        <div class="featured-card__minimum" data-target="pool-partial.minSwapLevelLabel">
+         (Min. 0%)
+        </div>
+        <div class="featured-card__amount" data-target="pool-partial.swapLevelLabel">
+        </div>
+       </div>
+      </div>
+      <div class="featured-card__footer">
+       <div>
+        <p class="featured-card__title--small">
+         Participants
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.participants">
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Maximum
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.maxAllocation">
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Access
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.accessType">
+        </h3>
+       </div>
+      </div>
+     </a>
+     <a class="featured-card" data-controller="pool-partial" data-guid="polkamarkets-pols" data-layout="pools-featured" data-pool-contract="0x868Be4f80bB166a09489822C322deb3163B5025B" data-pool-name="Polkamarkets POLS" data-pool-position="60" data-pool-token-symbol="POLK" data-turbolinks="false" href="pools/polkamarkets-pols.html" id="polkamarkets-pols">
+      <div class="featured-card__head">
+       <div class="featured-card__img">
+        <img src="https://polkastarter.app/assets/packs/images/1353800641810997249/IalihrUD_400x400.jpg" style="max-width: 54px; max-height: 54px;"/>
+       </div>
+       <div class="featured-card__label">
+        <div class="label" data-target="pool-partial.statusProcessing">
+         <svg height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+          <title>
+           ripples
+          </title>
+          <g class="nc-icon-wrapper" fill="#727480">
+           <g class="nc-loop_ripples-16">
+            <circle cx="8" cy="8" fill="#727480" r="8" style="opacity:0.9427374999999983;" transform="translate(1.8290500000000067 1.8290500000000067) scale(0.7713687499999992)">
+            </circle>
+           </g>
+           <script>
+            !function(){function t(t){this.element=t,this.circle=this.element.getElementsByTagName("circle")[0],this.animationId,this.start=null,this.init()}if(!window.requestAnimationFrame){var i=null;window.requestAnimationFrame=function(t,n){var e=(new Date).getTime();i||(i=e);var a=Math.max(0,16-(e-i)),r=window.setTimeout(function(){t(e+a)},a);return i=e+a,r}}t.prototype.init=function(){var t=this;this.animationId=window.requestAnimationFrame(t.triggerAnimation.bind(t))},t.prototype.reset=function(){var t=this;window.cancelAnimationFrame(t.animationId)},t.prototype.triggerAnimation=function(t){var i=this;this.start||(this.start=t);var n=t-this.start,e=Math.min(n/800,1);800>n||(this.start=this.start+800);var a=.3+5*e/7;if(.3+e>1)(a=.8+2*(e-.7)/3);var r=8*(1-(a=Math.min(a,1))),o=8*(1-a),s=10*e/7;if(.3+e>1)(s=Math.max(1-10/3*(e-.7),0));this.circle.setAttribute("transform","translate("+r+" "+o+") scale("+a+")"),this.circle.setAttribute("style","opacity:"+s+";");if(document.documentElement.contains(this.element))window.requestAnimationFrame(i.triggerAnimation.bind(i))};var n=document.getElementsByClassName("nc-loop_ripples-16"),e=[];if(n)for(var a=0;n.length>a;a++)!function(i){e.push(new t(n[i]))}(a);document.addEventListener("visibilitychange",function(){"hidden"==document.visibilityState?e.forEach(function(t){t.reset()}):e.forEach(function(t){t.init()})})}();
+           </script>
+          </g>
+         </svg>
+        </div>
+        <div class="label d-none" data-target="pool-partial.statusBadge">
+         <svg fill="none" height="8" viewbox="0 0 8 8" width="8" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="4" cy="4" fill="#212121" r="4">
+          </circle>
+         </svg>
+         <span data-target="pool-partial.statusLabel">
+          Live
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="featured-card__coin">
+       <h2 class="featured-card__coin--name" data-target="pool-partial.name">
+       </h2>
+       <p class="featured-card__coin--iso" data-target="pool-partial.pair">
+       </p>
+       <p class="featured-card__title">
+        Ratio per 1 ETH
+       </p>
+       <h2 class="featured-card__ratio" data-target="pool-partial.swapRatio">
+       </h2>
+      </div>
+      <div class="featured-card__progress">
+       <p class="featured-card__title">
+        Progress
+       </p>
+       <div class="progress">
+        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar featured-card__step-1" data-target="pool-partial.progressBar" role="progressbar" style="width: 0%">
+        </div>
+       </div>
+       <div class="featured-card__progress-footer">
+        <div class="featured-card__percent" data-target="pool-partial.progressPercentage">
+         0%
+        </div>
+        <div class="featured-card__minimum" data-target="pool-partial.minSwapLevelLabel">
+         (Min. 0%)
+        </div>
+        <div class="featured-card__amount" data-target="pool-partial.swapLevelLabel">
+        </div>
+       </div>
+      </div>
+      <div class="featured-card__footer">
+       <div>
+        <p class="featured-card__title--small">
+         Participants
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.participants">
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Maximum
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.maxAllocation">
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Access
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.accessType">
+        </h3>
+       </div>
+      </div>
+     </a>
+     <a class="featured-card" data-controller="pool-partial" data-guid="superfarm-pols" data-layout="pools-featured" data-pool-contract="0x001602799EE561C9F9405176D33EBa6f29cE3386" data-pool-name="SuperFarm POLS" data-pool-position="59" data-pool-token-symbol="SUPER" data-turbolinks="false" href="pools/superfarm-pols.html" id="superfarm-pols">
+      <div class="featured-card__head">
+       <div class="featured-card__img">
+        <img src="https://polkastarter.app/assets/packs/images/1351295553477382145/pukzzlGh_400x400.jpg" style="max-width: 54px; max-height: 54px;"/>
+       </div>
+       <div class="featured-card__label">
+        <div class="label" data-target="pool-partial.statusProcessing">
+         <svg height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+          <title>
+           ripples
+          </title>
+          <g class="nc-icon-wrapper" fill="#727480">
+           <g class="nc-loop_ripples-16">
+            <circle cx="8" cy="8" fill="#727480" r="8" style="opacity:0.9427374999999983;" transform="translate(1.8290500000000067 1.8290500000000067) scale(0.7713687499999992)">
+            </circle>
+           </g>
+           <script>
+            !function(){function t(t){this.element=t,this.circle=this.element.getElementsByTagName("circle")[0],this.animationId,this.start=null,this.init()}if(!window.requestAnimationFrame){var i=null;window.requestAnimationFrame=function(t,n){var e=(new Date).getTime();i||(i=e);var a=Math.max(0,16-(e-i)),r=window.setTimeout(function(){t(e+a)},a);return i=e+a,r}}t.prototype.init=function(){var t=this;this.animationId=window.requestAnimationFrame(t.triggerAnimation.bind(t))},t.prototype.reset=function(){var t=this;window.cancelAnimationFrame(t.animationId)},t.prototype.triggerAnimation=function(t){var i=this;this.start||(this.start=t);var n=t-this.start,e=Math.min(n/800,1);800>n||(this.start=this.start+800);var a=.3+5*e/7;if(.3+e>1)(a=.8+2*(e-.7)/3);var r=8*(1-(a=Math.min(a,1))),o=8*(1-a),s=10*e/7;if(.3+e>1)(s=Math.max(1-10/3*(e-.7),0));this.circle.setAttribute("transform","translate("+r+" "+o+") scale("+a+")"),this.circle.setAttribute("style","opacity:"+s+";");if(document.documentElement.contains(this.element))window.requestAnimationFrame(i.triggerAnimation.bind(i))};var n=document.getElementsByClassName("nc-loop_ripples-16"),e=[];if(n)for(var a=0;n.length>a;a++)!function(i){e.push(new t(n[i]))}(a);document.addEventListener("visibilitychange",function(){"hidden"==document.visibilityState?e.forEach(function(t){t.reset()}):e.forEach(function(t){t.init()})})}();
+           </script>
+          </g>
+         </svg>
+        </div>
+        <div class="label d-none" data-target="pool-partial.statusBadge">
+         <svg fill="none" height="8" viewbox="0 0 8 8" width="8" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="4" cy="4" fill="#212121" r="4">
+          </circle>
+         </svg>
+         <span data-target="pool-partial.statusLabel">
+          Live
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="featured-card__coin">
+       <h2 class="featured-card__coin--name" data-target="pool-partial.name">
+       </h2>
+       <p class="featured-card__coin--iso" data-target="pool-partial.pair">
+       </p>
+       <p class="featured-card__title">
+        Ratio per 1 ETH
+       </p>
+       <h2 class="featured-card__ratio" data-target="pool-partial.swapRatio">
+       </h2>
+      </div>
+      <div class="featured-card__progress">
+       <p class="featured-card__title">
+        Progress
+       </p>
+       <div class="progress">
+        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar featured-card__step-1" data-target="pool-partial.progressBar" role="progressbar" style="width: 0%">
+        </div>
+       </div>
+       <div class="featured-card__progress-footer">
+        <div class="featured-card__percent" data-target="pool-partial.progressPercentage">
+         0%
+        </div>
+        <div class="featured-card__minimum" data-target="pool-partial.minSwapLevelLabel">
+         (Min. 0%)
+        </div>
+        <div class="featured-card__amount" data-target="pool-partial.swapLevelLabel">
+        </div>
+       </div>
+      </div>
+      <div class="featured-card__footer">
+       <div>
+        <p class="featured-card__title--small">
+         Participants
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.participants">
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Maximum
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.maxAllocation">
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Access
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.accessType">
+        </h3>
+       </div>
+      </div>
+     </a>
+     <a class="featured-card" data-controller="pool-partial" data-guid="daoventures-pols" data-layout="pools-featured" data-pool-contract="0x5C0DC504be827714b81cE99eD287A0428eb397a6" data-pool-name="DAOventures POLS" data-pool-position="57" data-pool-token-symbol="DVG" data-turbolinks="false" href="pools/daoventures-pols.html" id="daoventures-pols">
+      <div class="featured-card__head">
+       <div class="featured-card__img">
+        <img src="https://polkastarter.app/assets/packs/images/1330410050569924609/zhOPEJW4_400x400.jpg" style="max-width: 54px; max-height: 54px;"/>
+       </div>
+       <div class="featured-card__label">
+        <div class="label" data-target="pool-partial.statusProcessing">
+         <svg height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+          <title>
+           ripples
+          </title>
+          <g class="nc-icon-wrapper" fill="#727480">
+           <g class="nc-loop_ripples-16">
+            <circle cx="8" cy="8" fill="#727480" r="8" style="opacity:0.9427374999999983;" transform="translate(1.8290500000000067 1.8290500000000067) scale(0.7713687499999992)">
+            </circle>
+           </g>
+           <script>
+            !function(){function t(t){this.element=t,this.circle=this.element.getElementsByTagName("circle")[0],this.animationId,this.start=null,this.init()}if(!window.requestAnimationFrame){var i=null;window.requestAnimationFrame=function(t,n){var e=(new Date).getTime();i||(i=e);var a=Math.max(0,16-(e-i)),r=window.setTimeout(function(){t(e+a)},a);return i=e+a,r}}t.prototype.init=function(){var t=this;this.animationId=window.requestAnimationFrame(t.triggerAnimation.bind(t))},t.prototype.reset=function(){var t=this;window.cancelAnimationFrame(t.animationId)},t.prototype.triggerAnimation=function(t){var i=this;this.start||(this.start=t);var n=t-this.start,e=Math.min(n/800,1);800>n||(this.start=this.start+800);var a=.3+5*e/7;if(.3+e>1)(a=.8+2*(e-.7)/3);var r=8*(1-(a=Math.min(a,1))),o=8*(1-a),s=10*e/7;if(.3+e>1)(s=Math.max(1-10/3*(e-.7),0));this.circle.setAttribute("transform","translate("+r+" "+o+") scale("+a+")"),this.circle.setAttribute("style","opacity:"+s+";");if(document.documentElement.contains(this.element))window.requestAnimationFrame(i.triggerAnimation.bind(i))};var n=document.getElementsByClassName("nc-loop_ripples-16"),e=[];if(n)for(var a=0;n.length>a;a++)!function(i){e.push(new t(n[i]))}(a);document.addEventListener("visibilitychange",function(){"hidden"==document.visibilityState?e.forEach(function(t){t.reset()}):e.forEach(function(t){t.init()})})}();
+           </script>
+          </g>
+         </svg>
+        </div>
+        <div class="label d-none" data-target="pool-partial.statusBadge">
+         <svg fill="none" height="8" viewbox="0 0 8 8" width="8" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="4" cy="4" fill="#212121" r="4">
+          </circle>
+         </svg>
+         <span data-target="pool-partial.statusLabel">
+          Live
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="featured-card__coin">
+       <h2 class="featured-card__coin--name" data-target="pool-partial.name">
+       </h2>
+       <p class="featured-card__coin--iso" data-target="pool-partial.pair">
+       </p>
+       <p class="featured-card__title">
+        Ratio per 1 ETH
+       </p>
+       <h2 class="featured-card__ratio" data-target="pool-partial.swapRatio">
+       </h2>
+      </div>
+      <div class="featured-card__progress">
+       <p class="featured-card__title">
+        Progress
+       </p>
+       <div class="progress">
+        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar featured-card__step-1" data-target="pool-partial.progressBar" role="progressbar" style="width: 0%">
+        </div>
+       </div>
+       <div class="featured-card__progress-footer">
+        <div class="featured-card__percent" data-target="pool-partial.progressPercentage">
+         0%
+        </div>
+        <div class="featured-card__minimum" data-target="pool-partial.minSwapLevelLabel">
+         (Min. 0%)
+        </div>
+        <div class="featured-card__amount" data-target="pool-partial.swapLevelLabel">
+        </div>
+       </div>
+      </div>
+      <div class="featured-card__footer">
+       <div>
+        <p class="featured-card__title--small">
+         Participants
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.participants">
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Maximum
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.maxAllocation">
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Access
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.accessType">
+        </h3>
+       </div>
+      </div>
+     </a>
+     <a class="featured-card" data-controller="pool-partial" data-guid="optionroom-public" data-layout="pools-featured" data-pool-contract="0x5683F7142247e5F9F61E6e74770e3279017Df21d" data-pool-name="OptionRoom Public" data-pool-position="49" data-pool-token-symbol="ROOM" data-turbolinks="false" href="pools/optionroom-public.html" id="optionroom-public">
+      <div class="featured-card__head">
+       <div class="featured-card__img">
+        <img src="https://polkastarter.app/assets/packs/images/1343526663611678720/NfsE8RpR_400x400.png" style="max-width: 54px; max-height: 54px;"/>
+       </div>
+       <div class="featured-card__label">
+        <div class="label" data-target="pool-partial.statusProcessing">
+         <svg height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+          <title>
+           ripples
+          </title>
+          <g class="nc-icon-wrapper" fill="#727480">
+           <g class="nc-loop_ripples-16">
+            <circle cx="8" cy="8" fill="#727480" r="8" style="opacity:0.9427374999999983;" transform="translate(1.8290500000000067 1.8290500000000067) scale(0.7713687499999992)">
+            </circle>
+           </g>
+           <script>
+            !function(){function t(t){this.element=t,this.circle=this.element.getElementsByTagName("circle")[0],this.animationId,this.start=null,this.init()}if(!window.requestAnimationFrame){var i=null;window.requestAnimationFrame=function(t,n){var e=(new Date).getTime();i||(i=e);var a=Math.max(0,16-(e-i)),r=window.setTimeout(function(){t(e+a)},a);return i=e+a,r}}t.prototype.init=function(){var t=this;this.animationId=window.requestAnimationFrame(t.triggerAnimation.bind(t))},t.prototype.reset=function(){var t=this;window.cancelAnimationFrame(t.animationId)},t.prototype.triggerAnimation=function(t){var i=this;this.start||(this.start=t);var n=t-this.start,e=Math.min(n/800,1);800>n||(this.start=this.start+800);var a=.3+5*e/7;if(.3+e>1)(a=.8+2*(e-.7)/3);var r=8*(1-(a=Math.min(a,1))),o=8*(1-a),s=10*e/7;if(.3+e>1)(s=Math.max(1-10/3*(e-.7),0));this.circle.setAttribute("transform","translate("+r+" "+o+") scale("+a+")"),this.circle.setAttribute("style","opacity:"+s+";");if(document.documentElement.contains(this.element))window.requestAnimationFrame(i.triggerAnimation.bind(i))};var n=document.getElementsByClassName("nc-loop_ripples-16"),e=[];if(n)for(var a=0;n.length>a;a++)!function(i){e.push(new t(n[i]))}(a);document.addEventListener("visibilitychange",function(){"hidden"==document.visibilityState?e.forEach(function(t){t.reset()}):e.forEach(function(t){t.init()})})}();
+           </script>
+          </g>
+         </svg>
+        </div>
+        <div class="label d-none" data-target="pool-partial.statusBadge">
+         <svg fill="none" height="8" viewbox="0 0 8 8" width="8" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="4" cy="4" fill="#212121" r="4">
+          </circle>
+         </svg>
+         <span data-target="pool-partial.statusLabel">
+          Live
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="featured-card__coin">
+       <h2 class="featured-card__coin--name" data-target="pool-partial.name">
+       </h2>
+       <p class="featured-card__coin--iso" data-target="pool-partial.pair">
+       </p>
+       <p class="featured-card__title">
+        Ratio per 1 ETH
+       </p>
+       <h2 class="featured-card__ratio" data-target="pool-partial.swapRatio">
+       </h2>
+      </div>
+      <div class="featured-card__progress">
+       <p class="featured-card__title">
+        Progress
+       </p>
+       <div class="progress">
+        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar featured-card__step-1" data-target="pool-partial.progressBar" role="progressbar" style="width: 0%">
+        </div>
+       </div>
+       <div class="featured-card__progress-footer">
+        <div class="featured-card__percent" data-target="pool-partial.progressPercentage">
+         0%
+        </div>
+        <div class="featured-card__minimum" data-target="pool-partial.minSwapLevelLabel">
+         (Min. 0%)
+        </div>
+        <div class="featured-card__amount" data-target="pool-partial.swapLevelLabel">
+        </div>
+       </div>
+      </div>
+      <div class="featured-card__footer">
+       <div>
+        <p class="featured-card__title--small">
+         Participants
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.participants">
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Maximum
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.maxAllocation">
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Access
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.accessType">
+        </h3>
+       </div>
+      </div>
+     </a>
+     <a class="featured-card" data-controller="pool-partial" data-guid="c90397e99cf3a11353707554e5" data-layout="pools-featured" data-pool-contract="0xdBa054fDb2A542E9128c91Ae62fE832177bf3536" data-pool-name="Bridge Mutual Public" data-pool-position="44" data-pool-token-symbol="BMI" data-turbolinks="false" href="pools/c90397e99cf3a11353707554e5.html" id="c90397e99cf3a11353707554e5">
+      <div class="featured-card__head">
+       <div class="featured-card__img">
+        <img src="https://polkastarter.app/assets/packs/images/1335865528137756674/OEtiD-e7_400x400.png" style="max-width: 54px; max-height: 54px;"/>
+       </div>
+       <div class="featured-card__label">
+        <div class="label" data-target="pool-partial.statusProcessing">
+         <svg height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+          <title>
+           ripples
+          </title>
+          <g class="nc-icon-wrapper" fill="#727480">
+           <g class="nc-loop_ripples-16">
+            <circle cx="8" cy="8" fill="#727480" r="8" style="opacity:0.9427374999999983;" transform="translate(1.8290500000000067 1.8290500000000067) scale(0.7713687499999992)">
+            </circle>
+           </g>
+           <script>
+            !function(){function t(t){this.element=t,this.circle=this.element.getElementsByTagName("circle")[0],this.animationId,this.start=null,this.init()}if(!window.requestAnimationFrame){var i=null;window.requestAnimationFrame=function(t,n){var e=(new Date).getTime();i||(i=e);var a=Math.max(0,16-(e-i)),r=window.setTimeout(function(){t(e+a)},a);return i=e+a,r}}t.prototype.init=function(){var t=this;this.animationId=window.requestAnimationFrame(t.triggerAnimation.bind(t))},t.prototype.reset=function(){var t=this;window.cancelAnimationFrame(t.animationId)},t.prototype.triggerAnimation=function(t){var i=this;this.start||(this.start=t);var n=t-this.start,e=Math.min(n/800,1);800>n||(this.start=this.start+800);var a=.3+5*e/7;if(.3+e>1)(a=.8+2*(e-.7)/3);var r=8*(1-(a=Math.min(a,1))),o=8*(1-a),s=10*e/7;if(.3+e>1)(s=Math.max(1-10/3*(e-.7),0));this.circle.setAttribute("transform","translate("+r+" "+o+") scale("+a+")"),this.circle.setAttribute("style","opacity:"+s+";");if(document.documentElement.contains(this.element))window.requestAnimationFrame(i.triggerAnimation.bind(i))};var n=document.getElementsByClassName("nc-loop_ripples-16"),e=[];if(n)for(var a=0;n.length>a;a++)!function(i){e.push(new t(n[i]))}(a);document.addEventListener("visibilitychange",function(){"hidden"==document.visibilityState?e.forEach(function(t){t.reset()}):e.forEach(function(t){t.init()})})}();
+           </script>
+          </g>
+         </svg>
+        </div>
+        <div class="label d-none" data-target="pool-partial.statusBadge">
+         <svg fill="none" height="8" viewbox="0 0 8 8" width="8" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="4" cy="4" fill="#212121" r="4">
+          </circle>
+         </svg>
+         <span data-target="pool-partial.statusLabel">
+          Live
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="featured-card__coin">
+       <h2 class="featured-card__coin--name" data-target="pool-partial.name">
+       </h2>
+       <p class="featured-card__coin--iso" data-target="pool-partial.pair">
+       </p>
+       <p class="featured-card__title">
+        Ratio per 1 ETH
+       </p>
+       <h2 class="featured-card__ratio" data-target="pool-partial.swapRatio">
+       </h2>
+      </div>
+      <div class="featured-card__progress">
+       <p class="featured-card__title">
+        Progress
+       </p>
+       <div class="progress">
+        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar featured-card__step-1" data-target="pool-partial.progressBar" role="progressbar" style="width: 0%">
+        </div>
+       </div>
+       <div class="featured-card__progress-footer">
+        <div class="featured-card__percent" data-target="pool-partial.progressPercentage">
+         0%
+        </div>
+        <div class="featured-card__minimum" data-target="pool-partial.minSwapLevelLabel">
+         (Min. 0%)
+        </div>
+        <div class="featured-card__amount" data-target="pool-partial.swapLevelLabel">
+        </div>
+       </div>
+      </div>
+      <div class="featured-card__footer">
+       <div>
+        <p class="featured-card__title--small">
+         Participants
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.participants">
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Maximum
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.maxAllocation">
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Access
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.accessType">
+        </h3>
+       </div>
+      </div>
+     </a>
+     <a class="featured-card" data-controller="pool-partial" data-guid="bd403e122c543256b6496e580e" data-layout="pools-featured" data-pool-contract="0x53466E67B063d3e8D37a6c5eB53A4ad7165FB271" data-pool-name="PAID Network Public" data-pool-position="42" data-pool-token-symbol="PAID" data-turbolinks="false" href="pools/bd403e122c543256b6496e580e.html" id="bd403e122c543256b6496e580e">
+      <div class="featured-card__head">
+       <div class="featured-card__img">
+        <img src="https://polkastarter.app/assets/packs/images/1353770481388834816/VTLB_XeV_400x400.png" style="max-width: 54px; max-height: 54px;"/>
+       </div>
+       <div class="featured-card__label">
+        <div class="label" data-target="pool-partial.statusProcessing">
+         <svg height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+          <title>
+           ripples
+          </title>
+          <g class="nc-icon-wrapper" fill="#727480">
+           <g class="nc-loop_ripples-16">
+            <circle cx="8" cy="8" fill="#727480" r="8" style="opacity:0.9427374999999983;" transform="translate(1.8290500000000067 1.8290500000000067) scale(0.7713687499999992)">
+            </circle>
+           </g>
+           <script>
+            !function(){function t(t){this.element=t,this.circle=this.element.getElementsByTagName("circle")[0],this.animationId,this.start=null,this.init()}if(!window.requestAnimationFrame){var i=null;window.requestAnimationFrame=function(t,n){var e=(new Date).getTime();i||(i=e);var a=Math.max(0,16-(e-i)),r=window.setTimeout(function(){t(e+a)},a);return i=e+a,r}}t.prototype.init=function(){var t=this;this.animationId=window.requestAnimationFrame(t.triggerAnimation.bind(t))},t.prototype.reset=function(){var t=this;window.cancelAnimationFrame(t.animationId)},t.prototype.triggerAnimation=function(t){var i=this;this.start||(this.start=t);var n=t-this.start,e=Math.min(n/800,1);800>n||(this.start=this.start+800);var a=.3+5*e/7;if(.3+e>1)(a=.8+2*(e-.7)/3);var r=8*(1-(a=Math.min(a,1))),o=8*(1-a),s=10*e/7;if(.3+e>1)(s=Math.max(1-10/3*(e-.7),0));this.circle.setAttribute("transform","translate("+r+" "+o+") scale("+a+")"),this.circle.setAttribute("style","opacity:"+s+";");if(document.documentElement.contains(this.element))window.requestAnimationFrame(i.triggerAnimation.bind(i))};var n=document.getElementsByClassName("nc-loop_ripples-16"),e=[];if(n)for(var a=0;n.length>a;a++)!function(i){e.push(new t(n[i]))}(a);document.addEventListener("visibilitychange",function(){"hidden"==document.visibilityState?e.forEach(function(t){t.reset()}):e.forEach(function(t){t.init()})})}();
+           </script>
+          </g>
+         </svg>
+        </div>
+        <div class="label d-none" data-target="pool-partial.statusBadge">
+         <svg fill="none" height="8" viewbox="0 0 8 8" width="8" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="4" cy="4" fill="#212121" r="4">
+          </circle>
+         </svg>
+         <span data-target="pool-partial.statusLabel">
+          Live
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="featured-card__coin">
+       <h2 class="featured-card__coin--name" data-target="pool-partial.name">
+       </h2>
+       <p class="featured-card__coin--iso" data-target="pool-partial.pair">
+       </p>
+       <p class="featured-card__title">
+        Ratio per 1 ETH
+       </p>
+       <h2 class="featured-card__ratio" data-target="pool-partial.swapRatio">
+       </h2>
+      </div>
+      <div class="featured-card__progress">
+       <p class="featured-card__title">
+        Progress
+       </p>
+       <div class="progress">
+        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar featured-card__step-1" data-target="pool-partial.progressBar" role="progressbar" style="width: 0%">
+        </div>
+       </div>
+       <div class="featured-card__progress-footer">
+        <div class="featured-card__percent" data-target="pool-partial.progressPercentage">
+         0%
+        </div>
+        <div class="featured-card__minimum" data-target="pool-partial.minSwapLevelLabel">
+         (Min. 0%)
+        </div>
+        <div class="featured-card__amount" data-target="pool-partial.swapLevelLabel">
+        </div>
+       </div>
+      </div>
+      <div class="featured-card__footer">
+       <div>
+        <p class="featured-card__title--small">
+         Participants
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.participants">
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Maximum
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.maxAllocation">
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Access
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.accessType">
+        </h3>
+       </div>
+      </div>
+     </a>
+     <a class="featured-card" data-controller="pool-partial" data-guid="cd9132ef2013811cbc32d090c9" data-layout="pools-featured" data-pool-contract="0xBB7dC3b6e6E589C5E51833d195c76A8AC36efF73" data-pool-name="Exeedme Public" data-pool-position="28" data-pool-token-symbol="XED" data-turbolinks="false" href="pools/cd9132ef2013811cbc32d090c9.html" id="cd9132ef2013811cbc32d090c9">
+      <div class="featured-card__head">
+       <div class="featured-card__img">
+        <img src="https://polkastarter.app/assets/packs/images/5fb4fc2dc21e570b5b8dc201/5feb9752f009754e6ef8dd08_iconbig.png" style="max-width: 54px; max-height: 54px;"/>
+       </div>
+       <div class="featured-card__label">
+        <div class="label" data-target="pool-partial.statusProcessing">
+         <svg height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+          <title>
+           ripples
+          </title>
+          <g class="nc-icon-wrapper" fill="#727480">
+           <g class="nc-loop_ripples-16">
+            <circle cx="8" cy="8" fill="#727480" r="8" style="opacity:0.9427374999999983;" transform="translate(1.8290500000000067 1.8290500000000067) scale(0.7713687499999992)">
+            </circle>
+           </g>
+           <script>
+            !function(){function t(t){this.element=t,this.circle=this.element.getElementsByTagName("circle")[0],this.animationId,this.start=null,this.init()}if(!window.requestAnimationFrame){var i=null;window.requestAnimationFrame=function(t,n){var e=(new Date).getTime();i||(i=e);var a=Math.max(0,16-(e-i)),r=window.setTimeout(function(){t(e+a)},a);return i=e+a,r}}t.prototype.init=function(){var t=this;this.animationId=window.requestAnimationFrame(t.triggerAnimation.bind(t))},t.prototype.reset=function(){var t=this;window.cancelAnimationFrame(t.animationId)},t.prototype.triggerAnimation=function(t){var i=this;this.start||(this.start=t);var n=t-this.start,e=Math.min(n/800,1);800>n||(this.start=this.start+800);var a=.3+5*e/7;if(.3+e>1)(a=.8+2*(e-.7)/3);var r=8*(1-(a=Math.min(a,1))),o=8*(1-a),s=10*e/7;if(.3+e>1)(s=Math.max(1-10/3*(e-.7),0));this.circle.setAttribute("transform","translate("+r+" "+o+") scale("+a+")"),this.circle.setAttribute("style","opacity:"+s+";");if(document.documentElement.contains(this.element))window.requestAnimationFrame(i.triggerAnimation.bind(i))};var n=document.getElementsByClassName("nc-loop_ripples-16"),e=[];if(n)for(var a=0;n.length>a;a++)!function(i){e.push(new t(n[i]))}(a);document.addEventListener("visibilitychange",function(){"hidden"==document.visibilityState?e.forEach(function(t){t.reset()}):e.forEach(function(t){t.init()})})}();
+           </script>
+          </g>
+         </svg>
+        </div>
+        <div class="label d-none" data-target="pool-partial.statusBadge">
+         <svg fill="none" height="8" viewbox="0 0 8 8" width="8" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="4" cy="4" fill="#212121" r="4">
+          </circle>
+         </svg>
+         <span data-target="pool-partial.statusLabel">
+          Live
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="featured-card__coin">
+       <h2 class="featured-card__coin--name" data-target="pool-partial.name">
+       </h2>
+       <p class="featured-card__coin--iso" data-target="pool-partial.pair">
+       </p>
+       <p class="featured-card__title">
+        Ratio per 1 ETH
+       </p>
+       <h2 class="featured-card__ratio" data-target="pool-partial.swapRatio">
+       </h2>
+      </div>
+      <div class="featured-card__progress">
+       <p class="featured-card__title">
+        Progress
+       </p>
+       <div class="progress">
+        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar featured-card__step-1" data-target="pool-partial.progressBar" role="progressbar" style="width: 0%">
+        </div>
+       </div>
+       <div class="featured-card__progress-footer">
+        <div class="featured-card__percent" data-target="pool-partial.progressPercentage">
+         0%
+        </div>
+        <div class="featured-card__minimum" data-target="pool-partial.minSwapLevelLabel">
+         (Min. 0%)
+        </div>
+        <div class="featured-card__amount" data-target="pool-partial.swapLevelLabel">
+        </div>
+       </div>
+      </div>
+      <div class="featured-card__footer">
+       <div>
+        <p class="featured-card__title--small">
+         Participants
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.participants">
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Maximum
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.maxAllocation">
+        </h3>
+       </div>
+       <div>
+        <p class="featured-card__title--small">
+         Access
+        </p>
+        <h3 class="featured-card__info" data-target="pool-partial.accessType">
+        </h3>
+       </div>
+      </div>
+     </a>
+    </div>
+    <div class="text-right mt-5">
+     <a class="button button--secondary button--icon-right" data-turbolinks="false" href="pools.html">
+      View all Pools
+      <svg fill="none" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+       <path clip-rule="evenodd" d="M9.35731 8.02388L5 3.66657L5.61872 3.04785L10.2854 7.71452V8.33324L5.61872 12.9999L5 12.3812L9.35731 8.02388Z" fill="#212121" fill-rule="evenodd">
+       </path>
+      </svg>
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="container ">
+   <div class="subscribe">
+    <div class="subscribe__content">
+     <h2>
+      Get Alerts For New Pools
+     </h2>
+     <h3>
+      Subscribe to get notified about new pools and other relevant events.
+     </h3>
+     <a class="button button--secondary" href="https://t.me/polkastarterbot" target="_blank">
+      Subscribe
+     </a>
+    </div>
+    <div class="subscribe__illustration">
+    </div>
+   </div>
+  </div>
+  <footer class="footer ">
+   <div class="container">
+    <div class="footer__grid">
+     <div>
+      <div class="footer__logo">
+       <a href="index.html" style="text-decoration: none;">
+        <svg class="footer__logo-text" fill="none" height="183" viewbox="0 0 1476 183" width="1476" xmlns="http://www.w3.org/2000/svg">
+         <g clip-path="url(#clip0)">
+          <path d="M316.6 164.6C304.2 176.9 287.6 183 266.8 183C246 183 229.4 176.9 216.9 164.6C204.4 152.3 198.2 136.6 198.2 117.5C198.2 98.4002 204.4 82.7002 216.9 70.5002C229.4 58.3002 246 52.2002 266.8 52.2002C287.6 52.2002 304.2 58.3002 316.6 70.5002C329 82.7002 335.2 98.4002 335.2 117.5C335.2 136.6 329 152.3 316.6 164.6ZM266.8 149.7C275.8 149.7 283 146.7 288.3 140.7C293.6 134.7 296.2 127 296.2 117.5C296.2 107.9 293.6 100.2 288.3 94.2002C283 88.2002 275.8 85.2002 266.8 85.2002C257.6 85.2002 250.4 88.2002 245.2 94.2002C240 100.2 237.4 108 237.4 117.5C237.4 127.1 240 134.8 245.2 140.8C250.4 146.8 257.6 149.7 266.8 149.7Z" fill="black">
+          </path>
+          <path d="M353 179.2V0H392.2V179.2H353Z" fill="black">
+          </path>
+          <path d="M540.8 179.2H492.9L453.7 125.7V179.2H414.5V0H453.7V107.3L493.9 55.9H540L490.9 114.3L540.8 179.2Z" fill="black">
+          </path>
+          <path d="M596.6 182.5C578.7 182.5 564.5 176.4 554.1 164.3C543.7 152.2 538.5 136.6 538.5 117.5C538.5 98.6998 543.9 83.1998 554.6 70.8998C565.3 58.5998 579.5 52.4998 597.1 52.4998C605.2 52.3998 613.2 54.2998 620.4 58.0998C626.9 61.5998 632.3 66.8998 635.8 73.4998V55.7998H674.7V179.2H635.8V161.8C632.4 167.9 627.1 172.9 620.1 176.8C612.9 180.6 604.8 182.6 596.6 182.5ZM607.9 150C617.3 150 624.5 146.9 629.7 140.8C634.9 134.7 637.4 126.9 637.4 117.5C637.4 108.3 634.8 100.6 629.7 94.4998C624.6 88.3998 617.3 85.2998 607.9 85.2998C599 85.2998 591.9 88.2998 586.5 94.2998C581.1 100.3 578.4 108 578.4 117.5C578.4 127.1 581.1 134.9 586.5 140.9C591.9 147 599 150 607.9 150Z" fill="black">
+          </path>
+          <path d="M750.2 183C732.5 183 718.3 179.2 707.7 171.5C697.1 163.8 691.8 154 691.8 142.1H730.7C730.7 146.4 732.6 149.9 736.3 152.6C740.1 155.3 744.9 156.7 750.9 156.7C755.2 156.7 758.6 155.7 761.3 153.6C763.9 151.6 765.4 148.5 765.3 145.2C765.3 139.6 762.3 136.1 756.3 134.7L726.1 127C716 124.4 708.4 120.1 703.1 113.9C697.8 107.7 695.2 100.2 695.2 91.4002C695.2 79.8002 700 70.4002 709.5 63.1002C719 55.8002 731.9 52.2002 747.9 52.2002C765.6 52.2002 779.3 55.6002 788.7 62.4002C798.1 69.2002 803 78.7002 803 90.6002H764.3C764.5 86.7002 762.8 83.0002 759.8 80.6002C756.8 78.2002 752.7 77.0002 747.4 77.0002C743.1 77.0002 739.7 77.9002 737.2 79.8002C734.7 81.5002 733.3 84.3002 733.4 87.2002C733.4 92.7002 736.9 96.3002 743.9 98.2002L773.1 106.2C782.8 108.8 790.5 113 796 118.9C801.5 124.7 804.5 132.5 804.3 140.5C804.3 153.3 799.5 163.6 789.8 171.3C780.1 179 766.9 183 750.2 183Z" fill="black">
+          </path>
+          <path d="M878.4 148.7C882.9 148.8 887.5 148.5 892 147.9V179.1C883.4 180.5 874.6 181.2 865.9 181.1C862 181.1 858 180.9 854.1 180.3C850.1 179.6 846.3 178.5 842.6 176.8C838.6 175.2 835 172.7 832.1 169.5C829.4 166.4 827 162 825.1 156.2C823 149.6 822 142.7 822.2 135.7V0.700195H861.4V55.8002H889.3V86.8002H861.4V127.8C861.4 136.2 862.9 141.7 865.7 144.6C868.5 147.4 872.8 148.8 878.4 148.7Z" fill="black">
+          </path>
+          <path d="M963.2 182.5C945.3 182.5 931.1 176.4 920.7 164.3C910.3 152.2 905.1 136.6 905.1 117.5C905.1 98.7 910.5 83.2 921.2 70.9C932 58.6 946.1 52.5 963.7 52.5C971.8 52.3 979.8 54.3 987 58.1C993.5 61.6 998.9 66.9 1002.3 73.5V55.8H1041.2V179.2H1002.3V161.8C998.9 167.9 993.6 172.9 986.6 176.8C979.4 180.6 971.4 182.6 963.2 182.5ZM974.5 150C983.9 150 991.1 146.9 996.3 140.8C1001.4 134.7 1004 126.9 1004 117.5C1004 108.3 1001.4 100.6 996.3 94.5C991.2 88.4 983.9 85.3 974.5 85.3C965.6 85.3 958.5 88.3 953.1 94.3C947.7 100.3 945 108 945 117.5C945 127.1 947.7 134.9 953.1 140.9C958.4 147 965.6 150 974.5 150Z" fill="black">
+          </path>
+          <path d="M1059 179.2V55.7998H1098.2V81.5998C1100.2 72.6998 1104.5 65.8998 1110.9 60.9998C1117 56.1998 1124.5 53.6998 1132.3 53.6998C1135.7 53.5998 1139.2 53.9998 1142.5 54.6998V90.9998C1138.6 90.4998 1134.7 90.2998 1130.7 90.1998C1109 90.1998 1098.2 103.9 1098.2 131.4V179L1059 179.2Z" fill="black">
+          </path>
+          <path d="M1216.8 148.7C1221.3 148.8 1225.9 148.5 1230.4 147.9V179.1C1221.8 180.5 1213 181.2 1204.3 181.1C1200.4 181.1 1196.4 180.9 1192.5 180.3C1188.5 179.6 1184.7 178.5 1181 176.8C1177 175.2 1173.4 172.7 1170.5 169.5C1167.8 166.4 1165.4 162 1163.5 156.2C1161.4 149.6 1160.4 142.7 1160.6 135.7V0.700195H1199.8V55.8002H1227.7V86.8002H1199.8V127.8C1199.8 136.2 1201.2 141.7 1204.1 144.6C1207 147.5 1211.2 148.8 1216.8 148.7Z" fill="black">
+          </path>
+          <path d="M1374.5 111.1C1374.5 116.8 1374.1 122.6 1373.5 128.2H1282.4C1282.7 136.2 1285.5 142.4 1290.6 146.9C1295.7 151.4 1302.6 153.6 1311.3 153.5C1323.2 153.5 1330.9 149.7 1334.3 142H1372.7C1370.8 154.1 1364.2 164 1352.9 171.6C1341.6 179.2 1327.7 183 1311.3 183C1290.3 183 1273.8 177.2 1261.6 165.6C1249.5 154 1243.4 138 1243.4 117.5C1243.4 97.3998 1249.5 81.4998 1261.6 69.7998C1273.7 58.0998 1289.8 52.2998 1310 52.2998C1329.1 52.2998 1344.6 57.7998 1356.6 68.6998C1368.5 79.4998 1374.5 93.6998 1374.5 111.1ZM1282.4 103.9H1335.9C1335.7 95.6998 1333.4 89.3998 1329 84.9998C1324.6 80.5998 1318.2 78.3998 1309.8 78.3998C1301.4 78.3998 1294.8 80.6998 1290 85.3998C1285.1 89.9998 1282.5 96.1998 1282.4 103.9Z" fill="black">
+          </path>
+          <path d="M1392.3 179.2V55.7998H1431.5V81.5998C1433.5 72.6998 1437.8 65.8998 1444.2 60.9998C1450.3 56.1998 1457.8 53.6998 1465.6 53.6998C1469 53.5998 1472.5 53.9998 1475.8 54.6998V90.9998C1471.9 90.4998 1468 90.2998 1464 90.1998C1442.3 90.1998 1431.5 103.9 1431.5 131.4V179L1392.3 179.2Z" fill="black">
+          </path>
+          <path clip-rule="evenodd" d="M173.512 18.3047C161.434 6.10157 146.055 0 127.502 0H51.3566V47.9409V73.5206C67.9637 78.7951 79.9965 94.3384 79.9965 112.692C79.9965 131.046 67.9637 146.589 51.3566 151.864V179H92.7601V129.378H127.564C146.118 129.378 161.496 123.277 173.575 111.073C185.653 98.8703 191.755 83.4296 191.755 64.689C191.755 45.9485 185.653 30.5078 173.512 18.3047ZM141.697 86.9784C136.343 92.7687 129.494 95.695 121.089 95.695H92.6978V33.8077H121.089C129.432 33.8077 136.28 36.7339 141.697 42.5242C147.052 48.3144 149.729 55.7235 149.729 64.7513C149.791 73.7791 147.052 81.1882 141.697 86.9784Z" fill="black" fill-rule="evenodd">
+          </path>
+          <path class="circle" d="M30 143C46.5685 143 60 129.569 60 113C60 96.4315 46.5685 83 30 83C13.4315 83 0 96.4315 0 113C0 129.569 13.4315 143 30 143Z" fill="#FF3465">
+          </path>
+         </g>
+         <defs>
+          <clippath id="clip0">
+           <rect fill="white" height="183" width="1476">
+           </rect>
+          </clippath>
+         </defs>
+        </svg>
+       </a>
+      </div>
+      <div class="copyright">
+       Â© Polkastarter 2021
+      </div>
+     </div>
+     <div>
+      <div class="footer__title">
+       Social
+      </div>
+      <a class="footer__link" href="https://medium.com/@polkastarter" target="_blank">
+       Medium
+      </a>
+      <a class="footer__link" href="https://t.me/polkastarter" target="_blank">
+       Telegram
+      </a>
+      <a class="footer__link" href="https://twitter.com/polkastarter" target="_blank">
+       Twitter
+      </a>
+     </div>
+     <div>
+      <div class="footer__title">
+       Company
+      </div>
+      <a class="footer__link" href="about.html">
+       About us
+      </a>
+      <a class="footer__link" href="https://governance.polkastarter.com/" target="_blank">
+       Apply for IDO
+      </a>
+     </div>
+     <div>
+      <div class="footer__title">
+       Help
+      </div>
+      <a class="footer__link" href="https://support.polkastarter.com/" target="_blank">
+       Support
+      </a>
+      <a class="footer__link" href="terms.html">
+       Terms
+      </a>
+      <a class="footer__link" href="privacy.html">
+       Privacy
+      </a>
+     </div>
+     <div>
+      <div class="footer__title">
+       Developers
+      </div>
+      <a class="footer__link" href="https://docs.polkastarter.com/" target="_blank">
+       Documentation
+      </a>
+      <a class="footer__link" href="https://www.npmjs.com/package/polkastarter-js" target="_blank">
+       Polkastarter.js
+      </a>
+     </div>
+    </div>
+    <div class="footer__theme">
+     <div class="footer__theme-switch" data-controller="dark-mode">
+      <button class="footer__theme-switch--left" data-action="click-&gt;dark-mode#switchDarkMode" data-theme="dark">
+       <svg fill="none" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path clip-rule="evenodd" d="M20 17.7534C20.2785 17.7255 20.5448 17.8746 20.6666 18.1267C20.7775 18.3623 20.7411 18.6409 20.5733 18.8401C18.6926 20.8983 16.028 22.0635 13.24 22.0467C7.67294 22.0467 3.15997 17.5338 3.15997 11.9667C3.15997 6.3997 7.67294 1.88673 13.24 1.88673C14.3763 1.88534 15.5042 2.0816 16.5733 2.46673C16.8331 2.55738 17.0106 2.79836 17.02 3.07339C17.0424 3.36006 16.8784 3.62879 16.6133 3.74006C13.499 5.14733 11.7697 8.51921 12.4439 11.8695C13.1181 15.2198 16.0171 17.6603 19.4333 17.7534H20ZM4.5133 12.0001C4.5133 16.8307 8.42931 20.7467 13.26 20.7467C15.1151 20.7569 16.9226 20.1598 18.4066 19.0467C14.8701 18.5692 11.9878 15.9728 11.1449 12.5052C10.3019 9.03757 11.6706 5.40774 14.5933 3.36006C14.1527 3.28675 13.7066 3.25106 13.26 3.25339C8.42931 3.25339 4.5133 7.16941 4.5133 12.0001Z" fill="#171A23" fill-rule="evenodd">
+        </path>
+       </svg>
+      </button>
+      <button class="footer__theme-switch--right" data-action="click-&gt;dark-mode#switchDarkMode" data-theme="light">
+       <svg fill="none" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path clip-rule="evenodd" d="M12 4.20675C12.3682 4.20675 12.6667 3.90827 12.6667 3.54008V1.27342C12.6667 0.905227 12.3682 0.60675 12 0.60675C11.6318 0.60675 11.3333 0.905227 11.3333 1.27342V3.54008C11.3333 3.90827 11.6318 4.20675 12 4.20675ZM5.78597 9.27507C6.85862 6.75451 9.34761 5.13159 12.0867 5.16675C15.7902 5.19609 18.7718 8.21647 18.7534 11.9201C18.7531 14.6594 17.0982 17.1272 14.564 18.1672C12.0298 19.2072 9.11839 18.6134 7.19396 16.6639C5.26952 14.7145 4.71333 11.7956 5.78597 9.27507ZM7.01727 14.0468C7.88317 16.0699 9.88637 17.3686 12.0867 17.3334C15.0513 17.3041 17.4349 14.8847 17.42 11.9201C17.4225 9.71946 16.0941 7.73581 14.0583 6.90012C12.0225 6.06443 9.68355 6.54261 8.13911 8.11022C6.59466 9.67783 6.15136 12.0237 7.01727 14.0468ZM11.3333 20.4601C11.3333 20.0919 11.6318 19.7934 12 19.7934C12.3682 19.7934 12.6667 20.0919 12.6667 20.4601V22.7267C12.6667 23.0949 12.3682 23.3934 12 23.3934C11.6318 23.3934 11.3333 23.0949 11.3333 22.7267V20.4601ZM5.54669 6.49342C5.67066 6.6061 5.8325 6.66799 6.00003 6.66675C6.17723 6.66778 6.34755 6.59821 6.47336 6.47342C6.59957 6.34824 6.67056 6.17784 6.67056 6.00009C6.67056 5.82233 6.59957 5.65193 6.47336 5.52675L4.88669 3.94675C4.62219 3.72024 4.2279 3.73547 3.98165 3.98171C3.7354 4.22796 3.72017 4.62225 3.94669 4.88675L5.54669 6.49342ZM17.8068 17.3335C18.0378 17.2716 18.2842 17.3376 18.4534 17.5068L20.0534 19.1134C20.3118 19.3734 20.3118 19.7934 20.0534 20.0534C19.9303 20.179 19.7625 20.2509 19.5867 20.2534C19.4085 20.2527 19.2381 20.1807 19.1133 20.0534L17.5067 18.4534C17.3376 18.2843 17.2715 18.0378 17.3334 17.8068C17.3953 17.5758 17.5758 17.3954 17.8068 17.3335ZM4.20669 12.0001C4.20669 11.6319 3.90821 11.3334 3.54002 11.3334H1.27336C0.905166 11.3334 0.606689 11.6319 0.606689 12.0001C0.606689 12.3683 0.905166 12.6668 1.27336 12.6668H3.54002C3.90821 12.6668 4.20669 12.3683 4.20669 12.0001ZM20.46 11.3334H22.7267C23.0949 11.3334 23.3933 11.6319 23.3933 12.0001C23.3933 12.3683 23.0949 12.6668 22.7267 12.6668H20.46C20.0918 12.6668 19.7933 12.3683 19.7933 12.0001C19.7933 11.6319 20.0918 11.3334 20.46 11.3334ZM5.54671 17.5067L3.94671 19.1134C3.75527 19.3033 3.69705 19.5898 3.79919 19.8393C3.90134 20.0889 4.14374 20.2523 4.41337 20.2534C4.59154 20.2527 4.76199 20.1807 4.88671 20.0534L6.49337 18.4534C6.75479 18.192 6.75479 17.7682 6.49337 17.5067C6.23196 17.2453 5.80812 17.2453 5.54671 17.5067ZM18.4733 6.47342C18.3475 6.59821 18.1772 6.66777 18 6.66675C17.8228 6.66777 17.6525 6.59821 17.5267 6.47342C17.4005 6.34824 17.3295 6.17784 17.3295 6.00008C17.3295 5.82232 17.4005 5.65193 17.5267 5.52675L19.1333 3.92675C19.3934 3.66827 19.8133 3.66827 20.0733 3.92675C20.3318 4.18677 20.3318 4.60672 20.0733 4.86675L18.4733 6.47342Z" fill="white" fill-rule="evenodd">
+        </path>
+       </svg>
+      </button>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <script src="https://polkastarter.app/assets/packs/js/vue/vue.js">
+  </script>
+  <script src="https://polkastarter.app/assets/packs/js/vue/axios.js">
+  </script>
+  <script src="https://polkastarter.app/assets/packs/js/vue/wallet.js">
+  </script>
+  <script>
+   var app = new Vue({
+        el: '#app',
+        data: {
+            message: 'Hello Vue!'
+        }
+    })
+  </script>
+ </body>
+</html>

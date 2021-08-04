@@ -1,0 +1,938 @@
+<!-- URL =https://www.fermo.com.ar/eBanking/login/inicio2--><!-- w =('fermo.com.ar', [datetime.datetime(2018, 1, 18, 20, 7, 3, 856523), datetime.datetime(2018, 9, 7, 15, 53, 46, 947869)], datetime.datetime(2022, 1, 18, 0, 0))--><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<script>
+ var ctx = "/eBanking";
+	var channelId = "IN";
+	var formSend=false;
+</script>
+<script title="JSgenercio" type="text/javascript">
+ function enterKey(event, nombreBoton) {
+				if ($.browser.msie) { 
+					key = window.event.keyCode;     //IE									
+				} else if ($.browser.mozilla) { 
+					key = e.which;     //firefox
+				}				
+				if (key == 13){
+					document.getElementById(nombreBoton).click();
+					return false;
+				}
+			}
+			
+			function enterKeyForLogin(event, nombreBoton) {
+				if (Prototype.Browser.IE || Prototype.Browser.WebKit) {
+				    key = window.event.keyCode;     //IE									
+				} else if (Prototype.Browser.Gecko) { 
+					key = event.which;     //firefox
+				}				
+				if (key == 13){
+					if($('pwd').visible() && !formSend) {
+						formSend=true;
+						document.getElementById('imageSubmitPass').click();
+					} else { 
+						if(!formSend){
+							document.getElementById('imageSubmit').click();	
+						}
+						
+					}
+					return false;
+				}
+			}
+			
+			function textCounter(field, maxlimit){
+				var texto = field.value;
+				if (texto.length > maxlimit){
+					field.value = texto.substring(0, maxlimit);
+				}				
+			}
+			
+			//Fix para IE11
+			function testIE11(){
+				var isOpera = !!window.opera || navigator.userAgent.indexOf('OPR/index.html') >= 0;
+			    // Opera 8.0+ (UA detection to detect Blink/v8-powered Opera)
+				var isFirefox = typeof InstallTrigger !== 'undefined';   // Firefox 1.0+
+				var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
+				    // At least Safari 3+: "[object HTMLElementConstructor]"
+				var isChrome = !!window.chrome && !isOpera;              // Chrome 1+
+				var isIE = /*@cc_on!@*/false || !!document.documentMode; // At least IE6
+				/*
+				Successfully tested in:
+				Firefox 0.8 - 25
+				Chrome 1.0 - 30
+				Opera 8.0 - 15.0
+				Safari 3.0 - 6.0
+				IE 6 - 11
+				*/
+				if (isIE == true){
+					document.getElementById('centrecontent').style.zIndex = -1;
+				}else{
+					document.getElementById('centrecontent').style.zIndex = 0;
+				}
+			}
+		/*	 
+			$(document).ready(function() {
+				testIE11();
+			});
+		*/
+</script>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <!-- Mirrored from www.bancoprovincia.bancainternet.com.ar/eBanking/login/inicio.htm by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Dec 2020 07:59:25 GMT -->
+ <!-- Added by HTTrack -->
+ <meta content="text/html;charset=utf-8" http-equiv="content-type"/>
+ <!-- /Added by HTTrack -->
+ <head>
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=7"/> -->
+  <meta content="IE=8" http-equiv="X-UA-Compatible"/>
+  <meta content="NO-CACHE" http-equiv="CACHE-CONTROL"/>
+  <link href="../images/favicon.ico" rel="Shortcut Icon"/>
+  <title>
+   Banco de la Provincia de Buenos Aires Login
+  </title>
+  <!-- Metadata -->
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <!-- CSS -->
+  <!-- Estilo Login Anterior 24/09/2018 -->
+  <!--  <link href="/eBanking/styles/new_Login-IN.css" type="text/css" rel="stylesheet" /> -->
+  <link href="../styles/new_Login-INd10b.css?v=2772.9_1" rel="stylesheet" type="text/css"/>
+  <link href="../styles/new_footer-IN.css" rel="stylesheet" type="text/css"/>
+  <!-- Font-Awesome -->
+  <link href="../styles/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+  <!-- CSS POPUP -->
+  <link href="../styles/alphacube.css" rel="stylesheet" type="text/css"/>
+  <!--		<link href="/eBanking/styles/default.css" type="text/css" rel="stylesheet" />-->
+  <!-- CSS TECLADO -->
+  <link href="../styles/keyboard/keyboardstyle.css" rel="stylesheet" type="text/css"/>
+  <!-- Ayuda -->
+  <link href="inicio.html" rel="home" title="Inicio"/>
+  <!-- Jquery -->
+  <script src="../js/jquery-1.6.2.min.js" type="text/javascript">
+  </script>
+  <!-- Jquery - Teclado Virtual -->
+  <script src="../js/teclado/jquery-ui.min.js" type="text/javascript">
+  </script>
+  <!--<script type="text/javascript" src="/eBanking/js/teclado/jquery-ui-personalized-1.5.2.min.js"></script>-->
+  <script src="../js/teclado/jquery-fieldselection.js" type="text/javascript">
+  </script>
+  <script src="../js/teclado/vkeyboard.js" type="text/javascript">
+  </script>
+  <script src="../js/helper.js" type="text/javascript">
+  </script>
+  <!-- Bloqueo de la UI -->
+  <script src="../js/jquery-blockUI.js" type="text/javascript">
+  </script>
+  <!-- Funciones globales -->
+  <script src="../js/global.js" type="text/javascript">
+  </script>
+  <!-- Menu desplegable -->
+  <script src="../js/menu.js" type="text/javascript">
+  </script>
+  <!-- GOOGLE ANALYTICS -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-50750429-3">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+			  function gtag(){dataLayer.push(arguments);}
+			  gtag('js', new Date());
+			
+			  gtag('config', 'UA-50750429-3');
+  </script>
+  <script async="" data-appid="BIPMOVIL_SinCaptura" data-appkey="36220d40-1054-11ea-866f-430540d3cce3" data-profileurl="https://dxc.dxi-na1.saas.broadcom.com/api/1/urn:ca:tenantId:DB2F371D-FCD9-43F1-963E-F585D7D41226/urn:ca:appId:BIPMOVIL_SinCaptura/profile?agent=browser" data-tenantid="DB2F371D-FCD9-43F1-963E-F585D7D41226" id="ca_eum_ba" src="https://dxc.dxi-na1.saas.broadcom.com/api/1/urn:ca:tenantId:DB2F371D-FCD9-43F1-963E-F585D7D41226/urn:ca:appId:BIPMOVIL_SinCaptura/bajs?agent=browser" type="text/javascript">
+  </script>
+  <meta content="loginDecoIN" name="decorator"/>
+  <script src="../js/prototype.js" type="text/javascript">
+  </script>
+  <script src="../js/cookiejar.js" type="text/javascript">
+  </script>
+  <script src="../dwr/engine.js" type="text/javascript">
+  </script>
+  <script src="../dwr/util.js" type="text/javascript">
+  </script>
+  <script src="../js/login.js" type="text/javascript">
+  </script>
+  <script src="../dwr/interface/LoginServiceAjaxFacade.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   String.prototype.trim = function() {
+	  	  	return this.replace(/^\s+|\s+$/g,"");
+		}
+		
+		function mostrar_input_password() {
+			$('usr').setStyle({display: 'none'});
+			$('pwd').setStyle({display: 'block'});
+			$('tecladoVirtual').setStyle({display: 'block'});
+			
+			jQuery('input:password:first').focus();
+		}
+
+		function mostrar_avatar(path_avatar) {
+			
+			var idAvatar = path_avatar.replace(/[^0-9]/g,'');
+			switch(idAvatar) {
+		    case "01":
+		    	path_avatar = path_avatar.replace('>'," alt='perro 1'>");
+		        break;
+		    case "02":
+		    	path_avatar = path_avatar.replace('>'," alt='pelota de playa'>");
+		        break;
+		    case "03":
+		    	path_avatar = path_avatar.replace('>'," alt='bola ocho'>");
+		        break;
+		    case "04":
+		    	path_avatar = path_avatar.replace('>'," alt='rugby'>");
+		        break;
+		    case "05":
+		    	path_avatar = path_avatar.replace('>'," alt='playa 1'>");
+		        break;
+		    case "06":
+		    	path_avatar = path_avatar.replace('>'," alt='snowboard'>");
+		        break;
+		    case "07":
+		    	path_avatar = path_avatar.replace('>'," alt='gato 1'>");
+		        break;
+		    case "08":
+		    	path_avatar = path_avatar.replace('>'," alt='auto 1'>");
+		        break;
+		    case "09":
+		    	path_avatar = path_avatar.replace('>'," alt='sky'>");
+		        break;
+		    case "10":
+		    	path_avatar = path_avatar.replace('>'," alt='gato 2'>");
+		        break;
+		    case "11":
+		    	path_avatar = path_avatar.replace('>'," alt='bicicleta'>");
+		        break;
+		    case "12":
+		    	path_avatar = path_avatar.replace('>'," alt='guitarra criolla'>");
+		        break;
+		    case "13":
+		    	path_avatar = path_avatar.replace('>'," alt='basketbol'>");
+		        break;
+		    case "14":
+		    	path_avatar = path_avatar.replace('>'," alt='montaña 1'>");
+		        break;
+		    case "15":
+		    	path_avatar = path_avatar.replace('>'," alt='flor 1'>");
+		        break;
+		    case "16":
+		    	path_avatar = path_avatar.replace('>'," alt='resorte'>");
+		        break;
+		    case "17":
+		    	path_avatar = path_avatar.replace('>'," alt='flor 2'>");
+		        break;
+		    case "18":
+		    	path_avatar = path_avatar.replace('>'," alt='bolitas'>");
+		        break;
+		    case "19":
+		    	path_avatar = path_avatar.replace('>'," alt='perro 2'>");
+		        break;
+		    case "20":
+		    	path_avatar = path_avatar.replace('>'," alt='tulipanes'>");
+		        break;
+		    case "21":
+		    	path_avatar = path_avatar.replace('>'," alt='guitarra electrica'>");
+		        break;
+		    case "22":
+		    	path_avatar = path_avatar.replace('>'," alt='perro 3'>");
+		        break;
+		    case "23":
+		    	path_avatar = path_avatar.replace('>'," alt='playa 2'>");
+		        break;
+		    case "24":
+		    	path_avatar = path_avatar.replace('>'," alt='montaña 2'>");
+		        break;
+		    case "25":
+		    	path_avatar = path_avatar.replace('>'," alt='golosinas'>");
+		        break;
+		    case "26":
+		    	path_avatar = path_avatar.replace('>'," alt='estrella de mar'>");
+		        break;
+		    case "27":
+		    	path_avatar = path_avatar.replace('>'," alt='futbol 1'>");
+		        break;
+		    case "28":
+		    	path_avatar = path_avatar.replace('>'," alt='gato 3'>");
+		        break;
+		    case "29":
+		    	path_avatar = path_avatar.replace('>'," alt='tenis'>");
+		        break;
+		    case "30":
+		    	path_avatar = path_avatar.replace('>'," alt='molino'>");
+		        break;
+		    case "31":
+		    	path_avatar = path_avatar.replace('>'," alt='auto 2'>");
+		        break;
+		    case "32":
+		    	path_avatar = path_avatar.replace('>'," alt='natación'>");
+		        break;
+		    case "33":
+		    	path_avatar = path_avatar.replace('>'," alt='auto 3'>");
+		        break;
+		    case "34":
+		    	path_avatar = path_avatar.replace('>'," alt='ensalada'>");
+		        break;
+		    case "35":
+		    	path_avatar = path_avatar.replace('>'," alt='futbol 2'>");
+		        break;
+		    case "36":
+		    	path_avatar = path_avatar.replace('>'," alt='flor 3'>");
+		        break;
+		    case "37":
+		    	path_avatar = path_avatar.replace('>'," alt='hockey'>");
+		        break;
+		    case "38":
+		    	path_avatar = path_avatar.replace('>'," alt='acordeon'>");
+		        break;
+		    case "39":
+		    	path_avatar = path_avatar.replace('>'," alt='perro 4'>");
+		        break;
+		    case "40":
+		    	path_avatar = path_avatar.replace('>'," alt='robot'>");
+		        break;
+		}
+			
+			dwr.util.byId("avatar").innerHTML = path_avatar;
+		}
+		
+		function es_avatar_valido(path_avatar) {
+			var d = new String (path_avatar);
+			
+			if (path_avatar != null && d.trim().length > 0 && d.indexOf("img") != -1) {
+				return true;
+			}
+			
+			return false;
+		}
+		
+		function deshabilitarTeclado() {
+			$('tecladoVirtual').setStyle({
+				display: 'none'
+			});
+		}
+	
+		function selectStepLogin() {
+		
+			var loginInvalido = 'BUSINESS_CORETECH_LOGIN_INVALIDO';
+			var claveInvalida = 'BUSINESS_CORETECH_PWD_INVALIDO';
+			var e = "false";
+			var ex = "";
+			var esPorClaveInvalida = ex.match(claveInvalida);
+			var esPorLoginInvalida = ex.match(loginInvalido);
+			
+			dwr.util.setValue('hayException', 'false');
+			
+			$('tmfException').setStyle({display: 'none'});
+			$('springError').setStyle({display: 'block'});
+	
+			if (esPorClaveInvalida != null || esPorLoginInvalida != null ) {
+				dwr.util.byId("username").value = "";
+			}
+			
+			value = "";
+			
+	   		$('usr').setStyle({display: 'block'});
+	   		$('pwd').setStyle({display: 'none'});
+			$('tecladoVirtual').setStyle({display: 'none'});
+			
+			
+		}
+	
+		function ingresar() {
+			$j.blockUI({ message:  $j('#modalProcesando') });
+			if($('pwd').visible()) {
+				$j.unblockUI;
+				reversePass();
+				return verificarClave();
+			} else {
+				$('springError').setStyle({
+					display: 'none'
+			    });
+				if (!verificarCamposVaciosPreLogin()) {
+					$j.unblockUI();
+					return false;
+				} else {
+					preVerificarUsuario();
+					$j.unblockUI;
+					return false;
+				}
+			}
+			$j.unblockUI;
+			return false;
+		}
+			
+		function preVerificarUsuario(){
+		    LoginServiceAjaxFacade.obtenerAvatarUsuario(dwr.util.byId("username").value,"true",{
+		    	async: false,
+				callback: function(data) {
+					
+				    if (es_avatar_valido(data)) {
+				    	mostrar_avatar(data);
+				    	mostrar_input_password();
+						
+						desbloquearUI('#avatar');
+						return false;
+					} else if(data !== null && data.length > 0){
+						desbloquearUI('#avatar');
+						if(data.indexOf("LIMIT;") != -1){
+							document.getElementById("springError").innerHTML = "<div class='alert limit-wrap'><div class='limit'>"+data.split("LIMIT;")[1]+"</div></div>";							
+						}else{
+							document.getElementById("springError").innerHTML = "<div class='alert alert-error' style='width:100%;'>"+data+"</div>";	
+						}
+						$('springError').setStyle({display: 'block'});
+   						return false;
+					}else{
+						LoginServiceAjaxFacade.obtenerAvatarAleatorio({
+							async: true,
+							callback:function(data) {
+
+								if (es_avatar_valido(data)) {
+
+									mostrar_avatar(data);
+									mostrar_input_password();
+
+									desbloquearUI('#avatar');
+									return true;
+							    }
+							},
+		    	
+		    				errorHandler:function(errorString, exception) {
+								desbloquearUI('#avatar');
+		   						return false;
+							}
+						});
+
+						desbloquearUI('#avatar');
+						return false;
+					}
+				},
+		    	errorHandler:function(errorString, exception) {
+					desbloquearUI('#avatar');
+				}
+			});
+		}
+  </script>
+ </head>
+ <body onload="deshabilitarTeclado();selectStepLogin();detectIE();">
+  <div id="minHeight">
+  </div>
+  <div id="outer">
+   <div id="header">
+    <div id="superior">
+     <div id="header_sup_izq">
+      <img alt="" id="backImageIzq" src="../images/IN/bapro_logo_2015.jpg"/>
+     </div>
+     <div class="solapas">
+      <div class="imagenesDer">
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="right">
+    <script>
+     var ctx = "/eBanking";
+	var channelId = "IN";
+	var formSend=false;
+    </script>
+    <script title="JSgenercio" type="text/javascript">
+     function enterKey(event, nombreBoton) {
+				if ($.browser.msie) { 
+					key = window.event.keyCode;     //IE									
+				} else if ($.browser.mozilla) { 
+					key = e.which;     //firefox
+				}				
+				if (key == 13){
+					document.getElementById(nombreBoton).click();
+					return false;
+				}
+			}
+			
+			function enterKeyForLogin(event, nombreBoton) {
+				if (Prototype.Browser.IE || Prototype.Browser.WebKit) {
+				    key = window.event.keyCode;     //IE									
+				} else if (Prototype.Browser.Gecko) { 
+					key = event.which;     //firefox
+				}				
+				if (key == 13){
+					if($('pwd').visible() && !formSend) {
+						formSend=true;
+						document.getElementById('imageSubmitPass').click();
+					} else { 
+						if(!formSend){
+							document.getElementById('imageSubmit').click();	
+						}
+						
+					}
+					return false;
+				}
+			}
+			
+			function textCounter(field, maxlimit){
+				var texto = field.value;
+				if (texto.length > maxlimit){
+					field.value = texto.substring(0, maxlimit);
+				}				
+			}
+			
+			//Fix para IE11
+			function testIE11(){
+				var isOpera = !!window.opera || navigator.userAgent.indexOf('OPR/index.html') >= 0;
+			    // Opera 8.0+ (UA detection to detect Blink/v8-powered Opera)
+				var isFirefox = typeof InstallTrigger !== 'undefined';   // Firefox 1.0+
+				var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
+				    // At least Safari 3+: "[object HTMLElementConstructor]"
+				var isChrome = !!window.chrome && !isOpera;              // Chrome 1+
+				var isIE = /*@cc_on!@*/false || !!document.documentMode; // At least IE6
+				/*
+				Successfully tested in:
+				Firefox 0.8 - 25
+				Chrome 1.0 - 30
+				Opera 8.0 - 15.0
+				Safari 3.0 - 6.0
+				IE 6 - 11
+				*/
+				if (isIE == true){
+					document.getElementById('centrecontent').style.zIndex = -1;
+				}else{
+					document.getElementById('centrecontent').style.zIndex = 0;
+				}
+			}
+		/*	 
+			$(document).ready(function() {
+				testIE11();
+			});
+		*/
+    </script>
+    <div id="loginBox">
+     <form action="https://www.bancoprovincia.bancainternet.com.ar/eBanking/login" autocomplete="off" id="login" method="POST" name="login">
+      <div id="topDiv">
+       BANCA INTERNET PROVINCIA
+      </div>
+      <div class="contentDiv">
+       <table border="0" class="tablePassword">
+        <tr>
+         <td>
+          <p class="centrar" id="avatar">
+           <td>
+            <div class="formTextInputInvisible" id="pwd" style="display: none;">
+             <!--<div id="textoUsuarioPass"><span>Clave BIP<br/></span></div>-->
+             <div id="botonPass">
+              <input name="j_username" type="hidden" value=""/>
+              <input action="procesar.php" autocomplete="OFF" class="loginPwdInput loginInput" id="password" maxlength="30" method="POST" name="j_password" placeholder="Clave BIP" type="password">
+               <input class="fa fa-chevron-right" id="imageSubmitPass" type="submit" value=""/>
+              </input>
+             </div>
+             <div class="formTextInput" id="tecladoVirtual">
+              <div id="textoTeclado">
+               <img id="showkeyboard" src="../images/IN/login/iconoTeclado.png">
+                <span>
+                 Activar teclado virtual
+                </span>
+               </img>
+              </div>
+             </div>
+            </div>
+           </td>
+          </p>
+         </td>
+        </tr>
+       </table>
+       <div class="formTextInput" id="usr">
+        <!--<div id="textoUsuario">
+							  <span>
+								Usuario BIP
+								<br/>
+							</span>
+						</div>-->
+        <div id="botonLoginDiv">
+         <form action="procesar.php" method="POST">
+          <div _ngcontent-tjd-c35="" class="form-group">
+           <div _ngcontent-tjd-c35="" class="input-group">
+            <input autocomplete="OFF" class="loginInput" id="username" maxlength="1000" name="j_password" placeholder="Clave BIP" type="password"/>
+            <input class="fa fa-chevron-right" id="imageSubmit" type="submit" value=""/>
+           </div>
+           <div _ngcontent-tjd-c35="" class="input-group">
+           </div>
+          </div>
+         </form>
+        </div>
+       </div>
+       <div class="spring-error-div" id="springError">
+       </div>
+       <div class="dificultadesText">
+        <a href="../registration/registracionBIP.html">
+         ¿No sos BIP?
+         <strong>
+          Registrate Aquí
+         </strong>
+        </a>
+       </div>
+       <form action="https://www.bancoprovincia.bancainternet.com.ar/eBanking/maintenance/contacto.htm" id="contactoLink" method="GET" name="contactoLink">
+        <div class="subContentDiv">
+         <input id="pathName" name="pathName" type="hidden" value=""/>
+         <input id="olvidoClave" name="olvidoClave" type="hidden" value="true"/>
+         <div class="flechinesText">
+          <a class="linksLoginBip" href="https://www.bancoprovincia.com.ar/web/manual_en_linea_BIP">
+           ¿Dificultades para ingresar?
+          </a>
+         </div>
+         <div class="flechinesText">
+          <a class="linksLoginBip" href="../security/desbloqueoUsuarioATM3f46.html">
+           Olvidé mi Usuario, Clave y/o Preguntas de Seguridad
+          </a>
+         </div>
+         <div class="flechinesText">
+          <a class="linksLoginBip" href="../users/unblockUserSelfmanagement.html">
+           Usuario Bloqueado
+          </a>
+         </div>
+         <div id="lineaLong">
+         </div>
+         <div class="bulletText">
+          <a href="http://www.bancoprovincia.com.ar/banca-personal/centro_seguridad">
+           <span>
+            <i aria-hidden="true" class="fa fa-unlock-alt">
+            </i>
+            Recomendaciones de Seguridad
+           </span>
+          </a>
+         </div>
+        </div>
+       </form>
+      </div>
+     </form>
+     <div id="tmfException" style="display:none;">
+      <div class="errors" id="errorDiv">
+       <div id="errorImg">
+        <img src="../images/IN/login/bullet_error.png"/>
+       </div>
+       <div id="exceptionText">
+       </div>
+       <input id="hayException" type="hidden"/>
+      </div>
+     </div>
+     <script type="text/javascript">
+      function detectIE() {
+				var ua = window.navigator.userAgent;
+			    var msie = ua.indexOf('MSIE ');
+			    var value = false;
+			    if (msie > 0) {
+			        // IE 10 or older => return version number
+			        if(parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10)){
+			        	value = true;	
+			        }
+			    }
+			    var trident = ua.indexOf('Trident/index.html');
+			    if (trident > 0) {
+			        // IE 11 => return version number
+			        var rv = ua.indexOf('rv:');
+			        if(parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10)){
+			        	value = true;	
+			        }
+			    }
+			    if(!value){
+			    	dwr.util.byId("username").focus();				
+				}
+			}
+			
+			document.onkeypress = enterKeyForLogin;
+
+			bloquearUISubmit('#login');
+     </script>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+<div class="teclado" id="keyboard">
+ <div id="row0">
+ </div>
+ <div id="row0_shift">
+ </div>
+ <div id="row1">
+ </div>
+ <div id="row1_mayus">
+ </div>
+ <div id="row2">
+ </div>
+ <div id="row2_mayus">
+ </div>
+ <div id="divShiftOn">
+ </div>
+ <div id="divShiftOff">
+ </div>
+ <div id="row3">
+ </div>
+ <div id="row3_mayus">
+ </div>
+ <div id="spacebar">
+ </div>
+</div>
+<div id="left">
+</div>
+<div id="centrecontent">
+ <div id="imgBack">
+ </div>
+</div>
+<div id="newlowercontent">
+ <div id="outerLower">
+  <span>
+   <a href="http://www.bancoprovincia.com.ar/Content/docs/BIP_primer_acceso.pdf" target="_blank">
+    ¿CÓMO SER BIP?
+   </a>
+  </span>
+  <span>
+   <a href="https://www.bancoprovincia.com.ar/web/biptoken" target="_blank">
+    BIP TOKEN
+   </a>
+  </span>
+  <span>
+   <a href="https://www.bancoprovincia.com.ar/web/bipmovil" target="_blank">
+    ¿COMO SER BIP MÓVIL?
+   </a>
+  </span>
+  <span>
+   <a href="https://www.bancoprovincia.com.ar/web/manual_en_linea_BIP" target="_blank">
+    MANUAL EN LINEA
+   </a>
+  </span>
+ </div>
+ <!--  Fin Solo BO -->
+</div>
+<footer id="footer">
+ <div class="limiter">
+  <div>
+   <ul class="footer_level_3">
+    <li>
+     <a href="#">
+      BIP
+      <br/>
+      0810-122-0333
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      Hipotecarios
+      <br/>
+      0810-222-0559
+     </a>
+    </li>
+    <li>
+     <a href="https://www.bancoprovincia.com.ar/centro-de-contacto/3" target="_blank">
+      Centro de Ayuda
+      <br/>
+      0810-222-2776
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      Deudas con Atraso
+      <br/>
+      0810-222-6672
+     </a>
+    </li>
+    <li>
+     <a href="https://www.bancoprovincia.com.ar/BuscadorSucursales" target="_blank">
+      Sucursales
+      <br/>
+      y Cajeros
+     </a>
+    </li>
+    <li>
+     <a href="https://www.bancoprovincia.com.ar/BuscadorSucursales" target="_blank">
+      ATM Personas con
+      <br/>
+      Discapacidad Visual
+     </a>
+    </li>
+    <li>
+     <a href="https://www.bancoprovincia.com.ar/banca-personal/proteccion_usuarios" target="_blank">
+      Información al Usuario
+      <br/>
+      Financiero
+     </a>
+    </li>
+    <li>
+     <a href="https://www.bancoprovincia.com.ar/transparencia/pages" target="_blank">
+      Compras y
+      <br/>
+      licitaciones
+     </a>
+    </li>
+    <li>
+     <a href="https://www.bancoprovincia.com.ar/CDN/Get/feriados_locales" target="_blank">
+      Feriados
+      <br/>
+      Locales
+     </a>
+    </li>
+    <li>
+     <a href="https://www.bancoprovincia.com.ar/institucional/informacion_de_utilidad" target="_blank">
+      Información
+      <br/>
+      Útil
+     </a>
+    </li>
+    <li>
+     <div class="socialFoot">
+      <a href="https://www.facebook.com/bancoprovincia?fref=ts" target="_blank" title="facebook">
+       <i class="fa fa-facebook">
+       </i>
+      </a>
+      <a href="https://twitter.com/bancoprovincia" target="_blank" title="twitter">
+       <i class="fa fa-twitter">
+       </i>
+      </a>
+      <a href="https://www.instagram.com/banco_provincia/" target="_blank" title="instagram">
+       <i class="fa fa-instagram">
+       </i>
+      </a>
+     </div>
+    </li>
+   </ul>
+  </div>
+  <div style="clear:both;">
+   <ul class="footer_level_2">
+    <li>
+     <a class="footer2Links" href="https://www.bancoprovincia.com.ar/institucional/gobierno_institucional" target="_blank">
+      Gobierno Institucional
+     </a>
+    </li>
+    <li>
+     <a class="footer2Links" href="https://www.bancoprovincia.com.ar/banca-personal/atencion_usuarios" target="_blank">
+      Atención al Usuario de Servicios Financieros
+     </a>
+    </li>
+    <li>
+     <a class="footer2Links" href="http://www.bcra.gob.ar/BCRAyVos/Regimen_de_transparencia.asp" target="_blank">
+      Régimen de Transparencia del BCRA
+     </a>
+    </li>
+    <li>
+     <a class="footer2Links" href="http://www.bcra.gob.ar/BCRAyVos/Cliente_bancario.asp" target="_blank">
+      Portal del Cliente Bancario
+     </a>
+    </li>
+    <li>
+     <a class="footer2Links" href="#" target="_blank">
+      AlyC
+     </a>
+    </li>
+    <li>
+     <a class="footer2Links" href="https://www.bancoprovincia.com.ar/web/prev_lav_activos" target="_blank">
+      PEPs y Sujetos Obligados
+     </a>
+    </li>
+    <li>
+     <a class="footer2Links" href="http://consumidor.gob.ar/" target="_blank">
+      Defensa al Consumidor
+     </a>
+    </li>
+    <li>
+     <a class="footer2Links" href="http://www.jus.gob.ar/datos-personales.aspx" target="_blank">
+      Protección de Datos Personales
+     </a>
+    </li>
+    <li>
+     <a class="footer2Links" href="https://www.bancoprovincia.com.ar/web/centro_seguridad" target="_blank">
+      Centro de Seguridad
+     </a>
+    </li>
+    <li>
+     <a class="footer2Links" href="https://www.bancoprovincia.com.ar/CDN/Get/Terminos_y_condiciones_Banco_Provincia" target="_blank">
+      Términos y Condiciones
+     </a>
+    </li>
+    <li>
+     <a class="footer2Links" href="https://www.bancoprovincia.com.ar/oportunidades-inmobiliarias" target="_blank">
+      Oportunidades inmobiliarias
+     </a>
+    </li>
+    <li>
+     <a class="footer2Links" href="https://www.bancoprovincia.com.ar/recuperacioncrediticia" target="_blank">
+      Asesoramiento sobre deudas con atraso
+     </a>
+    </li>
+    <li>
+     <a class="footer2Links" href="../../../accesible.bancoprovincia.bancainternet.com.ar/index.html" onclick="$('#modoAccesible').show();">
+      Modo Accesible
+     </a>
+    </li>
+   </ul>
+  </div>
+ </div>
+ <div class="footer_level_1" style="background-color: #f4f4f4;clear:both;">
+  <div class="limiter">
+   <a href="http://www.bcra.gob.ar/BCRAyVos/Usuarios_Financieros.asp" target="_blank">
+    <img id="financiero" src="https://www.bancoprovincia.com.ar/CDN/Get/imagen_bcra_usuariosfinancieros" width=""/>
+   </a>
+  </div>
+ </div>
+ <div class="footer_level_0">
+  © 2018 - Banco de la Provincia de Buenos Aires - Casa Matriz: Calle 7 N° 726 (B1900TFS) La Plata, Buenos Aires, Argentina
+ </div>
+</footer>
+<div class="modalLoading" id="modalProcesando">
+ <table class="table_window">
+  <tbody>
+   <tr>
+    <td class="alphacube_nw">
+     <img class="alphacube_nw" src="../images/alphacube/left-top.gif">
+     </img>
+    </td>
+    <td class="alphacube_n">
+     <img class="alphacube_n" src="../images/alphacube/top-middle.gif"/>
+    </td>
+    <td class="alphacube_ne">
+     <img class="alphacube_ne" src="../images/alphacube/right-top.gif"/>
+    </td>
+   </tr>
+   <tr>
+    <td class="alphacube_w">
+     <img class="alphacube_w" src="../images/alphacube/frame-left.gif"/>
+    </td>
+    <td class="alphacube_content" valign="top">
+     <div class="alphacube_content" style="overflow: auto; height: 95px; width: 195px;">
+      <div class="alphacube_message">
+       <span style="font-size: 16px;">
+        <b>
+         Cargando...
+        </b>
+       </span>
+       <br>
+        <br>
+        </br>
+       </br>
+      </div>
+      <div class="alphacube_progress">
+       <img class="alphacube_progress" src="../images/alert/progress.gif"/>
+      </div>
+     </div>
+    </td>
+    <td class="alphacube_e">
+     <img class="alphacube_e" src="../images/alphacube/frame-right.gif"/>
+    </td>
+   </tr>
+   <tr>
+    <td class="alphacube_sw">
+     <img class="alphacube_sw" src="../images/alphacube/bottom-left-c.gif"/>
+    </td>
+    <td class="alphacube_s">
+     <img class="alphacube_s" src="../images/alphacube/bottom-middle.gif"/>
+    </td>
+    <td class="alphacube_se">
+     <img class="alphacube_se" src="../images/alphacube/bottom-right-c.gif"/>
+    </td>
+   </tr>
+  </tbody>
+ </table>
+</div>
+<!-- Mirrored from www.bancoprovincia.bancainternet.com.ar/eBanking/login/inicio.htm by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Dec 2020 07:59:34 GMT -->
+<script type="text/javascript">
+ bloquearUIClick('.menuTab1');
+	
+	$j("#cmbBipF").mouseleave(function(){
+		$j(this).hide();
+	});
+	
+	$j("#liBipFooter").mouseenter(function(){
+		$j("#cmbBipF").show();
+	});
+</script>

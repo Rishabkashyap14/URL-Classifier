@@ -1,0 +1,182 @@
+<!-- URL =http://wlswarts.com/webmail--><!-- w =('WLSWARTS.COM', datetime.datetime(2005, 3, 26, 23, 32, 32), datetime.datetime(2022, 3, 26, 22, 32, 32))--><!DOCTYPE html>
+<html id="-webmail" lang="en-us">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="all" name="robots"/>
+  <title>
+   Webmail
+  </title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <!-- App css -->
+  <link href="http://cdn.materialdesignicons.com/4.7.95/css/materialdesignicons.min.css" rel="stylesheet" type="text/css"/>
+  <link href="/webmail-proxy/nodeworx/templates/interworx/css/interworx.css" id="light-style" rel="stylesheet" type="text/css"/>
+  <link href="/webmail-proxy/node_modules/jquery-ui-dist/jquery-ui.css" rel="stylesheet"/>
+  <link href="/webmail-proxy/node_modules/jquery-idleTimeout-plus/dist/css/jquery-idleTimeout-plus.min.css" rel="stylesheet"/>
+  <link href="/webmail-proxy/siteworx/templates/interworx/images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+  <link href="/webmail-proxy/siteworx/templates/interworx/images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+  <link href="/webmail-proxy/siteworx/templates/interworx/images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+  <link href="/webmail-proxy/siteworx/templates/interworx/images/site.webmanifest" rel="manifest"/>
+  <link color="#ffbc00" href="/webmail-proxy/siteworx/templates/interworx/images/safari-pinned-tab.svg" rel="mask-icon"/>
+  <link href="/webmail-proxy/siteworx/templates/interworx/images/favicon.ico" rel="shortcut icon"/>
+  <meta content="#ffc40d" name="msapplication-TileColor"/>
+  <meta content="/siteworx/templates/interworx/images/browserconfig.xml" name="msapplication-config"/>
+  <meta content="#ffffff" name="theme-color"/>
+ </head>
+ <body class="loading " data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":, "leftSidebarScrollable":false,"darkMode":, "showRightSidebarOnStart": false}'>
+  <div class="account-pages mt-5 mb-5">
+   <div class="container">
+    <div class="row justify-content-center">
+     <div class="col-lg-5">
+      <div class="card">
+       <!-- Logo -->
+       <div class="card-header pt-4 pb-4 text-center">
+        <a href="https://interworx.com">
+         <span>
+          <img alt="SiteWorx Logo" src="/webmail-proxy/img/logos/tkwebhosting_grey.png" width="270"/>
+         </span>
+        </a>
+       </div>
+       <div class="card-body p-4">
+        <div class="text-center w-75 m-auto">
+         <h4 class="text-dark-50 text-center mt-0 font-weight-bold">
+          Webmail Login
+         </h4>
+        </div>
+        <form id="iw-webmail" name="webmailchooser">
+         <input name="uri" type="hidden" value=""/>
+         <div class="form-group">
+          <label for="email">
+           E-mail Address
+          </label>
+          <div class="input-group">
+           <div class="input-group-prepend">
+            <span class="input-group-text">
+             <i class="mdi mdi-email">
+             </i>
+            </span>
+           </div>
+           <input class="form-control" id="email" name="email" placeholder="E-mail Address" required="" type="email"/>
+          </div>
+         </div>
+         <div class="form-group">
+          <label for="password">
+           Password
+          </label>
+          <div class="input-group">
+           <div class="input-group-prepend">
+            <span class="input-group-text">
+             <i class="mdi mdi-lock">
+             </i>
+            </span>
+           </div>
+           <input class="form-control" id="password" name="pass" placeholder="Password" required="" type="password"/>
+          </div>
+         </div>
+         <div class="form-group">
+          <label for="password">
+           Webmail
+          </label>
+          <div class="input-group">
+           <div class="input-group-prepend">
+            <span class="input-group-text">
+             <i class="mdi mdi-email-search">
+             </i>
+            </span>
+           </div>
+           <select class="custom-select" name="webmail">
+            <option selected="selected" value="horde">
+             Horde/IMP
+            </option>
+            <option value="roundcube">
+             RoundCube
+            </option>
+           </select>
+          </div>
+         </div>
+         <div class="form-group pt-3 mb-0 text-center">
+          <button class="btn btn-primary" type="submit">
+           Login
+          </button>
+         </div>
+        </form>
+        <form action="/horde/login.php" id="horde_login" method="post" name="horde_login">
+         <input id="app" name="app" type="hidden" value="imp">
+          <input id="login_post" name="login_post" type="hidden" value="1">
+           <input name="url" type="hidden" value="/horde/imp/">
+            <input id="anchor_string" name="anchor_string" type="hidden" value=""/>
+            <input id="horde_user" name="horde_user" type="hidden" value=""/>
+            <input id="horde_pass" name="horde_pass" type="hidden" value=""/>
+            <input id="horde_select_view" name="horde_select_view" type="hidden" value="auto"/>
+           </input>
+          </input>
+         </input>
+        </form>
+        <form action="/roundcube/ " method="post" name="roundcube_login">
+         <input name="_action" type="hidden" value="login"/>
+         <input id="rcmlogintz" name="_timezone" type="hidden" value="_default_"/>
+         <input name="_token" type="hidden" value=""/>
+         <input name="_url" type="hidden" value=""/>
+         <input name="_task" type="hidden" value="login"/>
+         <input name="_user" type="hidden" value=""/>
+         <input name="_pass" type="hidden" value=""/>
+        </form>
+       </div>
+       <!-- end card-body -->
+      </div>
+      <!-- end card -->
+     </div>
+     <!-- end col -->
+    </div>
+    <!-- end row -->
+   </div>
+   <!-- end container -->
+  </div>
+  <!-- end page -->
+  <footer class="footer footer-alt">
+   <span class="text-muted pr-2">
+    InterWorx 7.5.1
+   </span>
+   © 2021 InterWorx LLC
+  </footer>
+  <!-- Loading scripts at the bottom of the page is good. -->
+  <script>
+   var iw_js_data = {"xhr_validate":"1","xhr_log_reload":"5"};
+  </script>
+  <iframe id="iw-mb-iframe" src="javascript:false" style="display:none">
+  </iframe>
+  <div id="iw-mb" style="visibility: hidden">
+   <div class="bd">
+    <div class="alert text-white border-0 alert-info bg-info" id="iw-mb-content">
+    </div>
+   </div>
+  </div>
+  <script src="/webmail-proxy/static/7.5.1-1859/js/builds/bd073911b99775f96509f224c7401f7d.js">
+  </script>
+  <!--
+<script src="/webmail-proxy/node_modules/jquery/dist/jquery.js"></script>
+<script src="/webmail-proxy/node_modules/jquery-ui-dist/jquery-ui.js"></script>
+<script src="/webmail-proxy/node_modules/jquery-storage-api/jquery.storageapi.js"></script>
+<script src="/webmail-proxy/node_modules/jquery-idleTimeout-plus/dist/js/jquery-idleTimeout-plus.min.js"></script>
+<script src="/webmail-proxy/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="/webmail-proxy/node_modules/typeahead.js/dist/typeahead.bundle.js"></script>
+<script src="/webmail-proxy/hyper/assets/js/vendor/moment.js"></script>
+<script src="/webmail-proxy/hyper/assets/js/vendor/simplebar.min.js"></script>
+<script src="/webmail-proxy/hyper/assets/js/vendor/metisMenu.js"></script>
+<script src="/webmail-proxy/hyper/assets/js/vendor/select2.min.js"></script>
+<script src="/webmail-proxy/hyper/assets/js/vendor/jquery.mask.min.js"></script>
+<script src="/webmail-proxy/hyper/assets/js/vendor/jquery.bootstrap.wizard.min.js"></script>
+<script src="/webmail-proxy/hyper/assets/js/vendor/jquery.toast.min.js"></script>
+<script src="/webmail-proxy/hyper/assets/js/layout.js"></script>
+<script src="/webmail-proxy/hyper/assets/js/hyper.js"></script>
+<script src="/webmail-proxy/static/en-us/7.5.1-1859/nodeworx/templates/interworx/js/interworx.js"></script>
+<script src="/webmail-proxy/static/en-us/7.5.1-1859/js/iw_lib.js"></script>
+<script src="/webmail-proxy/static/en-us/7.5.1-1859/js/iw_graphs.js"></script>
+<script src="/webmail-proxy/static/en-us/7.5.1-1859/js/iw_xhr.js"></script>
+<script src="/webmail-proxy/static/en-us/7.5.1-1859/js/iw_quickhelp.js"></script>
+<script src="/webmail-proxy/static/en-us/7.5.1-1859/js/iw_awesome_bar.js"></script>
+<script src="/webmail-proxy/static/en-us/7.5.1-1859/js/iw_idle_timeout.js"></script>
+<script src="/webmail-proxy/static/en-us/7.5.1-1859/js/iw_webmail.js"></script>
+<script src="/webmail-proxy/static/7.5.1-1859/js/iw_login.js"></script>
+-->
+ </body>
+</html>

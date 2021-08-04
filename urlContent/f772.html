@@ -1,0 +1,1711 @@
+<!-- URL =http://linzochki.kz/client_account/login--><!-- w =('linzochki.kz', '2013-01-30 07:23:37 (GMT+0:00)', None)--><!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <script>
+   window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","errorBeacon":"bam-cell.nr-data.net","licenseKey":"fd0d8ed08d","applicationID":"40346406","transactionName":"c14IQRMOXV4EQR1DUF9BFRoAAlJdFF1GH0tVQhVcDg9CHQ9WRQ==","queueTime":3,"applicationTime":75,"agent":""}
+  </script>
+  <script>
+   (window.NREUM||(NREUM={})).loader_config={licenseKey:"fd0d8ed08d",applicationID:"40346406"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(7),c=e(8),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(9);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e){return!(!e||!e.protocol||"file:"===e.protocol)}t.exports=r},{}],4:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(6),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],5:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],6:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],7:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],8:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],9:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?u(e,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){e&&a&&e(n,r,i);for(var c=t(i),f=v(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[h[n]];return p&&p.push([b,n,r,c]),c}}function o(e,t){y[e]=v(e).concat(t)}function m(e,t){var n=y[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return y[e]||[]}function g(e){return p[e]=p[e]||i(n)}function w(e,t){s(e,function(e,n){t=t||"feature",h[n]=t,t in d||(d[t]=[])})}var y={},h={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:w,abort:c,aborted:!1};return b}function o(e){return u(e,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=e("gos"),s=e(7),d={},p={},l=t.exports=i();t.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=x.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+x.offset],null,"api"),c("timing",["load",n]);var r=l.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===l.readyState&&o()}function o(){c("mark",["domContent",a()+x.offset],null,"api")}var a=e(2),c=e("handle"),f=e(7),u=e("ee"),s=e(5),d=e(3),p=window,l=p.document,m="addEventListener",v="attachEvent",g=p.XMLHttpRequest,w=g&&g.prototype;if(d(p.location)){NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:g,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1208.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:b,userAgent:s};e(1),e(4),l[m]?(l[m]("DOMContentLoaded",o,!1),p[m]("load",r,!1)):(l[v]("onreadystatechange",i),p[v]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0}},{}],"wrap-function":[function(e,t,n){function r(e,t){function n(t,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],e)}c(n+"start",[o,a,f],s,u);try{return p=t.apply(a,o)}catch(m){throw c(n+"err",[o,a,m],s,u),m}finally{c(n+"end",[o,a,p],s,u)}}return a(t)?t:(n||(n=""),nrWrapper[p]=t,o(t,nrWrapper,e),nrWrapper)}function r(e,t,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<t.length;u++)f=t[u],c=e[f],a(c)||(e[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!m||t){var c=m;m=!0;try{e.emit(n,r,o,t,a)}catch(f){i([f,n,r,o],e)}m=c}}return e||(e=s),n.inPlace=r,n.flag=p,n}function i(e,t){t||(t=s);try{t.emit("internal-error",e)}catch(n){}}function o(e,t,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(e);return r.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(o){i([o],n)}for(var a in e)l.call(e,a)&&(t[a]=e[a]);return t}function a(e){return!(e&&e instanceof Function&&e.apply&&!e[p])}function c(e,t){var n=t(e);return n[p]=e,o(e,n,s),n}function f(e,t,n){var r=e[t];e[t]=c(r,n)}function u(){for(var e=arguments.length,t=new Array(e),n=0;n<e;++n)t[n]=arguments[n];return t}var s=e("ee"),d=e(8),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;t.exports=r,t.exports.wrapFunction=c,t.exports.wrapInPlace=f,t.exports.argsToArray=u},{}]},{},["loader"]);
+  </script>
+  <link href="/served_assets/shop/modal-5949f0b0ebe3def4f03f99d3b4294a1ae8f82e0d173f8e9ebe6e010a44471d29.css" rel="stylesheet" type="text/css"/>
+  <link href="/served_assets/shop/pick_up-0182633f1690e35b1a74172224b10c7b037098fff1deae12102cc1695ca819ad.css" rel="stylesheet" type="text/css"/>
+  <meta content="" data-config="{&quot;money_with_currency_format&quot;:{&quot;delimiter&quot;:&quot; &quot;,&quot;separator&quot;:&quot;.&quot;,&quot;format&quot;:&quot;%n\u0026nbsp;%u&quot;,&quot;unit&quot;:&quot;тг.&quot;,&quot;show_price_without_cents&quot;:1},&quot;currency_code&quot;:&quot;KZT&quot;,&quot;facebook&quot;:{&quot;pixelActive&quot;:false,&quot;currency_code&quot;:&quot;KZT&quot;,&quot;use_variants&quot;:null},&quot;vk&quot;:{&quot;pixel_active&quot;:null,&quot;price_list_id&quot;:null},&quot;new_ya_metrika&quot;:false,&quot;ecommerce_data_container&quot;:&quot;dataLayer&quot;,&quot;common_js_version&quot;:null,&quot;vue_ui_version&quot;:null,&quot;feedback_captcha_enabled&quot;:null,&quot;account_id&quot;:73930,&quot;hide_items_out_of_stock&quot;:false,&quot;forbid_order_over_existing&quot;:false,&quot;minimum_items_price&quot;:null,&quot;enable_comparison&quot;:true,&quot;locale&quot;:&quot;ru&quot;,&quot;client_group&quot;:null,&quot;consent_to_personal_data&quot;:{&quot;active&quot;:false,&quot;obligatory&quot;:true,&quot;description&quot;:&quot;Настоящим подтверждаю, что я ознакомлен и согласен с условиями \u003ca href='/page/oferta' target='blank'\u003eоферты и политики конфиденциальности\u003c/a\u003e.&quot;},&quot;recaptcha_key&quot;:&quot;6Lc0T0YUAAAAAAVNiH-_bnSC4E-YHMFTeYOqZyRx&quot;,&quot;checkout_float_order_content_block&quot;:false}" name="shop-config"/>
+  <meta content="production" name="js-evnvironment"/>
+  <meta content="ru" name="default-locale"/>
+  <meta content="[]" name="insales-redefined-api-methods"/>
+  <script src="/packs/js/shop_bundle-61e78694cb9a1b8ebf5a.js">
+  </script>
+  <!--InsalesCounter -->
+  <script type="text/javascript">
+   if (typeof(__id) == 'undefined') {
+          var __id=73930;
+
+          (function() {
+            var ic = document.createElement('script'); ic.type = 'text/javascript'; ic.async = true;
+            ic.src = '/javascripts/insales_counter.js?5';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ic, s);
+          })();
+        }
+  </script>
+  <!-- /InsalesCounter -->
+  <meta content="authenticity_token" name="csrf-param"/>
+  <meta content="UbO79qC/LLsAdgb0RnOp0N8Jmr1U3t0Bqw/YpvmzyMQ53buGc1Sf+6u32B68T1iP5SYWGZWfRS7rywjO0YAurw==" name="csrf-token"/>
+  <meta content="#49B1F6" name="theme-color"/>
+  <meta content="noindex, nofollow" name="robots"/>
+  <meta content="width=device-width" name="viewport"/>
+  <title>
+   Вход в кабинет покупателя
+  </title>
+  <link href="https://assets3.insales.ru/assets/1/7713/1433121/v_1617689680/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+   <link href="https://assets3.insales.ru/assets/1/7713/1433121/1617689680/style.css" rel="stylesheet" type="text/css">
+    <link href="/served_assets/checkout-56a1e2321b3ba77700014dc5c67da8de34c94142cb80a30734fa3de9b197c8b7.css" media="screen" rel="stylesheet"/>
+    <link href="https://assets3.insales.ru/assets/1/7713/1433121/1617689680/custom_checkout.css" rel="stylesheet"/>
+    <script async="" src="https://assets3.insales.ru/assets/1/7713/1433121/1617689680/jquery.fancybox.pack.js" type="text/javascript">
+    </script>
+    <!-- Facebook Pixel Code -->
+    <script>
+     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1785658214998345');
+fbq('track', "PageView");
+    </script>
+    <noscript>
+     <img height="1" src="https://www.facebook.com/tr?id=1785658214998345&amp;ev=PageView&amp;noscript=1" style="display:none" width="1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+   </link>
+  </link>
+ </head>
+ <body>
+  <!-- Осторожно ступенька -->
+  <div id="acc">
+   <div class="mob">
+    <div class="header-top">
+     <div class="header-top-icons mob" href="#" onclick="openbox('box'); return false">
+      <div class="icon-menu" id="top-icons">
+      </div>
+     </div>
+     <div class="header-top-icons mob" href="#" onclick="openbox('mob-dd-search'); return false">
+      <div class="icon-search" id="top-icons">
+      </div>
+     </div>
+     <div class="header-top-icons" style="width:57.5vw">
+      <a href="/" title="Интернет-магазин контактных линз - Linzochki.kz">
+       <img alt="Интернет-магазин контактных линз - Linzochki.kz" src="https://assets3.insales.ru/assets/1/7713/1433121/1617689680/top_logo.png"/>
+      </a>
+     </div>
+     <div class="header-top-icons mob">
+      <a href="/client_account/login">
+       <div class="icon-user" id="top-icons">
+       </div>
+      </a>
+     </div>
+     <div class="header-top-icons mob" style="border-right:0px;margin-right:0px;">
+      <a href="/cart_items">
+       <div class="icon-cart" id="top-icons">
+       </div>
+      </a>
+     </div>
+    </div>
+    <!-- Начало - Скрипт для открытия/закрытия dd -->
+    <script type="text/javascript">
+     function openbox(id){
+	mobddmenu = document.getElementById('box').style.display;
+	mobddsearch = document.getElementById('mob-dd-search').style.display;
+	if (mobddmenu=='none' && mobddsearch=='none'){
+		document.getElementById(id).style.display='block';
+    }
+	else if (mobddmenu=='block'){
+		document.getElementById(id).style.display='block';
+		document.getElementById('box').style.display='none';
+	}
+	else if (mobddsearch=='block'){
+		document.getElementById(id).style.display='block';
+		document.getElementById('mob-dd-search').style.display='none';
+	}
+	else{
+		document.getElementById('box').style.display='none';
+		document.getElementById('mob-dd-search').style.display='none';
+	}
+}
+    </script>
+    <!-- Конец - Скрипт для открытия/закрытия dd -->
+    <div style="clear:both">
+    </div>
+    <div id="box" style="display:none;text-align:left;padding-left:10px;width:60%;background:#404348;box-shadow:3px 3px 20px 5px #49B1F6;">
+     <div>
+      <div class="drop_down">
+       <a href="/collection/linzy">
+        Контактные линзы
+       </a>
+       <div class="submenu">
+        <div class="drop_down2 m_i">
+         <a href="#">
+          По производителю
+         </a>
+         <div class="submenu2">
+          <div class="drop_down3">
+           <a href="/collection/linzy/bausch-lomb">
+            Bausch &amp; Lomb
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="/collection/linzy/ciba-vision">
+            Ciba Vision/Alcon
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="/collection/linzy/interojo">
+            Interojo
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="/collection/linzy/johnson-johnson">
+            Johnson &amp; Johnson
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="/collection/linzy/sauflon">
+            Sauflon/Cooper Vision
+           </a>
+          </div>
+         </div>
+        </div>
+        <div class="drop_down2 m_i">
+         <a href="#">
+          По бренду
+         </a>
+         <div class="submenu2">
+          <div class="drop_down3">
+           <a href="/collection/linzy/acuvue">
+            Acuvue
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="/collection/linzy/air-optix">
+            Air Optix
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="/collection/linzy/bioclear">
+            Bioclear
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="/collection/linzy/biofinity">
+            Biofinity
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="/collection/linzy/biofinity-toric">
+            Biofinity Toric
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="/collection/linzy/biomedics-toric">
+            Biomedics Toric
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="/collection/linzy/biotrue-oneday">
+            BioTrue ONEday
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="/collection/linzy/clariti">
+            Clariti
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="/collection/linzy/clear-comfort">
+            Clear Comfort
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="/collection/linzy/crystal-vue">
+            Crystal Vue
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="/collection/linzy/dailies">
+            Dailies
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="/collection/linzy/freshlook">
+            Freshlook
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="/collection/linzy/frutti-colors">
+            Frutti Colors
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="/collection/linzy/optima">
+            Optima
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="/collection/linzy/purevision">
+            PureVision
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="/collection/linzy/sauflon-55">
+            Sauflon 55
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="/collection/linzy/select">
+            Select
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="/collection/linzy/biomedics-55-evolution">
+            Biomedics 55 Evolution
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="/collection/linzy/proclear-1-day">
+            Proclear 1 Day
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="/collection/linzy/biomedics-38">
+            Biomedics 38
+           </a>
+          </div>
+         </div>
+        </div>
+        <div class="drop_down2 m_i">
+         <a href="#">
+          По материалу
+         </a>
+         <div class="submenu2">
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/linzy/silicon-gidrogel">
+            Силикон-гидрогелевые
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/linzy/gipergel">
+            Гипергель
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/linzy/gidrogel">
+            Гидрогелевые
+           </a>
+          </div>
+         </div>
+        </div>
+        <div class="drop_down2 m_i">
+         <a href="#">
+          По кривизне
+         </a>
+         <div class="submenu2">
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/linzy/8-3-bc">
+            8,3
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/linzy/8-4-bc">
+            8,4
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/linzy/8-5-bc">
+            8,5
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/linzy/8-6-bc">
+            8,6
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/linzy/8-7-bc">
+            8,7
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/linzy/8-8-bc">
+            8,8
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/linzy/8-9-bc">
+            8,9
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/linzy/9-0-bc">
+            9
+           </a>
+          </div>
+         </div>
+        </div>
+        <div class="drop_down2 m_i">
+         <a href="#">
+          По сроку ношения
+         </a>
+         <div class="submenu2">
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/linzy/3-month">
+            3 месяца
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/linzy/month">
+            1 месяц
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/linzy/2-week">
+            2 недели
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/linzy/daily">
+            1 день
+           </a>
+          </div>
+         </div>
+        </div>
+        <div class="drop_down2 m_i">
+         <a href="#">
+          По типу (дизайну)
+         </a>
+         <div class="submenu2">
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/linzy/asfericheskie">
+            Асферический
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/linzy/mnogoradiusnye">
+            Многорадиусный (торика)
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/linzy/sfericheskie">
+            Сферический
+           </a>
+          </div>
+         </div>
+        </div>
+        <div class="drop_down2">
+         <a href="https://linzochki.kz/collection/linzy/cvetnie">
+          Цветные
+         </a>
+        </div>
+        <div class="drop_down2">
+         <a href="https://linzochki.kz/collection/linzy/karnavalnye">
+          Карнавальные (Crazy)
+         </a>
+        </div>
+        <div class="drop_down2">
+         <a href="https://linzochki.kz/collection/linzy">
+          Все
+         </a>
+        </div>
+       </div>
+      </div>
+      <div class="m_sep">
+      </div>
+      <div class="drop_down">
+       <a href="/collection/ochki">
+        Очки
+       </a>
+       <div class="submenu">
+        <div class="drop_down2">
+         <a href="https://linzochki.kz/collection/ochki/solncezashhitnye-ochki">
+          Солнцезащитные
+         </a>
+        </div>
+        <div class="drop_down2">
+         <a href="https://linzochki.kz/collection/ochki/opravi">
+          Оправы
+         </a>
+        </div>
+        <div class="drop_down2">
+         <a href="https://linzochki.kz/collection/ochki/polyarizatsionnye">
+          Поляризационные
+         </a>
+        </div>
+        <div class="drop_down2">
+         <a href="https://linzochki.kz/collection/gornolyzhnye-maski">
+          Горнолыжные маски
+         </a>
+        </div>
+        <div class="drop_down2">
+         <a href="/collection/ochki">
+          Все
+         </a>
+        </div>
+       </div>
+      </div>
+      <div class="m_sep">
+      </div>
+      <div class="drop_down">
+       <a href="https://linzochki.kz/collection/linza-dlya-ochkov">
+        Очковые линзы
+       </a>
+       <div class="submenu">
+        <div class="drop_down2">
+         <a href="https://linzochki.kz/collection/linza-dlya-ochkov/fotohromnye">
+          Фотохромные
+         </a>
+        </div>
+        <div class="drop_down2">
+         <a href="https://linzochki.kz/collection/linza-dlya-ochkov/antiblikovye">
+          Антиблик
+         </a>
+        </div>
+        <div class="drop_down2">
+         <a href="https://linzochki.kz/collection/linza-dlya-ochkov/astigmaticheskie">
+          Астигматические
+         </a>
+        </div>
+        <div class="drop_down2">
+         <a href="https://linzochki.kz/collection/linza-dlya-ochkov/asfericheskie">
+          Асферические
+         </a>
+        </div>
+        <div class="drop_down2">
+         <a href="https://linzochki.kz/collection/linza-dlya-ochkov/sfericheskie">
+          Сферические
+         </a>
+        </div>
+        <div class="drop_down2">
+         <a href="https://linzochki.kz/collection/linza-dlya-ochkov">
+          Все
+         </a>
+        </div>
+       </div>
+      </div>
+      <div class="m_sep">
+      </div>
+      <div class="drop_down">
+       <a href="https://linzochki.kz/collection/rastvory">
+        Растворы
+       </a>
+       <div class="submenu">
+        <div class="drop_down2 m_i">
+         <a href="#">
+          По производителю
+         </a>
+         <div class="submenu2">
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/rastvory/alcon">
+            Alсon
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/rastvory/bausch-lomb">
+            Bausch &amp; Lomb
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/rastvory/sauflon">
+            Sauflon/Cooper Vision
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/rastvory/crystal-vue">
+            Crystal Vue
+           </a>
+          </div>
+         </div>
+        </div>
+        <div class="drop_down2 m_i">
+         <a href="#">
+          По бренду
+         </a>
+         <div class="submenu2">
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/rastvory/7">
+            7
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/rastvory/all-in-one-light">
+            All in One Light
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/rastvory/biotrue">
+            BioTrue
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/rastvory/comfort-vue">
+            Comfort Vue
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/rastvory/cyclean">
+            CyClean
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/rastvory/opti-free">
+            Opti Free
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/rastvory/renu">
+            ReNu
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/rastvory/synergi">
+            Synergi
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/rastvory/crystal-clear">
+            Crystal Clear
+           </a>
+          </div>
+         </div>
+        </div>
+        <div class="drop_down2">
+         <a href="https://linzochki.kz/collection/rastvory">
+          Все
+         </a>
+        </div>
+       </div>
+      </div>
+      <div class="m_sep">
+      </div>
+      <div class="drop_down">
+       <a href="https://linzochki.kz/collection/kapli">
+        Капли
+       </a>
+       <div class="submenu">
+        <div class="drop_down2 m_i">
+         <a href="#">
+          По производителю
+         </a>
+         <div class="submenu2">
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/kapli/bausch-lomb">
+            Bausch &amp; Lomb
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/kapli/sauflon">
+            Sauflon/Cooper Vision
+           </a>
+          </div>
+         </div>
+        </div>
+        <div class="drop_down2 m_i">
+         <a href="#">
+          По бренду
+         </a>
+         <div class="submenu2">
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/kapli/optoclean">
+            Optoclean
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/kapli/renu">
+            ReNu
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/kapli/comfort-drops">
+            Comfort Drops
+           </a>
+          </div>
+         </div>
+        </div>
+        <div class="drop_down2">
+         <a href="https://linzochki.kz/collection/kapli">
+          Все
+         </a>
+        </div>
+       </div>
+      </div>
+      <div class="m_sep">
+      </div>
+      <div class="drop_down">
+       <a href="https://linzochki.kz/collection/aktsessuary">
+        Аксессуары
+       </a>
+       <div class="submenu">
+        <div class="drop_down2">
+         <a href="https://linzochki.kz/collection/aktsessuary/dorozhnye-nabory">
+          Дорожные наборы
+         </a>
+        </div>
+        <div class="drop_down2">
+         <a href="https://linzochki.kz/collection/aktsessuary/konteynery">
+          Контейнеры
+         </a>
+        </div>
+        <div class="drop_down2">
+         <a href="https://linzochki.kz/collection/aktsessuary/pintsety">
+          Пинцеты
+         </a>
+        </div>
+        <div class="drop_down2">
+         <a href="https://linzochki.kz/collection/aktsessuary/ultrazvukovaya-chistka">
+          Ультразвуковая чистка
+         </a>
+        </div>
+        <div class="drop_down2">
+         <a href="https://linzochki.kz/collection/aktsessuary">
+          Все
+         </a>
+        </div>
+       </div>
+      </div>
+      <div class="m_sep">
+      </div>
+      <div class="drop_down">
+       <a href="https://linzochki.kz/collection/kosmetika">
+        Косметика
+       </a>
+       <div class="submenu">
+        <div class="drop_down2 m_i">
+         <a href="#">
+          По бренду
+         </a>
+         <div class="submenu2">
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/kosmetika/bourjois">
+            Bourjois
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/kosmetika/loreal">
+            L'Oreal
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/kosmetika/maybelline">
+            Maybelline
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/kosmetika/rilana">
+            Rilana
+           </a>
+          </div>
+         </div>
+        </div>
+        <div class="drop_down2 m_i">
+         <a href="#">
+          По виду товара
+         </a>
+         <div class="submenu2">
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/kosmetika/tush">
+            Тушь
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/kosmetika/mitsellyarnaya-voda">
+            Мицеллярная вода
+           </a>
+          </div>
+          <div class="drop_down3">
+           <a href="https://linzochki.kz/collection/kosmetika/karandash-dlya-brovey">
+            Карандаши д/бровей
+           </a>
+          </div>
+         </div>
+        </div>
+        <div class="drop_down2">
+         <a href="https://linzochki.kz/collection/kosmetika">
+          Все
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+     <a href="https://linzochki.kz/collection/gornolyzhnye-maski">
+      Горнолыжные маски
+     </a>
+    </div>
+    <div id="mob-dd-search" style="display:none;background:#404348;padding:15px;box-shadow:0px 10px 15px 0px #49B1F6;">
+     <form action="/search" method="get">
+      <input name="q" placeholder="Например, Crystal Vue" style="border-radius:7px 0 0 7px;font-style:italic;width:70%;border:1px solid;border-color:#49B1F9;" type="text" value=""/>
+      <input style="border-radius:0 7px 7px 0;margin-left:-4px;color:white;background:#49B1F9;border:1px solid;border-color:#49B1F9;" type="submit" value="Поиск"/>
+     </form>
+    </div>
+   </div>
+   <script>
+    $("#box .drop_down > a, #box .drop_down2.m_i > a").click(function(e)
+{      
+  var $sm0 = $(this).siblings(".submenu");
+  var $sm1 = $(this).siblings(".submenu2");
+
+  if ($sm0.length && $sm0.not(":visible").length) { $sm0.slideDown(200); e.preventDefault(); return false;}
+  else if ($sm1.length && $sm1.not(":visible").length) { $sm1.slideDown(200); e.preventDefault(); return false;}
+  
+  return true;
+});
+   </script>
+   <div class="nomob">
+    <div class="content">
+     <div id="soc">
+      <span>
+       <a href="tel:+7 (727) 329 60 95">
+        +7 (727) 329 60 95
+       </a>
+      </span>
+      |
+      <span>
+       <a href="tel:+7 (700) 329 60 95">
+        +7 (700) 329 60 95
+       </a>
+      </span>
+     </div>
+     <!-- layouts.layout.liquid и layouts.checkout.liquid отличаются в этом месте из-за того, что client.name выводится только в layouts.checkout.liquid, в layouts.layout.liquid нужно работать через JSON -->
+     <div id="log">
+      <a href="/client_account/login">
+       Войти
+      </a>
+      |
+      <a href="/client_account/contacts/new">
+       Зарегистрироваться
+      </a>
+     </div>
+     <!-- Осторожно ступенька -->
+    </div>
+   </div>
+  </div>
+  <div id="container">
+   <div id="header">
+    <div>
+     <a href="/" title="Интернет-магазин контактных линз - Linzochki.kz">
+      <img alt="Интернет-магазин контактных линз - Linzochki.kz" id="logo" src="https://assets3.insales.ru/assets/1/7713/1433121/1617689680/logo.png" style="vertical-align:top;float:left"/>
+     </a>
+    </div>
+    <div class="logo-desc">
+     Прием заявок 24/7
+     <br/>
+     Консультация 10:00-19:00/7
+    </div>
+    <div class="nomob" id="search_field">
+     <form action="/search" method="get">
+      <input name="q" placeholder="Например, Crystal Vue" style="border-radius: 7px 0 0 7px;font-style:italic;width: 204px" type="text" value=""/>
+      <input style="border-radius: 0 7px 7px 0; margin-left: -4px; color: white" type="submit" value="Поиск"/>
+     </form>
+    </div>
+    <div class="nomob" id="contacts">
+     <a href="tel:+77273296095">
+      +7 (727) 3296095
+     </a>
+     <br>
+      <a href="tel:+77003296095">
+       +7 (700) 3296095
+      </a>
+     </br>
+    </div>
+   </div>
+   <div class="menu-top-2">
+    <div class="corner_menu">
+     <ul>
+      <li>
+       <a href="/page/aktsii">
+        Акции
+       </a>
+      </li>
+      <li>
+       <a href="/page/onlayn-primerka-linz">
+        Онлайн примерка
+       </a>
+      </li>
+      <li>
+       <a href="/page/oplata-i-dostavka">
+        Оплата и доставка
+       </a>
+      </li>
+      <li>
+       <a href="/blogs/poleznye-stati">
+        Статьи
+       </a>
+      </li>
+      <li>
+       <a href="/page/kontakty">
+        Контакты
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div style="clear:both">
+   </div>
+   <!-- Осторожно ступенька -->
+   <!-- Осторожно ступенька -->
+   <div id="index">
+    <div class="mob" id="navmob">
+     <div class="logo_desc_mob" style="padding-left:3%;padding-top:3%;font-size:120%">
+      Прием заявок 24/7
+      <br/>
+      Консультация 10-19/7
+     </div>
+     <div id="menucart">
+      Товаров:
+      <span class="cart_items_count" id="cart_items_count">
+       0
+      </span>
+      <a href="/cart_items">
+       <div class="icon-cart" style="float:right;font-size:6vw;width:52px;height:38px;text-align:center;line-height:38px;background:#404348;border-radius: 0px 5px 5px 0px;color:#fff;">
+       </div>
+      </a>
+     </div>
+     <div style="clear:both">
+     </div>
+    </div>
+    <div class="nomob" id="nav">
+     <div>
+      <div>
+       <div class="drop_down">
+        <a href="/collection/linzy">
+         Контактные линзы
+        </a>
+        <div class="submenu">
+         <div class="drop_down2 m_i">
+          <a href="#">
+           По производителю
+          </a>
+          <div class="submenu2">
+           <div class="drop_down3">
+            <a href="/collection/linzy/bausch-lomb">
+             Bausch &amp; Lomb
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="/collection/linzy/ciba-vision">
+             Ciba Vision/Alcon
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="/collection/linzy/interojo">
+             Interojo
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="/collection/linzy/johnson-johnson">
+             Johnson &amp; Johnson
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="/collection/linzy/sauflon">
+             Sauflon/Cooper Vision
+            </a>
+           </div>
+          </div>
+         </div>
+         <div class="drop_down2 m_i">
+          <a href="#">
+           По бренду
+          </a>
+          <div class="submenu2">
+           <div class="drop_down3">
+            <a href="/collection/linzy/acuvue">
+             Acuvue
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="/collection/linzy/air-optix">
+             Air Optix
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="/collection/linzy/bioclear">
+             Bioclear
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="/collection/linzy/biofinity">
+             Biofinity
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="/collection/linzy/biofinity-toric">
+             Biofinity Toric
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="/collection/linzy/biomedics-toric">
+             Biomedics Toric
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="/collection/linzy/biotrue-oneday">
+             BioTrue ONEday
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="/collection/linzy/clariti">
+             Clariti
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="/collection/linzy/clear-comfort">
+             Clear Comfort
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="/collection/linzy/crystal-vue">
+             Crystal Vue
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="/collection/linzy/dailies">
+             Dailies
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="/collection/linzy/freshlook">
+             Freshlook
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="/collection/linzy/frutti-colors">
+             Frutti Colors
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="/collection/linzy/optima">
+             Optima
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="/collection/linzy/purevision">
+             PureVision
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="/collection/linzy/sauflon-55">
+             Sauflon 55
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="/collection/linzy/select">
+             Select
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="/collection/linzy/biomedics-55-evolution">
+             Biomedics 55 Evolution
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="/collection/linzy/proclear-1-day">
+             Proclear 1 Day
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="/collection/linzy/biomedics-38">
+             Biomedics 38
+            </a>
+           </div>
+          </div>
+         </div>
+         <div class="drop_down2 m_i">
+          <a href="#">
+           По материалу
+          </a>
+          <div class="submenu2">
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/linzy/silicon-gidrogel">
+             Силикон-гидрогелевые
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/linzy/gipergel">
+             Гипергель
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/linzy/gidrogel">
+             Гидрогелевые
+            </a>
+           </div>
+          </div>
+         </div>
+         <div class="drop_down2 m_i">
+          <a href="#">
+           По кривизне
+          </a>
+          <div class="submenu2">
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/linzy/8-3-bc">
+             8,3
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/linzy/8-4-bc">
+             8,4
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/linzy/8-5-bc">
+             8,5
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/linzy/8-6-bc">
+             8,6
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/linzy/8-7-bc">
+             8,7
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/linzy/8-8-bc">
+             8,8
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/linzy/8-9-bc">
+             8,9
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/linzy/9-0-bc">
+             9
+            </a>
+           </div>
+          </div>
+         </div>
+         <div class="drop_down2 m_i">
+          <a href="#">
+           По сроку ношения
+          </a>
+          <div class="submenu2">
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/linzy/3-month">
+             3 месяца
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/linzy/month">
+             1 месяц
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/linzy/2-week">
+             2 недели
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/linzy/daily">
+             1 день
+            </a>
+           </div>
+          </div>
+         </div>
+         <div class="drop_down2 m_i">
+          <a href="#">
+           По типу (дизайну)
+          </a>
+          <div class="submenu2">
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/linzy/asfericheskie">
+             Асферический
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/linzy/mnogoradiusnye">
+             Многорадиусный (торика)
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/linzy/sfericheskie">
+             Сферический
+            </a>
+           </div>
+          </div>
+         </div>
+         <div class="drop_down2">
+          <a href="https://linzochki.kz/collection/linzy/cvetnie">
+           Цветные
+          </a>
+         </div>
+         <div class="drop_down2">
+          <a href="https://linzochki.kz/collection/linzy/karnavalnye">
+           Карнавальные (Crazy)
+          </a>
+         </div>
+         <div class="drop_down2">
+          <a href="https://linzochki.kz/collection/linzy">
+           Все
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="m_sep">
+       </div>
+       <div class="drop_down">
+        <a href="/collection/ochki">
+         Очки
+        </a>
+        <div class="submenu">
+         <div class="drop_down2">
+          <a href="https://linzochki.kz/collection/ochki/solncezashhitnye-ochki">
+           Солнцезащитные
+          </a>
+         </div>
+         <div class="drop_down2">
+          <a href="https://linzochki.kz/collection/ochki/opravi">
+           Оправы
+          </a>
+         </div>
+         <div class="drop_down2">
+          <a href="https://linzochki.kz/collection/ochki/polyarizatsionnye">
+           Поляризационные
+          </a>
+         </div>
+         <div class="drop_down2">
+          <a href="https://linzochki.kz/collection/gornolyzhnye-maski">
+           Горнолыжные маски
+          </a>
+         </div>
+         <div class="drop_down2">
+          <a href="/collection/ochki">
+           Все
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="m_sep">
+       </div>
+       <div class="drop_down">
+        <a href="https://linzochki.kz/collection/linza-dlya-ochkov">
+         Очковые линзы
+        </a>
+        <div class="submenu">
+         <div class="drop_down2">
+          <a href="https://linzochki.kz/collection/linza-dlya-ochkov/fotohromnye">
+           Фотохромные
+          </a>
+         </div>
+         <div class="drop_down2">
+          <a href="https://linzochki.kz/collection/linza-dlya-ochkov/antiblikovye">
+           Антиблик
+          </a>
+         </div>
+         <div class="drop_down2">
+          <a href="https://linzochki.kz/collection/linza-dlya-ochkov/astigmaticheskie">
+           Астигматические
+          </a>
+         </div>
+         <div class="drop_down2">
+          <a href="https://linzochki.kz/collection/linza-dlya-ochkov/asfericheskie">
+           Асферические
+          </a>
+         </div>
+         <div class="drop_down2">
+          <a href="https://linzochki.kz/collection/linza-dlya-ochkov/sfericheskie">
+           Сферические
+          </a>
+         </div>
+         <div class="drop_down2">
+          <a href="https://linzochki.kz/collection/linza-dlya-ochkov">
+           Все
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="m_sep">
+       </div>
+       <div class="drop_down">
+        <a href="https://linzochki.kz/collection/rastvory">
+         Растворы
+        </a>
+        <div class="submenu">
+         <div class="drop_down2 m_i">
+          <a href="#">
+           По производителю
+          </a>
+          <div class="submenu2">
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/rastvory/alcon">
+             Alсon
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/rastvory/bausch-lomb">
+             Bausch &amp; Lomb
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/rastvory/sauflon">
+             Sauflon/Cooper Vision
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/rastvory/crystal-vue">
+             Crystal Vue
+            </a>
+           </div>
+          </div>
+         </div>
+         <div class="drop_down2 m_i">
+          <a href="#">
+           По бренду
+          </a>
+          <div class="submenu2">
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/rastvory/7">
+             7
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/rastvory/all-in-one-light">
+             All in One Light
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/rastvory/biotrue">
+             BioTrue
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/rastvory/comfort-vue">
+             Comfort Vue
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/rastvory/cyclean">
+             CyClean
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/rastvory/opti-free">
+             Opti Free
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/rastvory/renu">
+             ReNu
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/rastvory/synergi">
+             Synergi
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/rastvory/crystal-clear">
+             Crystal Clear
+            </a>
+           </div>
+          </div>
+         </div>
+         <div class="drop_down2">
+          <a href="https://linzochki.kz/collection/rastvory">
+           Все
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="m_sep">
+       </div>
+       <div class="drop_down">
+        <a href="https://linzochki.kz/collection/kapli">
+         Капли
+        </a>
+        <div class="submenu">
+         <div class="drop_down2 m_i">
+          <a href="#">
+           По производителю
+          </a>
+          <div class="submenu2">
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/kapli/bausch-lomb">
+             Bausch &amp; Lomb
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/kapli/sauflon">
+             Sauflon/Cooper Vision
+            </a>
+           </div>
+          </div>
+         </div>
+         <div class="drop_down2 m_i">
+          <a href="#">
+           По бренду
+          </a>
+          <div class="submenu2">
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/kapli/optoclean">
+             Optoclean
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/kapli/renu">
+             ReNu
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/kapli/comfort-drops">
+             Comfort Drops
+            </a>
+           </div>
+          </div>
+         </div>
+         <div class="drop_down2">
+          <a href="https://linzochki.kz/collection/kapli">
+           Все
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="m_sep">
+       </div>
+       <div class="drop_down">
+        <a href="https://linzochki.kz/collection/aktsessuary">
+         Аксессуары
+        </a>
+        <div class="submenu">
+         <div class="drop_down2">
+          <a href="https://linzochki.kz/collection/aktsessuary/dorozhnye-nabory">
+           Дорожные наборы
+          </a>
+         </div>
+         <div class="drop_down2">
+          <a href="https://linzochki.kz/collection/aktsessuary/konteynery">
+           Контейнеры
+          </a>
+         </div>
+         <div class="drop_down2">
+          <a href="https://linzochki.kz/collection/aktsessuary/pintsety">
+           Пинцеты
+          </a>
+         </div>
+         <div class="drop_down2">
+          <a href="https://linzochki.kz/collection/aktsessuary/ultrazvukovaya-chistka">
+           Ультразвуковая чистка
+          </a>
+         </div>
+         <div class="drop_down2">
+          <a href="https://linzochki.kz/collection/aktsessuary">
+           Все
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="m_sep">
+       </div>
+       <div class="drop_down">
+        <a href="https://linzochki.kz/collection/kosmetika">
+         Косметика
+        </a>
+        <div class="submenu">
+         <div class="drop_down2 m_i">
+          <a href="#">
+           По бренду
+          </a>
+          <div class="submenu2">
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/kosmetika/bourjois">
+             Bourjois
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/kosmetika/loreal">
+             L'Oreal
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/kosmetika/maybelline">
+             Maybelline
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/kosmetika/rilana">
+             Rilana
+            </a>
+           </div>
+          </div>
+         </div>
+         <div class="drop_down2 m_i">
+          <a href="#">
+           По виду товара
+          </a>
+          <div class="submenu2">
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/kosmetika/tush">
+             Тушь
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/kosmetika/mitsellyarnaya-voda">
+             Мицеллярная вода
+            </a>
+           </div>
+           <div class="drop_down3">
+            <a href="https://linzochki.kz/collection/kosmetika/karandash-dlya-brovey">
+             Карандаши д/бровей
+            </a>
+           </div>
+          </div>
+         </div>
+         <div class="drop_down2">
+          <a href="https://linzochki.kz/collection/kosmetika">
+           Все
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div id="menucart">
+      Товаров:
+      <span class="cart_items_count" id="cart_items_count">
+       0
+      </span>
+      <a href="/cart_items" style="display:unset;">
+       <div class="icon-cart" style="float:right;font-size:24px;width:52px;height:38px;text-align:center;line-height:38px;background:#404348;border-radius: 0px 5px 5px 0px;color:#fff;">
+       </div>
+      </a>
+     </div>
+     <div style="clear:both">
+     </div>
+    </div>
+    <!-- Вызов fancybox.js для элементов -->
+    <div id="ribbon">
+     <div class="lcont">
+      <img src="https://assets3.insales.ru/assets/1/7713/1433121/1617689680/shipping.png"/>
+      <a class="fancybox" href="#fast_delivery" title="Быстрая доставка">
+       <strong class="strong_class">
+        Быстрая доставка
+       </strong>
+      </a>
+      <div id="fast_delivery">
+       Наши курьеры самые быстрые! :)
+       <br/>
+       <br/>
+       Доставка
+       <b>
+        до двери
+       </b>
+       по Алматы
+       <b>
+        бесплатно
+       </b>
+       при заказе свыше 6000 тг. При заказе менее 6000 стоимость доставки 600 тг. При смене адреса доставки после того как курьер уже выехал доплата 400 тенге.
+       <br/>
+       Срок доставки: 1-2 рабочих дня.
+       <br/>
+       <br/>
+       Доставка
+       <b>
+        до двери
+       </b>
+       по Казахстану
+       <b>
+        бесплатно
+       </b>
+       при заказе свыше 11000 тг. При заказе менее 11000 стоимость доставки 1300 тг.
+       <br/>
+       Срок доставки: 1-3 рабочих дня.
+       <br/>
+       <br/>
+       Самовывоз возможен по адресу: г. Алматы, ул. Ауэзова 129 (ниже ул. Сатпаева)
+      </div>
+     </div>
+     <div class="ccont">
+      <img src="https://assets3.insales.ru/assets/1/7713/1433121/1617689680/banknotes_money.png"/>
+      <a class="fancybox" href="#quickpay" title="Удобная оплата">
+       <strong class="strong_class">
+        Удобная оплата
+       </strong>
+      </a>
+      <div id="quickpay">
+       Оплачивайте так, как Вам удобно!
+       <br/>
+       <br/>
+       Оплата безналичная:
+       <br/>
+       1. Банковские карты Visa, MasterCard, UnionPay и American Express
+       <br/>
+       2. Яндекс.деньги, Личная Касса, e-kzt
+       <br/>
+       3. C баланса телефона (Altel, Tele2, Kcell, Beeline)
+       <br/>
+       4. Интернет-банкинг (Альфа-Банк, Bank RBK, Homebank, АТФ24, ForteBank)
+       <br/>
+       <br/>
+       Оплата наличными:
+       <br/>
+       1. Курьеру при доставке
+       <br/>
+       2. В офисе (при самовывозе)
+       <br/>
+       3. Терминалы Касса24
+       <br/>
+       4. В отделениях Казпочты
+      </div>
+     </div>
+     <div class="rcont">
+      <img src="https://assets3.insales.ru/assets/1/7713/1433121/1617689680/pricebeat1.png"/>
+      <a class="fancybox" href="#low_price" title="Самые низкие цены">
+       <strong class="strong_class">
+        Самые низкие цены
+       </strong>
+      </a>
+      <div id="low_price">
+       Ваши линзы дешевле у нас!
+       <br/>
+       <br/>
+       Потому что...
+       <br/>
+       <br/>
+       1. Мы покупаем напрямую у официальных представителей Sauflon, Ciba Vision, Johnson &amp;Johnson, Interojo и Bausch&amp;Lomb в Казахстане.
+       <br/>
+       2. Для постоянных клиентов действуют скидки.
+       <br/>
+       3. Если Вы найдете цены ниже, сообщите нам и получите товар по той же цене.
+      </div>
+     </div>
+    </div>
+    <div style="clear:both">
+    </div>
+    <div class="wrapper body fc">
+     <div class="page-title">
+      Вход в кабинет покупателя
+     </div>
+     <div id="flash_messages">
+     </div>
+     <div id="top_info">
+     </div>
+     <div class="set wide_set">
+      <form accept-charset="UTF-8" action="/client_account/session" method="post">
+       <input name="utf8" type="hidden" value="✓"/>
+       <input name="authenticity_token" type="hidden" value="1vamd6fvw6colvmeiNQCiKyO9iZVN39HQoiVkABBLvu+mKYHdARw54NXJ3Ry6PPXlqF6gpR252gCTEX4KHLIkA=="/>
+       <div class="set-block small_label">
+        <div class="field fc">
+         <div class="field-label">
+          Телефон или email:
+         </div>
+         <div class="field-content">
+          <input class="textfield" id="email" name="email" style="width: 200px;" type="text"/>
+         </div>
+        </div>
+        <div class="field fc">
+         <div class="field-label">
+          Пароль:
+         </div>
+         <div class="field-content">
+          <input class="textfield" id="password" name="password" style="width: 200px;" type="password"/>
+         </div>
+        </div>
+        <div class="field fc">
+         <div class="field-content">
+          <input class="button" name="commit" type="submit" value="Войти"/>
+         </div>
+        </div>
+        <div class="field fc">
+         <div class="field-content">
+          <a href="/client_account/password/change">
+           Восстановить пароль
+          </a>
+         </div>
+        </div>
+        <div class="field fc">
+         <div class="field-content">
+          <a href="/client_account/contacts/new">
+           Зарегистрироваться
+          </a>
+         </div>
+        </div>
+       </div>
+      </form>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- Футер полностью переделан -->
+  <div id="footer">
+   <div class="content">
+    <div id="foot1">
+     <div>
+      Интернет-магазин контактных линз Linzochki.kz
+     </div>
+     <br>
+      <div id="footer-phone">
+       <a href="tel:+77003296095">
+        +7 (700) 3296095
+       </a>
+       <br>
+        <br>
+         <a href="tel:+77273296095">
+          +7 (727) 3296095
+         </a>
+        </br>
+       </br>
+      </div>
+     </br>
+    </div>
+    <div id="foot2">
+     <ul>
+      <li>
+       <a class="active" href="/client_account/login">
+        Личный кабинет
+       </a>
+      </li>
+      <li>
+       <a href="/page/feedback">
+        Обратная связь
+       </a>
+      </li>
+      <li>
+       <a href="/product/otzyvy-o-sayte">
+        Отзывы
+       </a>
+      </li>
+      <li>
+       <a href="/page/publichnaya-offerta">
+        Публичная оферта
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div id="foot3">
+     <div>
+      Мы в социальных сетях
+     </div>
+     <br>
+      <div class="social">
+       <a href="https://www.facebook.com/linzochki.kz/" target="_blank">
+        <img class="lazyload" data-src="https://assets3.insales.ru/assets/1/7713/1433121/1617689680/soc2.png" style="border-radius:8px"/>
+       </a>
+       <a href="https://plus.google.com/+LinzochkiKz" target="_blank">
+        <img class="lazyload" data-src="https://assets3.insales.ru/assets/1/7713/1433121/1617689680/soc3.png" style="border-radius:8px"/>
+       </a>
+      </div>
+     </br>
+    </div>
+    <div style="clear:both">
+    </div>
+   </div>
+  </div>
+  <!-- Lazyloading for pics -->
+  <script async="" src="https://assets3.insales.ru/assets/1/7713/1433121/1617689680/lazysizes.min.js">
+  </script>
+  <script>
+   (function(w,d,u){
+                var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
+                var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+        })(window,document,'https://cdn-ru.bitrix24.kz/b2465531/crm/site_button/loader_2_ob7dfn.js');
+  </script>
+  <!-- BEGIN CALLBACK CODE {literal} -->
+  <script async="" src="https://one.callback.pw/widget/e292decb-c8e6-4f11-8431-01c8f3b9794a" type="text/javascript">
+  </script>
+  <!-- {/literal} END CALLBACK CODE -->
+  <!-- Google Analytics Legacy Code -->
+  <script type="text/javascript">
+   var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-70682717-1']);
+      
+
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+  </script>
+ </body>
+</html>

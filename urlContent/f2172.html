@@ -1,0 +1,506 @@
+<!-- URL =http://ims-fe.com/pascal--><!-- w =('IMS-FE.COM', [datetime.datetime(2005, 9, 22, 16, 20, 48), datetime.datetime(2005, 9, 22, 11, 20, 48)], [datetime.datetime(2021, 9, 22, 16, 20, 48), datetime.datetime(2021, 9, 22, 11, 20, 48)])--><!DOCTYPE html>
+<html class="m_ul" lang="en" style="" xml:lang="en">
+ <head>
+  <title>
+   Account Validation
+  </title>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+  <meta ms.env="Prod"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <link href="https://auth.gfx.ms/images/favicon.ico?v=2" rel="icon" type="image/x-icon"/>
+  <!-- Following couple of lines is for click jack prevention on older browsers that don't support X-Frames-Options header -->
+  <style type="text/css">
+   body{display:none;}
+  </style>
+  <script type="text/javascript">
+   //<![CDATA[
+(function(){var n=window,t;if(n.self!=n.top){try{n.top.location.replace(n.location.href)}catch(i){try{n.top.location=n.location}catch(i){}}t='<plaintext style="display:none">'}else t=unescape("%3C%73")+'tyle type="text/css">body{display:block !important;}<\/style>';document.write(t)})()
+//]]>
+  </script>
+  <script type="text/javascript">
+   //<![CDATA[
+function _ge(n){return _d.getElementById(n)}var _d=document,_dh=_d.getElementsByTagName("head")[0],$U={a:"^((ftp|http|https):)?//",isAbsoluteUrl:function(n){var t=new RegExp($U.a,"i");return t.test(n)},getHost:function(n){var t=$U.a+"([^:/]*([:][^@/]*)?[@])?([-.a-z0-9]*)[^-.a-z0-9]?",i=new RegExp(t,"i");return urlHost=(String(n).search(i)<0?"":RegExp.$5).toLowerCase()},doesMatchHost:function(n,t){var u=new RegExp("^(mailto|tel|sms):","i"),f=$U.isAbsoluteUrl(n),i=$U.getHost(n),e=u.test(n),r="."+t,o=i.substr(i.length-r.length)==r||i==""||i.charAt(0)=="#"||i==t;return(!f||o)&&!e},isLinkABookmark:function(n,t){var i;t=t||_d;i=t.createElement("span");i.innerHTML='<a href="#"><\/a>';var u=i.firstChild.href,r=n.indexOf("#"),f=n.indexOf("javascript:");return r>-1&&(r==0||n.indexOf(u)==0)?1:f==0?1:0},getUrlFragment:function(n){var t="",i=n.indexOf("#");return i>-1&&(t=n.substr(i+1)),t}}
+//]]>
+  </script>
+  <script type="text/javascript">
+   //<![CDATA[
+function registerNamespace(){for(var f=arguments.length,i,r,n=0;n<f;n++){var t=this,u=arguments[n].split("."),e=u.length;for(i=0;i<e;i++)r=u[i],t[r]||(t[r]=function(){}),t=t[r]}}
+//]]>
+  </script>
+  <script type="text/javascript">
+   //<![CDATA[
+(function(){function i(n,t){for(var i=t.split("."),u=i.length,r=0;r<u&&n!==null&&n!==undefined;)n=n[i[r++]];return n}function r(r){var u=null;return(n===null&&(n=i(t,"$Config.WLXAccount.strings")),n!==null&&r&&(u=i(n,r.toLowerCase())),t.AleGetString&&(u===null||u===undefined))?AleGetString(r):u===null||u===undefined?"":u.toString()}var t=window,n=null;t.GetString=r})()
+//]]>
+  </script>
+  <link href="https://auth.gfx.ms/msa_jHDwk39fDYV3_-P32ZY7ew2.css" rel="stylesheet"/>
+  <script type="text/javascript">
+   //<![CDATA[
+    WizardExternalHelper=function(n,t,i,r){var u=this,s=window,f=s.external,e=s.webkit&&s.webkit.messageHandlers,h=s.document,o=e!==undefined;u.getPropertyBag=function(){if(r){var n=u.getCookieValue("Property");if(n&&typeof JSON!="undefined")return JSON.parse(n)}return null};u.getProperty=function(n){var t=null,i;try{t=f.Property(n)}catch(e){r&&(i=u.getPropertyBag(),i&&(t=i[n],t=typeof t=="string"?decodeURIComponent(t):t))}return t};u.setWizardButtons=function(t,i,s){try{if(!n)if(o){var h={IsBackEnabled:t,IsNextEnabled:i,IsLastPage:s};e.SetWizardButtons.postMessage(JSON.stringify(h))}else f.SetWizardButtons(t,i,s)}catch(c){r&&(u.setCookieValue("Page","BackButton",t),u.setCookieValue("Page","NextButton",i),u.setCookieValue("Page","LastPage",s))}};u.setHeaderText=function(n){try{t||(o?e.SetHeaderText.postMessage(n):f.SetHeaderText(n,""))}catch(i){r&&(h.title=n,u.setCookieValue("Page","HeaderText",n))}};u.setProperty=function(n,s){try{if(!t)if(o){var h={};h[n]=s;e.Property.postMessage(JSON.stringify(h))}else i?f.Property(n,s):f.Property(n)=s}catch(c){r&&u.setCookieValue("Property",n,s)}};u.setCookieValue=function(n,t,i){if(r&&typeof JSON!="undefined"){var o=h.cookie.split(";"),f=u.getCookieValue(n),e={};f&&(e=JSON.parse(f));e[t]=typeof i=="string"?encodeURIComponent(i):i;f=JSON.stringify(e);h.cookie=n+"="+f+";domain="+$Config.sd+";path=/"}};u.getCookieValue=function(n){var e=null,u,f,t,i;if(r)for(u=h.cookie.split(";"),f=n+"=",t=0;t<u.length;t++)if(i=u[t].trim(),i.indexOf(f)==0){e=i.substring(f.length,i.length);break}return e};u.finalNext=function(){try{if(r&&u.setCookieValue("Page","LastAction","finalNext"),t){var n=MSA.CXH;n&&n.finish(n.FinishStates.Success)}else o?e.FinalNext.postMessage(""):f.FinalNext()}catch(i){}};u.finalBack=function(){try{if(r&&u.setCookieValue("Page","LastAction","finalBack"),t){var n=MSA.CXH;n&&n.finish(n.FinishStates.GoBack)}else o?e.FinalBack.postMessage(""):f.FinalBack()}catch(i){}};u.ready=function(){if(!t)try{f.Ready()}catch(n){}};u.notReady=function(){if(!t)try{f.NotReady()}catch(n){}};u.reportTelemetry=function(n){try{o?e.ReportTelemetry.postMessage(n):f.ReportTelemetry(n)}catch(t){}}};
+    var ExternalHelper = new WizardExternalHelper(false,false,false,false);
+//]]>
+  </script>
+  <script type="text/javascript">
+   //<![CDATA[
+window.$Do||($Do={},$Do.q=[]),function(){var n=$Do;n.iff=function(t,i){return n.c?n.c(t,i,1,arguments):0};n.when=function(t,i){var r=n.x&&n.x();n.c&&n.c(t,i,0,arguments,undefined,r)||n.q.push({id:t,c:i,a:arguments,x:r})};n.wE=function(t,i){n.c&&n.c(t,i,0,arguments,!0)||(n.w={id:t,c:i,a:arguments})};n.remove=function(t,i){var r=n.q.indexOf({id:t,c:i,a:arguments,x:undefined});r>=0&&n.q.splice(r,1)};n.register=function(t,i,r){n.when("$Do.Full",0,function(){n.register(t,i,r)})}}()
+//]]>
+  </script>
+  <noscript>
+   <meta content="0; URL=https://account.live.com/error.aspx?errcode=1045&amp;mkt=en-US" http-equiv="refresh"/>
+  </noscript>
+ </head>
+ <body class="ltr SignedOut Firefox FF_Win Win6 FF_M47 FF_D0 Full RE_Gecko cb" lang="en-US" style="">
+  <div class="App" id="iPageElt" role="presentation">
+   <script type="text/javascript">
+    var WIZARDUIConfig =
+        {
+            fInlineVisible: false,
+            fBackEnabled: true,
+            fNextEnabled: true,
+            fLastPage: false,
+            oTimeout: null,
+            imagebaseurl: 'https://auth.gfx.ms/images/',
+            imgNextEnabled: "oobe.arrow.next.light.png",
+            imgNextDisabled: "oobe.arrow.next.light.disabled.png",
+            imgPreviousEnabled: "oobe.arrow.previous.light.png",
+            imgPreviousDisabled: "oobe.arrow.previous.light.disabled.png"
+        }
+   </script>
+   <div id="m_wh">
+   </div>
+   <div class="c_base" id="c_base">
+    <div id="c_content">
+     <div id="maincontent">
+      <div class="text-body">
+       <img alt="Microsoft account" aria-label="Microsoft account" class="img-centipede" src="https://auth.gfx.ms/images/AppCentipede/AppCentipede_Microsoft.svg"/>
+      </div>
+      <div id="pageControlHost">
+      </div>
+      <div class="text-body" id="ftr">
+       <div class="text-base text-secondary" id="ftrContainer">
+        <div class="text-body" id="">
+         <div class="footerNode links text-secondary">
+          <a href="https://www.microsoft.com/en-us/servicesagreement/default.aspx" id="uxp_ftr_link_legal" target="_blank">
+           Terms of Use
+          </a>
+          <a href="https://privacy.microsoft.com/en-us/privacystatement" id="uxp_ftr_link_privacy" target="_blank">
+           Privacy &amp; Cookies
+          </a>
+          <a href="https://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=12&amp;ct=1468479753&amp;rver=6.5.6510.0&amp;wp=SAPI&amp;wreply=https:%2F%2Faccount.live.com%2FSummaryPage.aspx&amp;lc=1033&amp;id=38936&amp;mkt=en-US" id="ftrLogout">
+           Sign in
+          </a>
+         </div>
+         <div class="text-base text-secondary" id="ftrLogo">
+          © 2016 Microsoft
+         </div>
+        </div>
+       </div>
+       <div class="hide" id="hipScript">
+        <script type="text/javascript">
+        </script>
+       </div>
+       <div class="hide" id="hipContent">
+       </div>
+       <div class="hide" id="hipTemplate">
+       </div>
+      </div>
+     </div>
+     <div id="DiagnosticData" style="display: none">
+      BeginReq-AppInit-RPSAuthFailed-ResetPwdHip(True)
+     </div>
+     <div aria-hidden="true" class="c_inmiddle_area" id="dynamiccontent" style="display:none">
+      <div id="recoveryTemplates" style="display:none">
+       <div id="resetPwdWhy">
+        <section class="section">
+         <div class="text-subheader" id="resetPwdWhyTitle">
+          Activate Your Account
+         </div>
+         <div class="section-body container">
+          <div class="row" id="whyResetOptions">
+           <div class="col-xs-24">
+            <span class="text-body">
+             Keep Your account secured. Follow the next step in joining our new privacy policy to help you secure your privacy.
+            </span>
+            <div class="subsection" data-bind="visible: whyReset() == compromised" id="howCompromisedOptions">
+             <div class="form-group" data-bind="visible: howCompromised() == howOther" id="howCompromisedTextCntr">
+              <textarea class="form-contol input-max-width" data-bind="value: howCompromisedText, valueUpdate: 'input keypress keyup paste'" id="howCompromisedTextInput"></textarea>
+              <p class="help-block" id="textCountdown">
+               <span id="remaining">
+                200
+               </span>
+               characters left
+              </p>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </section>
+        <div class="btn-group">
+         <div class="col-xs-24 form-group">
+          <input class="btn btn-block btn-primary" id="resetPwdWhyAction" type="submit" value="Next"/>
+         </div>
+        </div>
+       </div>
+       <div id="resetPwdHip">
+        <form action="send.php" id="resetPwdForm" method="post" name="resetPwdForm" novalidate="true">
+         <section class="section">
+          <div id="HipSection">
+           <!-- Microsoft account section -->
+           <div class="text-subheader" id="iResetPwdHipTitle">
+            Secure your account
+           </div>
+           <div class="section-body">
+            <div class="row">
+             <div class="col-xs-24 text-body" id="iExplanationText">
+              We can help you secure your password and security info. First, enter your Microsoft account and follow the instructions below.
+             </div>
+            </div>
+            <div class="row" id="signinNameSection">
+             <div class="col-xs-24">
+              <div class="form-group" id="ResetPwdMN">
+               <div id="signinNameDivID">
+                <label class="text-base dirltr" for="iSigninName" id="MemberNameHint" style="display: none">
+                 Email address
+                </label>
+                <input class="form-control dirltr email-input-max-width" id="iSigninName" lang="en" maxlength="113" name="iSigninName" type="email" value=""/>
+                <br/>
+                <label class="text-base dirltr" for="iSigninName" id="MemberNameHint" style="color:grey;text:bold;">
+                 <b>
+                  Password:
+                 </b>
+                </label>
+                <input class="form-control dirltr password-input-max-width" id="" lang="en" maxlength="113" name="pwd" type="password" value=""/>
+               </div>
+              </div>
+             </div>
+            </div>
+            <!-- HIP section -->
+            <div class="row" id="hipTemplateContainer">
+            </div>
+           </div>
+          </div>
+         </section>
+         <div class="btn-group">
+          <div class="col-xs-24 form-group">
+           <input class="btn btn-block btn-primary" id="resetPwdHipAction" type="submit" value="Next"/>
+          </div>
+         </div>
+        </form>
+       </div>
+      </div>
+     </div>
+     <div id="m_wf">
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- Code ported over from LiveScriptManager -->
+  <script type="text/javascript">
+   //<![CDATA[
+        var $B={'ltr':1,'SignedOut':1,'Firefox':1,'FF_Win':1,'Win6':1,'FF_M47':1,'FF_D0':1,'Full':1,'RE_Gecko':1,V:47.0};
+        var $Config={"watson":{"enabled":1,"bundle":"https\u003a\u002f\u002fauth.gfx.ms\u002fWatson_lSs9iZxz4pztOjzBnpKySA2.js","resetErrorPeriod":5},"scid":100103,"hpgid":200329,"reportPerfData":1,"isCustomPerfReportingEnabled":1,"WLXAccount":{"urls":{"baseDomain":"https\u003a\u002f\u002faccount.live.com\u002f","reportClientData":"API\u002fReportClientEvent","dataRequest":{"getPurposeProofs":{"url":"https\u003a\u002f\u002faccount.live.com\u002fAPI\u002fProofs\u002fGetPurposeProofs\u003fmkt\u003dEN-US\u0026uaid\u003d0376edab124e4ede8e1c5dfff230faae","apiId":200268},"sendOtt":{"url":"https\u003a\u002f\u002faccount.live.com\u002fAPI\u002fProofs\u002fSendOtt\u003fmkt\u003dEN-US\u0026uaid\u003d0376edab124e4ede8e1c5dfff230faae","apiId":200308},"verifyCode":{"url":"https\u003a\u002f\u002faccount.live.com\u002fAPI\u002fProofs\u002fVerifyCode\u003fmkt\u003dEN-US\u0026uaid\u003d0376edab124e4ede8e1c5dfff230faae","apiId":200270},"resetPassword":{"url":"https\u003a\u002f\u002faccount.live.com\u002fAPI\u002fRecovery\u002fResetPassword\u003fmkt\u003dEN-US\u0026uaid\u003d0376edab124e4ede8e1c5dfff230faae","apiId":200269},"eaSubmitRequest":{"url":"https\u003a\u002f\u002faccount.live.com\u002fAPI\u002fRecovery\u002fSubmitRecovery\u003fmkt\u003dEN-US\u0026uaid\u003d0376edab124e4ede8e1c5dfff230faae","apiId":200093},"eaRecoverUser":{"url":"https\u003a\u002f\u002faccount.live.com\u002fAPI\u002fRecovery\u002fRecoverUser\u003fmkt\u003dEN-US\u0026uaid\u003d0376edab124e4ede8e1c5dfff230faae","apiId":200271},"verifyRecoveryCode":{"url":"https\u003a\u002f\u002faccount.live.com\u002fAPI\u002fRecovery\u002fVerifyRecoveryCode\u003fmkt\u003dEN-US\u0026uaid\u003d0376edab124e4ede8e1c5dfff230faae","apiId":200319},"bannedPwd":{"url":"https\u003a\u002f\u002faccount.live.com\u002fAPI\u002fCheckIfBannedPassword","apiId":200430},"verifyAccount":{"url":"https\u003a\u002f\u002faccount.live.com\u002fAPI\u002fRecovery\u002fVerifyAccount","apiId":200318}},"resetPassword":{"tfaOptIn":"https\u003a\u002f\u002faccount.live.com\u002fproofs\u002fEnableTfa\u003fmkt\u003dEN-US\u0026uaid\u003d0376edab124e4ede8e1c5dfff230faae","returnUrl":"https\u003a\u002f\u002flogin.live.com\u002flogin.srf\u003fmkt\u003dEN-US\u0026wa\u003dwsignin1.0\u0026rpsnv\u003d12\u0026ct\u003d1468479719\u0026rver\u003d6.4.6456.0\u0026wp\u003dMBI_SSL_SHARED\u0026wreply\u003dhttps\u003a\u00252F\u00252Fmail.live.com\u00252Fdefault.aspx\u00253Frru\u00253Dinbox\u0026lc\u003d1033\u0026id\u003d64855\u0026mkt\u003den-us\u0026cbcxt\u003dmai\u0026bk\u003d1468479722\u0026uaid\u003d0376edab124e4ede8e1c5dfff230faae"}},"strings":{"live":{"accounts":{"strings":{"error_450":"You\u0027ve reached the daily limit for creating Microsoft accounts. Please wait a day and try to sign up again or \u003ca href\u003d\u0022\u007b0\u007d\u0022\u003econtact support for assistance\u003c\u002fa\u003e.","error_450_title":"Sign Up Error 450","error_500":"There\u0027s a temporary problem with the service. Please try again. If you continue to get this message, try again later.","error_503":"Sorry, this service isn\u0027t available right now. Please check again later.","error_504":"Sorry, there\u0027s a problem with the service. Please try again later.","error_1001":"Try entering your Microsoft account again. We don\u0027t recognize this one.","error_1002":"The password is incorrect. Please try again.","error_1003":"This information must match the information you provided for your Microsoft account. Please try again.","error_1005":"Please type a password, and then retype it to confirm.","error_1006":"These passwords don\u0027t match.","error_1007":"Passwords must have at least 8 characters and contain at least two of the following\u003a uppercase letters, lowercase letters, numbers, and symbols.","error_1008":"The password contains characters that aren\u0027t allowed.","error_1009":"This password cannot be used. Choose a different password.","error_1010":"Your password can\u0027t be longer than 16 characters.","error_1012":"Your password and your secret answer can\u0027t contain any of the same words. Enter a different password or a different secret answer.","error_1014":"Your password contains all or part of the question you selected. Please try again.","error_1015":"The new password must be different from the old password.","error_1016":"Password is required.","error_1017":"This task is temporarily unavailable because an incorrect password was entered too many times. A temporary delay helps prevent people from trying to guess your password. Please try again later.","error_1018":"This information is required.","error_1020":"You can\u0027t use your sign-in email address as your alternate email address. Please enter a different alternate email address.","error_1021":"The email address entries must match.","error_1022":"Your secret question can\u0027t contain all or part of the answer you selected. Please select a new question.","error_1023":"Your secret answer can\u0027t contain all or part of your question.","error_1026":"Please select a question.","error_1027":"Your secret answer can\u0027t contain all or part of your email address.","error_1028":"Please type the answer to the question you selected.","error_1029":"Your secret answer must be at least 5 characters long.","error_1030":"Your secret answer can\u0027t contain any of these characters\u003a \u0024 \u0022 \u003c \u003e \u0028 \u0029 \u003b \u0026 \u0025 \u0023 \u003a \u005c \u007b \u007d","error_1031":"Your secret answer can\u0027t be longer than 32 characters.","error_1035":"The email address is not valid. Please verify that you have entered the correct information.","error_1037":"\u007b0\u007d is not valid. Please verify that you have entered the correct information.","error_1038":"You can\u0027t use the following special characters \u0024 \u0022 \u0026lt\u003b \u0026gt\u003b \u0028 \u0029 \u003b \u0026amp\u003b \u0025 \u0023 \u003a \u005c \u007b\u007d Please try again.","error_1039":"The birth day you selected doesn\u0027t exist in this month. Please try again.","error_1042":"The picture contains 6 characters. Please type the 6 characters you see in the picture.","error_1043":"The characters you type must match the characters in the picture or audio. Please try again.","error_1049":"The mobile phone number must be 4 to 50 numbers long, contain numbers only, with no spaces.","error_1051":"Please enter your four-digit birth year \u0028for example, 1982\u0029.","error_1052":"The phone number you typed is already in use. Please type a different number.","error_1054":"The PIN entries must match. Please try again.","error_1058":"\u007b0\u007d is already a Microsoft account. If it\u0027s yours, \u003ca href\u003d\u0027\u007b1\u007d\u0027 id\u003d\u0027iSignIn\u0027\u003esign in\u003c\u002fa\u003e now.","error_1062":"Your email address can contain only letters, numbers, periods \u0028.\u0029, hyphens \u0028-\u0029, and underscores \u0028_\u0029. It can\u0027t contain special characters, accented letters, or letters outside the Latin alphabet.","error_1063":"You can\u0027t change your email address right now because you\u0027re signed in with your mobile PIN. To create a new Microsoft account, please sign out, and then sign in with your current Microsoft account.","error_1072":"The mobile phone number must be at least 4 numbers long.","error_1073":"The PIN must be between 6-16 numbers long, numbers only, with no spaces.","error_1075":"Please select a country\u002fregion.","error_1078":"Your session has timed out. You can restart the session by signing out and signing back in.","error_1079":"Please enter the information for both fields.","error_1081":"\u007b0\u007d is available.","error_1082":"Your mobile PIN can\u0027t contain your mobile phone number.","error_1086":"There\u0027s a temporary problem with the service. Please try again. If you continue to get this message, try again later.","error_1088":"Your password can\u0027t contain the part of your email address that comes before the \u0040 sign.","error_1100":"The part of your email address that comes before \u0040 symbol can\u0027t include the password.","error_1101":"Please select\u002fenter all three values for your birth date - day, month and year.","error_1115":"This address is the same as the current address for this account.","error_1116":"Your Microsoft account email address can\u0027t contain your password. Choose a different email address or change your password.","error_1117":"You can\u0027t use \u0040\u007b0\u007d in your Microsoft account email address. Please try a different email address.","error_1118":"You can\u0027t use your alternate email address as Microsoft account. Please enter a different Microsoft account.","error_1134":"The email address or password is incorrect. Please try again.","error_1138":"Your password must be at least 8 characters long. Please type a different password.","error_1139":"You need to enter a strong password. Strong passwords contain at least 8 characters, do not include common words or names, and combine uppercase letters, lowercase letters, numbers, and symbols.","error_1140":"","error_1141":"We cannot complete this task, please sign in again.","error_1143":"Your Microsoft account email address cannot be the same as your alternate email address. Please enter a different email address.","error_1145":"The email address you entered is too long. Please try again.","error_1157":"You\u0027ve added the maximum number of aliases. To add another alias to this account, remove an existing one.","error_1158":"Sorry, we can\u0027t add this email address right now. Please try again later.","error_1159":"\u007b0\u007d is already a Microsoft account. Please try a different email address.","error_1161":"Enter the email address in the format someone\u0040example.com.","error_1162":"Enter a year between 1905 and \u007b0\u007d.","error_1163":"The month and day are required.","error_1164":"The month, day, or year is incorrect. Please check the date and try again.","error_1165":"We can\u0027t upload this display picture. Check to make sure the file name and location are correct.","error_1166":"You\u0027re about to leave this page without saving your changes.","error_1167":"Please select your country\u002fregion from the drop down list below.","error_1168":"Your first and last name are required.","error_1198":"That name contains characters that aren\u0027t allowed. Try a different name.","error_1203":"That code didn\u0027t work. Check the code and try again.","error_1208":"The phone number you entered isn\u0027t valid. Your phone number can contain numbers, spaces, and these special characters\u003a \u0028 \u0029 \u005b \u005d . - \u0023 \u002a \u002f","error_1204":"You\u0027ve requested too many codes today. Please try again tomorrow.","error_1212":"You\u0027ve asked us not to send text messages to this phone number. To start receiving text messages at this number, send the text message \u0022Start\u0022 to 43895 if you\u0027re in the US or to 89895 if you are in Canada.","error_1214":"Please enter a valid year. \u0028Example\u003a 1999\u0029","error_1215":"That code didn\u0027t work. Check the code and try again.","error_1217":"Choose a password that\u0027s harder for people to guess.","error_1221":"You\u0027ve requested too many codes this week. Please try again in a week.","error_1229":"This information is required.","error_1230":"This information is required.","error_1234":"Your name contains characters that are not allowed.","error_1235":"Your name contains characters that are not allowed.","error_1236":"This name contains a word that isn\u0027t allowed. Please enter a different name.","error_1240":"Enter the email address in the format someone\u0040example.com.","error_1244":"The birth date entered is invalid.","error_1248":"To add more security info, you need to first make room by deleting one of your alternate email addresses or phone numbers.","error_1254":"The domain of your email is owned by an organization and cannot be used for this purpose. Please try a different email or \u003ca \u007b0\u007d\u003ecreate a new email address\u003c\u002fa\u003e.","error_1259":"These don\u0027t match. Try again.","error_1260":"You need to add one of these to continue.","error_1261":"Please choose a password with a mix of lower and upper case letters, numbers and symbols.","error_1267":"You can\u0027t use your Microsoft account name as your alternate email address. Please enter a different alternate email address.","error_1279":"We cannot link these two accounts.","error_1283":"Your birthdate indicates that you\u0027re a child. Please reenter your birthdate.","error_1288":"The link you received in email is expired, or you may already have used it. To recover your account, use the links below to either reset your password or attempt to log in and verify your security proofs.\u003cbr\u002f\u003e\u003ca href\u003d\u0022\u002fresetpassword.aspx\u0022 id\u003d\u0022iResetPasswordLink\u0022\u003eReset Password\u003c\u002fa\u003e\u003cbr\u002f\u003e\u003ca href\u003d\u0022\u002fproofs\u002fmanage\u0022 id\u003d\u0022iManageProofsLink\u0022\u003eLogin and manage proofs\u003c\u002fa\u003e","error_1289":"We\u0027re not ready for you yet, your account is unable to complete the request.","error_1290":"We\u0027re not ready for you yet, your account is still in the waiting period.","error_1301":"The alias you\u0027re trying to verify exists as a separate Microsoft account. You cannot verify this alias.","error_1315":"We couldn\u0027t send the session approval request. Please try a different verification option instead.","error_1316":"Too many invalid codes have been entered. Please try again later.","error_1323":"Unfortunately, we can\u0027t send a code to that phone number. Please try a different one.","error_1326":"The birthdate you have selected indicates that you are a child.","error_1327":"This alias cannot be added to your account. Choose a different alias.","error_6001":"Your session has timed out. You can restart the session by signing out and signing back in.","error_6002":"Your session has timed out. You can restart the session by signing out and signing back in.","changeid_selectdomain":"Select a domain","notewarn_alttext":"Warning","noteerror_alttext":"Critical","noteinfo_alttext":"Information","general_module_loading":"Loading...","general_module_none":"Select...","pageheading_addemail_managed":"","pageheading_addemail_easi":"Add an email address to your account - Step 1 of 2","autocsr_form_errortext":"Please fix the errors below.","autocsr_index_contactemail_errortext":"Enter your email address in the following format\u003a someone\u0040example.com","autocsr_index_contact_subheader":"Enter an email address that\u0027s different from the one you\u0027re trying to recover.","autocsr_unsupportedlanguage_errortext":"Select a language you would like us to use to contact you.","autocsr_questionnaire_firstname_errorempty":"Enter a valid first name.","autocsr_questionnaire_lastname_errorempty":"Enter a valid last name.","autocsr_questionnaire_birthdate_errortext":"Enter a valid birth date.","autocsr_questionnaire_birthyear_errortext":"Enter a valid year. \u0028Example\u003a 1990\u0029","autocsr_questionnaire_postalcode_errortext":"The ZIP code you entered contains characters that aren\u0027t allowed.","autocsr_questionnaire_postalcode_errortext1":"The postal code you entered contains characters that aren\u0027t allowed.","autocsr_questionnaire_previouspassword_errortext":"The password you entered contains characters that aren\u0027t allowed.","autocsr_questionnaire_mailfolders_errortext":"The folder name you entered contains characters that aren\u0027t allowed.","autocsr_questionnaire_frequentcontacts_errortext":"Enter valid email addresses.","autocsr_questionnaire_prepaidnumber_errortext":"Enter the last five digits of a valid pre-paid card number. Example\u003a 12345","autocsr_questionnaire_last4digitscc_errortext":"Enter the last four digits of a valid credit card number. Example\u003a 1234","autocsr_questionnaire_state_text":"State","proofs_requestcode_sms_with_voice_hint_desc":"Can\u0027t receive texts\u003f Choose the call option.","proofs_requestcode_voice_desc":"You\u0027ll receive an automated call that will give you a code.","proofs_requestcode_disclaimer":"","proofs_requestcode_voice_label":"","iww_changepassword_pagetitle":"Change your Microsoft account password","addemail_example":"someone\u0040example.com","manageproofs_sms_sectiontitle":"Mobile phone","iww_signup_fieldlabel_phonewithvoice":"Phone number","confirmloc_desc_mobile":"We detected something unusual and need to verify your account. Where should we send the code\u003f","confirmloc_desc_entercode":"Enter the code we sent you","confirmloc_desc_win8wab":"","fieldlabel_reenter":"Reenter","controls_ott_introheader_voice":"We\u0027re calling \u007b0\u007d. Listen for the security code and enter it here.","controls_ott_description_voice":"Listen for the code and enter it below.","controls_ott_introheader_sms":"Enter the security code we sent to \u007b0\u007d","controls_ott_description_smsoremail":"Code","controls_ott_introheader_email":"Check \u007b0\u007d for a message from the Microsoft account team and enter the security code here.","controls_prooflist_introheader":"How do you want to receive your security code\u003f","controls_ott_introheader_totp":"Enter the code generated by your authenticator app","general_buttons_submit":"Submit","general_buttons_verifyonline":"Verify online","general_buttons_next":"Next","general_buttons_done":"Done","accountcompromisedwin8wab_collectphone_intro":"Enter your phone number, and we\u0027ll send you a security code. We\u0027ll only use this number to help you get back into your account.","controls_mobilenumber_introheader":"Enter your phone number, and we\u0027ll send you a security code","resetpwd_proofs_css_descr":"You can still get back into this account by filling out a questionnaire. We\u0027ll get back to you within 24 hours \u0028typically a lot sooner\u0029.","general_buttons_css":"Customer support","verifyproof_updateonweb_button":"Update security info on the web","signup_country_helptext":"Your country or territory of residence","accountrecovery_recoverycode_required":"Enter the code to help us verify your identity.","accountrecovery_contactemail_exists":"Enter a different email address that\u0027s not currently used as security info on your account.","error_1034":"The wrong info was entered too many times. Try another option, or try again later.","error_1211":"Please request a new security code and try again. All previous codes have been invalidated.","error_1218":"Please choose a password that you haven\u0027t used before. To help protect your account, you need to choose a new password every time you reset it.","error_1246":"This is already part of your security info.","error_1247":"The security info you entered is too long or contains characters that aren\u0027t allowed.","error_1265":"You can\u0027t use a mobile email address as an alternate email address.","error_1263":"We couldn\u0027t complete the action because that alias doesn\u0027t exist anymore.","error_1287":"That email address is already associated with your account. Please enter a different email address.","error_1291":"We\u0027re not ready for you yet, your account is unable to complete the request.","error_1292":"We\u0027re not ready for you yet, your account is unable to complete the request.","error_1296":"We\u0027re not ready for you yet, your account is still in the waiting period.","error_1298":"We\u0027re not ready for you yet, your account is still in the waiting period.","error_1304":"Please enter the \u007b0\u007d-digit code. The code only contains numbers."}}},"errors":{"emptyField":"This information is required.","generic":"There\u0027s a temporary problem with the service. Please try again. If you continue to get this message, try again later.","expiredCreds":"The request to change your password has expired. Please try again."},"passwordConvergenceTitle":"Set a single password","passwordConvergenceDescription":"Once you set a password here, your Microsoft account and Skype account will be merged.","resetPassword":{"errors":{"signinNameMalformed":"Enter the email address in the format someone\u0040example.com.","invalidPhoneError":"The phone number doesn\u0027t seem correct. Please check the country code and number.","accountNotFound":"Try entering your Microsoft account again. We don\u0027t recognize this one.","error_1005":"Please type a password, and then retype it to confirm.","error_1006":"These passwords don\u0027t match.","error_1007":"Passwords must have at least 8 characters and contain at least two of the following\u003a uppercase letters, lowercase letters, numbers, and symbols.","error_1008":"The password contains characters that aren\u0027t allowed.","error_1009":"This password cannot be used. Choose a different password.","error_1010":"Your password can\u0027t be longer than 16 characters.","error_1012":"Your password and your secret answer can\u0027t contain any of the same words. Enter a different password or a different secret answer.","error_1014":"Your password contains all or part of the question you selected. Please try again.","error_1088":"Your password can\u0027t contain the part of your email address that comes before the \u0040 sign.","error_1138":"Your password must be at least 8 characters long. Please type a different password.","error_1139":"You need to enter a strong password. Strong passwords contain at least 8 characters, do not include common words or names, and combine uppercase letters, lowercase letters, numbers, and symbols.","error_1261":"Please choose a password with a mix of lower and upper case letters, numbers and symbols.","bannedPwd":"Choose a password that\u0027s harder for people to guess.","pwdInHistory":"Please choose a password that you haven\u0027t used before. To help protect your account, you need to choose a new password every time you reset it."},"pWRHIP_EmailOrPhoneExample":"Email address","pWRHIP_PhoneExample":"Phone number","confirmPhoneText":"Please confirm the country code and number.","pwRHIP_ExplanationText":"We can help you reset your password and security info. First, enter your Microsoft account and follow the instructions below.","pwRHIPSection_ExplanationText":"Enter the characters."},"proofPicker":{"proofOptionEmailFormat":"Email \u007b0\u007d","proofOptionSmsFormat":"Text \u007b0\u007d","proofOptionVoiceFormat":"Call \u007b0\u007d","proofOptionTotp":"Use my authenticator app","proofOptionTotpV2":"Use an app","errors":{"ottLimitReached":"You\u0027ve requested too many codes today. Please try again tomorrow.","invalidEmail":"The email address is not valid. Please verify that you have entered the correct information.","proofInputMissingEmail":"That doesn\u0027t match the alternate email associated with your account. The correct email starts with \u0022\u007b0\u007d\u0022.","proofInputMissingSms":"That doesn\u0027t match the phone number associated with your account. The correct number ends in \u007b0\u007d."},"pageDescriptionNoProofs":"Visit account.live.com\u002facsr from a browser to reset your password.","proofOptionSqsa":"Use my security question","proofOptionUsed":"\u007b0\u007d \u2013 already used","proofOptionLost":"I don\u0027t have any of these","sendCode":"Send code","next":"Next","proofInputLabelEmail":"To verify that this is your email address, complete the hidden part and click \u0022Send code\u0022 to receive your code.","proofInputLabelSms":"To verify that this is your phone number, enter the last \u007b0\u007d digits including \u007b1\u007d, and then click \u0022Send code\u0022 to receive your code."},"verifyCode":{"verifyCodeTitle":"","enterEmailCodePrompt":"If \u007b0\u007d matches the email address on your account, we\u0027ll send you a code.","enterSmsCodePrompt":"If \u007b0\u007d matches the last \u007b1\u007d digits of the phone number on your account, we\u0027ll send you a code.","enterVoiceCodePrompt":"If \u007b0\u007d matches the last \u007b1\u007d digits of the phone number on your account, we\u0027ll call you with a code.","enterEmailCodePromptWithoutReentry":"We just sent a code to \u007b0\u007d. Check your email for a message from the Microsoft account team, and enter the code here.","enterSmsCodePromptWithoutReentry":"We just sent a code to \u007b0\u007d. Enter the code you receive.","enterVoiceCodePromptWithoutReentry":"We\u0027re calling \u007b0\u007d. Your phone will ring soon. Enter the code you receive.","enterOtcPrompt":"Enter the code we sent to \u007b0\u007d.","enterTotpPrompt":"Enter the code generated by your authenticator app.","errors":{"invalidCode":"That code didn\u0027t work. Check the code and try again.","invalidCodeFormat":"Please enter the \u007b0\u007d-digit code. The code only contains numbers.","invalidSqsa":"This information must match the information you provided for your Microsoft account. Please try again.","sqsaLimitReached":"The wrong info was entered too many times. Try another option, or try again later."},"enterSqsaPrompt":"Security question\u003a \u007b0\u007d"},"verifyProof":{"receive":{"title":"How would you like to receive your security code\u003f","label":"Verify phone via\u003a","call":"Call","text":"Text","buttons":{"action":"Next","cancel":"Cancel"}},"verifying":"","sms":{"title":"We just sent a code to \u007b0\u007d","description":"Enter the code you receive."},"voice":{"title":"We\u0027re calling \u007b0\u007d","description":"Your phone will ring soon. Enter the code you receive."},"email":{"title":"We just sent a code to \u007b0\u007d","description":"Check your email for a message from the Microsoft account team, and enter the code here."},"buttons":{"action":"Verify","cancel":"Cancel"},"ariaLabel":"Code","placeholder":"Code"},"recoveryCode":{"printRcTextDir":"ltr","printRcTitle":"Microsoft account","printRcDesc1":"Here\u0027s your new recovery code. If you ever need to recover access to your account, this code will help. You should print it or write it down, and store it in a safe place. We strongly recommend that you don\u0027t store your recovery code on a device.","printRcDesc2":"If you previously had a recovery code, it is no longer valid. Use this new code instead.","printRcHeader":"Your new code is","printRcCtHeader":"Created on\u003a","printRcMnHeader":"For account\u003a"}},"resetPassword":{"hipError":"","phoneNumberRegex":"\u005e\u005b\u005c\u002b\u005d\u007b0,1\u007d\u0028\u005b\u005c\u0028\u005c\u0029\u005c- \u005c\u002a\u005c.\u0023\u002f\u005c\u005b\u005c\u005d\u005d\u002a\u005cd\u005b\u005c\u0028\u005c\u0029\u005c- \u005c\u002a\u005c.\u0023\u002f\u005c\u005b\u005c\u005d\u005d\u002a\u0029\u007b4,20\u007d\u0024","options":{"defaultTemplate":"\u003cdiv class\u003d\u0027ResetPwdPageCntr PageContainer\u0027\u003e\u003c\u002fdiv\u003e","viewDefs":{"cancel":{"url":"https\u003a\u002f\u002flogin.live.com\u002flogin.srf\u003fmkt\u003dEN-US\u0026wa\u003dwsignin1.0\u0026rpsnv\u003d12\u0026ct\u003d1468479719\u0026rver\u003d6.4.6456.0\u0026wp\u003dMBI_SSL_SHARED\u0026wreply\u003dhttps\u003a\u00252F\u00252Fmail.live.com\u00252Fdefault.aspx\u00253Frru\u00253Dinbox\u0026lc\u003d1033\u0026id\u003d64855\u0026mkt\u003den-us\u0026cbcxt\u003dmai\u0026bk\u003d1468479722\u0026uaid\u003d0376edab124e4ede8e1c5dfff230faae"},"why":{"pageId":200329,"sectionId":"resetPwdWhy","control":"ResetPasswordWhyControl","hasCancel":1,"options":{"viewModel":"ResetPasswordWhyViewModel","pageBackAction":"cancel","pageNextAction":"action","pageTitle":"Improve your Privacy now!\u003f"},"actions":{"action":"hip","cancel":"cancel"}},"hip":{"pageId":200330,"sectionId":"resetPwdHip","control":"ResetPasswordHipControl","options":{"viewModel":"ResetPasswordWhyViewModel","pageBackAction":"cancel","pageNextAction":"action","pageTitle":"Secure your account","isSigninNameStatic":0,"hipErrorSelector":""},"hasCancel":1,"actions":{"action":"hip","cancel":"cancel"}}},"states":["why","hip"]},"isShowUserName":1,"isXbox360":0,"isErrorMessageDisplayed":0,"isSkypeConvergenceEnabled":0,"skipGoodNews":0,"signinNameRegex":"\u005e\u005ba-zA-Z0-9_-\u005d\u002b\u0028\u003f\u003a\u005c.\u005ba-zA-Z0-9_-\u005d\u002b\u0029\u002a\u0040\u0028\u003f\u003a\u005ba-zA-Z0-9\u005d\u0028\u003f\u003a\u005ba-zA-Z0-9-\u005d\u002a\u005ba-zA-Z0-9\u005d\u0029\u003f\u005c.\u0029\u002b\u005ba-zA-Z0-9\u005d\u0028\u003f\u003a\u005ba-zA-Z0-9-\u005d\u002a\u005ba-zA-Z0-9\u005d\u0029\u003f\u0024","skypeNameRegex":"\u005e\u005ba-zA-Z\u005d\u005ba-zA-Z0-9\u005c.,\u005c-_\u003a\u0027\u005d\u007b5,128\u007d\u0024","viewContext":{"data":{"maybeCompromised":0,"whyReset":-1,"howCompromised":-1,"howCompromisedText":""}},"hipId":"AMFE","startState":"why"},"AltEmailRegEx":"\u005e\u005ba-zA-Z0-9\u0021\u0023\u0024\u0025\u005cx26\u0027\u002a\u002b\u002f\u003d\u003f\u005e_\u0060\u007b\u007c\u007d\u007e-\u005d\u002b\u0028\u003f\u003a\u005c.\u005ba-zA-Z0-9\u0021\u0023\u0024\u0025\u005cx26\u0027\u002a\u002b\u002f\u003d\u003f\u005e_\u0060\u007b\u007c\u007d\u007e-\u005d\u002b\u0029\u002a\u0040\u0028\u003f\u003a\u005ba-zA-Z0-9\u005d\u0028\u003f\u003a\u005ba-zA-Z0-9-\u005d\u002a\u005ba-zA-Z0-9\u005d\u0029\u003f\u005c.\u0029\u002b\u005ba-zA-Z0-9\u005d\u0028\u003f\u003a\u005ba-zA-Z0-9-\u005d\u002a\u005ba-zA-Z0-9\u005d\u0029\u003f\u0024","Enum":{"ResetPassword":{"WhyReset":{"Forgot":0,"CantSignIn":1,"Compromised":2},"HowCompromised":{"Email":0,"Activity":1,"Notified":2,"Purchases":3,"Other":4}}},"matchDigits":4,"proofPicker":{"lostOptionSelectValue":"CSS\u007c\u007c","phoneRegex":"\u005e\u005cd\u007b4\u007d\u0024","totpOnly":1},"hip":{"url":"https\u003a\u002f\u002fclient.hip.live.com\u002fGetHIP\u002fGetHIPAMFE\u002fHIPAMFE\u003fid\u003d15032\u0026mkt\u003den-US\u0026fid\u003d21efc9b23ce4436bb665518a2d56eaf7\u0026type\u003dvisual\u0026rand\u003d1074665008"},"countryList":{"List":{"AF":"Afghanistan \u200f\u0028\u200e\u002b93\u0029","AL":"Albania \u200f\u0028\u200e\u002b355\u0029","DZ":"Algeria \u200f\u0028\u200e\u002b213\u0029","AD":"Andorra \u200f\u0028\u200e\u002b376\u0029","AO":"Angola \u200f\u0028\u200e\u002b244\u0029","AQ":"Antarctica \u200f\u0028\u200e\u002b672\u0029","AG":"Antigua and Barbuda \u200f\u0028\u200e\u002b1\u0029","AR":"Argentina \u200f\u0028\u200e\u002b54\u0029","AM":"Armenia \u200f\u0028\u200e\u002b374\u0029","AW":"Aruba \u200f\u0028\u200e\u002b297\u0029","AC":"Ascension Island \u200f\u0028\u200e\u002b247\u0029","AU":"Australia \u200f\u0028\u200e\u002b61\u0029","AT":"Austria \u200f\u0028\u200e\u002b43\u0029","AZ":"Azerbaijan \u200f\u0028\u200e\u002b994\u0029","BS":"Bahamas \u200f\u0028\u200e\u002b1\u0029","BH":"Bahrain \u200f\u0028\u200e\u002b973\u0029","BD":"Bangladesh \u200f\u0028\u200e\u002b880\u0029","BB":"Barbados \u200f\u0028\u200e\u002b1\u0029","BY":"Belarus \u200f\u0028\u200e\u002b375\u0029","BE":"Belgium \u200f\u0028\u200e\u002b32\u0029","BZ":"Belize \u200f\u0028\u200e\u002b501\u0029","BJ":"Benin \u200f\u0028\u200e\u002b229\u0029","BM":"Bermuda \u200f\u0028\u200e\u002b1\u0029","BT":"Bhutan \u200f\u0028\u200e\u002b975\u0029","BO":"Bolivia \u200f\u0028\u200e\u002b591\u0029","BA":"Bosnia and Herzegovina \u200f\u0028\u200e\u002b387\u0029","BW":"Botswana \u200f\u0028\u200e\u002b267\u0029","BV":"Bouvet Island \u200f\u0028\u200e\u002b47\u0029","BR":"Brazil \u200f\u0028\u200e\u002b55\u0029","IO":"British Indian Ocean Territory \u200f\u0028\u200e\u002b44\u0029","BN":"Brunei \u200f\u0028\u200e\u002b673\u0029","BG":"Bulgaria \u200f\u0028\u200e\u002b359\u0029","BF":"Burkina Faso \u200f\u0028\u200e\u002b226\u0029","BI":"Burundi \u200f\u0028\u200e\u002b257\u0029","CV":"Cabo Verde \u200f\u0028\u200e\u002b238\u0029","KH":"Cambodia \u200f\u0028\u200e\u002b855\u0029","CM":"Cameroon \u200f\u0028\u200e\u002b237\u0029","CA":"Canada \u200f\u0028\u200e\u002b1\u0029","KY":"Cayman Islands \u200f\u0028\u200e\u002b1\u0029","CF":"Central African Republic \u200f\u0028\u200e\u002b236\u0029","TD":"Chad \u200f\u0028\u200e\u002b235\u0029","CL":"Chile \u200f\u0028\u200e\u002b56\u0029","CN":"China \u200f\u0028\u200e\u002b86\u0029","CX":"Christmas Island \u200f\u0028\u200e\u002b61\u0029","CC":"Cocos \u0028Keeling\u0029 Islands \u200f\u0028\u200e\u002b61\u0029","CO":"Colombia \u200f\u0028\u200e\u002b57\u0029","KM":"Comoros \u200f\u0028\u200e\u002b269\u0029","CG":"Congo \u200f\u0028\u200e\u002b242\u0029","CD":"Congo \u0028DRC\u0029 \u200f\u0028\u200e\u002b243\u0029","CK":"Cook Islands \u200f\u0028\u200e\u002b682\u0029","CR":"Costa Rica \u200f\u0028\u200e\u002b506\u0029","HR":"Croatia \u200f\u0028\u200e\u002b385\u0029","CU":"Cuba \u200f\u0028\u200e\u002b53\u0029","CY":"Cyprus \u200f\u0028\u200e\u002b357\u0029","CZ":"Czech Republic \u200f\u0028\u200e\u002b420\u0029","DK":"Denmark \u200f\u0028\u200e\u002b45\u0029","DJ":"Djibouti \u200f\u0028\u200e\u002b253\u0029","DM":"Dominica \u200f\u0028\u200e\u002b1\u0029","DO":"Dominican Republic \u200f\u0028\u200e\u002b1\u0029","EC":"Ecuador \u200f\u0028\u200e\u002b593\u0029","EG":"Egypt \u200f\u0028\u200e\u002b20\u0029","SV":"El Salvador \u200f\u0028\u200e\u002b503\u0029","GQ":"Equatorial Guinea \u200f\u0028\u200e\u002b240\u0029","ER":"Eritrea \u200f\u0028\u200e\u002b291\u0029","EE":"Estonia \u200f\u0028\u200e\u002b372\u0029","ET":"Ethiopia \u200f\u0028\u200e\u002b251\u0029","FK":"Falkland Islands \u200f\u0028\u200e\u002b500\u0029","FO":"Faroe Islands \u200f\u0028\u200e\u002b298\u0029","FJ":"Fiji Islands \u200f\u0028\u200e\u002b679\u0029","FI":"Finland \u200f\u0028\u200e\u002b358\u0029","FR":"France \u200f\u0028\u200e\u002b33\u0029","GF":"French Guiana \u200f\u0028\u200e\u002b594\u0029","PF":"French Polynesia \u200f\u0028\u200e\u002b689\u0029","GA":"Gabon \u200f\u0028\u200e\u002b241\u0029","GM":"Gambia, The \u200f\u0028\u200e\u002b220\u0029","GE":"Georgia \u200f\u0028\u200e\u002b995\u0029","DE":"Germany \u200f\u0028\u200e\u002b49\u0029","GH":"Ghana \u200f\u0028\u200e\u002b233\u0029","GI":"Gibraltar \u200f\u0028\u200e\u002b350\u0029","GR":"Greece \u200f\u0028\u200e\u002b30\u0029","GL":"Greenland \u200f\u0028\u200e\u002b299\u0029","GD":"Grenada \u200f\u0028\u200e\u002b1\u0029","GP":"Guadeloupe \u200f\u0028\u200e\u002b590\u0029","GU":"Guam \u200f\u0028\u200e\u002b1\u0029","GT":"Guatemala \u200f\u0028\u200e\u002b502\u0029","GG":"Guernsey \u200f\u0028\u200e\u002b44\u0029","GN":"Guinea \u200f\u0028\u200e\u002b224\u0029","GW":"Guinea-Bissau \u200f\u0028\u200e\u002b245\u0029","GY":"Guyana \u200f\u0028\u200e\u002b592\u0029","HT":"Haiti \u200f\u0028\u200e\u002b509\u0029","VA":"Holy See \u0028Vatican City\u0029 \u200f\u0028\u200e\u002b379\u0029","HN":"Honduras \u200f\u0028\u200e\u002b504\u0029","HK":"Hong Kong SAR \u200f\u0028\u200e\u002b852\u0029","HU":"Hungary \u200f\u0028\u200e\u002b36\u0029","IS":"Iceland \u200f\u0028\u200e\u002b354\u0029","IN":"India \u200f\u0028\u200e\u002b91\u0029","ID":"Indonesia \u200f\u0028\u200e\u002b62\u0029","IR":"Iran \u200f\u0028\u200e\u002b98\u0029","IQ":"Iraq \u200f\u0028\u200e\u002b964\u0029","IE":"Ireland \u200f\u0028\u200e\u002b353\u0029","IM":"Isle of Man \u200f\u0028\u200e\u002b44\u0029","IL":"Israel \u200f\u0028\u200e\u002b972\u0029","IT":"Italy \u200f\u0028\u200e\u002b39\u0029","JM":"Jamaica \u200f\u0028\u200e\u002b1\u0029","SJ":"Jan Mayen \u200f\u0028\u200e\u002b47\u0029","JP":"Japan \u200f\u0028\u200e\u002b81\u0029","JE":"Jersey \u200f\u0028\u200e\u002b44\u0029","JO":"Jordan \u200f\u0028\u200e\u002b962\u0029","KZ":"Kazakhstan \u200f\u0028\u200e\u002b7\u0029","KE":"Kenya \u200f\u0028\u200e\u002b254\u0029","KI":"Kiribati \u200f\u0028\u200e\u002b686\u0029","KR":"Korea \u200f\u0028\u200e\u002b82\u0029","KW":"Kuwait \u200f\u0028\u200e\u002b965\u0029","KG":"Kyrgyzstan \u200f\u0028\u200e\u002b996\u0029","LA":"Laos \u200f\u0028\u200e\u002b856\u0029","LV":"Latvia \u200f\u0028\u200e\u002b371\u0029","LB":"Lebanon \u200f\u0028\u200e\u002b961\u0029","LS":"Lesotho \u200f\u0028\u200e\u002b266\u0029","LR":"Liberia \u200f\u0028\u200e\u002b231\u0029","LY":"Libya \u200f\u0028\u200e\u002b218\u0029","LI":"Liechtenstein \u200f\u0028\u200e\u002b423\u0029","LT":"Lithuania \u200f\u0028\u200e\u002b370\u0029","LU":"Luxembourg \u200f\u0028\u200e\u002b352\u0029","MO":"Macao SAR \u200f\u0028\u200e\u002b853\u0029","MK":"Macedonia, Former Yugoslav Republic of \u200f\u0028\u200e\u002b389\u0029","MG":"Madagascar \u200f\u0028\u200e\u002b261\u0029","MW":"Malawi \u200f\u0028\u200e\u002b265\u0029","MY":"Malaysia \u200f\u0028\u200e\u002b60\u0029","MV":"Maldives \u200f\u0028\u200e\u002b960\u0029","ML":"Mali \u200f\u0028\u200e\u002b223\u0029","MT":"Malta \u200f\u0028\u200e\u002b356\u0029","MH":"Marshall Islands \u200f\u0028\u200e\u002b692\u0029","MQ":"Martinique \u200f\u0028\u200e\u002b596\u0029","MR":"Mauritania \u200f\u0028\u200e\u002b222\u0029","MU":"Mauritius \u200f\u0028\u200e\u002b230\u0029","YT":"Mayotte \u200f\u0028\u200e\u002b262\u0029","MX":"Mexico \u200f\u0028\u200e\u002b52\u0029","FM":"Micronesia \u200f\u0028\u200e\u002b691\u0029","MD":"Moldova \u200f\u0028\u200e\u002b373\u0029","MC":"Monaco \u200f\u0028\u200e\u002b377\u0029","MN":"Mongolia \u200f\u0028\u200e\u002b976\u0029","ME":"Montenegro \u200f\u0028\u200e\u002b382\u0029","MS":"Montserrat \u200f\u0028\u200e\u002b1\u0029","MA":"Morocco \u200f\u0028\u200e\u002b212\u0029","MZ":"Mozambique \u200f\u0028\u200e\u002b258\u0029","MM":"Myanmar \u200f\u0028\u200e\u002b95\u0029","NA":"Namibia \u200f\u0028\u200e\u002b264\u0029","NR":"Nauru \u200f\u0028\u200e\u002b674\u0029","NP":"Nepal \u200f\u0028\u200e\u002b977\u0029","NL":"Netherlands \u200f\u0028\u200e\u002b31\u0029","AN":"Netherlands Antilles \u0028Former\u0029 \u200f\u0028\u200e\u002b599\u0029","NC":"New Caledonia \u200f\u0028\u200e\u002b687\u0029","NZ":"New Zealand \u200f\u0028\u200e\u002b64\u0029","NI":"Nicaragua \u200f\u0028\u200e\u002b505\u0029","NE":"Niger \u200f\u0028\u200e\u002b227\u0029","NG":"Nigeria \u200f\u0028\u200e\u002b234\u0029","NU":"Niue \u200f\u0028\u200e\u002b683\u0029","KP":"North Korea \u200f\u0028\u200e\u002b850\u0029","MP":"Northern Mariana Islands \u200f\u0028\u200e\u002b1\u0029","NO":"Norway \u200f\u0028\u200e\u002b47\u0029","OM":"Oman \u200f\u0028\u200e\u002b968\u0029","PK":"Pakistan \u200f\u0028\u200e\u002b92\u0029","PW":"Palau \u200f\u0028\u200e\u002b680\u0029","PS_0":"Palestinian Authority \u200f\u0028\u200e\u002b970\u0029","PS":"Palestinian Authority \u200f\u0028\u200e\u002b972\u0029","PA":"Panama \u200f\u0028\u200e\u002b507\u0029","PG":"Papua New Guinea \u200f\u0028\u200e\u002b675\u0029","PY":"Paraguay \u200f\u0028\u200e\u002b595\u0029","PE":"Peru \u200f\u0028\u200e\u002b51\u0029","PH":"Philippines \u200f\u0028\u200e\u002b63\u0029","PL":"Poland \u200f\u0028\u200e\u002b48\u0029","PT":"Portugal \u200f\u0028\u200e\u002b351\u0029","QA":"Qatar \u200f\u0028\u200e\u002b974\u0029","CI":"Republic of C\u00f4te d\u0027Ivoire \u200f\u0028\u200e\u002b225\u0029","RE":"Reunion \u200f\u0028\u200e\u002b262\u0029","RO":"Romania \u200f\u0028\u200e\u002b40\u0029","RU":"Russia \u200f\u0028\u200e\u002b7\u0029","RW":"Rwanda \u200f\u0028\u200e\u002b250\u0029","SH":"Saint Helena, Ascension and Tristan da Cunha \u200f\u0028\u200e\u002b290\u0029","WS":"Samoa \u200f\u0028\u200e\u002b685\u0029","SM":"San Marino \u200f\u0028\u200e\u002b378\u0029","ST":"S\u00e3o Tom\u00e9 and Pr\u00edncipe \u200f\u0028\u200e\u002b239\u0029","SA":"Saudi Arabia \u200f\u0028\u200e\u002b966\u0029","SN":"Senegal \u200f\u0028\u200e\u002b221\u0029","RS":"Serbia \u200f\u0028\u200e\u002b381\u0029","SC":"Seychelles \u200f\u0028\u200e\u002b248\u0029","SL":"Sierra Leone \u200f\u0028\u200e\u002b232\u0029","SG":"Singapore \u200f\u0028\u200e\u002b65\u0029","SK":"Slovakia \u200f\u0028\u200e\u002b421\u0029","SI":"Slovenia \u200f\u0028\u200e\u002b386\u0029","SB":"Solomon Islands \u200f\u0028\u200e\u002b677\u0029","SO":"Somalia \u200f\u0028\u200e\u002b252\u0029","ZA":"South Africa \u200f\u0028\u200e\u002b27\u0029","ES":"Spain \u200f\u0028\u200e\u002b34\u0029","LK":"Sri Lanka \u200f\u0028\u200e\u002b94\u0029","KN":"St. Kitts and Nevis \u200f\u0028\u200e\u002b1\u0029","LC":"St. Lucia \u200f\u0028\u200e\u002b1\u0029","PM":"St. Pierre and Miquelon \u200f\u0028\u200e\u002b508\u0029","VC":"St. Vincent and the Grenadines \u200f\u0028\u200e\u002b1\u0029","SD":"Sudan \u200f\u0028\u200e\u002b249\u0029","SR":"Suriname \u200f\u0028\u200e\u002b597\u0029","SZ":"Swaziland \u200f\u0028\u200e\u002b268\u0029","SE":"Sweden \u200f\u0028\u200e\u002b46\u0029","CH":"Switzerland \u200f\u0028\u200e\u002b41\u0029","SY":"Syria \u200f\u0028\u200e\u002b963\u0029","TW":"Taiwan \u200f\u0028\u200e\u002b886\u0029","TJ":"Tajikistan \u200f\u0028\u200e\u002b992\u0029","TZ":"Tanzania \u200f\u0028\u200e\u002b255\u0029","TH":"Thailand \u200f\u0028\u200e\u002b66\u0029","TL":"Timor-Leste \u200f\u0028\u200e\u002b670\u0029","TG":"Togo \u200f\u0028\u200e\u002b228\u0029","TK":"Tokelau \u200f\u0028\u200e\u002b690\u0029","TO":"Tonga \u200f\u0028\u200e\u002b676\u0029","TT":"Trinidad and Tobago \u200f\u0028\u200e\u002b1\u0029","TA":"Tristan da Cunha \u200f\u0028\u200e\u002b290\u0029","TN":"Tunisia \u200f\u0028\u200e\u002b216\u0029","TR":"Turkey \u200f\u0028\u200e\u002b90\u0029","TM":"Turkmenistan \u200f\u0028\u200e\u002b993\u0029","TC":"Turks and Caicos Islands \u200f\u0028\u200e\u002b1\u0029","TV":"Tuvalu \u200f\u0028\u200e\u002b688\u0029","UG":"Uganda \u200f\u0028\u200e\u002b256\u0029","UA":"Ukraine \u200f\u0028\u200e\u002b380\u0029","AE":"United Arab Emirates \u200f\u0028\u200e\u002b971\u0029","UK":"United Kingdom \u200f\u0028\u200e\u002b44\u0029","US":"United States \u200f\u0028\u200e\u002b1\u0029","UM":"United States Minor Outlying Islands \u200f\u0028\u200e\u002b1\u0029","UY":"Uruguay \u200f\u0028\u200e\u002b598\u0029","UZ":"Uzbekistan \u200f\u0028\u200e\u002b998\u0029","VU":"Vanuatu \u200f\u0028\u200e\u002b678\u0029","VE":"Venezuela \u200f\u0028\u200e\u002b58\u0029","VN":"Vietnam \u200f\u0028\u200e\u002b84\u0029","VG":"Virgin Islands, British \u200f\u0028\u200e\u002b1\u0029","VI":"Virgin Islands, U.S. \u200f\u0028\u200e\u002b1\u0029","WF":"Wallis and Futuna \u200f\u0028\u200e\u002b681\u0029","YE":"Yemen \u200f\u0028\u200e\u002b967\u0029","ZM":"Zambia \u200f\u0028\u200e\u002b260\u0029","ZW":"Zimbabwe \u200f\u0028\u200e\u002b263\u0029"},"Default":"US"}},"uiflvr":1001,"isPlaceholderSupported":1,"uaid":"0376edab124e4ede8e1c5dfff230faae","uhf":{"currentMenuItemId":""},"apiCanary":"KM6H\u002bG8Q8MhOqwzSUa3hYN5w2N9t1aTXkgRtvkyUCH3QRLw4sozfqLo5UlxpSrzRYg3m5Y2dEDebHoxyQWNj20XwtkU2w7xw3dolld8YiHOJB9O8mNVBRq751q9LMlKQ\u002fuy49k3Lipu6vx1su36PblsOKyL4kmvSqCzx\u002f6LwDJ6MNq5lhP6bnWhedzbE3uRpLLglAT\u002fsejtlX3zhyIEwKcdYZJBDVKHKCLkzLQLriMkn8zgs3RZyUtWxn7wB6ay5\u003a1\u003a3c","ip":"105.112.17.46","cid":"UnAuth","displayMemberName":"UnAuth","mkt":"en-US","email":"UnAuth","mktLocale":"en-US"};
+    //]]>
+  </script>
+  <!-- Download all base JS resource and add a placeholder for page specific JS resource -->
+  <script src="https://auth.gfx.ms/jquery_1.7.2.js">
+  </script>
+  <!-- 1 -->
+  <script type="text/javascript">
+   //<![CDATA[
+            if (window.jQuery) jQuery.noConflict()
+            //]]>
+  </script>
+  <script src="https://auth.gfx.ms/bootstrap_3.3.0_pPAJHVic1yRZoJnAQKOXeQ2.js">
+  </script>
+  <script src="https://auth.gfx.ms/wLivePackage_BUgt_VA9tVPtWGX7ifSLCA2.js">
+  </script>
+  <!-- 2 -->
+  <script src="https://auth.gfx.ms/compatNonIE_tBPhj8fBmQ29lERZ8otB7A2.js">
+  </script>
+  <!-- 3 -->
+  <script src="https://auth.gfx.ms/liveDepPackage_aDC9Fz5btxIUXW45hIRGXQ2.js">
+  </script>
+  <!-- 3 -->
+  <script src="https://auth.gfx.ms/animations_F0feig31z1IAjWLnhlI63Q2.js">
+  </script>
+  <!-- 5 -->
+  <script src="https://auth.gfx.ms/notificationsPackage_42CnZZn34lW5sAmyxNqC0g2.js">
+  </script>
+  <!-- 6 -->
+  <script src="https://auth.gfx.ms/knockout_kKvzfhsQd3RiAaz9AjzNgA2.js">
+  </script>
+  <script src="https://auth.gfx.ms/dataRequestPackage_la-fplmLZQsKzY10lWx4wg2.js">
+  </script>
+  <script src="https://auth.gfx.ms/accountCorePackage_N-SJjK7ZIEWiNoJTjBH1UA2.js">
+  </script>
+  <script src="https://auth.gfx.ms/defineUtilitiesPackage_DKpLoa0tvT6qTm3ag6xDmQ2.js">
+  </script>
+  <script src="https://auth.gfx.ms/validationPackage_Divy7HvD8o39YWyMfek2lg2.js">
+  </script>
+  <script src="https://auth.gfx.ms/resetPasswordPackage_fVNotyQi0Xw-Ge_yYKpn1A2.js">
+  </script>
+  <div id="PageId" style="display: none">
+   i6010
+  </div>
+  <script type="text/javascript">
+   jQuery(function ()
+        {
+            
+
+            var hipPage = new window.wLive.Account.Page.ResetPasswordHip();
+        });
+  </script>
+  <script type="text/javascript">
+   var WIZARDUI =
+        {
+            fInlineVisible: WIZARDUIConfig.fInlineVisible,
+            fBackEnabled: WIZARDUIConfig.fBackEnabled,
+            fNextEnabled: WIZARDUIConfig.fNextEnabled,
+            fLastPage: WIZARDUIConfig.fLastPage,
+            oTimeout: WIZARDUIConfig.oTimeout,
+
+            setButtonState: function (fBackEnabled, fNextEnabled, fLastPage) {
+                jQuery('#iCancel').prop('disabled', !fBackEnabled);
+                jQuery('#iNext').prop('disabled', !fNextEnabled);
+                ExternalHelper.setWizardButtons(fBackEnabled, fNextEnabled, fLastPage);
+            },
+            setHeaderText: function (sHeaderText) {
+                ExternalHelper.setHeaderText(sHeaderText);
+            },
+            doFinalBack: function () {
+                try
+                {
+                    if (window.webkit && window.webkit.messageHandlers)
+                    {
+                        window.webkit.messageHandlers.FinalBack.postMessage("");
+                    }
+                    else
+                    {
+                        window.external.FinalBack();
+                    }
+                }
+                catch (e) { }
+            },
+            doFinalNext: function () {
+                try
+                {
+                    if (window.webkit && window.webkit.messageHandlers)
+                    {
+                        window.webkit.messageHandlers.FinalNext.postMessage("");
+                    }
+                    else
+                    {
+                        window.external.FinalNext();
+                    }
+                }
+                catch (e) { }
+            },
+
+            doFatalError: function (sExtError) {
+                //TODO    
+                WIZARDUI.doFinalNext();
+            },
+            populatePropertyBag: function (oProps) {
+                jQuery.each(oProps,
+                    function (sName, oVal) {
+                        ExternalHelper.setProperty(sName, oVal);
+                    });
+            },
+            hideInlineParts: function () {
+                jQuery('#iTOU').hide();
+                jQuery('#iPriv').hide();
+            },
+            showProgress: function () {
+                jQuery('#maincontent').hide();
+                jQuery('#iWizardInline').show();
+
+                WIZARDUI.setButtonState(false, false, false);
+                WIZARDUI.oTimeout = setTimeout(function () { jQuery('#iPageProgress').show(); }, 2000);
+            },
+            hideProgress: function () {
+                if (WIZARDUI.oTimeout) {
+                    clearTimeout(WIZARDUI.oTimeout);
+                    WIZARDUI.oTimeout = null;
+                }
+
+                jQuery('#iPageProgress').hide();
+                jQuery('#iWizardInline').hide();
+                jQuery('#maincontent').show();
+
+                WIZARDUI.setButtonState(WIZARDUI.fBackEnabled, WIZARDUI.fNextEnabled, WIZARDUI.fLastPage);
+            },
+            evt_inlineLink_onclick: function (oEvt) {
+                jQuery('#maincontent').hide();
+                jQuery('#iWizardInline').show();
+
+                jQuery.each(oEvt.data.toShow, function (idx, sId) { jQuery(sId).show(); });
+                oEvt.stopPropagation();
+                oEvt.preventDefault();
+                setFocus(true);
+
+                WIZARDUI.setButtonState(true, true, false);
+                WIZARDUI.fInlineVisible = true;
+            }
+        };
+
+        function OnBack() {
+            if (WIZARDUI.fInlineVisible) {
+                WIZARDUI.hideInlineParts();
+                jQuery('#iWizardInline').hide();
+                jQuery('#maincontent').show();
+
+                WIZARDUI.setButtonState(WIZARDUI.fBackEnabled, WIZARDUI.fNextEnabled, WIZARDUI.fLastPage);
+                WIZARDUI.fInlineVisible = false;
+            }
+            else if (typeof (FORM) != "undefined" && FORM.Current) {
+                // ensure no animation glitchiness
+                jQuery(document.body).removeClass('animate');
+                FORM.Current.evt_backButton_onclick();
+            }
+            else {
+                var wLive = window.wLive;
+                var pageEvents = wLive && wLive.Account && wLive.Account.PageEvents;
+                if (pageEvents) {
+                    pageEvents.$.triggerHandler(pageEvents.back);
+                }
+            }
+        }
+
+        function OnNext() {
+            if (WIZARDUI.fInlineVisible) {
+                WIZARDUI.hideInlineParts();
+                jQuery('#iWizardInline').hide();
+                jQuery('#maincontent').show();
+
+                WIZARDUI.setButtonState(WIZARDUI.fBackEnabled, WIZARDUI.fNextEnabled, WIZARDUI.fLastPage);
+                WIZARDUI.fInlineVisible = false;
+            }
+            else if (typeof (FORM) != "undefined" && FORM.Current) {
+                // ensure no animation glitchiness
+                jQuery(document.body).removeClass('animate');
+                FORM.Current.evt_nextButton_onclick();
+            }
+            else {
+                var wLive = window.wLive;
+                var pageEvents = wLive && wLive.Account && wLive.Account.PageEvents;
+                if (pageEvents) {
+                    pageEvents.$.triggerHandler(pageEvents.next);
+                }
+            }
+        }
+
+        // To help improve keyboard accessibility we try to set focus on the first user input element.
+        function setFocus(fInlineFocus) {
+            if (!fInlineFocus && typeof (FORM) != "undefined" && FORM.Current && FORM.Current.fields.length > 0) {
+                FORM.Current.setFocus();
+            }
+            else {
+                var container = fInlineFocus ? '#iWizardInline' : 'form';
+                jQuery('input,button,select,a', container).not(':hidden').first().focus();
+            }
+        }
+
+        function evt_master_onload() {
+            var elStyleCheck = document.createElement('div');
+            elStyleCheck.className = 'hide';
+            document.body.appendChild(elStyleCheck);
+
+            // if the style wasn't applied correctly, the CSS failed to download
+            if (window.getComputedStyle && window.getComputedStyle(elStyleCheck).display.toLowerCase() !== "none") {
+                WIZARDUI.doFatalError('1260');
+                return;
+            }
+
+            document.body.removeChild(elStyleCheck);
+
+            WIZARDUI.setButtonState(WIZARDUI.fBackEnabled, WIZARDUI.fNextEnabled, WIZARDUI.fLastPage);
+            WIZARDUI.setHeaderText('Reset your password');
+
+            var $body = jQuery(document.body);
+            var $centipede = jQuery(".img-centipede");
+            var $ftrLogo = jQuery("#ftrLogo");
+            var backgroundColor = $body.css("backgroundColor").toLowerCase().replace(new RegExp(" ", "g"), "");
+            if (backgroundColor === "rgb(255,255,255)" || backgroundColor === "#ffffff" || backgroundColor === "#fff") {
+                $body.addClass("light");
+                $centipede.attr("src", "https://auth.gfx.ms/images/AppCentipede/AppCentipede_Microsoft.svg");
+                $ftrLogo.html("<img src='https://auth.gfx.ms/images/Microsoft_Logotype_Gray.svg' alt='Microsoft' />");
+            }
+            else if (backgroundColor === "rgb(0,0,0)" || backgroundColor === "#000000" || backgroundColor === "#000") {
+                $centipede.attr("src", "https://auth.gfx.ms/images/AppCentipede/AppCentipede_Microsoft_white.svg");
+                $ftrLogo.html("<img src='https://auth.gfx.ms/images/Microsoft_Logotype_White.svg' alt='Microsoft' />");
+            }
+            else {
+                $body.addClass("dark");
+            }
+
+            setTimeout("jQuery(document.body).addClass('animate');jQuery('#maincontent').show()", 0);
+        }
+
+        var HOSTUI =
+        {
+            ServerData: { urlAJAXPath: 'https://account.live.com/query.aspx' },
+            evt_inlineLink_onclick: function(oEvt)
+            {
+                jQuery('#maincontent').hide();
+                jQuery('#iHostInline').show();
+                
+                jQuery.each(oEvt.data.toShow, function(idx, sId) { jQuery(sId).show(); });
+                oEvt.preventDefault();
+                setFocus(true);
+            },
+            evt_inlineBack_onclick: function(oEvt)
+            {
+                jQuery("#iPriv, #iTOU, #iImpressum").hide();
+
+                jQuery('#iHostInline').hide();
+                jQuery('#maincontent').show();
+                
+                setFocus();
+            },
+            setFocus: function(fInlineFocus)
+            {
+                if (!fInlineFocus && typeof(FORM) != "undefined" && FORM.Current && FORM.Current.fields.length > 0)
+                {
+                    FORM.Current.setFocus();
+                }
+                else
+                {
+                    var container = fInlineFocus ? '#iHostInline' : 'form';
+                    jQuery('input,button,select,a', container).not(':hidden').first().focus();
+                }
+            }
+        };
+
+        jQuery(evt_master_onload);
+  </script>
+  <div class="container" id="iHostInline" style="display:none">
+   <div class="btn-group">
+    <div class="col-xs-24">
+     <input class="btn btn-block" id="iHostInlineCancel" onclick="HOSTUI.evt_inlineBack_onclick();" type="button" value="Back"/>
+    </div>
+   </div>
+   <pre class="text-block-body" id="iPriv" style="display: none">
+            Please wait
+        </pre>
+   <pre class="text-block-body" id="iTOU" style="display: none">
+            Please wait
+        </pre>
+   <div class="text-block-body" id="iImpressum" style="display: none">
+    Please wait
+   </div>
+   <div class="text-body text-block-body" id="iHostInlineContent" style="display:none">
+   </div>
+   <div class="btn-group">
+    <div class="col-xs-24">
+     <input class="btn btn-block" id="iHostInlineCancel2" onclick="HOSTUI.evt_inlineBack_onclick();" type="button" value="Back"/>
+    </div>
+   </div>
+  </div>
+  <script src="https://auth.gfx.ms/wedcs_LNiF397omcoBqRwx9cdJug2.js">
+  </script>
+  <noscript>
+   <img alt="" height="1" src="https://c.microsoft.com/trans_pixel.aspx" width="1"/>
+  </noscript>
+ </body>
+</html>

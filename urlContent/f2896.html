@@ -1,0 +1,914 @@
+<!-- URL =http://fedex1.staging.jibeapply.com/fedex/auth/1/login/--><!-- w =(['JIBEAPPLY.COM', 'jibeapply.com'], [datetime.datetime(2012, 1, 12, 5, 7, 24), datetime.datetime(2012, 1, 11, 21, 7, 24)], [datetime.datetime(2022, 1, 12, 5, 7, 24), datetime.datetime(2022, 1, 11, 21, 7, 24)])--><!DOCTYPE html>
+<html class="" data-placeholder-focus="false" dir="ltr" id="ng-app" lang="en" ng-app="jibeapply" xmlns:ng="http://angularjs.org">
+ <head>
+  <script type="text/javascript">
+   window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(24),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,s){try{l?l-=1:o(s||new UncaughtException(t,e,n),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:c.now();i("err",[t,n])}var i=t("handle"),a=t(25),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,p="nr@seenError",l=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(13),t(12),"addEventListener"in window&&t(6),c.xhrWrappable&&t(14),d=!0)}s.on("fn-start",function(t,e,n){d&&(l+=1)}),s.on("fn-err",function(t,e,n){d&&!n[p]&&(f(n,p,function(){return!0}),this.thrown=!0,o(n))}),s.on("fn-end",function(){d&&!this.thrown&&l>0&&(l-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(){L++,C=g.hash,this[u]=y.now()}function o(){L--,g.hash!==C&&i(0,!0);var t=y.now();this[h]=~~this[h]+t-this[u],this[d]=t}function i(t,e){E.emit("newURL",[""+g,e])}function a(t,e){t.on(e,function(){this[e]=y.now()})}var s="-start",c="-end",f="-body",u="fn"+s,d="fn"+c,p="cb"+s,l="cb"+c,h="jsTime",m="fetch",v="addEventListener",w=window,g=w.location,y=t("loader");if(w[v]&&y.xhrWrappable){var x=t(10),b=t(11),E=t(8),R=t(6),O=t(13),N=t(7),P=t(14),M=t(9),T=t("ee"),S=T.get("tracer");t(16),y.features.spa=!0;var C,L=0;T.on(u,r),T.on(p,r),T.on(d,o),T.on(l,o),T.buffer([u,d,"xhr-done","xhr-resolved"]),R.buffer([u]),O.buffer(["setTimeout"+c,"clearTimeout"+s,u]),P.buffer([u,"new-xhr","send-xhr"+s]),N.buffer([m+s,m+"-done",m+f+s,m+f+c]),E.buffer(["newURL"]),x.buffer([u]),b.buffer(["propagate",p,l,"executor-err","resolve"+s]),S.buffer([u,"no-"+u]),M.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"]),a(P,"send-xhr"+s),a(T,"xhr-resolved"),a(T,"xhr-done"),a(N,m+s),a(N,m+"-done"),a(M,"new-jsonp"),a(M,"jsonp-end"),a(M,"cb-start"),E.on("pushState-end",i),E.on("replaceState-end",i),w[v]("hashchange",i,!0),w[v]("load",i,!0),w[v]("popstate",function(){i(0,L>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(13),s=t(12),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",p="resource",l="-start",h="-end",m="fn"+l,v="fn"+h,w="bstTimer",g="pushState",y=t("loader");y.features.stn=!0,t(8),"addEventListener"in window&&t(6);var x=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof x&&(this.bstStart=y.now())}),o.on(v,function(t,e){var n=t[0];n instanceof x&&i("bst",[n,e,this.bstStart,y.now()])}),a.on(m,function(t,e,n){this.bstStart=y.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,y.now(),this.bstType])}),s.on(m,function(){this.bstStart=y.now()}),s.on(v,function(t,e){i(w,[e,this.bstStart,y.now(),"requestAnimationFrame"])}),o.on(g+l,function(t){this.time=y.now(),this.startPath=location.pathname+location.hash}),o.on(g+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t("wrap-function")(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=c(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?s(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=i(arguments),e={};o.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var s=r.apply(this,t);return o.emit(n+"start",[t,a],s),s.then(function(t){return o.emit(n+"end",[null,t],s),t},function(t){throw o.emit(n+"end",[t],s),t})})}var o=t("ee").get("fetch"),i=t(25),a=t(24);e.exports=o;var s=window,c="fetch-",f=c+"body-",u=["arrayBuffer","blob","json","text","formData"],d=s.Request,p=s.Response,l=s.fetch,h="prototype",m="nr@context";d&&p&&l&&(a(u,function(t,e){r(d[h],e,f),r(p[h],e,f)}),r(s,"fetch",c),o.on(c+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),o.emit(c+"done",[null,e],n)}else o.emit(c+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t("wrap-function")(r);e.exports=r;var i=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;i&&i.pushState&&i.replaceState&&(a=i),o.inPlace(a,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){function r(t){function e(){c.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}function n(){c.emit("jsonp-error",[],p),c.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}var r=t&&"string"==typeof t.nodeName&&"script"===t.nodeName.toLowerCase();if(r){var o="function"==typeof t.addEventListener;if(o){var a=i(t.src);if(a){var u=s(a),d="function"==typeof u.parent[u.key];if(d){var p={};f.inPlace(u.parent,[u.key],"cb-",p),t.addEventListener("load",e,!1),t.addEventListener("error",n,!1),c.emit("new-jsonp",[t.src],p)}}}}}function o(){return"addEventListener"in window}function i(t){var e=t.match(u);return e?e[1]:null}function a(t,e){var n=t.match(p),r=n[1],o=n[3];return o?a(o,e[r]):e[r]}function s(t){var e=t.match(d);return e&&e.length>=3?{key:e[2],parent:a(e[1],window)}:{key:t,parent:window}}var c=t("ee").get("jsonp"),f=t("wrap-function")(c);if(e.exports=c,o()){var u=/[?&](?:callback|cb)=([^&#]+)/,d=/(.*)\.([^.]+)/,p=/^(\w+)(\.|$)(.*)$/,l=["appendChild","insertBefore","replaceChild"];Node&&Node.prototype&&Node.prototype.appendChild?f.inPlace(Node.prototype,l,"dom-"):(f.inPlace(HTMLElement.prototype,l,"dom-"),f.inPlace(HTMLHeadElement.prototype,l,"dom-"),f.inPlace(HTMLBodyElement.prototype,l,"dom-")),c.on("dom-start",function(t){r(t[0])})}},{}],10:[function(t,e,n){var r=t("ee").get("mutation"),o=t("wrap-function")(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],11:[function(t,e,n){function r(t){var e=a.context(),n=s(t,"executor-",e),r=new f(n);return a.context(r).getCtx=function(){return e},a.emit("new-promise",[r,e],e),r}function o(t,e){return e}var i=t("wrap-function"),a=t("ee").get("promise"),s=i(a),c=t(24),f=NREUM.o.PR;e.exports=a,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){a.emit("propagate",[null,!o],i),o=o||!t}}var o=!1;c(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var i=e.apply(f,arguments),s=f.resolve(i);return s}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&a.emit("propagate",[t,!0],n),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),c(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),a.on("executor-start",function(t){t[0]=s(t[0],"resolve-",this),t[1]=s(t[1],"resolve-",this)}),a.on("executor-err",function(t,e,n){t[1](n)}),s.inPlace(f.prototype,["then"],"then-",o),a.on("then-start",function(t,e){this.promise=e,t[0]=s(t[0],"cb-",this),t[1]=s(t[1],"cb-",this)}),a.on("then-end",function(t,e,n){this.nextPromise=n;var r=this.promise;a.emit("propagate",[r,!0],n)}),a.on("cb-end",function(t,e,n){a.emit("propagate",[n,!0],this.nextPromise)}),a.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=a.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],12:[function(t,e,n){var r=t("ee").get("raf"),o=t("wrap-function")(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],13:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t("wrap-function")(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],14:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,g,"fn-",s)}function i(t){y.push(t),h&&(b?b.then(a):v?v(a):(E=-E,R.data=E))}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),p=NREUM.o,l=p.XHR,h=p.MO,m=p.PR,v=p.SI,w="readystatechange",g=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];e.exports=u;var x=window.XMLHttpRequest=function(t){var e=new l(t);try{u.emit("new-xhr",[e],e),e.addEventListener(w,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(l,x),x.prototype=l.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!v&&!m){var E=1,R=document.createTextNode(E);new h(a).observe(R,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===w||a()})},{}],15:[function(t,e,n){function r(){var t=window.NREUM;if(!t.loader_config)return null;var e=(t.loader_config.accountID||"").toString()||null,n=(t.loader_config.agentID||"").toString()||null,r=(t.loader_config.trustKey||"").toString()||null;if(!e||!n)return null;var a=i.generateCatId(),s=i.generateCatId(),c=Date.now(),f=o(a,s,c,e,n,r);return{header:f,guid:a,traceId:s,timestamp:c}}function o(t,e,n,r,o,i){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var s={v:[0,1],d:{ty:"Browser",ac:r,ap:o,id:t,tr:e,ti:n}};return i&&r!==i&&(s.d.tk=i),btoa(JSON.stringify(s))}var i=t(22);e.exports={generateTracePayload:r,generateTraceHeader:o}},{}],16:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(p[r],this.listener,!1);e.aborted||(n.duration=s.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):a(this,t),n.cbTime=this.cbTime,d.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime]))}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return v(r)}function i(t,e){var n=f(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}function a(t,e){t.params.status=e.status;var n=o(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var s=t("loader");if(s.xhrWrappable){var c=t("handle"),f=t(17),u=t(15).generateTracePayload,d=t("ee"),p=["load","error","abort","timeout"],l=p.length,h=t("id"),m=t(20),v=t(19),w=window.XMLHttpRequest;s.features.xhr=!0,t(14),t(7),d.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,t.addEventListener("load",function(n){a(e,t)},!1),m&&(m>34||m<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),d.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),d.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=!1;if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=!!NREUM.init.distributed_tracing.enabled),n&&this.sameOrigin){var r=u();r&&r.header&&(e.setRequestHeader("newrelic",r.header),this.dt=r)}}),d.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=v(r);i&&(n.txSize=i)}this.startTime=s.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{d.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<l;a++)e.addEventListener(p[a],this.listener,!1)}),d.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),d.on("xhr-load-added",function(t,e){var n=""+h(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),d.on("xhr-load-removed",function(t,e){var n=""+h(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),d.on("addEventListener-end",function(t,e){e instanceof w&&"load"===t[0]&&d.emit("xhr-load-added",[t[1],t[2]],e)}),d.on("removeEventListener-end",function(t,e){e instanceof w&&"load"===t[0]&&d.emit("xhr-load-removed",[t[1],t[2]],e)}),d.on("fn-start",function(t,e,n){e instanceof w&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=s.now()))}),d.on("fn-end",function(t,e){this.xhrCbStart&&d.emit("xhr-cb-time",[s.now()-this.xhrCbStart,this.onload,e],e)}),d.on("fetch-before-start",function(t){var e,n=t[1]||{};"string"==typeof t[0]?e=t[0]:t[0]&&t[0].url&&(e=t[0].url),e&&(this.sameOrigin=f(e).sameOrigin);var r=!1;if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(r=!!NREUM.init.distributed_tracing.enabled),r&&this.sameOrigin){var o=u();if(!o||!o.header)return;var i=o.header;if("string"==typeof t[0]){var a={};for(var s in n)a[s]=n[s];a.headers=new Headers(n.headers||{}),a.headers.set("newrelic",i),this.dt=o,t.length>1?t[1]=a:t.push(a)}else t[0]&&t[0].headers&&(t[0].headers.append("newrelic",i),this.dt=o)}})}},{}],17:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],18:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[f.now()].concat(s(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(24),s=t(25),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){u[e]=o(p+e,!0,"api")}),u.addPageAction=o(p+"addPageAction",!0),u.setCurrentRouteName=o(p+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[f.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=o(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,e])}},{}],19:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],20:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],21:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?a("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&a("timing",["fcp",Math.floor(t.startTime)])})}function o(t){if(t instanceof c&&!u){var e,n=Math.round(t.timeStamp);e=n>1e12?Date.now()-n:s.now()-n,u=!0,a("timing",["fi",n,{type:t.type,fid:e}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var i,a=t("handle"),s=t("loader"),c=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){i=new PerformanceObserver(r);try{i.observe({entryTypes:["paint"]})}catch(f){}}if("addEventListener"in document){var u=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(t){document.addEventListener(t,o,!1)})}}},{}],22:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<i.length;s++)o=i[s],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&Uint8Array&&(e=r.getRandomValues(new Uint8Array(31)));for(var o=[],i=0;i<16;i++)o.push(t().toString(16));return o.join("")}e.exports={generateUuid:r,generateCatId:o}},{}],23:[function(t,e,n){function r(t,e){if(!o)return!1;if(t!==o)return!1;if(!e)return!0;if(!i)return!1;for(var n=i.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}e.exports={agent:o,version:i,match:r}},{}],24:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],25:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],26:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function n(n,r,o,i){if(!p.aborted||i){t&&t(n,r,o);for(var a=e(o),s=m(n),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[n]];return d&&d.push([x,n,r,a]),a}}function l(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function v(t){return d[t]=d[t]||o(n)}function w(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var g={},y={},x={on:l,addEventListener:l,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:a,aborted:!1};return x}function i(){return new r}function a(){(u.api||u.feature)&&(p.aborted=!0,u=p.backlog={})}var s="nr@context",c=t("gos"),f=t(24),u={},d={},p=e.exports=o();p.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!E++){var t=b.info=NREUM.info,e=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(y,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()+b.offset],null,"api");var n=l.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return R.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(24),u=t("ee"),d=t(23),p=window,l=p.document,h="addEventListener",m="attachEvent",v=p.XMLHttpRequest,w=v&&v.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:v,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var g=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-1153.min.js"},x=v&&w&&w[h]&&!/CriOS/.test(navigator.userAgent),b=e.exports={offset:s,now:a,origin:g,features:{},xhrWrappable:x,userAgent:d};t(18),t(21),l[h]?(l[h]("DOMContentLoaded",i,!1),p[h]("load",r,!1)):(l[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",s],null,"api");var E=0,R=t(26)},{}],"wrap-function":[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(25),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof n?n(r,a):n||{}}catch(f){p([f,"",[r,a,o],s])}u(e+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],s),d}finally{u(e+"end",[r,a,c],s)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<e.length;c++)s=e[c],a=t[s],r(a)||(t[s]=n(a,f?s+o:o,i,s))}function u(n,r,o){if(!c||e){var i=c;c=!0;try{t.emit(n,r,o,e)}catch(a){p([a,n,r,o])}c=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){p([r])}for(var o in t)s.call(t,o)&&(e[o]=t[o]);return e}function p(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}]},{},["loader",2,16,5,3,4]);
+;NREUM.loader_config={accountID:"552117",trustKey:"552117",agentID:"409392831",licenseKey:"4e547d37d0",applicationID:"409392831"}
+;NREUM.info={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",licenseKey:"4e547d37d0",applicationID:"409392831",sa:1}
+  </script>
+  <!-- Global site tag (gtag.js) - Google Ads: 871749997 -->
+  <base href="/fedex/auth"/>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="!" name="fragment"/>
+  <meta content="We owe our success as an industry leader to the more than 300,000 global team members who deliver exceptional customer service experiences day-in and day-out. Learn more about FedEx Careers." name="Description"/>
+  <title>
+   FedEx Careers
+  </title>
+  <link href="https://fedex1.staging.jibeapply.com/1/login/" rel="canonical"/>
+  <meta content="noindex" name="robots">
+   <script>
+    window.slug = '';
+   </script>
+   <script>
+    window.logoutRedirectUrl = '/jobs';
+   </script>
+   <script>
+    //(DH) Jibe data object init (do not remove)
+  window._jibe = {"cid":""};
+  window._jibe.analytics = {"isTrackingEnabled":true};
+  window._jibe.env = 'staging';
+   </script>
+   <link href="https://assets.jibecdn.com/staging/fedex/0.18.568/assets/favicon.ico" rel="shortcut icon"/>
+   <meta content="website" property="og:type">
+    <meta content="FedEx Careers" property="og:title">
+     <meta content="FedEx Careers" property="og:site_name">
+      <meta content="We owe our success as an industry leader to the more than 300,000 global team members who deliver exceptional customer service experiences day-in and day-out. Learn more about FedEx Careers." property="og:description">
+       <meta content="https://fedex1.staging.jibeapply.com/fedex/auth/1/login/?" property="og:url"/>
+       <meta content="525905440781923" property="fb:app_id"/>
+       <meta content="null" property="fb:pages"/>
+       <meta content="https://assets.jibecdn.com/staging/fedex/0.18.568/assets/fedex-og-logo.jpg" property="og:image"/>
+       <!-- google webmaster -->
+       <meta content="8OCrmjw31Ytym7xletfIH0PaZINgaiCWmxi6naL7EDY" name="google-site-verification"/>
+       <link href="/dist/css/core.css?v=4.5.32" rel="stylesheet">
+        <link href="/dist/assets/fonts/css/font-awesome.min.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,700,400" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+        <!-- JACA overrides for link tags and other files that need to be added into the head -->
+        <style type="text/css">
+         .loader {
+margin: 0 auto;
+width: 100px;
+}
+.loader:before {
+content: '';
+display: block;
+padding-top: 100%;
+}
+
+.circular {
+-webkit-animation: rotate 2s linear infinite;
+animation: rotate 2s linear infinite;
+-webkit-transform-origin: center center;
+transform-origin: center center;
+margin: auto;
+}
+
+.path {
+stroke-dasharray: 1, 200;
+stroke-dashoffset: 0;
+-webkit-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+stroke-linecap: round;
+}
+
+@-webkit-keyframes rotate {
+100% {
+-webkit-transform: rotate(360deg);
+transform: rotate(360deg);
+}
+}
+
+@keyframes rotate {
+100% {
+-webkit-transform: rotate(360deg);
+transform: rotate(360deg);
+}
+}
+@-webkit-keyframes dash {
+0% {
+stroke-dasharray: 1, 200;
+stroke-dashoffset: 0;
+}
+50% {
+stroke-dasharray: 89, 200;
+stroke-dashoffset: -35px;
+}
+100% {
+stroke-dasharray: 89, 200;
+stroke-dashoffset: -124px;
+}
+}
+@keyframes dash {
+0% {
+stroke-dasharray: 1, 200;
+stroke-dashoffset: 0;
+}
+50% {
+stroke-dasharray: 89, 200;
+stroke-dashoffset: -35px;
+}
+100% {
+stroke-dasharray: 89, 200;
+stroke-dashoffset: -124px;
+}
+}
+@-webkit-keyframes color {
+100%,
+0% {
+stroke: lightgray;
+}
+66% {
+stroke: gray;
+}
+80%,
+90% {
+stroke: darkgray;
+}
+}
+@keyframes color {
+100%,
+0% {
+stroke: lightgray;
+}
+
+66% {
+stroke: gray;
+}
+80%,
+90% {
+stroke: darkgray;
+}
+}
+
+.showbox {
+height: 80vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+        </style>
+        <link href="https://app.jibecdn.com/staging/login/2.3.2/styles.css" rel="stylesheet" type="text/css"/>
+        <link href="https://assets.jibecdn.com/staging/fedex/0.18.568/css/client.css" rel="stylesheet"/>
+        <!-- Jibe Analytics Tag -->
+        <script>
+         (function(_,j,i,b,e){if(!_._jibe||!_._jibe.track){var n=j.createElement(i),g=j.getElementsByTagName(i)[0];n.async=1;
+    n.src='https://' + (/jibecdn/.test('https://app.jibecdn.com/') ? 'analytics.jibecdn.com' : 'dty1ykhyb57og.cloudfront.net') + '/prod/'+b;
+    g.parentNode.insertBefore(n,g)}}(window,document,"script","jibe.analytics.js"));
+        </script>
+        <!-- Jibe Analytics Tag -->
+        <script>
+         // translations
+  window.i18n = {
+    DEFAULT_TRANSLATIONS: {"GET_REFERRED":{"TOOLTIP_TITLE":"What is Get Referred?","INSTRUCTIONS":"Get Referred™ is a new way for you to explore career opportunities at {{companyName}}. With Get Referred™, you now have the ability to search your social and professional networks for {{companyName}} employees and ask them to personally refer you for an open position. The process is very easy. Simply choose the job you would like to be referred for, upload your CV and cover letter, search your networks for someone you know who works at {{companyName}} and then send in your request!","BUTTON":"Get Referred","TOOLTIP_BTN":"How Get Referred Works"},"360VIDEO_TEST2":"https://cms.jibecdn.com/prod/fedex/assets/360VIDEO_TEST2-en-us-1555439097321.JPG","NO_BRANDS":"No brands","LP":{"CC":{"LINKEDIN_NOTE":"Note: This will open in a new tab"},"SKU-1":{"PARAGRAPH":"If your profile was created prior to November 2018, please click below."},"SKU-33":{"SUB-TITLE":"Sign Up Today","PLACEHOLDER-3":"Email","PLACEHOLDER-2":"Last Name","BUTTON":"Join with Linkedin","PARAGRAPH":"Not finding the specific job you're looking for? Join our Talent Network and receive emails about jobs from our recruiters.","TITLE":"Join\n                <span>the</span>\n                <br> Talent Network","PLACEHOLDER-1":"First Name","FORM-BUTTON":"Join Now"},"CAP_PRIVACY_STATEMENT":"We collect personal information (e.g. name, email, work history, etc) to match you to job opportunities. We store this data for a default period of 12 months to support machine learning based matching and manual matching by our recruiters. You can request the updating or deletion of your profile data by e-mailing us <a href=\"mailto:privacy@icims.com\">here</a>.  View our full <a href=\"https://www.jibe.com/privacy-policy\" target=\"_blank\" rel=\"noopener noreferrer\">privacy policy here</a>.","D1":{"PARAGRAPH":"At FedEx O\u001fce, printing, packing and shipping are in our roots. But get to know us and you’ll discover we provide\nso much more. Every day, our team members consult with customers to help them find just the right solutions\nto suit their needs — from personal projects to small-business marketing and large commercial print projects.\nFrom our headquarters in Plano, Texas, we support a network of 15,000 talented team members, serving\napproximately 1,900 locations across North America. And together we foster a culture where people deliver\nexceptional experiences and outstanding service for their customers, their teams and their communities.\nFedEx is also proud to be ranked among the top 20 in the FORTUNE Most Admired Companies List for our\n18th consecutive year, with 14 of those years ranking among the top 10.","TITLE":"About FedEx O\u001fce"},"SKU-26":{"INPUT-3":"Email","DESCRIPTION":"Interested in FedEx Office, but not ready to apply or\nhaving a hard time finding your ideal position? Join\nour talent network while you explore. We are\nlooking forward to learning more about you.","LINKEDIN":"JOIN WITH LINKEDIN","SEPARATOR":"or","SUBMIT":"Join Now","HEADER":"Join the Talent Network","INPUT-1":"First Name","INPUT-2":"Last Name"}},"VIDEO":{"LINK":"<a href='https://www.youtube.com/watch?v=RH-zeRzNAAE' target='_blank'>"},"PERSONALIZATION":{"ADD":"Add","GET_JOBS":"Get Jobs","PARAGRAPH":"Answer a few short questions and we will match you with our jobs.","ADDITIONAL_SUBTITLE":"Supplying this information will further improve the quality of your matches.","OPTIONAL":"*Optional","USE_REMOTE_JOBS":"Include remote jobs","PRIVACY_POLICY_TEXT":"Privacy Policy","REVIEW_RESUME":"Review Resume","UPLOAD":"Upload","FULL_TIME":"Full Time","CURRENT_STEP":"Current step in Job Matching flow","CONNECT_EXISTING_ACCOUNT":"Sign into existing account","PART_TIME":"Part Time","ENTRY_LEVEL":"Entry Level","RECOMMENDATIONS_NONE_HEADER":"No matches found","CONNECT_LINKEDIN":"Connect with Linkedin","RECOMMENDATIONS_NONE_SUBHEADER":"Edit your search criteria or CV to receive new results.","TOGGLE_REMOTE_JOBS":"Include remote jobs in search","JOB_TYPE":"Desired Job Type","PROFILE_SUBTITLE":"Your profile offers detailed information required for our algorithm.","RECOMMENDATIONS_HEADER":"Review your matches","KEYWORDS_HEADER":"Enter Relevant Keywords.","LOCATION_HEADER":"Enter Location","LOADING":"Loading","LOCATION":"Location","RETURN_TO_STEP":"Return to step in Job Matching flow","BROWSE":"Browse","SENIORITY":"Experience Level","PROFILE_TITLE":"Select Your Profile","USE_CV_LOCATION":"Filter by this location","CONTRACT":"Contract","FIND_MYJOBS":"Start Here","RECOMMENDATIONS_SUBHEADER":"Edit your matching criteria to receive updated results.","MID_LEVEL":"Mid Level","KEYWORDS_SUBTITLE":"Keywords help support and enrich your profile data.","ADDITIONAL_HEADER":"Provide Additional Information.","NEXT":"Next","START_OVER":"Start Over","REMOVE":"Remove","CONTACT_INFORMATION":"Contact Information","PRIVACY_POLICY_LINK":"https://www.icims.com/legal/privacy-notice-website/","SENIOR_LEVEL":"Senior Level","ENTER_LOCATION":"Enter a Location","LOCATION_SUBTITLE":"We will show you matches centered around this location.","OR":"or","WORK_HISTORY":"Work History","UPLOAD_TITLE":"Upload a resume","JOB_SEARCH":"Job Search","PRIVACY_DISCLAIMER":"Data Privacy Notice","RECOMMENDATIONS_NONE_PARA":"Try using different match criteria or starting a new search? Try searching without your profile.","RESUME_UPLOADED":"Resume Uploaded","EDUCATION_HISTORY":"Education History","PRIVACY_ERROR":"You must acknowledge this message to proceed.","CANCEL":"Cancel","BACK":"Back","TITLE":"Find Your Job Matches","PRIVACY_AGREEMENT":"I understand the data I upload during this session will be processed for Job Matching but none of my data, including any Personally identifiable Information will be saved.","KEYWORDS":"Search Keywords"},"REFERRAL":{"MODAL":{"CHECK_STATUS":{"BUTTON":"Check email","HEADER":"Great! Now let's check if your candidate has been referred","EMAIL":"Referral's email address","BODY":"This step will confirm nobody else is linked to your candidate"},"START":{"REJECT":"Yes","HEADER":"Start your referral","CONFIRM":"No","BODY":"Is this potential candidate an active or fixed term employee, current contractor, co-op or intern at J&J?"},"ERROR":{"HEADER":"Sorry, that candidate is not eligible for employee referral at this time","BODY":"The person with this email address has either already been linked to another company employee for referral or is in a position that is not eligible for the Employee Referral Program","NEW_REFERRAL":"Refer Another Candidate"}}},"WELCOME":{"AWARDS_2":"Forbes/Reputation Institute “World’s Most Reputable Companies” 2013-2016","AWARDS_1":"Fortune “World’s Most Admired Companies” 2006-2016","AWARDS_4":"Forbes: “America’s Best Employers” 2015-2016","AWARDS_3":"Corporate Responsibility Magazine’s “100 Best Corporate Citizens” 2013-2016","AWARDS":"Awards","AWARDS_5":"Forbes “World’s Most Valuable Brands” 2013-2016","PARAGRAPH":"FedEx is widely acknowledged as a world-class company. We are honored and proud to be consistently recognized as a great place to work, a technology innovator and one of the world’s most admired and respected companies.","HEADER":"Welcome to FedEx Careers and thank you for visiting."},"PRE_LOGIN":{"ACCEPT":"I Accept","PILOT_ACCEPT_LINK":"https://careers.fedex.com/fedex/login?jobId=P0001","TITLE":"Pilot Careers","PILOT_DECLINE_LINK":"https://careers.fedex.com","BODY":"<div> <h1>Minimum Qualification Questionnaire</h1>\n    <div style=\"margin-bottom: 5px;\">\n        <p>FedEx Express is accepting new profiles only for pilot job seekers who meet basic minimum qualifications for FedEx Express pilot positions.&nbsp; Please note that submitting a profile or meeting basic minimum qualifications does not indicate that FedEx Express has or will consider you an applicant for employment.</p>\n        <p>Please review and affirm that you meet the following qualifications:</p>\n    </div>\n    <p>Do you have a commercial Pilot Certificate with Multi-engine and Instrument rating (without limitations)?</p>\n    <p>Do you have a current ATP Certificate?</p>\n    <p>Do you have the ability to pass FAA mandated drug screen?</p>\n    <p>Do you meet requirements for and currently hold First Class Medical certification or a Military Flight Physical?</p>\n    <p>Do you have 20/20 correctable vision?</p>\n    <p>Do you possess a Bachelor's Degree from an accredited college or university?</p>\n    <p>Are you legally authorized to work in the U.S.?</p>\n    <p>Are you eligible for rapid visa issuance, issued by offices in the United States to fly to any FedEx Express international destination?</p>\n    <p>Are you eligible for issuance of U.S. Security Clearance?</p>\n    <p>Are you eligible to work in the United States now and in the future without requiring sponsorship for employment such as H-1B visa status?</p>\n    <p>Do you have at least 1500 hours total fixed-wing time as PIC or SIC in multi-engine turbo-prop or jet A/C or combination thereof.</p>\n    <p>Are your certificates and ratings issued by the U.S. Federal Aviation Administration?</p>\n    <br>\n    <br>\n    <br>\n    <br>\n    <br>\n    <div>\n        <p> FedEx Express Pilots must be granted security clearance to access Security Areas [SIDA] of airports and are subject to the requirements of 49 Code of Federal Regulations (CFR) Part 1544. These requirements include employment history and criminal background checks, including a FBI fingerprint based criminal history check. This position also requires a Radio Telephone Operators License. The authority for collecting this information is 49 U.S.C. Sections 114 and 44936. </p>\n        <p> Please review the following list of disqualifying offenses and certify that you <strong>have not</strong>, during the past 10 years, been convicted or found not guilty by reason of insanity of any of the following disqualifying offenses. A conviction includes any finding of guilt, plea of guilty, plea of nolo contendre or plea of no contest: </p>\n        <ol type=\"1\">\n            <li>Forgery of certificates, false marking of aircraft, and other aircraft registration violation;</li>\n            <li>Interference with air navigation;</li>\n            <li>Improper transportation of a hazardous material;</li>\n            <li>Aircraft piracy;</li>\n            <li>Interference with flight crew members or flight attendants;</li>\n            <li>Commission of certain crimes aboard aircraft in flight;</li>\n            <li>Carrying a weapon or explosive aboard aircraft;</li>\n            <li>Conveying false information and threats;</li>\n            <li>Aircraft piracy outside the special aircraft jurisdiction of the United States;</li>\n            <li>Lighting violations involvinlg transporting controlled substances;</li>\n            <li>Unlawful entry into an aircraft or airport area that serves air carriers or foreign air carriers contrary to established security requirements;</li>\n            <li>Destruction of an aircraft or aircraft facility;</li>\n            <li>Murder;</li>\n            <li>Assault with intent to murder;</li>\n            <li>Espionage;</li>\n            <li>Sedition;</li>\n            <li>Kidnapping or hostage taking;</li>\n            <li>Treason;</li>\n            <li>Rape or aggravated sexual abuse;</li>\n            <li>Unlawful possession, use, sale, distribution, or manufacture of an explosive or weapon;</li>\n            <li>Extortion;</li>\n            <li>Armed or felony unarmed robbery;</li>\n            <li>Distribution of, or intent to distribute, a controlled substance;</li>\n            <li>Felony arson;</li>\n            <li>Felony involving a threat;</li>\n            <li>Felony involving:</li>\n            <ol type=\"i\">\n                <li>Willful destruction of property;</li>\n                <li>Importation or manufacture of a controlled substance;</li>\n                <li>Burglary;</li>\n                <li>Theft;</li>\n                <li>Dishonesty, fraud, or misrepresentation;</li>\n                <li>Possession or distribution of stolen property;</li>\n                <li>Aggravated assault;</li>\n                <li>Bribery; or</li>\n                <li>Illegal possession of a controlled substance punishable by a maximum term of imprisonment of more than 1 year</li>\n            </ol>\n            <li>Violence at international airports;</li>\n            <li>Conspiracy or attempt to commit any of the aforementioned criminal acts.</li>\n        </ol>\n    </div>\n</div>","DECLINE":"No"},"NO_STATE":"No state","TALENTNETWORK":{"JOIN_CC":"<a href=\"#\">Join our talent network</a> and we will contact you when a job matches your skillset.","HOME_URL":"Add a home url","SUB_HEADER":"Join our talent community","SUCCESS_MESSAGE":"Thank you for joining our Talent Network. We will keep you updated.","JOIN_CC_BUTTON":"Join Now","HEADER_BG_IMAGE_URL":"add image url","HEADER":"Join Our Talent Network"},"UI":{"BACK_TO_TOP":"Back to Top","HEADER_LOGOUT":"Logout","MILES":"Miles","CAREERS_TITLE":"{{companyName}} Careers","LOGIN_ERROR":"You must be logged in to access your submitted applications.","FILTERS":"Filters","SKIP_TO_MAIN":"Skip to Main Content","NEARBY_FIFTY_MILES":"within 50 miles","NEARBY_HUNDRED_MILES":"within 100 miles","JOBAPPLY_LITIMEOUTERROR":"Timeout -- LinkedIn API did not respond","JOIN_NOW":"Join Now","NEARBY_SELECT_100_MILES":"within 100 miles","UNSUPPORTED_NEW":"<p>A web browser is a piece of software on your computer. It lets you visit webpages and use web applications.</p> <p>It's important to have the latest version of a browser. Newer browsers save you time, keep you safer, and let you do more online.</p> <p>Try a different browser - all are free and easy to install. Visit <a href=\"https://www.whatbrowser.org/\" target=\"_blank\">whatbrowser.org</a> for more information.</p> <p>If you are using a later version of Internet Explorer, please make sure you are not in compatibility mode of an older version of the browser.</p>","UPLOAD":"Upload","CUSTOM_MAINTENANCE_TITLE_1":"Temporarily Down for Maintenance","NEARBY_SELECT_15_MILES":"within 15 miles","NEARBY_SELECT_50_MILES":"within 50 miles","NEARBY_SELECT_25_MILES":"within 25 miles","NEXT_QUESTION":{"ERROR":"Some questions above contain errors, please fix before advancing"},"NEARBY_FIVE_KM":"within 5 kilometers","FOOTER_CURRENT_YEAR":"&copy; {{currentYear}}","MENU_LOGOUT":"Logout","EXACT":"Exact","JOBAPPLY_LIAPIERROR":"Error calling LinkedIn API for profile","UNSUPPORTED":"We're sorry, but your browser is not supported. To use our site, we recommend using the latest version of Safari, Firefox, Chrome, or Internet Explorer. If you are using a later version of Internet Explorer, please make sure you are not in compatibility mode of an older version of the browser.","ACTIVE_FILTER_LABEL":"Active Filters","EXACT_LOCATION":"Exact location only","NEARBY_TEN_KM":"within 10 kilometers","HEADER_LOGGED_IN":"Logged in as <span class='user-profile-toggle' ng-click='openUserProfile()''>{{user}}</span>","MENU_SEARCH":"Search Jobs","SHOW_ALL":"Show All","JOIN_TALENTNETWORK_TAG":"and we will contact you when a job matches your skillset.","HEADER_TITLE":"{{companyName}} Apply","MORE_THAN":"More than","NEARBY_TWENTYFIVE_MILES":"within 25 miles","CLEAR_ALL_FILTERS":"Clear All","NEARBY_FIFTY_KM":"within 50 kilometers","LOADING":"Loading","NO":"No","SELECT_LANGS":"Select Language","NONLINEAR":{"PROMPT_CONFIRM":"Do not show again","PROMPT":"If you leave a section without clicking \"Save & Continue\" any answers for that page will be erased."},"YES":"Yes","JOIN_TALENTNETWORK":"Join our talent network","JOBAPPLY_ERROR":"An error occurred while attempting to apply to this job.","MAINTENANCE_WINDOW_LINE_1":"Scheduled maintenance is under way. We will be back online shortly.","NEARBY_HUNDRED_KM":"within 100 kilometers","BY_PUBLIC_TRANSIT":"<i class=\"fa fa-train\"></i>","PREVIOUS":"Previous","NEARBY_SELECT_MILES":"within {{nearbyDistance}} miles","DELETE":"Delete","CUSTOM_MAINTENANCE_WINDOW_LINE_1":"Scheduled maintenance is under way. We will be back online shortly.","HIDE_FILTERS":"Hide Filters","NEARBY_FIVE_MILES":"within 5 miles","JOBAPPLY_CREATEUSERERROR":"Error creating user from LinkedIn profile","NEXT":"Next","NEXT_CONFIRM":"Save & Continue","HEADER_LOGIN":"Sign In","NEARBY_SELECT_10_MILES":"within 10 miles","SHOW_FILTERS":"Show Filters","MAINTENANCE_TITLE_1":"Temporarily Down for Maintenance","NEARBY_TWENTYFIVE_KM":"within 25 kilometers","OR":"or","SUCCESS":"Success","NEARBY_TEN_MILES":"within 10 miles","MENU_HOME":"Careers Home","JOBAPPLY_ERRORONJOB":"Error loading job from job service","KILOMETERS":"KM","MENU_LOGIN":"Sign In","CONTINUE":"Continue","NEARBY_SELECT_5_MILES":"within 5 miles","NEARBY_SELECT_EXACT_LOCATION":"Exact location only","CANCEL":"Cancel","SUBMIT":"Submit","SHINE":{"FEEDBACK_PROMPT_SUCCESS":"Thank you for providing your feedback! We will use it to continue to improve your experience.","DETAIL_CAREERS_SITE":"visit careers site","CONTENT_GUIDE_VOICE":"Articles we think you might like.","FOOTER_TERMS_LINK":"Terms of Use","DETAIL_HERO_ANSWERS":"Want immediate answers?","FOOTER_PRIVACY_LINK":"Privacy Statement","JOB_CARD_NEW_UPDATE":"See new update","FOOTER_COPYRIGHT":"Copyright Johnson & Johnson 2017","JOBS_LIST_ALL_APPLICATIONS":"Show all applications","DETAIL_HERO_STAGE":"Stage","RATING_POSITIVE_NUMBER":"10","JOB_CARD_MULT_LOCATIONS":"Multiple Locations","DETAIL_CONTACT_US":"contact us","FOOTER_BACK_TOP":"Back to top","HEADER_HISTORY":"History","JOB_CARD_UNIVERSITY":"Thanks for your application! Your application will follow a different timeline. Please reach out directly to your University Recruiter with any questions or comments.","JOB_CARD_PROGRESS":"See my progress","CONTACT_HEADER":"Get in touch","CONTACT_TITLE":"J&J Recruiter","CONTENT_TEXT":"Once you receive your Salary, Bonus, and LTI information, check out our Offer Visualization tool to get a deeper understanding of all the great benefits Johnson & Johnson has to offer!","JOB_CARD_UPDATE":"See my update","DETAIL_SIMILAR_ROLES":"Explore similar roles","HOME_HERO_GUIDING_INTRO":"<b>{{ param }} </b>, welcome to your guiding light through the hiring experience","QUOTE-HEADER":"Inside Tip","RATING_NEGATIVE":"Not Likely","DETAIL_HERO_JOB_DESCRIPTION":"View Job Description","CONTACT_DESCRIPTION":"Hello! If you have any other questions please let me know and I’ll get back to you as soon as I can.","CONTENT_OFFER_BUTTON":"Click Here!","JOB_CARD_TELL_MORE":"Tell me more","RATING_POSITIVE":"Extremely Likely","FEEDBACK_PROCESS":"How likely are you to recommend this Shine experience to family and friends who would apply to Johnson & Johnson?","CONTACT_CALLTOACTION":"email","HEADER_DEMO":"Demo","FOOTER_SITE_LINK":"Site Map","HOME-HERO-VIDEO-TEXT":"Your browser does not support the video.","DETAIL_HERO_VIEW_FAQS":"View faqs","DETAIL_HERO_YOUAT":"You're at","CONTENT_OFFER_HEADER":"Introducing Offer Visualization"},"JOBAPPLY_CONTENT_BLOCKING":"An error occurred. This may be due to browser settings which block content required for this site to function. <br>Try a different browser or follow these directions to disable content blocking on <a href=\"https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop#w_what-to-do-if-a-site-seems-broken\" target=\"_blank\">Firefox</a> and <a href=\"https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac\" target=\"_blank\">Safari</a>.","BACK":"Back","MINUTES":"mins","NEARBY_SELECT_KM":"within {{nearbyDistance}} kilometers","NEXT_DISABLED":{"INFO":"Additional history is required to save this page."},"BY_CAR":"<i class=\"fa fa-car\"></i>"},"FB_CHAT":{"GREETING_OUT":"How can I help you?","GREETING_IN":"How can I help you?"},"UPLOAD":{"PREVIEW_DOCUMENT":{"NOT_SUPPORTED":"The preview for your document will open in your native document viewer.","CLICK_TO_PREVIEW":"Please click the link below:","SKILLS":"SKILLS","PRESENT":"Present","EMPLOYMENT_INFORMATION":"EMPLOYMENT INFORMATION","UPLOADED_WITH":"Uploaded Resume with","INVALID_WARNING":"Sorry! We were not able to display your document.","EDUCATION_INFORMATION":"EDUCATION INFORMATION","GENERAL_INFORMATION":"GENERAL INFORMATION"},"GOOGLE_DRIVE":"Google Drive","WELCOME_THANKS_AGAIN":"Thanks again for your interest.","FILE_HEADER":"Files","APPLY_WITH_RESUME":"Use Saved Resume or Upload New Resume","BASIC_HEADER":"Or, enter your resume below:","FILE_UPLOADING":"Uploading","WELCOME":"Welcome","EMAIL":{"ERROR_MESSAGE":"There was a problem sending out the email, please try again"},"FILE_NAME":"File Name","CHOOSE_ANOTHER":"","EASYAPPLY-LINKEDIN-BUTTON":"Upload your resume using LinkedIn","PREVIEW_RESUME":"Preview Your Resume","EASYAPPLY-INSTRUCTIONS":"Please select a Resume Upload Option","HOW_TO_PROCEED":"How would you like to proceed?","FILE_TYPES_HEADER":"Accepted file types:","ADDITIONAL_DOCS":{"DESCRIPTION":"If you have additional documents you would like to share, please choose from the options below to upload them. Otherwise, click \"Next\" to continue.","CHOOSE":"Select document type","PREVIOUS_HEADER":"Use a previously uploaded document:","TYPE_IN":"Type In Document","HEADER":"Upload Additional Documents","RESTRICTIONS":"You can upload one file for each document type","PREVIOUS":"Select from previously uploaded files","OPTIONS_HEADER":"Or, upload a new document using one of the following:"},"DOC_TYPES":{"OTHER":"Other","CERTIFICATIONS":"Certifications","LETTER_OF_RECOMMENDATION":"Letter of Recommendation","EMPLOYEMENT_CERTIFICATE":"Employment Certificate","REFERENCE_LIST":"Reference List","TRANSCRIPT":"Transcript","COVER_LETTER":"Cover Letter","PORTFOLIO":"Portfolio","RESUME":"Résumé","WRITING_SAMPLE":"Writing Sample"},"LINKEDIN":"LinkedIn","INVALID_EMAIL":"You must enter a valid email address","FILE_UPLOAD":"File Upload","EMAIL_INSTRUCTIONS_REPLY":"Or, reply to the email sent to {{email}} with your resume attached.","MUST":"Please upload or select a saved resume to continue","FILE_SIZE_MAX":"Up to {{param}}","SELECTED":"Upload Selected Document","TYPE_IN_HEADER":"Enter or paste your desired text","UPLOADED_FILES_HEADER":"Uploaded Files","FILE_UPLOADED":"Uploaded","WRONG_MIME_TYPE":"The type of file you are trying to upload is not supported, please try a different one.","EMAIL_INSTRUCTIONS":"To submit your resume for this position, please complete one of the options below:","TOO_LARGE":"The file you are trying to upload is too large, please verify you are using the right file and try again.","PREVIOUS_HEADER":"Use a previously uploaded resume:","TYPE_IN":"Type-in Resume","APPLY_WITH_COVER_LETTER":"Apply With Cover Letter","LIST":{"NO_FILES":"No documents"},"EMAIL_RESUME_TEMPLATE":{"SUBJECT":"Your job application isn't complete!","BODY":"<!DOCTYPE html><html><head><meta content='text/html; charset=UTF-8' http-equiv='Content-Type' /></head><body><p>Hi,</p><p>Thanks for starting your application to {{companyName}}.</p><p>To complete your application you must do one of the following:</p><p>Forward an email from your mobile device with your resume attached to {{fromEmail}}</p><p>OR</p><p>Reply to this email from your laptop or desktop computer with your resume attached.</p><p>Thank you for your interest,<br />The Recruiting Team</p></body></html>"},"RESUME_ERROR":"There was an error uploading your resume.","UNABLE_TO_PARSE":"There was an error parsing data from your resume. Please ensure that your resume matches one of the accepted file types and does not contain any images. You may also continue with your upload, and manually enter in your application information.","RESUME_HEADER":"Upload Your Resume","ERROR_MESSAGE":"There was an error uploading your resume.","EMAIL_LABEL":"Please enter your email address:","APPLY_WITHOUT_COVER_LETTER":"Apply Without Cover Letter","RESUME":{"CLIENT_INSTRUCTIONS":""},"DROPBOX":"Dropbox","OPTIONS_HEADER":"Or, upload a new resume using one of the following:","FILE_SIZE_HEADER":"File Size:","TOO_SMALL":"The file you are trying to upload is too small, please verify you are using the right file and try again.","EMAIL_HEADER":"Email Your Resume","COVER_LETTER_HEADER":"Upload your Cover Letter","APPLY_WITHOUT_RESUME":"Apply without Resume","NEW_DOCUMENT":"Upload a new document","AUTOFILL":"We will use your resume to autofill as much of your application as we can.","PREVIOUS_COVER_LETTER":"Select From Previous Cover Letters","COVER_LETTER_ERROR":"There was an error uploading your cover letter.","INSTRUCTIONS":"Upload a resume using one of the following:","UPLOADED_AT":"Uploaded at {{param}}","FILES_PREVIOUS_DIRECTORY":"Previous directory","FILE_TYPE_LIST":".pdf, .doc, .docx, .rtf","IN_PROGRESS":"Please wait while we upload your resume...","REUSE":"Reuse this document","RETRY_NO_PARSE":"Retry without parsing","WELCOME_THANKS":"Thank you for exploring career opportunities with {{companyName}}!","CV":{"ERROR_MESSAGE":"There was an error uploading your cover letter.","INSTRUCTIONS":"Upload a cover letter using one of the following:","CHOOSE":"Would you like to attach a cover letter?","BASIC_HEADER":"Or, enter your cover letter below:","EMAIL_INSTRUCTIONS_REPLY":"Or, reply to the email sent to {{email}} with your cover letter attached.","MUST":"Please upload or select a saved cover letter to continue","SAVE_AS_RESUME_TXT":"Your most current entry into this box will be saved as a link entitled resume.txt and will be stored in Previously Uploaded Documents.","OPTIONS_HEADER":"Or, upload a new cover letter using one of the following:","IN_PROGRESS":"Please wait while we upload your cover letter...","CLIENT_INSTRUCTIONS":"If you have a cover letter, please choose from the options below to upload it.","EMAIL_HEADER":"Email Your Cover Letter","EMAIL_INSTRUCTIONS_FORWARD":"Forward an email with your cover letter attached to: <strong>{{email}}</strong>","EMAIL_INSTRUCTIONS":"To submit your cover letter for this position, please complete one of the options below:","SAVE_AS_COVER_LETTER_TXT":"Your most current entry into this box will be saved as a link entitled cover_letter.txt and will be stored in Previously Uploaded Documents.","EMAIL_NOW":"My Cover Letter is Sent","EMAIL_CV_TEMPLATE":{"SUBJECT":"Your job application isn't complete!","BODY":"<!DOCTYPE html><html><head><meta content='text/html; charset=UTF-8' http-equiv='Content-Type' /></head><body><p>Hi,</p><p>Thanks for starting your application to {{companyName}}.</p><p>To complete your application you must:<p>Reply to this email from your laptop or desktop computer with your cover letter attached.</p><p>Thank you for your interest,<br />The Recruiting Team</p></body></html>"}},"PREVIOUS_RESUME":"Select From Previous Resumes","PREVIOUSLY_UPLOADED":"Previously uploaded documents","EASYAPPLY-LINKEDIN-BUTTON-DESC":"By using LinkedIn we are able to quickly and efficiently pull all profile and job information with a single click.","EMAIL_INSTRUCTIONS_FORWARD":"Forward an email with your resume attached to: <strong>{{email}}</strong>","EASYAPPLY-OTHER-OPTIONS":"Or, one of the following:","EMAIL~OVERRIDDEN~":"Email","EMAIL_LATER":"I'll Send It Later","EMAIL_NOW":"My Resume is Sent"},"CREDO":{"INTRO_HEADING":"Intro","NEXT_BTN":"Next Page","COMPLETE_TEXT":"You've completed this page! Click below to continue with the application.","COMPLETE_HEADING":"Finish","INTRO_ADDON":"Please answer these questions thoughtfully, as your responses will directly impact your eligibility to be considered for an open role.","START_BTN":"OK"},"NO_CATEGORIES":"No Categories","REG_OR_TEMP":"Regular/Temporary:","HEADER,MILITARY-1":"<a href=\"/military-life\" token-data=\"HEADER,MILITARY-1\" token-type=\"text\">Life @ Fedex</a>","INDEED_ICON":"https://cms.jibecdn.com/prod/jibeapply/assets/INDEED_ICON-en-us-1522080436580.png","LOGIN":{"FACEBOOK":"Connect with Facebook","CONFIRM_PASSWORD":"Confirm Password","FORGOT_LINK":"Forgot password?","CURRENT_PASSWORD":"Current Password","EMAIL_CREATE":"Register with Email","FIRSTNAME":"First name","SELECT_ONE":"Select...","VERIFY":"Verify email","EMAIL":"Email","CONFIRM_EMAIL":"Confirm Email","FORGOT":{"SUCCESS_CREATED":"If you have an account registered under this email address, you will receive a password reset email shortly.","INVALID_FORGOT":"Incorrect username and email combination.","SUBMIT":"Submit","TITLE~OVERRIDDEN~":"Reset Password","SUCCESS_UPDATED":"Your account has been successfully updated.","USERNAME":"Forgot Username?","TITLE":{"PASSWORD":"Reset Password","USERNAME":"Forgot Username"},"INVALID_UPDATE":"Password given not valid.","INVALID_SESSION":"Session has expired.","LOGIN_LINK":"Return to Login?"},"LASTNAME":"Last name","GENDER":"Gender","LINK":"Or, Login to your account","USERNAME":"Username","EMAIL_TYPE":"Email Type","GOOGLE":"Connect with Google","REGISTER":{"SUBMIT":"Register","LINK":"Or, create your account","TITLE":"Register","LOGIN_LINK":"Already a user? <a>Login!</a>","INVALID_REGISTRATION":"Invalid registration used. Please verify fields."},"PRIVACY_POLICY":{"CANCEL":"Disagree","SUBMIT":"Agree","BODY_CONT2":"&nbsp;","ERROR":"You must accept to continue","TITLE":"Privacy Policy","BODY":"<p>In order to create an account with us and submit applications for positions with our company you must read the following Terms and Agreements and select to agree before registering.</p><p>In the event that you do not accept our Terms and Agreements you will not be able to submit applications for positions with our company.</p><p>You agree to the storage of all personal information, applications, attachments and draft applications within our system. Your personal and application data and any attached text or documentation are retained by Jibe Apply in accordance with our record retention policy and applicable laws.</p><p>You agree that all personal information, applications, attachments and draft applications created by you may be used by us for our recruitment purposes, including for automated job matching. It is specifically agreed that we will make use of all personal information, applications, attachments and draft applications for recruitment purposes only and will not make this information available to any third party unconnected with the our recruitment processes.</p><p>Your registration and access to our Careers Web Site indicates your acceptance of these Terms and Agreements.</p>","BODY_CONT":"&nbsp;"},"EMAIL_OPTION":{"HEADER":"Login with your email account"},"LINKEDIN":"Connect with Linkedin","VALIDATIONS":{"CONTACT":"At least one method of contact is required","WRONG_INFO":"Wrong information. Please try again!","EMAIL_FORMAT":"Invalid email","FIRSTNAME":"First name not filled","EMAIL":"Email not filled","SECURITY_ANSWER":"Security Answer not filled","PASSWORD":"Password not filled","LASTNAME":"Last name not filled","PASSWORD-REQUIREMENTS":"Password must contain at least 1 lower case letter, 1 capital letter (A-Z), 1 special character (!@#$%^&*), and a number (0-9)","AGREE":"Please Agree to the Privacy Policy","GENDER":"Gender not selected","PASSWORD_MISMATCH":"Passwords Do Not Match","USERNAME":"Username not filled"},"PLACEHOLDER":{"CONFIRM_NEW_PASSWORD":"Confirm New Password","NEW_PASSWORD":"New Password","PASSWORD":"Password","CONFIRM_PASSWORD":"Confirm Password","LASTNAME":"Last name","CURRENT_PASSWORD":"Current Password","GENDER":"Gender","USERNAME":"Username","FIRSTNAME":"First name","EMAIL":"Email"},"REGISTER_LINK":"Not a user? <a>Register!</a>","HELPER_TEXT":"","INVALID_LOGIN":"Incorrect username and password combination.","PASSWORD":"Password","SUBMIT":"Log In","TITLE":"Login","FORGOT_USERNAME":{"TITLE":"Forgot Username"},"ATS_UNAVAILABLE":"The applicant tracking system is unavailable at this time, please try again later.","VERIFICATION":{"BODY":"<p>Dear ${user.firstName},</p>\n<p>Thanks for choosing to apply for a job with ${client.display.name}! Please verify ownership of your email address by clicking this <a href=\"${page.url}?id=${user.id}&ptoken=${user.token}\">link</a>.</p>\n<p>Alternatively, you can verify your account by pasting this URL into your browser: <a href=\"${page.url}?id=${user.id}&ptoken=${user.token}\">${page.url}?id=${user.id}&ptoken=${user.token}</a></p>\n<p>Please note that your job application will not be submitted to ${client.display.name} until you have successfully verified ownership of your email address.</p>\n<p>Sincerely,</p>\n<p>The ${client.display.name} Recruiting Team</p>"}},"candidate_connect":{"cc_signup":{"error_blank_input":"Please fill out all fields."},"email_signup":{"error_blank_input":"Please fill out all fields.","error_network":"There was an error processing your request. Please try again later.","error_title":"Error","success_title":"Success!","error_invalid":"Please enter a valid email address.","success_button":"Continue","success_paragraph":"Thanks for subscribing. Check your email shortly for a confirmation.","error_existing_email":"This candidate profile already exists.","userExists_paragraph":"A message has been sent to your email address . Please follow the instructions to verify it.","userExists_title":"Success!"}},"ABOUT_US":{"TESTIMONIAL_VIDEO":"<a href='https://www.iamfedex.com/Our-Stories/Approved-Stories/Tabassum-Gives-Back-to-Her-Community-Through-FedEx.aspx' target='_blank' rel='noopener noreferrer'>WATCH THIS VIDEO</a>","VIDEO_CAPTION":"Making a difference both in and out of the office","TESTIMONIAL_PARAGRAPH":"Tabassum Shaikh is a Sr. CT Consultant in Los Angeles. She is committed to delivering the Purple Promise to customers and also helps out the community by participating in FedEx Cares events. Outside of FedEx, she enjoys creating temporary henna tattoos for friends for special occasions.","VIDEO_SUBLINK_1":"https://youtu.be/9ntTW3Z21G8","VIDEO_SUBLINK_2":"https://youtu.be/pm-eq2YW3m8","HEADER":"I am FedEx","VIDEO_SUBLINK_3":"https://youtu.be/dbyJmlCuhFc","VIDEO_SUBLINK_4":"https://youtu.be/C3dktfcBHR8","VIDEO_SUBLINK_5":"https://youtu.be/OhMUz21xVc0","TESTIMONIAL_PLAY_BUTTON_1":"https://www.iamfedex.com/Our-Stories/Approved-Stories/Tabassum-Gives-Back-to-Her-Community-Through-FedEx.aspx","HEADER_PARAGRAPH":"Understanding FedEx culture through the stories of our people","VIDEO_SUBHEADER_3":"<a href='https://youtu.be/dbyJmlCuhFc' target='_blank'><font color=\"ffffff\">Jumping to Invest in Others</font></a>","TESTIMONIAL_PLAY_BUTTON_2":"https://www.youtube.com/watch?v=I46Nq8ZXKtU","VIDEO_SUBHEADER_2":"<a href='https://youtu.be/pm-eq2YW3m8' target='_blank'><font color=\"ffffff\">Cutting Edge Cargo Handler</font></a>","VIDEO_SUBHEADER_5":"<a href='https://youtu.be/OhMUz21xVc0' target='_blank'><font color=\"ffffff\">Life in the Big Easy</font></a>","VIDEO_SUBHEADER_4":"<a href='https://youtu.be/C3dktfcBHR8' target='_blank'><font color=\"ffffff\">Curiosity Builds Character</font></a>","TESTIMONIAL_HEADER":"Tabassum Gives Back to Her Community Through FedEx","VIDEO_SUBHEADER_1":"<a href='https://youtu.be/9ntTW3Z21G8' target='_blank'><font color=\"ffffff\">Moved By a Coworker to Chose Well</font></a>","VIEW_MORE":"<a href='https://www.iamfedex.com/Our-Stories.aspx'>View More Stories</a>"},"COMPLETED_PAGE_PILOT_TITLE":"Your profile has been successfully updated.","JOB_DESCRIPTION":{"LOCATION":"Locations:","LOCATION_ARIA_LABEL":"Job Location","REQ_ID":"Req ID:","EMPLOYMENT_TYPE":"Position Type:","REQ_ID_ARIA_LABEL":"Job ID","SKILLS":"Skills:","BACK":"Back","DESCRIPTION_HEADING":"Job Description","STREET_ADDRESS":"Street Address:","CATEGORIES":"Categories:","CATEGORIES_ARIA_LABEL":"Job Category"},"test":{"newtest":"no"},"SEARCH":{"NO_CITIES":"No cities","NO_LOCATIONS":"No locations","NO_BRANDS":"No brands","NO_CATEGORIES":"No categories","NO_COUNTRY":"No country","NO_STATE":"No states"},"VALIDATION":{"EMAIL_DOMAIN":"Invalid Email Domain"},"OPCO":{"TRADENETWORKS_LOGO":"<a href='/tradenetworks'><img id='trade-networks' src='https://assets.jibecdn.com/staging/fedex/0.18.568/assets/tradenetworks/fedex-tradenetworks.png' alt=\"Fedex TradeNetworks Logo\" /></a>","SERVICES":"<a href='/services'>Learn More </a>","GROUND_LOGO":"<a href='/ground'><img id='ground' src='https://assets.jibecdn.com/staging/fedex/0.18.568/assets/ground/fedex-ground-logo.png' alt=\"Fedex Ground Logo\" /></a>","EXPRESS_LOGO":"<a href='/express'><img id='express' src='https://assets.jibecdn.com/staging/fedex/0.18.568/assets/express/fedex-express.png' alt=\"Fedex Express Logo\" /></a>","CORPORATE_LOGO_NEW":"<a href='/fedex/jobs?page=1&brand=FedEx+Corporate' aria-label=\"fedex-corporation link\"><div id=\"corporate-card-logo\" class=\"fedex-card-logo\"></div></a>","TRADENETWORKS":"<a href='/logistics'>Learn More</a>","EXPRESS-OPTION_4":"<a token-data=\"OPCO.EXPRESS-OPTION_4\" token-type=\"text\" href=\"/expresslac\">Latin America and the Caribbean</a>","EXPRESS-OPTION_3":"<a token-data=\"OPCO.EXPRESS-OPTION_3\" token-type=\"text\" href=\"/express-eu\">Europe</a>","GENCO":"<a href='/genco'>Learn More</a>","EXPRESS":"<a href='/express'>Learn More</a>","EXPRESS-OPTION_2":"<a token-data=\"OPCO.EXPRESS-OPTION_2\" token-type=\"text\" href=\"/expresscanada\">Canada</a>","EXPRESS-OPTION_1":"<a token-data=\"OPCO.EXPRESS-OPTION_1\" token-type=\"text\" href=\"/express-apac\">Asia Pacific</a>","EXPRESS-OPTION_6":"<a token-data=\"OPCO.EXPRESS-OPTION_6\" token-type=\"text\" href=\"/express\">United States</a>","SUPPLY":"<a href='/supplychain'>Learn More</a>","EXPRESS-OPTION_5":"<a token-data=\"OPCO.EXPRESS-OPTION_5\" token-type=\"text\" href=\"/express-meisa?lang=en-US\">Middle East, Indian Subcontinent, and Africa</a>","SUPPLY_LOGO":"<a href='/supplychain'><img id='supply' src='https://assets.jibecdn.com/staging/fedex/0.18.568/assets/supply/fedex-supply.png' alt=\"Fedex Supply Chain Logo\" /></a>","SUPPLY_LOGO_NEW":"<a href='/supplychain' aria-label=\"fedex-supply-chain link\"><div id=\"supply-card-logo\" class=\"fedex-card-logo\"></div></a>","FREIGHT-OPTION_2":"<a token-data=\"OPCO.FREIGHT-OPTION_2\" token-type=\"text\" href=\"/freightcanada\">Canada</a>","FREIGHT-OPTION_3":"<a token-data=\"OPCO.FREIGHT-OPTION_3\" token-type=\"text\" href=\"/freight-mexico\">Mexico</a>","CORPORATE_LOGO":"<a href='/fedex/jobs?page=1&brand=FedEx+Corporate'><img id='corporate-logo' src='https://assets.jibecdn.com/staging/fedex/0.18.568/assets/fedex-corporate/corporate.png' alt=\"Fedex Corporate\"/></a>","FREIGHT-OPTION_1":"<a token-data=\"OPCO.FREIGHT-OPTION_1\" token-type=\"text\" href=\"/freight\">United States</a>","SERVICES_LOGO":"<a href='/services'><img id='services' src='https://assets.jibecdn.com/staging/fedex/0.18.568/assets/services/fedex-services.png' alt=\"Fedex Services Logo\" /></a>","EXPRESS_LOGO_NEW":"<a href='/express' aria-label=\"fedex-express link\"><div id=\"express-card-logo\" class=\"fedex-card-logo\"></div></a>","FREIGHT-OPTION_TITLE":"Fedex Freight","GENCO_LOGO":"<a href='/genco'><img id='genco' src='https://assets.jibecdn.com/staging/fedex/0.18.568/assets/genco/fedex-genco.png'  alt=\"Fedex Genco Logo\"/></a>","EXPRESS-OPTION_TITLE":"FedEx Logistics","PARAGRAPH_1":"FedEx Corp. provides customers and businesses worldwide with a broad portfolio of transportation, e-commerce and business services.","PARAGRAPH_2":"Our networks operate independently to deliver the best service to customers without compromise. They compete collectively as a broad portfolio of customer solutions and are managed collaboratively, under the respected FedEx brand.","TRADENETWORKS_LOGO_NEW":"<a href='/logistics' aria-label=\"fedex-trade-networks link\"><div id='tradenetworks-card-logo' class=\"fedex-card-logo\"></div></a>","TRUCKLOAD":"<a href='/fedex/jobs?page=1&brand=FedEx+Truckload+Brokerage'>Learn More</a>","OFFICE_LOGO":"<a href='/office'><img id='office' src='https://assets.jibecdn.com/staging/fedex/0.18.568/assets/office/fedex-office.png' /></a>","CUSTOM_CRITICAL_LOGO":"<a href='/customcritical'><img id='custom-critical' src='https://assets.jibecdn.com/staging/fedex/0.18.568/assets/custom_critical/fedex-custom-critical.png' alt=\"Fedex Custom Critical Logo\"/></a>","CUSTOM_CRITICAL_LOGO_NEW":"<a href='/customcritical' aria-label=\"fedex-custom-critical link\"><div id=\"custom-card-logo\" class=\"fedex-card-logo\"></div></a>","TRUCKLOAD_LOGO":"<a href='jobs?page=1&brand=FedEx+Truckload+Brokerage'><img id='truckload' src='https://assets.jibecdn.com/staging/fedex/0.18.568/assets/truckload/truckload.png' alt=\"Fedex Truckload Logo\"/></a>","FREIGHT_LOGO":"<a href='/freight'><img id='freight' src='https://assets.jibecdn.com/staging/fedex/0.18.568/assets/freight/fedex-freight.png' alt=\"Fedex Freight Logo\" /></a>","HEADER":"Our Companies","CUSTOM_CRITICAL":"<a href='/customcritical'>Learn More</a>","GROUND":"<a href='/ground'>Learn More</a>","SERVICES_LOGO_NEW":"<a href='/services' aria-label=\"fedex-services link\"><div id=\"services-card-logo\" class=\"fedex-card-logo\"></div></a>","GROUND_LOGO_NEW":"<a href='/ground' aria-label=\"fedex-ground link\"><div id='ground-card-logo' class=\"fedex-card-logo\"></div></a>","TRADENETWORKS-OPTION_6":"<a token-data=\"OPCO.TRADENETWORKS-OPTION_6\" token-type=\"text\" href=\"/express\">United States</a>","CORPORATE":"<a href='/fedex/jobs?page=1&brand=FedEx+Corporate'>Learn More</a>","TRADENETWORKS-OPTION_1":"<a token-data=\"OPCO.EXPRESS-OPTION_1\" token-type=\"text\" href=\"/express-apac\">Asia Pacific</a>","FREIGHT":"<a href='/freight'>Learn More</a>","TRADENETWORKS-OPTION_3":"<a token-data=\"OPCO.TRADENETWORKS-OPTION_3\" token-type=\"text\" href=\"/express-eu\">Europe</a>","TRADENETWORKS-OPTION_2":"<a token-data=\"OPCO.TRADENETWORKS-OPTION_2\" token-type=\"text\" href=\"/expresscanada\">Canada</a>","OFFICE":"<a href='/office'>Learn More</a>","TRADENETWORKS-OPTION_5":"<a token-data=\"OPCO.TRADENETWORKS-OPTION_5 token-type=\"text\" href=\"/express-meisa?lang=en-US\">Middle East, Indian Subcontinent, and Africa</a>","TRADENETWORKS-OPTION_4":"<a token-data=\"OPCO.TRADENETWORKS-OPTION_4\" token-type=\"text\" href=\"/expresslac\">Latin America and the Caribbean</a>","OFFICE_LOGO_NEW":"<a href='/office' aria-label=\"fedex-office link\"><div id=\"office-card-logo\" class=\"fedex-card-logo\"></div></a>","FREIGHT_LOGO_NEW":"<a href='/freight' aria-label=\"fedex-freight link\"><div id='freight-card-logo' class=\"fedex-card-logo\"></div></a>"},"CARES":{"BUTTON":"<a href='http://fedexcares.com'>Go to FedEx Cares</a>","PARAGRAPH":"FedEx is investing $200 million in more than 200 global communities by 2020 to create opportunities and deliver solutions for people around the world. We will advance entrepreneurship, create employment pathways for underserved populations, enhance sustainable transportation, make roads and pedestrians safer, and use our global network to deliver resources where they are needed most.","HEADER":"FedEx Cares"},"VALIDATIONS":{"CURRENTDAY":"Please select today","CONFIRM_PASSWORD":"Confirmed Password does not match","SAMEMONTH":"Start and end date for same job can't be in the same month","PHONE":"Please enter a valid phone number.","AT_LEAST_ONE":"You must choose at least one answer.","GREATER_THAN_EQUAL_TO":"Must be greater than or equal to {{param}}.","MINLENGTH":"Please enter at least {{param}} characters.","MINVALUE":"Please enter a value greater than or equal to {{param}}.","EQUAL_TO":"Must be equal to {{param}}.","EMAIL":"Please enter a valid email address.","CONTINUOUS":"This end date has to be the same month or sooner to the above start date. A single history cannot have the same month for start and end dates.","MAXDATE":"Please select a date before {{param}}.","LESS_THAN_EQUAL_TO":"Must be less than or equal to {{param}}.","PATTERN":"This is not a valid format.","GREATER_THAN":"Must be greater than {{param}}.","NOT_UNIQUE":"Please enter/select a unique value.","LESS_THAN_EQUAL_TO_DATE":"Date must be equal to or before {{param}}.","GREATER_THAN_EQUAL_TO_DATE":"Date must be equal to or after {{param}}.","MINDATE":"Please select a date after {{param}}.","DATEFORMAT":"Please enter a valid date.","NUMERIC":"Please enter a valid number.","TODAY":"Please select today's date {{param}}","ZIPCODE":"Please enter a valid postal code.","REQUIRED":"This field is required.","LESS_THAN":"Must be less than {{param}}.","MAXLENGTH":"Please enter no more than {{param}} characters.","SSN":"Please enter a valid SSN.","GENERIC":"Please enter a valid input.","LOCATION_VALID_REGEX":"^[a-zA-Z0-9\\s,]*$","EQUAL_TO_DATE":"Date must be the same as {{param}}.","GREATER_THAN_DATE":"Date must be after {{param}}.","MAXVALUE":"Please enter a value less than or equal to {{param}}.","TEXTUAL":"Please only enter text.","LESS_THAN_DATE":"Date must be before {{param}}."},"REFERRALS":{"TRACK_REFERRAL":{"TILE":{"REFERRAL_EXPIRED":"Your employee referral life cycle has expired. Renew referral now.","REFERRAL_RENEW":"Refer to a new job to renew"}},"REFERRAL_SUCCESS":{"MESSAGE":"You’ve successfully submitted a referral for {{name}} to the {{jobTitle}} position in {{jobLocation}}.","BACK_BUTTON":"Back","TITLE":"Thank You!"},"REFER":{"START":{"BUTTON":"Get Started"},"MODAL":{"CHECK_STATUS":{"EMAIL":"Enter Email"},"START":{"REJECT":"Back","HEADER":"First, let's check your eligibility.","CONFIRM":"Check Email","BODY":"Since there is a limit for 1 referral within 2 years, we need to make sure you’re currently eligible to submit a referral. Enter your employee email below."},"ERROR":{"HEADER":"Not Eligible","BODY":"This person isn't eligible to be referred by you to the {{ title }} position. They have already been recommended before by another employee.","NEW_REFERRAL":"Refer Another Candidate"}}},"TRACK_REFERRALS":{"REFER_SOMEONE_ELSE":"Refer Someone Else","SHOW_MORE":"Show More","INVITED_TO_APPLY":"Invited to apply","REFERRAL_ROLE":{"APP":{"CREATED_AT":"Created at:","STARTED_ON":"Applied on:"}},"CANDIDATE_INFO":{"REFERRED_ON":"Referred On:","REFERRAL_COUNT":"# of Positions:","STATUS":"Status:","EXPIRED_LABEL":"Expired","TITLE":"You Referred","CONNECTED_UNTIL":"Connected Until:"},"HEADER":"You have {{ count }} Referrals","REFERRAL_INFO":{"UPDATED":"Updated"},"PORTAL":{"APPLICATIONS":{"HIRING_FLOW_STEP":{"RECEIVED":{"TITLE":"Referral Received"}}}},"SHOW_LESS":"Show Less"},"SUMMARY":{"TRACK_REFERRALS":"Track All Your Referrals","ACTIVE_REFERRALS":"Active Referrals","LATEST_REFERRAL":"Your Latest Referral"},"MESSAGES":{"ERROR_POPUP":{"TITLE":"Error","BODY":"Error Message. You should probably update the token."}},"SUMMARY_BAR":{"REFERRED_ON_INFO":"On {{date}} for the <u><b>{{title}}</b></u> Position in {{location}}"},"MAKE_REFERRAL":{"ABOUT_REFERRAL":"Tell us about your referral","PHONE":"Phone","BACK_BUTTON":"Back","MENTION_NO":"No","EMAIL":"Email","LAST_NAME":"Last Name","MENTION_YES":"Yes","FIRST_NAME":"First Name","FIT":"Why is this person a good fit?","SUBMIT_BUTTON":"Submit","MENTION":"Can we mention you when we reach out to this candidate?","TITLE":"Make a Referral","RELATIONSHIP":"What is your relationship to this person?"},"FAQ":{"MORE_FAQ":"More FAQs","ANSWER":{"1":"Test Referral FAQ Answer 1","2":"Test Referral Answer 2","3":"Test referrals faq answer 3","4":"Test faq referrals answer 4"},"HEADER":"Frequently Asked Questions","SUBHEADER":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.","QUESTION":{"1":"Test FAQ Question 1","2":"Test Referral Question 2","3":"Testing Referrals Question 3","4":"Test referral faq question 4"}},"TABS":{"SEARCH_REFER":"Search Jobs & Refer","SEARCH":{"BUTTON":"<a token-data=\"REFERRALS.TABS.SEARCH.BUTTON\" token-type=\"text\" href=\"/internal/jobs\">Search Open Jobs</a>"},"INFO_BLOCKS":{"SUB_TITLE":{"1":"Know someone who'd be a great fit?","2":"Follow their progress through the recruitment process."},"TITLE":{"1":"1. Refer","2":"2. Track"},"CONTENT":{"1":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.","2":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet."}},"LEARN":{"BUTTON":"<a token-data=\"REFERRALS.TABS.LEARN.BUTTON\" token-type=\"text\" href=\"/internal/jobs\"> Learn More </a>"},"ABOUT":"About","REFERRALS":"Your Referrals"},"MAIN":{"BANNER":{"TITLE":"Welcome back, {{fname}} {{lname}}!","HERO":"https://cms.jibecdn.com/prod/jibeapply/assets/REFERRALS-MAIN-BANNER-HERO-en-us-1597330851986.jpg"}}},"MAINTENANCE":{"PARAGRAPH":"We have temporarily grounded our site to bring you an enhanced pilot applicant experience.  Please come back on November 29th to create/update your profile!","HEADER":"FedEx"},"TALENT_COMMUNITY":{"JIBE_INPUT-STATE-PLACEHOLDER":"State","JIBE_INPUT-PREFERRED-SKILLS":"Preferred Skills","JIBE_INPUT-SEEKING_LEVEL":"Seeking Level","JIBE_INPUT-JOB_CATEGORY":"Job Category","JIBE_INPUT-ZIP_CODE":"Postal Code","JIBE_INPUT-NON_COMPETE":"Non-compete in place with your current employer?","JIBE_INPUT-TITLE-PLACEHOLDER":"Add Title","JIBE_LABEL-SELECT_AN_OPTION":"-- Select an Option --","JIBE_INPUT-CONTACT_METHOD_PHONE":"Phone","JIBE_INPUT-EDUCATION_MAJOR":"Major","JIBE_INPUT-EDUCATION_MAJOR-PLACEHOLDER":"Major","JIBE_INPUT-JOB_ALERTS_CONSENT":"I want to receive job alerts for my category and location preferences and agree to the <a href=\"#\">Privacy Policy</a>","JIBE_INPUT-LAST_NAME-PLACEHOLDER":"Last Name","JIBE_INPUT-GENERAL_CONSENT":"I agree to share my profile with recruiters and receive occasional emails about new career opportunities.","ALERTS_UNSUBSCRIBE_SUBHEADER":"You have been unsubscribed from all job alerts.","JIBE_INPUT-PHONE_TYPE_HOME":"Home","JIBE_INPUT-LANGUAGES":"Languages","JIBE_SECTION_HEADING-CONTACT":"Contact Info <hr>","JIBE_INPUT-ADDRESS2":"Address 2","JIBE_INPUT-ELIGIBILITY_EU":"Eligible to work in the EU?","JIBE_INPUT-FIRST_NAME-PLACEHOLDER":"&nbsp;","JIBE_INPUT-CAMPAIGN_CONSENT_TITLE":"Campaign Consent","JIBE_INPUT-PREVIOUSLY_WORKED_FOR":"Previously worked for","JIBE_SIGNUP_SUBHEADER":"Not ready to apply or having a hard time finding your ideal position? Join our talent network while you explore. We are looking forward to learning more about you.","JIBE_INPUT-ADDRESS1":"Address 1","JIBE_INPUT-EDUCATION_CURRENT":"Is Current","JIBE_INPUT-LOCATION_PREFERENCES":"Location Preferences","JIBE_INPUT-TITLE":"Title","JIBE_INPUT-CONSENT_ERROR":"You must accept this privacy policy before submitting.","JIBE_INPUT-CONTACT_METHOD_SMS":"SMS","JIBE_INPUT-LATEST_COMPANY-PLACEHOLDER":"Company","JIBE_INPUT-ELIGIBILITY_US":"Eligible to work in the US?","JIBE_RESTRICTED_EMAIL_ERROR":"This action could not be completed.","JIBE_INPUT-CONTACT_TIME_MORNING":"Morning","JIBE_INPUT-HEADLINE-PLACEHOLDER":"Add Headline","JIBE_INPUT-ZIP_CODE-PLACEHOLDER":"Postal Code","JIBE_INPUT-GROUP":"Area of Interest","JIBE_INPUT-EMAIL":"Email Address","JIBE_INPUT-PHONE_TYPE":"Phone Type","JIBE_SECTION_HEADING-EMPLOYER_SEEKING":"Career Areas <hr>","JIBE_SECTION_HEADING-ELIGIBILITY":"Eligibility <hr>","JIBE_INPUT-CONTACT_METHOD":"Contact Method","JIBE_INPUT-EDUCATION_GRAD":"Graduation Date","JIBE_INPUT-LOCATION_PREFERENCES-PLACEHOLDER":"Add Locations (Include City and State)","JIBE_INPUT-RELOCATION_PREFERENCE_NO":"No","JIBE_INPUT-FIRST_NAME":"First Name","JIBE_INPUT-RELOCATION_PREFERENCE":"Willing to Relocate?","JIBE_INPUT-SEEKING_STATUS":"Seeking Status","JIBE_INPUT-CITY-PLACEHOLDER":"City","JIBE_INPUT-EDUCATION_SCHOOL-PLACEHOLDER":"School","JIBE_INPUT-EDUCATION_DEGREE":"Degree","JIBE_INPUT-LATEST_COMPANY":"Company","JIBE_INPUT-ATTRIBUTES":"Select one or more areas of interest","SIGNUP_ERROR":{"CC-104":"Email address already in use"},"JIBE_INPUT-SKILLS":"Skills","JIBE_SECTION_HEADING-WORK_HISTORY":"Latest Job <hr>","JIBE_INPUT-EDUCATION_LEVEL":"Education Level","JIBE_INPUT-PHONE_TYPE_MOBILE":"Mobile","JIBE_INPUT-JOB_ALERTS_CONSENT_TITLE":"Job Alerts","JIBE_INPUT-LATEST_CURRENT":"Is Current","JIBE_INPUT-LATEST_TITLE-PLACEHOLDER":"Title","JIBE_INPUT-CONTACT_METHOD_EMAIL":"Email","JIBE_THANKS_HEADER":"Thanks for joining our Talent Community!","JIBE_INPUT-EDUCATION_GRAD-PLACEHOLDER":"Add Graduation Date","JIBE_INPUT-PHONE_TYPE_WORK":"Work","JIBE_INPUT-CAMPAIGN_CONSENT":"I want to be subscribed to campaign email messages about career opportunities and I agree to the <a href=\"#\">Privacy Policy</a>","JIBE_INPUT-ADDRESS1-PLACEHOLDER":"Address 1","JIBE_INPUT-RESUME_UPLOAD":"Resume Upload","JIBE_INPUT-EDUCATION_SCHOOL":"School","JIBE_INPUT-STATE":"State","JIBE_SECTION_HEADING-WORK_EDUCATION":"Work and Education Summary <hr>","JIBE_INPUT-ADDRESS2-PLACEHOLDER":"Address 2","UNSUBSCRIBE_HEADER":"Unsubscribe","JIBE_THANKS_SUBHEADER":"We’re thrilled you’ve decided to stay connected with us!","JIBE_INPUT-CONTACT_TIME":"Contact Time","JIBE_INPUT-RELOCATION_PREFERENCE_YES":"Yes","JIBE_SIGNUP_SUBMIT":"Submit","JIBE_INPUT-CONTACT_TIME_AFTERNOON":"Afternoon","JIBE_INPUT-GENERAL_CONSENT_TITLE":"Consent","JIBE_INPUT-CITY":"City","JIBE_SECTION_HEADING-EDUCATION_HISTORY":"Education <hr>","CAMPAIGN_UNSUBSCRIBE_SUBHEADER":"You have been unsubscribed from all email notifications.","JIBE_INPUT-LAST_NAME":"Last Name","JIBE_INPUT-COUNTRY":"Country","JIBE_INPUT-PHONE_NUMBER":"Phone Number","JIBE_INPUT-EXPERIENCE_LEVEL":"Years of Work Experience","JIBE_INPUT-HEADLINE":"Headline","JIBE_INPUT-CONTACT_TIME_EVENING":"Evening","JIBE_INPUT-EMAIL-PLACEHOLDER":"Email Address","JIBE_INPUT-LATEST_TITLE":"Title","JIBE_INPUT-PHONE_NUMBER-PLACEHOLDER":"Phone Number"},"CAP":{"SHOW-MORE":"Show More","TIPS-HEADER":"Tips & Guidance","TOGGLE":{"PROFILE":"Profile","APPLICATIONS":"Applications"},"APP-TOTAL":"You have {{param}} job applications","SIDEBAR":{"AUTHOR":"{{param}}"},"UPDATED":"Updated","SHOW-LESS":"Show Less","NOTIFICATION":{"CLOSE":"Close"},"ARTICLE":{"BACK":"Back"},"APPLIED-ON":"Applied on:","PROFILE":{"EMPLOYMENT_HISTORY":{"TAB":"Employment History"},"SKILLS":{"TAB":"Skills","SELECT":"Select Type"},"SETTINGS":{"TAB":"Settings"},"SAVE":"Save","NOTIFICATIONS":{"FROZEN":"Your account data is currently frozen. Please unfreeze your data to enable this form."},"PERSONAL_INFO":{"TAB":"Personal Information","PHONE":"Phone","EMAIL":"Email","LAST_NAME":"Last Name","LOCATION_PREFERENCE":"Work Location Preference","PHONE_TYPE":{"LABEL":"Phone Type","WORK":"Work","CELL":"Cell","HOME":"Home"},"FIRST_NAME":"First Name"},"EMAILS":{"TAB":"Emails & Alerts"},"VALIDATIONS":{"DATE":{"MIN":"Please enter a date after {{date}}.","MAX":"Please enter a date on or before {{date}}.","INVALID":"Please enter a valid date."},"PHONE":"Please enter a valid phone number.","REQUIRED":"This field is required.","EMAIL":"Please enter a valid email address."},"EDUCATION_HISTORY":{"TAB":"Education History"}},"UPLOAD":{"DOCUMENTS":"Your Documents"},"APP-DETAILS":"Application Details","SEARCH-JOBS":"Search Jobs","FAQ":{"MORE_BUTTON":"MoreFAQs","HEADER":"Frequently Asked Questions"},"SKIP":"Skip to main content"},"TEST":{"TOKEN":"test token."},"OPCO-DROPDOWN":{"LINK-17":"<a target=\"_blank\" href=\"http://jobs.brassring.com/1033/ASP/TG/cim_home.asp?partnerid=25735&siteid=5049\">FedEx Ground All Other Positions</a>","LINK-HEADER_3":"Latin America and Caribbean","LINK-16":"<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://jobs.brassring.com/1033/ASP/TG/cim_home.asp?partnerid=25735&siteid=5050\">FedEx Ground Package Handler Positions</a>","LINK-HEADER_4":"Asia Pacific","LINK-19":"<a target=\"_blank\" href=\"https://genco.taleo.net/careersection/iam/accessmanagement/login.jsf?lang=en&redirectionURI=https%3A%2F%2Fgenco.taleo.net%2Fcareersection%2F2%2Fmysubmissions.ftl%3Fpostdata%3D%24CRmKz9QYz3JxipxnVD5-xw%3D%3D%26lang%3Den%26ftlcompclass%3DPageComponent&TARGET=https%3A%2F%2Fgenco.taleo.net%2Fcareersection%2F2%2Fmysubmissions.ftl%3Fpostdata%3D%24CRmKz9QYz3JxipxnVD5-xw%3D%3D%26lang%3Den%26ftlcompclass%3DPageComponent\">FedEx Supply Chain</a>","LINK-HEADER_5":"Europe","LINK-18":"<a target=\"_blank\" href=\"https://fedex.wd1.myworkdayjobs.com/FXE-LAC_External_Career_Site/login\">FedEx Express</a>","LINK-HEADER_6":"Middle East, Indian Subcontinent, and Africa","LINK-2":"<a target=\"_blank\" href=\"https://fedex.wd1.myworkdayjobs.com/FCC_External/login\">FedEx Custom Critical</a>","LINK-HEADER_1":"United States","LINK-1":"<a target=\"_blank\" href=\"https://fedex.wd1.myworkdayjobs.com/FXS-FXC_External_Career_Site/login\">FedEx Corporation</a>","LINK-HEADER_2":"Canada","HEADER":"Manage Your Career Profiles","LINK-11":"<a target=\"_blank\" href=\"http://jobs.brassring.com/1033/ASP/TG/cim_home.asp?partnerid=25961&siteid=5122\">FedEx Trade Networks Trade Services, Inc.</a>","LINK-10":"<a target=\"_blank\" href=\"https://genco.taleo.net/careersection/iam/accessmanagement/login.jsf?lang=en&redirectionURI=https%3A%2F%2Fgenco.taleo.net%2Fcareersection%2F2%2Fmysubmissions.ftl%3Fpostdata%3D%24CRmKz9QYz3JxipxnVD5-xw%3D%3D%26lang%3Den%26ftlcompclass%3DPageComponent&TARGET=https%3A%2F%2Fgenco.taleo.net%2Fcareersection%2F2%2Fmysubmissions.ftl%3Fpostdata%3D%24CRmKz9QYz3JxipxnVD5-xw%3D%3D%26lang%3Den%26ftlcompclass%3DPageComponent\">FedEx Supply Chain</a>","LINK-13":"<span style=\"display:none;height:0px;width:0px;\"></span>","LINK-12":"<a target=\"_blank\" href=\"http://jobs.brassring.com/1033/ASP/TG/cim_home.asp?partnerid=25966&siteid=5108\">FedEx Trade Networks Transport & Brokerage, Inc.</a>","LINK-15":"<a target=\"_blank\" href=\"https://fedex.wd1.myworkdayjobs.com/FXF_External_Career_Site/login\">FedEx Freight</a>","LINK-14":"<a target=\"_blank\" href=\"https://fedex.wd1.myworkdayjobs.com/FXE-Canada_External_Career_Site/login\">FedEx Express</a>","LINK-27":"<a target=\"_blank\" href=\"https://fedex.wd1.myworkdayjobs.com/FXF-MEX-External/login\" token-data=\"OPCO-DROPDOWN.LINK-26\" token-type=\"text\">FedEx Freight Mexico</a>","LINK-20":"<a target=\"_blank\" href=\"https://fedex.wd1.myworkdayjobs.com/FXE_APAC_External/login\">FedEx Express</a>","LINK-22":"<a target=\"_blank\" href=\"https://fedex.wd1.myworkdayjobs.com/FXE-EU_External/login\">FedEx Express</a>","LINK-21":"<a target=\"_blank\" href=\"https://fedex.wd1.myworkdayjobs.com/FTN_APAC_External/login\">FedEx Logistics</a>","LINK-24":"<a target=\"_blank\" href=\"https://fedex.wd1.myworkdayjobs.com/FTN_EMEIA_External/login\">FedEx Logistics</a>","LINK-23":"<a target=\"_blank\" href=\"https://fedex.wd1.myworkdayjobs.com/FXE-MEISA-External/login\">FedEx Express</a>","LINK-26":"<a target=\"_blank\" href=\"https://fedex.wd1.myworkdayjobs.com/FTN_CAN_External/login\" token-data=\"OPCO-DROPDOWN.LINK-26\" token-type=\"text\">FedEx Trade Networks</a>","LINK-25":"<a target=\"_blank\" href=\"https://fedex.wd1.myworkdayjobs.com/FTN_EMEIA_External/login\">FedEx Logistics</a>","PLACEHOLDER":"Select An Operating Company","LINK-4":"<a target=\"_blank\" href=\"https://fedex.wd1.myworkdayjobs.com/FXF_External_Career_Site/login\">FedEx Freight</a>","LINK-3":"<a target=\"_blank\" href=\"https://fedex.wd1.myworkdayjobs.com/FXE-US_External_Career_Site/login\">FedEx Express</a>","LINK-6":"<a target=\"_blank\" href=\"https://groundcareers.fedex.com/groundcareers/\">FedEx Ground All Other Positions</a>","LINK-5":"<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://groundwarehousejobs.fedex.com/groundwarehousejobs/\">FedEx Ground Package Handler Positions</a>","LINK-8":"<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://fedex.wd1.myworkdayjobs.com/FXO_External/login\" token-data=\"OPCO-DROPDOWN.LINK-8\" token-type=\"text\">FedEx Office</a>","LINK-7":"<a target=\"_blank\" href=\"https://fedex.wd1.myworkdayjobs.com/FTN_External_Career_Site/login\" token-data=\"OPCO-DROPDOWN.LINK-7\" token-type=\"text\">FedEx Logistics</a>","LINK-9":"<a target=\"_blank\" href=\"https://fedex.wd1.myworkdayjobs.com/FXS-FXC_External_Career_Site/login\">FedEx Services</a>"},"FOOTER_BOTTOM":{"FACEBOOK":"<a href='https://www.facebook.com/FedEx' aria-label='facebook social media link'><i class=\"fa fa-facebook-square\" aria-hidden=\"true\"></i></a>","INSTAGRAM":"<a href='https://www.instagram.com/fedex' aria-label='instagram social media link'><i class=\"fa fa-instagram\" aria-hidden=\"true\"></i></a>","TUMBLR":"<a href='http://fedex.tumblr.com/' aria-label='tumblr social media link'><i class=\"fa fa-tumblr-square\" aria-hidden=\"true\"></i></a>","LINKEDIN":"<a href='https://www.linkedin.com/company/fedex' aria-label='linkedin social media link'><i class=\"fa fa-linkedin-square\" aria-hidden=\"true\"></i></a>","YOUTUBE":"<a href='https://www.youtube.com/user/fedex/custom' aria-label='youtube social media link'><i class=\"fa fa-youtube-square\" aria-hidden=\"true\"></i></a>","TWITTER":"<a href='https://twitter.com/fedex' aria-label=\"twitter social media link\"><i class=\"fa fa-twitter-square\" aria-hidden=\"true\"></i></a>"},"GDPR":{"APPLY_CONSENT_BODY":"<p>This career site protects your privacy by adhering to the European Union General Data Protection Regulation (GDPR). We will not use your data for any purpose to which you do not consent.</p>\n\n<p>We store anonymized interaction data in an aggregated form about visitors and their experiences on our site using cookies and tracking mechanisms.  We use this data to fix site defects and improve the general user experience.</p>\n\n<p>We request use of your data for the following purposes:</p>\n\n<p>Job Application Data</p>\n<p>This site may collect sensitive personal information as a necessary part of a job application. The data is collected to support one or more job applications, or to match you to future job opportunities. This data is stored and retained for a default period of 12 months to support job matching or improve the user experience for additional job applications. The data for each application is transferred to the Applicant Tracking System in order to move the application through the hiring process.<br />\nYou have the right to view, update, delete, export, or restrict further processing of your job application data. To exercise these rights, you can e-mail us at <a href=\"mailto:privacy@icims.com\">privacy@icims.com</a>.<br />\nConversion Tracking<br />\nWe store anonymized data on redirects to the career site that is used to measure the effectiveness of other vendors in sourcing job candidates.</p>\n\nLearn more about your career site data on our <a href=\"https://www.icims.com/legal/privacy-notice-website/\">Privacy Policy</a> page.</p>","APPLY_CONSENT_TEXT":"<h3>Consent and Data Privacy</h3>","COOKIE_CONSENT_BUTTON_DENY":"Decline","APPLY_CONSENT_DECLINE":"Decline","CLOSE":"x","APPLY_CONSENT_ACCEPT":"Accept","PIXEL_TRACKING_CONSENT_TEXT":"Do you want a Cookie?","THIRDPARTY_CONSENT_BUTTON_DENY":"Decline","THIRDPARTY_TRACKING_CONSENT_TEXT":"Anonymized data is stored for redirects to the career site tracking successful searches leading to job applications in effort to measure effectiveness of partners in sourcing job candidates and job searches. We request use of anonymized data to improve your experience on our site.","COOKIE_CONSENT_BUTTON_ACCEPT":"Okay","THIRDPARTY_CONSENT_BUTTON_ACCEPT":"Accept","CONSENT_BUTTON":"Accept","COOKIE_TRACKING_CONSENT_TEXT":"Cookies are used on this site to assist in continually improving the candidate experience and all the interaction data we store of our visitors is anonymous. Learn more about your rights at our <a href=\"https://www.fedex.com/en-us/trust-center.html\">Trust Center</a>."},"CRM":{"ISHIRED_FILTER_YES":"Yes","ISHIRED_FILTER_LABEL":"Current Employee","VIP_NAME":"VIP","SEARCH":{"TITLE":"Search"},"GROUP_LABEL":"Group","CANDIDATE_DETAIL":{"MAIN":{"INVITE_TO_JOIN_HEADER":"Invite to Join Nurture"},"REFERRALS_DETAIL":{"SUBHEADER":{"REFERRER":"Endorser"}},"HEADER":{"REFERRALS_TAB":"Endorsements"},"BACKGROUND":{"PROFILE":{"MAIN_SECTION_BASIC_INFO_INELIGIBLE_LABEL":"Temporarily Rejected Until","CONTACT_UNSUBSCRIBED":"Unsubscribed","CONTACT_SUBSCRIBED":"Subscribed"},"ACTIVITY":{"HIRING_STATUS_DATETIME":"Date/Time"}}},"SETTINGS":{"RECRUITER_MANAGEMENT":{"FORM_INPUT_ATSID_HELPER_TEXT":"This is located in Recruit on the top left the User Profile.  It's also located on the Person Reporting page under \"Reporting & Advanced Options - General\" as \"System ID\".","FORM_INPUT_ATSID_PLACEHOLDER":"iCIMS System ID"}},"PIPELINE_LABEL":"Pipeline","RESULTS_TABLE":{"CURRENT_ROLE_HEADER":"Current Role"},"ADD_EDIT":{"ELIGIBILITY_INFORMATION":{"COUNTRIES_TITLE":"Which Countries?","FLUENT_TITLE":"Fluent Languages"},"SOCIAL_LINKS":{"TITLE":"Websites"}},"SCORE_LABEL":"Score","CANDIDATE_AUTH_LABEL":"Candidate Authenticated","PIPELINES_LABEL":"Pipeline","ISHIRED_FILTER_NO":"No","REFERRAL_SOURCE_NAME":"Referral Source","CANDIDATE_GENERATED":"Candidate Generated","CONSENT":{"TEXT":"CONSENT_VERSION={1.0.0}\n<p> This application protects your privacy by adhering to the European Union General Data Protection Regulation (GDPR). Jibe will not use your data for any purpose to which you do not consent.\n</p>\n<p> We request use of your data for the following purposes:\n  <br /><br />\n  <b>User Authentication</b>\n</p>\n<p>\n  This site retains personally identifiable information, specifically e-mail addresses, as a necessary part of user login. This data is retained for the duration of the user profile lifecycle and enables user authentication.\n</p>\n<p>\n  <br />\n  <b>Usage Analytics</b>\n</p>\n<p> We store anonymized usage data to measure and improve the effectiveness of this CRM application in filling job requisitions and managing talent communities.\n</p>\n<p>\n  <br />\n  <b>E-mails to Candidates</b>\n</p>\n<p> We collect your personal information such as name and email address. This information is used when you send marketing or contact emails to candidates.\n\n</p>\n<br />\n<a target=\"_blank\" href=\"https://jibe.com/privacy-policy\">Click here</a> for a link to our Privacy Policy page."},"RECRUITER_GEN_LABEL":"Recruiter Generated","RECRUITER_GENERATED":"Recruiter Generated","JOB":{"RECRUITER":"Recruiter","HIRING_MANAGER":"Hiring Manager"}},"DATEPICKER":{"JANUARY":"January","JUNE":"June","MAY":"May","OCTOBER":"October","TODAY":"Today","DECEMBER":"December","FEBRUARY":"February","SEPTEMBER":"September","NOVEMBER":"November","SELECT_YEAR":"Select Year","MARCH":"March","AUGUST":"August","JULY":"July","APRIL":"April"},"COMPLETED_PAGE_PILOT_BUTTON":"<a token-data=\"COMPLETED_PAGE_PILOT_BUTTON\" token-type=\"text\" href=\"https://fedex.staging.jibeapply.com/apply/P0001\" class=\"search-for-another\">Re-enter Profile</a>","HEADER":{"LANGUAGE-PICKER-6":"<a token-data=\"HEADER.LANGUAGE-PICKER-6\" token-type=\"text\" href=\"/1/login/?lang=es-MX\">Español</a>","COVID_19":"<font style=\"font-size:14px\">FedEx team members have a critical role in ensuring the delivery of test kits and medical supplies to communities as they fight the spread of COVID-19.\n<br> \nFedEx has immediate openings in multiple business-critical areas. View critical openings <a style=\"font-weight: bold;\" href=\"/fedex#covid-openings\"><font color=\"4D1480\">here</font></a><font/>","LANGUAGE-PICKER-2":"<a token-data=\"HEADER.LANGUAGE-PICKER-2\" token-type=\"text\" href=\"/1/login/?lang=it-IT\">Italiano</a>","LANGUAGE-PICKER-3":"<a token-data=\"HEADER.LANGUAGE-PICKER-3\" token-type=\"text\" href=\"?lang=de-DE\">Deutsch</a>","LANGUAGE-PICKER-4":"<a token-data=\"HEADER.LANGUAGE-PICKER-4\" token-type=\"text\" href=\"/1/login/?lang=nl-NL\">Nederland</a>","MILITARY_BANNER":"Introducing intuitive Job Search<br>with Military MOS Codes!<br><br>Try in the Search bar below","LANGUAGE-PICKER-5":"<a token-data=\"HEADER.LANGUAGE-PICKER-5\" token-type=\"text\" href=\"/1/login/?lang=pl-Pl\">Polska</a>","LINK_ABOUT":"<a href=\"/fedex#about-us\">About Us</a>","MILITARY-LOGO-TEXT":"For Veterans","LANGUAGE-PICKER-1":"<a token-data=\"HEADER.LANGUAGE-PICKER-1\" token-type=\"text\" href=\"/1/login/?lang=fr-FR\">Français</a>","LINK_COMPANIES":"<a href=\"/fedex#our-companies\">Companies</a>","LINK_CAREER_TALENTCOMMUNITY":"<a token-data=\"HEADER.LINK_CAREER_TALENTCOMMUNITY\" token-type=\"text\" href=\"https://careers.fedex.com/freight/talentcommunity/signup\">Talent Network</a>","LINK_I_AM_FEDEX":"<a href=\"/fedex#about-us\">I am FedEx</a>","LINK_MILITARY":"<a token-data=\"HEADER.LINK_MILITARY\" token-type=\"text\" href=\"/military\">Military</a>","LINK_CAREER_PROFILE_FREIGHT":"<a token-data=\"HEADER.LINK_CAREER_PROFILE_FREIGHT\" token-type=\"text\" href=\"https://fedex.wd1.myworkdayjobs.com/FXF_External_Career_Site/login\">Career Profile</a>","LINK_FEATURED_JOBS":"<a href=\"/fedex#featured-jobs\">Featured Jobs</a>","LINK_CAREER_PROFILE_FLEET":"<a token-data=\"HEADER.LINK_CAREER_PROFILE_FLEET\" token-type=\"text\" href=\"https://sjobs.brassring.com/TGnewUI/Search/Home/Home?partnerid=25892&siteid=5069#home\">Career Profile</a>","MILITARY-4":"<a href=\"/fedex/jobs?page=1\" token-data=\"HEADER.MILITARY-4\" token-type=\"text\">Search Careers<i class=\"fa fa-search\" aria-hidden=\"true\"></i></a>","LINK_OVERVIEW":"<a href=\"/fedex#fedex-cares\">FedEx Cares</a>","LOGO_LINK":"/fedex","MILITARY-1":"<a href=\"/military-life\" token-data=\"HEADER.MILITARY-1\" token-type=\"text\">Life @ Fedex</a>","MILITARY-2":"<a href=\"/military-why-fedex\" token-data=\"HEADER.MILITARY-2\" token-type=\"text\">Why FedEx?</a>","MILITARY-3":"<a href=\"/military-how-we-hire\" token-data=\"HEADER.MILITARY-3\" token-type=\"text\">How We Hire</a>"},"EVENTBRITE":{"EVENTS":{"TITLE":"Upcoming Events"},"NO-EVENTS":{"TITLE":"Sorry, there are no upcoming events."}},"COVID":{"POSITION_5_LINK":"<a token-data=\"COVID.POSITION_5_LINK\" token-type=\"text\" href=\"https://careers.fedex.com/fedex/jobs?keywords=CIL%20Material&country=United%20States%7CCanada&page=1&sortBy=relevance\"> View Jobs</a>","POSITION_1":"Package Recovery Agent","POSITION_2_LINK":"<a token-data=\"COVID.POSITION_2_LINK\" token-type=\"text\" href=\"https://careers.fedex.com/fedex/jobs?keywords=Package%20Handler%20Express&brand=FedEx%20Express%7CFedEx%20Express%20Canada%7CFedEx%20Freight%7CFedEx%20Freight%20Canada%7CFedEx%20Ground%7CFedEx%20Ground%20Canada%7CFedEx%20Logistics%7CFedEx%20Supply%20Chain&page=1\"> View Jobs</a>","POSITION_4":"Operations Manager","POSITION_5":"CIL Material Handler","POSITION_2":"Package Handler","POSITION_3":"Maintenance Tech","POSITION_3_LINK":"<a token-data=\"COVID.POSITION_3_LINK\" token-type=\"text\" href=\"https://careers.fedex.com/fedex/jobs?page=1&keywords=Maintenance%20Tech&sortBy=relevance&brand=FedEx%20Express%7CFedEx%20Ground%7CFedEx%20Supply%20Chain\"> View Jobs</a>","POSITION_8_LINK":"<a token-data=\"COVID.POSITION_8_LINK\" token-type=\"text\" href=\"https://careers.fedex.com/fedex/jobs?keywords=Warehouse%20Worker&country=United%20States%7CCanada&page=1&sortBy=relevance\"> View Jobs</a>","SUB_TITLE":"The crucial role we play in the global supply chain and delivering critical relief makes FedEx an essential business and allows us to continue to operate under state of emergency and shelter in place orders recently issued in the U.S.","POSITION_6_LINK":"<a token-data=\"COVID.POSITION_6_LINK\" token-type=\"text\" href=\"\t\n          https://careers.fedex.com/fedex/jobs?keywords=Customs%20Trade&page=1&sortBy=relevance\"> View Jobs</a>","POSITION_8":"Warehouse Worker","POSITION_9_LINK":"<a token-data=\"COVID.POSITION_9_LINK\" token-type=\"text\" href=\"/jobs?keywords=Retail%20Customer%20Service%20Associate\"> View Jobs</a>","POSITION_1_LINK":"<a token-data=\"COVID.POSITION_1_LINK\" token-type=\"text\" href=\"https://careers.fedex.com/fedex/jobs?keywords=Package%20Recovery%20Agent&country=United%20States%7CCanada&page=1\"> View Jobs</a>","POSITION_9":"Retail Positions","POSITION_6":"Customs Trade Agent","TITLE":"Critical Openings Available for FedEx","POSITION_7":"Forklift Operator","POSITION_7_LINK":"<a token-data=\"COVID.POSITION_7_LINK\" token-type=\"text\" href=\"https://careers.fedex.com/fedex/jobs?keywords=Forklift%20Operator&country=United%20States%7CCanada&page=1&sortBy=relevance\"> View Jobs</a>","POSITION_4_LINK":"<a token-data=\"COVID.POSITION_4_LINK\" token-type=\"text\" href=\"\t\n          https://careers.fedex.com/fedex/jobs?keywords=%20Operations%20Manager&brand=FedEx%20Custom%20Critical%7CFedEx%20Express%7CFedEx%20Freight%20Canada%7CFedEx%20Ground%7CFedEx%20Ground%20Canada%7CFedEx%20Office%7CFedEx%20Supply%20Chain&page=1\"> View Jobs</a>"},"360VIDEO_TEST":"https://cms.jibecdn.com/prod/fedex/assets/360VIDEO_TEST-en-us-1553710299212.JPG","COMPLETE":{"TRACKING_PIXELS":""},"JOB_DESCRIPTION_FOOTER":{"EEO":""},"PROFILE":{"NO_COMPLETED_APPLICATIONS":"You have not completed any applications","UNABLE":"We were unable to retrieve your submitted applications. Try refreshing the page.","LOGOUT_ERROR":"There was an error logging out. Please try again.","MANAGE_PROFILE":"Manage Profile","HEADER":"User Profile","COMPLETED_APPLICATIONS":"Completed Applications"},"KENEXA":{"ERROR_MESSAGE":{"QUESTIONS":{"328":"The username/Email was not recognized. Please check the spelling and try again."},"FORGOT":{"16":"The answer to your security question must be less than 50 characters.","211":"Your new password must not be the same as a recently used password.","212":"Password cannot be the same as the username.","243":"You have attempted to change your password twice within a 24hrs period. For your security, password changes are only allowed once per day. Please wait 24hrs to reset your password again.","251":"Password must be at least eight characters.","252":"Your password must contain at least one of the following special characters: {}[],.<>;:'\"?/|`~!@#$%^&*()_-+=.","253":"Your password must not be the same as any of the 5 preceding passwords.","404":"Incorrect Security Answer."},"CREATE":{"251":"Password must be at least eight characters.","252":"Your password must contain at least one of the following special characters: {}[],.<>;:'\\\"?/|\\\\`~!@#$%^&*()_-+=.","311":"Your log in credentials cannot be validated. You may have created an account in the past, if so please click the 'forgot your password' link to reset your password.","315":"Your password may not be the same as your login e-mail address.","319":"Your password must contain at least one of the following special characters: {}[],.<>;:'\"?/|`~!@#$%^&*()_-+=.","320":"Your password must be between 8 and 25 characters.","322":"Invalid Security Question.","327":"Your username must not include the following characters: < >.","404":"The answers you provided do not match the answers to your security questions. Please try again.","428":"Security questions and answers must be unique."},"LOGIN":{"202":"Unable to find that email/password in the system.","203":"The account has been locked out due to excessive invalid login attempts. Please try again later.","204":"The login was successful; however, a password reset is required.","205":"The site requested is inactive or does not exist."}},"SECURITY":{"ANSWER":{"LABEL":"Security Answer"},"QUESTION":{"1":"What is the name of your first school?","2":"Where is your favorite vacation spot?","3":"What is your mother's maiden name?","4":"What is your first pet’s name?","5":"What is the first car you owned?","6":"What is the name of your favorite restaurant?","7":"What is your paternal grandfather’s first name?","8":"What is your father’s middle name?","9":"What is the city of your first school?","10":"What is the name of the street on which you lived when you were 5 years old?","LABEL":"Security Question"}},"RESET":{"SUBMIT":"Reset Password","HEADER":"Password Recovery"}},"COMPLETED_PAGE_PILOT_PARAGRAPH":"Thank you.","JIBE1_ERROR":{"AP107":"New Password cannot be shorter than 8 characters.","AP106":"Please supply the correct Current Password.","AP109":"New Password must contain at least one lowercase character (a-z).","AP108":"New Password cannot be longer than 20 characters.","AP110":"New Password must contain at least one uppercase character (A-Z).","AP101":"Your username or password is incorrect.","AP112":"New Password must contain at least one special character character (~ ! @ # $ %% ^ & * ( ) - _ + =).","AP111":"New Password must contain at least one numeric character (0-9).","CC103":"The maximum number of requests has been exceeded.","AP103":"There is no email address registered to this user account.","CC102":"Your account has been locked.","CC101":"The applicant profile with this email address already exists.","AP102":"The login identifier is invalid.","AP113":"New Password can contain only the following characters (a-Z, A-Z, 0-9) and these symbols: ~ ! @ # $ %% ^ & * ( ) - _ + =","AP105":"You are not permitted to change your password.","AP104":"The New Password Confirmation does not match the New Password."},"HERO":{"HEADER_VIDEO_SOURCE":"<source src='https://assets.jibecdn.com/staging/fedex/0.18.568/assets/fedex-main/video-hero.mp4' type='video/mp4'>","HEADER":"Join FedEx"},"NOTIFICATIONS":{"NOT_LOGGED_IN":"You must be logged in to continue.","UNKNOWN_ERROR":"An unknown server error occurred. Please reload the page and try again."},"mailto-svg":"https://cms.jibecdn.com/prod/jibeapply/assets/mailto-svg-en-us-1531839463798.svg","NO_CITY":"No city","No_COUNTRY":"No country","JOB_ALERTS":{"TOGGLE_ALERT":"Sign up for Job Alerts","DELETE_MODAL_TITLE":"CONFIRM DELETION","NO_ALERTS":"No Job Alerts","CONFIRMATION_SUCCESS_SUBTEXT":"Check your inbox, starting tomorrow, for jobs containing the following keywords","ERROR_NETWORK_SUBTEXT":"Unfortunately, our network is not responding. Please try again later.","DELETE_MODAL_PROMPT":"Are you sure you want to delete this job alert?","ERROR_EMAIL":"Email empty or invalid","MANAGER_HEADER":"Saved Job Alerts","CONFIRMATION_SUCCESS":"Your job alert was successfully created.","ERROR_NETWORK":"Your job alert was NOT created."},"FOOTER":{"CUSTOMER_SUPPORT":"<a href=\"http://www.fedex.com/us/customersupport/\">Customer Support</a>","FEATURED_SERVICES":"<a href=\"#\">FEATURED SERVICES</a>","ONLINE_RETAIL_SOLUTIONS":"<a href=\"http://www.fedex.com/us/ecommerce/\">Online Retail Solutions</a>","ABOUT_FEDEX":"<a href=\"http://about.fedex.com/\">About FedEx</a>","FEDEX_ON_RATE":"<a href=\"https://www.fedex.com/us/onerate/\">FedEx One Rate</a>","FEDEX_SUPPLY_CHAIN":"<a href=\"http://supplychain.fedex.com/\">FedEx Supply Chain</a>","HEALTHCARE_SOLUTIONS":"<a href=\"http://healthcare.van.fedex.com/\">Healthcare Solutions</a>","SERVICE_GUIDE":"<a href=\"http://www.fedex.com/us/service-guide/\">Service Guide</a>","COMPANY_INFO":"<a href=\"#\">COMPANY INFORMATION</a>","FEDEX_GENCO":"<a href=\"http://www.genco.com/\">GENCO</a>","FEDEX_MOBILE":"<a href=\"http://www.fedex.com/us/mobile/\">FedEx Mobile</a>","FEDEX_TECH_CONNECT":"<a href=\"http://www.fedex.com/us/techconnect\">FedEx Tech Connect</a>","INVESTORY_RELATIONS":"<a href=\"http://www.fedex.com/us/investorrelations/\">Investor Relations</a>","DEVELOPER_CENTER":"<a href=\"http://www.fedex.com/us/developer/\">Developer Resource Center</a>","BUSINESS_CENTER":"<a href=\"http://www.fedex.com/us/small-business/\">Small Business Center</a>","FEDEX_OFFICE":"<a href=\"http://www.fedex.com/us/office\">FedEx Office</a>","FEDEX_TRADE_NETWORK":"<a href=\"https://www.fedex.com/en-us/logistics.html\">FedEx Logistics</a><br><a href=\"http://crossborder.fedex.com/us/\">FedEx CrossBorder</a>","FEDEX_HOME_DELIVERY":"<a href=\"http://www.fedex.com/us/fedex/shippingservices/package/home_delivery.html\">FedEx Home Delivery</a>","PACKAGE_SERVICES":"<a href=\"http://www.fedex.com/us/service-guide/our-services/package-shipment/\">Packaging Services</a>","COMPANIES":"<a href=\"#\">COMPANIES</a>","FEDEX_FREIGHT":"<a href=\"http://www.fedex.com/us/freight\">FedEx Freight</a>","FEDEX_GROUND":"<a href=\"http://www.fedex.com/us/ground\">FedEx Ground</a>","CUSTOMER_CENTER":"<a href=\"http://www.fedex.com/us/service-guide/new-customer/\">New Customer Center</a>","PRIVACY_POLICY":"<a href=\"https://assets.jibecdn.com/staging/fedex/0.18.568/assets/Candidate_Applicant_and_Employee_Notice.pdf\" token-data=\"FOOTER.PRIVACY_POLICY\" token-type=\"text\" target=\"_blank\">Employee and Applicant Privacy Notice</a>","FEDEX_SAME_DAY":"<a href=\"http://fedexsameday.com/\">FedEx SameDay</a>","OTHER_RESOURCES":"<a href=\"#\">OTHER RESOURCES</a>","FEDEX_COM":"<a href=\"http://www.fedex.com/us/\">FEDEX.COM</a>","CUSTOMER_FOCUS":"<a href=\"#\">CUSTOMER FOCUS</a>","SOFTWARE":"<a href=\"#\">Software</a>","FEDEX_SHIP_MANGER":"<a href=\"http://www.fedex.com/us/ship-manager/\">FedEx Ship Manager Software</a>","TALENT_COMMUNITY":"<a href=\"http://www.pages02.net/fedex_office_prod/FXO/\">Not finding a position that matches your skill set?</a> Keep in touch to learn more about future career opportunities.","FEDEX_CUSTOM_CRITICAL":"<a href=\"http://customcritical.fedex.com\">FedEx Custom Critical</a>","FEDEX_EXPRESS":"<a href=\"http://www.fedex.com/us/express\">FedEx Express</a>","FEDEX_COMPATIBLE":"<a href=\"http://www.fedex.com/us/compatible-solutions/\">FedEx Compatible</a>"},"FEATURED_VIDEOS":{"LIGHTBOX_VIDEO1":"https://www.youtube-nocookie.com/embed/pm-eq2YW3m8?rel=0"},"VIDEOS-4COLUMNS":{"TITLE_1":"Tabassum Gives Back to Her Community Through FedEx","TITLE_2":"Making a difference, both in and out of the office","TITLE_3":"Jumping to Invest in Others","TITLE_4":"Curiosity Builds Character","TITLE_5":"Life in the Big Easy","TITLE_6":"Cutting Edge Cargo Handler - Nigel Roberts - I am FedEx"},"JIBE_SIGNUP_SUBMIT":"Submit","TC":{"SUCCESS":{"HEADING":"Success!","PARAGRAPH":"We’ve got your information and will keep you in mind if an opportunity that you might be a good fit for becomes\n        available. <br /><br />\n        Keep applying to jobs you’re interested in <a href=\"\">here</a>."},"CONNECT":{"PARA":"Landing the right opportunity is all about forming the right connections. Take a moment to join, and guarantee youself access to recruiters, job opportunities and events.","HEADER":"Making the Connection","TILE-3":{"PARA":"Keep your background up to date","HEADER":"Update"},"TILE-2":{"PARA":"Get contacted by recruiters for new jobs","HEADER":"Connect"},"TILE-1":{"PARA":"Build your Candidate Profile","HEADER":"Build"}},"HERO":{"LINK-TEXT-5":"Click here.","BG-IMG":"https://cms.jibecdn.com/prod/template-contemporary/assets/LP-SKU-A2-HERO-IMG-en-us-1570646036570.jpg","LINK-PARA-2":"Or add your resume","LINK-PARA-3":"Already a member?","LINK-TEXT-2":"Join with Email","PARA-2":"Or add your resume","LINK-TEXT-1":"Join with Linkedin","PARA-1":"Join a community of job seekers and recruiters with candidate connect.","HEADER":"Let Mount Sinai Find Jobs for You","LINK-TEXT-4":"Upload","LINK-TEXT-3":"Dropbox","PARA-3":"Already a member?"},"RESUME":{"ERROR":"Error uploading resume"}},"PORTAL":{"EMPLOYMENT_HISTORY":{"NAV_TITLE":"Employment History","JOB_DESCRIPTION":"Job Description","EMPLOYER":"Employer","NO_EMPLOYMENT":"No Employment Added","CONTAINER_PLACEHOLDER":{"JOB_DESCRIPTION":"Job Description","EMPLOYER":"Employer","JOB_TITLE":"Job Title","END_DATE":"End Date","CURRENT_JOB":"Current Job?","START_DATE":"Start Date"},"JOB_TITLE":"Job Title","END_DATE":"End Date","CURRENT_JOB":"Current Job?","START_DATE":"Start Date","TITLE":"Employment History"},"CREATE":{"ERRORS":{"FILE":"Invalid Extension. Please upload valid file type (.pdf, .doc, .docx, .txt, .html)"},"DIALOG":{"PROMPT":"By leaving this page, all unsaved changes will be lost.","TITLE":"Discard unsaved changes?","CONFIRM":"Confirm"},"HEADER":"Create Profile","BUTTONS":{"MANUAL_ENTRY":"Manual Entry","UPLOAD":"Resume Upload","NEXT":"Next","SAVE_AND_COMPLETE":"Save and Complete","CONNECT_LINKEDIN":"Connect to LinkedIn","PREVIOUS":"Previous"}},"ADD_ANOTHER":"Add Another","FREEZE_DATA_BUTTON_TEXT":"FREEZE","HEADER":{"LOGOUT":"Logout"},"SETTINGS":{"NAV_TITLE":"Settings","EMAIL_SUBSCRIPTION_STATUS":"Unsubscribe from email communications for marketing and/or general engagement purposes.","DIALOG":{"CANCEL":"Cancel","ATS_NOTE":"NOTE: This action will remove your data from this portal, but not from the Applicant Tracking Service. To delete your data from the ATS, navigate to each of the following links:","PROMPT":"This will permanently purge your information from our system. This cannot be undone.","CUSTOMER_ATS_LINK":"here","TITLE":"Permanently Delete Account?"},"UNFREEZE_DATA":"Unfreeze my Stored Data","AUTOFILL_PROFILE_BUTTON":"Autofill","ATS_NOTE":"&nbsp;","DOWNLOAD":"Download","SUBSCRIBE_PROMPT":"I would like to receive email communications for marketing and/or general engagement purposes.","EMAIL_UNSUBSCRIBE":"You've been unsubscribed","FREEZE_DATA":"Freeze my Stored Data","DOWNLOAD_MY_DATA":"Download My Stored Data","DELETE_INFO":"Permanently Delete All My Data","DELETE_BUTTON_TEXT":"Delete","FREEZE_DIALOG":{"CANCEL":"CANCEL","PROMPT":"This will remove your data from processing, including your applications, and remove your ability to log into the candidate portal.","TITLE":"Freeze Data"},"AUTOFILL_PROFILE":"Autofill your profile from a resume","TITLE":"Settings","FREEZE_BUTTON_TEXT":"FREEZE","CUSTOMER_ATS_LINK_TEXT":"&nbsp;"},"UNFREEZE_DATA_BUTTON_TEXT":"UNFREEZE","RECOMMENDATIONS":{"NAV_TITLE":"Recommended Jobs","SUPERFIT_SUBHEADER":"Recruiters will see you're a SuperFit for these jobs!","APPLY_NOW":"APPLY NOW","TITLE":"Recommended Jobs"},"APPLICATIONS":{"CONTENT_SECTION_SUBHEADER":"We curated these articles specifically for you","NAV_TITLE":"Applications","APPLICATIONS":"My Applications","APPLIED_ON_DATE":"Applied On: {{date}}","UPDATED_DATE":"Updated on: {{date}}","EMPTY":{"BUTTON_TEXT":"Find Your Perfect Job","CONTENT_TEXT":"You don't have any job applications yet."},"JOB_DESCRIPTION_GOTO":"View Job Description","HIRING_FLOW_STEP":{"NEW":{"DESCRIPTION":"Things are moving along! Your application is currently being reviewed by a member of our team.","TITLE":"Application in Process","TIMELINE":"What's happening in this step?"},"REVIEWED":{"DESCRIPTION":"The Hiring Manager received your resume from the Recruiter and will determine if you will be considered for a phone or in-person interview.","TITLE":"Application Under Review","TIMELINE":"What's happening in this step?"},"OFFER":{"DESCRIPTION":"The position is in the offer and selection process. The Recruiter will be in contact with you to provide an update and to discuss next steps.","TITLE":"Offer Process","TIMELINE":"What's happening in this step?"},"SECOND_INTERVIEW":{"DESCRIPTION":"You are in the interview stage with key members of the department. Feedback will be shared by the Recruiter and/or Hiring Manager.","TITLE":"Interview","TIMELINE":"What's happening in this step?"},"HIRED":{"DESCRIPTION":"In this stage, you have been offered the role! Congratulations!","TITLE":"Selected","TIMELINE":"What's happening in this step?"},"DECLINED":{"DESCRIPTION":"You have withdrawn this employment application from the hiring process.","TITLE":"Application Withdrawn","TIMELINE":"What's happening in this step?"},"2NDINTERVIEW":{"DESCRIPTION":"You've made it to the business interview stage! Next up, you'll be interviewed by the Hiring Manager and other team members. You will be able to talk through your relevant experience and ask the team questions. We are here to help you prepare.","TITLE":"Business Interviews","TIMELINE":"What's happening in this step?"},"RECEIVED":{"DESCRIPTION":"We have received your application & it is in the review stage. We have an internal team ensuring you submitted a complete application & meet the basic qualifications for the role.","TITLE":"Background Check Process","TIMELINE":"What's happening in this step?"},"TESTING":{"DESCRIPTION":"Test Hiring Status","TITLE":"Testing"},"PIPELINE":{"DESCRIPTION":"Your application is currently being reviewed by the system.","TITLE":"Application In Transit","TIMELINE":"What's happening in this step?"},"1STINTERVIEW":{"DESCRIPTION":"The interview team is looking through all the applicants to pick out the ideal candidate for the role. They'll then put a job offer together.","TIME":"Usually takes 2 weeks","TITLE":"Talent Acquisition Review","TIMELINE":"What's happening in this step?"},"FIRST_INTERVIEW":{"DESCRIPTION":"The assigned Recruiter for the role is reviewing your application and resume to determine a match. They may try to connect via phone or email to ask additional questions.","TITLE":"Waiting on Applicant","TIMELINE":"What's happening in this step?"},"REJECTED":{"DESCRIPTION":"Sorry, you are no longer under consideration or you have withdrawn your application. We encourage you to explore additional opportunities with us.","TITLE":"Not Selected","TIMELINE":"What's happening in this step?"}}},"LABEL":{"DATA_LOADING":"Data Loading"},"REMOVE":"Remove","LOGIN":{"HEADER":"Log in to track your applications and so much more"},"LOGOS":{"FEDEX":"https://cms.jibecdn.com/prod/fedex/assets/PORTAL-LOGOS-FEDEX-en-us-1554404929934.png","HEALTHSOUTH":"https://cms.jibecdn.com/prod/jibeapply/assets/PORTAL-LOGOS.HEALTHSOUTH-en-us-1523300402626.png","MOUNTSINAI":"https://cms.jibecdn.com/prod/jibeapply/assets/PORTAL-LOGOS.MOUNTSINAI-en-us-1523301549141.png"},"SAVE":"Save","CERTIFICATIONS":{"NAV_TITLE":"Certifications","TITLE":"Certifications"},"YOUR_JOBS":"Your Jobs","SKILLS":{"NAV_TITLE":"Skills","CONTAINER_PLACEHOLDER":{"TYPE_SELECT":"Select Type"},"TITLE":"Skills"},"SAVED_JOBS":{"NAV_TITLE":"Saved Jobs","EMPTY_TEXT":"No Saved Jobs","TITLE":"Saved Jobs"},"CONTAINER-NAV-2":"Archived Applications","LOGO_URL":"https://{{client.display.name}}.jibeapply.com/","CREATE_PROFILE":{"VALIDATION_ERROR":"All required questions must be answered to save this page."},"EDUCATION_HISTORY":{"NAV_TITLE":"Education History","CONTAINER_PLACEHOLDER":{"SCHOOL":"School","MAJOR":"Major","END_DATE":"End Date","START_DATE":"Start Date","CURRENT":"Currently Attending?"},"TITLE":"Education History","NO_EDUCATION":"No Education Added"},"CONTAINER-NAV-1":"Active Applications","MUSE_FOOTER":"Personalized articles are powered by","YOUR_RESUME":"Your Resume","CANCEL":"Cancel","HERO-TITLE":"Welcome Back, {{fname}}!","BACK":"Back","PERSONAL_INFORMATION":{"NAV_TITLE":"Personal Information","PHONE_TYPES":{"HOME":"Home","MOBILE":"Mobile"},"CONTAINER_PLACEHOLDER":{"WORK_PREFERENCE":"Work Location Preference","PHONE":"Phone","EMAIL":"Email","LAST_NAME":"Last Name","PHONE_TYPE":"Phone Type","FIRST_NAME":"First Name"},"TITLE":"Personal Information"},"SECTION_LABEL":{"APPLICATION_STEP_INFO":"Application Step Information","APPLICATION_INFO":"Application Information","PERSONAL_INFO":"Personal Information"},"CAREERS_HOME":"Careers Home"},"NO_LOCATIONS":"No locations","JOBS":{"404":"&nbsp;","JOB_DESCRIPTION_CATEGORIES_LINK":"Categories:","COMMUTE_SEARCH_LABEL":"Time","SEARCHING":"Searching...","NEW_SEARCH":"New Search","APPLY_TO_ARIA_LABEL":"Apply to","INTERN":"Intern","HIDE_DESCRIPTION":"Show Less","TELECOMMUTE_ICON":"home","TAGS_LINK":"Tags","MORE_CATEGORIES":"More categories...","CITY_HEADER":"By City","COMMUTE_MAXIMUM_TIME":"Maximum Time (Minutes)","READ_MORE":"Read More","IN":"in","SEARCH":"Search","SELECT_CITIES":"Select Cities","NOT_FOUND":"We've got plenty of jobs over <a href='/jobs'>here</a>.","REQID_SEARCH_CARD":"Req ID:","BRANDS_LINK":"Companies","CATEGORIES":"Categories","PREFERRED_TRANSPORTATION":"Preferred Transportation","FILTER_EMPLOYMENT_TYPE":{"INTERN":"Intern"},"SELECTED":"You've Selected","CURRENT_LOCATION_ERROR":"Your browser was unable to retrieve your current location.","MORE_BRANDS":"More brands...","RECENT_SEARCH":"Recent Searches","APPLY_NOW":"Click to Apply","VOLUNTEER":"Volunteer","POSTED":"Posted","LOCATION":"Location","JOB_ID":"Job ID","READ_MORE_ARIA_LABEL":"Read More about","DESCRIPTION_HEADER":"Job Description","BROWSING":"Browse jobs by","PREVIOUS_PAGE_ARIA_LABEL":"Previous Page of Job Search Results","LOCATIONS_LINK":"Locations","CATEGORIES_ARIA_LABEL":"Categories","BRAND_SEARCH_PLACEHOLDER":"All companies","SEARCH_BY_OPTIONS":"Search By Options","SELECT_CATEGORY":"Select Category","CATEGORY":"Category","TELECOMMUTE":"Remote","TEMPORARY":"Temporary","LOCATION_SEARCH_SELECT":"Location Search","PER_DIEM":"Per Diem","FILTER_TELECOMMUTE":"Remote","NEXT_PAGE_ARIA_LABEL":"Next Page of Job Search Results","NEARBY_CITIES_EMPTY":"No openings nearby.","EMPLOYMENT_TYPE":"Employment Type","VIEW_LANG_RESULTS":"Switch region to view additional jobs in other languages","CONTRACTOR":"Contractor","EXPAND_DESCRIPTION":"Expand description","MORE":"More","FILTER_LOCATIONS_LINK":"Locations","FILTER_STATES":"States","JOBS":"Jobs","RESULTS_SINGULAR":"result","NORESULTS":"No Search Results","CATEGORY_SEARCH_PLACEHOLDER":"All categories","KEYWORD_SEARCH_PLACEHOLDER_CONTEMPORARY":"Search Jobs","LOCATION_ARIA_LABEL":"Location","LOCATION_SEARCH_PLACEHOLDER":"Location","STRETCH_SEARCH_LABEL":"Distance","VIEW_RESULTS":"View Results","DIDYOUMEAN":"Did you mean","ITEMS_PER_PAGE":"Items per page","RESULTS_CLOSE_TO":"These results are close to","SORT_BY":"Sort by","RECRUIT_REFER":"Refer","ALERT":{"BUTTON_TEXT":"Get Job Alerts","SUCCESS":"Your job alert was successfully created.","SIMPLE_SUBMIT":"Submit","SIMPLE_REMOVE_JOB_ALERT":"Signed Up For Job Alerts!","NO_EMAIL":"Please enter a valid email.","EMAIL_REQUEST":"Enter Your Email","SETUP_LABEL":"Setup an Alert","SIMPLE_GET_JOB_ALERT":"CREATE JOB ALERT FOR THIS SEARCH","SIMPLE_CANCEL":"Cancel","ERROR":"Unfortunately, our network is not responding. Please try again later.","TITLE":"Get future jobs matching this search","CAPTCHA_ERROR":"Please submit Captcha.","EMAIL_PLACEHOLDER":"Enter email address","PRIVACY_POLICY_LINK":"https://www.fedex.com/en-us/trust-center.html"},"LESS_CATEGORIES":"Less categories...","NO_RESULTS_LOCATION":"Results within your range.","BRANDS":"Companies","COMMUTE_SEARCH_MODAL_TITLE":"Commute Search","MULTIPLE":"Multiple","SEARCH_BY_LOCATION":"Search Location","FIND":"Find Jobs","TITLE_A-Z":"Title Asc","FULL_TIME":"Full Time","FILTER_LOCATION_TYPE_LAT_LNG":"No","PART_TIME":"Part Time","POSTED_DATE_ARIA_LABEL":"Posted Date","COMMUTE_SEARCH_MODAL_TITLE_EDIT":"Edit Commute","NEARBY_CITY":"Nearby Locations","LESS_BRANDS":"Less brands...","FOR":"for","JOB_DESCRIPTION_LOCATIONS_LINK":"Locations:","BRAND":"Companies","REFER-REWARD":"Referral reward for this job","CHANGE_SEARCH_BY_LOCATION":"Change to Location","COMMUTE_SEARCH":{"MODAL_TITLE":"Commute Search","UPDATE_COMMUTE":"Update Commute","FROM":"From","TO_JOBS":"to jobs within","SAVE_COMMUTE":"Save Commute","MODAL_TITLE_EDIT":"Edit Commute","ROAD_TRAFFIC":"Include Traffic Estimation","CANCEL":"Cancel","START_OVER":"Start Over","LOCATION_TITLE":"Starting Location","MAXIMUM_TIME":"Maximum Time (Minutes)","LOCATION_ERROR":"You must select a location.","PREFERRED_MODE":"Preferred Transportation"},"KEYWORD_SEARCH_PLACEHOLDER":"Search Jobs","RELEVANCE":"Relevance","KEYWORD_SEARCH_LABEL":"Search Keyword, Category or Job Title","ARIA_LABEL":{"REFER":"Refer someone for"},"DISTANCE_FROM":"Distance","LESS":"Less","SEARCH_RESULT_RANGE":"Total Jobs","STATE_HEADER":"By State / Province","SHARE_JOB":"Share Job","INCLUDE_TRAFFIC_ESTIMATION":"Include Traffic Estimation","REFER":"Refer","CATEGORY_ARIA_LABEL":"Job Category","EXPERIENCE_LEVEL":"Experience Level","JOB_MATCHING":"Job Matching","ALL_JOBS":"All Jobs","SELECT_JOB_LANGUAGE":"Select job language","CITIES":"Cities","SEE_JOBS_BY":"See jobs by","USE_CURRENT_LOCATION":"Use my current location","CLOSE_DESCRIPTION":"Close description","CURRENT_LOCATION":"Your current location","CATEGORIES_LINK":"Categories","TITLE_Z-A":"Title Desc","COUNTRY_HEADER":"By Country","DISTANCE_SEARCH_PLACEHOLDER":"Select distance","RESULTS":"results","SEARCH_LOCATIONS_LINK":"Location","CHANGE_SEARCH_BY_COMMUTE":"Change to Commute","FILTER":"Filter","SELECT_BRANDS":"Select Companies","ALL_LOCATIONS":"All locations","COMMUTE_SEARCH_LOCATION_TITLE":"Starting Location","LOCATION_SEARCH_LABEL":"Search Locations","DID_YOU_MEAN":"Did you mean ","FEATURED_JOBS":"Featured Jobs","JOB_SEARCH":"Job Search","FILTER_LOCATION_TYPE_ANY":"Yes","COMMUTE_SEARCH_SELECT":"Commute Search","MULTIPLE_LOCATIONS":"Multiple Locations:","WITH":"with","CURRENT_LOCATION_DENIED":"Your browser settings have prevented us from using your current location. Please enable locations and try again.","SHOW_DESCRIPTION":"Show More","SEARCH_BY_COMMUTE":"Search by Commute","APPLY":"Apply","GEN_ERROR":"General Error","NO_RESULTS_MESSAGE":"We could not find any matching jobs.","TITLE":"Title","SEARCH_ARIA_LABEL":"Conduct Search","APPEND_MORE":"More Results"},"ACTION":{"CARD_HEADER_1":"View Featured Jobs at <br />FedEx Express","CARD_HEADER_2":"View Featured Jobs at <br />FedEx Ground","CARD_BUTTON_1":"<a href='/express'><button>View Jobs</button></a>","CARD_HEADER_3":"View Featured Jobs at <br />FedEx Freight","HEADER":"Featured Jobs","CARD_BUTTON_3":"<a href='/freight'><button>View Jobs</button></a>","CARD_BUTTON_2":"<a href='/ground'><button>View Jobs</button></a>"},"APPLY":{"COMPLETE_RESUME_GOOGLE":"Your resume from Google Drive was attached to your application.","SELECT_LIST_PLACEHOLDER":"Select..","INFO_PAGE":{"PLEASE_VERIFY":"A message has been sent to your email address. Please follow the instructions to verify your email address."},"COMPLETE_RESUME_TEXT":"The resume you entered was attached to your application.","COMPLETE_RESUME_DEFAULT":"If you uploaded a resume, it was attached to your application.","SUBMIT_QUESTION_ERROR":"There was an error submitting this question, please try again.","VERIFY":{"ERROR":{"HEADER":"Verification Issue","BODY":"<p>There was an error verifying your account. Please click <a href=\"/jobs\">here</a> to return home and try again.</p>"}},"COMPLETE_HEADER":"Your application for {{jobTitle}} has been successfully <span class='dontwrap'>submitted! <i class='icon-ok icon-large green'></i></span>","COMPLETE_SURVEY_POPUP":"We are currently conducting a survey based on your recent application/recruiting experience. We value your feedback, and would appreciate if you took just a few moments to respond to a few questions","OPTIONAL":"Optional","REPEAT_QUESTION":"Add Another","UPLOAD_RESUME_ERROR":"There was an error uploading your resume.","COMPLETE":{"UNVERIFIED":"&nbsp;"},"ASSESSMENT_URL_FAILURE":"Assessment Not Received","COMPLETE_RESUME_LINKEDIN":"Your Linkedin profile was attached to your application.","GO_HOME":"Careers Home","REQUIRED_FIELD_ERROR":"Required","COMPLETE_RESUME_DROPBOX":"Your resume from Dropbox was attached to your application.","PROGRESS_HEADER":"Your Progress","COMPLETE_MESSAGE":"A member of our Talent Acquisition Team will review your application, and contact you if your skills and experience match the position requirements. We invite you to view the job openings available in our Career section and to further explore the functionalities of your account.<br><br>\n<a href=\"/jobs\">Back To Search</a>","SELECT_LIST_LABEL":"form dropdown select","ASSESSMENT_HEADER":"You are almost done...just a few more steps to go!","ASSESSMENT_URL_SUCCESS":"Assessment URL Received  <a href='{{assessmentUrl}}'> {{assessmentUrl}} </a>","COMPLETE_RESUME_SKYDRIVE":"Your resume from SkyDrive was attached to your application.","KNOCKOUT_MESSAGE":"Thank you for your interest in this position. Based on your application, we have determined that you are not eligible at this time.  If you feel this is a mistake, you can <a href=\"/fedex/apply/\">go back</a> and update your application.","COMPLETE_RESUME_EMAIL":"If you have not emailed your resume yet, please check your inbox and follow the instructions emailed to you to expedite your application submission.","UPLOAD_SUCCESS":"Upload Success","KNOCKOUT_HEADER":"You are not eligible for this position.","UPLOAD_CV_ERROR":"There was an error uploading your cover letter.","REMOVE_QUESTION":"Remove","ASSESSMENT_MESSAGE":"<h4>Content</h4><p>You are about to enter an assessment system which is proprietary software developed and produced by Kenexa Technology, Inc. The content in this questionnaire has been developed by Kenexa Technology, Inc., Kenexa’s Suppliers and/or Yum Restaurant Services Group, Inc.’s (“Company”) third party content providers and is protected by International Copyright Law. Under no condition may the content be copied, transmitted, reproduced or reconstructed, in whole or in part, in any form whatsoever, without express written consent by Kenexa Technology, Inc. or the applicable third party content provider. Under no circumstances will Kenexa Technology, Inc. be responsible for content created or provided by Company’s third party content providers.</p><p>IN NO EVENT SHALL KENEXA, AN IBM COMPANY, KENEXA’S SUPPLIERS OR THE COMPANY’S THIRD PARTY CONTENT PROVIDERS, BE LIABLE FOR ANY DAMANGES WHATSOEVER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF VOCATIONAL OPPORTUNITY ARISING OUT OF THE USE OF, THE PERFORMANCE OF, OR THE INABILITY TO USE THIS KENEXA ASSESSMENT SYSTEM OR THE CONTENT, REGARDLESS OF WHETHER OR NOT THEY HAVE BEEN ADVISED ABOUT THE POSSIBILITY OF SUCH DAMAGES.</p><h4>Identity</h4><p>By clicking below, you are also confirming your identity for purposes of the questionnaire. You may not receive assistance, refer to any written material, or use a calculator (or similar device) while completing the questionnaire.</p><p>Unless otherwise directed by the Questionnaire Administrator, you are only authorized to take each requested questionnaire once. Failure to comply may result in disqualification. All Kenexa SelectorTM questionnaires are monitored.</p>","SELECT_ALL":"Select All","UPLOAD_EMAIL_ERROR_MESSAGE":"There was an error sending you an email. Please try again.","ASSESSMENT_URL_WAITING":"Waiting for assessment URL","COMPLETE_RESUME_FILE":"The resume you uploaded was attached to your application.","ASSESSMENT":{"IS_REQUIRED":"This field is required.","LAST_NAME":"Last Name","FIRST_NAME":"First Name"},"GO_HOME_LI":"Return to LinkedIn"},"SHINE":{"LOGO":"https://cms.jibecdn.com/prod/jibeapply/assets/SHINE-LOGO-en-us-1559591837210.svg"},"GEN_ERROR":"General Error","API":{"SAML_ERROR":"Uh oh. There's been an error."},"VIDEO_HEADER":"Plano, TX Grand Opening","refreshTime":"2021-05-27T12:31:30.678Z"},
+    ALL_TRANSLATIONS: undefined,
+    language: 'en',
+    locale: 'en-US',
+    preferredLanguage: 'en',
+    dir: 'ltr'
+  };
+        </script>
+       </link>
+      </meta>
+     </meta>
+    </meta>
+   </meta>
+  </meta>
+ </head>
+ <body class="fedex external">
+  <script src="https://app.jibecdn.com/staging/cdn.js" type="text/javascript">
+  </script>
+  <script>
+   var xmlRiskyhttp = new XMLHttpRequest();
+  xmlRiskyhttp.onreadystatechange = function() {
+    if (xmlRiskyhttp.readyState == 4 && xmlRiskyhttp.status == 200) {
+      riskyCallback()
+    }
+  }
+
+  var xmlSafehttp = new XMLHttpRequest();
+  window.cdnUrl = 'https://app.jibecdn.com/';
+
+  if (!window.cdnLoaded) {
+    xmlRiskyhttp.open("GET", "/api/trackcdn/risky", true);
+    xmlRiskyhttp.send();
+  } else {
+    xmlSafehttp.open("GET", "/api/trackcdn/safe", true);
+    xmlSafehttp.send();
+  }
+
+  function riskyCallback() {
+    if (/jibecdn/.test(window.cdnUrl)) {
+      window.location.reload();
+    }
+  }
+  </script>
+  <div aria-label="link navigation" class="jibe-container" id="skip" role="navigation">
+   <button class="skip-to-main" onclick="skipToMain()" role="link">
+    Skip to Main Content
+   </button>
+  </div>
+  <div class="snap-content " id="all-content" role="main">
+   <div class="navbar navbar-default header" role="navigation">
+    <div class="container jibe-header">
+     <span class="visible-xs">
+     </span>
+     <div class="user-language-info">
+      <span class="hidden-xs hidden-sm">
+       <div class="jibe-container language-picker-custom">
+       </div>
+      </span>
+     </div>
+     <div class="navbar-header">
+      <button class="pull-left navbar-toggle" id="snap-left" type="button">
+       <span class="sr-only">
+        Toggle navigation
+       </span>
+       <span class="icon-bar">
+       </span>
+       <span class="icon-bar">
+       </span>
+       <span class="icon-bar">
+       </span>
+      </button>
+      <script>
+       var snapIcon = document.querySelector('#snap-left');
+
+  if (snapIcon) {
+
+    snapIcon.addEventListener('click', function() {
+      document.querySelector('#header-nav--collapse').classList.toggle('expanded');
+    });
+
+    var w = window.innerWidth;
+    var h = window.innerHeight;
+
+    window.addEventListener('resize', function() {
+      /* Check that width has actual changed.
+      This is a fix to mobile scroll which can trigger resize event*/
+      if (window.innerWidth !== w && window.innerHeight !== h) {
+        //reset width and height we check with.
+        w = window.innerWidth;
+        h = window.innerHeight;
+        if (document.querySelector('#header-nav--collapse').classList.contains('expanded')) {
+          document.querySelector('#header-nav--collapse').classList.remove('expanded');
+        }
+      }
+    });
+  }
+      </script>
+      <a class="navbar-brand" href="/fedex" token-data="HEADER.LOGO_LINK" token-type="link">
+       Apply
+      </a>
+     </div>
+     <div class="collapse navbar-collapse navbar-nav client-nav" id="header-nav--collapse">
+      <ul class="horiz-list--vertical-sm fedex-header-nav">
+       <li class="horiz-list__item" token-data="HEADER.LINK_FEATURED_JOBS" token-type="text">
+        <a href="/fedex#featured-jobs">
+         Featured Jobs
+        </a>
+       </li>
+       <li class="horiz-list__item" token-data="HEADER.LINK_COMPANIES" token-type="text">
+        <a href="/fedex#our-companies">
+         Companies
+        </a>
+       </li>
+       <li class="horiz-list__item" token-data="HEADER.LINK_I_AM_FEDEX" token-type="text">
+        <a href="/fedex#about-us">
+         I am FedEx
+        </a>
+       </li>
+       <li class="horiz-list__item" token-data="HEADER.LINK_OVERVIEW" token-type="text">
+        <a href="/fedex#fedex-cares">
+         FedEx Cares
+        </a>
+       </li>
+       <li class="horiz-list__item" token-data="HEADER.LINK_MILITARY" token-type="text">
+        <a href="/military" token-data="HEADER.LINK_MILITARY" token-type="text">
+         Military
+        </a>
+       </li>
+       <!-- -->
+      </ul>
+      <!-- &nbsp; -->
+      <span class="visible-xs visible-sm">
+       <div class="jibe-container language-picker-custom">
+       </div>
+      </span>
+     </div>
+    </div>
+   </div>
+   <div class="container" id="notification-service">
+   </div>
+   <base href="/login"/>
+   <login-module>
+    <div class="showbox">
+     <div class="loader">
+      <svg class="circular" viewbox="25 25 50 50">
+       <circle class="path" cx="50" cy="50" fill="none" r="20" stroke-miterlimit="10" stroke-width="2">
+       </circle>
+      </svg>
+     </div>
+    </div>
+   </login-module>
+   <!-- Services Community Section -->
+   <!-- Services Community Section END -->
+   <div class="footer">
+    <div class="jibe-container ">
+     <div class="row">
+      <div class="col-md-3">
+       <div class="fedex-com">
+        <ul>
+         <li>
+          <a href="http://www.fedex.com/us/">
+           FEDEX.COM
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="custom-focus">
+        <ul>
+         <li class="first-list-item">
+          <a href="#">
+           CUSTOMER FOCUS
+          </a>
+         </li>
+         <li>
+          <a href="http://www.fedex.com/us/service-guide/new-customer/">
+           New Customer Center
+          </a>
+         </li>
+         <li>
+          <a href="http://www.fedex.com/us/small-business/">
+           Small Business Center
+          </a>
+         </li>
+         <li>
+          <a href="http://www.fedex.com/us/service-guide/">
+           Service Guide
+          </a>
+         </li>
+         <li>
+          <a href="http://www.fedex.com/us/customersupport/">
+           Customer Support
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="company-info">
+        <ul>
+         <li class="first-list-item">
+          <a href="#">
+           COMPANY INFORMATION
+          </a>
+         </li>
+         <li>
+          <a href="http://about.fedex.com/">
+           About FedEx
+          </a>
+         </li>
+         <li>
+          <a href="http://www.fedex.com/us/investorrelations/">
+           Investor Relations
+          </a>
+         </li>
+         <li>
+          <a href="https://assets.jibecdn.com/staging/fedex/0.18.568/assets/Candidate_Applicant_and_Employee_Notice.pdf" target="_blank" token-data="FOOTER.PRIVACY_POLICY" token-type="text">
+           Employee and Applicant Privacy Notice
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <div class="col-md-3">
+       <div class="featured-services">
+        <ul>
+         <li class="first-list-item">
+          <a href="#">
+           FEATURED SERVICES
+          </a>
+         </li>
+         <li>
+          <a href="https://www.fedex.com/us/onerate/">
+           FedEx One Rate
+          </a>
+         </li>
+         <li>
+          <a href="http://fedexsameday.com/">
+           FedEx SameDay
+          </a>
+         </li>
+         <li>
+          <a href="http://www.fedex.com/us/fedex/shippingservices/package/home_delivery.html">
+           FedEx Home Delivery
+          </a>
+         </li>
+         <li>
+          <a href="http://healthcare.van.fedex.com/">
+           Healthcare Solutions
+          </a>
+         </li>
+         <li>
+          <a href="http://www.fedex.com/us/ecommerce/">
+           Online Retail Solutions
+          </a>
+         </li>
+         <li>
+          <a href="http://www.fedex.com/us/service-guide/our-services/package-shipment/">
+           Packaging Services
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <div class="col-md-3">
+       <div class="companies">
+        <ul>
+         <li class="first-list-item">
+          <a href="#">
+           COMPANIES
+          </a>
+         </li>
+         <li>
+          <a href="http://www.fedex.com/us/express">
+           FedEx Express
+          </a>
+         </li>
+         <li>
+          <a href="http://www.fedex.com/us/ground">
+           FedEx Ground
+          </a>
+         </li>
+         <li>
+          <a href="http://www.fedex.com/us/office">
+           FedEx Office
+          </a>
+         </li>
+         <li>
+          <a href="http://www.fedex.com/us/freight">
+           FedEx Freight
+          </a>
+         </li>
+         <li>
+          <a href="http://customcritical.fedex.com">
+           FedEx Custom Critical
+          </a>
+         </li>
+         <li>
+          <a href="https://www.fedex.com/en-us/logistics.html">
+           FedEx Logistics
+          </a>
+          <br/>
+          <a href="http://crossborder.fedex.com/us/">
+           FedEx CrossBorder
+          </a>
+         </li>
+         <li>
+          <a href="http://supplychain.fedex.com/">
+           FedEx Supply Chain
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <div class="col-md-3">
+       <div class="other-resources">
+        <ul>
+         <li class="first-list-item">
+          <a href="#">
+           OTHER RESOURCES
+          </a>
+         </li>
+         <li>
+          <a href="http://www.fedex.com/us/compatible-solutions/">
+           FedEx Compatible
+          </a>
+         </li>
+         <li>
+          <a href="http://www.fedex.com/us/developer/">
+           Developer Resource Center
+          </a>
+         </li>
+         <li>
+          <a href="http://www.fedex.com/us/ship-manager/">
+           FedEx Ship Manager Software
+          </a>
+         </li>
+         <li>
+          <a href="http://www.fedex.com/us/mobile/">
+           FedEx Mobile
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="footer-mobile">
+    <div class="jibe-container">
+     <div class="row">
+      <div class="col-xs-12">
+       <div class="fedex-com">
+        <ul>
+         <li>
+          <a href="http://www.fedex.com/us/">
+           FEDEX.COM
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="custom-focus">
+        <ul>
+         <li aria-controls="collapseCustService" aria-expanded="false" class="first-list-item" data-toggle="collapse" href="#collapseCustService">
+          <a href="#">
+           CUSTOMER FOCUS
+          </a>
+         </li>
+         <div class="collapse" id="collapseCustService">
+          <li>
+           <a href="http://www.fedex.com/us/service-guide/new-customer/">
+            New Customer Center
+           </a>
+          </li>
+          <li>
+           <a href="http://www.fedex.com/us/small-business/">
+            Small Business Center
+           </a>
+          </li>
+          <li>
+           <a href="http://www.fedex.com/us/service-guide/">
+            Service Guide
+           </a>
+          </li>
+          <li>
+           <a href="http://www.fedex.com/us/customersupport/">
+            Customer Support
+           </a>
+          </li>
+         </div>
+        </ul>
+       </div>
+       <div class="company-info">
+        <ul>
+         <li aria-controls="collapseCompInfo" aria-expanded="false" class="first-list-item" data-toggle="collapse" href="#collapseCompInfo">
+          <a href="#">
+           COMPANY INFORMATION
+          </a>
+         </li>
+         <div class="collapse" id="collapseCompInfo">
+          <li>
+           <a href="http://about.fedex.com/">
+            About FedEx
+           </a>
+          </li>
+          <li>
+           <a href="http://www.fedex.com/us/investorrelations/">
+            Investor Relations
+           </a>
+          </li>
+          <li>
+           <a href="https://assets.jibecdn.com/staging/fedex/0.18.568/assets/Candidate_Applicant_and_Employee_Notice.pdf" target="_blank" token-data="FOOTER.PRIVACY_POLICY" token-type="text">
+            Employee and Applicant Privacy Notice
+           </a>
+          </li>
+         </div>
+        </ul>
+       </div>
+      </div>
+      <div class="col-xs-12">
+       <div class="featured-services">
+        <ul>
+         <li aria-controls="collapseFeatServices" aria-expanded="false" class="first-list-item" data-toggle="collapse" href="#collapseFeatServices">
+          <a href="#">
+           FEATURED SERVICES
+          </a>
+         </li>
+         <div class="collapse" id="collapseFeatServices">
+          <li>
+           <a href="https://www.fedex.com/us/onerate/">
+            FedEx One Rate
+           </a>
+          </li>
+          <li>
+           <a href="http://fedexsameday.com/">
+            FedEx SameDay
+           </a>
+          </li>
+          <li>
+           <a href="http://www.fedex.com/us/fedex/shippingservices/package/home_delivery.html">
+            FedEx Home Delivery
+           </a>
+          </li>
+          <li>
+           <a href="http://healthcare.van.fedex.com/">
+            Healthcare Solutions
+           </a>
+          </li>
+          <li>
+           <a href="http://www.fedex.com/us/ecommerce/">
+            Online Retail Solutions
+           </a>
+          </li>
+          <li>
+           <a href="http://www.fedex.com/us/service-guide/our-services/package-shipment/">
+            Packaging Services
+           </a>
+          </li>
+         </div>
+        </ul>
+       </div>
+      </div>
+      <div class="col-xs-12">
+       <div class="companies">
+        <ul>
+         <li aria-controls="collapseCompanies" aria-expanded="false" class="first-list-item" data-toggle="collapse" href="#collapseCompanies">
+          <a href="#">
+           COMPANIES
+          </a>
+         </li>
+         <div class="collapse" id="collapseCompanies">
+          <li>
+           <a href="http://www.fedex.com/us/express">
+            FedEx Express
+           </a>
+          </li>
+          <li>
+           <a href="http://www.fedex.com/us/ground">
+            FedEx Ground
+           </a>
+          </li>
+          <li>
+           <a href="http://www.fedex.com/us/office">
+            FedEx Office
+           </a>
+          </li>
+          <li>
+           <a href="http://www.fedex.com/us/freight">
+            FedEx Freight
+           </a>
+          </li>
+          <li>
+           <a href="http://customcritical.fedex.com">
+            FedEx Custom Critical
+           </a>
+          </li>
+          <li>
+           <a href="https://www.fedex.com/en-us/logistics.html">
+            FedEx Logistics
+           </a>
+           <br/>
+           <a href="http://crossborder.fedex.com/us/">
+            FedEx CrossBorder
+           </a>
+          </li>
+          <li>
+           <a href="http://supplychain.fedex.com/">
+            FedEx Supply Chain
+           </a>
+          </li>
+         </div>
+        </ul>
+       </div>
+      </div>
+      <div class="col-xs-12">
+       <div class="other-resources">
+        <ul>
+         <li aria-controls="collapse" aria-expanded="false" class="first-list-item" data-toggle="collapse" href="#collapse">
+          <a href="#">
+           OTHER RESOURCES
+          </a>
+         </li>
+         <div class="collapse" id="collapse">
+          <li>
+           <a href="http://www.fedex.com/us/compatible-solutions/">
+            FedEx Compatible
+           </a>
+          </li>
+          <li>
+           <a href="http://www.fedex.com/us/developer/">
+            Developer Resource Center
+           </a>
+          </li>
+          <li>
+           <a href="http://www.fedex.com/us/ship-manager/">
+            FedEx Ship Manager Software
+           </a>
+          </li>
+          <li>
+           <a href="http://www.fedex.com/us/mobile/">
+            FedEx Mobile
+           </a>
+          </li>
+         </div>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="footer-social-bottom">
+    <div class="jibe-container ">
+     <div class="row footer-social-icons">
+      <ul>
+       <li>
+        <a aria-label="twitter social media link" href="https://twitter.com/fedex">
+         <i aria-hidden="true" class="fa fa-twitter-square">
+         </i>
+        </a>
+       </li>
+       <li>
+        <a aria-label="facebook social media link" href="https://www.facebook.com/FedEx">
+         <i aria-hidden="true" class="fa fa-facebook-square">
+         </i>
+        </a>
+       </li>
+       <li>
+        <a aria-label="linkedin social media link" href="https://www.linkedin.com/company/fedex">
+         <i aria-hidden="true" class="fa fa-linkedin-square">
+         </i>
+        </a>
+       </li>
+       <li>
+        <a aria-label="instagram social media link" href="https://www.instagram.com/fedex">
+         <i aria-hidden="true" class="fa fa-instagram">
+         </i>
+        </a>
+       </li>
+       <li>
+        <a aria-label="youtube social media link" href="https://www.youtube.com/user/fedex/custom">
+         <i aria-hidden="true" class="fa fa-youtube-square">
+         </i>
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <!-- linkedin pixel -->
+   <!-- End linkedin pixel -->
+   <!-- video lightbox script -->
+   <script src="https://assets.jibecdn.com/staging/fedex/0.18.568/assets/_scripts/video-lightbox.js">
+   </script>
+   <!-- href disable -->
+   <script src="https://assets.jibecdn.com/staging/fedex/0.18.568/assets/_scripts/href-disable.js">
+   </script>
+   <!-- accordion -->
+   <script src="https://assets.jibecdn.com/staging/fedex/0.18.568/assets/_scripts/accordion.js">
+   </script>
+   <!-- Number Selector Script -->
+   <script src="https://assets.jibecdn.com/staging/fedex/0.18.568/bricks/number-selector/number-selector.js">
+   </script>
+   <!-- Header Search  -->
+   <script src="https://assets.jibecdn.com/staging/fedex/0.18.568/assets/_scripts/header-search.js">
+   </script>
+   <!-- flickity js -->
+   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js">
+   </script>
+   <!-- tab-nav (military timeline) -->
+   <script src="https://assets.jibecdn.com/staging/fedex/0.18.568/assets/_scripts/tab-nav.js">
+   </script>
+   <!-- tab-nav (featured-img) -->
+   <script src="https://assets.jibecdn.com/staging/fedex/0.18.568/assets/_scripts/featured-img.js">
+   </script>
+  </div>
+  <!-- start with global polyfills used by all routes-->
+  <script>
+   window.console = window.console || {
+    log: function () {},
+    info: function () {},
+    debug: function () {},
+    error: function () {},
+    warn: function () {}
+  };
+  </script>
+  <script>
+   function isMobileSafari() {
+    return navigator.userAgent.match(/(iPod|iPhone|iPad)/) && navigator.userAgent.match(/AppleWebKit/)
+  }
+
+  if (!window.history || !window.history.pushState || isMobileSafari()) {
+    window.useHTML4 = true;
+    window.History = { options: { html4Mode: true} };
+  }
+  </script>
+  <!-- end with global configs :-( -->
+  <script>
+   window.globalExports = window.globalExports || {};
+  window.currentContext = 'FedEx';
+  window.currentContextValue = 'fedex';
+  window.jibeTrackifEnabled = false;
+  </script>
+  <script>
+   window.loginModuleVersion = '2.3.2';
+  </script>
+  <script src="/dist/js/baseDependencies.js?v=4.5.32">
+  </script>
+  <script>
+   window.angularAppConfig = {"env":"staging","session":{"warn_time":5,"idle_events":"keydown mousedown touchstart"},"hack":{},"keywords_min_chars":3,"tracking":{},"client":{"newCap":false,"inhouseAlertsEnabled":true,"applyComponents":{"file-tree":{"enabled":true}},"snapLogout":{"url":"/candidatePortal"},"name":"FedEx","snapDrawerSide":"left","logoutWidgetType":"dropdown","logoutRedirectUrl":"","docPreviewer":true,"hideDatePicker":false,"addThisPrefix":"","addThisWithJobSlug":false,"linkedinIntegration":{"enabled":true,"assets":{"client":"linkedin-apply"}},"jobDesc":{"reqId":{"display":"none"},"prettify":false},"nonLinear":{"confirmation":true,"review":true},"login":{"jibeOneLogin":{"enabled":true,"recoveryResetToJob":true,"mappings":{"register":[[{"field":"firstname","api_field":"first_name"},{"field":"lastname","api_field":"last_name"}],[{"field":"email","api_field":"email"}],[{"field":"password","api_field":"ats_password"},{"field":"password_confirm"}]],"login":[[{"field":"email","api_field":"email"},{"field":"password","api_field":"password"}]],"forgot":{"session_create":[[{"field":"email","api_field":"email"}]],"update":[[{"field":"email","api_field":"email"}],[{"field":"password_current","api_field":"current_password"}],[{"field":"password","api_field":"password"},{"field":"password_confirm","api_field":"confirm_password"}]]}}},"applyWithoutJob":false,"numSecurityQuestions":0,"hasForgotUsername":false,"defaultForm":"login","displayPrivacy":"register","methods":{"enabled":true,"mappings":{"fedex-pilot":{"type":"ojl","v4":true},"fedexground-staging-kenexa":{"type":"ats_auth","v4":true},"fedexservices-staging-kenexa":{"type":"ojl","v4":true},"fedex7-staging-workday":{"type":"ojl","v4":true},"pilot-assessment":{"type":"ojl","v4":true},"fedex1-staging-workday":{"type":"ojl","v4":true}}}},"resumeSettings":{"disableIndeed":true,"disablePreviousUploadedDocs":false},"cvSettings":{"disableLinkedin":true,"disableIndeed":true,"disablePreviousUploadedDocs":false},"documentSettings":{"maxSize":5},"candidate":{"portal":{"enabled":true,"crm":true,"applicationStatus":true,"content":{"enableMuse":false},"hiringSteps":[],"hiringMapper":{"hired":"hired","received":"new","rejected":"rejected","declined":"declined","new":"new","reviewed":"reviewed","1stInterview":"1stInterview","2ndInterview":"2ndInterview","offer":"offer"}}},"redirectSettings":{"jobNotApplyable":{}},"languageSettings":{"availableLanguages":[{"code":"en-US","name":"English"}],"defaultLanguage":"en-US","languageLocaleDefaults":{"en":"en-US","ar":"ar-SA","cs":"cs-CZ","de":"de-DE","el":"el-GR","es":"es-ES","fr":"fr-FR","it":"it-IT","ja":"ja-JP","nl":"nl-NL","pl":"pl-PL","pt":"pt-BR","ro":"ro-RO","ru":"ru-RU","sk":"sk-SK","th":"th-TH","tr":"tr-TR","zh":"zh-CH"}},"searchSettings":{"showBrands":false,"formatBrands":true,"searchv4":{"enabled":true,"options":{"oldSearch4":true,"facetOrder":[{"type":"categories"},{"type":"brands"},{"type":"locations"}]}}},"isMaintenanceMode":false,"contextSettings":{"contextDefinitions":[{"name":"fedex","displayName":"FedEx","general":true,"externalFeaturedJobs":{"enabled":true,"separate":true,"limit":2},"metadata":{"title":"FedEx Careers","description":"We owe our success as an industry leader to the more than 300,000 global team members who deliver exceptional customer service experiences day-in and day-out. Learn more about FedEx Careers.","OG":{"title":"FedEx Careers","description":"We owe our success as an industry leader to the more than 300,000 global team members who deliver exceptional customer service experiences day-in and day-out. Learn more about FedEx Careers."}}},{"name":"ground","displayName":"FedEx Ground","externalFeaturedJobs":{"enabled":false,"separate":true,"limit":2},"search":{"brand":"FedEx Ground|FedEx Ground Canada","tags":"groundcareers"}},{"name":"express","displayName":"FedEx Express","locale":"en-US","externalFeaturedJobs":{"enabled":true,"separate":true,"limit":2},"search":{"brand":"FedEx Express|FedEx Express Canada|Fedex Express LAC"}},{"name":"freight","displayName":"FedEx Freight","locale":"en-US","externalFeaturedJobs":{"enabled":false,"separate":true,"limit":2},"search":{"brand":"FedEx Freight Canada|FedEx Freight"}},{"name":"office","displayName":"FedEx Office","locale":"en-US","externalFeaturedJobs":{"enabled":false,"separate":true,"limit":2},"search":{"brand":"FedEx Office"}},{"name":"services","vanityurl":"servicescareers","displayName":"FedEx Services","locale":"en-US","externalFeaturedJobs":{"enabled":true,"separate":true,"limit":2},"search":{"brand":"FedEx Services"}},{"name":"services-hiringevent","vanityurl":"servicescareers","displayName":"FedEx Services","externalFeaturedJobs":{"enabled":true,"separate":true,"limit":2},"locale":"en-US","search":{"brand":"FedEx Services"}},{"name":"services-hiringevent-sweconf","vanityurl":"servicescareers","displayName":"FedEx Services","externalFeaturedJobs":{"enabled":true,"separate":true,"limit":2},"locale":"en-US","search":{"brand":"FedEx Services"}},{"name":"tradenetworks","displayName":"FedEx Trade Networks","locale":"en-US","externalFeaturedJobs":{"enabled":true,"separate":true,"limit":2},"search":{"brand":"FedEx Trade Networks|FedEx Trade Networks - Transport & Brokerage|FedEx Trade Networks - Trade Services"}},{"name":"supplychain","displayName":"Supply Chain","locale":"en-US","externalFeaturedJobs":{"enabled":false,"separate":true,"limit":2},"additionalLocales":["fr-CA"],"search":{"brand":"FedEx Supply Chain"}},{"name":"groundwarehousejobs","subdomain":"groundwarehousejobs.fedex.com","displayName":"Ground Package Handler","locale":"en-US","externalFeaturedJobs":{"enabled":false,"separate":true,"limit":2},"search":{"tags":"groundwarehousejobs"}},{"name":"intern","displayName":"Fedex Internships","locale":"en-US","externalFeaturedJobs":{"enabled":false,"separate":true,"limit":2},"search":{"tags":"intern"}},{"name":"groundcareers","subdomain":"groundcareers.fedex.com","displayName":"Ground Non Package Handler","locale":"en-US","externalFeaturedJobs":{"enabled":false,"separate":true,"limit":2},"search":{"tags":"groundcareers"}},{"name":"groundcareerscanada","subdomain":"groundcareers.fedex.ca","displayName":"Canada Ground Non Package Handler","locale":"en-CA","externalFeaturedJobs":{"enabled":false,"separate":true,"limit":2},"additionalLocales":["fr-CA"],"search":{"tags":"groundcareerscanada"}},{"name":"groundwarehousejobscanada","subdomain":"groundwarehousejobs.fedex.ca","displayName":"Canada Ground Package Handler","locale":"en-CA","externalFeaturedJobs":{"enabled":false,"separate":true,"limit":2},"additionalLocales":["fr-CA"],"search":{"tags":"groundwarehousejobscanada"}},{"name":"groundtalentnetwork","displayName":"Ground Talent Network","locale":"en-US","externalFeaturedJobs":{"enabled":false,"separate":true,"limit":2},"search":{"tags":"groundcareers"}},{"name":"groundtalentnetwork-engineering","displayName":"Ground Talent Network Engineering","locale":"en-US","externalFeaturedJobs":{"enabled":false,"separate":true,"limit":2},"search":{"tags":"groundcareers"}},{"name":"groundtalentnetwork-maintenancetechs","displayName":"Ground Talent Network Maintenance Tech","locale":"en-US","externalFeaturedJobs":{"enabled":false,"separate":true,"limit":2},"search":{"tags":"groundcareers"}},{"name":"groundtalentnetwork-operationsmanagement","displayName":"Ground Talent Network Operations Management","locale":"en-US","externalFeaturedJobs":{"enabled":false,"separate":true,"limit":2},"search":{"tags":"groundcareers"}},{"name":"expresslac","displayName":"FedEx Express LAC","locale":"en-US","externalFeaturedJobs":{"enabled":true,"separate":true,"limit":2},"additionalLocales":["es-MX","pt-BR"],"search":{"brand":""}},{"name":"expresscanada","displayName":"FedEx Express Canada","locale":"en-US","externalFeaturedJobs":{"enabled":true,"separate":true,"limit":2},"additionalLocales":["fr-CA"],"search":{"brand":"FedEx Express Canada"}},{"name":"office-career-preview","displayName":"FedEx Office Career Preview","externalFeaturedJobs":{"enabled":false,"separate":true,"limit":2},"locale":"en-US"},{"name":"express-faq","displayName":"FedEx Express FAQ","locale":"en-US","externalFeaturedJobs":{"enabled":true,"separate":true,"limit":2},"search":{"brand":"FedEx Express|FedEx Express Canada"}},{"name":"services-softwaredeveloper","displayName":"FedEx Services Software Developer","externalFeaturedJobs":{"enabled":true,"separate":true,"limit":2},"locale":"en-US"},{"name":"pilot","displayName":"FedEx Pilot","externalFeaturedJobs":{"enabled":false,"separate":true,"limit":2},"locale":"en-US"},{"name":"services-pricinganalyst","displayName":"FedEx Services Pricing Analyst","externalFeaturedJobs":{"enabled":true,"separate":true,"limit":2},"locale":"en-US"},{"name":"services-pricinganalystdeveloper","displayName":"FedEx Services Pricing Analyst Developer","externalFeaturedJobs":{"enabled":true,"separate":true,"limit":2},"locale":"en-US"},{"name":"services-cybersecurity","displayName":"FedEx Services Cyber Security Professional","externalFeaturedJobs":{"enabled":true,"separate":true,"limit":2},"locale":"en-US"},{"name":"jobfair","displayName":"FedEx Job Fair","externalFeaturedJobs":{"enabled":false,"separate":true,"limit":2},"locale":"en-US"},{"name":"groundtalentnetwork-military","displayName":"FedEx Ground Talent Network Military","externalFeaturedJobs":{"enabled":false,"separate":true,"limit":2},"locale":"en-US"},{"name":"office-internal","displayName":"FedEx Office Internal","locale":"en-US","externalFeaturedJobs":{"enabled":false,"separate":true,"limit":2},"urlPath":"/office/internal"},{"name":"office-corporate","displayName":"FedEx Office Corporate","locale":"en-US","externalFeaturedJobs":{"enabled":false,"separate":true,"limit":2},"urlPath":"/office/corporate","search":{"brand":"FedEx Office"}},{"name":"office-sales","displayName":"FedEx Office Sales","locale":"en-US","externalFeaturedJobs":{"enabled":false,"separate":true,"limit":2},"urlPath":"/office/sales","search":{"brand":"FedEx Office"}},{"name":"office-samedaycitycouriers","displayName":"FedEx Office SameDay City Couriers","locale":"en-US","externalFeaturedJobs":{"enabled":false,"separate":true,"limit":2},"urlPath":"/office/samedaycitycouriers"},{"name":"office-manufacturing","displayName":"FedEx Office Manufacturing","locale":"en-US","externalFeaturedJobs":{"enabled":false,"separate":true,"limit":2},"urlPath":"/office/manufacturing","search":{"brand":"FedEx Office","categories":"Manufacturing"}},{"name":"office-store-field-manager","displayName":"FedEx Office Store Field Manager","locale":"en-US","externalFeaturedJobs":{"enabled":false,"separate":true,"limit":2},"search":{"brand":"FedEx Office"}},{"name":"office-storefieldtm","displayName":"FedEx Office Field TM","locale":"en-US","externalFeaturedJobs":{"enabled":false,"separate":true,"limit":2},"urlPath":"/office/storefieldtm","search":{"brand":"FedEx Office"}},{"name":"services-hiringevent-pawitn","displayName":"FedEx Services","locale":"en-US","externalFeaturedJobs":{"enabled":true,"separate":true,"limit":2},"search":{"brand":"FedEx Services"}},{"name":"military","displayName":"FedEx Military","locale":"en-US","externalFeaturedJobs":{"enabled":false,"separate":true,"limit":2},"ogContext":"fedex_military-og-logo.png","metadata":{"title":"Opportunities for Veterans| FedEx Careers","OG":{"title":"Opportunities for Veterans| FedEx Careers","description":"FedEx is committed to making the job search as simple, effective and enjoyable as possible for our veterans."}}},{"name":"military-why-fedex","displayName":"FedEx Military - Why Fedex","locale":"en-US","externalFeaturedJobs":{"enabled":false,"separate":true,"limit":2},"ogContext":"fedex_military_why_fedex-og-logo.png","metadata":{"title":"Choose FedEx| FedEx Careers for Veterans","OG":{"title":"Choose FedEx| FedEx Careers for Veterans","description":"At FedEx you'll find benefits, specialized training and everything you'd expect from a people-first organization."}}},{"name":"military-life","displayName":"FedEx Military - Life","locale":"en-US","externalFeaturedJobs":{"enabled":false,"separate":true,"limit":2},"ogContext":"fedex_military_life-og-logo.png","metadata":{"title":"Life At FedEx| FedEx Careers for Veterans","OG":{"title":"Life At FedEx| FedEx Careers for Veterans","description":"Discover the FedEx culture instilled with military principles and ideals and learn what it can do for your career."}}},{"name":"military-how-we-hire","displayName":"FedEx Military - How We Hire","locale":"en-US","externalFeaturedJobs":{"enabled":false,"separate":true,"limit":2},"ogContext":"fedex_military_how_we_hire-og-logo.png","metadata":{"title":"How We Hire| FedEx Careers for Veterans","OG":{"title":"How We Hire| FedEx Careers for Veterans","description":"At FedEx, we want to provide you with all of the tools necessary to find the perfect place for you within our organization."}}},{"name":"services-hiringeventjoin","displayName":"FedEx Services","locale":"en-US","externalFeaturedJobs":{"enabled":true,"separate":true,"limit":2},"search":{"brand":"FedEx Services"}},{"name":"ground-diversityinclusion","displayName":"FedEx Ground Diversity & Inclusion","locale":"en-US","externalFeaturedJobs":{"enabled":false,"separate":true,"limit":2},"search":{"tags":"groundcareers"}},{"name":"ground-diversityinclusion-networks","displayName":"FedEx Ground Diversity & Inclusion Networks","locale":"en-US","externalFeaturedJobs":{"enabled":false,"separate":true,"limit":2},"search":{"tags":"groundcareers"}},{"name":"pilot-attestation","displayName":"Fedex Pilot Attestation","externalFeaturedJobs":{"enabled":false,"separate":true,"limit":2},"locale":"en-US"},{"name":"pilot-transition","displayName":"Fedex Pilot Transition","externalFeaturedJobs":{"enabled":false,"separate":true,"limit":2},"locale":"en-US"},{"name":"endorsements","displayName":"Fedex Endorsements","externalFeaturedJobs":{"enabled":false,"separate":true,"limit":2}},{"name":"logistics-headquarters","displayName":"FedEx Logistics HQ","externalFeaturedJobs":{"enabled":true,"separate":true,"limit":2},"locale":"en-US","search":{"brand":"FedEx Trade Networks|FedEx Trade Networks - Transport & Brokerage|FedEx Trade Networks - Trade Services|FedEx Trade Networks APAC|FedEx Logistics|FedEx Logistics MEISA|FedEx Logistics APAC"},"ogContext":"fedex-logistics-og-logo.jpg"},{"name":"express-eu","displayName":"FedEx Express EU","locale":"en-US","search":{"brand":"FedEx Express EU"},"externalFeaturedJobs":{"enabled":true,"separate":true,"limit":2},"ogContext":"fedex-express-og-logo.jpg"},{"name":"express-meisa","externalFeaturedJobs":{"enabled":true,"separate":true,"limit":2},"displayName":"FedEx Express MEISA","search":{"brand":"FedEx Express MEISA|FedEx Freight MEISA"}}],"defaultContext":"fedex"},"profileSettings":{}},"getReferredConfig":{},"linkedinIntegration":{"enabled":true,"assets":{"client":"linkedin-apply"}}};
+      window.applyJob ={};
+      window.nodeEnv = 'staging';
+      window.cdn = 'https://app.jibecdn.com/';
+      window.loginModuleVersion = '2.3.2';
+  </script>
+  <script defer="" nomodule="" src="https://app.jibecdn.com/staging/login/2.3.2/runtime-es5.js">
+  </script>
+  <script src="https://app.jibecdn.com/staging/login/2.3.2/runtime-es2015.js" type="module">
+  </script>
+  <script defer="" nomodule="" src="https://app.jibecdn.com/staging/login/2.3.2/polyfills-es5.js">
+  </script>
+  <script src="https://app.jibecdn.com/staging/login/2.3.2/polyfills-es2015.js" type="module">
+  </script>
+  <script defer="" nomodule="" src="https://app.jibecdn.com/staging/login/2.3.2/vendor-es5.js">
+  </script>
+  <script src="https://app.jibecdn.com/staging/login/2.3.2/vendor-es2015.js" type="module">
+  </script>
+  <script defer="" nomodule="" src="https://app.jibecdn.com/staging/login/2.3.2/main-es5.js">
+  </script>
+  <script src="https://app.jibecdn.com/staging/login/2.3.2/main-es2015.js" type="module">
+  </script>
+  <script data-cookieconsent="statistics">
+   /**
+   * @description: send an arbitrary payload to the server-side for later consumption.
+   * @param {Object} payload - a json payload that contains arbitrary data
+   * @param {String} payload.event_name - the unique name to associate with the event
+   * @param {String} payload.slug - the job id to associate with the event
+   * @param {String} payload.language - the locale to associate with the event
+   */
+  function sendEvent(payload) {
+    // validation check
+    if (!(payload || payload.event_name)) {
+      console.error('insufficient data for meaningful response.');
+      return;
+    }
+
+    else {
+
+      // send ajax request to backend for consumption
+      $.ajax({
+        method: 'POST',
+        url: '/api/impression',
+        data: payload,
+        success: function (res) {
+          // console.log('successful ajax call with response: ', res);
+        }
+      });
+    }
+  }
+  </script>
+  <script>
+   //MIXPANEL FAKE FOR LOCAL
+  mixpanel = {
+    track: function(){
+      // console.log(JSON.stringify(Array.prototype.slice.call(arguments),null,4));
+    }
+  };
+  </script>
+  <!-- Accessibility BEGIN -->
+  <script>
+   function skipToMain() {
+    document.querySelector('.skip-to-main-selector').scrollIntoView();
+    setTimeout(function() {
+      document.querySelector('.skip-to-main-selector').focus();
+    }, 100);
+  }
+  </script>
+  <!-- Accessibility END -->
+  <script>
+   var referrer = location.protocol + "//" + location.host
+      if (document.referrer.length > 0 && document.referrer.indexOf(referrer) === -1 && !window.sessionStorage.getItem('externalReferrer')) {
+        window.sessionStorage.setItem('externalReferrer', document.referrer);
+      }
+  </script>
+  <div aria-describedby="cookieconsent:desc" aria-label="cookieconsent" aria-live="polite" class="cc-window" id="pixel-consent-container">
+   <div class="cookie-consent">
+    <div class="jibe-container cookie-consent-container">
+     <div class="third-party-consent-text column-container">
+      <p id="cookieconsent:desc">
+       Cookies are used on this site to assist in continually improving the candidate experience and all the interaction data we store of our visitors is anonymous. Learn more about your rights at our
+       <a href="https://www.fedex.com/en-us/trust-center.html">
+        Trust Center
+       </a>
+       .
+      </p>
+     </div>
+     <div class="third-party-button-container column-container">
+      <a aria-label="dismiss cookie message" class="btn-primary accept-button" id="cookie-consent-accept-button" role="button" tabindex="0">
+       Okay
+      </a>
+     </div>
+    </div>
+    <span aria-label="dismiss cookie message" class="close-button" id="cookie-consent-x" tabindex="0">
+     x
+    </span>
+   </div>
+  </div>
+  <script>
+   window.gdprConfiguration = {"enabled":true,"pixel_consent":{"enabled":true,"cookie_notice":true,"third_party":false,"versionId":"search-consent-1","show_consent":true},"apply_consent":{"enabled":false,"job_specific":true,"versionId":"apply-consent-1"},"ttl":2592000000};
+  </script>
+  <script type="text/javascript">
+   function defer(method) { if (window.jQuery) { method(); } else { setTimeout(function() { defer(method) }, 50); } } defer(function() { window.$ = jQuery; var head = window.document.querySelectorAll('head')[0], scrp = document.createElement('script'); scrp.setAttribute('type', 'text/javascript'); scrp.src = '/dist/js/gdpr.js?v=4.5.32'; jQuery(function() { window.document.body.appendChild(scrp); }); });
+  </script>
+ </body>
+</html>

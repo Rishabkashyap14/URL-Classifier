@@ -1,0 +1,1608 @@
+<!-- URL =http://secure-realestatecenter.stage.rsiteweb.com/account/login.aspx?referer=/account/customerhome.aspx&referer2=http:/realestatecenter.stage.rsiteweb.com--><!-- w =(['RSITEWEB.COM', 'rsiteweb.com'], datetime.datetime(2018, 4, 13, 23, 21, 26), [datetime.datetime(2022, 4, 13, 23, 21, 26), datetime.datetime(2022, 4, 13, 23, 21)])--><!DOCTYPE html>
+<html lang="en">
+ <head id="Master_Head1">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta charset="utf-8"/>
+  <script type="text/javascript">
+   window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam-cell.nr-data.net","errorBeacon":"bam-cell.nr-data.net","licenseKey":"e5a27c28be","applicationID":"172325647,185563286","transactionName":"ZQZQMEICX0IFWxdbVlxMczdgTFBSB1cWXE0dD10DWQ0fUBdIGw==","queueTime":0,"applicationTime":31,"agent":"","atts":""}
+  </script>
+  <script type="text/javascript">
+   (window.NREUM||(NREUM={})).loader_config={licenseKey:"e5a27c28be",applicationID:"172325647"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(7),c=e(8),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(9);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e){return!(!e||!e.protocol||"file:"===e.protocol)}t.exports=r},{}],4:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(6),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],5:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],6:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],7:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],8:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],9:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?u(e,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){e&&a&&e(n,r,i);for(var c=t(i),f=v(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[h[n]];return p&&p.push([b,n,r,c]),c}}function o(e,t){y[e]=v(e).concat(t)}function m(e,t){var n=y[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return y[e]||[]}function g(e){return p[e]=p[e]||i(n)}function w(e,t){s(e,function(e,n){t=t||"feature",h[n]=t,t in d||(d[t]=[])})}var y={},h={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:w,abort:c,aborted:!1};return b}function o(e){return u(e,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=e("gos"),s=e(7),d={},p={},l=t.exports=i();t.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=x.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+x.offset],null,"api"),c("timing",["load",n]);var r=l.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===l.readyState&&o()}function o(){c("mark",["domContent",a()+x.offset],null,"api")}var a=e(2),c=e("handle"),f=e(7),u=e("ee"),s=e(5),d=e(3),p=window,l=p.document,m="addEventListener",v="attachEvent",g=p.XMLHttpRequest,w=g&&g.prototype;if(d(p.location)){NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:g,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1208.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:b,userAgent:s};e(1),e(4),l[m]?(l[m]("DOMContentLoaded",o,!1),p[m]("load",r,!1)):(l[v]("onreadystatechange",i),p[v]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0}},{}],"wrap-function":[function(e,t,n){function r(e,t){function n(t,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],e)}c(n+"start",[o,a,f],s,u);try{return p=t.apply(a,o)}catch(m){throw c(n+"err",[o,a,m],s,u),m}finally{c(n+"end",[o,a,p],s,u)}}return a(t)?t:(n||(n=""),nrWrapper[p]=t,o(t,nrWrapper,e),nrWrapper)}function r(e,t,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<t.length;u++)f=t[u],c=e[f],a(c)||(e[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!m||t){var c=m;m=!0;try{e.emit(n,r,o,t,a)}catch(f){i([f,n,r,o],e)}m=c}}return e||(e=s),n.inPlace=r,n.flag=p,n}function i(e,t){t||(t=s);try{t.emit("internal-error",e)}catch(n){}}function o(e,t,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(e);return r.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(o){i([o],n)}for(var a in e)l.call(e,a)&&(t[a]=e[a]);return t}function a(e){return!(e&&e instanceof Function&&e.apply&&!e[p])}function c(e,t){var n=t(e);return n[p]=e,o(e,n,s),n}function f(e,t,n){var r=e[t];e[t]=c(r,n)}function u(){for(var e=arguments.length,t=new Array(e),n=0;n<e;++n)t[n]=arguments[n];return t}var s=e("ee"),d=e(8),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;t.exports=r,t.exports.wrapFunction=c,t.exports.wrapInPlace=f,t.exports.argsToArray=u},{}]},{},["loader"]);
+  </script>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <!-- Build Number: 2021.7.0.6 | Server: RWX-WEB-OC2-S02 | Design: /RECoTemplates/Freedom03 -->
+  <meta content="Real Estate Center - REC" name="title"/>
+  <meta content="Find homes for sale, find an agent, view virtual tours, receive homes by e-mail, learn about buying and selling a home and more!" name="description"/>
+  <meta content="Search for real estate and homes in your area!" name="abstract"/>
+  <meta content="noodp, noydir, NOINDEX, NOFOLLOW" name="robots"/>
+  <meta content="All Web Display Contents Copyright Real Estate Center - REC. All Rights Reserved. All MLS IDX Licensed Content is owned by or licensed from its respective owner/licensor solely for Display in the approved manner. The programming and software materials herein are copyright of Xome. The programming and software materials are owned, held, or licensed by Xome. Personal, educational, non-commercial, commercial or any other use of these materials, without the written permission of Xome, is strictly prohibited." name="copyright"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+  <meta content="upgrade-insecure-requests" http-equiv="Content-Security-Policy"/>
+  <link href="https://secure-realestatecenter.stage.rsiteweb.com/account/login.aspx" rel="canonical"/>
+  <!-- canonical -->
+  <link href="/images/recos/1198/favicon.ico" rel="shortcut icon" type="image/ico"/>
+  <!-- shortcut-icon -->
+  <link href="/jscss/2021.7.0.6/css/d80c8f11-bf0f-4f47-bb6f-26e0ea7f9f09" rel="stylesheet" type="text/css"/>
+  <!-- css-global -->
+  <link href="/jscss/2021.7.0.6/css/357a4139-d3c3-4adc-b68b-08dda18f1547" rel="stylesheet" type="text/css"/>
+  <!-- css-page-int -->
+  <link href="/jscss/2021.7.0.6/css/b1712d81-5862-4543-93e7-b24d71c2995c" rel="stylesheet" type="text/css"/>
+  <!-- css-reco -->
+  <script type="text/javascript">
+  </script>
+  <!-- js-global-ext-1 -->
+  <script src="/jscss/2021.7.0.6/js/51502cdc-a55f-4979-aa47-2e438db9da57?v=2021.7.0.6" type="text/javascript">
+  </script>
+  <!-- js-global-int -->
+  <script src="/jscss/2021.7.0.6/js/7e555a58-1ee7-494a-b54a-7764539f18cd?v=2021.7.0.6" type="text/javascript">
+  </script>
+  <!-- js-page-int -->
+  <script type="text/javascript">
+   /* <![CDATA[ */
+Utils.AppPath="";
+Utils.PublicAppName="";
+Utils.PublicHostHeader="realestatecenter.stage.rsiteweb.com";
+Utils.SecureHostHeader="secure-realestatecenter.stage.rsiteweb.com";
+Utils.SecureGeolocationUrl="https://geo.rdeskwebsite.com/LocationFinder.aspx?embed=1&amp;FindLocation=1";
+Utils.RedApiBaseUrl="//xapi.stage.rsiteweb.com";
+Utils.RedApiPath="/v1";
+if(typeof rbw=="undefined"){var rbw={}
+}if(typeof rbw.utils=="undefined"){rbw.utils={}
+}rbw.utils.version="2021.7.0.6";
+rbw.env=rbw.env||{};
+rbw.env.isDev=false;
+rbw.env.isQA=false;
+rbw.env.isStage=true;
+rbw.env.isProd=false;
+if(typeof rbw.context=="undefined"){rbw.context={}
+}rbw.context.Listing=null;
+rbw.context.branding="RECo";
+rbw.context.validStamp="Of40APe101UDUBTNsSPfX5/zv5J5R4t/njmRHLon/q4=";
+rbw.context.useOfficeApi=false;
+rbw.context.isAuthenticated=false;
+rbw.context.application="public";
+rbw.context.siteUrl="";
+rbw.context.enrolledInMarketWatch=false;
+rbw.serviceUrl=Utils.AppPath+"/include/ajax/api.aspx";
+rbw.context.preferredMeasurementSystem="US";
+rbw.context.recoId=1198;
+rbw.context.recoNameNormalized="REC";
+rbw.context.origins=["https://realestatecenter.stage.xometools.com"];
+if(rbw.context.recoId===1325){rbw.context.xomeAuctionUrl="https://xomeretail.stage.rsiteweb.com/auctions"
+}rbw.context.mapOptionOverrides={customMapJsPath:"/images/recos/1198/map/BingMap.js",customMapStyle:null,disableStreetside:true,localeName:"en-us"};
+rbw.context.isLocalizationEnabled=false;
+rbw.context.isWhiteLabel=true;
+rbw.context.customerId=0;
+rbw.context.featureFlags={"is-payment-enabled":true,"address-broker-log":false};
+rbw.context.isStrongPassword=true;
+rbw.context.isDisplayMLSAttributionOnPhotoView=false;
+rbw.context.isDisplayMLSNo=false;
+rbw.context.xomeWidgetsWebBaseUrl="https://x-api.stage.xome.com/xda/web/";
+rbw.context.showZendeskChat=false;
+rbw.context.autoCompleteSearchResultsDisplayCount=50;
+rbw.context.GTM=false;
+rbw.context.StaticMap="false";
+rbw.context.SmartBanner="false";
+rbw.context.SchoolWidgetsHyperlink=false;
+rbw.context.CCPA=false;
+rbw.context.isV4Ldp=true;
+rbw.context.dashboardVersion="v5";
+rbw.context.WebsiteId=-32768;
+rbw.context.currentLocationMobileValue=0.5;
+rbw.context.currentLocationTabletValue=0;
+rbw.context.currentLocationDesktopValue=0;
+if(rbw.context.recoId===35012){rbw.context.externalMrCooperBaseUrl="https://uat.mrcooper.com"
+}rbw.context.isBrokerLevelOffices=false;
+if(typeof rbw.recaptcha=="undefined"){rbw.recaptcha={}
+}rbw.recaptcha.checkboxReCaptchaKey="6Le12tcZAAAAANB9UjCcvQSetb9e_hdY9nTISRb0";
+rbw.recaptcha.invisibleReCaptchaKey="6LfA2tcZAAAAAEgEtCRau75cPZBn4yaztdc9i1g5";
+rbw.recaptcha.showReCaptcha=false;
+if(typeof rbw.context.Website=="undefined"){rbw.context.Website={}
+}rbw.context.Website.Name="";
+rbw.context.Website.PhoneNumber="";
+rbw.context.Website.MobileNumber="";
+rbw.context.Website.EmailAddress="";
+if(typeof rbw.context.Website.PrimaryOffice=="undefined"){rbw.context.Website.PrimaryOffice={}
+}rbw.context.Website.PrimaryOffice.OfficeName="";
+rbw.context.Website.PrimaryOffice.PortraitUrl="";
+rbw.context.Website.PrimaryOffice.WebsiteUrl="";
+rbw.context.Website.PrimaryOffice.OfficeWebsiteURL="";
+rbw.context.Website.PrimaryOffice.LicenseNumber="";
+rbw.context.Website.PrimaryOffice.RealPingID="";
+if(typeof rbw.context.Agent=="undefined"){rbw.context.Agent={}
+}rbw.context.Agent.NmlsID="";
+if(typeof rbw.context.Agent.Person=="undefined"){rbw.context.Agent.Person={}
+}rbw.context.Agent.Person.WebsiteURL="";
+rbw.context.Agent.Person.FirstName="";
+rbw.context.Agent.Person.LastName="";
+rbw.context.Agent.Person.PortraitFileName="";
+rbw.context.Agent.Person.RealPingID="";
+rbw.CustomerData={FirstName:"",LastName:""};
+rbw.kc.keycloak.init({kcUrl:"https://kcid-s.extnp.xome.com/auth",realm:"BankOfAmerica",clientId:"rw-public",useIdentityService:false}).then(function(a){a.handleSession(false,"")
+});
+jQuery(function(){try{jQuery("form").append('<input type="hidden" name="validstamp" value="Of40APe101UDUBTNsSPfX5/zv5J5R4t/njmRHLon/q4=" />')
+}catch(a){}});
+var staggeredAccuracy=false;
+rbw.context.quantariumBaseUrl="https://qwidgets.quantarium.com/";
+rbw.payment=rbw.payment||{};
+rbw.payment.isEnabled=false;
+rbw.ui.ListingSearchVersion=5;
+/* ]]> */
+  </script>
+  <!-- js-page-block -->
+  <!-- 
+Some browsers, such as Safari, will load a totally cached version of the page if you hit
+the back button on the browser.
+
+This is undesirable since it will break the intended functionality of the search cookies,
+causing the user's previous homepage search to NOT pre-populate.
+The issue is detailed within the Jira ticket XRA-863.
+-->
+  <!-- 
+Disable zooming in of form elements on all pages on iOS.
+Unfortunately, iOS does not zoom back out after it zooms in, and BofA stakeholders hate this.
+-->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+  <!-- Facebook sharing: homepage screenshot -->
+  <script>
+   var _reactDashboardActivated = true;
+  var _displayPanels = 20;
+  
+  // Site contains an overall max width limit. If not, then remove below variable entirely.
+  var _maxWidthLimitedSite = true;
+  
+  // mask email address with asterisks (timothy@email.com --> t*****y@email.com)
+  var _maskEmailAddresses = true;
+
+  /* Below snippet is to ensure all the widgets getting loaded in LDP overlay on IE 11 considering we are not using 
+  Rating and Notes section(where the error is happening) in LDP for whiteLabel */
+  window.isStarsScriptLoaded = 1;
+  </script>
+  <title>
+   Real Estate Center - REC
+  </title>
+ </head>
+ <body class="internal " id="account-login">
+  <!-- BEGIN: Google Analytics -->
+  <script>
+   (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-3332603-61', 'auto');
+  ga('send', 'pageview');
+  </script>
+  <!-- END: Google Analytics -->
+  <!-- Subpage Header -->
+  <div id="broker-warning-modal-container">
+   <div aria-label="Broker Site Confirmation Dialog, Click Continue to search" class="modal fade rec-modal rec-broker-confirm" id="broker-warning-modal" role="dialog" tabindex="-1">
+    <div class="modal-dialog" role="document">
+     <div class="modal-content">
+      <div class="modal-header">
+       <button aria-label="Cancel - Return to homepage" class="close" data-dismiss="modal" id="broker-warning-close" type="button">
+        <img alt="Close modal and return to homepage" src="/images/recos/1198/close-x.png"/>
+       </button>
+      </div>
+      <div class="modal-body">
+       <h3>
+        Continue to Member Broker website
+       </h3>
+       <p>
+        By selecting
+        <strong>
+         Continue
+        </strong>
+        , you will be viewing content provided by a Bank of America Real Estate Center Member Broker who may
+            have privacy practices and offer a level of security different than ours.  Bank of America is not responsible for and does not endorse,
+            guarantee or monitor content, availability, viewpoints, products or services that are offered within the content pages of our Member Brokers.
+       </p>
+      </div>
+      <div class="modal-footer">
+       <button aria-label="Confirm, Continue to Search" class="rec-blue-square-button" data-dismiss="modal" id="broker-warning-confirm" type="button">
+        Continue
+       </button>
+       <button aria-label="Go back to Bank of America" class="rec-square-button" data-dismiss="modal" id="broker-warning-cancel" type="button">
+        Go back to Bank of America
+       </button>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- #broker-warning-modal-container -->
+  <div aria-labelledby="Continue to new location" class="modal fade rec-modal rec-broker-confirm" id="r-change-office-modal" role="dialog" tabindex="-1">
+   <div class="modal-dialog" role="document">
+    <div class="modal-content">
+     <div class="modal-header">
+      <button aria-label="Cancel - Stay on same page" class="close" data-dismiss="modal" type="button">
+       <img alt="Close modal and stay on same page" src="/images/recos/1198/close-x.png"/>
+      </button>
+     </div>
+     <div class="modal-body">
+      <h3>
+       Continue to new location
+      </h3>
+      <p>
+       <span id="location-name-1">
+       </span>
+       is not covered by
+       <span id="branded-member-broker">
+       </span>
+       .
+          By selecting continue, your previous locations will be removed.
+          Only
+       <span id="location-name-2">
+       </span>
+       will be included in your search.
+      </p>
+     </div>
+     <div class="modal-footer">
+      <button aria-label="Confirm, Continue to new location" class="rec-blue-square-button btn btn-primary" data-dismiss="modal" id="continue-to-new-location-confirm" type="button">
+       Continue
+      </button>
+      <button aria-label="Cancel, Stay on same page" class="rec-square-button btn btn-default" data-dismiss="modal" id="continue-to-new-location-cancel" type="button">
+       Cancel
+      </button>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- #change-broker-modal-container -->
+  <!-- REC Header START-->
+  <div class="fsd-layout js-header-height sticky-header js-site-header hidden" id="main-site-header">
+   <div class="center-content container-fluid home-main-header">
+    <div class="header-module row">
+     <div class="col-md-12">
+      <a href="https://www.bankofamerica.com/">
+       <img alt="Bank of America logo" class="home-logo" src="/images/recos/1198/boa-logo.svg"/>
+      </a>
+      <div class="right-area">
+       <a class="magnifying-glass standalone" href="https://www.bankofamerica.com/" target="_blank">
+       </a>
+       <a class="locations-link" href="https://www.bankofamerica.com/" target="_blank">
+        Locations
+       </a>
+       <div class="search-for-help-section">
+        <input class="search-for-help-input" maxlength="100" placeholder="How can we help you?" type="text"/>
+        <a class="search-for-help-button" href="https://www.bankofamerica.com/" target="_blank">
+         <div class="magnifying-glass">
+         </div>
+        </a>
+       </div>
+       <div class="head-pad bac-menu-button text-right" id="clicker">
+        <a aria-controls="rec-top-nav-collapse" aria-expanded="false" class="rec-menu-container js-rec-menu-container" data-toggle="collapse" href="#rec-top-nav-collapse" role="button">
+         Menu
+         <div class="menu-arrow" id="rotating">
+         </div>
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+    <!-- .header-module -->
+    <div class="collapse" id="rec-top-nav-collapse">
+     <div class="well bac-nav-links">
+      <div class="max-width-wrapper">
+       <svg aria-hidden="true" class="nav-tab-arrow" focusable="false" height="16" id="navTabArrow" role="presentation" style="display: block;" version="1.1" viewbox="0 0 32 17" width="32">
+        <path class="down-arrow" d="M 2,2 16,16 30,2" fill="#fff" stroke="#d1c9c0" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1">
+        </path>
+       </svg>
+      </div>
+      <div class="row top-links">
+       <div class="col-md-12">
+        <div class="max-width-wrapper">
+         <div class="link-container">
+          <div class="link-set">
+           <a class="link icon icon-home" href="https://www.bankofamerica.com/">
+            Bank of America Home
+           </a>
+           <a class="link icon icon-locations" href="https://locators.bankofamerica.com/">
+            Locations
+           </a>
+          </div>
+          <div class="link-set">
+           <a class="link icon icon-contact" href="https://www.bankofamerica.com/contactus/contactus.go">
+            Contact Us
+           </a>
+           <a class="link icon icon-help" href="https://www.bankofamerica.com/home-loans/faq-mortgage-refi.go">
+            Help
+           </a>
+          </div>
+         </div>
+         <!-- .link-container -->
+        </div>
+        <!-- .link-wrapper -->
+       </div>
+       <!-- .col-md-12 -->
+      </div>
+      <!-- .top-links -->
+      <div class="max-width-wrapper">
+       <div class="row bottom-links">
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 menu-list">
+         <div aria-expanded="false" class="category js-category" data-target="#link-group-1" data-toggle="collapse">
+          Mortgage
+         </div>
+         <div class="collapse js-collapse" id="link-group-1">
+          <ul class="link-list">
+           <li class="link-item">
+            <a class="link" href="https://www.bankofamerica.com/mortgage/home-mortgage/">
+             Mortgage Loans
+            </a>
+           </li>
+           <li class="link-item">
+            <a class="link" href="https://www.bankofamerica.com/mortgage/mortgage-rates/">
+             Today's Mortgage Rates
+            </a>
+           </li>
+           <li class="link-item">
+            <a class="link" href="https://www.bankofamerica.com/home-loans/mortgage/mortgage-payment-calculator.go">
+             Mortgage Calculator
+            </a>
+           </li>
+           <li class="link-item">
+            <a class="link" href="https://www.bankofamerica.com/mortgage/closing-costs-calculator/">
+             Closing Costs Calculator
+            </a>
+           </li>
+           <li class="link-item">
+            <a class="link" href="https://www.bankofamerica.com/mortgage/learn/">
+             Learn About Mortgages
+            </a>
+           </li>
+          </ul>
+         </div>
+         <!-- #link-group-1 -->
+        </div>
+        <!-- .menu-list -->
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 menu-list">
+         <div aria-expanded="false" class="category js-category" data-target="#link-group-2" data-toggle="collapse">
+          Refinance
+         </div>
+         <div class="collapse js-collapse" id="link-group-2">
+          <ul class="link-list">
+           <li class="link-item">
+            <a class="link" href="https://www.bankofamerica.com/mortgage/refinance/">
+             Refinance Loans
+            </a>
+           </li>
+           <li class="link-item">
+            <a class="link" href="https://www.bankofamerica.com/mortgage/refinance-rates/">
+             Today's Refinance Rates
+            </a>
+           </li>
+           <li class="link-item">
+            <a class="link" href="https://www.bankofamerica.com/home-loans/refinance/custom-refinance-rates-today.go">
+             Mortgage Refinance Calculator
+            </a>
+           </li>
+           <li class="link-item">
+            <a class="link" href="https://homevaluerealestatecenter.bankofamerica.com/" target="_blank">
+             Home Value Estimator
+            </a>
+           </li>
+           <li class="link-item">
+            <a class="link" href="https://www.bankofamerica.com/mortgage/learn/#/refinance">
+             Learn About Home Refinancing
+            </a>
+           </li>
+          </ul>
+         </div>
+         <!-- #link-group-2 -->
+        </div>
+        <!-- .menu-list -->
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 menu-list">
+         <div aria-expanded="false" class="category js-category" data-target="#link-group-3" data-toggle="collapse">
+          Home Equity
+         </div>
+         <div class="collapse js-collapse" id="link-group-3">
+          <ul class="link-list">
+           <li class="link-item">
+            <a class="link" href="https://www.bankofamerica.com/home-equity/">
+             Home Equity Line of Credit
+            </a>
+           </li>
+           <li class="link-item">
+            <a class="link" href="https://www.bankofamerica.com/home-equity/home-equity-rates/">
+             Today's Home Equity Rates
+            </a>
+           </li>
+           <li class="link-item">
+            <a class="link" href="https://www.bankofamerica.com/home-loans/home-equity/home-equity-loan-payment-calculator.go">
+             Home Equity Calculator
+            </a>
+           </li>
+           <li class="link-item">
+            <a class="link" href="https://www.bankofamerica.com/mortgage/learn/#/home-equity">
+             Learn About Home Equity
+            </a>
+           </li>
+          </ul>
+         </div>
+         <!-- #link-group-3 -->
+        </div>
+        <!-- .menu-list -->
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 menu-list">
+         <div aria-expanded="false" class="category js-category" data-target="#link-group-4" data-toggle="collapse">
+          Other Home Loans Links
+         </div>
+         <div class="collapse js-collapse" id="link-group-4">
+          <ul class="link-list">
+           <li class="link-item">
+            <a class="link" href="https://www.bankofamerica.com/mortgage/">
+             Home Loans Overview
+            </a>
+           </li>
+           <li class="link-item">
+            <a class="link" href="https://www.bankofamerica.com/home-loans/service.go">
+             Manage Your Loan
+            </a>
+           </li>
+          </ul>
+         </div>
+         <!-- #link-group-4 -->
+        </div>
+        <!-- .menu-list -->
+       </div>
+       <!-- .bottom-links -->
+      </div>
+      <!-- .max-width-wrapper -->
+     </div>
+     <!-- .bac-nav-links -->
+    </div>
+    <!-- #rec-top-nav-collapse -->
+    <div class="page-title-fsd-module row">
+     <div class="fix-header-container js-fix-header-container">
+      <div class="standard-red-skin sup-ie col-xs-12" id="skip-to-h1">
+       <a class="reco-host-header-link">
+        <h1>
+         Bank of America Real Estate Center
+         <sup class="trademark">
+          ®
+         </sup>
+        </h1>
+       </a>
+       <div class="red-bar-ctas">
+        <a class="header-button inside-red-bar sign-in-link">
+         Sign In
+        </a>
+        <a class="header-button inside-red-bar my-profile-link">
+         My Profile
+        </a>
+        <a class="header-button header-button-prequalify inside-red-bar" href="https://secure.bankofamerica.com/apply-now-services/home-loans/initialize/v1/init?requesttype=DME" target="_blank" title="Opens in a new tab.">
+         Prequalify Now
+        </a>
+       </div>
+      </div>
+      <div class="sub-header-wrapper">
+       <div class="sub-header-container clearfix">
+        <a class="shortcut-link js-shortcut-link" href="#homepage-hero-section">
+         Find a Home
+        </a>
+        <a class="shortcut-link shortcut-link-market-trends js-shortcut-link-market-trends js-shortcut-link" href="#market-trends-targeted">
+         Market Trends
+        </a>
+        <a class="shortcut-link js-shortcut-link" href="#featured-properties">
+         Featured Properties
+        </a>
+        <div class="right-cta-area">
+         <a class="header-button header-button-secondary sign-in-link">
+          Sign In
+         </a>
+         <a class="header-button header-button-secondary my-profile-link">
+          My Profile
+         </a>
+         <a class="header-button header-button-prequalify" href="https://secure.bankofamerica.com/apply-now-services/home-loans/initialize/v1/init?requesttype=DME" target="_blank" title="Opens in a new tab.">
+          Prequalify Now
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- REC Header END-->
+  <!-- Broker Header START-->
+  <div class="fsd-layout js-header-height sticky-header js-site-header hidden" id="site-broker-header">
+   <div class="center-content container-fluid" role="banner">
+    <div class="rec-broker-heading-row main-broker-header js-main-broker-header row">
+     <div class="home-loans-skin clearfix">
+      <div class="broker-left-contents">
+       <img alt="Member Broker Logo" class="header-broker-logo js-header-broker-logo" src="/images/recos/1198/placeholder.png"/>
+       <div class="header-broker-name-container">
+        <div class="header-broker-name js-header-broker-name">
+         Member Broker
+        </div>
+        <a class="header-site-branding js-header-base-url">
+         <h1 class="header-site-title">
+          Real Estate Center
+          <sup class="superscript">
+           ®
+          </sup>
+         </h1>
+         <img alt="Home Search logo" class="header-site-logo" src="/images/recos/1198/home-search-logo.png"/>
+        </a>
+        <a class="phone-number js-header-broker-phone-number" href="#">
+        </a>
+       </div>
+      </div>
+      <div class="broker-contact-information">
+       <a class="header-broker-phone-number js-header-broker-phone-number" href="#">
+       </a>
+       <span class="header-broker-license js-header-broker-license">
+        License #
+        <span class="js-license-number">
+        </span>
+       </span>
+       <a class="header-broker-email js-header-broker-email" href="#">
+       </a>
+      </div>
+      <a class="sign-in-profile-button js-sign-in-profile-button sign-in-link">
+       Sign In
+      </a>
+      <a class="sign-in-profile-button my-profile-link">
+       My Profile
+      </a>
+     </div>
+     <!-- .home-loans-skin -->
+    </div>
+    <!-- .rec-broker-heading-row -->
+    <div class="page-title-fsd-module row">
+     <div class="standard-red-skin sup-ie col-xs-12" id="skip-to-h1">
+     </div>
+    </div>
+    <div class="row rec-prequalify-row">
+     <div class="left-side hidden">
+      <a class="home-house reco-host-header-link">
+      </a>
+      <div class="home-types-container">
+       <a class="home-type home-type-primary no-cursor" href="#existing-homes" title="You are currently viewing Existing Homes.">
+        <span class="copy js-count-existing-homes">
+         Existing Homes (0)
+        </span>
+       </a>
+       <a class="home-type home-type-secondary js-home-type-new-homes" href="https://boa.newhomesource.com" target="_blank" title="Opens New Homes in a new tab.">
+        <span class="copy js-count-new-homes">
+         New Homes (0)
+        </span>
+       </a>
+       <a class="home-type home-type-secondary js-home-type-bank-owned-homes" href="https://foreclosures.bankofamerica.com/search" target="_blank" title="Opens Bank-Owned Homes in a new tab.">
+        <span class="copy js-count-bank-owned-homes">
+         Bank-Owned Homes (0)
+        </span>
+       </a>
+      </div>
+      <div class="home-type-dropdown-container down-arrow">
+       <select class="home-type-dropdown js-home-type-dropdown">
+        <option selected="" value="N/A">
+         Go to...
+        </option>
+        <option class="option js-count-existing-homes" value="existing">
+         Existing Homes (0)
+        </option>
+        <option class="option js-home-type-new-homes-dropdown-option js-count-new-homes" value="https://boa.newhomesource.com">
+         New Homes (0)
+        </option>
+        <option class="option js-home-type-bank-owned-homes-dropdown-option js-count-bank-owned-homes" value="https://foreclosures.bankofamerica.com/search">
+         Bank-Owned Homes (0)
+        </option>
+       </select>
+      </div>
+     </div>
+     <div class="right-side text-right">
+      <div class="right-text header-homebuyer">
+       <a class="right-text header-homebuyer-text js-launch-down-payment-assistance-modal js-down-payment-assistance" href="#" target="_blank" title="Launches homebuyer grants modal">
+        Homebuyer grants
+       </a>
+      </div>
+      <a class="right-text header-prequalify-text" href="https://foreclosures.bankofamerica.com/prequalified" target="_blank" title="Opens Prequalify in a new tab.">
+       Prequalify
+      </a>
+      <a aria-controls="apply-online-dropdown" aria-expanded="false" class="right-text header-apply-online-text down-arrow js-header-apply-online-text" data-toggle="collapse" href="#apply-online-dropdown" role="button">
+       Not ready to
+       <br class="manual-break"/>
+       apply online?
+      </a>
+      <div class="collapse apply-online-dropdown" id="apply-online-dropdown">
+       <a class="link icon-contact" href="https://www.bankofamerica.com/contactus/contactus.go" target="_blank" title="Opens Contact Us in a new tab.">
+        Contact Us
+       </a>
+       <a class="link icon-help" href="https://www.bankofamerica.com/mortgage/faqs/#mortgage-refinance" target="_blank" title="Opens Help in a new tab.">
+        Help
+       </a>
+       <a class="link icon-schedule" href="https://secure.bankofamerica.com/secure-mycommunications/public/appointments/" target="_blank" title="Opens Schedule an Appointment in a new tab.">
+        Schedule an appointment
+       </a>
+      </div>
+     </div>
+     <!-- .right-side -->
+    </div>
+    <!-- .rec-prequalify-row -->
+   </div>
+  </div>
+  <!-- Broker Header END-->
+  <!-- Dashboard Header START -->
+  <div class="dashboard-site-header">
+   <div class="copy-container">
+    <h1 class="main-title">
+     My Real Estate Center Dashboard
+    </h1>
+    <div class="header-nav-links-container">
+     <a class="nav-link" href="/">
+      Search Homes
+     </a>
+     <span class="vertical-divider">
+      |
+     </span>
+     <a class="nav-link" href="/Account/CustomerLogout.aspx">
+      Sign Out
+     </a>
+    </div>
+   </div>
+  </div>
+  <!-- Dashboard Header END -->
+  <script>
+   (function SearchResultsPageCustomInjections() {
+    if (window.location.href.toLowerCase().indexOf('/listing/listingsearch.aspx') > -1 && typeof rbw !== 'undefined' && typeof rbw.utils !== 'undefined') {
+      rbw.utils.awaitSelector('#mapsearch-criteria-basicsearch').then(function insertHiddenInput() {
+        $('#mapsearch-criteria-basicsearch').prepend('<input type="hidden" name="HardCodedCriterion" value="3183" />');
+      });
+    }
+  })();
+  </script>
+  <div id="viewport-wrapper">
+   <table border="0" cellpadding="0" cellspacing="0" id="Master_Viewport" width="100%">
+    <tr>
+     <td>
+      <script>
+       var _qs = new Querystring();
+        var _onSucess = _qs.getSafe('onsuccess');
+        var _loginSuccessCallback = _qs.getSafe('onloginsuccess');
+        var _registerCallback = _qs.getSafe('onregister');
+        var _signinCallback = _qs.getSafe('onsignin');
+        var _errors = _qs.get('loginerrors');
+
+        $(window).load(function () {
+            try {
+                document.forms['customerLoginForm'].action = 'https://secure-realestatecenter.stage.rsiteweb.com/account/login.aspx?referer=%2faccount%2flogin.aspx%3freferer%3d%2faccount%2fcustomerhome.aspx%26referer2%3dhttp%3a%2frealestatecenter.stage.rsiteweb.com%26x%3dreferall';
+                onLoadSigninForm();
+                checkValidation();
+                resize();
+                $("#cancel-button").on("click", closeColorbox);
+                $("input").placeholder();
+            } catch (e) { }
+        });
+
+        function closeColorbox() {
+            parent.jQuery.fn.colorbox.close();
+        }
+
+        function checkValidation() {
+            var _qs = new Querystring(),
+                _errors = _qs.get('loginerrors').split('|'),
+                i;
+            if (_errors.length > 1) {
+                $('.errorMessageBox').show();
+                for (i = 0; i < _errors.length; i++) {
+                    if (_errors[i].length > 0) {
+                      $('.errorMessageBox ul').append('<li>' + _errors[i] + '</li>');
+                      if (_errors[i].indexOf('password has expired') !== -1) {
+                        $('.errorMessageBox ul').append('<a href="JavaScript:emailPassword()">Reset Password</a >');
+                      }
+                    }
+                }
+            } else {
+                $('.errorMessageBox').hide();
+            }
+        }
+
+        function setForm() {
+            var elEmail = document.getElementById('security_loginname');
+            if (elEmail && elEmail.value == 'Email')
+                elEmail.value = '';
+            var elPass = document.getElementById('security_password');
+            if (elPass && elPass.type == 'text')
+                elPass.value = '';
+            setFormCookie(elEmail.value);
+            return true;
+        }
+
+        function toPassword(oInput) {
+            var newEl = document.createElement('input');
+            newEl.setAttribute('type', 'password');
+            newEl.setAttribute('name', 'security/password');
+            newEl.setAttribute('id', 'security_password');
+            newEl.className = oInput.className;
+            newEl.style.width = oInput.style.width;
+            oInput.parentNode.replaceChild(newEl, oInput);
+            toPassword.el = newEl;
+            setTimeout('toPassword.el.focus()', 100);
+            return true;
+        }
+
+        function emailPassword() {
+            var queryString = new Querystring(location.href);            var isEmbeddedFrame = false;            if (queryString.params !== null && typeof (queryString.params["embed"]) !== 'undefined') {
+                isEmbeddedFrame = queryString.params["embed"];    
+            }
+            // if current page has embed query string, pass that along to forgot password page
+            window.location.href = (isEmbeddedFrame) ?
+                Utils.PublicAppName +
+                '/account/forgotpassword.aspx?LoginName=' +
+                $("#security_loginname").val() +
+                '&embed=1' :
+                Utils.PublicAppName +
+                '/account/forgotpassword.aspx?LoginName=' +
+                $("#security_loginname").val();
+        }
+
+      function onRegister() {
+        if (rbw.context.GTM) {
+          GTMTrackEvent('registerNow', 'Create Account', 'click', '{{Register now}}');
+        }
+            // Go to signup.aspx but remove the errors.
+            // if(self == top) - Does not work for Overlay's, so removed it to make sure we get the parameters we need for signup.aspx
+            var signupHref = window.location.href.replace('login.aspx', 'signup.aspx'),
+                errorsQueryStringPosition = signupHref.indexOf('loginerrors');
+
+            if (errorsQueryStringPosition !== -1) {
+                signupHref = signupHref.substring(0, errorsQueryStringPosition);
+            }
+
+            window.location.href = signupHref;
+            
+            if (_registerCallback != "") {
+                window.parent.rbw.context.isAuthenticated = false;
+                eval("window.parent." + _registerCallback + "()");
+            }
+
+            return;
+        }
+
+        function onSignin() {
+            if (_signinCallback != "") {
+                window.parent.rbw.context.isAuthenticated = false;
+                eval("window.parent." + _signinCallback + "()");
+            }
+        }
+
+        function setFormCookie(c) {
+            document.cookie = "rf=" + escape(c) + ";";
+        }
+
+        function preRegFormSubmit() {
+            var p = [];
+            p.push(document.registrationForm["Person/FirstName"].value);
+            p.push(document.registrationForm["Person/LastName"].value);
+            p.push(document.registrationForm["Person/EmailAddress"].value);
+
+            var v = $("input[name='BuyingSelling']:checked").val();
+            p.push(typeof (v) != "undefined" ? v : "");
+            p.push(document.registrationForm["security/persist"].checked ? "1" : "0");
+            if (document.registrationForm["Customer/MarketingOptInFlg"]) {
+                p.push(document.registrationForm["Customer/MarketingOptInFlg"].checked ? "1" : "0");
+            } else {
+                p.push("");
+            }
+            if (document.registrationForm["associateWithAgent"]) {
+                p.push(document.registrationForm["associateWithAgent"].checked ? "1" : "0");
+            } else {
+                p.push("");
+            }
+            setFormCookie(p.join('\n'));
+            return true;
+        }
+
+        function onLoadSigninForm() {
+            var rf = readCookie("rf");
+            if (rf && rf != "") {
+                rf = unescape(rf).split('\n');
+                $("#security_loginname").val(rf[0]);
+            }
+            $("#security_loginname").focus();
+        }
+
+        function onloadRegForm() {
+            var rf = readCookie("rf");
+            if (rf && rf != "") {
+                rf = unescape(rf).split('\n');
+                document.registrationForm["Person/FirstName"].value = rf[0];
+                document.registrationForm["Person/LastName"].value = rf[1];
+                document.registrationForm["Person/EmailAddress"].value = rf[2];
+                var r = $("input[type='radio'][name='BuyingSelling'][value='" + rf[3] + "']");
+                if (r.length) r.get(0).checked = true;
+                document.registrationForm["security/persist"].checked = rf[4] == "1";
+                if (document.registrationForm["Customer/MarketingOptInFlg"]) {
+                    document.registrationForm["Customer/MarketingOptInFlg"].checked = rf[5] == "1";
+                }
+                if (document.registrationForm["associateWithAgent"]) {
+                    document.registrationForm["associateWithAgent"].checked = rf[6] == "1";
+                }
+            } else {
+                if (document.registrationForm["Customer/MarketingOptInFlg"]) {
+                    document.registrationForm["Customer/MarketingOptInFlg"].checked = true;
+                }
+                if (document.registrationForm["associateWithAgent"]) {
+                    document.registrationForm["associateWithAgent"].checked = true;
+                }
+            }
+        }
+      </script>
+      <!-- Customer Login Modal -->
+      <link href="/images/common/css/search-motif-v3.css?v=" rel="stylesheet"/>
+      <link href="/images/common/css/enhanced-forms.css?v=" rel="stylesheet"/>
+      <div class="enhanced-form-wrapper js-enhanced-form-wrapper js-sign-in-form-wrapper js-populate-mlo-card clearfix">
+       <section class="logo-region">
+        <div class="width-limiter condensed">
+         <a href="//realestatecenter.stage.rsiteweb.com">
+          <img alt="Bank of America full logo" class="top-logo" src="/images/recos/1198/boa-logo.svg"/>
+         </a>
+        </div>
+       </section>
+       <section class="banner-region">
+        <div class="width-limiter">
+         <div class="form-title">
+          Member Broker Real Estate Center
+         </div>
+         <div class="name">
+          Xome Inc.
+         </div>
+        </div>
+       </section>
+       <section class="form-region custom-form-elements">
+        <div class="width-limiter">
+         <div class="mlo-information js-mlo-information default-hidden clearfix">
+          <div class="visible-portion js-visible-portion clearfix">
+           <div class="portrait-container js-portrait-container">
+           </div>
+           <div class="name-and-title">
+            <div>
+             <div class="name-and-logo-container">
+              <span class="name js-mlo-first-name">
+              </span>
+              <span class="name js-mlo-last-name">
+              </span>
+             </div>
+             <div class="mlo-title js-mlo-title">
+             </div>
+            </div>
+           </div>
+           <img alt="caret" class="caret-expand-collapse js-caret-expand-collapse-mlo" src="/images/common/caret-expand-collapse.svg"/>
+          </div>
+          <div class="hidden-portion js-hidden-portion">
+           <div class="centering-div">
+            <div class="office-and-email">
+             <span>
+              Office:
+             </span>
+             <a class="linked unavailable js-mlo-office-phone" href="#unavailable">
+              (unavailable)
+             </a>
+             <br/>
+             <span>
+              Email:
+             </span>
+             <a class="linked unavailable js-mlo-email-address" href="#unavailable">
+              (unavailable)
+             </a>
+            </div>
+            <div class="nmls-id">
+             NMLS ID
+             <span class="js-nmls-id">
+             </span>
+            </div>
+           </div>
+          </div>
+         </div>
+         <form action="" id="customerLoginForm" method="post" novalidate="">
+          <input name="formSubmit" type="hidden" value="login"/>
+          <input name="security/emailpass" type="hidden" value="no"/>
+          <div class="form-elements-wrapper left-side clearfix">
+           <h3 class="form-section-title alternate-version">
+            Sign In
+           </h3>
+           <div class="message-top js-message-top">
+            <img class="small-icon error-icon" src="/images/common/icon-warning.svg"/>
+            <img class="small-icon success-icon" src="/images/common/icon-checkmark-green.svg"/>
+            <span class="error-text js-error-text-top">
+            </span>
+            <span class="error-text additional-line js-error-text-top-line-2">
+            </span>
+            <span class="success-text">
+             A password reset email was sent to the email address associated with your account. 
+              Please click the link in that email to reset your password.
+              If you do not receive the message within a few minutes, please check your spam folder.
+            </span>
+           </div>
+           <div class="display-none js-default-sign-in-view">
+            <div class="required-notice alternate-version">
+             <span class="asterisk">
+              *
+             </span>
+             required
+            </div>
+            <div class="form-fields-group single-stack clearfix">
+             <div class="custom-text-field mini-version clearfix js-custom-text-field">
+              <input autocomplete="off" class="input-field js-requires-validation" id="input-username" maxlength="50" name="security/loginname" type="text" value=""/>
+              <label class="input-label grayed-out slightly-larger" for="input-username">
+               Username
+               <span class="asterisk">
+                *
+               </span>
+              </label>
+              <div class="hint-message">
+               This is your email address
+              </div>
+              <div class="error-messaging js-error-messaging js-error-messaging-input-username">
+               Please enter a valid email address.
+              </div>
+             </div>
+             <div class="custom-text-field mini-version clearfix js-custom-text-field">
+              <input autocomplete="off" class="input-field js-requires-validation" id="input-password" maxlength="50" name="security/password" type="password" value=""/>
+              <label class="input-label grayed-out" for="input-password">
+               Password
+               <span class="asterisk">
+                *
+               </span>
+              </label>
+              <div class="error-messaging js-error-messaging js-error-messaging-input-password">
+               Please enter a valid password.
+              </div>
+             </div>
+            </div>
+            <a class="forgot-password-prompt standard-link js-forgot-password-link" href="#forgotpassword">
+             Forgot password?
+            </a>
+            <div class="button-area condensed clearfix">
+             <a class="regular-button submit-form js-submit-sign-in-form" href="#submit-form">
+              Sign In
+             </a>
+             <a class="regular-button cancel-form js-cancel-sign-in-form" href="#cancel-form">
+              Cancel
+             </a>
+            </div>
+            <div class="register-prompt">
+             Not a registered user?
+             <a class="standard-link js-register-link" href="#register">
+              Register
+             </a>
+            </div>
+           </div>
+           <div class="display-none js-alternate-sign-in-view">
+            <div class="button-area clearfix">
+             <a class="regular-button submit-form full-span extra-top-margin js-request-code" href="#request-code">
+              Request Code
+             </a>
+            </div>
+           </div>
+          </div>
+         </form>
+         <div class="right-side">
+          <div class="benefits js-contains-benefits-section alternate clearfix">
+           <h3 class="leading-title">
+            Enrollment Benefits
+           </h3>
+           <div class="bullet-points reveal js-bullet-points">
+            <ul class="bullet-column">
+             <li class="bullet-item">
+              Customize your home search options for targeted results.
+             </li>
+             <li class="bullet-item">
+              Save, name and customize automated searches.
+             </li>
+             <li class="bullet-item">
+              Receive email alerts on properties that may qualify for homebuyer grants - 
+        closing costs or closing costs plus down payment support.
+             </li>
+            </ul>
+            <ul class="bullet-column">
+             <li class="bullet-item">
+              Track and save your favorite properties for sale.
+             </li>
+             <li class="bullet-item">
+              Receive email alerts on favorite properties when there is new
+        information (e.g., the prices changes, new photos are added, or 
+        an open house is scheduled).
+             </li>
+             <li class="bullet-item">
+              Receive Market Watch reports as soon as new properties hit the market.
+             </li>
+            </ul>
+           </div>
+           <a class="report" href="/images/recos/1198/documents/market-watch-report-sample.pdf" target="_blank">
+            <span class="report-text">
+             View a sample of the Market Watch Report
+            </span>
+           </a>
+          </div>
+         </div>
+        </div>
+       </section>
+      </div>
+      <script src="/images/common/js/enhanced-forms.js?v=">
+      </script>
+      <script src="/include/js/custom-form-elements.js?v=">
+      </script>
+      <script src="/images/common/js/account/sign-in.js?v=">
+      </script>
+     </td>
+    </tr>
+   </table>
+  </div>
+  <footer id="footer">
+   <div class="js-rec-footer footer hide">
+    <div class="footer-home-page">
+     <div class="footer-inner">
+      <div class="power-footer-module">
+       <div class="fsd-flex-skin sup-ie pf-flex-five container-fluid">
+        <div class="breadcrumbs breadcrumbs-top-margin">
+         <span class="breadcrumb-item last-breadcrumb">
+          Bank of America Real Estate Center
+         </span>
+        </div>
+        <div class="row">
+         <div class="footer-link-column col-12 col-xs-12 col-sm-3 col-md-3 no-list-style">
+          <ul class="footer-link-list">
+           <li class="list-item footHeader">
+            Mortgage Rates &amp; Loans
+           </li>
+           <li class="list-item">
+            <a class="link" href="https://www.bankofamerica.com/mortgage/mortgage-rates/" target="_blank" title="Opens Mortgage Rates in a new tab.">
+             Mortgage Rates
+            </a>
+           </li>
+           <li class="list-item">
+            <a class="link" href="https://www.bankofamerica.com/mortgage/fixed-rate-mortgage-loans/" target="_blank" title="Opens Fixed-rate Mortgage in a new tab.">
+             Fixed-rate Mortgage
+            </a>
+           </li>
+           <li class="list-item">
+            <a class="link" href="https://www.bankofamerica.com/mortgage/adjustable-rate-mortgage-loans/" target="_blank" title="Opens Adjustable-rate Mortgage in a new tab.">
+             Adjustable-rate Mortgage
+            </a>
+           </li>
+           <li class="list-item">
+            <a class="link" href="https://www.bankofamerica.com/mortgage/jumbo-loans/" target="_blank" title="Opens Jumbo Loans in a new tab.">
+             Jumbo Loans
+            </a>
+           </li>
+           <li class="list-item">
+            <a class="link" href="https://www.bankofamerica.com/mortgage/affordable-loan-solution-mortgage/" target="_blank" title="Opens Affordable Loan Solution Mortgage in a new tab.">
+             Affordable Loan Solution
+             <sup>
+              ®
+             </sup>
+             Mortgage
+            </a>
+           </li>
+           <li class="list-item">
+            <a class="link" href="https://www.bankofamerica.com/mortgage/fha-va-mortgage-loans/" target="_blank" title="Opens FHA &amp; VA Mortgage in a new tab.">
+             FHA &amp; VA Mortgage
+            </a>
+           </li>
+          </ul>
+         </div>
+         <!-- .col-md-3 -->
+         <div class="footer-link-column col-12 col-xs-12 col-sm-3 col-md-3 no-list-style">
+          <ul class="footer-link-list">
+           <li class="list-item footHeader">
+            Home Buying Tools
+           </li>
+           <li class="list-item">
+            <a class="link" href="https://www.bankofamerica.com/home-loans/mortgage/mortgage-payment-calculator.go" target="_blank" title="Opens Mortgage Calculator in a new tab.">
+             Mortgage Calculator
+            </a>
+           </li>
+           <li class="list-item">
+            <a class="link" href="https://loans.bankofamerica.com/en/tools/affordability-snapshot.html" target="_blank" title="Opens Affordability Calculator in a new tab.">
+             Affordability Calculator
+            </a>
+           </li>
+           <li class="list-item">
+            <a class="link" href="https://www.bankofamerica.com/mortgage/closing-costs-calculator/" target="_blank" title="Opens Closing Costs Calculator in a new tab.">
+             Closing Costs Calculator
+            </a>
+           </li>
+           <li class="list-item">
+            <a class="link" href="https://mortgage.bankofamerica.com/mortgage-down-payment-center" target="_blank" title="Opens Search Down Payment Help in a new tab.">
+             Search Down Payment Help
+            </a>
+           </li>
+           <li class="list-item">
+            <a class="link" href="/">
+             Search Homes For Sale
+            </a>
+           </li>
+           <li class="list-item">
+            <a class="link" href="https://homevaluerealestatecenter.bankofamerica.com/" target="_blank">
+             Home Value Estimator
+            </a>
+           </li>
+          </ul>
+         </div>
+         <!-- .col-md-3 -->
+         <div class="footer-link-column col-12 col-xs-12 col-sm-3 col-md-3 no-list-style">
+          <ul class="footer-link-list">
+           <li class="list-item footHeader">
+            Learn About Mortgages
+           </li>
+           <li class="list-item">
+            <a class="link" href="https://www.bankofamerica.com/mortgage/learn/tips-for-first-time-home-buyer/" target="_blank" title="Opens First-time Homebuyer Tips in a new tab.">
+             First-time Homebuyer Tips
+            </a>
+           </li>
+           <li class="list-item">
+            <a class="link" href="https://www.bankofamerica.com/mortgage/learn/how-much-home-can-you-afford/" target="_blank" title="Opens How Much Home Can I Afford in a new tab.">
+             How Much Home Can I Afford?
+            </a>
+           </li>
+           <li class="list-item">
+            <a class="link" href="https://www.bankofamerica.com/mortgage/learn/mortgage-down-payment/" target="_blank" title="Opens How Much Should You Put Down in a new tab.">
+             How Much Should You Put Down?
+            </a>
+           </li>
+           <li class="list-item">
+            <a class="link" href="https://www.bankofamerica.com/mortgage/learn/apr-vs-interest-rate/" target="_blank" title="Opens APR vs. Interest Rate in a new tab.">
+             APR vs. Interest Rate
+            </a>
+           </li>
+           <li class="list-item">
+            <a class="link" href="https://www.bankofamerica.com/mortgage/learn/mortgage-prequalification/" target="_blank" title="Opens Mortgage Prequalification in a new tab.">
+             Mortgage Prequalification
+            </a>
+           </li>
+           <li class="list-item">
+            <a class="link" href="https://www.bankofamerica.com/mortgage/learn/how-to-apply-for-a-mortgage/" target="_blank" title="Opens Applying for Your Loan in a new tab.">
+             Applying for a Mortgage
+            </a>
+           </li>
+           <li class="list-item">
+            <a class="link" href="https://www.bankofamerica.com/mortgage/learn/how-to-get-approved-for-a-mortgage/" target="_blank" title="Opens How to get Approved for a Mortgage in a new tab.">
+             How to get Approved for a Mortgage
+            </a>
+           </li>
+           <li class="list-item">
+            <a class="link" href="https://www.bankofamerica.com/home-loans/mortgage/affordable-housing-programs.go" target="_blank" title="Opens Affordable Housing Assistance Programs in a new tab.">
+             Affordable Housing Assistance Programs
+            </a>
+           </li>
+           <li class="list-item">
+            <a class="link" href="https://www.bankofamerica.com/home-loans/faq-mortgage-refi.go" target="_blank" title="Opens Mortgage FAQs in a new tab.">
+             Mortgage Glossary
+            </a>
+           </li>
+          </ul>
+         </div>
+         <!-- .col-md-3 -->
+         <div class="footer-link-column col-12 col-xs-12 col-sm-3 col-md-3 no-list-style">
+          <ul class="footer-link-list">
+           <li class="list-item footHeader">
+            Manage Your Loan
+           </li>
+           <li class="list-item">
+            <a class="link" href="https://secure.bankofamerica.com/login/sign-in/signOnScreen.go" target="_blank" title="Opens Sign in to Your Account in a new tab.">
+             Sign in to Your Account
+            </a>
+           </li>
+           <li class="list-item">
+            <a class="link" href="https://www.bankofamerica.com/home-loans/home-loan-navigator.go" target="_blank" title="Opens Check Your Application Status/Submit Documents Online in a new tab.">
+             Learn About the Digital Mortgage Experience
+            </a>
+           </li>
+           <li class="list-item">
+            <a class="link" href="https://www.bankofamerica.com/home-loans/home-loan-navigator.go" target="_blank" title="Opens Check Your Application Status/Submit Documents Online in a new tab.">
+             Check Your Application Status/Submit Documents Online
+            </a>
+           </li>
+           <li class="list-item">
+            <a class="link" href="https://homeloanhelp.bankofamerica.com/en/index.html" target="_blank" title="Opens Get Help with Payment Difficulties in a new tab.">
+             Get Help with Payment Difficulties
+            </a>
+           </li>
+           <li class="list-item">
+            <a class="link" href="https://www.bankofamerica.com/contactus/contactus.go?topicId=mrtg_home_equity" target="_blank" title="Opens Contact Us About Your Home Loan in a new tab.">
+             Contact Us About Your Home Loan
+            </a>
+           </li>
+          </ul>
+         </div>
+         <!-- .col-md-3 -->
+        </div>
+        <!-- .row -->
+       </div>
+       <!-- .fsd-flex-skin -->
+      </div>
+      <!-- .power-footer-module -->
+      <div class="global-footer-module home-footer-end">
+       <div class="fsd-skin container-fluid">
+        <div class="gf-links row">
+         <div class="link-wrapper col-md-12">
+          <a class="link link-1" href="https://www.bankofamerica.com/">
+           Home
+          </a>
+          <a class="link link-2" href="https://www.bankofamerica.com/security-center/privacy-overview/" target="_blank" title="Opens Privacy in a new tab.">
+           Privacy
+          </a>
+          <a class="link link-3" href="https://www.bankofamerica.com/security-center/overview/" target="_blank" title="Opens Security in a new tab.">
+           Security
+          </a>
+          <a class="link link-4" href="http://careers.bankofamerica.com" target="_blank" title="Opens Careers in a new tab.">
+           Careers
+          </a>
+          <a class="link link-5" href="javascript:void(0);" id="feedback-link" target="_blank" title="Opens Feedback Dialog.">
+           Feedback
+          </a>
+          <a class="link link-6" href="https://www.bankofamerica.com/sitemap/personal.go" target="_blank" title="Opens Site Map in a new tab.">
+           Site Map
+          </a>
+          <a class="link link-7 gf-last-link" href="javascript:void(0);" id="advertising-practices" target="_blank" title="Opens Advertising Practices Dialog.">
+           Advertising Practices
+          </a>
+         </div>
+        </div>
+        <!-- .gf-links -->
+        <div class="boa-social boa-social-follow boa-social-clearfix">
+         <h3 class="boa-social-header">
+          Connect with us
+         </h3>
+         <a class="social-icon-link" href="https://www.facebook.com/BankofAmerica" target="_blank" title="Visit our Facebook page in a new tab.">
+          <svg class="social-icon-svg" focusable="false" height="30" viewbox="0 0 30 30" width="32" xmlns="http://www.w3.org/2000/svg">
+           <g>
+            <path d="M28.345,0H1.656A1.656,1.656,0,0,0,0,1.656V28.344A1.655,1.655,0,0,0,1.656,30H28.345A1.655,1.655,0,0,0,30,28.344V1.656A1.656,1.656,0,0,0,28.345,0" fill="#3e5b98">
+            </path>
+            <path d="M24.6,18.383l0.584-4.527H20.7V10.965c0-1.311.364-2.205,2.244-2.205h2.4V4.709a32.181,32.181,0,0,0-3.492-.178c-3.457,0-5.824,2.109-5.824,5.984v3.34H12.115v4.527h3.908V30H20.7V18.383h3.9Z" fill="#fff">
+            </path>
+           </g>
+          </svg>
+         </a>
+         <a class="social-icon-link" href="https://www.instagram.com/bankofamerica/" target="_blank" title="Visit our Instagram page in a new tab.">
+          <svg class="social-icon-svg" focusable="false" height="30" viewbox="0 0 30 30" width="32" xmlns="http://www.w3.org/2000/svg">
+           <path d="M26.539,12.69H23.927a9.23,9.23,0,1,1-17.854,0H3.461v12.7a1.154,1.154,0,0,0,1.154,1.152H25.384a1.154,1.154,0,0,0,1.155-1.152V12.69Zm0-8.075a1.153,1.153,0,0,0-1.155-1.153H21.923A1.153,1.153,0,0,0,20.77,4.614V8.076A1.154,1.154,0,0,0,21.923,9.23h3.461a1.154,1.154,0,0,0,1.155-1.153V4.614ZM15,9.23A5.77,5.77,0,1,0,20.77,15,5.769,5.769,0,0,0,15,9.23M26.539,30H3.461A3.462,3.462,0,0,1,0,26.537V3.461A3.461,3.461,0,0,1,3.461,0H26.539A3.461,3.461,0,0,1,30,3.461V26.537A3.462,3.462,0,0,1,26.539,30" fill="#867464" fill-rule="evenodd">
+           </path>
+          </svg>
+         </a>
+         <a class="social-icon-link" href="https://www.linkedin.com/company/bank-of-america/" target="_blank" title="Visit our LinkedIn page in a new tab.">
+          <svg class="social-icon-svg" focusable="false" height="30" viewbox="0 0 30.001 30" width="32" xmlns="http://www.w3.org/2000/svg">
+           <g>
+            <path d="M27.781,0H2.215A2.188,2.188,0,0,0,0,2.16V27.836A2.191,2.191,0,0,0,2.215,30H27.781A2.2,2.2,0,0,0,30,27.836V2.16A2.192,2.192,0,0,0,27.781,0Z" fill="#047cb7">
+            </path>
+            <path d="M4.448,11.246H8.9V25.563H4.448V11.246ZM6.674,4.129a2.58,2.58,0,1,1-2.58,2.58,2.58,2.58,0,0,1,2.58-2.58" fill="#fff">
+            </path>
+            <path d="M11.689,11.246h4.268V13.2h0.06a4.681,4.681,0,0,1,4.21-2.311c4.506,0,5.338,2.965,5.338,6.82v7.852H21.118V18.6c0-1.658-.031-3.795-2.314-3.795-2.314,0-2.669,1.809-2.669,3.676v7.082H11.689V11.246Z" fill="#fff">
+            </path>
+           </g>
+          </svg>
+         </a>
+         <a class="social-icon-link" href="https://www.pinterest.com/bettermoneyhabits/" target="_blank" title="Visit our Pinterest page in a new tab.">
+          <svg class="social-icon-svg" focusable="false" height="29" viewbox="0 0 30 30" width="32" xmlns="http://www.w3.org/2000/svg">
+           <g>
+            <path d="M30,15A15,15,0,1,1,15,0,15,15,0,0,1,30,15" fill="#fff">
+            </path>
+            <path d="M14.982,1.664a13.335,13.335,0,0,0-4.859,25.754,12.789,12.789,0,0,1,.045-3.826c0.242-1.04,1.564-6.629,1.564-6.629a4.8,4.8,0,0,1-.4-1.979c0-1.856,1.076-3.239,2.414-3.239a1.675,1.675,0,0,1,1.688,1.878c0,1.144-.729,2.855-1.106,4.44A1.938,1.938,0,0,0,16.3,20.475c2.371,0,4.193-2.5,4.193-6.107a5.265,5.265,0,0,0-5.57-5.426A5.772,5.772,0,0,0,8.9,14.729,5.186,5.186,0,0,0,9.9,17.772a0.4,0.4,0,0,1,.092.383c-0.1.422-.326,1.327-0.369,1.513-0.058.244-.193,0.3-0.447,0.179-1.666-.775-2.707-3.211-2.707-5.166,0-4.207,3.057-8.07,8.813-8.07,4.627,0,8.221,3.3,8.221,7.7,0,4.6-2.9,8.295-6.92,8.295a3.568,3.568,0,0,1-3.057-1.531s-0.668,2.547-.83,3.17a14.828,14.828,0,0,1-1.658,3.5A13.337,13.337,0,1,0,14.982,1.664Z" fill="#bc2328">
+            </path>
+           </g>
+          </svg>
+         </a>
+         <a class="social-icon-link" href="https://twitter.com/BankofAmerica" target="_blank" title="Visit our Twitter page in a new tab.">
+          <svg class="social-icon-svg" focusable="false" height="32" viewbox="0 0 36.914 30" width="32" xmlns="http://www.w3.org/2000/svg">
+           <path d="M36.914,3.551a15.169,15.169,0,0,1-4.35,1.193A7.6,7.6,0,0,0,35.9.553a15.187,15.187,0,0,1-4.811,1.838A7.582,7.582,0,0,0,18.18,9.3,21.5,21.5,0,0,1,2.57,1.387,7.579,7.579,0,0,0,4.914,11.5a7.542,7.542,0,0,1-3.432-.946v0.095A7.577,7.577,0,0,0,7.559,18.07a7.621,7.621,0,0,1-3.422.131,7.587,7.587,0,0,0,7.076,5.26,15.194,15.194,0,0,1-9.4,3.241A15.57,15.57,0,0,1,0,26.6,21.439,21.439,0,0,0,11.609,30c13.93,0,21.549-11.541,21.549-21.549q0-.492-0.023-0.981A15.394,15.394,0,0,0,36.914,3.551Z" fill="#2ea3dc">
+           </path>
+          </svg>
+         </a>
+         <a class="social-icon-link" href="https://www.youtube.com/user/bankofamerica" target="_blank" title="Visit our YouTube page in a new tab.">
+          <svg class="social-icon-svg" focusable="false" height="30" viewbox="0 0 29.999 30" width="32" xmlns="http://www.w3.org/2000/svg">
+           <g>
+            <path d="M4.3,4.438a173.048,173.048,0,0,1,21.4,0,4.266,4.266,0,0,1,3.973,3.971,59.594,59.594,0,0,1,0,12.518A4.271,4.271,0,0,1,25.7,24.9a171.763,171.763,0,0,1-21.4,0A4.245,4.245,0,0,1,.33,20.926a59.591,59.591,0,0,1,0-12.518A4.259,4.259,0,0,1,4.3,4.438h0Z" fill="#cd352d" fill-rule="evenodd">
+            </path>
+            <polygon fill="#fff" fill-rule="evenodd" points="11.912 10.393 19.908 14.584 11.912 18.721 11.912 10.393 11.912 10.393">
+            </polygon>
+           </g>
+          </svg>
+         </a>
+        </div>
+        <div class="row">
+         <div class="col-md-12">
+          <p class="legal-statement">
+           <span class="company-name">
+            Bank of America, N.A. Member FDIC.
+           </span>
+           <br class="mobile-break"/>
+           <a class="text-equal-housing" href="https://www.bankofamerica.com/help/equalhousing_popup.go" target="_blank" title="Opens Equal Housing Lender in a new tab.">
+            Equal Housing Lender
+           </a>
+           <img alt="Equal Housing Lender icon" class="icon-equal-housing" src="/images/recos/1198/bac-bsite-images/icon-equal-housing.png"/>
+           <span class="copyright-text">
+            ©
+            <span class="js-current-year footer-year">
+            </span>
+            Bank of America Corporation. All rights reserved. 
+                    Credit and collateral are subject to approval. Terms and conditions apply. This is not a commitment to lend. 
+                    Programs, rates, terms and conditions are subject to change without notice.
+           </span>
+          </p>
+         </div>
+        </div>
+       </div>
+       <!-- .fsd-skin -->
+      </div>
+      <!-- .global-footer-module -->
+      <div class="hide tabs-main-content" id="glossary-popup-7879">
+       <h3>
+        Refinancing
+       </h3>
+       <p>
+        Paying off one loan with the proceeds from another loan, generally using the same
+            property as collateral.
+       </p>
+      </div>
+      <div class="hide tabs-main-content" id="glossary-popup-7881">
+       <h3>
+        Lender
+       </h3>
+       <p>
+        An individual or business entity making a loan.
+       </p>
+      </div>
+      <div class="hide tabs-main-content" id="glossary-popup-7883">
+       <h3>
+        Asset
+       </h3>
+       <p>
+        Property or a possession of value that a lender may be willing to accept as collateral
+            to secure repayment of debt. For example, real estate, stocks, mutual funds, cash,
+            or automobiles.
+       </p>
+      </div>
+      <div class="hide tabs-main-content" id="glossary-popup-7885">
+       <h3>
+        Prequalification
+       </h3>
+       <p>
+        The process of providing financial and other information (such as employment history
+            and proposed collateral) by a prospective borrower in order for the lender to preliminarily
+            estimate how much loan the borrower may obtain for the purchase of a home. A prequalification
+            is not a commitment to lend.
+       </p>
+      </div>
+      <div class="hide tabs-main-content" id="glossary-popup-7887">
+       <h3>
+        Credit
+       </h3>
+       <p>
+        An arrangement in which a borrower receives something of value in exchange for a
+            promise to repay the lender at a later date.
+       </p>
+      </div>
+      <div class="hide tabs-main-content" id="glossary-popup-7889">
+       <h3>
+        Down payment
+       </h3>
+       <p>
+        The amount of cash you pay toward the purchase of your home to make up the difference
+            between the purchase price and your mortgage loan. Down payments often range between
+            5% and 20% of the sales price depending on many factors, including your loan, your
+            lender, your credit history, and so forth.
+       </p>
+      </div>
+      <div class="hide tabs-main-content" id="glossary-popup-7891">
+       <h3>
+        Private mortgage insurance (PMI)
+       </h3>
+       <p>
+        If your down payment is less than 20%, most lenders will require you to get private
+            mortgage insurance. This is insurance that protects the lender if you default on
+            your loan. This insurance usually costs from 0.15% to 2.5% of the loan amount. Also
+            called mortgage insurance.
+       </p>
+      </div>
+      <div class="hide tabs-main-content" id="glossary-popup-7893">
+       <h3>
+        Interest rate
+       </h3>
+       <p>
+        Cost for the use of a loan, usually expressed as a percentage of the loan, paid
+            over a specific period of time. The interest rate does not include fees charged
+            for the loan. See also: annual percentage rate (APR).
+       </p>
+      </div>
+      <div class="hide tabs-main-content" id="glossary-popup-7895">
+       <h3>
+        Federal Housing Administration (FHA)
+       </h3>
+       <p>
+        An agency of the Department of Housing and Urban Development. The FHA provides mortgage
+            insurance for certain residential mortgages. It sets standards for underwriting
+            these mortgages and for construction of homes secured by these mortgages.
+       </p>
+      </div>
+      <div class="hide tabs-main-content" id="glossary-popup-7897">
+       <h3>
+        FHA home loan
+       </h3>
+       <p>
+        A mortgage home loan that is insured by the Federal Housing Administration (FHA).
+            Also known as a government loan. FHA mortgage insurance protects the lender (not
+            the borrower) if a borrower defaults on the FHA loan. This insurance enables a lender
+            to provide loan options and benefits often not available through conventional financing.
+       </p>
+      </div>
+      <div class="hide tabs-main-content" id="glossary-popup-7899">
+       <h3>
+        Credit score
+       </h3>
+       <p>
+        A number that rates the quality of an individual's credit. Credit reporting agencies
+            calculate this number, often with the assistance of computer systems, as part of
+            the process of assigning rates and terms to the loans they make. The number helps
+            predict the relative likelihood that a person will repay a credit obligation, such
+            as a mortgage loan. In general, the higher your credit score, the more likely you
+            are to be approved for and to pay a lower interest rate on a loan.
+       </p>
+      </div>
+      <div class="hide tabs-main-content" id="glossary-popup-7901">
+       <h3>
+        Delinquency
+       </h3>
+       <p>
+        Failure to make payments on time.
+       </p>
+      </div>
+      <div class="hide tabs-main-content" id="glossary-popup-7903">
+       <h3>
+        Market value
+       </h3>
+       <p>
+        The likely selling price of a home between a willing buyer and a willing seller
+            on the open market. In a mortgage or a home equity loan, the fair market value is
+            usually determined by an appraisal. Also called fair market value.
+       </p>
+      </div>
+      <div class="hide tabs-main-content" id="glossary-popup-7905">
+       <h3>
+        Appraisal or appraised value
+       </h3>
+       <p>
+        An informed estimate of the value of a property. When made in connection with an
+            application for a loan secured by a home, a professional appraiser usually performs
+            the appraisal.
+       </p>
+      </div>
+      <div class="hide tabs-main-content" id="glossary-popup-7907">
+       <h3>
+        Equity
+       </h3>
+       <p>
+        The difference between the fair market value (appraised value) of your home and
+            your outstanding mortgage balances and other liens.
+       </p>
+      </div>
+     </div>
+    </div>
+    <!-- End Footer 2-->
+   </div>
+   <div class="js-global-website-footer footer">
+    <div class="footer-inner">
+     <div class="global-footer-module">
+      <div class="fsd-skin">
+       <div class="gf-links">
+        <a class="js-footer-home" name="homepage-footer">
+         Home
+        </a>
+        <a href="/pages/privacy-policy" name="privacy-policy-footer" target="_blank" title="Opens in a new tab.">
+         Privacy Policy
+        </a>
+        <a class="gf-last-link" href="/pages/termsofuse" name="terms-of-use-footer" target="_blank" title="Opens in a new tab.">
+         Terms of Use
+        </a>
+        <div class="clearboth">
+        </div>
+       </div>
+       <p class="broker-footer-statement">
+        Each Office Independently Owned and Operated.
+        <span class="js-broker-footer broker-footer">
+         Member Broker
+        </span>
+        is an Equal
+            Opportunity Employer and supports the Fair Housing Act. ©
+        <span class="js-current-year footer-year">
+        </span>
+        <span class="js-broker-footer broker-footer">
+         Member Broker
+        </span>
+        <span class="js-conditional-period conditional-period">
+         .
+        </span>
+        All Rights Reserved. Powered by Xome Inc.
+       </p>
+      </div>
+      <!-- .fsd-skin -->
+     </div>
+     <!-- .global-footer-module -->
+    </div>
+    <!-- .footer-inner -->
+   </div>
+   <!-- .footer -->
+  </footer>
+  <div class="xome-standard-modal-contents" id="bofa-footer-marketing-modal">
+   <h3 class="main-title">
+    Advertising Practices
+   </h3>
+   <p class="regular-paragraph">
+    We strive to provide you with information about products and services you might find interesting and useful. 
+    Relationship-based ads and online behavioral advertising help us do that.
+   </p>
+   <p class="regular-paragraph">
+    Here's how it works: We gather information about your online activities, such as the searches you conduct 
+    on our Sites and the pages you visit. This information may be used to deliver advertising on our Sites and 
+    offline (for example, by phone, email and direct mail) that's customized to meet specific interests you may have.
+   </p>
+   <p class="regular-paragraph">
+    If you prefer that we do not use this information, you may
+    <a class="regular-link" href="https://www.bankofamerica.com/privacy/online-privacy-notice.go?request_locale=en_US#advertising-on-our-sites" target="_blank">
+     opt out of online behavioral advertising
+    </a>
+    .
+    If you opt out, though, you may still receive generic advertising. In addition, financial advisors/Client Managers 
+    may continue to use information collected online to provide product and service information in accordance with account agreements.
+   </p>
+   <p class="regular-paragraph">
+    Also, if you opt out of online behavioral advertising, you may still see ads when you sign in to your account, for 
+    example through Online Banking or MyMerrill. These ads are based on your specific account relationships with us.
+   </p>
+   <p class="regular-paragraph">
+    To learn more about relationship-based ads, online behavioral advertising and our privacy practices, please review
+    <a class="regular-link" href="https://www.bankofamerica.com/privacy/online-privacy-notice.go?request_locale=en_US" target="_blank">
+     Bank of America Online Privacy Notice
+    </a>
+    and our
+    <a class="regular-link" href="https://www.bankofamerica.com/privacy/faq/online-privacy-faq.go?request_locale=en_US" target="_blank">
+     Online Privacy FAQs
+    </a>
+    .
+   </p>
+  </div>
+  <script src="https://www.bankofamerica.com/pa/global-assets/external/coremetrics/hp/eluminate.js">
+  </script>
+  <script src="https://www.bankofamerica.com/pa/global-assets/external/coremetrics/hp/cmdatatagutils.js">
+  </script>
+  <script src="/images/RECos/1198/js/rec-rbw-coremetrics.js?v=1.2">
+  </script>
+  <script type="text/javascript">
+   jQuery(document).ready(function() {
+   if (typeof cmPageView != 'undefined')
+      cmPageView();
+});
+
+//Safari back button doesn't reload the page instead it takes from the cache
+if ($.browser.safari) {
+  $(window).bind('pageshow', function(event) {
+    document.body.classList.add('unloaded');
+    if (event.originalEvent.persisted) {
+      window.location.reload() 
+    }
+  });
+}
+  </script>
+ </body>
+</html>
+<style>
+ .login-text {display:none}
+     #customerLoginForm div.row-fluid +hr {display:none}
+</style>
+<script>
+ (function initLoginModalResize() {
+        try {
+            if (window.parent && window.parent.CustomerLogin) {
+                $(window)
+                    .load(function () {
+                        window.parent.CustomerLogin.resizeModal(document);
+                    });
+            }
+        } catch (e) {
+            // Just ignore cross-domain issues
+        }
+    })();
+</script>

